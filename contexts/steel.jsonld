@@ -1,0 +1,319 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "schema": "https://schema.org/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "globalUniqueId": {
+        "@id": "https://tracepass.eu/voc/dpp/globalUniqueId",
+        "@type": "xsd:string"
+      },
+      "gtin": {
+        "@id": "https://ref.gs1.org/voc/gtin"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "serialNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/serialNumber",
+        "@type": "xsd:string"
+      },
+      "productType": {
+        "@id": "https://tracepass.eu/voc/dpp/productType",
+        "@type": "xsd:string"
+      },
+      "productName": {
+        "@id": "https://tracepass.eu/voc/dpp/productName",
+        "@type": "xsd:string"
+      },
+      "cnCode": {
+        "@id": "http://data.europa.eu/xsp/cn2024/{code}0080"
+      },
+      "steelGradeDesignation": {
+        "@id": "https://tracepass.eu/voc/dpp/steelGradeDesignation"
+      },
+      "manufacturerName": {
+        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
+      },
+      "manufacturerAddress": {
+        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
+      },
+      "countryOfManufacture": {
+        "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+        "@type": "xsd:string"
+      },
+      "facilityId": {
+        "@id": "https://tracepass.eu/voc/dpp/facilityId",
+        "@type": "xsd:string"
+      },
+      "importerName": {
+        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
+      },
+      "importerAddress": {
+        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
+      },
+      "euAuthorisedRepresentative": {
+        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
+      },
+      "primaryMaterialType": {
+        "@id": "https://tracepass.eu/voc/dpp/primaryMaterialType",
+        "@type": "xsd:string"
+      },
+      "chemicalComposition": {
+        "@id": "https://tracepass.eu/voc/dpp/chemicalComposition",
+        "@container": "@set"
+      },
+      "recycledContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "preConsumerScrapPct": {
+        "@id": "https://tracepass.eu/voc/dpp/preConsumerScrapPct",
+        "@type": "xsd:decimal"
+      },
+      "postConsumerScrapPct": {
+        "@id": "https://tracepass.eu/voc/dpp/postConsumerScrapPct",
+        "@type": "xsd:decimal"
+      },
+      "recycledContentVerification": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentVerification",
+        "@type": "xsd:string"
+      },
+      "coatings": {
+        "@id": "https://tracepass.eu/voc/dpp/coatings",
+        "@container": "@set"
+      },
+      "yieldStrengthMpa": {
+        "@id": "https://tracepass.eu/voc/dpp/yieldStrengthMpa",
+        "@type": "xsd:decimal"
+      },
+      "tensileStrengthMpa": {
+        "@id": "https://tracepass.eu/voc/dpp/tensileStrengthMpa",
+        "@type": "xsd:decimal"
+      },
+      "elongationPct": {
+        "@id": "https://tracepass.eu/voc/dpp/elongationPct",
+        "@type": "xsd:decimal"
+      },
+      "impactEnergy": {
+        "@id": "https://tracepass.eu/voc/dpp/impactEnergy"
+      },
+      "hardness": {
+        "@id": "https://tracepass.eu/voc/dpp/hardness"
+      },
+      "productionRoute": {
+        "@id": "https://tracepass.eu/voc/dpp/productionRoute",
+        "@type": "xsd:string"
+      },
+      "productionDate": {
+        "@id": "https://tracepass.eu/voc/dpp/productionDate",
+        "@type": "xsd:date"
+      },
+      "heatNumber": {
+        "@id": "https://ref.gs1.org/voc/hasBatchLotNumber"
+      },
+      "heatTreatment": {
+        "@id": "https://tracepass.eu/voc/dpp/heatTreatment",
+        "@type": "xsd:string"
+      },
+      "electricityGridIntensity": {
+        "@id": "https://tracepass.eu/voc/dpp/electricityGridIntensity",
+        "@type": "xsd:decimal"
+      },
+      "renewableSharePct": {
+        "@id": "https://tracepass.eu/voc/dpp/renewableSharePct",
+        "@type": "xsd:decimal"
+      },
+      "electricityConsumedKwhPerT": {
+        "@id": "https://tracepass.eu/voc/dpp/electricityConsumedKwhPerT",
+        "@type": "xsd:decimal"
+      },
+      "rawMaterialOrigin": {
+        "@id": "https://tracepass.eu/voc/dpp/rawMaterialOrigin",
+        "@container": "@set"
+      },
+      "reductionAgent": {
+        "@id": "https://tracepass.eu/voc/dpp/reductionAgent",
+        "@type": "xsd:string"
+      },
+      "totalCarbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/totalCarbonFootprint"
+      },
+      "scope1DirectEmissions": {
+        "@id": "https://tracepass.eu/voc/dpp/scope1DirectEmissions",
+        "@type": "xsd:decimal"
+      },
+      "scope2IndirectEmissions": {
+        "@id": "https://tracepass.eu/voc/dpp/scope2IndirectEmissions",
+        "@type": "xsd:decimal"
+      },
+      "scope3UpstreamEmissions": {
+        "@id": "https://tracepass.eu/voc/dpp/scope3UpstreamEmissions",
+        "@type": "xsd:decimal"
+      },
+      "precursorEmissions": {
+        "@id": "https://tracepass.eu/voc/dpp/precursorEmissions",
+        "@container": "@set"
+      },
+      "calculationMethodology": {
+        "@id": "https://tracepass.eu/voc/dpp/calculationMethodology",
+        "@type": "xsd:string"
+      },
+      "thirdPartyVerification": {
+        "@id": "https://tracepass.eu/voc/dpp/thirdPartyVerification"
+      },
+      "carbonIntensityClass": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonIntensityClass",
+        "@type": "xsd:string"
+      },
+      "euEtsBenchmarkProduct": {
+        "@id": "https://tracepass.eu/voc/dpp/euEtsBenchmarkProduct",
+        "@type": "xsd:string"
+      },
+      "dataQuality": {
+        "@id": "https://tracepass.eu/voc/dpp/dataQuality",
+        "@type": "xsd:string"
+      },
+      "cbamGoodsType": {
+        "@id": "https://tracepass.eu/voc/dpp/cbamGoodsType",
+        "@type": "xsd:string"
+      },
+      "totalSpecificEmbeddedEmissions": {
+        "@id": "https://tracepass.eu/voc/dpp/totalSpecificEmbeddedEmissions",
+        "@type": "xsd:decimal"
+      },
+      "carbonPricePaid": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonPricePaid"
+      },
+      "cbamDeclarantEori": {
+        "@id": "https://tracepass.eu/voc/dpp/cbamDeclarantEori",
+        "@type": "xsd:string"
+      },
+      "cbamAccountNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/cbamAccountNumber",
+        "@type": "xsd:string"
+      },
+      "svhcPresent": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcPresent",
+        "@type": "xsd:boolean"
+      },
+      "svhcCandidateListSubstances": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances",
+        "@container": "@set"
+      },
+      "reachRegistrationNumbers": {
+        "@id": "https://tracepass.eu/voc/dpp/reachRegistrationNumbers",
+        "@container": "@set"
+      },
+      "restrictedSubstancesCompliance": {
+        "@id": "https://tracepass.eu/voc/dpp/restrictedSubstancesCompliance",
+        "@type": "xsd:boolean"
+      },
+      "gwpTotal": {
+        "@id": "https://tracepass.eu/voc/dpp/gwpTotal",
+        "@type": "xsd:decimal"
+      },
+      "odp": {
+        "@id": "https://tracepass.eu/voc/dpp/odp",
+        "@type": "xsd:decimal"
+      },
+      "ap": {
+        "@id": "https://tracepass.eu/voc/dpp/ap",
+        "@type": "xsd:decimal"
+      },
+      "waterUse": {
+        "@id": "https://tracepass.eu/voc/dpp/waterUse",
+        "@type": "xsd:decimal"
+      },
+      "epdReferenceUri": {
+        "@id": "https://tracepass.eu/voc/dpp/epdReferenceUri",
+        "@type": "xsd:anyURI"
+      },
+      "epdProgramOperator": {
+        "@id": "https://tracepass.eu/voc/dpp/epdProgramOperator",
+        "@type": "xsd:string"
+      },
+      "lifecycleModules": {
+        "@id": "https://tracepass.eu/voc/dpp/lifecycleModules",
+        "@type": "xsd:string"
+      },
+      "declaredUnit": {
+        "@id": "https://tracepass.eu/voc/dpp/declaredUnit",
+        "@type": "xsd:string"
+      },
+      "expectedServiceLifeYears": {
+        "@id": "https://tracepass.eu/voc/dpp/expectedServiceLifeYears",
+        "@type": "xsd:decimal"
+      },
+      "recyclabilityPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityPercentage",
+        "@type": "xsd:decimal"
+      },
+      "endOfLifeInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/endOfLifeInstructions",
+        "@type": "xsd:anyURI"
+      },
+      "ceMarking": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarking",
+        "@type": "xsd:boolean"
+      },
+      "declarationOfPerformanceUri": {
+        "@id": "https://tracepass.eu/voc/dpp/declarationOfPerformanceUri",
+        "@type": "xsd:anyURI"
+      },
+      "inspectionCertificateType": {
+        "@id": "https://tracepass.eu/voc/dpp/inspectionCertificateType",
+        "@type": "xsd:string"
+      },
+      "inspectionCertificateUri": {
+        "@id": "https://tracepass.eu/voc/dpp/inspectionCertificateUri",
+        "@type": "xsd:anyURI"
+      },
+      "responsibleSteelCertification": {
+        "@id": "https://tracepass.eu/voc/dpp/responsibleSteelCertification"
+      },
+      "asiCertification": {
+        "@id": "https://tracepass.eu/voc/dpp/asiCertification"
+      },
+      "euEtsInstallationId": {
+        "@id": "https://tracepass.eu/voc/dpp/euEtsInstallationId",
+        "@type": "xsd:string"
+      },
+      "supplyChainEvents": {
+        "@id": "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld"
+      },
+      "dataCarrier": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrier",
+        "@type": "xsd:string"
+      },
+      "accessLevel": {
+        "@id": "https://tracepass.eu/voc/dpp/accessLevel",
+        "@type": "xsd:string"
+      },
+      "registryEntryUri": {
+        "@id": "https://tracepass.eu/voc/dpp/registryEntryUri",
+        "@type": "xsd:anyURI"
+      },
+      "dataFormat": {
+        "@id": "https://tracepass.eu/voc/dpp/dataFormat",
+        "@type": "xsd:string"
+      },
+      "languages": {
+        "@id": "https://tracepass.eu/voc/dpp/languages",
+        "@container": "@set"
+      },
+      "ceMarkingStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarkingStatus",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/steel/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "issuer": {
+    "id": "did:web:tracepass.eu",
+    "name": "TracePass LTD"
+  },
+  "validFrom": "2026-03-15T00:00:00Z",
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.example.com/01/09520123456788/21/HEAT-2026-0042",
+    "name": "S355 structural steel plate",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "7208",
+        "name": "Flat-rolled steel"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "characteristics": {
+      "batchLotNumber": "SAMPLE",
+      "productType": "iron_primary",
+      "productName": "SAMPLE",
+      "cnCode": "SAMPLE",
+      "steelGradeDesignation": {},
+      "manufacturerName": "SAMPLE",
+      "manufacturerAddress": "SAMPLE",
+      "facilityId": "SAMPLE",
+      "chemicalComposition": [],
+      "yieldStrengthMpa": 355,
+      "tensileStrengthMpa": 1.2,
+      "elongationPct": 1.2,
+      "impactEnergy": {},
+      "productionRoute": "BF-BOF",
+      "heatNumber": "SAMPLE",
+      "heatTreatment": "as_rolled",
+      "reductionAgent": "coke",
+      "scope1DirectEmissions": 1.2,
+      "precursorEmissions": [],
+      "calculationMethodology": "ISO_14067",
+      "thirdPartyVerification": {},
+      "dataQuality": "actual_verified",
+      "cbamGoodsType": "simple",
+      "totalSpecificEmbeddedEmissions": 1.2,
+      "svhcPresent": true,
+      "restrictedSubstancesCompliance": true,
+      "inspectionCertificateType": "2.1",
+      "inspectionCertificateUri": "https://example.com/doc",
+      "ceMarkingStatus": "marked"
+    }
+  }
+}
