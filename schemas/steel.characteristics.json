@@ -11,8 +11,6 @@
     "productName",
     "cnCode",
     "steelGradeDesignation",
-    "manufacturerName",
-    "manufacturerAddress",
     "facilityId",
     "chemicalComposition",
     "yieldStrengthMpa",
@@ -110,18 +108,6 @@
       "description": "Steel grade per EN 10027-1 (symbolic name) and EN 10027-2 (numeric), or aluminium alloy per EN 573/EN 1706.",
       "x-iri": "https://tracepass.eu/voc/dpp/steelGradeDesignation"
     },
-    "manufacturerName": {
-      "type": "string",
-      "title": "Manufacturer Name",
-      "description": "Legal name of the manufacturer or economic operator.",
-      "x-iri": "https://vocabulary.uncefact.org/untp/relatedParty"
-    },
-    "manufacturerAddress": {
-      "type": "string",
-      "title": "Manufacturer Address",
-      "description": "Registered address of the manufacturer.",
-      "x-iri": "https://vocabulary.uncefact.org/untp/relatedParty"
-    },
     "countryOfManufacture": {
       "type": "string",
       "title": "Country of Manufacture",
@@ -135,24 +121,6 @@
       "description": "Production facility identifier. For CBAM: installation ID in CBAM registry. Installation-level emissions data is tied to this ID.",
       "x-iri": "https://tracepass.eu/voc/dpp/facilityId",
       "x-regulation": "32023R0956"
-    },
-    "importerName": {
-      "type": "string",
-      "title": "Importer Name",
-      "description": "Legal name of the EU importer, if the product is imported.",
-      "x-iri": "https://vocabulary.uncefact.org/untp/relatedParty"
-    },
-    "importerAddress": {
-      "type": "string",
-      "title": "Importer Address",
-      "description": "Registered address of the EU importer.",
-      "x-iri": "https://vocabulary.uncefact.org/untp/relatedParty"
-    },
-    "euAuthorisedRepresentative": {
-      "type": "string",
-      "title": "EU Authorised Representative",
-      "description": "Authorised representative in the EU if the manufacturer is non-EU.",
-      "x-iri": "https://vocabulary.uncefact.org/untp/relatedParty"
     },
     "primaryMaterialType": {
       "type": "string",

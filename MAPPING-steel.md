@@ -1,6 +1,6 @@
 # Steel DPP — field-to-vocabulary mapping
 
-Every field in the steel Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **9 reuse an existing IRI, 71 are coined, 4 are skipped** (they are product specifications, not semantic properties).
+Every field in the steel Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **4 reuse an existing IRI, 71 are coined, 4 are skipped** (they are product specifications, not semantic properties), and **5 economic-operator fields move to the UNTP envelope** rather than living in `characteristics` at all.
 
 The coined terms are not invention for its own sake: each names the EU instrument that defines the concept, and where the field carries a unit, that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term (steel mechanical properties do not).
 
@@ -10,13 +10,34 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 |---|---|---|
 | `gtin` | gs1 | `https://ref.gs1.org/voc/gtin` |
 | `cnCode` | eurostat-cn | `http://data.europa.eu/xsp/cn2024/{code}0080` |
-| `manufacturerName` | untp | `https://vocabulary.uncefact.org/untp/relatedParty` |
-| `manufacturerAddress` | untp | `https://vocabulary.uncefact.org/untp/relatedParty` |
-| `importerName` | untp | `https://vocabulary.uncefact.org/untp/relatedParty` |
-| `importerAddress` | untp | `https://vocabulary.uncefact.org/untp/relatedParty` |
-| `euAuthorisedRepresentative` | untp | `https://vocabulary.uncefact.org/untp/relatedParty` |
 | `heatNumber` | gs1 | `https://ref.gs1.org/voc/hasBatchLotNumber` |
 | `supplyChainEvents` | epcis | `https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld` |
+
+## Economic operators — carried by the UNTP envelope, not `characteristics`
+
+`untp:relatedParty` is an object property whose range is `untp:PartyRole`: a list of
+`{ party, role }` entries, where `role` comes from UNTP's 20-value `PartyRole` code list
+(`manufacturer`, `importer`, `distributor`, `recycler`, …). It is a property of the
+`Product`, so these fields belong on `credentialSubject`, one level above the
+`characteristics` object this profile defines.
+
+The template's flat fields therefore do not map to `characteristics` properties at all —
+they compose into envelope entries. Name and address are not separate properties: they are
+`party.name` and `party.address` of the same `Party`.
+
+| Template field | Becomes |
+|---|---|
+| `manufacturerName` | `relatedParty[role=manufacturer].party.name` |
+| `manufacturerAddress` | `relatedParty[role=manufacturer].party.address` |
+| `importerName` | `relatedParty[role=importer].party.name` |
+| `importerAddress` | `relatedParty[role=importer].party.address` |
+| `euAuthorisedRepresentative` | `relatedParty[role=serviceProvider].party` — UNTP has no dedicated authorised-representative role; state the ESPR/CPR capacity in `party.name` or a scoped identifier |
+
+Modelling these as five string properties in `characteristics` — each pointing at the bare
+`relatedParty` IRI — is wrong three times over: it collapses distinct parties onto one
+property, discards the role that distinguishes them, and supplies a string where an object
+is required. Every product category carries the same economic operators, so this composition
+is profile-wide, not steel-specific.
 
 ## Coined — no existing vocabulary names the concept
 

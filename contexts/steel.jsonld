@@ -40,12 +40,6 @@
       "steelGradeDesignation": {
         "@id": "https://tracepass.eu/voc/dpp/steelGradeDesignation"
       },
-      "manufacturerName": {
-        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
-      },
-      "manufacturerAddress": {
-        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
-      },
       "countryOfManufacture": {
         "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
         "@type": "xsd:string"
@@ -53,15 +47,6 @@
       "facilityId": {
         "@id": "https://tracepass.eu/voc/dpp/facilityId",
         "@type": "xsd:string"
-      },
-      "importerName": {
-        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
-      },
-      "importerAddress": {
-        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
-      },
-      "euAuthorisedRepresentative": {
-        "@id": "https://vocabulary.uncefact.org/untp/relatedParty"
       },
       "primaryMaterialType": {
         "@id": "https://tracepass.eu/voc/dpp/primaryMaterialType",

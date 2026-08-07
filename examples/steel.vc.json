@@ -48,22 +48,82 @@
       ],
       "code": "DE"
     },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Musterstahl Werke GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          },
+          "address": {
+            "type": [
+              "Address"
+            ],
+            "streetAddress": "Hüttenstraße 14",
+            "addressLocality": "Duisburg",
+            "postalCode": "47119",
+            "addressCountry": "DE"
+          }
+        }
+      },
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "importer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/5412345000176",
+          "name": "Aciers Benelux SA",
+          "registeredId": "BE0123456749",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          },
+          "address": {
+            "type": [
+              "Address"
+            ],
+            "streetAddress": "Quai des Usines 22",
+            "addressLocality": "Bruxelles",
+            "postalCode": "1000",
+            "addressCountry": "BE"
+          }
+        }
+      }
+    ],
     "characteristics": {
-      "batchLotNumber": "SAMPLE",
+      "batchLotNumber": "HEAT-2026-04417",
       "productType": "iron_primary",
-      "productName": "SAMPLE",
-      "cnCode": "SAMPLE",
+      "productName": "Hot-rolled structural steel coil S355J2+N",
+      "cnCode": "72081000",
       "steelGradeDesignation": {},
-      "manufacturerName": "SAMPLE",
-      "manufacturerAddress": "SAMPLE",
-      "facilityId": "SAMPLE",
+      "facilityId": "DE-CBAM-INST-000417",
       "chemicalComposition": [],
       "yieldStrengthMpa": 355,
       "tensileStrengthMpa": 1.2,
       "elongationPct": 1.2,
       "impactEnergy": {},
       "productionRoute": "BF-BOF",
-      "heatNumber": "SAMPLE",
+      "heatNumber": "HEAT-2026-04417",
       "heatTreatment": "as_rolled",
       "reductionAgent": "coke",
       "scope1DirectEmissions": 1.2,

@@ -32,7 +32,11 @@ The governing rule: **only coin a `tracepass:` term for a concept no established
 already names.** Coining a term that belongs to GS1, QUDT, schema.org or UNTP would be
 vendor lock-in dressed as a standard. Every context here reuses:
 
-- **UNTP** for the product envelope and economic operators (`relatedParty`).
+- **UNTP** for the product envelope and economic operators. Every party — manufacturer,
+  importer, authorised representative — is a `relatedParty` entry on `credentialSubject`,
+  never a property of `characteristics`: `untp:relatedParty` takes `{ party, role }` objects
+  with `role` from UNTP's `PartyRole` code list, and one organisation's name and address are
+  `party.name` and `party.address` of a single `Party`, not two fields.
 - **GS1** for GTIN and batch/lot identifiers.
 - **schema.org** for generic product attributes.
 - **QUDT** for units — including on coined properties. A steel yield strength gets a

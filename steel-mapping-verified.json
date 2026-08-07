@@ -1,628 +1,638 @@
 {
- "category": "steel",
- "fields": [
-  {
-   "key": "globalUniqueId",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/globalUniqueId",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "gtin",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "https://ref.gs1.org/voc/gtin",
-   "vocabulary": "gs1"
-  },
-  {
-   "key": "batchLotNumber",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/batchLotNumber",
-   "owner": "32023R0988"
-  },
-  {
-   "key": "serialNumber",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/serialNumber",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "productType",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/productType",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "productName",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/productName",
-   "owner": "32023R0988"
-  },
-  {
-   "key": "cnCode",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "http://data.europa.eu/xsp/cn2024/{code}0080",
-   "vocabulary": "eurostat-cn"
-  },
-  {
-   "key": "steelGradeDesignation",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/steelGradeDesignation",
-   "owner": null
-  },
-  {
-   "key": "manufacturerName",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
-   "vocabulary": "untp"
-  },
-  {
-   "key": "manufacturerAddress",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
-   "vocabulary": "untp"
-  },
-  {
-   "key": "countryOfManufacture",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/countryOfManufacture",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "facilityId",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/facilityId",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "importerName",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
-   "vocabulary": "untp"
-  },
-  {
-   "key": "importerAddress",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
-   "vocabulary": "untp"
-  },
-  {
-   "key": "euAuthorisedRepresentative",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
-   "vocabulary": "untp"
-  },
-  {
-   "key": "primaryMaterialType",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/primaryMaterialType",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "chemicalComposition",
-   "dataType": "array",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/chemicalComposition",
-   "owner": null,
-   "unitIri": "http://qudt.org/vocab/unit/PERCENT"
-  },
-  {
-   "key": "recycledContentPercentage",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
-   "owner": "32024R1781",
-   "unitIri": "http://qudt.org/vocab/unit/PERCENT"
-  },
-  {
-   "key": "preConsumerScrapPct",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/preConsumerScrapPct",
-   "owner": "32024R1781",
-   "unitIri": "http://qudt.org/vocab/unit/PERCENT"
-  },
-  {
-   "key": "postConsumerScrapPct",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/postConsumerScrapPct",
-   "owner": "32024R1781",
-   "unitIri": "http://qudt.org/vocab/unit/PERCENT"
-  },
-  {
-   "key": "recycledContentVerification",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/recycledContentVerification",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "coatings",
-   "dataType": "array",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/coatings",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "yieldStrengthMpa",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/yieldStrengthMpa",
-   "owner": null,
-   "unitIri": "http://qudt.org/vocab/unit/MegaPA"
-  },
-  {
-   "key": "tensileStrengthMpa",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/tensileStrengthMpa",
-   "owner": null,
-   "unitIri": "http://qudt.org/vocab/unit/MegaPA"
-  },
-  {
-   "key": "elongationPct",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/elongationPct",
-   "owner": null,
-   "unitIri": "http://qudt.org/vocab/unit/PERCENT"
-  },
-  {
-   "key": "impactEnergy",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/impactEnergy",
-   "owner": null,
-   "unitIri": "http://qudt.org/vocab/unit/J"
-  },
-  {
-   "key": "hardness",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/hardness",
-   "owner": null
-  },
-  {
-   "key": "productionRoute",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/productionRoute",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "productionDate",
-   "dataType": "date",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/productionDate",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "heatNumber",
-   "dataType": "string",
-   "decision": "reuse",
-   "iri": "https://ref.gs1.org/voc/hasBatchLotNumber",
-   "vocabulary": "gs1"
-  },
-  {
-   "key": "heatTreatment",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/heatTreatment",
-   "owner": null
-  },
-  {
-   "key": "electricityGridIntensity",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/electricityGridIntensity",
-   "owner": "32023R0956",
-   "unitIri": null,
-   "unitNote": "'gCO2/kWh' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "renewableSharePct",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/renewableSharePct",
-   "owner": "32024R1781",
-   "unitIri": "http://qudt.org/vocab/unit/PERCENT"
-  },
-  {
-   "key": "electricityConsumedKwhPerT",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/electricityConsumedKwhPerT",
-   "owner": "32023R0956",
-   "unitIri": null,
-   "unitNote": "'kWh/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "rawMaterialOrigin",
-   "dataType": "array",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/rawMaterialOrigin",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "reductionAgent",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/reductionAgent",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "totalCarbonFootprint",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/totalCarbonFootprint",
-   "owner": "32024R1781",
-   "unitIri": null,
-   "unitNote": "'kgCO2e/kg' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "scope1DirectEmissions",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/scope1DirectEmissions",
-   "owner": "32023R0956",
-   "unitIri": null,
-   "unitNote": "'tCO2e/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "scope2IndirectEmissions",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/scope2IndirectEmissions",
-   "owner": "32023R0956",
-   "unitIri": null,
-   "unitNote": "'tCO2e/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "scope3UpstreamEmissions",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/scope3UpstreamEmissions",
-   "owner": "32024R1781",
-   "unitIri": null,
-   "unitNote": "'tCO2e/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "precursorEmissions",
-   "dataType": "array",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/precursorEmissions",
-   "owner": "32023R0956",
-   "unitIri": null,
-   "unitNote": "'tCO2/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "calculationMethodology",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/calculationMethodology",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "thirdPartyVerification",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/thirdPartyVerification",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "carbonIntensityClass",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/carbonIntensityClass",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "euEtsBenchmarkProduct",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/euEtsBenchmarkProduct",
-   "owner": "32003L0087"
-  },
-  {
-   "key": "dataQuality",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/dataQuality",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "cbamGoodsType",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/cbamGoodsType",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "totalSpecificEmbeddedEmissions",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/totalSpecificEmbeddedEmissions",
-   "owner": "32023R0956",
-   "unitIri": null,
-   "unitNote": "'tCO2/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "carbonPricePaid",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/carbonPricePaid",
-   "owner": "32023R0956",
-   "unitIri": null,
-   "unitNote": "'EUR/tCO2' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "cbamDeclarantEori",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/cbamDeclarantEori",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "cbamAccountNumber",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/cbamAccountNumber",
-   "owner": "32023R0956"
-  },
-  {
-   "key": "svhcPresent",
-   "dataType": "boolean",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/svhcPresent",
-   "owner": "32006R1907"
-  },
-  {
-   "key": "svhcCandidateListSubstances",
-   "dataType": "array",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances",
-   "owner": "32006R1907",
-   "itemsIri": "https://identifiers.org/cas"
-  },
-  {
-   "key": "reachRegistrationNumbers",
-   "dataType": "array",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/reachRegistrationNumbers",
-   "owner": "32006R1907",
-   "itemsIri": "https://identifiers.org/cas"
-  },
-  {
-   "key": "restrictedSubstancesCompliance",
-   "dataType": "boolean",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/restrictedSubstancesCompliance",
-   "owner": "32006R1907"
-  },
-  {
-   "key": "gwpTotal",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/gwpTotal",
-   "owner": null,
-   "unitIri": null,
-   "unitNote": "'kg CO2e' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "odp",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/odp",
-   "owner": null,
-   "unitIri": null,
-   "unitNote": "'kg CFC-11 eq.' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "ap",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/ap",
-   "owner": null,
-   "unitIri": null,
-   "unitNote": "'mol H+ eq.' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "waterUse",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/waterUse",
-   "owner": null,
-   "unitIri": null,
-   "unitNote": "'m3 world eq.' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
-  },
-  {
-   "key": "epdReferenceUri",
-   "dataType": "url",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/epdReferenceUri",
-   "owner": null
-  },
-  {
-   "key": "epdProgramOperator",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/epdProgramOperator",
-   "owner": null
-  },
-  {
-   "key": "lifecycleModules",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/lifecycleModules",
-   "owner": null
-  },
-  {
-   "key": "declaredUnit",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/declaredUnit",
-   "owner": null
-  },
-  {
-   "key": "expectedServiceLifeYears",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/expectedServiceLifeYears",
-   "owner": "32024R1781",
-   "unitIri": "http://qudt.org/vocab/unit/YR"
-  },
-  {
-   "key": "recyclabilityPercentage",
-   "dataType": "number",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage",
-   "owner": "32024R1781",
-   "unitIri": "http://qudt.org/vocab/unit/PERCENT"
-  },
-  {
-   "key": "endOfLifeInstructions",
-   "dataType": "url",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "magneticSeparability",
-   "dataType": "boolean",
-   "decision": "skip",
-   "reason": "kind=specification, not a semantic term"
-  },
-  {
-   "key": "expectedScrapGrade",
-   "dataType": "string",
-   "decision": "skip",
-   "reason": "kind=specification, not a semantic term"
-  },
-  {
-   "key": "ceMarking",
-   "dataType": "boolean",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/ceMarking",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "declarationOfPerformanceUri",
-   "dataType": "url",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/declarationOfPerformanceUri",
-   "owner": "32024R3110"
-  },
-  {
-   "key": "inspectionCertificateType",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/inspectionCertificateType",
-   "owner": null
-  },
-  {
-   "key": "inspectionCertificateUri",
-   "dataType": "url",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/inspectionCertificateUri",
-   "owner": null
-  },
-  {
-   "key": "responsibleSteelCertification",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/responsibleSteelCertification",
-   "owner": null
-  },
-  {
-   "key": "asiCertification",
-   "dataType": "object",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/asiCertification",
-   "owner": null
-  },
-  {
-   "key": "euEtsInstallationId",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/euEtsInstallationId",
-   "owner": "32003L0087"
-  },
-  {
-   "key": "isoCertifications",
-   "dataType": "array",
-   "decision": "skip",
-   "reason": "kind=specification, not a semantic term"
-  },
-  {
-   "key": "otherCertifications",
-   "dataType": "array",
-   "decision": "skip",
-   "reason": "kind=specification, not a semantic term"
-  },
-  {
-   "key": "supplyChainEvents",
-   "dataType": "array",
-   "decision": "reuse",
-   "iri": "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
-   "vocabulary": "epcis"
-  },
-  {
-   "key": "dataCarrier",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/dataCarrier",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "accessLevel",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/accessLevel",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "registryEntryUri",
-   "dataType": "url",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/registryEntryUri",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "dataFormat",
-   "dataType": "string",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/dataFormat",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "languages",
-   "dataType": "array",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/languages",
-   "owner": "32024R1781"
-  },
-  {
-   "key": "ceMarkingStatus",
-   "dataType": "enum",
-   "decision": "coin",
-   "iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus",
-   "owner": "32024R3110"
-  }
- ]
+  "category": "steel",
+  "fields": [
+    {
+      "key": "globalUniqueId",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/globalUniqueId",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "gtin",
+      "dataType": "string",
+      "decision": "reuse",
+      "iri": "https://ref.gs1.org/voc/gtin",
+      "vocabulary": "gs1"
+    },
+    {
+      "key": "batchLotNumber",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/batchLotNumber",
+      "owner": "32023R0988"
+    },
+    {
+      "key": "serialNumber",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/serialNumber",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "productType",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/productType",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "productName",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/productName",
+      "owner": "32023R0988"
+    },
+    {
+      "key": "cnCode",
+      "dataType": "string",
+      "decision": "reuse",
+      "iri": "http://data.europa.eu/xsp/cn2024/{code}0080",
+      "vocabulary": "eurostat-cn"
+    },
+    {
+      "key": "steelGradeDesignation",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/steelGradeDesignation",
+      "owner": null
+    },
+    {
+      "key": "manufacturerName",
+      "dataType": "string",
+      "decision": "envelope",
+      "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
+      "vocabulary": "untp",
+      "envelopePath": "credentialSubject.relatedParty[role=manufacturer].party.name",
+      "note": "Economic operator. Carried by the UNTP envelope, not characteristics: relatedParty takes {party, role} objects, role from untp:PartyRole."
+    },
+    {
+      "key": "manufacturerAddress",
+      "dataType": "string",
+      "decision": "envelope",
+      "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
+      "vocabulary": "untp",
+      "envelopePath": "credentialSubject.relatedParty[role=manufacturer].party.address",
+      "note": "Economic operator. Carried by the UNTP envelope, not characteristics: relatedParty takes {party, role} objects, role from untp:PartyRole."
+    },
+    {
+      "key": "countryOfManufacture",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "facilityId",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/facilityId",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "importerName",
+      "dataType": "string",
+      "decision": "envelope",
+      "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
+      "vocabulary": "untp",
+      "envelopePath": "credentialSubject.relatedParty[role=importer].party.name",
+      "note": "Economic operator. Carried by the UNTP envelope, not characteristics: relatedParty takes {party, role} objects, role from untp:PartyRole."
+    },
+    {
+      "key": "importerAddress",
+      "dataType": "string",
+      "decision": "envelope",
+      "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
+      "vocabulary": "untp",
+      "envelopePath": "credentialSubject.relatedParty[role=importer].party.address",
+      "note": "Economic operator. Carried by the UNTP envelope, not characteristics: relatedParty takes {party, role} objects, role from untp:PartyRole."
+    },
+    {
+      "key": "euAuthorisedRepresentative",
+      "dataType": "string",
+      "decision": "envelope",
+      "iri": "https://vocabulary.uncefact.org/untp/relatedParty",
+      "vocabulary": "untp",
+      "envelopePath": "credentialSubject.relatedParty[role=serviceProvider].party",
+      "note": "Economic operator. Carried by the UNTP envelope, not characteristics: relatedParty takes {party, role} objects, role from untp:PartyRole."
+    },
+    {
+      "key": "primaryMaterialType",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/primaryMaterialType",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "chemicalComposition",
+      "dataType": "array",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/chemicalComposition",
+      "owner": null,
+      "unitIri": "http://qudt.org/vocab/unit/PERCENT"
+    },
+    {
+      "key": "recycledContentPercentage",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
+      "owner": "32024R1781",
+      "unitIri": "http://qudt.org/vocab/unit/PERCENT"
+    },
+    {
+      "key": "preConsumerScrapPct",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/preConsumerScrapPct",
+      "owner": "32024R1781",
+      "unitIri": "http://qudt.org/vocab/unit/PERCENT"
+    },
+    {
+      "key": "postConsumerScrapPct",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/postConsumerScrapPct",
+      "owner": "32024R1781",
+      "unitIri": "http://qudt.org/vocab/unit/PERCENT"
+    },
+    {
+      "key": "recycledContentVerification",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/recycledContentVerification",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "coatings",
+      "dataType": "array",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/coatings",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "yieldStrengthMpa",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/yieldStrengthMpa",
+      "owner": null,
+      "unitIri": "http://qudt.org/vocab/unit/MegaPA"
+    },
+    {
+      "key": "tensileStrengthMpa",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/tensileStrengthMpa",
+      "owner": null,
+      "unitIri": "http://qudt.org/vocab/unit/MegaPA"
+    },
+    {
+      "key": "elongationPct",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/elongationPct",
+      "owner": null,
+      "unitIri": "http://qudt.org/vocab/unit/PERCENT"
+    },
+    {
+      "key": "impactEnergy",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/impactEnergy",
+      "owner": null,
+      "unitIri": "http://qudt.org/vocab/unit/J"
+    },
+    {
+      "key": "hardness",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/hardness",
+      "owner": null
+    },
+    {
+      "key": "productionRoute",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/productionRoute",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "productionDate",
+      "dataType": "date",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/productionDate",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "heatNumber",
+      "dataType": "string",
+      "decision": "reuse",
+      "iri": "https://ref.gs1.org/voc/hasBatchLotNumber",
+      "vocabulary": "gs1"
+    },
+    {
+      "key": "heatTreatment",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/heatTreatment",
+      "owner": null
+    },
+    {
+      "key": "electricityGridIntensity",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/electricityGridIntensity",
+      "owner": "32023R0956",
+      "unitIri": null,
+      "unitNote": "'gCO2/kWh' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "renewableSharePct",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/renewableSharePct",
+      "owner": "32024R1781",
+      "unitIri": "http://qudt.org/vocab/unit/PERCENT"
+    },
+    {
+      "key": "electricityConsumedKwhPerT",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/electricityConsumedKwhPerT",
+      "owner": "32023R0956",
+      "unitIri": null,
+      "unitNote": "'kWh/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "rawMaterialOrigin",
+      "dataType": "array",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/rawMaterialOrigin",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "reductionAgent",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/reductionAgent",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "totalCarbonFootprint",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/totalCarbonFootprint",
+      "owner": "32024R1781",
+      "unitIri": null,
+      "unitNote": "'kgCO2e/kg' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "scope1DirectEmissions",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/scope1DirectEmissions",
+      "owner": "32023R0956",
+      "unitIri": null,
+      "unitNote": "'tCO2e/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "scope2IndirectEmissions",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/scope2IndirectEmissions",
+      "owner": "32023R0956",
+      "unitIri": null,
+      "unitNote": "'tCO2e/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "scope3UpstreamEmissions",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/scope3UpstreamEmissions",
+      "owner": "32024R1781",
+      "unitIri": null,
+      "unitNote": "'tCO2e/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "precursorEmissions",
+      "dataType": "array",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/precursorEmissions",
+      "owner": "32023R0956",
+      "unitIri": null,
+      "unitNote": "'tCO2/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "calculationMethodology",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/calculationMethodology",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "thirdPartyVerification",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/thirdPartyVerification",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "carbonIntensityClass",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/carbonIntensityClass",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "euEtsBenchmarkProduct",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/euEtsBenchmarkProduct",
+      "owner": "32003L0087"
+    },
+    {
+      "key": "dataQuality",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/dataQuality",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "cbamGoodsType",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/cbamGoodsType",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "totalSpecificEmbeddedEmissions",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/totalSpecificEmbeddedEmissions",
+      "owner": "32023R0956",
+      "unitIri": null,
+      "unitNote": "'tCO2/t' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "carbonPricePaid",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/carbonPricePaid",
+      "owner": "32023R0956",
+      "unitIri": null,
+      "unitNote": "'EUR/tCO2' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "cbamDeclarantEori",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/cbamDeclarantEori",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "cbamAccountNumber",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/cbamAccountNumber",
+      "owner": "32023R0956"
+    },
+    {
+      "key": "svhcPresent",
+      "dataType": "boolean",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/svhcPresent",
+      "owner": "32006R1907"
+    },
+    {
+      "key": "svhcCandidateListSubstances",
+      "dataType": "array",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances",
+      "owner": "32006R1907",
+      "itemsIri": "https://identifiers.org/cas"
+    },
+    {
+      "key": "reachRegistrationNumbers",
+      "dataType": "array",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/reachRegistrationNumbers",
+      "owner": "32006R1907",
+      "itemsIri": "https://identifiers.org/cas"
+    },
+    {
+      "key": "restrictedSubstancesCompliance",
+      "dataType": "boolean",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/restrictedSubstancesCompliance",
+      "owner": "32006R1907"
+    },
+    {
+      "key": "gwpTotal",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/gwpTotal",
+      "owner": null,
+      "unitIri": null,
+      "unitNote": "'kg CO2e' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "odp",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/odp",
+      "owner": null,
+      "unitIri": null,
+      "unitNote": "'kg CFC-11 eq.' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "ap",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/ap",
+      "owner": null,
+      "unitIri": null,
+      "unitNote": "'mol H+ eq.' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "waterUse",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/waterUse",
+      "owner": null,
+      "unitIri": null,
+      "unitNote": "'m3 world eq.' has no QUDT unit (EF/EN 15804 or CBAM impact unit)"
+    },
+    {
+      "key": "epdReferenceUri",
+      "dataType": "url",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/epdReferenceUri",
+      "owner": null
+    },
+    {
+      "key": "epdProgramOperator",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/epdProgramOperator",
+      "owner": null
+    },
+    {
+      "key": "lifecycleModules",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/lifecycleModules",
+      "owner": null
+    },
+    {
+      "key": "declaredUnit",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/declaredUnit",
+      "owner": null
+    },
+    {
+      "key": "expectedServiceLifeYears",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/expectedServiceLifeYears",
+      "owner": "32024R1781",
+      "unitIri": "http://qudt.org/vocab/unit/YR"
+    },
+    {
+      "key": "recyclabilityPercentage",
+      "dataType": "number",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage",
+      "owner": "32024R1781",
+      "unitIri": "http://qudt.org/vocab/unit/PERCENT"
+    },
+    {
+      "key": "endOfLifeInstructions",
+      "dataType": "url",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "magneticSeparability",
+      "dataType": "boolean",
+      "decision": "skip",
+      "reason": "kind=specification, not a semantic term"
+    },
+    {
+      "key": "expectedScrapGrade",
+      "dataType": "string",
+      "decision": "skip",
+      "reason": "kind=specification, not a semantic term"
+    },
+    {
+      "key": "ceMarking",
+      "dataType": "boolean",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/ceMarking",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "declarationOfPerformanceUri",
+      "dataType": "url",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/declarationOfPerformanceUri",
+      "owner": "32024R3110"
+    },
+    {
+      "key": "inspectionCertificateType",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/inspectionCertificateType",
+      "owner": null
+    },
+    {
+      "key": "inspectionCertificateUri",
+      "dataType": "url",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/inspectionCertificateUri",
+      "owner": null
+    },
+    {
+      "key": "responsibleSteelCertification",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/responsibleSteelCertification",
+      "owner": null
+    },
+    {
+      "key": "asiCertification",
+      "dataType": "object",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/asiCertification",
+      "owner": null
+    },
+    {
+      "key": "euEtsInstallationId",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/euEtsInstallationId",
+      "owner": "32003L0087"
+    },
+    {
+      "key": "isoCertifications",
+      "dataType": "array",
+      "decision": "skip",
+      "reason": "kind=specification, not a semantic term"
+    },
+    {
+      "key": "otherCertifications",
+      "dataType": "array",
+      "decision": "skip",
+      "reason": "kind=specification, not a semantic term"
+    },
+    {
+      "key": "supplyChainEvents",
+      "dataType": "array",
+      "decision": "reuse",
+      "iri": "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+      "vocabulary": "epcis"
+    },
+    {
+      "key": "dataCarrier",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/dataCarrier",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "accessLevel",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/accessLevel",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "registryEntryUri",
+      "dataType": "url",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/registryEntryUri",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "dataFormat",
+      "dataType": "string",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/dataFormat",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "languages",
+      "dataType": "array",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/languages",
+      "owner": "32024R1781"
+    },
+    {
+      "key": "ceMarkingStatus",
+      "dataType": "enum",
+      "decision": "coin",
+      "iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus",
+      "owner": "32024R3110"
+    }
+  ]
 }

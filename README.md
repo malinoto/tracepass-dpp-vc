@@ -42,7 +42,7 @@ Per category:
 |---|---|
 | `contexts/<cat>.jsonld` | JSON-LD context giving every field a term |
 | `schemas/<cat>.characteristics.json` | JSON Schema for the `characteristics` object |
-| `examples/<cat>.vc.json` | A complete UNTP credential that validates |
+| `examples/<cat>.vc.json` | A UNTP credential whose `characteristics` validate against the schema |
 | `MAPPING-<cat>.md` | Every field's vocabulary owner |
 
 Plus [`profile/untp-extension.md`](./profile/untp-extension.md) — the extension approach and
@@ -69,9 +69,15 @@ owner, which is the honest state of the art for machine-readable EU product-pass
 
 ## Status
 
-**Steel is the complete reference implementation** — 80 fields, 9 reused from existing
-vocabularies, 71 coined (each naming its EU instrument), 4 skipped as non-semantic
-specifications. Its example is a schema-valid UNTP credential.
+**Steel is the reference implementation** — 75 `characteristics` properties, 4 reused from
+existing vocabularies, 71 coined (each naming its EU instrument), 4 skipped as non-semantic
+specifications, and 5 economic-operator fields carried by the UNTP envelope as
+`relatedParty` entries rather than by `characteristics`. Its example validates against the
+schema.
+
+It is not finished. The coined terms resolve under `https://tracepass.eu/voc/dpp/`, which
+is not served yet, and coined terms do not yet carry the `skos:definition` /
+`rdfs:seeAlso` citations the profile requires of them.
 
 The other eleven categories have a field-to-vocabulary mapping, but it is not yet published:
 each context is a public claim about semantics that deserves per-category verification rather
