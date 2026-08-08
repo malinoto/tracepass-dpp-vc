@@ -17,7 +17,7 @@
 //
 // Usage: node scripts/generate-examples.mjs [--out <dir>]
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -79,6 +79,13 @@ function sampleValue(f) {
 }
 
 function buildCredential(category, template, schema) {
+  // A hand-authored characteristics block always wins. Generated values are a
+  // starting point for a human; regenerating over finished work would silently
+  // replace a coherent worked product with placeholders — which is exactly what
+  // happened to steel's example once.
+  const handPath = join(root, "_work", "handwritten", `${category}.json`);
+  if (existsSync(handPath)) return envelopeFor(category, template, read(handPath));
+
   const characteristics = {};
   // Only the required set — a worked example shows what a conformant passport
   // must carry, and filling every optional field would obscure that.
@@ -89,6 +96,11 @@ function buildCredential(category, template, schema) {
     characteristics[f.key] = sampleValue(f);
   }
 
+  return envelopeFor(category, template, characteristics);
+}
+
+/** The UNTP envelope around a characteristics block. */
+function envelopeFor(category, template, characteristics) {
   return {
     "@context": [
       "https://www.w3.org/ns/credentials/v2",
