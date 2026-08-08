@@ -115,28 +115,76 @@
       "productType": "iron_primary",
       "productName": "Hot-rolled structural steel coil S355J2+N",
       "cnCode": "72081000",
-      "steelGradeDesignation": {},
+      "steelGradeDesignation": {
+        "symbolic": "S355J2+N",
+        "numeric": "1.0577",
+        "standard": "EN 10025-2"
+      },
       "facilityId": "DE-CBAM-INST-000417",
-      "chemicalComposition": [],
+      "chemicalComposition": [
+        {
+          "element": "C",
+          "weightPercent": 0.18
+        },
+        {
+          "element": "Mn",
+          "weightPercent": 1.45
+        },
+        {
+          "element": "Si",
+          "weightPercent": 0.42
+        },
+        {
+          "element": "P",
+          "weightPercent": 0.022
+        },
+        {
+          "element": "S",
+          "weightPercent": 0.014
+        }
+      ],
       "yieldStrengthMpa": 355,
-      "tensileStrengthMpa": 1.2,
-      "elongationPct": 1.2,
-      "impactEnergy": {},
+      "tensileStrengthMpa": 490,
+      "elongationPct": 22,
+      "impactEnergy": {
+        "value": 27,
+        "unit": "J",
+        "temperatureC": -20,
+        "standard": "ISO 148-1"
+      },
       "productionRoute": "BF-BOF",
       "heatNumber": "HEAT-2026-04417",
       "heatTreatment": "as_rolled",
       "reductionAgent": "coke",
-      "scope1DirectEmissions": 1.2,
-      "precursorEmissions": [],
+      "scope1DirectEmissions": 1.89,
+      "precursorEmissions": [
+        {
+          "precursor": "pig_iron",
+          "cnCode": "72011000",
+          "specificEmbeddedEmissions": 1.52,
+          "unit": "tCO2e/t"
+        },
+        {
+          "precursor": "sintered_ore",
+          "cnCode": "26011200",
+          "specificEmbeddedEmissions": 0.24,
+          "unit": "tCO2e/t"
+        }
+      ],
       "calculationMethodology": "ISO_14067",
-      "thirdPartyVerification": {},
+      "thirdPartyVerification": {
+        "verified": true,
+        "verifierName": "TÜV Rheinland Cert GmbH",
+        "accreditationId": "DE-V-0042",
+        "standard": "ISO 14065"
+      },
       "dataQuality": "actual_verified",
-      "cbamGoodsType": "simple",
-      "totalSpecificEmbeddedEmissions": 1.2,
-      "svhcPresent": true,
+      "cbamGoodsType": "complex",
+      "totalSpecificEmbeddedEmissions": 2.14,
+      "svhcPresent": false,
       "restrictedSubstancesCompliance": true,
-      "inspectionCertificateType": "2.1",
-      "inspectionCertificateUri": "https://example.com/doc",
+      "inspectionCertificateType": "3.1",
+      "inspectionCertificateUri": "https://mill.example.com/certs/HEAT-2026-04417.pdf",
       "ceMarkingStatus": "marked"
     }
   }
