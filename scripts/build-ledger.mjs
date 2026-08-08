@@ -84,6 +84,13 @@ const EXTERNAL_HINTS = [
 // when the quantity kind is not. QUDT names no EN 15804 / EF impact unit.
 const EN15804_HINTS = /^(gwp|odp|ap|ep|adpe|adpf|pocp|waterUse|wdp)/i;
 
+// Template unit string -> QUDT unit IRI. Every entry was confirmed to resolve;
+// a unit absent from the map is one QUDT does not model and stays a plain
+// string on the coined term. See scripts/qudt-units.json for the rationale.
+const qudt = read(join(root, "scripts", "qudt-units.json"));
+const qudtUnitIri = (unit) =>
+  unit && qudt.units[unit] ? `${qudt.qudtUnitBase}${qudt.units[unit]}` : null;
+
 function externalHints(key) {
   return EXTERNAL_HINTS.filter(([re]) => re.test(key)).map(([, note]) => note);
 }
@@ -132,6 +139,11 @@ for (const file of readdirSync(templatesDir).filter((f) => f.endsWith(".json")).
       // Signals, not answers.
       externalHints: externalHints(f.key),
       en15804: EN15804_HINTS.test(f.key),
+      // A verified QUDT unit IRI where QUDT models the unit. This settles the
+      // UNIT, never the quantity kind — QUDT names no quantity kind for yield
+      // strength, state of health or capacity fade, and `qudt:CO2Equivalent`
+      // is a unit, not the GWP indicator.
+      qudtUnit: qudtUnitIri(f.unit ?? null),
       typeConflict: false,
       unitConflict: false,
     });
@@ -146,7 +158,11 @@ const rows = [...byKey.values()].sort((a, b) => a.key.localeCompare(b.key));
 const open = rows.filter((r) => r.decision === "undecided");
 
 const needsJudgement = open.filter((r) => r.externalHints.length > 0);
-const unitQuestion = open.filter((r) => r.externalHints.length === 0 && r.unit);
+// A unit-bearing field whose unit QUDT models is no longer an open question:
+// coin the term, cite the recorded instrument, attach the verified unit IRI.
+// Only the ones QUDT does not model still need a unit decision.
+const unitResolved = open.filter((r) => r.externalHints.length === 0 && r.unit && r.qudtUnit);
+const unitQuestion = open.filter((r) => r.externalHints.length === 0 && r.unit && !r.qudtUnit);
 const noOwner = open.filter((r) => r.externalHints.length === 0 && !r.unit && r.instruments.length === 0);
 const mechanical = open.filter(
   (r) => r.externalHints.length === 0 && !r.unit && r.instruments.length > 0,
@@ -158,7 +174,8 @@ const summary = {
   open: open.length,
   buckets: {
     externalVocabularyCandidate: needsJudgement.length,
-    unitBearingQudtQuestion: unitQuestion.length,
+    unitResolvedByQudt: unitResolved.length,
+    unitNotModelledByQudt: unitQuestion.length,
     coinCiteRecordedInstrument: mechanical.length,
     ownerUnrecorded: noOwner.length,
   },
@@ -174,7 +191,8 @@ console.log(`  distinct keys        ${summary.distinctKeys}`);
 console.log(`  settled (steel)      ${summary.settledForSteel}`);
 console.log(`  open                 ${summary.open}`);
 console.log(`    external-vocab candidate   ${summary.buckets.externalVocabularyCandidate}  ← decide by hand`);
-console.log(`    unit-bearing (QUDT?)       ${summary.buckets.unitBearingQudtQuestion}  ← check QUDT, then decide`);
+console.log(`    unit resolved by QUDT      ${summary.buckets.unitResolvedByQudt}  ← mechanical, verified unit IRI`);
+console.log(`    unit QUDT doesn't model    ${summary.buckets.unitNotModelledByQudt}  ← self-declare the unit`);
 console.log(`    coin + cite instrument     ${summary.buckets.coinCiteRecordedInstrument}  ← mechanical, spot-check`);
 console.log(`    owner unrecorded           ${summary.buckets.ownerUnrecorded}  ← name the standard`);
 console.log(`  keys in 2+ categories ${summary.multiCategoryKeys}`);
