@@ -7,7 +7,6 @@
       "tracepass": "https://tracepass.eu/voc/dpp/",
       "untp": "https://vocabulary.uncefact.org/untp/",
       "gs1": "https://ref.gs1.org/voc/",
-      "schema": "https://schema.org/",
       "qudt": "http://qudt.org/vocab/unit/",
       "cas": "https://identifiers.org/cas:",
       "xsd": "http://www.w3.org/2001/XMLSchema#",

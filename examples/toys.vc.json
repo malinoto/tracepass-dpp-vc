@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/toys/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "Toys — worked example",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1 Global Trade Item Number"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "toys",
+        "name": "Toys"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Example Manufacturer GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          }
+        }
+      }
+    ],
+    "characteristics": {
+      "productName": "Wooden rainbow stacking rings, 7 pieces",
+      "modelNumber": "WS-RING-07",
+      "batchLotNumber": "LOT-2026-0612",
+      "ceMarking": true,
+      "declarationOfConformityUrl": "https://example.com/doc/DoC-WS-RING-07.pdf",
+      "intendedAgeGroup": "12_36m",
+      "safetyWarnings": [
+        "not_under_36m"
+      ],
+      "en71TestResults": {
+        "en71_1_mechanical": "pass",
+        "en71_2_flammability": "pass",
+        "en71_3_migration": "pass",
+        "testHouse": "TÜV Rheinland LGA Products GmbH",
+        "reportNumber": "21234567-001",
+        "testDate": "2026-05-18"
+      },
+      "svhcPresent": false,
+      "phthalateCompliant": true,
+      "heavyMetalMigration": {
+        "lead": 0.8,
+        "cadmium": 0.3,
+        "chromiumVI": 0.02,
+        "unit": "mg/kg",
+        "limitStandard": "EN 71-3 category III"
+      },
+      "ceMarkingStatus": "marked"
+    }
+  }
+}

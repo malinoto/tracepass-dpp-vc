@@ -1,0 +1,707 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/packaging/v1.json",
+  "title": "Packaging — DPP characteristics",
+  "description": "Field specifications for the Packaging Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "totalMaterialCount",
+    "isMultiMaterial",
+    "pfasPresent",
+    "heavyMetalsSumPpm",
+    "issuerName",
+    "issueDate",
+    "conformsToArticles",
+    "retentionPeriodYears",
+    "accessTier"
+  ],
+  "properties": {
+    "gtin": {
+      "type": "string",
+      "title": "GTIN",
+      "description": "Global Trade Item Number assigned to the packaging unit.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex VII",
+      "x-iri": "https://ref.gs1.org/voc/gtin"
+    },
+    "packagingType": {
+      "type": "string",
+      "title": "Packaging Type",
+      "description": "Classification of packaging by function: sales, grouped, transport, e-commerce, or reusable.",
+      "enum": [
+        "sales",
+        "grouped",
+        "transport",
+        "eCommerce",
+        "reusable"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 3",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingType"
+    },
+    "packagingFormat": {
+      "type": "string",
+      "title": "Packaging Format",
+      "description": "Physical form of the packaging (bottle, box, bag, pouch, can, carton, tray, blister, wrapper, etc.).",
+      "enum": [
+        "bottle",
+        "box",
+        "bag",
+        "pouch",
+        "can",
+        "carton",
+        "tray",
+        "blister",
+        "wrapper",
+        "tube",
+        "jar",
+        "barrel",
+        "pallet",
+        "other"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex VII",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingFormat"
+    },
+    "packagingWeight": {
+      "type": "number",
+      "title": "Packaging Weight",
+      "description": "Total weight of the empty packaging in grams.",
+      "x-unit": "g",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex VII",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingWeight"
+    },
+    "packagingVolume": {
+      "type": "number",
+      "title": "Packaging Volume",
+      "description": "Total volume capacity of the packaging in millilitres.",
+      "x-unit": "mL",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliL",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex VII",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingVolume"
+    },
+    "isReusable": {
+      "type": "boolean",
+      "title": "Is Reusable",
+      "description": "Whether the packaging is designed and intended for reuse.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/isReusable"
+    },
+    "isSingleUse": {
+      "type": "boolean",
+      "title": "Is Single Use",
+      "description": "Whether the packaging is intended for single use only.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/isSingleUse"
+    },
+    "materialType": {
+      "type": "string",
+      "title": "Material Type",
+      "description": "Primary material of the packaging component.",
+      "enum": [
+        "PET",
+        "HDPE",
+        "PVC",
+        "LDPE",
+        "PP",
+        "PS",
+        "aluminium",
+        "steel",
+        "glass",
+        "paper",
+        "cardboard",
+        "wood",
+        "textile",
+        "ceramic",
+        "composite",
+        "biodegradablePlastic"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5, Annex VII",
+      "x-iri": "https://tracepass.eu/voc/dpp/materialType"
+    },
+    "materialCode": {
+      "type": "string",
+      "title": "Material Code",
+      "description": "Harmonized material identification code per Commission implementing act.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5",
+      "x-iri": "https://tracepass.eu/voc/dpp/materialCode"
+    },
+    "weightPercent": {
+      "type": "number",
+      "title": "Weight Percent",
+      "description": "Percentage by weight of this material component relative to total packaging weight.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex VII",
+      "x-iri": "https://tracepass.eu/voc/dpp/weightPercent"
+    },
+    "componentName": {
+      "type": "string",
+      "title": "Component Name",
+      "description": "Name of the packaging component (e.g. cap, body, label, sleeve).",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex VII",
+      "x-iri": "https://tracepass.eu/voc/dpp/componentName"
+    },
+    "isContactSensitive": {
+      "type": "boolean",
+      "title": "Is Contact Sensitive",
+      "description": "Whether this material component is in direct contact with sensitive products (e.g. food, pharma).",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/isContactSensitive"
+    },
+    "totalMaterialCount": {
+      "type": "number",
+      "title": "Total Material Count",
+      "description": "Total number of distinct material types used in the packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex VII",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalMaterialCount"
+    },
+    "isMultiMaterial": {
+      "type": "boolean",
+      "title": "Is Multi-Material",
+      "description": "Whether the packaging consists of more than one material type.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 6",
+      "x-iri": "https://tracepass.eu/voc/dpp/isMultiMaterial"
+    },
+    "materialPictogramCode": {
+      "type": "string",
+      "title": "Material Pictogram Code",
+      "description": "Harmonized pictogram code for material identification, mandatory from August 2028.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/materialPictogramCode"
+    },
+    "performanceGrade": {
+      "type": "string",
+      "title": "Recyclability Performance Grade",
+      "description": "Recyclability grade from A (>=95%) to E. Grades D/E not marketable from 2030; C phased out by 2038.",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 6, Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/performanceGrade"
+    },
+    "recyclablePercent": {
+      "type": "number",
+      "title": "Recyclable Percent",
+      "description": "Percentage of the packaging that is recyclable by weight.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 6",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclablePercent"
+    },
+    "designForRecyclingCompliant": {
+      "type": "boolean",
+      "title": "Design for Recycling Compliant",
+      "description": "Whether the packaging meets design-for-recycling criteria per delegated acts.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 6(4)",
+      "x-iri": "https://tracepass.eu/voc/dpp/designForRecyclingCompliant"
+    },
+    "assessmentStandard": {
+      "type": "string",
+      "title": "Assessment Standard",
+      "description": "Standard or methodology used for recyclability assessment.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 6",
+      "x-iri": "https://tracepass.eu/voc/dpp/assessmentStandard"
+    },
+    "atScaleRecycling": {
+      "type": "boolean",
+      "title": "At-Scale Recycling",
+      "description": "Whether the packaging is recycled at scale (required from 2035).",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 6(6)",
+      "x-iri": "https://tracepass.eu/voc/dpp/atScaleRecycling"
+    },
+    "sortingEfficiency": {
+      "type": "number",
+      "title": "Sorting Efficiency",
+      "description": "Percentage efficiency of sorting the packaging in waste management infrastructure.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/sortingEfficiency"
+    },
+    "recyclateQuality": {
+      "type": "string",
+      "title": "Recyclate Quality",
+      "description": "Quality assessment of the recyclate output from this packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclateQuality"
+    },
+    "recycledContentMaterialType": {
+      "type": "string",
+      "title": "Recycled Content Material Type",
+      "description": "Material type for which recycled content is declared.",
+      "enum": [
+        "PET",
+        "HDPE",
+        "PP",
+        "otherPlastic",
+        "aluminium",
+        "steel",
+        "glass",
+        "paper"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentMaterialType"
+    },
+    "recycledPercent": {
+      "type": "number",
+      "title": "Recycled Content Percent",
+      "description": "Total percentage of recycled content in the material by weight.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledPercent"
+    },
+    "postConsumerPercent": {
+      "type": "number",
+      "title": "Post-Consumer Recycled Percent",
+      "description": "Percentage of post-consumer recycled content in the material.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerPercent"
+    },
+    "preConsumerPercent": {
+      "type": "number",
+      "title": "Pre-Consumer Recycled Percent",
+      "description": "Percentage of pre-consumer (post-industrial) recycled content.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerPercent"
+    },
+    "certificationScheme": {
+      "type": "string",
+      "title": "Certification Scheme",
+      "description": "Third-party certification scheme verifying recycled content claims.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7(8)",
+      "x-iri": "https://tracepass.eu/voc/dpp/certificationScheme"
+    },
+    "massBalanceApplied": {
+      "type": "boolean",
+      "title": "Mass Balance Applied",
+      "description": "Whether mass balance accounting was used for recycled content calculation.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/massBalanceApplied"
+    },
+    "sortingComponentName": {
+      "type": "string",
+      "title": "Sorting Component Name",
+      "description": "Name of the packaging component for sorting/disposal instructions.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/sortingComponentName"
+    },
+    "binDestination": {
+      "type": "string",
+      "title": "Bin Destination",
+      "description": "Which waste bin or stream this component should be disposed in.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/binDestination"
+    },
+    "pictogramUrl": {
+      "type": "string",
+      "title": "Sorting Pictogram URL",
+      "description": "URL to the harmonized sorting/disposal pictogram image for this component.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/pictogramUrl"
+    },
+    "consumerInstruction": {
+      "type": "string",
+      "title": "Consumer Instruction",
+      "description": "Instructions for the consumer on how to sort/dispose of this component.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/consumerInstruction"
+    },
+    "localizedLanguage": {
+      "type": "string",
+      "title": "Localized Language",
+      "description": "Language code for the localized sorting/disposal instructions.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/localizedLanguage"
+    },
+    "depositReturnSystemApplicable": {
+      "type": "boolean",
+      "title": "Deposit Return System Applicable",
+      "description": "Whether this packaging is subject to a deposit-return scheme (DRS).",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 50",
+      "x-iri": "https://tracepass.eu/voc/dpp/depositReturnSystemApplicable"
+    },
+    "depositReturnSystemId": {
+      "type": "string",
+      "title": "Deposit Return System ID",
+      "description": "Identifier of the deposit-return system this packaging is registered with.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 50",
+      "x-iri": "https://tracepass.eu/voc/dpp/depositReturnSystemId"
+    },
+    "minRotations": {
+      "type": "number",
+      "title": "Minimum Rotations",
+      "description": "Minimum number of reuse rotations/trips the packaging is designed for.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 11(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/minRotations"
+    },
+    "reuseSystemName": {
+      "type": "string",
+      "title": "Reuse System Name",
+      "description": "Name of the reuse system or scheme the packaging participates in.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/reuseSystemName"
+    },
+    "collectionPointsUrl": {
+      "type": "string",
+      "title": "Collection Points URL",
+      "description": "URL to a page listing collection/return points for reusable packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/collectionPointsUrl"
+    },
+    "reuseInstructions": {
+      "type": "string",
+      "title": "Reuse Instructions",
+      "description": "Instructions for the consumer on how to return or reuse the packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/reuseInstructions"
+    },
+    "substanceName": {
+      "type": "string",
+      "title": "Substance Name",
+      "description": "Name of the substance of concern present in the packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5(1), ESPR Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/substanceName"
+    },
+    "casNumber": {
+      "type": "string",
+      "title": "CAS Number",
+      "description": "Chemical Abstracts Service registry number for the substance.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/casNumber"
+    },
+    "concentrationPpm": {
+      "type": "number",
+      "title": "Concentration (ppm)",
+      "description": "Concentration of the substance in the packaging material in parts per million.",
+      "x-unit": "ppm",
+      "x-unitIri": "http://qudt.org/vocab/unit/PPM",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/concentrationPpm"
+    },
+    "maxAllowedPpm": {
+      "type": "number",
+      "title": "Maximum Allowed (ppm)",
+      "description": "Maximum allowed concentration per regulation.",
+      "x-unit": "ppm",
+      "x-unitIri": "http://qudt.org/vocab/unit/PPM",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/maxAllowedPpm"
+    },
+    "pfasPresent": {
+      "type": "boolean",
+      "title": "PFAS Present",
+      "description": "Whether per- and polyfluoroalkyl substances (PFAS) are present in the packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/pfasPresent"
+    },
+    "heavyMetalsSumPpm": {
+      "type": "number",
+      "title": "Heavy Metals Sum (ppm)",
+      "description": "Sum of lead, cadmium, mercury and hexavalent chromium concentrations. Must be <= 100 ppm.",
+      "x-unit": "ppm",
+      "x-unitIri": "http://qudt.org/vocab/unit/PPM",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5(4)",
+      "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalsSumPpm"
+    },
+    "heavyMetalsMaxPpm": {
+      "type": "number",
+      "title": "Heavy Metals Maximum Allowed (ppm)",
+      "description": "Regulatory maximum for the sum of Pb + Cd + Hg + Cr(VI). Currently 100 ppm.",
+      "x-unit": "ppm",
+      "x-unitIri": "http://qudt.org/vocab/unit/PPM",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalsMaxPpm"
+    },
+    "labelHarmonized": {
+      "type": "boolean",
+      "title": "Harmonized Label Applied",
+      "description": "Whether the packaging bears the EU harmonized labelling per PPWR Art. 12.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/labelHarmonized"
+    },
+    "materialCompositionPictogram": {
+      "type": "string",
+      "title": "Material Composition Pictogram",
+      "description": "URL or reference to the material composition pictogram on the packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/materialCompositionPictogram"
+    },
+    "bioBasedContentPercent": {
+      "type": "number",
+      "title": "Bio-Based Content Percent",
+      "description": "Voluntary declaration of bio-based content percentage in the packaging material.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 5",
+      "x-iri": "https://tracepass.eu/voc/dpp/bioBasedContentPercent"
+    },
+    "compostabilityCertified": {
+      "type": "boolean",
+      "title": "Compostability Certified",
+      "description": "Whether the packaging has been certified as compostable.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/compostabilityCertified"
+    },
+    "compostabilityStandard": {
+      "type": "string",
+      "title": "Compostability Standard",
+      "description": "Standard under which compostability was certified (e.g. EN 13432).",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/compostabilityStandard"
+    },
+    "declarationId": {
+      "type": "string",
+      "title": "Declaration of Conformity ID",
+      "description": "Unique identifier of the EU declaration of conformity for this packaging.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/declarationId"
+    },
+    "issuerName": {
+      "type": "string",
+      "title": "Issuer Name",
+      "description": "Name of the entity that issued the declaration of conformity.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/issuerName"
+    },
+    "issueDate": {
+      "type": "string",
+      "title": "Issue Date",
+      "description": "Date when the declaration of conformity was issued.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/issueDate"
+    },
+    "conformsToArticles": {
+      "type": "array",
+      "title": "Conforms to Articles",
+      "description": "List of PPWR articles/provisions the packaging conforms to.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/conformsToArticles"
+    },
+    "documentUrl": {
+      "type": "string",
+      "title": "Declaration Document URL",
+      "description": "URL to the full declaration of conformity document.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/documentUrl"
+    },
+    "dataCarrierType": {
+      "type": "string",
+      "title": "Data Carrier Type",
+      "description": "Type of data carrier on the packaging (QR code per PPWR).",
+      "enum": [
+        "QR",
+        "dataMatrix",
+        "RFID",
+        "NFC"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12, ESPR Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
+    },
+    "dataCarrierUri": {
+      "type": "string",
+      "title": "Data Carrier URI",
+      "description": "GS1 Digital Link URI encoded in the data carrier.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12, ESPR Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierUri"
+    },
+    "dataCarrierFormat": {
+      "type": "string",
+      "title": "Data Carrier Format",
+      "description": "Technical format specification of the data carrier.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierFormat"
+    },
+    "dataCarrierEncoding": {
+      "type": "string",
+      "title": "Data Carrier Encoding",
+      "description": "Character encoding used in the data carrier.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierEncoding"
+    },
+    "retentionPeriodYears": {
+      "type": "number",
+      "title": "Data Retention Period (Years)",
+      "description": "Number of years the DPP data must be retained. 5 for single-use, 10 for reusable packaging.",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/retentionPeriodYears"
+    },
+    "accessTier": {
+      "type": "string",
+      "title": "Access Tier",
+      "description": "Default data access tier for the data carrier content.",
+      "enum": [
+        "public",
+        "restricted",
+        "authority"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/accessTier"
+    },
+    "emptySpacePercent": {
+      "type": "number",
+      "title": "Empty Space Percent",
+      "description": "Percentage of empty space in the packaging relative to total volume.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/emptySpacePercent"
+    },
+    "maxAllowedEmptySpacePercent": {
+      "type": "number",
+      "title": "Maximum Allowed Empty Space Percent",
+      "description": "Maximum allowed empty space percentage. 40% for e-commerce packaging per PPWR Art. 10.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/maxAllowedEmptySpacePercent"
+    },
+    "weightOptimised": {
+      "type": "boolean",
+      "title": "Weight Optimised",
+      "description": "Whether the packaging weight has been optimised to the minimum necessary for safety and hygiene.",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/weightOptimised"
+    }
+  }
+}

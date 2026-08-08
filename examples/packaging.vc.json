@@ -1,0 +1,85 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/packaging/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "Packaging — worked example",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1 Global Trade Item Number"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "packaging",
+        "name": "Packaging"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Example Manufacturer GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          }
+        }
+      }
+    ],
+    "characteristics": {
+      "totalMaterialCount": 2,
+      "isMultiMaterial": true,
+      "pfasPresent": false,
+      "heavyMetalsSumPpm": 18,
+      "issuerName": "Silvana Home Care s.r.o.",
+      "issueDate": "2026-08-01",
+      "conformsToArticles": [
+        "Art. 5",
+        "Art. 6",
+        "Art. 11"
+      ],
+      "retentionPeriodYears": 10,
+      "accessTier": "public"
+    }
+  }
+}

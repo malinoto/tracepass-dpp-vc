@@ -1,0 +1,110 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "productName": {
+        "@id": "https://tracepass.eu/voc/dpp/productName",
+        "@type": "xsd:string"
+      },
+      "modelNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/modelNumber",
+        "@type": "xsd:string"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "gtin": {
+        "@id": "https://ref.gs1.org/voc/gtin"
+      },
+      "productImageUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/productImageUrl",
+        "@type": "xsd:anyURI"
+      },
+      "ceMarking": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarking",
+        "@type": "xsd:boolean"
+      },
+      "declarationOfConformityUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl",
+        "@type": "xsd:anyURI"
+      },
+      "intendedAgeGroup": {
+        "@id": "https://tracepass.eu/voc/dpp/intendedAgeGroup",
+        "@type": "xsd:string"
+      },
+      "safetyWarnings": {
+        "@id": "https://tracepass.eu/voc/dpp/safetyWarnings",
+        "@container": "@set"
+      },
+      "en71TestResults": {
+        "@id": "https://tracepass.eu/voc/dpp/en71TestResults"
+      },
+      "notifiedBody": {
+        "@id": "https://tracepass.eu/voc/dpp/notifiedBody",
+        "@type": "xsd:string"
+      },
+      "primaryMaterials": {
+        "@id": "https://tracepass.eu/voc/dpp/primaryMaterials",
+        "@container": "@set"
+      },
+      "svhcPresent": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcPresent",
+        "@type": "xsd:boolean"
+      },
+      "substancesOfConcern": {
+        "@id": "https://tracepass.eu/voc/dpp/substancesOfConcern",
+        "@container": "@set"
+      },
+      "phthalateCompliant": {
+        "@id": "https://tracepass.eu/voc/dpp/phthalateCompliant",
+        "@type": "xsd:boolean"
+      },
+      "heavyMetalMigration": {
+        "@id": "https://tracepass.eu/voc/dpp/heavyMetalMigration"
+      },
+      "recycledContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "recyclabilityAssessment": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityAssessment"
+      },
+      "packagingMaterial": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingMaterial",
+        "@type": "xsd:string"
+      },
+      "carbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
+        "@type": "xsd:decimal"
+      },
+      "careInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/careInstructions",
+        "@type": "xsd:string"
+      },
+      "expectedLifespan": {
+        "@id": "https://tracepass.eu/voc/dpp/expectedLifespan"
+      },
+      "disposalInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/disposalInstructions",
+        "@type": "xsd:string"
+      },
+      "countryOfManufacture": {
+        "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+        "@type": "xsd:string"
+      },
+      "ceMarkingStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarkingStatus",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

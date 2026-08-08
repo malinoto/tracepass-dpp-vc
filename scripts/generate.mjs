@@ -36,20 +36,28 @@ const byKey = new Map(ledger.fields.map((f) => [f.key, f]));
 /** CELEX -> the EUR-Lex RDF resolver. The machine identifier, not the reader's page. */
 const eurLex = (celex) => `http://publications.europa.eu/resource/celex/${celex}`;
 
-/**
- * JSON-LD `@type` for a template dataType. `url` maps to `@id` rather than a
- * literal — a URL in a credential is a reference to something, and typing it
- * `xsd:anyURI` would make it an opaque string to a consumer following links.
- */
+/** JSON-LD `@type` for a template dataType. */
 function jsonLdType(dataType) {
   switch (dataType) {
     case "number": return "xsd:decimal";
     case "boolean": return "xsd:boolean";
     case "date": return "xsd:date";
-    case "url": return "@id";
-    case "file_reference": return "@id";
-    default: return null; // string / enum / multi_enum / object / array
+    // A URL is typed xsd:anyURI rather than @id: these are references to
+    // documents (a declaration of conformity, a manual), not nodes in the
+    // graph, and typing them @id would make a processor treat each as an
+    // entity with its own identity.
+    case "url": return "xsd:anyURI";
+    case "file_reference": return "xsd:anyURI";
+    case "string":
+    case "enum": return "xsd:string";
+    // multi_enum / object / array carry no scalar type.
+    default: return null;
   }
+}
+
+/** Arrays are sets — a processor must not treat a single value as scalar. */
+function jsonLdContainer(dataType) {
+  return dataType === "array" || dataType === "multi_enum" ? "@set" : null;
 }
 
 /** JSON Schema type for a template dataType. */
@@ -89,13 +97,23 @@ function generateCategory(category, template) {
     }
     if (row.decision === "skip") continue;
 
-    const iri = row.decision === "reuse" && row.iri ? row.iri : `${VOC}${f.key}`;
-    if (row.decision === "reuse" && row.iri) reused++; else coined++;
+    const isReuse = row.decision === "reuse" && Boolean(row.iri);
+    const iri = isReuse ? row.iri : `${VOC}${f.key}`;
+    if (isReuse) reused++; else coined++;
 
     const term = { "@id": iri };
-    const t = jsonLdType(f.dataType);
-    if (t) term["@type"] = t;
-    context[f.key] = term;
+    // Only a coined term carries our typing. A reused IRI is defined by the
+    // vocabulary that owns it — asserting an xsd type on GS1's `gtin` would
+    // be this profile overriding GS1's own definition of its term.
+    if (isReuse) {
+      context[f.key] = term;
+    } else {
+      const t = jsonLdType(f.dataType);
+      if (t) term["@type"] = t;
+      const c = jsonLdContainer(f.dataType);
+      if (c) term["@container"] = c;
+      context[f.key] = term;
+    }
 
     const prop = {
       type: schemaType(f.dataType),
@@ -133,6 +151,10 @@ function generateCategory(category, template) {
     "@context": [
       "https://www.w3.org/ns/credentials/v2",
       {
+        // JSON-LD 1.1 with protected terms: a consumer that layers another
+        // context on top cannot silently redefine a term this profile pins.
+        "@version": 1.1,
+        "@protected": true,
         tracepass: VOC,
         untp: "https://vocabulary.uncefact.org/untp/",
         gs1: "https://ref.gs1.org/voc/",

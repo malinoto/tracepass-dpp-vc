@@ -1,0 +1,1213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/battery/v1.json",
+  "title": "Battery — DPP characteristics",
+  "description": "Field specifications for the Battery Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "batteryIdDmcCode",
+    "batteryPassportIdentifier",
+    "manufacturingDate",
+    "manufacturingPlace",
+    "batteryCategory",
+    "batteryWeight",
+    "batteryStatus",
+    "separateCollectionSymbol",
+    "meaningOfLabelsAndSymbols",
+    "euDeclarationOfConformity",
+    "testReportResults",
+    "ceMarking",
+    "batteryChemistry",
+    "cathodeActiveMaterials",
+    "anodeActiveMaterials",
+    "electrolyteComposition",
+    "criticalRawMaterials",
+    "hazardousSubstances",
+    "scipNotificationNumber",
+    "recycledContentCobalt",
+    "recycledContentLithium",
+    "recycledContentNickel",
+    "recycledContentLead",
+    "roleOfEndUsersInWastePrevention",
+    "informationOnSeparateCollection",
+    "dismantlingInformation",
+    "removalInformation",
+    "sparePartsInformation",
+    "safetyInformationEndOfLife",
+    "recycledContentDocumentation",
+    "batteryRemovabilityReplaceability",
+    "ratedCapacity",
+    "nominalVoltage",
+    "minimumVoltage",
+    "maximumVoltage",
+    "originalPowerCapability",
+    "maximumAllowedBatteryPower",
+    "ratioMaxPowerMaxEnergy",
+    "initialInternalResistancePack",
+    "initialInternalResistanceCell",
+    "initialInternalResistanceModule",
+    "initialSelfDischargeRate",
+    "batteryEnergyTotal",
+    "energyDensity",
+    "temperatureRangeIdleMin",
+    "temperatureRangeIdleMax",
+    "numberOfCells",
+    "cellType",
+    "dateOfServiceEntry",
+    "batteryModelIdentifier",
+    "ceMarkingStatus",
+    "extinguishingAgent",
+    "renewableContentShare",
+    "componentPartNumbers"
+  ],
+  "properties": {
+    "batteryIdDmcCode": {
+      "type": "string",
+      "title": "Battery ID DMC Code",
+      "description": "Data Matrix Code printed on the physical battery for scanning",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryIdDmcCode"
+    },
+    "batteryPassportIdentifier": {
+      "type": "string",
+      "title": "Battery Passport Identifier",
+      "description": "UUID identifying the digital battery passport document",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryPassportIdentifier"
+    },
+    "manufacturerEmail": {
+      "type": "string",
+      "title": "Manufacturer Email",
+      "description": "Contact email address of the manufacturer",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 38(7)",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturerEmail"
+    },
+    "manufacturingDate": {
+      "type": "string",
+      "title": "Manufacturing Date",
+      "description": "Date of manufacture in YYYY-MM format",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 38(6)",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingDate"
+    },
+    "manufacturingPlace": {
+      "type": "object",
+      "title": "Manufacturing Place",
+      "description": "Manufacturing facility details including name, address, country, and GPS coordinates",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 38(6)",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingPlace"
+    },
+    "batteryCategory": {
+      "type": "string",
+      "title": "Battery Category",
+      "description": "Classification of the battery per EU Regulation 2023/1542",
+      "enum": [
+        "LMT",
+        "EV",
+        "industrial_gt_2kwh",
+        "industrial_lte_2kwh",
+        "SLI",
+        "portable"
+      ],
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 1",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryCategory"
+    },
+    "batteryWeight": {
+      "type": "number",
+      "title": "Battery Weight",
+      "description": "Total weight of the battery in kilograms",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex VI Part A",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryWeight"
+    },
+    "batteryStatus": {
+      "type": "string",
+      "title": "Battery Status",
+      "description": "Current lifecycle status of the battery",
+      "enum": [
+        "original",
+        "repurposed",
+        "reused",
+        "remanufactured",
+        "waste"
+      ],
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryStatus"
+    },
+    "separateCollectionSymbol": {
+      "type": "string",
+      "title": "Separate Collection Symbol",
+      "description": "Crossed-out wheeled bin symbol indicating separate collection requirement",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 13(4)",
+      "x-iri": "https://tracepass.eu/voc/dpp/separateCollectionSymbol"
+    },
+    "cadmiumSymbol": {
+      "type": "boolean",
+      "title": "Cadmium Symbol",
+      "description": "Indicates whether battery contains cadmium above 0.002% threshold, requiring Cd symbol",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 13(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cadmiumSymbol"
+    },
+    "leadSymbol": {
+      "type": "boolean",
+      "title": "Lead Symbol",
+      "description": "Indicates whether battery contains lead above 0.004% threshold, requiring Pb symbol",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 13(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/leadSymbol"
+    },
+    "carbonFootprintLabel": {
+      "type": "string",
+      "title": "Carbon Footprint Label",
+      "description": "Image or URL of the carbon footprint label affixed to the battery",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintLabel"
+    },
+    "meaningOfLabelsAndSymbols": {
+      "type": "string",
+      "title": "Meaning of Labels and Symbols",
+      "description": "Explanation of all labels and symbols on the battery or link to documentation",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 13",
+      "x-iri": "https://tracepass.eu/voc/dpp/meaningOfLabelsAndSymbols"
+    },
+    "euDeclarationOfConformity": {
+      "type": "object",
+      "title": "EU Declaration of Conformity",
+      "description": "EU Declaration of Conformity with identification number and URL to the document",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 18",
+      "x-iri": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
+    },
+    "testReportResults": {
+      "type": "string",
+      "title": "Results of Test Reports",
+      "description": "Results of test reports performed on the battery, accessible to authorities",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 18",
+      "x-iri": "https://tracepass.eu/voc/dpp/testReportResults"
+    },
+    "ceMarking": {
+      "type": "boolean",
+      "title": "CE Marking",
+      "description": "Whether the battery bears the CE marking",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 20",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
+    },
+    "carbonFootprintTotal": {
+      "type": "number",
+      "title": "Battery Carbon Footprint — Total",
+      "description": "Total carbon footprint of the battery over its lifecycle in kg CO2 equivalent per kWh",
+      "x-unit": "kg CO2e/kWh",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintTotal"
+    },
+    "cfRawMaterialAcquisition": {
+      "type": "number",
+      "title": "CF — Raw Material Acquisition & Pre-processing",
+      "description": "Carbon footprint share from raw material acquisition and pre-processing phase",
+      "x-unit": "kg CO2e/kWh",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cfRawMaterialAcquisition"
+    },
+    "cfMainProductProduction": {
+      "type": "number",
+      "title": "CF — Main Product Production",
+      "description": "Carbon footprint share from the main battery production/assembly phase",
+      "x-unit": "kg CO2e/kWh",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cfMainProductProduction"
+    },
+    "cfDistribution": {
+      "type": "number",
+      "title": "CF — Distribution",
+      "description": "Carbon footprint share from the distribution/transport phase",
+      "x-unit": "kg CO2e/kWh",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cfDistribution"
+    },
+    "cfEndOfLifeRecycling": {
+      "type": "number",
+      "title": "CF — End of Life & Recycling",
+      "description": "Carbon footprint share from end-of-life treatment and recycling phase",
+      "x-unit": "kg CO2e/kWh",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cfEndOfLifeRecycling"
+    },
+    "carbonFootprintPerformanceClass": {
+      "type": "string",
+      "title": "Carbon Footprint Performance Class",
+      "description": "Performance class rating from A (best) to G (worst) for carbon footprint",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintPerformanceClass"
+    },
+    "carbonFootprintStudyUrl": {
+      "type": "string",
+      "title": "Carbon Footprint Study URL",
+      "description": "Web link to the publicly accessible carbon footprint study",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 7(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintStudyUrl"
+    },
+    "supplyChainDueDiligenceReport": {
+      "type": "string",
+      "title": "Supply Chain Due Diligence Report",
+      "description": "URL to the supply chain due diligence report",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 52",
+      "x-iri": "https://tracepass.eu/voc/dpp/supplyChainDueDiligenceReport"
+    },
+    "dueDiligencePolicy": {
+      "type": "string",
+      "title": "Due Diligence Policy",
+      "description": "URL to the company's due diligence policy document",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 52",
+      "x-iri": "https://tracepass.eu/voc/dpp/dueDiligencePolicy"
+    },
+    "thirdPartyAuditResults": {
+      "type": "string",
+      "title": "Third-Party Audit Results",
+      "description": "URL to third-party audit results, accessible to authorities only",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 52",
+      "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyAuditResults"
+    },
+    "batteryChemistry": {
+      "type": "string",
+      "title": "Battery Chemistry",
+      "description": "Battery chemistry type (e.g. NMC811, LFP, NCA, LTO, NMC622)",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex VI Part A",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryChemistry"
+    },
+    "cathodeActiveMaterials": {
+      "type": "array",
+      "title": "Cathode Active Materials",
+      "description": "List of cathode active materials with name and weight percentage",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cathodeActiveMaterials"
+    },
+    "anodeActiveMaterials": {
+      "type": "array",
+      "title": "Anode Active Materials",
+      "description": "List of anode active materials with name and weight percentage",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/anodeActiveMaterials"
+    },
+    "electrolyteComposition": {
+      "type": "array",
+      "title": "Electrolyte Composition",
+      "description": "List of electrolyte components with name and weight percentage",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/electrolyteComposition"
+    },
+    "criticalRawMaterials": {
+      "type": "array",
+      "title": "Critical Raw Materials",
+      "description": "Array of critical raw materials with name, weight percentage, and country of origin",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex VI Part A",
+      "x-iri": "https://tracepass.eu/voc/dpp/criticalRawMaterials"
+    },
+    "hazardousSubstances": {
+      "type": "array",
+      "title": "Hazardous Substances",
+      "description": "List of substances of very high concern (SVHC) present at >= 0.1% w/w, with CAS number, concentration, CLP classification, and location",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex VI Part A",
+      "x-iri": "https://tracepass.eu/voc/dpp/hazardousSubstances"
+    },
+    "scipNotificationNumber": {
+      "type": "string",
+      "title": "SCIP Notification Number",
+      "description": "SCIP database notification number for articles containing SVHCs",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/scipNotificationNumber"
+    },
+    "recycledContentCobalt": {
+      "type": "number",
+      "title": "Recycled Content — Cobalt",
+      "description": "Percentage of recycled cobalt in the battery",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentCobalt"
+    },
+    "recycledContentLithium": {
+      "type": "number",
+      "title": "Recycled Content — Lithium",
+      "description": "Percentage of recycled lithium in the battery",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentLithium"
+    },
+    "recycledContentNickel": {
+      "type": "number",
+      "title": "Recycled Content — Nickel",
+      "description": "Percentage of recycled nickel in the battery",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentNickel"
+    },
+    "recycledContentLead": {
+      "type": "number",
+      "title": "Recycled Content — Lead",
+      "description": "Percentage of recycled lead in the battery",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentLead"
+    },
+    "roleOfEndUsersInWastePrevention": {
+      "type": "string",
+      "title": "Role of End-Users in Waste Prevention",
+      "description": "Information on the role of end-users in contributing to waste prevention, including by responsible use and proper disposal",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 74",
+      "x-iri": "https://tracepass.eu/voc/dpp/roleOfEndUsersInWastePrevention"
+    },
+    "informationOnSeparateCollection": {
+      "type": "string",
+      "title": "Information on Separate Collection",
+      "description": "Information about separate collection requirements and available collection points",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 74",
+      "x-iri": "https://tracepass.eu/voc/dpp/informationOnSeparateCollection"
+    },
+    "dismantlingInformation": {
+      "type": "string",
+      "title": "Dismantling Information / Manual",
+      "description": "URL to dismantling manual or instructions for safe battery dismantling",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dismantlingInformation"
+    },
+    "removalInformation": {
+      "type": "string",
+      "title": "Removal Information / Manual",
+      "description": "URL to battery removal manual or instructions for safe battery removal from the product",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/removalInformation"
+    },
+    "sparePartsInformation": {
+      "type": "object",
+      "title": "Spare Parts Information",
+      "description": "Spare parts catalog with supplier contact information",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsInformation"
+    },
+    "safetyInformationEndOfLife": {
+      "type": "string",
+      "title": "Safety Information for End-of-Life",
+      "description": "Safety measures and precautions for end-of-life handling of the battery",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyInformationEndOfLife"
+    },
+    "recycledContentDocumentation": {
+      "type": "string",
+      "title": "Recycled Content Documentation",
+      "description": "Supporting documentation for recycled content claims, accessible to authorities",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentDocumentation"
+    },
+    "batteryRemovabilityReplaceability": {
+      "type": "string",
+      "title": "Battery Removability & Replaceability",
+      "description": "Whether the battery can be removed and replaced by the end-user or professional",
+      "enum": [
+        "end_user_removable",
+        "professional_removable",
+        "not_removable"
+      ],
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryRemovabilityReplaceability"
+    },
+    "ratedCapacity": {
+      "type": "number",
+      "title": "Rated Capacity",
+      "description": "Rated capacity of the battery in ampere-hours",
+      "x-unit": "Ah",
+      "x-unitIri": "http://qudt.org/vocab/unit/A-HR",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(g)",
+      "x-iri": "https://tracepass.eu/voc/dpp/ratedCapacity"
+    },
+    "nominalVoltage": {
+      "type": "number",
+      "title": "Nominal Voltage",
+      "description": "Nominal voltage of the battery in volts",
+      "x-unit": "V",
+      "x-unitIri": "http://qudt.org/vocab/unit/V",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-iri": "https://tracepass.eu/voc/dpp/nominalVoltage"
+    },
+    "minimumVoltage": {
+      "type": "number",
+      "title": "Minimum Voltage",
+      "description": "Minimum allowed voltage of the battery in volts",
+      "x-unit": "V",
+      "x-unitIri": "http://qudt.org/vocab/unit/V",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-iri": "https://tracepass.eu/voc/dpp/minimumVoltage"
+    },
+    "maximumVoltage": {
+      "type": "number",
+      "title": "Maximum Voltage",
+      "description": "Maximum allowed voltage of the battery in volts",
+      "x-unit": "V",
+      "x-unitIri": "http://qudt.org/vocab/unit/V",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumVoltage"
+    },
+    "originalPowerCapability": {
+      "type": "number",
+      "title": "Original Power Capability",
+      "description": "Original power capability of the battery in watts",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/originalPowerCapability"
+    },
+    "maximumAllowedBatteryPower": {
+      "type": "number",
+      "title": "Maximum Allowed Battery Power",
+      "description": "Maximum allowed battery power output in watts",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPower"
+    },
+    "ratioMaxPowerMaxEnergy": {
+      "type": "number",
+      "title": "Ratio Max Power / Max Energy",
+      "description": "Ratio between maximum power capability and maximum energy content",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/ratioMaxPowerMaxEnergy"
+    },
+    "initialEnergyRoundTripEfficiency": {
+      "type": "number",
+      "title": "Initial Energy Round-Trip Efficiency",
+      "description": "Initial round-trip energy efficiency as a percentage",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(n)",
+      "x-iri": "https://tracepass.eu/voc/dpp/initialEnergyRoundTripEfficiency"
+    },
+    "initialInternalResistancePack": {
+      "type": "number",
+      "title": "Initial Internal Resistance — Pack",
+      "description": "Initial internal resistance of the battery pack in ohms",
+      "x-unit": "Ohm",
+      "x-unitIri": "http://qudt.org/vocab/unit/OHM",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(o)",
+      "x-iri": "https://tracepass.eu/voc/dpp/initialInternalResistancePack"
+    },
+    "initialInternalResistanceCell": {
+      "type": "number",
+      "title": "Initial Internal Resistance — Cell",
+      "description": "Initial internal resistance per cell in ohms",
+      "x-unit": "Ohm",
+      "x-unitIri": "http://qudt.org/vocab/unit/OHM",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(o)",
+      "x-iri": "https://tracepass.eu/voc/dpp/initialInternalResistanceCell"
+    },
+    "initialInternalResistanceModule": {
+      "type": "number",
+      "title": "Initial Internal Resistance — Module",
+      "description": "Initial internal resistance per module in ohms",
+      "x-unit": "Ohm",
+      "x-unitIri": "http://qudt.org/vocab/unit/OHM",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(o)",
+      "x-iri": "https://tracepass.eu/voc/dpp/initialInternalResistanceModule"
+    },
+    "initialSelfDischargeRate": {
+      "type": "number",
+      "title": "Initial Self-Discharge Rate",
+      "description": "Initial self-discharge rate expressed as percentage per month",
+      "x-unit": "%/month",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/initialSelfDischargeRate"
+    },
+    "batteryEnergyTotal": {
+      "type": "number",
+      "title": "Battery Energy Total",
+      "description": "Total usable energy content of the battery in kWh",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryEnergyTotal"
+    },
+    "energyDensity": {
+      "type": "number",
+      "title": "Energy Density",
+      "description": "Gravimetric energy density in watt-hours per kilogram",
+      "x-unit": "Wh/kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/W-HR-PER-KiloGM",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyDensity"
+    },
+    "expectedLifetimeCycles": {
+      "type": "number",
+      "title": "Expected Lifetime — Cycles",
+      "description": "Expected number of charge-discharge cycles over the battery lifetime",
+      "x-unit": "cycles",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(j)",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedLifetimeCycles"
+    },
+    "expectedLifetimeYears": {
+      "type": "number",
+      "title": "Expected Lifetime — Years",
+      "description": "Expected calendar lifetime of the battery in years",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedLifetimeYears"
+    },
+    "expectedLifetimeReferenceConditions": {
+      "type": "string",
+      "title": "Expected Lifetime — Reference Conditions",
+      "description": "Description of the reference test conditions under which lifetime expectations were determined",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(j)",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedLifetimeReferenceConditions"
+    },
+    "capacityThresholdForExhaustion": {
+      "type": "number",
+      "title": "Capacity Threshold for Exhaustion",
+      "description": "Remaining capacity percentage below which the battery is considered exhausted",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(k)",
+      "x-iri": "https://tracepass.eu/voc/dpp/capacityThresholdForExhaustion"
+    },
+    "temperatureRangeIdleMin": {
+      "type": "number",
+      "title": "Temperature Range Idle — Min",
+      "description": "Minimum ambient temperature for idle/storage state in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(l)",
+      "x-iri": "https://tracepass.eu/voc/dpp/temperatureRangeIdleMin"
+    },
+    "temperatureRangeIdleMax": {
+      "type": "number",
+      "title": "Temperature Range Idle — Max",
+      "description": "Maximum ambient temperature for idle/storage state in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(l)",
+      "x-iri": "https://tracepass.eu/voc/dpp/temperatureRangeIdleMax"
+    },
+    "cRateRelevantCycleLifeTest": {
+      "type": "number",
+      "title": "C-Rate of Relevant Cycle-Life Test",
+      "description": "C-rate used in the cycle-life test that determined the expected lifetime",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(p)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cRateRelevantCycleLifeTest"
+    },
+    "commercialWarrantyPeriod": {
+      "type": "number",
+      "title": "Commercial Warranty Period",
+      "description": "Duration of the commercial warranty in years",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(m)",
+      "x-iri": "https://tracepass.eu/voc/dpp/commercialWarrantyPeriod"
+    },
+    "numberOfCells": {
+      "type": "number",
+      "title": "Number of Cells",
+      "description": "Total number of cells in the battery pack",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/numberOfCells"
+    },
+    "cellType": {
+      "type": "string",
+      "title": "Cell Type",
+      "description": "Physical form factor of the battery cells",
+      "enum": [
+        "cylindrical",
+        "prismatic",
+        "pouch",
+        "blade"
+      ],
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/cellType"
+    },
+    "stateOfHealth": {
+      "type": "number",
+      "title": "State of Health — SoH",
+      "description": "Current state of health of the battery as a percentage of original capacity",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/stateOfHealth"
+    },
+    "stateOfCertifiedEnergy": {
+      "type": "number",
+      "title": "State of Certified Energy — SOCE",
+      "description": "Certified energy remaining as a percentage",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/stateOfCertifiedEnergy"
+    },
+    "remainingCapacity": {
+      "type": "number",
+      "title": "Remaining Capacity",
+      "description": "Current remaining capacity of the battery in ampere-hours",
+      "x-unit": "Ah",
+      "x-unitIri": "http://qudt.org/vocab/unit/A-HR",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/remainingCapacity"
+    },
+    "remainingPowerCapability": {
+      "type": "number",
+      "title": "Remaining Power Capability",
+      "description": "Current remaining power capability of the battery in watts",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/remainingPowerCapability"
+    },
+    "remainingEnergy": {
+      "type": "number",
+      "title": "Remaining Energy",
+      "description": "Current remaining usable energy of the battery in kWh",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/remainingEnergy"
+    },
+    "currentInternalResistancePack": {
+      "type": "number",
+      "title": "Current Internal Resistance — Pack",
+      "description": "Current internal resistance of the battery pack in ohms",
+      "x-unit": "Ohm",
+      "x-unitIri": "http://qudt.org/vocab/unit/OHM",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/currentInternalResistancePack"
+    },
+    "internalResistanceIncrease": {
+      "type": "number",
+      "title": "Internal Resistance Increase",
+      "description": "Percentage increase in internal resistance compared to initial value",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/internalResistanceIncrease"
+    },
+    "capacityFade": {
+      "type": "number",
+      "title": "Capacity Fade",
+      "description": "Percentage of capacity lost compared to initial rated capacity",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/capacityFade"
+    },
+    "powerFade": {
+      "type": "number",
+      "title": "Power Fade",
+      "description": "Percentage of power capability lost compared to initial value",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/powerFade"
+    },
+    "roundTripEfficiencyFade": {
+      "type": "number",
+      "title": "Round-Trip Efficiency Fade",
+      "description": "Percentage decrease in round-trip efficiency compared to initial value",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/roundTripEfficiencyFade"
+    },
+    "evolutionOfSelfDischargeRate": {
+      "type": "number",
+      "title": "Evolution of Self-Discharge Rate",
+      "description": "Current self-discharge rate as percentage per month, showing evolution from initial",
+      "x-unit": "%/month",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/evolutionOfSelfDischargeRate"
+    },
+    "numberOfFullEquivalentChargingCycles": {
+      "type": "number",
+      "title": "Number of Full Equivalent Charging Cycles",
+      "description": "Total number of full equivalent charging cycles completed",
+      "x-unit": "cycles",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/numberOfFullEquivalentChargingCycles"
+    },
+    "numberOfChargingEvents": {
+      "type": "number",
+      "title": "Number of Charging Events",
+      "description": "Total number of charging events (partial or full) recorded",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/numberOfChargingEvents"
+    },
+    "dateOfServiceEntry": {
+      "type": "string",
+      "title": "Date of Service Entry",
+      "description": "Date when the battery was first put into service",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/dateOfServiceEntry"
+    },
+    "negativeEvents": {
+      "type": "array",
+      "title": "Negative Events",
+      "description": "Record of negative events such as deep discharge, extreme temperatures, or accidents",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/negativeEvents"
+    },
+    "currentStateOfCharge": {
+      "type": "number",
+      "title": "Current State of Charge — SoC",
+      "description": "Current state of charge of the battery as a percentage",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/currentStateOfCharge"
+    },
+    "temperatureConditionsHistorical": {
+      "type": "object",
+      "title": "Temperature Conditions Historical",
+      "description": "Historical record of temperature conditions the battery has been exposed to",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/temperatureConditionsHistorical"
+    },
+    "batteryModelIdentifier": {
+      "type": "string",
+      "title": "Battery Model Identifier",
+      "description": "Manufacturer's model or type identifier for this battery (distinct from the unique item-level identifier).",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryModelIdentifier"
+    },
+    "ceMarkingStatus": {
+      "type": "string",
+      "title": "CE Marking Status",
+      "description": "Whether the product bears CE marking and its validity",
+      "enum": [
+        "marked",
+        "pending",
+        "not_applicable"
+      ],
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 20",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
+    },
+    "extinguishingAgent": {
+      "type": "string",
+      "title": "Extinguishing Agent",
+      "description": "Suitable extinguishing agent(s) for a fire involving this battery, and the applicable fire class.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII",
+      "x-iri": "https://tracepass.eu/voc/dpp/extinguishingAgent"
+    },
+    "renewableContentShare": {
+      "type": "number",
+      "title": "Share of Renewable Content",
+      "description": "Percentage share of renewable content in the battery (Annex XIII 1(f))",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(f)",
+      "x-iri": "https://tracepass.eu/voc/dpp/renewableContentShare"
+    },
+    "roundTripEfficiencyAtHalfCycleLife": {
+      "type": "number",
+      "title": "Round-Trip Energy Efficiency at 50% of Cycle-Life",
+      "description": "Energy round-trip efficiency measured at 50% of the battery's rated cycle-life (Annex XIII 1(n) DP 37). Distinct from the t=0 measurement in initialEnergyRoundTripEfficiency.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(n)",
+      "x-iri": "https://tracepass.eu/voc/dpp/roundTripEfficiencyAtHalfCycleLife"
+    },
+    "componentPartNumbers": {
+      "type": "array",
+      "title": "Part Numbers for Components",
+      "description": "Part numbers for components subject to replacement, per Annex XIII 2(b). Structured list with component name and part number.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/componentPartNumbers"
+    },
+    "dynamicPowerCapability": {
+      "type": "number",
+      "title": "Power Capability (Dynamic, in W)",
+      "description": "In-service power capability in watts, measured dynamically per Annex XIII 4(a) DP 53. Distinct from originalPowerCapability which is the static nameplate value at manufacture.",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dynamicPowerCapability"
+    },
+    "dynamicEnergyRoundTripEfficiency": {
+      "type": "number",
+      "title": "Energy Round-Trip Efficiency (Dynamic, %)",
+      "description": "Where applicable, in-service energy round-trip efficiency percentage per Annex XIII 4(a) DP 57. Conditional for all three battery categories.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dynamicEnergyRoundTripEfficiency"
+    },
+    "dynamicRatedCapacity": {
+      "type": "number",
+      "title": "Rated Capacity (Dynamic, in Ah)",
+      "description": "In-service capacity in ampere-hours, measured dynamically per Annex XIII 4(a) DP 51. The guidance defines it as \"same as data point 11 (capacity), but now dynamic\" — so it is the same quantity as ratedCapacity (Annex XIII 1(g)) re-measured in service, not a second nameplate figure.",
+      "x-unit": "Ah",
+      "x-unitIri": "http://qudt.org/vocab/unit/A-HR",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dynamicRatedCapacity"
+    },
+    "dynamicInternalResistance": {
+      "type": "number",
+      "title": "Internal Resistance (Dynamic, in Ω)",
+      "description": "In-service internal resistance in ohms, measured dynamically per Annex XIII 4(a) DP 55. Distinct from initialInternalResistancePack (Annex XIII 1(o)), the static value at manufacture, and from currentInternalResistancePack (Annex XIII 4(b)), which is the state-of-health reading that must not be filled for EV.",
+      "x-unit": "Ohm",
+      "x-unitIri": "http://qudt.org/vocab/unit/OHM",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dynamicInternalResistance"
+    },
+    "dynamicExpectedLifetimeCycles": {
+      "type": "number",
+      "title": "Expected Lifetime (Dynamic, in cycles)",
+      "description": "Expected remaining lifetime in cycles under the battery's design reference conditions, per Annex XIII 4(a) DP 59 — the in-service re-estimate. Distinct from expectedLifetimeCycles (Annex XIII 1(j)), the design figure declared at manufacture. Excluded for non-cycle applications.",
+      "x-unit": "cycles",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dynamicExpectedLifetimeCycles"
+    },
+    "remainingRoundTripEfficiency": {
+      "type": "number",
+      "title": "Remaining Round-Trip Efficiency",
+      "description": "Where possible, the remaining energy round-trip efficiency as part of the state-of-health information per Annex XIII 4(b) DP 64. Applies to LMT batteries (mandatory); conditional for industrial; not applicable to EV.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/remainingRoundTripEfficiency"
+    },
+    "preConsumerRecycledNickelShare": {
+      "type": "number",
+      "title": "Pre-Consumer Recycled Nickel Share",
+      "description": "Percentage of Nickel from pre-consumer recycled waste in the battery's active materials. Complements the combined recycledContentNickel figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1e)",
+      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledNickelShare"
+    },
+    "preConsumerRecycledCobaltShare": {
+      "type": "number",
+      "title": "Pre-Consumer Recycled Cobalt Share",
+      "description": "Percentage of Cobalt from pre-consumer recycled waste in the battery's active materials. Complements the combined recycledContentCobalt figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1e)",
+      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledCobaltShare"
+    },
+    "preConsumerRecycledLithiumShare": {
+      "type": "number",
+      "title": "Pre-Consumer Recycled Lithium Share",
+      "description": "Percentage of Lithium from pre-consumer recycled waste in the battery's active materials. Complements the combined recycledContentLithium figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1e)",
+      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledLithiumShare"
+    },
+    "postConsumerRecycledNickelShare": {
+      "type": "number",
+      "title": "Post-Consumer Recycled Nickel Share",
+      "description": "Percentage of Nickel from post-consumer recycled waste in the battery's active materials. Complements the combined recycledContentNickel figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1e)",
+      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledNickelShare"
+    },
+    "postConsumerRecycledCobaltShare": {
+      "type": "number",
+      "title": "Post-Consumer Recycled Cobalt Share",
+      "description": "Percentage of Cobalt from post-consumer recycled waste in the battery's active materials. Complements the combined recycledContentCobalt figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1e)",
+      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledCobaltShare"
+    },
+    "postConsumerRecycledLithiumShare": {
+      "type": "number",
+      "title": "Post-Consumer Recycled Lithium Share",
+      "description": "Percentage of Lithium from post-consumer recycled waste in the battery's active materials. Complements the combined recycledContentLithium figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1e)",
+      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledLithiumShare"
+    },
+    "originalPowerCapabilityAt80Soc": {
+      "type": "number",
+      "title": "Original Power Capability at 80% SoC",
+      "description": "Power capability of the battery at 80% state of charge (Watts). Together with the 20% SoC figure forms the OriginalPowerCapability GEFEG composite required by Annex XIII 1(i).",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/originalPowerCapabilityAt80Soc"
+    },
+    "originalPowerCapabilityAt20Soc": {
+      "type": "number",
+      "title": "Original Power Capability at 20% SoC",
+      "description": "Power capability of the battery at 20% state of charge (Watts). Together with the 80% SoC figure forms the OriginalPowerCapability GEFEG composite required by Annex XIII 1(i).",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/originalPowerCapabilityAt20Soc"
+    },
+    "temperatureInformation": {
+      "type": "number",
+      "title": "Temperature Information",
+      "description": "Single Celsius temperature figure characterising the battery's thermal operating or design condition (integer, can be negative). Distinct from temperatureConditionsHistorical, which is a descriptive record of historical temperature ranges.",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (4d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/temperatureInformation"
+    },
+    "cadmiumLeadSymbolsUrl": {
+      "type": "string",
+      "title": "Cadmium and Lead Symbols URL",
+      "description": "URI linking to the artwork or documentation for the cadmium and lead chemical symbols required to be marked on the battery per Art. 13(5). Complements the cadmiumSymbol and leadSymbol boolean fields, which only indicate presence.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1s)",
+      "x-iri": "https://tracepass.eu/voc/dpp/cadmiumLeadSymbolsUrl"
+    },
+    "componentPartNumbersUrl": {
+      "type": "string",
+      "title": "Component Part Numbers URL",
+      "description": "URI linking to a list of part numbers for components and spare parts of the battery per Annex XIII 2(b). Complements the componentPartNumbers array field, which holds the structured part-number list; this URI field satisfies the GEFEG format:uri requirement.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (2b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/componentPartNumbersUrl"
+    },
+    "sparePartsSourcesUrl": {
+      "type": "string",
+      "title": "Spare Parts Sources URL",
+      "description": "URI linking to information on sources where spare parts can be obtained for the battery per Annex XIII 2(b). When present, takes precedence over the URL derived from the sparePartsInformation.catalogUrl field in the GEFEG export.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (2b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsSourcesUrl"
+    },
+    "accidentsInformationUrl": {
+      "type": "string",
+      "title": "Accidents Information URL",
+      "description": "URI linking to information on accidents relating to the battery per Annex XIII 4(d). Complements the negativeEvents array field, which holds structured event records; this URI field satisfies the GEFEG format:uri requirement.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (4d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/accidentsInformationUrl"
+    }
+  }
+}

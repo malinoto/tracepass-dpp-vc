@@ -1,0 +1,873 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/tyres/v1.json",
+  "title": "Tyres — DPP characteristics",
+  "description": "Field specifications for the Tyres Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "commercialName",
+    "tyreTypeIdentifier",
+    "tyreClass",
+    "batchLotNumber",
+    "dateOfManufactureWeekYear",
+    "dateStartOfProduction",
+    "eprelRegistrationNumber",
+    "eprelProductUrl",
+    "tyreSizeDesignation",
+    "loadCapacityIndex",
+    "loadVersion",
+    "speedCategorySymbol",
+    "tyreConstruction",
+    "tyreType",
+    "sectionWidthMm",
+    "aspectRatio",
+    "rimDiameterInches",
+    "treadDepthMm",
+    "fuelEfficiencyClass",
+    "rollingResistanceCoefficientNKn",
+    "wetGripClass",
+    "externalRollingNoiseClass",
+    "externalRollingNoiseDb",
+    "snowGrip",
+    "iceGrip",
+    "pahContentCompliant",
+    "svhcCandidateListSubstances",
+    "heavyMetalsCompliance",
+    "reachCompliance",
+    "naturalRubberDeforestationFree",
+    "minimumTreadDepthMm",
+    "warrantyPeriodYears",
+    "eltCollectionScheme",
+    "typeApprovalNumber",
+    "euro7Compliance",
+    "euTyreLabelImageUrl",
+    "declarationOfConformityUrl",
+    "reachComplianceTypeApproval",
+    "recommendedInflationPressureKpa",
+    "maximumInflationPressureKpa",
+    "maximumLoadKg",
+    "safetyWarnings"
+  ],
+  "properties": {
+    "commercialName": {
+      "type": "string",
+      "title": "Commercial Name",
+      "description": "Commercial product name or trade designation",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II (product information sheet — commercial name/trade designation)",
+      "x-iri": "https://tracepass.eu/voc/dpp/commercialName"
+    },
+    "tyreTypeIdentifier": {
+      "type": "string",
+      "title": "Tyre Type Identifier",
+      "description": "Tyre type identifier as registered in EPREL",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4 + Annex II (tyre type identifier registered in EPREL)",
+      "x-iri": "https://tracepass.eu/voc/dpp/tyreTypeIdentifier"
+    },
+    "tyreClass": {
+      "type": "string",
+      "title": "Tyre Class",
+      "description": "Tyre class: C1 (passenger car), C2 (light truck/van), C3 (heavy truck/bus)",
+      "enum": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 2 (definitions of C1/C2/C3) + scope",
+      "x-iri": "https://tracepass.eu/voc/dpp/tyreClass"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch or Serial Number",
+      "description": "Production batch code (DOT code includes week/year of manufacture)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "dateOfManufactureWeekYear": {
+      "type": "string",
+      "title": "Date of Manufacture (Week/Year)",
+      "description": "Week and year of manufacture (last 4 digits of DOT code: WWYY)",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II (product information sheet) + UNECE R30/R54 date-of-manufacture marking",
+      "x-iri": "https://tracepass.eu/voc/dpp/dateOfManufactureWeekYear"
+    },
+    "dateStartOfProduction": {
+      "type": "string",
+      "title": "Date Start of Production",
+      "description": "Date when production of this tyre type started (Week/Year)",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/dateStartOfProduction"
+    },
+    "dateEndOfProduction": {
+      "type": "string",
+      "title": "Date End of Production",
+      "description": "Date when production of this tyre type ended (Week/Year), if applicable",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/dateEndOfProduction"
+    },
+    "countryOfManufacture": {
+      "type": "string",
+      "title": "Country of Manufacture",
+      "description": "Country of manufacture (ISO 3166-1 alpha-2)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
+    },
+    "eprelRegistrationNumber": {
+      "type": "string",
+      "title": "EPREL Registration Number",
+      "description": "Registration number in the EU EPREL database",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4(2) + Art. 10 (registration in EPREL before placing on market)",
+      "x-iri": "https://tracepass.eu/voc/dpp/eprelRegistrationNumber"
+    },
+    "eprelProductUrl": {
+      "type": "string",
+      "title": "EPREL Product URL",
+      "description": "Direct URL to the product entry in EPREL",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-iri": "https://tracepass.eu/voc/dpp/eprelProductUrl"
+    },
+    "dataCarrierType": {
+      "type": "string",
+      "title": "Data Carrier Type",
+      "description": "Type of data carrier linking to the DPP (QR code, RFID, etc.)",
+      "enum": [
+        "QR code (GS1 Digital Link)",
+        "RFID",
+        "NFC",
+        "Data Matrix",
+        "Other"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
+    },
+    "passportIssuer": {
+      "type": "string",
+      "title": "Passport Issuer",
+      "description": "Entity responsible for creating and updating the DPP",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/passportIssuer"
+    },
+    "tyreSizeDesignation": {
+      "type": "string",
+      "title": "Tyre Size Designation",
+      "description": "Standard tyre size designation (width/aspect ratio + construction + rim diameter)",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II (product information sheet — tyre size designation)",
+      "x-iri": "https://tracepass.eu/voc/dpp/tyreSizeDesignation"
+    },
+    "loadCapacityIndex": {
+      "type": "number",
+      "title": "Load Capacity Index",
+      "description": "Load index number indicating maximum load-bearing capacity",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II (product information sheet — load-capacity index)",
+      "x-iri": "https://tracepass.eu/voc/dpp/loadCapacityIndex"
+    },
+    "loadVersion": {
+      "type": "string",
+      "title": "Load Version",
+      "description": "Load version designation (Standard Load / Extra Load / Reinforced)",
+      "enum": [
+        "Standard Load (SL)",
+        "Extra Load (XL)",
+        "Reinforced (RF)"
+      ],
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/loadVersion"
+    },
+    "speedCategorySymbol": {
+      "type": "string",
+      "title": "Speed Category Symbol",
+      "description": "Speed rating symbol indicating maximum speed capability",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex II (product information sheet — speed category symbol)",
+      "x-iri": "https://tracepass.eu/voc/dpp/speedCategorySymbol"
+    },
+    "speedRatingKmh": {
+      "type": "number",
+      "title": "Speed Rating (km/h)",
+      "description": "Maximum speed in km/h corresponding to speed category symbol",
+      "x-unit": "km/h",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloM-PER-HR",
+      "x-iri": "https://tracepass.eu/voc/dpp/speedRatingKmh"
+    },
+    "tyreConstruction": {
+      "type": "string",
+      "title": "Tyre Construction",
+      "description": "Tyre construction type (Radial / Diagonal / Bias-belted)",
+      "enum": [
+        "Radial (R)",
+        "Diagonal (D)",
+        "Bias-belted (B)"
+      ],
+      "x-iri": "https://tracepass.eu/voc/dpp/tyreConstruction"
+    },
+    "tyreType": {
+      "type": "string",
+      "title": "Tyre Type",
+      "description": "Usage type (Summer / Winter / All-Season / All-Terrain)",
+      "enum": [
+        "Summer",
+        "Winter",
+        "All-Season",
+        "All-Terrain"
+      ],
+      "x-iri": "https://tracepass.eu/voc/dpp/tyreType"
+    },
+    "sectionWidthMm": {
+      "type": "number",
+      "title": "Section Width (mm)",
+      "description": "Nominal section width in millimetres",
+      "x-unit": "mm",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliM",
+      "x-iri": "https://tracepass.eu/voc/dpp/sectionWidthMm"
+    },
+    "aspectRatio": {
+      "type": "number",
+      "title": "Aspect Ratio",
+      "description": "Aspect ratio (sidewall height as percentage of section width)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-iri": "https://tracepass.eu/voc/dpp/aspectRatio"
+    },
+    "rimDiameterInches": {
+      "type": "number",
+      "title": "Rim Diameter (inches)",
+      "description": "Nominal rim diameter in inches",
+      "x-unit": "inches",
+      "x-unitIri": "http://qudt.org/vocab/unit/IN",
+      "x-iri": "https://tracepass.eu/voc/dpp/rimDiameterInches"
+    },
+    "treadDepthMm": {
+      "type": "number",
+      "title": "Tread Depth (mm)",
+      "description": "New tyre tread depth in millimetres",
+      "x-unit": "mm",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliM",
+      "x-iri": "https://tracepass.eu/voc/dpp/treadDepthMm"
+    },
+    "tyreWeightKg": {
+      "type": "number",
+      "title": "Tyre Weight (kg)",
+      "description": "Weight of a single new tyre in kilograms",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/tyreWeightKg"
+    },
+    "fuelEfficiencyClass": {
+      "type": "string",
+      "title": "Fuel Efficiency Class",
+      "description": "Rolling resistance / fuel efficiency class (A to E scale, A = best)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4 + Annex I Part A (fuel-efficiency/rolling-resistance class)",
+      "x-iri": "https://tracepass.eu/voc/dpp/fuelEfficiencyClass"
+    },
+    "rollingResistanceCoefficientNKn": {
+      "type": "number",
+      "title": "Rolling Resistance Coefficient (N/kN)",
+      "description": "Rolling Resistance Coefficient (RRC) in N/kN, measured per UNECE Reg. 117",
+      "x-unit": "N/kN",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex I Part A + Annex II; measured per UNECE R117 Annex 6",
+      "x-iri": "https://tracepass.eu/voc/dpp/rollingResistanceCoefficientNKn"
+    },
+    "wetGripClass": {
+      "type": "string",
+      "title": "Wet Grip Class",
+      "description": "Wet grip braking performance class (A to E scale, A = best)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4 + Annex I Part B (wet-grip class)",
+      "x-iri": "https://tracepass.eu/voc/dpp/wetGripClass"
+    },
+    "wetGripIndex": {
+      "type": "number",
+      "title": "Wet Grip Index",
+      "description": "Wet Grip Index (G) value",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex I",
+      "x-iri": "https://tracepass.eu/voc/dpp/wetGripIndex"
+    },
+    "externalRollingNoiseClass": {
+      "type": "string",
+      "title": "External Rolling Noise Class",
+      "description": "External rolling noise class (A, B, or C)",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ],
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4 + Annex I Part C (external rolling-noise class)",
+      "x-iri": "https://tracepass.eu/voc/dpp/externalRollingNoiseClass"
+    },
+    "externalRollingNoiseDb": {
+      "type": "number",
+      "title": "External Rolling Noise (dB)",
+      "description": "External rolling noise measured value in dB(A), rounded to nearest integer",
+      "x-unit": "dB(A)",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Annex I Part C + Annex II (measured dB value); measured per UNECE R117 Annex 3",
+      "x-iri": "https://tracepass.eu/voc/dpp/externalRollingNoiseDb"
+    },
+    "snowGrip": {
+      "type": "boolean",
+      "title": "Snow Grip",
+      "description": "Whether tyre has 3PMSF (3 Peak Mountain Snow Flake) certification for severe snow conditions",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4 + Annex I (3PMSF snow-grip pictogram where applicable)",
+      "x-iri": "https://tracepass.eu/voc/dpp/snowGrip"
+    },
+    "iceGrip": {
+      "type": "boolean",
+      "title": "Ice Grip",
+      "description": "Whether tyre is certified for ice grip performance (Nordic ice conditions)",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4 + Annex I (ice-grip marking, C1 tyres, per ISO 19447)",
+      "x-iri": "https://tracepass.eu/voc/dpp/iceGrip"
+    },
+    "tyreAbrasionRateMgKm": {
+      "type": "number",
+      "title": "Tyre Abrasion Rate (mg/km)",
+      "description": "Tyre abrasion rate in mg/km (mass loss per km driven), per Euro 7 methodology",
+      "x-unit": "mg/km",
+      "x-regulation": "32024R1257",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-iri": "https://tracepass.eu/voc/dpp/tyreAbrasionRateMgKm"
+    },
+    "abrasionIndex": {
+      "type": "number",
+      "title": "Abrasion Index",
+      "description": "Abrasion index relative to reference tyre (ratio of candidate/reference abrasion)",
+      "x-regulation": "32024R1257",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-iri": "https://tracepass.eu/voc/dpp/abrasionIndex"
+    },
+    "abrasionTestMethod": {
+      "type": "string",
+      "title": "Abrasion Test Method",
+      "description": "Test method used: 'convoy_on_road' or 'laboratory_drum' per UNECE TFTA",
+      "enum": [
+        "convoy_on_road",
+        "laboratory_drum"
+      ],
+      "x-regulation": "32024R1257",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-iri": "https://tracepass.eu/voc/dpp/abrasionTestMethod"
+    },
+    "testDistanceKm": {
+      "type": "number",
+      "title": "Test Distance (km)",
+      "description": "Total distance driven during abrasion test (typically ~8000 km for convoy method)",
+      "x-unit": "km",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-iri": "https://tracepass.eu/voc/dpp/testDistanceKm"
+    },
+    "microplasticsEmissionClass": {
+      "type": "string",
+      "title": "Microplastics Emission Class",
+      "description": "Microplastics emission class (classification TBD, expected in Euro 7 implementing acts)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32024R1257",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-iri": "https://tracepass.eu/voc/dpp/microplasticsEmissionClass"
+    },
+    "mileageWarrantyKm": {
+      "type": "number",
+      "title": "Mileage Warranty (km)",
+      "description": "Manufacturer mileage/tread wear warranty in kilometres (if offered)",
+      "x-unit": "km",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-iri": "https://tracepass.eu/voc/dpp/mileageWarrantyKm"
+    },
+    "billOfMaterials": {
+      "type": "array",
+      "title": "Bill of Materials",
+      "description": "Structured list of tyre materials by weight percentage",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/billOfMaterials"
+    },
+    "totalTyreWeightKg": {
+      "type": "number",
+      "title": "Total Tyre Weight (kg)",
+      "description": "Total weight of the finished tyre",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalTyreWeightKg"
+    },
+    "naturalRubberContentPercentage": {
+      "type": "number",
+      "title": "Natural Rubber Content (%)",
+      "description": "Percentage of natural rubber (NR) by weight",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberContentPercentage"
+    },
+    "syntheticRubberContentPercentage": {
+      "type": "number",
+      "title": "Synthetic Rubber Content (%)",
+      "description": "Percentage of synthetic rubber (SBR, BR, etc.) by weight",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/syntheticRubberContentPercentage"
+    },
+    "recycledContentPercentage": {
+      "type": "number",
+      "title": "Recycled Content (%)",
+      "description": "Percentage of recycled materials in the tyre by weight",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
+    },
+    "recycledRubberContentPercentage": {
+      "type": "number",
+      "title": "Recycled Rubber Content (%)",
+      "description": "Percentage of recycled/devulcanized rubber used",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledRubberContentPercentage"
+    },
+    "recycledCarbonBlackPercentage": {
+      "type": "number",
+      "title": "Recycled Carbon Black (%)",
+      "description": "Percentage of recovered carbon black (rCB) from end-of-life tyres",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledCarbonBlackPercentage"
+    },
+    "renewableMaterialContentPercentage": {
+      "type": "number",
+      "title": "Renewable Material Content (%)",
+      "description": "Percentage of bio-based or renewable materials (e.g. natural rubber, bio-based oils)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/renewableMaterialContentPercentage"
+    },
+    "pahContentCompliant": {
+      "type": "boolean",
+      "title": "PAH Content Compliant",
+      "description": "Confirmation that extender oils comply with PAH (polycyclic aromatic hydrocarbon) limits per REACH Annex XVII Entry 50",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex XVII Entry 50 (PAH limits in extender oils/tyres)",
+      "x-iri": "https://tracepass.eu/voc/dpp/pahContentCompliant"
+    },
+    "svhcCandidateListSubstances": {
+      "type": "array",
+      "title": "SVHC Candidate List Substances",
+      "description": "Substances of Very High Concern present above 0.1% w/w threshold",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33 (SVHC in articles >0.1% w/w communication) + SCIP database notification",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances"
+    },
+    "sixPpdContent": {
+      "type": "object",
+      "title": "6PPD Content",
+      "description": "Presence and concentration of 6PPD antioxidant (under ECHA review for environmental toxicity of 6PPD-quinone)",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/sixPpdContent"
+    },
+    "heavyMetalsCompliance": {
+      "type": "boolean",
+      "title": "Heavy Metals Compliance",
+      "description": "Confirmation of compliance with heavy metal limits (lead, cadmium, mercury, chromium VI)",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex XVII",
+      "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalsCompliance"
+    },
+    "reachCompliance": {
+      "type": "boolean",
+      "title": "REACH Compliance",
+      "description": "General REACH regulation compliance confirmation",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/reachCompliance"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint (kg CO2e)",
+      "description": "Total product carbon footprint in kg CO2-equivalent (cradle-to-gate)",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "carbonFootprintMethodology": {
+      "type": "string",
+      "title": "Carbon Footprint Methodology",
+      "description": "Methodology used for carbon footprint calculation",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology"
+    },
+    "fuelSavingsOverLifetimeLiters": {
+      "type": "number",
+      "title": "Fuel Savings Over Lifetime (liters)",
+      "description": "Estimated fuel savings over tyre lifetime vs. reference E-class tyre (liters)",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-iri": "https://tracepass.eu/voc/dpp/fuelSavingsOverLifetimeLiters"
+    },
+    "co2SavingsOverLifetimeKg": {
+      "type": "number",
+      "title": "CO2 Savings Over Lifetime (kg)",
+      "description": "Estimated CO2 savings over tyre lifetime vs. reference E-class tyre (kg)",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-iri": "https://tracepass.eu/voc/dpp/co2SavingsOverLifetimeKg"
+    },
+    "naturalRubberDeforestationFree": {
+      "type": "boolean",
+      "title": "Natural Rubber Deforestation-Free",
+      "description": "Declaration that natural rubber sourcing is deforestation-free",
+      "x-regulation": "32023R1115",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-provision": "Art. 3 + Art. 4 (due-diligence statement) + Annex I (natural rubber covered)",
+      "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberDeforestationFree"
+    },
+    "naturalRubberSustainabilityCertification": {
+      "type": "string",
+      "title": "Natural Rubber Sustainability Certification",
+      "description": "Sustainability certification for natural rubber (GPSNR, FSC, PEFC, SNR-i, etc.)",
+      "x-standard": "FSC / PEFC forest-management certification (voluntary)",
+      "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberSustainabilityCertification"
+    },
+    "expectedMileageKm": {
+      "type": "number",
+      "title": "Expected Mileage (km)",
+      "description": "Expected tyre lifespan in kilometres under normal use",
+      "x-unit": "km",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedMileageKm"
+    },
+    "treadwearRating": {
+      "type": "number",
+      "title": "Treadwear Rating",
+      "description": "UTQG Treadwear rating (if applicable, primarily US but widely published)",
+      "x-iri": "https://tracepass.eu/voc/dpp/treadwearRating"
+    },
+    "minimumTreadDepthMm": {
+      "type": "number",
+      "title": "Minimum Tread Depth (mm)",
+      "description": "Legal minimum tread depth before replacement (EU standard: 1.6mm)",
+      "x-unit": "mm",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliM",
+      "x-regulation": "31989L0459",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/31989L0459",
+      "x-iri": "https://tracepass.eu/voc/dpp/minimumTreadDepthMm"
+    },
+    "warrantyPeriodYears": {
+      "type": "number",
+      "title": "Warranty Period (years)",
+      "description": "Manufacturer warranty period in years",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/warrantyPeriodYears"
+    },
+    "maxAgeRecommendationYears": {
+      "type": "number",
+      "title": "Max Age Recommendation (years)",
+      "description": "Recommended maximum tyre age regardless of tread depth",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-iri": "https://tracepass.eu/voc/dpp/maxAgeRecommendationYears"
+    },
+    "retreadable": {
+      "type": "boolean",
+      "title": "Retreadable",
+      "description": "Whether the tyre casing is designed and approved for retreading",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/retreadable"
+    },
+    "maximumRetreadCycles": {
+      "type": "number",
+      "title": "Maximum Retread Cycles",
+      "description": "Maximum number of retread cycles the casing supports",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumRetreadCycles"
+    },
+    "retreadServiceLifeExtensionKm": {
+      "type": "number",
+      "title": "Retread Service Life Extension (km)",
+      "description": "Additional service life per retread cycle in km (for retreadable tyres: ~220,000 km per cycle for truck tyres)",
+      "x-unit": "km",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-iri": "https://tracepass.eu/voc/dpp/retreadServiceLifeExtensionKm"
+    },
+    "recyclabilityPercentage": {
+      "type": "number",
+      "title": "Recyclability (%)",
+      "description": "Percentage of tyre weight recoverable through material recycling or energy recovery",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage"
+    },
+    "recyclabilityBreakdown": {
+      "type": "array",
+      "title": "Recyclability Breakdown",
+      "description": "End-of-life recovery pathways and percentages",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityBreakdown"
+    },
+    "eltCollectionScheme": {
+      "type": "string",
+      "title": "ELT Collection Scheme",
+      "description": "End-of-life tyre (ELT) collection/take-back scheme applicable",
+      "x-regulation": "32008L0098",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
+      "x-iri": "https://tracepass.eu/voc/dpp/eltCollectionScheme"
+    },
+    "disassemblyInstructionsUrl": {
+      "type": "string",
+      "title": "Disassembly Instructions URL",
+      "description": "URL to end-of-life processing instructions for recyclers",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/disassemblyInstructionsUrl"
+    },
+    "pyrolysisSuitability": {
+      "type": "boolean",
+      "title": "Pyrolysis Suitability",
+      "description": "Whether the tyre is suitable for pyrolysis recycling",
+      "x-iri": "https://tracepass.eu/voc/dpp/pyrolysisSuitability"
+    },
+    "devulcanizationSuitability": {
+      "type": "boolean",
+      "title": "Devulcanization Suitability",
+      "description": "Whether the rubber compound is suitable for devulcanization recycling",
+      "x-iri": "https://tracepass.eu/voc/dpp/devulcanizationSuitability"
+    },
+    "typeApprovalNumber": {
+      "type": "string",
+      "title": "Type Approval Number",
+      "description": "UNECE type approval number",
+      "x-iri": "https://tracepass.eu/voc/dpp/typeApprovalNumber"
+    },
+    "euro7Compliance": {
+      "type": "boolean",
+      "title": "Euro 7 Compliance",
+      "description": "Compliance status with Euro 7 tyre abrasion limits",
+      "x-regulation": "32024R1257",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-iri": "https://tracepass.eu/voc/dpp/euro7Compliance"
+    },
+    "euTyreLabelImageUrl": {
+      "type": "string",
+      "title": "EU Tyre Label Image URL",
+      "description": "URL to the official EU tyre label image",
+      "x-regulation": "32020R0740",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Art. 4",
+      "x-iri": "https://tracepass.eu/voc/dpp/euTyreLabelImageUrl"
+    },
+    "declarationOfConformityUrl": {
+      "type": "string",
+      "title": "Declaration of Conformity URL",
+      "description": "URL to EU Declaration of Conformity",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl"
+    },
+    "reachComplianceTypeApproval": {
+      "type": "boolean",
+      "title": "REACH Compliance (Type Approval)",
+      "description": "General REACH regulation compliance confirmation",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/reachComplianceTypeApproval"
+    },
+    "recommendedInflationPressureKpa": {
+      "type": "number",
+      "title": "Recommended Inflation Pressure (kPa)",
+      "description": "Recommended cold inflation pressure in kPa",
+      "x-unit": "kPa",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloPA",
+      "x-iri": "https://tracepass.eu/voc/dpp/recommendedInflationPressureKpa"
+    },
+    "maximumInflationPressureKpa": {
+      "type": "number",
+      "title": "Maximum Inflation Pressure (kPa)",
+      "description": "Maximum permissible inflation pressure in kPa",
+      "x-unit": "kPa",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloPA",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumInflationPressureKpa"
+    },
+    "maximumLoadKg": {
+      "type": "number",
+      "title": "Maximum Load (kg)",
+      "description": "Maximum load per tyre in kg (corresponding to load index)",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumLoadKg"
+    },
+    "tyrePressureMonitoringCompatible": {
+      "type": "boolean",
+      "title": "TPMS Compatible",
+      "description": "Compatibility with TPMS (Tyre Pressure Monitoring Systems)",
+      "x-regulation": "32009R0661",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R0661",
+      "x-iri": "https://tracepass.eu/voc/dpp/tyrePressureMonitoringCompatible"
+    },
+    "runFlatCapability": {
+      "type": "boolean",
+      "title": "Run-Flat Capability",
+      "description": "Whether the tyre has run-flat technology",
+      "x-iri": "https://tracepass.eu/voc/dpp/runFlatCapability"
+    },
+    "safetyWarnings": {
+      "type": "array",
+      "title": "Safety Warnings",
+      "description": "Product-specific safety warnings",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "GPSR Art. 9 (safety information/warnings & instructions to accompany the product)",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyWarnings"
+    },
+    "storageInstructions": {
+      "type": "string",
+      "title": "Storage Instructions",
+      "description": "Recommended storage conditions for unused tyres",
+      "x-iri": "https://tracepass.eu/voc/dpp/storageInstructions"
+    },
+    "dppSchemaVersion": {
+      "type": "string",
+      "title": "DPP Schema Version",
+      "description": "Version of the DPP schema used",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/dppSchemaVersion"
+    },
+    "lastUpdatedAt": {
+      "type": "string",
+      "title": "Last Updated At",
+      "description": "Timestamp of last DPP update (ISO 8601)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/lastUpdatedAt"
+    },
+    "accessLevel": {
+      "type": "string",
+      "title": "Access Rights",
+      "description": "Access level definitions (public, authorized, restricted)",
+      "enum": [
+        "public",
+        "restricted",
+        "authority"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
+    },
+    "dataFormat": {
+      "type": "string",
+      "title": "Data Format",
+      "description": "Format specification for machine-readable data",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9-10",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataFormat"
+    }
+  }
+}

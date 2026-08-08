@@ -1,0 +1,176 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/construction/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "Construction Materials — worked example",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1 Global Trade Item Number"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "construction",
+        "name": "Construction Materials"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Example Manufacturer GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          }
+        }
+      }
+    ],
+    "characteristics": {
+      "productTypeModelIdentifier": "09506000123456",
+      "batchLotNumber": "CEM-2026-0722-14",
+      "placeOfManufacture": "Zementwerk Rüdersdorf, Brandenburg, DE",
+      "productFamily": "cement",
+      "mechanicalResistanceStability": {
+        "compressiveStrength28dMpa": 48.6,
+        "strengthClass": "42,5 N",
+        "testStandard": "EN 196-1"
+      },
+      "fireSafety": {
+        "reactionToFireClass": "A1",
+        "testStandard": "EN 13501-1",
+        "note": "Inorganic binder, no organic content."
+      },
+      "hygieneHealthEnvironment": {
+        "chromiumVIContentPpm": 1.4,
+        "limitPpm": 2,
+        "reducingAgent": "Ferrous sulphate",
+        "standard": "REACH Annex XVII entry 47"
+      },
+      "safetyAccessibility": {
+        "slipResistance": "not applicable",
+        "note": "Binder supplied in bulk; not a trafficked surface."
+      },
+      "noiseProtection": {
+        "applicable": false,
+        "note": "No declared acoustic performance for a bulk binder."
+      },
+      "energyHeat": {
+        "thermalConductivityWmK": 1.4,
+        "testStandard": "EN 12664"
+      },
+      "sustainableUseNaturalResources": {
+        "clinkerFactorPercent": 82,
+        "secondaryFuelsPercent": 64
+      },
+      "gwpTotal": 686.5,
+      "gwpFossil": 682,
+      "gwpBiogenic": 3.4,
+      "gwpLuluc": 1.1,
+      "odp": 0.0000021,
+      "ap": 1.42,
+      "epFreshwater": 0.0021,
+      "epMarine": 0.38,
+      "epTerrestrial": 4.16,
+      "pocp": 0.94,
+      "adpeMinerals": 0.00042,
+      "adpfFossil": 2870,
+      "wdp": 1.86,
+      "lifeCycleModules": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "D"
+      ],
+      "recycledContent": 8,
+      "substancesOfConcern": [],
+      "durabilityServiceLife": "Binder performance is design-life dependent; declared 50 years in the reference concrete application.",
+      "repairReuseInstructions": "Hardened cementitious elements are repaired with compatible repair mortars per EN 1504.",
+      "endOfLifeInstructions": "https://example.com/docs/cem-ii-end-of-life.pdf",
+      "recyclabilityAssessment": {
+        "recyclablePercent": 92,
+        "route": "Crushing to recycled aggregate",
+        "moduleDBenefitKgCo2e": -14.2
+      },
+      "ceMarkingStatus": "marked",
+      "avcpSystemLevel": "1+",
+      "notifiedBodyNameNumber": {
+        "name": "VDZ Technology gGmbH",
+        "number": "0754"
+      },
+      "testReportReferences": [
+        "VDZ-2026-04417 (EN 196-1)",
+        "VDZ-2026-04418 (EN 196-2)"
+      ],
+      "epdVerification": {
+        "verified": true,
+        "verifier": "Institut Bauen und Umwelt e.V.",
+        "programme": "IBU",
+        "epdNumber": "EPD-IBU-2026-0417",
+        "validUntil": "2031-07-21"
+      },
+      "harmonizedStandardReference": "EN 197-1:2011",
+      "installationInstructions": "https://example.com/docs/cem-ii-handling.pdf",
+      "maintenanceGuidance": "Store dry and sealed; use within 90 days of manufacture for declared strength.",
+      "safetyDataLabelling": {
+        "signalWord": "Danger",
+        "pictograms": [
+          "GHS05",
+          "GHS07"
+        ],
+        "hazardStatements": [
+          "H315",
+          "H318",
+          "H335"
+        ],
+        "sdsUrl": "https://example.com/sds/cem-ii.pdf"
+      },
+      "intendedUseDescription": "Portland-slag cement for structural concrete, mortar and grout in general construction."
+    }
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/construction/v1.json",
+  "title": "Construction Materials — DPP characteristics",
+  "description": "Field specifications for the Construction Materials Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "productTypeModelIdentifier",
+    "batchLotNumber",
+    "placeOfManufacture",
+    "productFamily",
+    "mechanicalResistanceStability",
+    "fireSafety",
+    "hygieneHealthEnvironment",
+    "safetyAccessibility",
+    "noiseProtection",
+    "energyHeat",
+    "sustainableUseNaturalResources",
+    "gwpTotal",
+    "gwpFossil",
+    "gwpBiogenic",
+    "gwpLuluc",
+    "odp",
+    "ap",
+    "epFreshwater",
+    "epMarine",
+    "epTerrestrial",
+    "pocp",
+    "adpeMinerals",
+    "adpfFossil",
+    "wdp",
+    "lifeCycleModules",
+    "recycledContent",
+    "substancesOfConcern",
+    "durabilityServiceLife",
+    "repairReuseInstructions",
+    "endOfLifeInstructions",
+    "recyclabilityAssessment",
+    "ceMarkingStatus",
+    "avcpSystemLevel",
+    "notifiedBodyNameNumber",
+    "testReportReferences",
+    "epdVerification",
+    "harmonizedStandardReference",
+    "installationInstructions",
+    "maintenanceGuidance",
+    "safetyDataLabelling",
+    "intendedUseDescription"
+  ],
+  "properties": {
+    "productTypeModelIdentifier": {
+      "type": "string",
+      "title": "Product Type / Model Identifier",
+      "description": "GTIN identifying the product type or model",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/productTypeModelIdentifier"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch / Lot Number",
+      "description": "Batch or lot number per GS1 AI 10",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "serialNumber": {
+      "type": "string",
+      "title": "Serial Number",
+      "description": "Individual item serial number, optional per delegated act",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
+    },
+    "authorizedRepresentative": {
+      "type": "object",
+      "title": "Authorized Representative",
+      "description": "Authorized representative within the EU, if applicable",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/authorizedRepresentative"
+    },
+    "placeOfManufacture": {
+      "type": "string",
+      "title": "Place of Manufacture",
+      "description": "Location (city/country) where the product was manufactured",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/placeOfManufacture"
+    },
+    "productFamily": {
+      "type": "string",
+      "title": "Product Family",
+      "description": "Product family classification per CPR Annex VII (36 families)",
+      "enum": [
+        "cement",
+        "structural_steel",
+        "thermal_insulation",
+        "doors_windows_shutters",
+        "concrete_precast",
+        "adhesives_paints",
+        "other"
+      ],
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/productFamily"
+    },
+    "mechanicalResistanceStability": {
+      "type": "object",
+      "title": "Mechanical Resistance & Stability",
+      "description": "Compressive strength, tensile strength, and load-bearing capacity per Annex I basic requirement 1",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/mechanicalResistanceStability"
+    },
+    "fireSafety": {
+      "type": "object",
+      "title": "Fire Safety",
+      "description": "Euroclass reaction to fire (A1-F), fire resistance (REI), and external fire performance per Annex I basic requirement 2",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/fireSafety"
+    },
+    "hygieneHealthEnvironment": {
+      "type": "object",
+      "title": "Hygiene, Health & Environment",
+      "description": "Dangerous substance release, water permeability per Annex I basic requirement 3",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/hygieneHealthEnvironment"
+    },
+    "safetyAccessibility": {
+      "type": "object",
+      "title": "Safety & Accessibility",
+      "description": "Slip resistance and impact resistance per Annex I basic requirement 4",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyAccessibility"
+    },
+    "noiseProtection": {
+      "type": "object",
+      "title": "Noise Protection",
+      "description": "Sound absorption and airborne sound insulation per Annex I basic requirement 5",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/noiseProtection"
+    },
+    "energyHeat": {
+      "type": "object",
+      "title": "Energy / Heat",
+      "description": "Thermal conductivity (lambda) and thermal resistance (R-value) per Annex I basic requirement 6",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyHeat"
+    },
+    "sustainableUseNaturalResources": {
+      "type": "object",
+      "title": "Sustainable Use of Natural Resources",
+      "description": "Durability, recyclability, secondary materials content, and LCA data per Annex I basic requirement 7 (NEW in revised CPR)",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/sustainableUseNaturalResources"
+    },
+    "gwpTotal": {
+      "type": "number",
+      "title": "GWP-total (Climate Change)",
+      "description": "Total global warming potential including fossil, biogenic, and land use components",
+      "x-unit": "kg CO2e",
+      "x-standard": "EN 15804+A2 (global warming potential, total)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gwpTotal"
+    },
+    "gwpFossil": {
+      "type": "number",
+      "title": "GWP-fossil",
+      "description": "Global warming potential from fossil fuel sources",
+      "x-unit": "kg CO2e",
+      "x-standard": "EN 15804+A2 (global warming potential, fossil)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gwpFossil"
+    },
+    "gwpBiogenic": {
+      "type": "number",
+      "title": "GWP-biogenic",
+      "description": "Global warming potential from biogenic carbon sources",
+      "x-unit": "kg CO2e",
+      "x-standard": "EN 15804+A2 (global warming potential, biogenic)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gwpBiogenic"
+    },
+    "gwpLuluc": {
+      "type": "number",
+      "title": "GWP-luluc (Land Use)",
+      "description": "Global warming potential from land use and land use change",
+      "x-unit": "kg CO2e",
+      "x-standard": "EN 15804+A2 (global warming potential, land use and land-use change)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gwpLuluc"
+    },
+    "odp": {
+      "type": "number",
+      "title": "ODP (Ozone Depletion)",
+      "description": "Ozone depletion potential",
+      "x-unit": "kg CFC-11 eq.",
+      "x-standard": "EN 15804+A2 (ozone depletion potential)",
+      "x-iri": "https://tracepass.eu/voc/dpp/odp"
+    },
+    "ap": {
+      "type": "number",
+      "title": "AP (Acidification)",
+      "description": "Acidification potential of soil and water",
+      "x-unit": "mol H+ eq.",
+      "x-standard": "EN 15804+A2 (acidification potential)",
+      "x-iri": "https://tracepass.eu/voc/dpp/ap"
+    },
+    "epFreshwater": {
+      "type": "number",
+      "title": "EP-freshwater (Eutrophication)",
+      "description": "Freshwater eutrophication potential",
+      "x-unit": "kg P eq.",
+      "x-standard": "EN 15804+A2 (freshwater eutrophication potential)",
+      "x-iri": "https://tracepass.eu/voc/dpp/epFreshwater"
+    },
+    "epMarine": {
+      "type": "number",
+      "title": "EP-marine",
+      "description": "Marine eutrophication potential",
+      "x-unit": "kg N eq.",
+      "x-standard": "EN 15804+A2 (marine eutrophication potential)",
+      "x-iri": "https://tracepass.eu/voc/dpp/epMarine"
+    },
+    "epTerrestrial": {
+      "type": "number",
+      "title": "EP-terrestrial",
+      "description": "Terrestrial eutrophication potential",
+      "x-unit": "mol N eq.",
+      "x-standard": "EN 15804+A2 (terrestrial eutrophication potential)",
+      "x-iri": "https://tracepass.eu/voc/dpp/epTerrestrial"
+    },
+    "pocp": {
+      "type": "number",
+      "title": "POCP (Photochemical Ozone)",
+      "description": "Photochemical ozone creation potential (smog formation)",
+      "x-unit": "kg NMVOC eq.",
+      "x-standard": "EN 15804+A2 (photochemical ozone creation potential)",
+      "x-iri": "https://tracepass.eu/voc/dpp/pocp"
+    },
+    "adpeMinerals": {
+      "type": "number",
+      "title": "ADPE (Abiotic Depletion — Minerals)",
+      "description": "Abiotic depletion potential for minerals and metals",
+      "x-unit": "kg Sb eq.",
+      "x-standard": "EN 15804+A2 (abiotic depletion potential, minerals and metals)",
+      "x-iri": "https://tracepass.eu/voc/dpp/adpeMinerals"
+    },
+    "adpfFossil": {
+      "type": "number",
+      "title": "ADPF (Abiotic Depletion — Fossil)",
+      "description": "Abiotic depletion potential for fossil resources",
+      "x-unit": "MJ",
+      "x-unitIri": "http://qudt.org/vocab/unit/MegaJ",
+      "x-standard": "EN 15804+A2 (abiotic depletion potential, fossil resources)",
+      "x-iri": "https://tracepass.eu/voc/dpp/adpfFossil"
+    },
+    "wdp": {
+      "type": "number",
+      "title": "WDP (Water Use)",
+      "description": "Water deprivation potential",
+      "x-unit": "m3 world eq.",
+      "x-standard": "EN 15804+A2 (water deprivation potential)",
+      "x-iri": "https://tracepass.eu/voc/dpp/wdp"
+    },
+    "lifeCycleModules": {
+      "type": "array",
+      "title": "Life Cycle Modules",
+      "description": "Life cycle stages covered: A1-A3 mandatory, C1-C4 and Module D mandatory under EN 15804+A2",
+      "items": {
+        "type": "string",
+        "enum": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "B5",
+          "B6",
+          "B7",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "D"
+        ]
+      },
+      "x-standard": "EN 15804+A2 (life-cycle module definitions A1-A3, C1-C4, D)",
+      "x-iri": "https://tracepass.eu/voc/dpp/lifeCycleModules"
+    },
+    "recycledContent": {
+      "type": "number",
+      "title": "Recycled Content",
+      "description": "Percentage of recycled material content in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContent"
+    },
+    "substancesOfConcern": {
+      "type": "array",
+      "title": "Substances of Concern",
+      "description": "Substances of concern per REACH/SCIP with CAS numbers",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
+    },
+    "durabilityServiceLife": {
+      "type": "string",
+      "title": "Durability / Service Life",
+      "description": "Expected service life in years or durability class",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityServiceLife"
+    },
+    "repairReuseInstructions": {
+      "type": "string",
+      "title": "Repair / Reuse Instructions",
+      "description": "Instructions and guidance for repair and reuse of the product",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/repairReuseInstructions"
+    },
+    "endOfLifeInstructions": {
+      "type": "string",
+      "title": "End-of-Life / Demolition Instructions",
+      "description": "Instructions for end-of-life treatment and demolition/deconstruction",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
+    },
+    "recyclabilityAssessment": {
+      "type": "object",
+      "title": "Recyclability Assessment",
+      "description": "Recyclability assessment per EN 15804 Module D",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityAssessment"
+    },
+    "packagingEnvironmentalAnalysis": {
+      "type": "object",
+      "title": "Packaging Environmental Analysis",
+      "description": "Environmental analysis of product packaging materials and recyclability",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingEnvironmentalAnalysis"
+    },
+    "ceMarkingStatus": {
+      "type": "string",
+      "title": "CE Marking Status",
+      "description": "Whether the product bears CE marking and its validity",
+      "enum": [
+        "marked",
+        "pending",
+        "not_applicable"
+      ],
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Art. 13-15",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
+    },
+    "avcpSystemLevel": {
+      "type": "string",
+      "title": "AVCP System Level",
+      "description": "Assessment and Verification of Constancy of Performance system level",
+      "enum": [
+        "1+",
+        "1",
+        "2+",
+        "3",
+        "3+",
+        "4"
+      ],
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/avcpSystemLevel"
+    },
+    "notifiedBodyNameNumber": {
+      "type": "object",
+      "title": "Notified Body Name and Number",
+      "description": "Name and identification number of the Notified Body involved in conformity assessment",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/notifiedBodyNameNumber"
+    },
+    "testReportReferences": {
+      "type": "array",
+      "title": "Test / Assessment Report References",
+      "description": "URIs or references to test and assessment reports",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/testReportReferences"
+    },
+    "epdVerification": {
+      "type": "object",
+      "title": "EPD Verification",
+      "description": "Third-party Environmental Product Declaration verification, required for AVCP 3+ (NEW in revised CPR)",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/epdVerification"
+    },
+    "harmonizedStandardReference": {
+      "type": "string",
+      "title": "Harmonized Standard Reference",
+      "description": "Reference to the applicable harmonized European standard (hEN)",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/harmonizedStandardReference"
+    },
+    "eadReference": {
+      "type": "string",
+      "title": "EAD Reference",
+      "description": "European Assessment Document reference, if no harmonized standard exists",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/eadReference"
+    },
+    "installationInstructions": {
+      "type": "string",
+      "title": "Installation Instructions",
+      "description": "Instructions for proper installation of the construction product",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/installationInstructions"
+    },
+    "maintenanceGuidance": {
+      "type": "string",
+      "title": "Maintenance Guidance",
+      "description": "Guidance on maintenance and care of the product during its service life",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/maintenanceGuidance"
+    },
+    "safetyDataLabelling": {
+      "type": "object",
+      "title": "Safety Data / Hazardous Substance Labelling",
+      "description": "Safety data sheet references and hazardous substance labelling information",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyDataLabelling"
+    },
+    "warrantyInformation": {
+      "type": "object",
+      "title": "Warranty Information",
+      "description": "Product warranty details including duration and coverage",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/warrantyInformation"
+    },
+    "intendedUseDescription": {
+      "type": "string",
+      "title": "Intended Use Description",
+      "description": "Description of the intended use(s) of the construction product",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/intendedUseDescription"
+    },
+    "ceMarking": {
+      "type": "boolean",
+      "title": "CE Marking",
+      "description": "Whether the battery bears the CE marking",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Art. 13-15",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
+    }
+  }
+}

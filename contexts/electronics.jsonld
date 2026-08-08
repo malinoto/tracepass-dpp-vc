@@ -1,0 +1,649 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "productModel": {
+        "@id": "https://tracepass.eu/voc/dpp/productModel",
+        "@type": "xsd:string"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "serialNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/serialNumber",
+        "@type": "xsd:string"
+      },
+      "gtin": {
+        "@id": "https://ref.gs1.org/voc/gtin"
+      },
+      "taricCode": {
+        "@id": "https://tracepass.eu/voc/dpp/taricCode",
+        "@type": "xsd:string"
+      },
+      "productCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/productCategory",
+        "@type": "xsd:string"
+      },
+      "manufacturingDate": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingDate",
+        "@type": "xsd:date"
+      },
+      "manufacturingCountry": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingCountry",
+        "@type": "xsd:string"
+      },
+      "manufacturingPlant": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingPlant",
+        "@type": "xsd:string"
+      },
+      "euDeclarationOfConformity": {
+        "@id": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
+      },
+      "ceMarking": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarking",
+        "@type": "xsd:boolean"
+      },
+      "notifiedBodyId": {
+        "@id": "https://tracepass.eu/voc/dpp/notifiedBodyId",
+        "@type": "xsd:string"
+      },
+      "technicalDocumentationUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/technicalDocumentationUrl",
+        "@type": "xsd:anyURI"
+      },
+      "userManualUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/userManualUrl",
+        "@type": "xsd:anyURI"
+      },
+      "safetyInstructionsUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/safetyInstructionsUrl",
+        "@type": "xsd:anyURI"
+      },
+      "durabilityClass": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityClass",
+        "@type": "xsd:string"
+      },
+      "repairabilityClass": {
+        "@id": "https://tracepass.eu/voc/dpp/repairabilityClass",
+        "@type": "xsd:string"
+      },
+      "repairabilityIndex": {
+        "@id": "https://tracepass.eu/voc/dpp/repairabilityIndex",
+        "@type": "xsd:decimal"
+      },
+      "energyEfficiencyClass": {
+        "@id": "https://tracepass.eu/voc/dpp/energyEfficiencyClass",
+        "@type": "xsd:string"
+      },
+      "annualEnergyConsumption": {
+        "@id": "https://tracepass.eu/voc/dpp/annualEnergyConsumption",
+        "@type": "xsd:decimal"
+      },
+      "waterConsumption": {
+        "@id": "https://tracepass.eu/voc/dpp/waterConsumption",
+        "@type": "xsd:decimal"
+      },
+      "carbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
+        "@type": "xsd:decimal"
+      },
+      "carbonFootprintClass": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintClass",
+        "@type": "xsd:string"
+      },
+      "recycledContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "recyclabilityRate": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityRate",
+        "@type": "xsd:decimal"
+      },
+      "upgradabilityInfo": {
+        "@id": "https://tracepass.eu/voc/dpp/upgradabilityInfo",
+        "@type": "xsd:string"
+      },
+      "refurbishmentPossibility": {
+        "@id": "https://tracepass.eu/voc/dpp/refurbishmentPossibility",
+        "@type": "xsd:string"
+      },
+      "batteryEndurancePerCycle": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryEndurancePerCycle",
+        "@type": "xsd:decimal"
+      },
+      "batteryEnduranceCycles": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryEnduranceCycles",
+        "@type": "xsd:decimal"
+      },
+      "ratedBatteryCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/ratedBatteryCapacity",
+        "@type": "xsd:decimal"
+      },
+      "batteryUserReplaceable": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryUserReplaceable",
+        "@type": "xsd:boolean"
+      },
+      "repeatedFreeFallReliabilityClass": {
+        "@id": "https://tracepass.eu/voc/dpp/repeatedFreeFallReliabilityClass",
+        "@type": "xsd:string"
+      },
+      "ipRating": {
+        "@id": "https://tracepass.eu/voc/dpp/ipRating",
+        "@type": "xsd:string"
+      },
+      "disassemblyDepthScore": {
+        "@id": "https://tracepass.eu/voc/dpp/disassemblyDepthScore",
+        "@type": "xsd:decimal"
+      },
+      "fastenersScore": {
+        "@id": "https://tracepass.eu/voc/dpp/fastenersScore",
+        "@type": "xsd:decimal"
+      },
+      "toolsScore": {
+        "@id": "https://tracepass.eu/voc/dpp/toolsScore",
+        "@type": "xsd:decimal"
+      },
+      "sparePartsScore": {
+        "@id": "https://tracepass.eu/voc/dpp/sparePartsScore",
+        "@type": "xsd:decimal"
+      },
+      "softwareUpdateScore": {
+        "@id": "https://tracepass.eu/voc/dpp/softwareUpdateScore",
+        "@type": "xsd:decimal"
+      },
+      "repairInformationScore": {
+        "@id": "https://tracepass.eu/voc/dpp/repairInformationScore",
+        "@type": "xsd:decimal"
+      },
+      "dropResistanceHeight": {
+        "@id": "https://tracepass.eu/voc/dpp/dropResistanceHeight",
+        "@type": "xsd:decimal"
+      },
+      "dropResistanceTestResult": {
+        "@id": "https://tracepass.eu/voc/dpp/dropResistanceTestResult",
+        "@type": "xsd:boolean"
+      },
+      "scratchResistanceClass": {
+        "@id": "https://tracepass.eu/voc/dpp/scratchResistanceClass",
+        "@type": "xsd:decimal"
+      },
+      "batteryMinCycles80Pct": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryMinCycles80Pct",
+        "@type": "xsd:decimal"
+      },
+      "batteryCapacityRetention": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryCapacityRetention",
+        "@type": "xsd:decimal"
+      },
+      "sparePartsList": {
+        "@id": "https://tracepass.eu/voc/dpp/sparePartsList",
+        "@container": "@set"
+      },
+      "sparePartsAvailabilityYears": {
+        "@id": "https://tracepass.eu/voc/dpp/sparePartsAvailabilityYears",
+        "@type": "xsd:decimal"
+      },
+      "maxDeliveryDays": {
+        "@id": "https://tracepass.eu/voc/dpp/maxDeliveryDays",
+        "@type": "xsd:decimal"
+      },
+      "sparePartsWebsiteUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/sparePartsWebsiteUrl",
+        "@type": "xsd:anyURI"
+      },
+      "priceList": {
+        "@id": "https://tracepass.eu/voc/dpp/priceList",
+        "@type": "xsd:anyURI"
+      },
+      "osUpdateSupportYears": {
+        "@id": "https://tracepass.eu/voc/dpp/osUpdateSupportYears",
+        "@type": "xsd:decimal"
+      },
+      "securityUpdateSupportYears": {
+        "@id": "https://tracepass.eu/voc/dpp/securityUpdateSupportYears",
+        "@type": "xsd:decimal"
+      },
+      "osUpdateEndDate": {
+        "@id": "https://tracepass.eu/voc/dpp/osUpdateEndDate",
+        "@type": "xsd:date"
+      },
+      "securityUpdateEndDate": {
+        "@id": "https://tracepass.eu/voc/dpp/securityUpdateEndDate",
+        "@type": "xsd:date"
+      },
+      "firmwareAccessForRepairers": {
+        "@id": "https://tracepass.eu/voc/dpp/firmwareAccessForRepairers",
+        "@type": "xsd:boolean"
+      },
+      "dataWipeFunction": {
+        "@id": "https://tracepass.eu/voc/dpp/dataWipeFunction",
+        "@type": "xsd:boolean"
+      },
+      "dataTransferSupport": {
+        "@id": "https://tracepass.eu/voc/dpp/dataTransferSupport",
+        "@type": "xsd:boolean"
+      },
+      "psuEfficiency10": {
+        "@id": "https://tracepass.eu/voc/dpp/psuEfficiency10",
+        "@type": "xsd:decimal"
+      },
+      "psuEfficiency20": {
+        "@id": "https://tracepass.eu/voc/dpp/psuEfficiency20",
+        "@type": "xsd:decimal"
+      },
+      "psuEfficiency50": {
+        "@id": "https://tracepass.eu/voc/dpp/psuEfficiency50",
+        "@type": "xsd:decimal"
+      },
+      "psuEfficiency100": {
+        "@id": "https://tracepass.eu/voc/dpp/psuEfficiency100",
+        "@type": "xsd:decimal"
+      },
+      "psuPowerFactor": {
+        "@id": "https://tracepass.eu/voc/dpp/psuPowerFactor",
+        "@type": "xsd:decimal"
+      },
+      "psuRatedOutputPower": {
+        "@id": "https://tracepass.eu/voc/dpp/psuRatedOutputPower",
+        "@type": "xsd:decimal"
+      },
+      "idleStatePower": {
+        "@id": "https://tracepass.eu/voc/dpp/idleStatePower",
+        "@type": "xsd:decimal"
+      },
+      "activeStateEfficiency": {
+        "@id": "https://tracepass.eu/voc/dpp/activeStateEfficiency",
+        "@type": "xsd:decimal"
+      },
+      "operatingConditionsClass": {
+        "@id": "https://tracepass.eu/voc/dpp/operatingConditionsClass",
+        "@type": "xsd:string"
+      },
+      "operatingTemperatureRange": {
+        "@id": "https://tracepass.eu/voc/dpp/operatingTemperatureRange",
+        "@type": "xsd:string"
+      },
+      "productType": {
+        "@id": "https://tracepass.eu/voc/dpp/productType",
+        "@type": "xsd:string"
+      },
+      "processorSockets": {
+        "@id": "https://tracepass.eu/voc/dpp/processorSockets",
+        "@type": "xsd:decimal"
+      },
+      "installedProcessors": {
+        "@id": "https://tracepass.eu/voc/dpp/installedProcessors",
+        "@type": "xsd:decimal"
+      },
+      "memoryModules": {
+        "@id": "https://tracepass.eu/voc/dpp/memoryModules",
+        "@type": "xsd:decimal"
+      },
+      "totalMemory": {
+        "@id": "https://tracepass.eu/voc/dpp/totalMemory",
+        "@type": "xsd:decimal"
+      },
+      "storageDevices": {
+        "@id": "https://tracepass.eu/voc/dpp/storageDevices",
+        "@type": "xsd:decimal"
+      },
+      "totalStorageCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/totalStorageCapacity",
+        "@type": "xsd:decimal"
+      },
+      "powerSupplyUnits": {
+        "@id": "https://tracepass.eu/voc/dpp/powerSupplyUnits",
+        "@type": "xsd:decimal"
+      },
+      "expansionSlots": {
+        "@id": "https://tracepass.eu/voc/dpp/expansionSlots",
+        "@type": "xsd:decimal"
+      },
+      "dataStorageRemovable": {
+        "@id": "https://tracepass.eu/voc/dpp/dataStorageRemovable",
+        "@type": "xsd:boolean"
+      },
+      "memoryRemovable": {
+        "@id": "https://tracepass.eu/voc/dpp/memoryRemovable",
+        "@type": "xsd:boolean"
+      },
+      "processorRemovable": {
+        "@id": "https://tracepass.eu/voc/dpp/processorRemovable",
+        "@type": "xsd:boolean"
+      },
+      "expansionCardsRemovable": {
+        "@id": "https://tracepass.eu/voc/dpp/expansionCardsRemovable",
+        "@type": "xsd:boolean"
+      },
+      "psuRemovable": {
+        "@id": "https://tracepass.eu/voc/dpp/psuRemovable",
+        "@type": "xsd:boolean"
+      },
+      "secureDataDeletion": {
+        "@id": "https://tracepass.eu/voc/dpp/secureDataDeletion",
+        "@type": "xsd:boolean"
+      },
+      "firmwareUpdateSupport": {
+        "@id": "https://tracepass.eu/voc/dpp/firmwareUpdateSupport",
+        "@type": "xsd:boolean"
+      },
+      "ratedCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/ratedCapacity",
+        "@type": "xsd:decimal"
+      },
+      "energyEfficiencyIndex": {
+        "@id": "https://tracepass.eu/voc/dpp/energyEfficiencyIndex",
+        "@type": "xsd:decimal"
+      },
+      "energyConsumptionPer100Cycles": {
+        "@id": "https://tracepass.eu/voc/dpp/energyConsumptionPer100Cycles",
+        "@type": "xsd:decimal"
+      },
+      "waterConsumptionPerCycle": {
+        "@id": "https://tracepass.eu/voc/dpp/waterConsumptionPerCycle",
+        "@type": "xsd:decimal"
+      },
+      "programmeDuration": {
+        "@id": "https://tracepass.eu/voc/dpp/programmeDuration",
+        "@type": "xsd:decimal"
+      },
+      "spinDryingEfficiencyClass": {
+        "@id": "https://tracepass.eu/voc/dpp/spinDryingEfficiencyClass",
+        "@type": "xsd:string"
+      },
+      "maximumSpinSpeed": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumSpinSpeed",
+        "@type": "xsd:decimal"
+      },
+      "residualMoistureContent": {
+        "@id": "https://tracepass.eu/voc/dpp/residualMoistureContent",
+        "@type": "xsd:decimal"
+      },
+      "washingEfficiencyIndex": {
+        "@id": "https://tracepass.eu/voc/dpp/washingEfficiencyIndex",
+        "@type": "xsd:decimal"
+      },
+      "rinsingEffectiveness": {
+        "@id": "https://tracepass.eu/voc/dpp/rinsingEffectiveness",
+        "@type": "xsd:decimal"
+      },
+      "airborneNoiseEmission": {
+        "@id": "https://tracepass.eu/voc/dpp/airborneNoiseEmission",
+        "@type": "xsd:decimal"
+      },
+      "noiseClass": {
+        "@id": "https://tracepass.eu/voc/dpp/noiseClass",
+        "@type": "xsd:string"
+      },
+      "offModePower": {
+        "@id": "https://tracepass.eu/voc/dpp/offModePower",
+        "@type": "xsd:decimal"
+      },
+      "standbyModePower": {
+        "@id": "https://tracepass.eu/voc/dpp/standbyModePower",
+        "@type": "xsd:decimal"
+      },
+      "totalVolume": {
+        "@id": "https://tracepass.eu/voc/dpp/totalVolume",
+        "@type": "xsd:decimal"
+      },
+      "freshFoodVolume": {
+        "@id": "https://tracepass.eu/voc/dpp/freshFoodVolume",
+        "@type": "xsd:decimal"
+      },
+      "frozenVolume": {
+        "@id": "https://tracepass.eu/voc/dpp/frozenVolume",
+        "@type": "xsd:decimal"
+      },
+      "starRating": {
+        "@id": "https://tracepass.eu/voc/dpp/starRating",
+        "@type": "xsd:string"
+      },
+      "refrigeratorEnergyEfficiencyIndex": {
+        "@id": "https://tracepass.eu/voc/dpp/refrigeratorEnergyEfficiencyIndex",
+        "@type": "xsd:decimal"
+      },
+      "refrigeratorAnnualEnergyConsumption": {
+        "@id": "https://tracepass.eu/voc/dpp/refrigeratorAnnualEnergyConsumption",
+        "@type": "xsd:decimal"
+      },
+      "climateClass": {
+        "@id": "https://tracepass.eu/voc/dpp/climateClass",
+        "@type": "xsd:string"
+      },
+      "refrigeratorNoiseEmission": {
+        "@id": "https://tracepass.eu/voc/dpp/refrigeratorNoiseEmission",
+        "@type": "xsd:decimal"
+      },
+      "refrigeratorNoiseClass": {
+        "@id": "https://tracepass.eu/voc/dpp/refrigeratorNoiseClass",
+        "@type": "xsd:string"
+      },
+      "freezingCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/freezingCapacity",
+        "@type": "xsd:decimal"
+      },
+      "temperatureRiseTime": {
+        "@id": "https://tracepass.eu/voc/dpp/temperatureRiseTime",
+        "@type": "xsd:decimal"
+      },
+      "refrigeratorOffModePower": {
+        "@id": "https://tracepass.eu/voc/dpp/refrigeratorOffModePower",
+        "@type": "xsd:decimal"
+      },
+      "rohsCompliant": {
+        "@id": "https://tracepass.eu/voc/dpp/rohsCompliant",
+        "@type": "xsd:boolean"
+      },
+      "rohsDeclaration": {
+        "@id": "https://tracepass.eu/voc/dpp/rohsDeclaration",
+        "@type": "xsd:anyURI"
+      },
+      "leadContent": {
+        "@id": "https://tracepass.eu/voc/dpp/leadContent",
+        "@type": "xsd:decimal"
+      },
+      "mercuryContent": {
+        "@id": "https://tracepass.eu/voc/dpp/mercuryContent",
+        "@type": "xsd:decimal"
+      },
+      "cadmiumContent": {
+        "@id": "https://tracepass.eu/voc/dpp/cadmiumContent",
+        "@type": "xsd:decimal"
+      },
+      "hexavalentChromiumContent": {
+        "@id": "https://tracepass.eu/voc/dpp/hexavalentChromiumContent",
+        "@type": "xsd:decimal"
+      },
+      "pbbContent": {
+        "@id": "https://tracepass.eu/voc/dpp/pbbContent",
+        "@type": "xsd:decimal"
+      },
+      "pbdeContent": {
+        "@id": "https://tracepass.eu/voc/dpp/pbdeContent",
+        "@type": "xsd:decimal"
+      },
+      "dehpContent": {
+        "@id": "https://tracepass.eu/voc/dpp/dehpContent",
+        "@type": "xsd:decimal"
+      },
+      "bbpContent": {
+        "@id": "https://tracepass.eu/voc/dpp/bbpContent",
+        "@type": "xsd:decimal"
+      },
+      "dbpContent": {
+        "@id": "https://tracepass.eu/voc/dpp/dbpContent",
+        "@type": "xsd:decimal"
+      },
+      "dibpContent": {
+        "@id": "https://tracepass.eu/voc/dpp/dibpContent",
+        "@type": "xsd:decimal"
+      },
+      "rohsExemptionsApplied": {
+        "@id": "https://tracepass.eu/voc/dpp/rohsExemptionsApplied",
+        "@container": "@set"
+      },
+      "substancesOfConcern": {
+        "@id": "https://tracepass.eu/voc/dpp/substancesOfConcern",
+        "@container": "@set"
+      },
+      "scipNotificationId": {
+        "@id": "https://tracepass.eu/voc/dpp/scipNotificationId",
+        "@type": "xsd:string"
+      },
+      "svhcPresent": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcPresent",
+        "@type": "xsd:boolean"
+      },
+      "containsPermanentMagnets": {
+        "@id": "https://tracepass.eu/voc/dpp/containsPermanentMagnets",
+        "@type": "xsd:boolean"
+      },
+      "magnetTotalWeight": {
+        "@id": "https://tracepass.eu/voc/dpp/magnetTotalWeight",
+        "@type": "xsd:decimal"
+      },
+      "magnetLocation": {
+        "@id": "https://tracepass.eu/voc/dpp/magnetLocation",
+        "@type": "xsd:string"
+      },
+      "magnetChemicalComposition": {
+        "@id": "https://tracepass.eu/voc/dpp/magnetChemicalComposition",
+        "@type": "xsd:string"
+      },
+      "magnetCoatings": {
+        "@id": "https://tracepass.eu/voc/dpp/magnetCoatings",
+        "@type": "xsd:string"
+      },
+      "recycledNeodymium": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledNeodymium",
+        "@type": "xsd:decimal"
+      },
+      "recycledDysprosium": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledDysprosium",
+        "@type": "xsd:decimal"
+      },
+      "recycledPraseodymium": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledPraseodymium",
+        "@type": "xsd:decimal"
+      },
+      "recycledTerbium": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledTerbium",
+        "@type": "xsd:decimal"
+      },
+      "recycledBoron": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledBoron",
+        "@type": "xsd:decimal"
+      },
+      "recycledSamarium": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledSamarium",
+        "@type": "xsd:decimal"
+      },
+      "recycledNickel": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledNickel",
+        "@type": "xsd:decimal"
+      },
+      "recycledCobalt": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledCobalt",
+        "@type": "xsd:decimal"
+      },
+      "recycledContentTotal": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentTotal",
+        "@type": "xsd:decimal"
+      },
+      "recycledPlasticContent": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledPlasticContent",
+        "@type": "xsd:decimal"
+      },
+      "recycledMetalContent": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledMetalContent",
+        "@type": "xsd:decimal"
+      },
+      "recycledLithium": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledLithium",
+        "@type": "xsd:decimal"
+      },
+      "recycledRareEarth": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledRareEarth",
+        "@type": "xsd:decimal"
+      },
+      "postConsumerRecycledShare": {
+        "@id": "https://tracepass.eu/voc/dpp/postConsumerRecycledShare",
+        "@type": "xsd:decimal"
+      },
+      "preConsumerRecycledShare": {
+        "@id": "https://tracepass.eu/voc/dpp/preConsumerRecycledShare",
+        "@type": "xsd:decimal"
+      },
+      "weeeCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/weeeCategory",
+        "@type": "xsd:string"
+      },
+      "productWeight": {
+        "@id": "https://tracepass.eu/voc/dpp/productWeight",
+        "@type": "xsd:decimal"
+      },
+      "dismantlingInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/dismantlingInstructions",
+        "@type": "xsd:anyURI"
+      },
+      "recyclableComponentsList": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclableComponentsList",
+        "@container": "@set"
+      },
+      "hazardousComponentsList": {
+        "@id": "https://tracepass.eu/voc/dpp/hazardousComponentsList",
+        "@container": "@set"
+      },
+      "materialComposition": {
+        "@id": "https://tracepass.eu/voc/dpp/materialComposition",
+        "@container": "@set"
+      },
+      "crossedOutWheelieBinMarking": {
+        "@id": "https://tracepass.eu/voc/dpp/crossedOutWheelieBinMarking",
+        "@type": "xsd:boolean"
+      },
+      "dppIssueDate": {
+        "@id": "https://tracepass.eu/voc/dpp/dppIssueDate",
+        "@type": "xsd:date"
+      },
+      "dppLastUpdated": {
+        "@id": "https://tracepass.eu/voc/dpp/dppLastUpdated",
+        "@type": "xsd:date"
+      },
+      "dppExpirationDate": {
+        "@id": "https://tracepass.eu/voc/dpp/dppExpirationDate",
+        "@type": "xsd:date"
+      },
+      "dataCarrierType": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
+        "@type": "xsd:string"
+      },
+      "dataCarrierReference": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierReference",
+        "@type": "xsd:anyURI"
+      },
+      "identifierStandard": {
+        "@id": "https://tracepass.eu/voc/dpp/identifierStandard",
+        "@type": "xsd:string"
+      },
+      "accessLevel": {
+        "@id": "https://tracepass.eu/voc/dpp/accessLevel",
+        "@type": "xsd:string"
+      },
+      "ceMarkingStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarkingStatus",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

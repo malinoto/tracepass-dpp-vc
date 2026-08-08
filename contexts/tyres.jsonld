@@ -1,0 +1,362 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "commercialName": {
+        "@id": "https://tracepass.eu/voc/dpp/commercialName",
+        "@type": "xsd:string"
+      },
+      "tyreTypeIdentifier": {
+        "@id": "https://tracepass.eu/voc/dpp/tyreTypeIdentifier",
+        "@type": "xsd:string"
+      },
+      "tyreClass": {
+        "@id": "https://tracepass.eu/voc/dpp/tyreClass",
+        "@type": "xsd:string"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "dateOfManufactureWeekYear": {
+        "@id": "https://tracepass.eu/voc/dpp/dateOfManufactureWeekYear",
+        "@type": "xsd:string"
+      },
+      "dateStartOfProduction": {
+        "@id": "https://tracepass.eu/voc/dpp/dateStartOfProduction",
+        "@type": "xsd:string"
+      },
+      "dateEndOfProduction": {
+        "@id": "https://tracepass.eu/voc/dpp/dateEndOfProduction",
+        "@type": "xsd:string"
+      },
+      "countryOfManufacture": {
+        "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+        "@type": "xsd:string"
+      },
+      "eprelRegistrationNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/eprelRegistrationNumber",
+        "@type": "xsd:string"
+      },
+      "eprelProductUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/eprelProductUrl",
+        "@type": "xsd:anyURI"
+      },
+      "dataCarrierType": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
+        "@type": "xsd:string"
+      },
+      "passportIssuer": {
+        "@id": "https://tracepass.eu/voc/dpp/passportIssuer",
+        "@type": "xsd:string"
+      },
+      "tyreSizeDesignation": {
+        "@id": "https://tracepass.eu/voc/dpp/tyreSizeDesignation",
+        "@type": "xsd:string"
+      },
+      "loadCapacityIndex": {
+        "@id": "https://tracepass.eu/voc/dpp/loadCapacityIndex",
+        "@type": "xsd:decimal"
+      },
+      "loadVersion": {
+        "@id": "https://tracepass.eu/voc/dpp/loadVersion",
+        "@type": "xsd:string"
+      },
+      "speedCategorySymbol": {
+        "@id": "https://tracepass.eu/voc/dpp/speedCategorySymbol",
+        "@type": "xsd:string"
+      },
+      "speedRatingKmh": {
+        "@id": "https://tracepass.eu/voc/dpp/speedRatingKmh",
+        "@type": "xsd:decimal"
+      },
+      "tyreConstruction": {
+        "@id": "https://tracepass.eu/voc/dpp/tyreConstruction",
+        "@type": "xsd:string"
+      },
+      "tyreType": {
+        "@id": "https://tracepass.eu/voc/dpp/tyreType",
+        "@type": "xsd:string"
+      },
+      "sectionWidthMm": {
+        "@id": "https://tracepass.eu/voc/dpp/sectionWidthMm",
+        "@type": "xsd:decimal"
+      },
+      "aspectRatio": {
+        "@id": "https://tracepass.eu/voc/dpp/aspectRatio",
+        "@type": "xsd:decimal"
+      },
+      "rimDiameterInches": {
+        "@id": "https://tracepass.eu/voc/dpp/rimDiameterInches",
+        "@type": "xsd:decimal"
+      },
+      "treadDepthMm": {
+        "@id": "https://tracepass.eu/voc/dpp/treadDepthMm",
+        "@type": "xsd:decimal"
+      },
+      "tyreWeightKg": {
+        "@id": "https://tracepass.eu/voc/dpp/tyreWeightKg",
+        "@type": "xsd:decimal"
+      },
+      "fuelEfficiencyClass": {
+        "@id": "https://tracepass.eu/voc/dpp/fuelEfficiencyClass",
+        "@type": "xsd:string"
+      },
+      "rollingResistanceCoefficientNKn": {
+        "@id": "https://tracepass.eu/voc/dpp/rollingResistanceCoefficientNKn",
+        "@type": "xsd:decimal"
+      },
+      "wetGripClass": {
+        "@id": "https://tracepass.eu/voc/dpp/wetGripClass",
+        "@type": "xsd:string"
+      },
+      "wetGripIndex": {
+        "@id": "https://tracepass.eu/voc/dpp/wetGripIndex",
+        "@type": "xsd:decimal"
+      },
+      "externalRollingNoiseClass": {
+        "@id": "https://tracepass.eu/voc/dpp/externalRollingNoiseClass",
+        "@type": "xsd:string"
+      },
+      "externalRollingNoiseDb": {
+        "@id": "https://tracepass.eu/voc/dpp/externalRollingNoiseDb",
+        "@type": "xsd:decimal"
+      },
+      "snowGrip": {
+        "@id": "https://tracepass.eu/voc/dpp/snowGrip",
+        "@type": "xsd:boolean"
+      },
+      "iceGrip": {
+        "@id": "https://tracepass.eu/voc/dpp/iceGrip",
+        "@type": "xsd:boolean"
+      },
+      "tyreAbrasionRateMgKm": {
+        "@id": "https://tracepass.eu/voc/dpp/tyreAbrasionRateMgKm",
+        "@type": "xsd:decimal"
+      },
+      "abrasionIndex": {
+        "@id": "https://tracepass.eu/voc/dpp/abrasionIndex",
+        "@type": "xsd:decimal"
+      },
+      "abrasionTestMethod": {
+        "@id": "https://tracepass.eu/voc/dpp/abrasionTestMethod",
+        "@type": "xsd:string"
+      },
+      "testDistanceKm": {
+        "@id": "https://tracepass.eu/voc/dpp/testDistanceKm",
+        "@type": "xsd:decimal"
+      },
+      "microplasticsEmissionClass": {
+        "@id": "https://tracepass.eu/voc/dpp/microplasticsEmissionClass",
+        "@type": "xsd:string"
+      },
+      "mileageWarrantyKm": {
+        "@id": "https://tracepass.eu/voc/dpp/mileageWarrantyKm",
+        "@type": "xsd:decimal"
+      },
+      "billOfMaterials": {
+        "@id": "https://tracepass.eu/voc/dpp/billOfMaterials",
+        "@container": "@set"
+      },
+      "totalTyreWeightKg": {
+        "@id": "https://tracepass.eu/voc/dpp/totalTyreWeightKg",
+        "@type": "xsd:decimal"
+      },
+      "naturalRubberContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/naturalRubberContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "syntheticRubberContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/syntheticRubberContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "recycledContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "recycledRubberContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledRubberContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "recycledCarbonBlackPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledCarbonBlackPercentage",
+        "@type": "xsd:decimal"
+      },
+      "renewableMaterialContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/renewableMaterialContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "pahContentCompliant": {
+        "@id": "https://tracepass.eu/voc/dpp/pahContentCompliant",
+        "@type": "xsd:boolean"
+      },
+      "svhcCandidateListSubstances": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances",
+        "@container": "@set"
+      },
+      "sixPpdContent": {
+        "@id": "https://tracepass.eu/voc/dpp/sixPpdContent"
+      },
+      "heavyMetalsCompliance": {
+        "@id": "https://tracepass.eu/voc/dpp/heavyMetalsCompliance",
+        "@type": "xsd:boolean"
+      },
+      "reachCompliance": {
+        "@id": "https://tracepass.eu/voc/dpp/reachCompliance",
+        "@type": "xsd:boolean"
+      },
+      "carbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
+        "@type": "xsd:decimal"
+      },
+      "carbonFootprintMethodology": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology",
+        "@type": "xsd:string"
+      },
+      "fuelSavingsOverLifetimeLiters": {
+        "@id": "https://tracepass.eu/voc/dpp/fuelSavingsOverLifetimeLiters",
+        "@type": "xsd:decimal"
+      },
+      "co2SavingsOverLifetimeKg": {
+        "@id": "https://tracepass.eu/voc/dpp/co2SavingsOverLifetimeKg",
+        "@type": "xsd:decimal"
+      },
+      "naturalRubberDeforestationFree": {
+        "@id": "https://tracepass.eu/voc/dpp/naturalRubberDeforestationFree",
+        "@type": "xsd:boolean"
+      },
+      "naturalRubberSustainabilityCertification": {
+        "@id": "https://tracepass.eu/voc/dpp/naturalRubberSustainabilityCertification",
+        "@type": "xsd:string"
+      },
+      "expectedMileageKm": {
+        "@id": "https://tracepass.eu/voc/dpp/expectedMileageKm",
+        "@type": "xsd:decimal"
+      },
+      "treadwearRating": {
+        "@id": "https://tracepass.eu/voc/dpp/treadwearRating",
+        "@type": "xsd:decimal"
+      },
+      "minimumTreadDepthMm": {
+        "@id": "https://tracepass.eu/voc/dpp/minimumTreadDepthMm",
+        "@type": "xsd:decimal"
+      },
+      "warrantyPeriodYears": {
+        "@id": "https://tracepass.eu/voc/dpp/warrantyPeriodYears",
+        "@type": "xsd:decimal"
+      },
+      "maxAgeRecommendationYears": {
+        "@id": "https://tracepass.eu/voc/dpp/maxAgeRecommendationYears",
+        "@type": "xsd:decimal"
+      },
+      "retreadable": {
+        "@id": "https://tracepass.eu/voc/dpp/retreadable",
+        "@type": "xsd:boolean"
+      },
+      "maximumRetreadCycles": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumRetreadCycles",
+        "@type": "xsd:decimal"
+      },
+      "retreadServiceLifeExtensionKm": {
+        "@id": "https://tracepass.eu/voc/dpp/retreadServiceLifeExtensionKm",
+        "@type": "xsd:decimal"
+      },
+      "recyclabilityPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityPercentage",
+        "@type": "xsd:decimal"
+      },
+      "recyclabilityBreakdown": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityBreakdown",
+        "@container": "@set"
+      },
+      "eltCollectionScheme": {
+        "@id": "https://tracepass.eu/voc/dpp/eltCollectionScheme",
+        "@type": "xsd:string"
+      },
+      "disassemblyInstructionsUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/disassemblyInstructionsUrl",
+        "@type": "xsd:anyURI"
+      },
+      "pyrolysisSuitability": {
+        "@id": "https://tracepass.eu/voc/dpp/pyrolysisSuitability",
+        "@type": "xsd:boolean"
+      },
+      "devulcanizationSuitability": {
+        "@id": "https://tracepass.eu/voc/dpp/devulcanizationSuitability",
+        "@type": "xsd:boolean"
+      },
+      "typeApprovalNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/typeApprovalNumber",
+        "@type": "xsd:string"
+      },
+      "euro7Compliance": {
+        "@id": "https://tracepass.eu/voc/dpp/euro7Compliance",
+        "@type": "xsd:boolean"
+      },
+      "euTyreLabelImageUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/euTyreLabelImageUrl",
+        "@type": "xsd:anyURI"
+      },
+      "declarationOfConformityUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl",
+        "@type": "xsd:anyURI"
+      },
+      "reachComplianceTypeApproval": {
+        "@id": "https://tracepass.eu/voc/dpp/reachComplianceTypeApproval",
+        "@type": "xsd:boolean"
+      },
+      "recommendedInflationPressureKpa": {
+        "@id": "https://tracepass.eu/voc/dpp/recommendedInflationPressureKpa",
+        "@type": "xsd:decimal"
+      },
+      "maximumInflationPressureKpa": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumInflationPressureKpa",
+        "@type": "xsd:decimal"
+      },
+      "maximumLoadKg": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumLoadKg",
+        "@type": "xsd:decimal"
+      },
+      "tyrePressureMonitoringCompatible": {
+        "@id": "https://tracepass.eu/voc/dpp/tyrePressureMonitoringCompatible",
+        "@type": "xsd:boolean"
+      },
+      "runFlatCapability": {
+        "@id": "https://tracepass.eu/voc/dpp/runFlatCapability",
+        "@type": "xsd:boolean"
+      },
+      "safetyWarnings": {
+        "@id": "https://tracepass.eu/voc/dpp/safetyWarnings",
+        "@container": "@set"
+      },
+      "storageInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/storageInstructions",
+        "@type": "xsd:string"
+      },
+      "dppSchemaVersion": {
+        "@id": "https://tracepass.eu/voc/dpp/dppSchemaVersion",
+        "@type": "xsd:string"
+      },
+      "lastUpdatedAt": {
+        "@id": "https://tracepass.eu/voc/dpp/lastUpdatedAt",
+        "@type": "xsd:date"
+      },
+      "accessLevel": {
+        "@id": "https://tracepass.eu/voc/dpp/accessLevel",
+        "@type": "xsd:string"
+      },
+      "dataFormat": {
+        "@id": "https://tracepass.eu/voc/dpp/dataFormat",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

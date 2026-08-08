@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/electronics/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "Electronics — worked example",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1 Global Trade Item Number"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "electronics",
+        "name": "Electronics"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Example Manufacturer GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          }
+        }
+      }
+    ],
+    "characteristics": {
+      "taricCode": "8528521000",
+      "euDeclarationOfConformity": {
+        "identificationNumber": "DoC-MON24-2026-11",
+        "url": "https://example.com/doc/DoC-MON24.pdf",
+        "issuedAt": "2026-04-02",
+        "issuer": "Halden Display AS"
+      },
+      "ceMarking": true,
+      "technicalDocumentationUrl": "https://example.com/docs/MON24-technical-file.pdf",
+      "userManualUrl": "https://example.com/docs/MON24-manual-en.pdf",
+      "durabilityClass": "B",
+      "repairabilityClass": "B",
+      "energyEfficiencyClass": "C",
+      "annualEnergyConsumption": 29,
+      "carbonFootprintClass": "C",
+      "batteryUserReplaceable": false,
+      "rohsCompliant": true,
+      "substancesOfConcern": [],
+      "svhcPresent": false,
+      "containsPermanentMagnets": true,
+      "crossedOutWheelieBinMarking": true,
+      "ceMarkingStatus": "marked"
+    }
+  }
+}

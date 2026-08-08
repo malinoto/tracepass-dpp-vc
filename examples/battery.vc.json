@@ -1,0 +1,200 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/battery/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "Battery — worked example",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1 Global Trade Item Number"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "battery",
+        "name": "Battery"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Example Manufacturer GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          }
+        }
+      }
+    ],
+    "characteristics": {
+      "batteryIdDmcCode": "]d2010952012345678821HEAT-EVP-2026-0417",
+      "batteryPassportIdentifier": "550e8400-e29b-41d4-a716-446655440000",
+      "manufacturingDate": "2026-11",
+      "manufacturingPlace": {
+        "facilityName": "Volterra Cells GmbH – Werk Nord",
+        "address": "Industriestraße 7, 04435 Schkeuditz",
+        "country": "DE"
+      },
+      "batteryCategory": "EV",
+      "batteryWeight": 448,
+      "batteryStatus": "original",
+      "separateCollectionSymbol": "https://example.com/labels/separate-collection-wheelie-bin.svg",
+      "meaningOfLabelsAndSymbols": "https://example.com/docs/label-legend-en.pdf",
+      "euDeclarationOfConformity": {
+        "identificationNumber": "DoC-VC-2026-0417",
+        "url": "https://example.com/doc/DoC-VC-2026-0417.pdf",
+        "issuedAt": "2026-11-20",
+        "issuer": "Volterra Cells GmbH"
+      },
+      "testReportResults": "https://example.com/reports/IEC62660-2-EVP-0417.pdf",
+      "ceMarking": true,
+      "batteryChemistry": "NMC811",
+      "cathodeActiveMaterials": [
+        {
+          "substance": "Lithium nickel manganese cobalt oxide",
+          "casNumber": "182442-95-1",
+          "massPercent": 31.4
+        }
+      ],
+      "anodeActiveMaterials": [
+        {
+          "substance": "Graphite",
+          "casNumber": "7782-42-5",
+          "massPercent": 17.8
+        },
+        {
+          "substance": "Silicon oxide",
+          "casNumber": "10097-28-6",
+          "massPercent": 2.1
+        }
+      ],
+      "electrolyteComposition": [
+        {
+          "substance": "Lithium hexafluorophosphate",
+          "casNumber": "21324-40-3",
+          "massPercent": 1.9
+        },
+        {
+          "substance": "Ethylene carbonate",
+          "casNumber": "96-49-1",
+          "massPercent": 6.2
+        }
+      ],
+      "criticalRawMaterials": [
+        {
+          "material": "Cobalt",
+          "massPercent": 2.6
+        },
+        {
+          "material": "Lithium",
+          "massPercent": 1.7
+        },
+        {
+          "material": "Natural graphite",
+          "massPercent": 17.8
+        },
+        {
+          "material": "Nickel",
+          "massPercent": 21.9
+        }
+      ],
+      "hazardousSubstances": [
+        {
+          "substance": "Lithium hexafluorophosphate",
+          "casNumber": "21324-40-3",
+          "concentrationPercent": 1.9,
+          "hazardClass": "Acute Tox. 3"
+        }
+      ],
+      "scipNotificationNumber": "a1b2c3d4-5e6f-4071-8a9b-0c1d2e3f4a5b",
+      "recycledContentCobalt": 16,
+      "recycledContentLithium": 6,
+      "recycledContentNickel": 6,
+      "recycledContentLead": 0,
+      "roleOfEndUsersInWastePrevention": "End users must not dispose of the battery with household waste. Return it to the vehicle service network or an authorised collection point; reuse and repurposing are preferred to recycling.",
+      "informationOnSeparateCollection": "Collected free of charge through the producer take-back scheme at authorised dealers and municipal collection points.",
+      "dismantlingInformation": "https://example.com/docs/EVP-0417-dismantling.pdf",
+      "removalInformation": "Pack removal is a qualified-technician operation: isolate the HV system, wait 5 minutes for capacitor discharge, then release the 18 M10 underbody fixings.",
+      "sparePartsInformation": {
+        "available": true,
+        "orderingUrl": "https://example.com/parts",
+        "availabilityUntil": "2041-11-30"
+      },
+      "safetyInformationEndOfLife": "Do not puncture, crush or immerse. Store below 30 °C at 30–50 % state of charge. In case of thermal runaway use large volumes of water; do not use CO2.",
+      "recycledContentDocumentation": "https://example.com/docs/EVP-0417-recycled-content-verification.pdf",
+      "batteryRemovabilityReplaceability": "professional_removable",
+      "ratedCapacity": 196,
+      "nominalVoltage": 384,
+      "minimumVoltage": 300,
+      "maximumVoltage": 436.8,
+      "originalPowerCapability": 210000,
+      "maximumAllowedBatteryPower": 210000,
+      "ratioMaxPowerMaxEnergy": 2.79,
+      "initialInternalResistancePack": 0.048,
+      "initialInternalResistanceCell": 0.0009,
+      "initialInternalResistanceModule": 0.006,
+      "initialSelfDischargeRate": 2,
+      "batteryEnergyTotal": 75.3,
+      "energyDensity": 168.1,
+      "temperatureRangeIdleMin": -30,
+      "temperatureRangeIdleMax": 60,
+      "numberOfCells": 384,
+      "cellType": "prismatic",
+      "dateOfServiceEntry": "2026-12-09",
+      "batteryModelIdentifier": "VC-EVP-75-NMC811",
+      "ceMarkingStatus": "marked",
+      "extinguishingAgent": "Water or water-based agents in large volume. Class D agents and CO2 are not effective on lithium-ion pack fires.",
+      "renewableContentShare": 0,
+      "componentPartNumbers": [
+        {
+          "component": "Battery module",
+          "partNumber": "VC-MOD-19-NMC811"
+        },
+        {
+          "component": "Battery management system",
+          "partNumber": "VC-BMS-4G-2026"
+        }
+      ]
+    }
+  }
+}

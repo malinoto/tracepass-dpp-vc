@@ -8,23 +8,18 @@
     "VerifiableCredential",
     "DigitalProductPassport"
   ],
-  "issuer": {
-    "id": "did:web:tracepass.eu",
-    "name": "TracePass LTD"
-  },
-  "validFrom": "2026-03-15T00:00:00Z",
   "credentialSubject": {
     "type": [
       "Product"
     ],
-    "id": "https://id.example.com/01/09520123456788/21/HEAT-2026-0042",
-    "name": "S355 structural steel plate",
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "Iron, Steel & Aluminium — worked example",
     "idScheme": {
       "type": [
         "IdentifierScheme"
       ],
       "id": "https://id.gs1.org",
-      "name": "GS1"
+      "name": "GS1 Global Trade Item Number"
     },
     "idGranularity": "batch",
     "productCategory": [
@@ -32,8 +27,8 @@
         "type": [
           "Classification"
         ],
-        "code": "7208",
-        "name": "Flat-rolled steel"
+        "code": "steel",
+        "name": "Iron, Steel & Aluminium"
       }
     ],
     "producedAtFacility": {
@@ -59,7 +54,7 @@
             "Party"
           ],
           "id": "https://id.gs1.org/417/4012345000009",
-          "name": "Musterstahl Werke GmbH",
+          "name": "Example Manufacturer GmbH",
           "registeredId": "DE812345678",
           "idScheme": {
             "type": [
@@ -67,45 +62,6 @@
             ],
             "id": "https://ec.europa.eu/taxation_customs/vies",
             "name": "EU VAT identification number"
-          },
-          "address": {
-            "type": [
-              "Address"
-            ],
-            "streetAddress": "Hüttenstraße 14",
-            "addressLocality": "Duisburg",
-            "postalCode": "47119",
-            "addressCountry": "DE"
-          }
-        }
-      },
-      {
-        "type": [
-          "PartyRole"
-        ],
-        "role": "importer",
-        "party": {
-          "type": [
-            "Party"
-          ],
-          "id": "https://id.gs1.org/417/5412345000176",
-          "name": "Aciers Benelux SA",
-          "registeredId": "BE0123456749",
-          "idScheme": {
-            "type": [
-              "IdentifierScheme"
-            ],
-            "id": "https://ec.europa.eu/taxation_customs/vies",
-            "name": "EU VAT identification number"
-          },
-          "address": {
-            "type": [
-              "Address"
-            ],
-            "streetAddress": "Quai des Usines 22",
-            "addressLocality": "Bruxelles",
-            "postalCode": "1000",
-            "addressCountry": "BE"
           }
         }
       }

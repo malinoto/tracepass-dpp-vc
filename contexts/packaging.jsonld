@@ -1,0 +1,274 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "gtin": {
+        "@id": "https://ref.gs1.org/voc/gtin"
+      },
+      "packagingType": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingType",
+        "@type": "xsd:string"
+      },
+      "packagingFormat": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingFormat",
+        "@type": "xsd:string"
+      },
+      "packagingWeight": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingWeight",
+        "@type": "xsd:decimal"
+      },
+      "packagingVolume": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingVolume",
+        "@type": "xsd:decimal"
+      },
+      "isReusable": {
+        "@id": "https://tracepass.eu/voc/dpp/isReusable",
+        "@type": "xsd:boolean"
+      },
+      "isSingleUse": {
+        "@id": "https://tracepass.eu/voc/dpp/isSingleUse",
+        "@type": "xsd:boolean"
+      },
+      "materialType": {
+        "@id": "https://tracepass.eu/voc/dpp/materialType",
+        "@type": "xsd:string"
+      },
+      "materialCode": {
+        "@id": "https://tracepass.eu/voc/dpp/materialCode",
+        "@type": "xsd:string"
+      },
+      "weightPercent": {
+        "@id": "https://tracepass.eu/voc/dpp/weightPercent",
+        "@type": "xsd:decimal"
+      },
+      "componentName": {
+        "@id": "https://tracepass.eu/voc/dpp/componentName",
+        "@type": "xsd:string"
+      },
+      "isContactSensitive": {
+        "@id": "https://tracepass.eu/voc/dpp/isContactSensitive",
+        "@type": "xsd:boolean"
+      },
+      "totalMaterialCount": {
+        "@id": "https://tracepass.eu/voc/dpp/totalMaterialCount",
+        "@type": "xsd:decimal"
+      },
+      "isMultiMaterial": {
+        "@id": "https://tracepass.eu/voc/dpp/isMultiMaterial",
+        "@type": "xsd:boolean"
+      },
+      "materialPictogramCode": {
+        "@id": "https://tracepass.eu/voc/dpp/materialPictogramCode",
+        "@type": "xsd:string"
+      },
+      "performanceGrade": {
+        "@id": "https://tracepass.eu/voc/dpp/performanceGrade",
+        "@type": "xsd:string"
+      },
+      "recyclablePercent": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclablePercent",
+        "@type": "xsd:decimal"
+      },
+      "designForRecyclingCompliant": {
+        "@id": "https://tracepass.eu/voc/dpp/designForRecyclingCompliant",
+        "@type": "xsd:boolean"
+      },
+      "assessmentStandard": {
+        "@id": "https://tracepass.eu/voc/dpp/assessmentStandard",
+        "@type": "xsd:string"
+      },
+      "atScaleRecycling": {
+        "@id": "https://tracepass.eu/voc/dpp/atScaleRecycling",
+        "@type": "xsd:boolean"
+      },
+      "sortingEfficiency": {
+        "@id": "https://tracepass.eu/voc/dpp/sortingEfficiency",
+        "@type": "xsd:decimal"
+      },
+      "recyclateQuality": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclateQuality",
+        "@type": "xsd:string"
+      },
+      "recycledContentMaterialType": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentMaterialType",
+        "@type": "xsd:string"
+      },
+      "recycledPercent": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledPercent",
+        "@type": "xsd:decimal"
+      },
+      "postConsumerPercent": {
+        "@id": "https://tracepass.eu/voc/dpp/postConsumerPercent",
+        "@type": "xsd:decimal"
+      },
+      "preConsumerPercent": {
+        "@id": "https://tracepass.eu/voc/dpp/preConsumerPercent",
+        "@type": "xsd:decimal"
+      },
+      "certificationScheme": {
+        "@id": "https://tracepass.eu/voc/dpp/certificationScheme",
+        "@type": "xsd:string"
+      },
+      "massBalanceApplied": {
+        "@id": "https://tracepass.eu/voc/dpp/massBalanceApplied",
+        "@type": "xsd:boolean"
+      },
+      "sortingComponentName": {
+        "@id": "https://tracepass.eu/voc/dpp/sortingComponentName",
+        "@type": "xsd:string"
+      },
+      "binDestination": {
+        "@id": "https://tracepass.eu/voc/dpp/binDestination",
+        "@type": "xsd:string"
+      },
+      "pictogramUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/pictogramUrl",
+        "@type": "xsd:anyURI"
+      },
+      "consumerInstruction": {
+        "@id": "https://tracepass.eu/voc/dpp/consumerInstruction",
+        "@type": "xsd:string"
+      },
+      "localizedLanguage": {
+        "@id": "https://tracepass.eu/voc/dpp/localizedLanguage",
+        "@type": "xsd:string"
+      },
+      "depositReturnSystemApplicable": {
+        "@id": "https://tracepass.eu/voc/dpp/depositReturnSystemApplicable",
+        "@type": "xsd:boolean"
+      },
+      "depositReturnSystemId": {
+        "@id": "https://tracepass.eu/voc/dpp/depositReturnSystemId",
+        "@type": "xsd:string"
+      },
+      "minRotations": {
+        "@id": "https://tracepass.eu/voc/dpp/minRotations",
+        "@type": "xsd:decimal"
+      },
+      "reuseSystemName": {
+        "@id": "https://tracepass.eu/voc/dpp/reuseSystemName",
+        "@type": "xsd:string"
+      },
+      "collectionPointsUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/collectionPointsUrl",
+        "@type": "xsd:anyURI"
+      },
+      "reuseInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/reuseInstructions",
+        "@type": "xsd:string"
+      },
+      "substanceName": {
+        "@id": "https://tracepass.eu/voc/dpp/substanceName",
+        "@type": "xsd:string"
+      },
+      "casNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/casNumber",
+        "@type": "xsd:string"
+      },
+      "concentrationPpm": {
+        "@id": "https://tracepass.eu/voc/dpp/concentrationPpm",
+        "@type": "xsd:decimal"
+      },
+      "maxAllowedPpm": {
+        "@id": "https://tracepass.eu/voc/dpp/maxAllowedPpm",
+        "@type": "xsd:decimal"
+      },
+      "pfasPresent": {
+        "@id": "https://tracepass.eu/voc/dpp/pfasPresent",
+        "@type": "xsd:boolean"
+      },
+      "heavyMetalsSumPpm": {
+        "@id": "https://tracepass.eu/voc/dpp/heavyMetalsSumPpm",
+        "@type": "xsd:decimal"
+      },
+      "heavyMetalsMaxPpm": {
+        "@id": "https://tracepass.eu/voc/dpp/heavyMetalsMaxPpm",
+        "@type": "xsd:decimal"
+      },
+      "labelHarmonized": {
+        "@id": "https://tracepass.eu/voc/dpp/labelHarmonized",
+        "@type": "xsd:boolean"
+      },
+      "materialCompositionPictogram": {
+        "@id": "https://tracepass.eu/voc/dpp/materialCompositionPictogram",
+        "@type": "xsd:anyURI"
+      },
+      "bioBasedContentPercent": {
+        "@id": "https://tracepass.eu/voc/dpp/bioBasedContentPercent",
+        "@type": "xsd:decimal"
+      },
+      "compostabilityCertified": {
+        "@id": "https://tracepass.eu/voc/dpp/compostabilityCertified",
+        "@type": "xsd:boolean"
+      },
+      "compostabilityStandard": {
+        "@id": "https://tracepass.eu/voc/dpp/compostabilityStandard",
+        "@type": "xsd:string"
+      },
+      "declarationId": {
+        "@id": "https://tracepass.eu/voc/dpp/declarationId",
+        "@type": "xsd:string"
+      },
+      "issuerName": {
+        "@id": "https://tracepass.eu/voc/dpp/issuerName",
+        "@type": "xsd:string"
+      },
+      "issueDate": {
+        "@id": "https://tracepass.eu/voc/dpp/issueDate",
+        "@type": "xsd:date"
+      },
+      "conformsToArticles": {
+        "@id": "https://tracepass.eu/voc/dpp/conformsToArticles",
+        "@container": "@set"
+      },
+      "documentUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/documentUrl",
+        "@type": "xsd:anyURI"
+      },
+      "dataCarrierType": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
+        "@type": "xsd:string"
+      },
+      "dataCarrierUri": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierUri",
+        "@type": "xsd:anyURI"
+      },
+      "dataCarrierFormat": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierFormat",
+        "@type": "xsd:string"
+      },
+      "dataCarrierEncoding": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierEncoding",
+        "@type": "xsd:string"
+      },
+      "retentionPeriodYears": {
+        "@id": "https://tracepass.eu/voc/dpp/retentionPeriodYears",
+        "@type": "xsd:decimal"
+      },
+      "accessTier": {
+        "@id": "https://tracepass.eu/voc/dpp/accessTier",
+        "@type": "xsd:string"
+      },
+      "emptySpacePercent": {
+        "@id": "https://tracepass.eu/voc/dpp/emptySpacePercent",
+        "@type": "xsd:decimal"
+      },
+      "maxAllowedEmptySpacePercent": {
+        "@id": "https://tracepass.eu/voc/dpp/maxAllowedEmptySpacePercent",
+        "@type": "xsd:decimal"
+      },
+      "weightOptimised": {
+        "@id": "https://tracepass.eu/voc/dpp/weightOptimised",
+        "@type": "xsd:boolean"
+      }
+    }
+  ]
+}

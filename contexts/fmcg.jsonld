@@ -1,0 +1,168 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "productName": {
+        "@id": "https://tracepass.eu/voc/dpp/productName",
+        "@type": "xsd:string"
+      },
+      "brandName": {
+        "@id": "https://tracepass.eu/voc/dpp/brandName",
+        "@type": "xsd:string"
+      },
+      "gtin": {
+        "@id": "https://ref.gs1.org/voc/gtin"
+      },
+      "productSubcategory": {
+        "@id": "https://tracepass.eu/voc/dpp/productSubcategory",
+        "@type": "xsd:string"
+      },
+      "netContentValue": {
+        "@id": "https://tracepass.eu/voc/dpp/netContentValue",
+        "@type": "xsd:decimal"
+      },
+      "netContentUnit": {
+        "@id": "https://tracepass.eu/voc/dpp/netContentUnit",
+        "@type": "xsd:string"
+      },
+      "ingredientsList": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientsList",
+        "@container": "@set"
+      },
+      "allergens": {
+        "@id": "https://tracepass.eu/voc/dpp/allergens",
+        "@container": "@set"
+      },
+      "fragrances": {
+        "@id": "https://tracepass.eu/voc/dpp/fragrances",
+        "@container": "@set"
+      },
+      "preservatives": {
+        "@id": "https://tracepass.eu/voc/dpp/preservatives",
+        "@container": "@set"
+      },
+      "svhcPresence": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcPresence",
+        "@container": "@set"
+      },
+      "colorants": {
+        "@id": "https://tracepass.eu/voc/dpp/colorants",
+        "@container": "@set"
+      },
+      "nanomaterials": {
+        "@id": "https://tracepass.eu/voc/dpp/nanomaterials",
+        "@container": "@set"
+      },
+      "clpHazardClassification": {
+        "@id": "https://tracepass.eu/voc/dpp/clpHazardClassification"
+      },
+      "ghsPictograms": {
+        "@id": "https://tracepass.eu/voc/dpp/ghsPictograms",
+        "@container": "@set"
+      },
+      "hazardStatements": {
+        "@id": "https://tracepass.eu/voc/dpp/hazardStatements",
+        "@container": "@set"
+      },
+      "precautionaryStatements": {
+        "@id": "https://tracepass.eu/voc/dpp/precautionaryStatements",
+        "@container": "@set"
+      },
+      "firstAidInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/firstAidInstructions",
+        "@type": "xsd:string"
+      },
+      "ufi": {
+        "@id": "https://tracepass.eu/voc/dpp/ufi",
+        "@type": "xsd:string"
+      },
+      "carbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
+        "@type": "xsd:decimal"
+      },
+      "waterFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/waterFootprint",
+        "@type": "xsd:decimal"
+      },
+      "biodegradability": {
+        "@id": "https://tracepass.eu/voc/dpp/biodegradability"
+      },
+      "aquaticToxicity": {
+        "@id": "https://tracepass.eu/voc/dpp/aquaticToxicity",
+        "@type": "xsd:string"
+      },
+      "ecolabelCriticalDilutionVolume": {
+        "@id": "https://tracepass.eu/voc/dpp/ecolabelCriticalDilutionVolume",
+        "@type": "xsd:decimal"
+      },
+      "packagingMaterialType": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingMaterialType",
+        "@type": "xsd:string"
+      },
+      "packagingRecycledContent": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingRecycledContent",
+        "@type": "xsd:decimal"
+      },
+      "packagingRecyclabilityGrade": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingRecyclabilityGrade",
+        "@type": "xsd:string"
+      },
+      "packagingWeight": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingWeight",
+        "@type": "xsd:decimal"
+      },
+      "packagingToProductRatio": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingToProductRatio",
+        "@type": "xsd:decimal"
+      },
+      "recommendedDosage": {
+        "@id": "https://tracepass.eu/voc/dpp/recommendedDosage",
+        "@type": "xsd:string"
+      },
+      "shelfLifeMonths": {
+        "@id": "https://tracepass.eu/voc/dpp/shelfLifeMonths",
+        "@type": "xsd:decimal"
+      },
+      "storageConditions": {
+        "@id": "https://tracepass.eu/voc/dpp/storageConditions",
+        "@type": "xsd:string"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "certifications": {
+        "@id": "https://tracepass.eu/voc/dpp/certifications",
+        "@container": "@set"
+      },
+      "euEcolabelLicenseNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/euEcolabelLicenseNumber",
+        "@type": "xsd:string"
+      },
+      "organicCertificationBody": {
+        "@id": "https://tracepass.eu/voc/dpp/organicCertificationBody",
+        "@type": "xsd:string"
+      },
+      "disposalInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/disposalInstructions",
+        "@type": "xsd:string"
+      },
+      "refillAvailability": {
+        "@id": "https://tracepass.eu/voc/dpp/refillAvailability",
+        "@type": "xsd:boolean"
+      },
+      "returnSchemeParticipation": {
+        "@id": "https://tracepass.eu/voc/dpp/returnSchemeParticipation",
+        "@type": "xsd:boolean"
+      }
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/toys/v1.json",
+  "title": "Toys — DPP characteristics",
+  "description": "Field specifications for the Toys Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "productName",
+    "modelNumber",
+    "batchLotNumber",
+    "ceMarking",
+    "declarationOfConformityUrl",
+    "intendedAgeGroup",
+    "safetyWarnings",
+    "en71TestResults",
+    "svhcPresent",
+    "phthalateCompliant",
+    "heavyMetalMigration",
+    "ceMarkingStatus"
+  ],
+  "properties": {
+    "productName": {
+      "type": "string",
+      "title": "Product Name",
+      "description": "Commercial product name or trade designation of the toy",
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 4(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productName"
+    },
+    "modelNumber": {
+      "type": "string",
+      "title": "Model / SKU",
+      "description": "Model number, SKU, or product variant identifier",
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 4(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/modelNumber"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch / Serial Number",
+      "description": "Batch or serial number for product traceability and recall purposes",
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 4(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "gtin": {
+      "type": "string",
+      "title": "GTIN / Barcode",
+      "description": "Global Trade Item Number (EAN/UPC barcode) for the product",
+      "x-iri": "https://ref.gs1.org/voc/gtin"
+    },
+    "productImageUrl": {
+      "type": "string",
+      "title": "Product Image",
+      "description": "URL to the main product image",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/productImageUrl"
+    },
+    "ceMarking": {
+      "type": "boolean",
+      "title": "CE Marking",
+      "description": "Whether the toy bears the CE marking, confirming conformity with EU toy safety requirements",
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 17",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
+    },
+    "declarationOfConformityUrl": {
+      "type": "string",
+      "title": "EU Declaration of Conformity",
+      "description": "URL to the EU Declaration of Conformity document per Toy Safety Directive",
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl"
+    },
+    "intendedAgeGroup": {
+      "type": "string",
+      "title": "Intended Age Group",
+      "description": "Age range the toy is designed and intended for, as required by the Toy Safety Directive",
+      "enum": [
+        "0_12m",
+        "12_36m",
+        "3_6y",
+        "6_10y",
+        "10_14y",
+        "14_plus",
+        "all_ages"
+      ],
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 11(2) and Annex V Part B",
+      "x-iri": "https://tracepass.eu/voc/dpp/intendedAgeGroup"
+    },
+    "safetyWarnings": {
+      "type": "array",
+      "title": "Safety Warnings",
+      "description": "Mandatory safety warnings per Toy Safety Directive Annex V (e.g. choking hazard, not for under 36 months)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "not_under_36m",
+          "adult_supervision",
+          "not_under_8y_activity",
+          "water_toy",
+          "protective_equipment",
+          "strangulation_hazard",
+          "magnet_hazard",
+          "chemical_toy"
+        ]
+      },
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 11 and Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyWarnings"
+    },
+    "en71TestResults": {
+      "type": "object",
+      "title": "EN 71 Test Results",
+      "description": "Results of EN 71 safety testing: EN 71-1 (mechanical/physical), EN 71-2 (flammability), EN 71-3 (migration of elements)",
+      "x-standard": "EN 71 (safety of toys: -1 mechanical, -2 flammability, -3 migration of elements)",
+      "x-iri": "https://tracepass.eu/voc/dpp/en71TestResults"
+    },
+    "notifiedBody": {
+      "type": "string",
+      "title": "Notified Body",
+      "description": "Name and number of the notified body involved in conformity assessment, if applicable (EC type-examination)",
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 20",
+      "x-iri": "https://tracepass.eu/voc/dpp/notifiedBody"
+    },
+    "primaryMaterials": {
+      "type": "array",
+      "title": "Primary Materials",
+      "description": "List of primary materials used in the toy (e.g. ABS plastic, wood, cotton fabric, metal)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/primaryMaterials"
+    },
+    "svhcPresent": {
+      "type": "boolean",
+      "title": "SVHC Presence",
+      "description": "Whether the toy contains Substances of Very High Concern (SVHC) above 0.1% w/w per REACH Article 33",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
+    },
+    "substancesOfConcern": {
+      "type": "array",
+      "title": "Substances of Concern",
+      "description": "Detailed list of substances of concern present in the toy, including CAS numbers, concentrations, and locations (SCIP-level detail)",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
+    },
+    "phthalateCompliant": {
+      "type": "boolean",
+      "title": "Phthalate Compliance",
+      "description": "Confirms that restricted phthalates (DEHP, DBP, BBP, DINP, DIDP, DNOP) are each below 0.1% in plasticised material per REACH Annex XVII Entry 51",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex XVII, entries 51 and 52",
+      "x-iri": "https://tracepass.eu/voc/dpp/phthalateCompliant"
+    },
+    "heavyMetalMigration": {
+      "type": "object",
+      "title": "Heavy Metal Migration (EN 71-3)",
+      "description": "EN 71-3 test results for migration of 19 elements (antimony, arsenic, barium, cadmium, chromium, lead, mercury, selenium, etc.) across 3 material categories",
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Annex II Part III point 13",
+      "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalMigration"
+    },
+    "recycledContentPercentage": {
+      "type": "number",
+      "title": "Recycled Content (%)",
+      "description": "Percentage of recycled material by weight in the toy product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
+    },
+    "recyclabilityAssessment": {
+      "type": "object",
+      "title": "Recyclability Assessment",
+      "description": "Assessment of how easily the toy can be recycled at end of life",
+      "enum": [
+        "fully_recyclable",
+        "partially_recyclable",
+        "not_recyclable"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityAssessment"
+    },
+    "packagingMaterial": {
+      "type": "string",
+      "title": "Packaging Material",
+      "description": "Primary material used in product packaging",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingMaterial"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint",
+      "description": "Total carbon footprint of the toy product in kg CO2 equivalent (cradle-to-gate or cradle-to-grave)",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "careInstructions": {
+      "type": "string",
+      "title": "Care / Cleaning Instructions",
+      "description": "Instructions for cleaning, maintenance, and safe use of the toy",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/careInstructions"
+    },
+    "expectedLifespan": {
+      "type": "object",
+      "title": "Expected Lifespan",
+      "description": "Expected useful lifespan of the toy under normal use conditions",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedLifespan"
+    },
+    "disposalInstructions": {
+      "type": "string",
+      "title": "Disposal / Recycling Instructions",
+      "description": "Instructions for proper disposal or recycling of the toy at end of life, including any hazardous components (batteries, electronics)",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-iri": "https://tracepass.eu/voc/dpp/disposalInstructions"
+    },
+    "countryOfManufacture": {
+      "type": "string",
+      "title": "Country of Manufacture",
+      "description": "ISO 3166-1 alpha-2 code of the country where the toy was manufactured",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
+    },
+    "ceMarkingStatus": {
+      "type": "string",
+      "title": "CE Marking Status",
+      "description": "Whether the product bears CE marking and its validity",
+      "enum": [
+        "marked",
+        "pending",
+        "not_applicable"
+      ],
+      "x-regulation": "32009L0048",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
+      "x-provision": "Art. 17",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
+    }
+  }
+}

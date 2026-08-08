@@ -1,0 +1,232 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "modelNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/modelNumber",
+        "@type": "xsd:string"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "serialNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/serialNumber",
+        "@type": "xsd:string"
+      },
+      "euResponsiblePerson": {
+        "@id": "https://tracepass.eu/voc/dpp/euResponsiblePerson",
+        "@type": "xsd:string"
+      },
+      "productName": {
+        "@id": "https://tracepass.eu/voc/dpp/productName",
+        "@type": "xsd:string"
+      },
+      "productCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/productCategory",
+        "@type": "xsd:string"
+      },
+      "productDescription": {
+        "@id": "https://tracepass.eu/voc/dpp/productDescription",
+        "@type": "xsd:string"
+      },
+      "fiberComposition": {
+        "@id": "https://tracepass.eu/voc/dpp/fiberComposition",
+        "@container": "@set"
+      },
+      "recycledContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "careInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/careInstructions",
+        "@type": "xsd:string"
+      },
+      "substancesOfConcern": {
+        "@id": "https://tracepass.eu/voc/dpp/substancesOfConcern",
+        "@container": "@set"
+      },
+      "certifications": {
+        "@id": "https://tracepass.eu/voc/dpp/certifications",
+        "@container": "@set"
+      },
+      "countryOfManufacture": {
+        "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+        "@type": "xsd:string"
+      },
+      "carbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
+        "@type": "xsd:decimal"
+      },
+      "environmentalFootprintScore": {
+        "@id": "https://tracepass.eu/voc/dpp/environmentalFootprintScore",
+        "@type": "xsd:decimal"
+      },
+      "recyclabilityScore": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityScore",
+        "@type": "xsd:decimal"
+      },
+      "recyclabilityLabel": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityLabel",
+        "@type": "xsd:string"
+      },
+      "monoMaterialPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/monoMaterialPercentage",
+        "@type": "xsd:decimal"
+      },
+      "expectedLifespan": {
+        "@id": "https://tracepass.eu/voc/dpp/expectedLifespan"
+      },
+      "durabilityPillingResistance": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityPillingResistance",
+        "@type": "xsd:decimal"
+      },
+      "durabilityAbrasionResistance": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityAbrasionResistance",
+        "@type": "xsd:decimal"
+      },
+      "durabilityColorFastnessWashing": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityColorFastnessWashing",
+        "@type": "xsd:decimal"
+      },
+      "durabilityColorFastnessLight": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityColorFastnessLight",
+        "@type": "xsd:decimal"
+      },
+      "durabilityDimensionalStability": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityDimensionalStability",
+        "@type": "xsd:decimal"
+      },
+      "durabilityTearStrength": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityTearStrength",
+        "@type": "xsd:decimal"
+      },
+      "repairInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/repairInstructions",
+        "@type": "xsd:anyURI"
+      },
+      "sparePartsAvailability": {
+        "@id": "https://tracepass.eu/voc/dpp/sparePartsAvailability",
+        "@type": "xsd:string"
+      },
+      "disassemblyInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/disassemblyInstructions",
+        "@type": "xsd:anyURI"
+      },
+      "recyclingInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclingInstructions",
+        "@type": "xsd:string"
+      },
+      "collectionPointsUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/collectionPointsUrl",
+        "@type": "xsd:anyURI"
+      },
+      "takeBackProgram": {
+        "@id": "https://tracepass.eu/voc/dpp/takeBackProgram"
+      },
+      "microplasticsRelease": {
+        "@id": "https://tracepass.eu/voc/dpp/microplasticsRelease"
+      },
+      "microplasticsSheddingRate": {
+        "@id": "https://tracepass.eu/voc/dpp/microplasticsSheddingRate",
+        "@type": "xsd:decimal"
+      },
+      "supplyChainTraceability": {
+        "@id": "https://tracepass.eu/voc/dpp/supplyChainTraceability",
+        "@container": "@set"
+      },
+      "weavingCountry": {
+        "@id": "https://tracepass.eu/voc/dpp/weavingCountry",
+        "@type": "xsd:string"
+      },
+      "dyeingCountry": {
+        "@id": "https://tracepass.eu/voc/dpp/dyeingCountry",
+        "@type": "xsd:string"
+      },
+      "assemblyCountry": {
+        "@id": "https://tracepass.eu/voc/dpp/assemblyCountry",
+        "@type": "xsd:string"
+      },
+      "dyeingMethod": {
+        "@id": "https://tracepass.eu/voc/dpp/dyeingMethod",
+        "@type": "xsd:string"
+      },
+      "finishingProcesses": {
+        "@id": "https://tracepass.eu/voc/dpp/finishingProcesses",
+        "@container": "@set"
+      },
+      "waterConsumptionLiters": {
+        "@id": "https://tracepass.eu/voc/dpp/waterConsumptionLiters",
+        "@type": "xsd:decimal"
+      },
+      "energyConsumptionKwh": {
+        "@id": "https://tracepass.eu/voc/dpp/energyConsumptionKwh",
+        "@type": "xsd:decimal"
+      },
+      "transportDistanceKm": {
+        "@id": "https://tracepass.eu/voc/dpp/transportDistanceKm",
+        "@type": "xsd:decimal"
+      },
+      "transportMode": {
+        "@id": "https://tracepass.eu/voc/dpp/transportMode",
+        "@type": "xsd:string"
+      },
+      "laborConditionsCertification": {
+        "@id": "https://tracepass.eu/voc/dpp/laborConditionsCertification",
+        "@type": "xsd:string"
+      },
+      "animalWelfareStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/animalWelfareStatus",
+        "@type": "xsd:string"
+      },
+      "packagingRecycledContentPct": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingRecycledContentPct",
+        "@type": "xsd:decimal"
+      },
+      "packagingRecyclability": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingRecyclability",
+        "@type": "xsd:boolean"
+      },
+      "ecoScoreValue": {
+        "@id": "https://tracepass.eu/voc/dpp/ecoScoreValue",
+        "@type": "xsd:decimal"
+      },
+      "ecoScoreGrade": {
+        "@id": "https://tracepass.eu/voc/dpp/ecoScoreGrade",
+        "@type": "xsd:string"
+      },
+      "pefClimateChange": {
+        "@id": "https://tracepass.eu/voc/dpp/pefClimateChange",
+        "@type": "xsd:decimal"
+      },
+      "pefWaterUse": {
+        "@id": "https://tracepass.eu/voc/dpp/pefWaterUse",
+        "@type": "xsd:decimal"
+      },
+      "pefEutrophication": {
+        "@id": "https://tracepass.eu/voc/dpp/pefEutrophication",
+        "@type": "xsd:decimal"
+      },
+      "pefResourceDepletion": {
+        "@id": "https://tracepass.eu/voc/dpp/pefResourceDepletion",
+        "@type": "xsd:decimal"
+      },
+      "durabilityBonusMalus": {
+        "@id": "https://tracepass.eu/voc/dpp/durabilityBonusMalus",
+        "@type": "xsd:decimal"
+      },
+      "microfiberReleaseCoefficient": {
+        "@id": "https://tracepass.eu/voc/dpp/microfiberReleaseCoefficient",
+        "@type": "xsd:decimal"
+      }
+    }
+  ]
+}

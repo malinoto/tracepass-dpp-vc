@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://tracepass.eu/schema/dpp-vc/steel/v1.json",
-  "title": "Steel DPP — credentialSubject.characteristics",
-  "description": "The steel-specific conformance data for a UNTP DigitalProductPassport. Plugs into credentialSubject.characteristics. Every property's x-iri names its JSON-LD term; x-regulation names the EU instrument that mandates a required field.",
+  "title": "Iron, Steel & Aluminium — DPP characteristics",
+  "description": "Field specifications for the Iron, Steel & Aluminium Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
-  "additionalProperties": true,
+  "additionalProperties": false,
   "required": [
     "batchLotNumber",
     "productType",
@@ -39,21 +39,27 @@
       "type": "string",
       "title": "GTIN",
       "description": "GTIN-14 product identifier (14-digit Global Trade Item Number).",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "batchLotNumber": {
       "type": "string",
       "title": "Batch / Lot Number",
       "description": "Production batch or lot number (GS1 AI 10). For steel products this is typically the heat number.",
-      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber",
-      "x-regulation": "32023R0988"
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
       "type": "string",
       "title": "Serial Number",
       "description": "Individual item serial number for high-value products (coils, plates).",
-      "x-iri": "https://tracepass.eu/voc/dpp/serialNumber",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
     },
     "productType": {
       "type": "string",
@@ -79,20 +85,27 @@
         "aluminium_extrusion",
         "aluminium_foil"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/productType",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex I",
+      "x-iri": "https://tracepass.eu/voc/dpp/productType"
     },
     "productName": {
       "type": "string",
       "title": "Product Name",
       "description": "Commercial product name including grade and delivery condition.",
-      "x-iri": "https://tracepass.eu/voc/dpp/productName",
-      "x-regulation": "32023R0988"
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "cnCode": {
       "type": "string",
       "title": "CN Code",
       "description": "Combined Nomenclature code (EU customs, 8 digits). Critical for CBAM goods identification and benchmark determination.",
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex I",
       "x-iri": "http://data.europa.eu/xsp/cn2024/{code}0080"
     },
     "steelGradeDesignation": {
@@ -105,15 +118,18 @@
       "type": "string",
       "title": "Country of Manufacture",
       "description": "ISO 3166-1 alpha-2 country code of production location. Determines CBAM default benchmark values and carbon price.",
-      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
     },
     "facilityId": {
       "type": "string",
       "title": "Facility ID",
       "description": "Production facility identifier. For CBAM: installation ID in CBAM registry. Installation-level emissions data is tied to this ID.",
-      "x-iri": "https://tracepass.eu/voc/dpp/facilityId",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/facilityId"
     },
     "primaryMaterialType": {
       "type": "string",
@@ -129,8 +145,9 @@
         "aluminium_secondary",
         "aluminium_alloy"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/primaryMaterialType",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-iri": "https://tracepass.eu/voc/dpp/primaryMaterialType"
     },
     "chemicalComposition": {
       "type": "array",
@@ -146,8 +163,10 @@
       "description": "Total recycled material content by weight. ESPR will set minimum thresholds via delegated act (expected 2027-2028).",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 5(5)(j)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "preConsumerScrapPct": {
       "type": "number",
@@ -155,8 +174,9 @@
       "description": "Pre-consumer (internal/process) scrap content by weight.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerScrapPct",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerScrapPct"
     },
     "postConsumerScrapPct": {
       "type": "number",
@@ -164,8 +184,9 @@
       "description": "Post-consumer (end-of-life) scrap content by weight.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerScrapPct",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerScrapPct"
     },
     "recycledContentVerification": {
       "type": "string",
@@ -177,15 +198,17 @@
         "self_declared",
         "third_party_verified"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentVerification",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentVerification"
     },
     "coatings": {
       "type": "array",
       "title": "Coatings",
       "description": "Surface coatings applied to the product (galvanizing, painting, etc.).",
-      "x-iri": "https://tracepass.eu/voc/dpp/coatings",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/coatings"
     },
     "yieldStrengthMpa": {
       "type": "number",
@@ -240,15 +263,18 @@
         "Inert_anode",
         "other"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/productionRoute",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/productionRoute"
     },
     "productionDate": {
       "type": "string",
       "title": "Production Date",
       "description": "Date of manufacture or final processing.",
-      "x-iri": "https://tracepass.eu/voc/dpp/productionDate",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/productionDate"
     },
     "heatNumber": {
       "type": "string",
@@ -278,8 +304,9 @@
       "title": "Electricity Grid Carbon Intensity",
       "description": "Grid emission factor in gCO2/kWh. Critical for aluminium indirect emissions calculation under CBAM.",
       "x-unit": "gCO2/kWh",
-      "x-iri": "https://tracepass.eu/voc/dpp/electricityGridIntensity",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-iri": "https://tracepass.eu/voc/dpp/electricityGridIntensity"
     },
     "renewableSharePct": {
       "type": "number",
@@ -287,23 +314,26 @@
       "description": "Share of renewable electricity used in production.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-iri": "https://tracepass.eu/voc/dpp/renewableSharePct",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/renewableSharePct"
     },
     "electricityConsumedKwhPerT": {
       "type": "number",
       "title": "Electricity Consumed (kWh/t)",
       "description": "Electricity consumption per tonne of product. Especially critical for EAF and aluminium smelting.",
       "x-unit": "kWh/t",
-      "x-iri": "https://tracepass.eu/voc/dpp/electricityConsumedKwhPerT",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-iri": "https://tracepass.eu/voc/dpp/electricityConsumedKwhPerT"
     },
     "rawMaterialOrigin": {
       "type": "array",
       "title": "Raw Material Origin",
       "description": "Origin of raw materials (iron ore, bauxite, scrap, etc.) for supply chain traceability.",
-      "x-iri": "https://tracepass.eu/voc/dpp/rawMaterialOrigin",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/rawMaterialOrigin"
     },
     "reductionAgent": {
       "type": "string",
@@ -321,48 +351,57 @@
         "inert_anode",
         "N/A"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/reductionAgent",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-iri": "https://tracepass.eu/voc/dpp/reductionAgent"
     },
     "totalCarbonFootprint": {
       "type": "object",
       "title": "Total Carbon Footprint",
       "description": "Product carbon footprint per ISO 14067 / EU PEF. Cradle-to-gate value in kgCO2e/kg. Overlaps with CBAM embedded emissions.",
       "x-unit": "kgCO2e/kg",
-      "x-iri": "https://tracepass.eu/voc/dpp/totalCarbonFootprint",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 5(5)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalCarbonFootprint"
     },
     "scope1DirectEmissions": {
       "type": "number",
       "title": "Scope 1 Direct Emissions",
       "description": "Direct emissions from the production installation. THE primary CBAM field for iron/steel.",
       "x-unit": "tCO2e/t",
-      "x-iri": "https://tracepass.eu/voc/dpp/scope1DirectEmissions",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/scope1DirectEmissions"
     },
     "scope2IndirectEmissions": {
       "type": "number",
       "title": "Scope 2 Indirect Emissions",
       "description": "Indirect emissions from purchased electricity/heat. Counted in CBAM for aluminium only; required in DPP for all.",
       "x-unit": "tCO2e/t",
-      "x-iri": "https://tracepass.eu/voc/dpp/scope2IndirectEmissions",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-iri": "https://tracepass.eu/voc/dpp/scope2IndirectEmissions"
     },
     "scope3UpstreamEmissions": {
       "type": "number",
       "title": "Scope 3 Upstream Emissions",
       "description": "Upstream value chain emissions (raw materials, transport). CBAM counts precursor emissions only.",
       "x-unit": "tCO2e/t",
-      "x-iri": "https://tracepass.eu/voc/dpp/scope3UpstreamEmissions",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/scope3UpstreamEmissions"
     },
     "precursorEmissions": {
       "type": "array",
       "title": "Precursor Emissions",
       "description": "Emissions from CBAM precursor inputs (e.g., pig iron, DRI, sinter, pellets). Summed into total CBAM embedded emissions.",
       "x-unit": "tCO2/t",
-      "x-iri": "https://tracepass.eu/voc/dpp/precursorEmissions",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/precursorEmissions"
     },
     "calculationMethodology": {
       "type": "string",
@@ -376,15 +415,18 @@
         "CBAM_implementing_regulation",
         "other"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/calculationMethodology",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/calculationMethodology"
     },
     "thirdPartyVerification": {
       "type": "object",
       "title": "Third-Party Verification",
       "description": "Third-party verification of carbon footprint data. Mandatory for CBAM from 2026 definitive phase.",
-      "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyVerification",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Art. 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyVerification"
     },
     "carbonIntensityClass": {
       "type": "string",
@@ -399,15 +441,18 @@
         "F",
         "G"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/carbonIntensityClass",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonIntensityClass"
     },
     "euEtsBenchmarkProduct": {
       "type": "string",
       "title": "EU ETS Benchmark Product",
       "description": "EU ETS product benchmark reference for EU producers.",
-      "x-iri": "https://tracepass.eu/voc/dpp/euEtsBenchmarkProduct",
-      "x-regulation": "32003L0087"
+      "x-regulation": "32003L0087",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32003L0087",
+      "x-iri": "https://tracepass.eu/voc/dpp/euEtsBenchmarkProduct"
     },
     "dataQuality": {
       "type": "string",
@@ -419,8 +464,10 @@
         "default_benchmark",
         "country_default"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/dataQuality",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataQuality"
     },
     "cbamGoodsType": {
       "type": "string",
@@ -430,72 +477,88 @@
         "simple",
         "complex"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/cbamGoodsType",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/cbamGoodsType"
     },
     "totalSpecificEmbeddedEmissions": {
       "type": "number",
       "title": "Total Specific Embedded Emissions",
       "description": "Total embedded emissions per tonne for CBAM declaration (direct + precursor for steel; direct + indirect + precursor for aluminium).",
       "x-unit": "tCO2/t",
-      "x-iri": "https://tracepass.eu/voc/dpp/totalSpecificEmbeddedEmissions",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalSpecificEmbeddedEmissions"
     },
     "carbonPricePaid": {
       "type": "object",
       "title": "Carbon Price Paid",
       "description": "Carbon price already paid in country of origin. Deducted from CBAM certificates an importer must surrender.",
       "x-unit": "EUR/tCO2",
-      "x-iri": "https://tracepass.eu/voc/dpp/carbonPricePaid",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonPricePaid"
     },
     "cbamDeclarantEori": {
       "type": "string",
       "title": "CBAM Declarant EORI Number",
       "description": "EU Economic Operators Registration and Identification number of the CBAM declarant (importer).",
-      "x-iri": "https://tracepass.eu/voc/dpp/cbamDeclarantEori",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-iri": "https://tracepass.eu/voc/dpp/cbamDeclarantEori"
     },
     "cbamAccountNumber": {
       "type": "string",
       "title": "CBAM Account Number",
       "description": "CBAM account ID in the EU CBAM registry.",
-      "x-iri": "https://tracepass.eu/voc/dpp/cbamAccountNumber",
-      "x-regulation": "32023R0956"
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-iri": "https://tracepass.eu/voc/dpp/cbamAccountNumber"
     },
     "svhcPresent": {
       "type": "boolean",
       "title": "Contains SVHC",
       "description": "Whether the product contains Substances of Very High Concern above 0.1% w/w threshold per REACH Article 33.",
-      "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent",
-      "x-regulation": "32006R1907"
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
     },
     "svhcCandidateListSubstances": {
       "type": "array",
       "title": "SVHC List",
       "description": "List of SVHC substances present above 0.1% w/w, with CAS numbers and concentrations.",
-      "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances",
-      "x-regulation": "32006R1907"
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33, SCIP",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances"
     },
     "reachRegistrationNumbers": {
       "type": "array",
       "title": "REACH Registration Numbers",
       "description": "REACH registration numbers for applicable substances.",
-      "x-iri": "https://tracepass.eu/voc/dpp/reachRegistrationNumbers",
-      "x-regulation": "32006R1907"
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/reachRegistrationNumbers"
     },
     "restrictedSubstancesCompliance": {
       "type": "boolean",
       "title": "Restricted Substances Compliance",
       "description": "Compliance with REACH Annex XVII substance restrictions.",
-      "x-iri": "https://tracepass.eu/voc/dpp/restrictedSubstancesCompliance",
-      "x-regulation": "32006R1907"
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex XVII",
+      "x-iri": "https://tracepass.eu/voc/dpp/restrictedSubstancesCompliance"
     },
     "gwpTotal": {
       "type": "number",
       "title": "GWP Total",
       "description": "Global warming potential total per declared unit (kg CO2 eq.). EN 15804+A2 indicator.",
       "x-unit": "kg CO2e",
+      "x-standard": "EN 15804+A2 (global warming potential, total)",
       "x-iri": "https://tracepass.eu/voc/dpp/gwpTotal"
     },
     "odp": {
@@ -503,6 +566,7 @@
       "title": "Ozone Depletion Potential",
       "description": "Ozone depletion potential in kg CFC-11 eq. per declared unit.",
       "x-unit": "kg CFC-11 eq.",
+      "x-standard": "EN 15804+A2 (ozone depletion potential)",
       "x-iri": "https://tracepass.eu/voc/dpp/odp"
     },
     "ap": {
@@ -510,6 +574,7 @@
       "title": "Acidification Potential",
       "description": "Acidification potential in mol H+ eq. per declared unit.",
       "x-unit": "mol H+ eq.",
+      "x-standard": "EN 15804+A2 (acidification potential)",
       "x-iri": "https://tracepass.eu/voc/dpp/ap"
     },
     "waterUse": {
@@ -517,18 +582,21 @@
       "title": "Water Use",
       "description": "Water use in m3 world eq. per declared unit.",
       "x-unit": "m3 world eq.",
+      "x-standard": "EN 15804+A2 (water use)",
       "x-iri": "https://tracepass.eu/voc/dpp/waterUse"
     },
     "epdReferenceUri": {
       "type": "string",
       "title": "EPD Reference URI",
       "description": "URI to the Environmental Product Declaration document.",
+      "x-standard": "ISO 14025 (Type III environmental declarations)",
       "x-iri": "https://tracepass.eu/voc/dpp/epdReferenceUri"
     },
     "epdProgramOperator": {
       "type": "string",
       "title": "EPD Program Operator",
       "description": "Name of the EPD program operator (e.g. IBU, EPD International, BRE).",
+      "x-standard": "ISO 14025 (Type III environmental declarations)",
       "x-iri": "https://tracepass.eu/voc/dpp/epdProgramOperator"
     },
     "lifecycleModules": {
@@ -541,6 +609,7 @@
       "type": "string",
       "title": "Declared Unit",
       "description": "Declared or functional unit for EPD environmental indicators.",
+      "x-standard": "EN 15804+A2 (declared and functional unit)",
       "x-iri": "https://tracepass.eu/voc/dpp/declaredUnit"
     },
     "expectedServiceLifeYears": {
@@ -549,8 +618,10 @@
       "description": "Expected product service life in years.",
       "x-unit": "years",
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
-      "x-iri": "https://tracepass.eu/voc/dpp/expectedServiceLifeYears",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 5(5)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedServiceLifeYears"
     },
     "recyclabilityPercentage": {
       "type": "number",
@@ -558,29 +629,36 @@
       "description": "Percentage of product mass that is recyclable.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 5(5)(i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage"
     },
     "endOfLifeInstructions": {
       "type": "string",
       "title": "End-of-Life Instructions",
       "description": "URI to dismantling, recycling, or end-of-life guidance.",
-      "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 5(5)(l)",
+      "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
     },
     "ceMarking": {
       "type": "boolean",
       "title": "CE Marking",
       "description": "Whether CE marking is applied (required for construction products under CPR).",
-      "x-iri": "https://tracepass.eu/voc/dpp/ceMarking",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 13-15",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
     },
     "declarationOfPerformanceUri": {
       "type": "string",
       "title": "Declaration of Performance URI",
       "description": "URI to the Declaration of Performance document for construction products.",
-      "x-iri": "https://tracepass.eu/voc/dpp/declarationOfPerformanceUri",
-      "x-regulation": "32024R3110"
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-iri": "https://tracepass.eu/voc/dpp/declarationOfPerformanceUri"
     },
     "inspectionCertificateType": {
       "type": "string",
@@ -616,13 +694,17 @@
       "type": "string",
       "title": "EU ETS Installation ID",
       "description": "EU ETS installation permit ID. EU ETS installations are exempt from CBAM when selling within the EU.",
-      "x-iri": "https://tracepass.eu/voc/dpp/euEtsInstallationId",
-      "x-regulation": "32003L0087"
+      "x-regulation": "32003L0087",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32003L0087",
+      "x-iri": "https://tracepass.eu/voc/dpp/euEtsInstallationId"
     },
     "supplyChainEvents": {
       "type": "array",
       "title": "Supply Chain Events",
       "description": "Supply chain traceability events (EPCIS 2.0 aligned): mining, smelting, rolling, finishing, shipping, etc.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 5(5)(o)",
       "x-iri": "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld"
     },
     "dataCarrier": {
@@ -635,8 +717,9 @@
         "NFC",
         "RFID"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrier",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrier"
     },
     "accessLevel": {
       "type": "string",
@@ -647,29 +730,34 @@
         "restricted",
         "authority"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/accessLevel",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "registryEntryUri": {
       "type": "string",
       "title": "Registry Entry URI",
       "description": "URI in the EU DPP central registry (operational from July 2026).",
-      "x-iri": "https://tracepass.eu/voc/dpp/registryEntryUri",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/registryEntryUri"
     },
     "dataFormat": {
       "type": "string",
       "title": "Data Format",
       "description": "Machine-readable data format per ESPR requirements.",
-      "x-iri": "https://tracepass.eu/voc/dpp/dataFormat",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataFormat"
     },
     "languages": {
       "type": "array",
       "title": "Languages",
       "description": "Available languages for this DPP per ESPR Article 8.",
-      "x-iri": "https://tracepass.eu/voc/dpp/languages",
-      "x-regulation": "32024R1781"
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 8",
+      "x-iri": "https://tracepass.eu/voc/dpp/languages"
     },
     "ceMarkingStatus": {
       "type": "string",
@@ -680,8 +768,10 @@
         "pending",
         "not_applicable"
       ],
-      "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus",
-      "x-regulation": "32024R3110"
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Arts. 8-9",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
     }
   }
 }

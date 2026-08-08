@@ -1,0 +1,534 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/textile/v1.json",
+  "title": "Textile — DPP characteristics",
+  "description": "Field specifications for the Textile Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "modelNumber",
+    "batchLotNumber",
+    "euResponsiblePerson",
+    "productName",
+    "fiberComposition",
+    "substancesOfConcern",
+    "certifications",
+    "countryOfManufacture"
+  ],
+  "properties": {
+    "modelNumber": {
+      "type": "string",
+      "title": "Model Number",
+      "description": "Manufacturer's model number or variant identifier",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/modelNumber"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch Number",
+      "description": "Production batch identifier for traceability and recalls",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "serialNumber": {
+      "type": "string",
+      "title": "Serial Number",
+      "description": "Item-level unique serial number (optional, for item-level tracking)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
+    },
+    "euResponsiblePerson": {
+      "type": "string",
+      "title": "EU Responsible Person",
+      "description": "Designated EU responsible person per EU product safety regulation",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 16",
+      "x-iri": "https://tracepass.eu/voc/dpp/euResponsiblePerson"
+    },
+    "productName": {
+      "type": "string",
+      "title": "Product Name",
+      "description": "Commercial product name or trade designation",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productName"
+    },
+    "productCategory": {
+      "type": "string",
+      "title": "Product Category",
+      "description": "Type of textile product: apparel, footwear, or home textile",
+      "enum": [
+        "apparel",
+        "footwear",
+        "home_textile"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
+    },
+    "productDescription": {
+      "type": "string",
+      "title": "Product Description",
+      "description": "Detailed description of the textile product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productDescription"
+    },
+    "fiberComposition": {
+      "type": "array",
+      "title": "Fiber Composition",
+      "description": "Array of fibers with ISO 2076 codes and percentages, must sum to 100%",
+      "x-regulation": "32011R1007",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1007",
+      "x-provision": "Arts. 9(1), 14(1), 16",
+      "x-iri": "https://tracepass.eu/voc/dpp/fiberComposition"
+    },
+    "recycledContentPercentage": {
+      "type": "number",
+      "title": "Recycled Content Percentage",
+      "description": "Percentage of recycled content by weight in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
+    },
+    "careInstructions": {
+      "type": "string",
+      "title": "Care Instructions",
+      "description": "Care label codes per ISO 3758 (washing, bleaching, drying, ironing, professional care)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/careInstructions"
+    },
+    "substancesOfConcern": {
+      "type": "array",
+      "title": "Substances of Concern",
+      "description": "Array of hazardous substances with CAS number and concentration, threshold >0.1%",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
+    },
+    "certifications": {
+      "type": "array",
+      "title": "Certifications",
+      "description": "List of relevant certifications such as OEKO-TEX, GOTS, EU Ecolabel, Bluesign, etc.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "oeko_tex_100",
+          "oeko_tex_step",
+          "gots",
+          "eu_ecolabel",
+          "bluesign",
+          "grs",
+          "rcs",
+          "fairtrade",
+          "other"
+        ]
+      },
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/certifications"
+    },
+    "countryOfManufacture": {
+      "type": "string",
+      "title": "Country of Manufacture",
+      "description": "Country where the product was manufactured, ISO 3166-1 alpha-2 code",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint",
+      "description": "Total carbon footprint per product in kg CO2 equivalent",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "environmentalFootprintScore": {
+      "type": "number",
+      "title": "Environmental Footprint Score (PEF)",
+      "description": "Environmental footprint score in milli-points per EU PEF methodology",
+      "x-unit": "mPt",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/environmentalFootprintScore"
+    },
+    "recyclabilityScore": {
+      "type": "number",
+      "title": "Recyclability Score",
+      "description": "Recyclability score from 0-10 per JRC methodology. Auto-zero if >15% elastane.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityScore"
+    },
+    "recyclabilityLabel": {
+      "type": "string",
+      "title": "Recyclability Label",
+      "description": "Qualitative recyclability label: recyclable or non-recyclable",
+      "enum": [
+        "recyclable",
+        "non_recyclable"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityLabel"
+    },
+    "monoMaterialPercentage": {
+      "type": "number",
+      "title": "Mono-Material Percentage",
+      "description": "Percentage of the product that is a single material type, key factor in recyclability",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/monoMaterialPercentage"
+    },
+    "expectedLifespan": {
+      "type": "object",
+      "title": "Expected Lifespan",
+      "description": "Expected product lifespan with value and unit (years or wash_cycles)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedLifespan"
+    },
+    "durabilityPillingResistance": {
+      "type": "number",
+      "title": "Pilling Resistance",
+      "description": "Pilling resistance grade 1-5 per ISO 12945",
+      "x-unit": "grade",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityPillingResistance"
+    },
+    "durabilityAbrasionResistance": {
+      "type": "number",
+      "title": "Abrasion Resistance",
+      "description": "Abrasion resistance in Martindale cycles per ISO 12947",
+      "x-unit": "cycles",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityAbrasionResistance"
+    },
+    "durabilityColorFastnessWashing": {
+      "type": "number",
+      "title": "Color Fastness to Washing",
+      "description": "Color fastness to washing grade per ISO 105-C06",
+      "x-unit": "grade",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityColorFastnessWashing"
+    },
+    "durabilityColorFastnessLight": {
+      "type": "number",
+      "title": "Color Fastness to Light",
+      "description": "Color fastness to light grade per ISO 105-B02",
+      "x-unit": "grade",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityColorFastnessLight"
+    },
+    "durabilityDimensionalStability": {
+      "type": "number",
+      "title": "Dimensional Stability (Shrinkage)",
+      "description": "Dimensional change after washing as percentage shrinkage per ISO 5077",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityDimensionalStability"
+    },
+    "durabilityTearStrength": {
+      "type": "number",
+      "title": "Tear Strength",
+      "description": "Tear strength in Newtons per ISO 13937",
+      "x-unit": "N",
+      "x-unitIri": "http://qudt.org/vocab/unit/N",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityTearStrength"
+    },
+    "repairInstructions": {
+      "type": "string",
+      "title": "Repair Instructions",
+      "description": "URL to repair instructions for the textile product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/repairInstructions"
+    },
+    "sparePartsAvailability": {
+      "type": "string",
+      "title": "Spare Parts Availability",
+      "description": "Information about availability of spare parts (buttons, zippers, patches, etc.)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsAvailability"
+    },
+    "disassemblyInstructions": {
+      "type": "string",
+      "title": "Disassembly Instructions",
+      "description": "URL to disassembly instructions for recycling preparation",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/disassemblyInstructions"
+    },
+    "recyclingInstructions": {
+      "type": "string",
+      "title": "Recycling Instructions",
+      "description": "Instructions for proper recycling of the textile product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclingInstructions"
+    },
+    "collectionPointsUrl": {
+      "type": "string",
+      "title": "Collection Points URL",
+      "description": "URL to find nearby textile collection/drop-off points",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/collectionPointsUrl"
+    },
+    "takeBackProgram": {
+      "type": "object",
+      "title": "Take-Back Program",
+      "description": "Information about manufacturer's take-back program: availability and URL",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/takeBackProgram"
+    },
+    "microplasticsRelease": {
+      "type": "object",
+      "title": "Microplastics Release",
+      "description": "Whether the product releases microplastics and synthetic fiber percentage",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/microplasticsRelease"
+    },
+    "microplasticsSheddingRate": {
+      "type": "number",
+      "title": "Microplastics Shedding Rate",
+      "description": "Microplastics shedding rate in mg/kg per wash cycle",
+      "x-unit": "mg/kg per wash",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/microplasticsSheddingRate"
+    },
+    "supplyChainTraceability": {
+      "type": "array",
+      "title": "Supply Chain Traceability",
+      "description": "Array of supply chain stages with country and facility name",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/supplyChainTraceability"
+    },
+    "weavingCountry": {
+      "type": "string",
+      "title": "Weaving Country",
+      "description": "Country where weaving/knitting took place, ISO 3166-1 alpha-2. Required by French AGEC.",
+      "x-standard": "ISO 3166-1 (country codes)",
+      "x-iri": "https://tracepass.eu/voc/dpp/weavingCountry"
+    },
+    "dyeingCountry": {
+      "type": "string",
+      "title": "Dyeing Country",
+      "description": "Country where dyeing/printing took place, ISO 3166-1 alpha-2. Required by French AGEC.",
+      "x-standard": "ISO 3166-1 (country codes)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dyeingCountry"
+    },
+    "assemblyCountry": {
+      "type": "string",
+      "title": "Assembly Country",
+      "description": "Country where final assembly (sewing) took place, ISO 3166-1 alpha-2. Required by French AGEC.",
+      "x-standard": "ISO 3166-1 (country codes)",
+      "x-iri": "https://tracepass.eu/voc/dpp/assemblyCountry"
+    },
+    "dyeingMethod": {
+      "type": "string",
+      "title": "Dyeing Method",
+      "description": "Method used for dyeing the textile (e.g. piece dyeing, yarn dyeing, solution dyeing)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/dyeingMethod"
+    },
+    "finishingProcesses": {
+      "type": "array",
+      "title": "Finishing Processes",
+      "description": "Array of finishing processes applied to the textile (e.g. water-repellent, anti-wrinkle, softening)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/finishingProcesses"
+    },
+    "waterConsumptionLiters": {
+      "type": "number",
+      "title": "Water Consumption",
+      "description": "Total water consumed per unit during production in liters",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/waterConsumptionLiters"
+    },
+    "energyConsumptionKwh": {
+      "type": "number",
+      "title": "Energy Consumption",
+      "description": "Total energy consumed per unit during production in kWh",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyConsumptionKwh"
+    },
+    "transportDistanceKm": {
+      "type": "number",
+      "title": "Transport Distance",
+      "description": "Total transport distance from production to market in kilometers",
+      "x-unit": "km",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/transportDistanceKm"
+    },
+    "transportMode": {
+      "type": "string",
+      "title": "Transport Mode",
+      "description": "Primary mode of transport used for shipping the product",
+      "enum": [
+        "sea",
+        "air",
+        "road",
+        "rail"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/transportMode"
+    },
+    "laborConditionsCertification": {
+      "type": "string",
+      "title": "Labor Conditions Certification",
+      "description": "Labor/social compliance certification such as SA8000",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/laborConditionsCertification"
+    },
+    "animalWelfareStatus": {
+      "type": "string",
+      "title": "Animal Welfare Status",
+      "description": "Animal welfare certifications such as RDS (Responsible Down Standard), RWS (Responsible Wool Standard)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/animalWelfareStatus"
+    },
+    "packagingRecycledContentPct": {
+      "type": "number",
+      "title": "Packaging Recycled Content",
+      "description": "Percentage of recycled content in the product packaging",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingRecycledContentPct"
+    },
+    "packagingRecyclability": {
+      "type": "boolean",
+      "title": "Packaging Recyclability",
+      "description": "Whether the product packaging is recyclable",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingRecyclability"
+    },
+    "ecoScoreValue": {
+      "type": "number",
+      "title": "Eco-Score Value",
+      "description": "French eco-score value in milli-points (mPt). Required if selling in France since Oct 2025.",
+      "x-unit": "mPt",
+      "x-iri": "https://tracepass.eu/voc/dpp/ecoScoreValue"
+    },
+    "ecoScoreGrade": {
+      "type": "string",
+      "title": "Eco-Score Grade",
+      "description": "French eco-score letter grade A-E. Required if selling in France since Oct 2025.",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-iri": "https://tracepass.eu/voc/dpp/ecoScoreGrade"
+    },
+    "pefClimateChange": {
+      "type": "number",
+      "title": "PEF Climate Change Impact",
+      "description": "Product Environmental Footprint climate change impact in kg CO2 equivalent",
+      "x-unit": "kg CO2e",
+      "x-iri": "https://tracepass.eu/voc/dpp/pefClimateChange"
+    },
+    "pefWaterUse": {
+      "type": "number",
+      "title": "PEF Water Use",
+      "description": "Product Environmental Footprint water use impact in cubic meter equivalents",
+      "x-unit": "m3 world eq.",
+      "x-iri": "https://tracepass.eu/voc/dpp/pefWaterUse"
+    },
+    "pefEutrophication": {
+      "type": "number",
+      "title": "PEF Eutrophication",
+      "description": "Product Environmental Footprint eutrophication impact",
+      "x-iri": "https://tracepass.eu/voc/dpp/pefEutrophication"
+    },
+    "pefResourceDepletion": {
+      "type": "number",
+      "title": "PEF Resource Depletion",
+      "description": "Product Environmental Footprint resource depletion (minerals and metals) impact",
+      "x-iri": "https://tracepass.eu/voc/dpp/pefResourceDepletion"
+    },
+    "durabilityBonusMalus": {
+      "type": "number",
+      "title": "Durability Bonus/Malus",
+      "description": "Durability bonus or malus adjustment applied in eco-score calculation",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityBonusMalus"
+    },
+    "microfiberReleaseCoefficient": {
+      "type": "number",
+      "title": "Microfiber Release Coefficient",
+      "description": "Microfiber release coefficient used in French eco-score calculation",
+      "x-iri": "https://tracepass.eu/voc/dpp/microfiberReleaseCoefficient"
+    }
+  }
+}

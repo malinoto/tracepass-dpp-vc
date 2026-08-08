@@ -1,0 +1,202 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "productName": {
+        "@id": "https://tracepass.eu/voc/dpp/productName",
+        "@type": "xsd:string"
+      },
+      "productCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/productCategory",
+        "@type": "xsd:string"
+      },
+      "serialNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/serialNumber",
+        "@type": "xsd:string"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "primaryMetal": {
+        "@id": "https://tracepass.eu/voc/dpp/primaryMetal",
+        "@type": "xsd:string"
+      },
+      "metalFineness": {
+        "@id": "https://tracepass.eu/voc/dpp/metalFineness",
+        "@type": "xsd:decimal"
+      },
+      "metalWeight": {
+        "@id": "https://tracepass.eu/voc/dpp/metalWeight",
+        "@type": "xsd:decimal"
+      },
+      "hallmarkPresent": {
+        "@id": "https://tracepass.eu/voc/dpp/hallmarkPresent",
+        "@type": "xsd:boolean"
+      },
+      "hallmarkAuthority": {
+        "@id": "https://tracepass.eu/voc/dpp/hallmarkAuthority",
+        "@type": "xsd:string"
+      },
+      "hallmarkNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/hallmarkNumber",
+        "@type": "xsd:string"
+      },
+      "additionalMetals": {
+        "@id": "https://tracepass.eu/voc/dpp/additionalMetals",
+        "@container": "@set"
+      },
+      "gemstoneType": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneType",
+        "@type": "xsd:string"
+      },
+      "gemstoneWeight": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneWeight",
+        "@type": "xsd:decimal"
+      },
+      "gemstoneColor": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneColor",
+        "@type": "xsd:string"
+      },
+      "gemstoneClarity": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneClarity",
+        "@type": "xsd:string"
+      },
+      "gemstoneCut": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneCut",
+        "@type": "xsd:string"
+      },
+      "gemstoneOrigin": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneOrigin",
+        "@type": "xsd:string"
+      },
+      "gemstoneTreatment": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneTreatment",
+        "@type": "xsd:string"
+      },
+      "gemstoneLabCertificate": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneLabCertificate",
+        "@type": "xsd:string"
+      },
+      "isNatural": {
+        "@id": "https://tracepass.eu/voc/dpp/isNatural",
+        "@type": "xsd:boolean"
+      },
+      "metalOriginCountry": {
+        "@id": "https://tracepass.eu/voc/dpp/metalOriginCountry",
+        "@type": "xsd:string"
+      },
+      "gemstoneOriginMine": {
+        "@id": "https://tracepass.eu/voc/dpp/gemstoneOriginMine",
+        "@type": "xsd:string"
+      },
+      "conflictFreeStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/conflictFreeStatus",
+        "@type": "xsd:boolean"
+      },
+      "kimberleyProcessCompliant": {
+        "@id": "https://tracepass.eu/voc/dpp/kimberleyProcessCompliant",
+        "@type": "xsd:boolean"
+      },
+      "fairminedCertified": {
+        "@id": "https://tracepass.eu/voc/dpp/fairminedCertified",
+        "@type": "xsd:boolean"
+      },
+      "rjcCertificationStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/rjcCertificationStatus",
+        "@type": "xsd:string"
+      },
+      "chainOfCustodyDocUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/chainOfCustodyDocUrl",
+        "@type": "xsd:anyURI"
+      },
+      "leadContent": {
+        "@id": "https://tracepass.eu/voc/dpp/leadContent",
+        "@type": "xsd:decimal"
+      },
+      "cadmiumContent": {
+        "@id": "https://tracepass.eu/voc/dpp/cadmiumContent",
+        "@type": "xsd:decimal"
+      },
+      "nickelMigrationRate": {
+        "@id": "https://tracepass.eu/voc/dpp/nickelMigrationRate",
+        "@type": "xsd:decimal"
+      },
+      "svhcPresent": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcPresent",
+        "@type": "xsd:boolean"
+      },
+      "reachTestReportUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/reachTestReportUrl",
+        "@type": "xsd:anyURI"
+      },
+      "carbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
+        "@type": "xsd:decimal"
+      },
+      "recycledMetalContent": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledMetalContent",
+        "@type": "xsd:decimal"
+      },
+      "waterUsage": {
+        "@id": "https://tracepass.eu/voc/dpp/waterUsage",
+        "@type": "xsd:decimal"
+      },
+      "careInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/careInstructions",
+        "@type": "xsd:string"
+      },
+      "repairAvailable": {
+        "@id": "https://tracepass.eu/voc/dpp/repairAvailable",
+        "@type": "xsd:boolean"
+      },
+      "resizeAvailable": {
+        "@id": "https://tracepass.eu/voc/dpp/resizeAvailable",
+        "@type": "xsd:boolean"
+      },
+      "takeBackProgram": {
+        "@id": "https://tracepass.eu/voc/dpp/takeBackProgram"
+      },
+      "recyclabilityInfo": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityInfo",
+        "@type": "xsd:string"
+      },
+      "gemologicalLabCertificate": {
+        "@id": "https://tracepass.eu/voc/dpp/gemologicalLabCertificate",
+        "@type": "xsd:anyURI"
+      },
+      "hallmarkCertificate": {
+        "@id": "https://tracepass.eu/voc/dpp/hallmarkCertificate",
+        "@type": "xsd:anyURI"
+      },
+      "conflictFreeCertificate": {
+        "@id": "https://tracepass.eu/voc/dpp/conflictFreeCertificate",
+        "@type": "xsd:anyURI"
+      },
+      "rjcCertificate": {
+        "@id": "https://tracepass.eu/voc/dpp/rjcCertificate",
+        "@type": "xsd:anyURI"
+      },
+      "customCertificates": {
+        "@id": "https://tracepass.eu/voc/dpp/customCertificates",
+        "@container": "@set"
+      },
+      "dataCarrierType": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
+        "@type": "xsd:string"
+      },
+      "accessLevel": {
+        "@id": "https://tracepass.eu/voc/dpp/accessLevel",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

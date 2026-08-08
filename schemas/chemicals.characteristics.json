@@ -1,0 +1,925 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/chemicals/v1.json",
+  "title": "Chemicals & Paints — DPP characteristics",
+  "description": "Field specifications for the Chemicals & Paints Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "batchLotNumber",
+    "tradeName",
+    "commodityCode",
+    "manufacturerEmail",
+    "manufacturerPhone",
+    "ingredientSubstanceName",
+    "ingredientCasNumber",
+    "ingredientConcentrationRangePercent",
+    "hazardClass",
+    "signalWord",
+    "hazardPictograms",
+    "hazardStatements",
+    "precautionaryStatements",
+    "ufi",
+    "emergencyPhoneNumber",
+    "productCategoryEuPCS",
+    "svhcSubstances",
+    "svhcSubstanceName",
+    "svhcCasNumber",
+    "svhcConcentrationRange",
+    "svhcSafeUseInstructions",
+    "appearance",
+    "ph",
+    "usageInstructionsText",
+    "intendedUse",
+    "endOfLifeInstructions"
+  ],
+  "properties": {
+    "gtin": {
+      "type": "string",
+      "title": "GTIN",
+      "description": "Global Trade Item Number (GTIN-14) for the product.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9, GS1",
+      "x-iri": "https://ref.gs1.org/voc/gtin"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch / Lot ID",
+      "description": "Production batch or lot identifier for traceability.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 31 + Annex II SDS section 1.1",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "serialNumber": {
+      "type": "string",
+      "title": "Serial Number",
+      "description": "Individual unit serial number, if applicable.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
+    },
+    "tradeName": {
+      "type": "string",
+      "title": "Trade Name",
+      "description": "Commercial trade name of the chemical product.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 18 (product identifiers)",
+      "x-iri": "https://tracepass.eu/voc/dpp/tradeName"
+    },
+    "productModel": {
+      "type": "string",
+      "title": "Product Model",
+      "description": "Product model or variant identifier.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/productModel"
+    },
+    "packagingImageUrl": {
+      "type": "string",
+      "title": "Packaging Image URL",
+      "description": "URL to a product packaging image for visual identification.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingImageUrl"
+    },
+    "commodityCode": {
+      "type": "string",
+      "title": "Commodity Code (TARIC)",
+      "description": "TARIC combined nomenclature code for customs classification.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/commodityCode"
+    },
+    "productCategory": {
+      "type": "string",
+      "title": "Product Category",
+      "description": "Main product category (e.g. detergent, paint, lubricant, adhesive).",
+      "enum": [
+        "detergent",
+        "paint",
+        "lubricant",
+        "adhesive",
+        "solvent",
+        "cleaning_agent",
+        "coating",
+        "ink",
+        "sealant",
+        "other"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
+    },
+    "productSubcategory": {
+      "type": "string",
+      "title": "Product Subcategory",
+      "description": "Subcategory further specifying the product type.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/productSubcategory"
+    },
+    "manufacturerEmail": {
+      "type": "string",
+      "title": "Manufacturer Email",
+      "description": "Contact email for the manufacturer.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 1.3",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturerEmail"
+    },
+    "manufacturerPhone": {
+      "type": "string",
+      "title": "Manufacturer Phone",
+      "description": "Contact telephone number for the manufacturer.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturerPhone"
+    },
+    "passportServiceProvider": {
+      "type": "string",
+      "title": "Passport Service Provider",
+      "description": "Entity providing the DPP issuance service.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/passportServiceProvider"
+    },
+    "countryOfManufacture": {
+      "type": "string",
+      "title": "Country of Manufacture",
+      "description": "ISO 3166-1 alpha-2 country code where the product was manufactured.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
+    },
+    "ingredients": {
+      "type": "array",
+      "title": "Ingredients",
+      "description": "Array of ingredients/substances in the product, each with name, identifiers, concentration and function.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex III",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredients"
+    },
+    "ingredientSubstanceName": {
+      "type": "string",
+      "title": "Substance Name",
+      "description": "Chemical name of the ingredient substance.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 3.2",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientSubstanceName"
+    },
+    "ingredientIupacName": {
+      "type": "string",
+      "title": "IUPAC Name",
+      "description": "IUPAC systematic chemical name of the substance.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientIupacName"
+    },
+    "ingredientCasNumber": {
+      "type": "string",
+      "title": "CAS Number",
+      "description": "Chemical Abstracts Service registry number for the ingredient.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 3.2",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientCasNumber"
+    },
+    "ingredientEcNumber": {
+      "type": "string",
+      "title": "EC Number",
+      "description": "European Community number (EINECS/ELINCS) for the substance.",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientEcNumber"
+    },
+    "ingredientReachRegistrationNumber": {
+      "type": "string",
+      "title": "REACH Registration Number",
+      "description": "REACH registration number assigned by ECHA.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientReachRegistrationNumber"
+    },
+    "ingredientInciName": {
+      "type": "string",
+      "title": "INCI Name",
+      "description": "International Nomenclature of Cosmetic Ingredients name, where applicable.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientInciName"
+    },
+    "ingredientConcentrationRangePercent": {
+      "type": "string",
+      "title": "Concentration Range (%)",
+      "description": "Weight percentage concentration range of the ingredient in the product.",
+      "enum": [
+        "<5%",
+        "5-15%",
+        "15-30%",
+        ">=30%"
+      ],
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 3.2",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientConcentrationRangePercent"
+    },
+    "ingredientFunctionCategory": {
+      "type": "string",
+      "title": "Functional Category",
+      "description": "Functional classification of the ingredient in the formulation.",
+      "enum": [
+        "anionic_surfactant",
+        "cationic_surfactant",
+        "non_ionic_surfactant",
+        "amphoteric_surfactant",
+        "phosphate",
+        "zeolite",
+        "bleach_oxygen",
+        "bleach_chlorine",
+        "enzyme",
+        "preservative",
+        "fragrance",
+        "colourant",
+        "solvent",
+        "filler",
+        "binder",
+        "pigment",
+        "other"
+      ],
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientFunctionCategory"
+    },
+    "surfactantsTotal": {
+      "type": "number",
+      "title": "Total Surfactants (%)",
+      "description": "Total weight percentage of all surfactants in the product.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/surfactantsTotal"
+    },
+    "phosphatesContent": {
+      "type": "number",
+      "title": "Phosphates Content (% P2O5)",
+      "description": "Total phosphorus content expressed as P2O5 percentage.",
+      "x-unit": "% P2O5",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/phosphatesContent"
+    },
+    "phosphonatesContent": {
+      "type": "number",
+      "title": "Phosphonates Content (%)",
+      "description": "Total phosphonate content as weight percentage.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/phosphonatesContent"
+    },
+    "edtaContent": {
+      "type": "number",
+      "title": "EDTA Content",
+      "description": "Content of EDTA and its salts (chelating agent) as weight percentage.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/edtaContent"
+    },
+    "soapContent": {
+      "type": "number",
+      "title": "Soap Content",
+      "description": "Weight percentage of soap (fatty acid salts) in the formulation.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/soapContent"
+    },
+    "opticalBrighteners": {
+      "type": "boolean",
+      "title": "Optical Brighteners Present",
+      "description": "Whether the product contains optical brighteners / fluorescent whitening agents.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/opticalBrighteners"
+    },
+    "enzymes": {
+      "type": "array",
+      "title": "Enzymes",
+      "description": "Array of enzyme types used in the product (e.g. protease, lipase, amylase, cellulase).",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/enzymes"
+    },
+    "preservatives": {
+      "type": "array",
+      "title": "Preservatives",
+      "description": "Array of preservatives with substance name and CAS number.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/preservatives"
+    },
+    "fragranceAllergens": {
+      "type": "array",
+      "title": "Fragrance Allergens",
+      "description": "Array of fragrance allergens present above threshold, with CAS numbers.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/fragranceAllergens"
+    },
+    "microorganisms": {
+      "type": "array",
+      "title": "Microorganisms",
+      "description": "Array of microorganisms used in the product, with species and strain identifiers. Conditional — required only if product contains added microorganisms.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/microorganisms"
+    },
+    "hazardClass": {
+      "type": "array",
+      "title": "Hazard Classes",
+      "description": "Array of CLP/GHS hazard classifications applicable to the product.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Title II, Arts. 9-13 (classification)",
+      "x-iri": "https://tracepass.eu/voc/dpp/hazardClass"
+    },
+    "signalWord": {
+      "type": "string",
+      "title": "Signal Word",
+      "description": "CLP signal word: 'Danger' or 'Warning'.",
+      "enum": [
+        "Danger",
+        "Warning"
+      ],
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 20",
+      "x-iri": "https://tracepass.eu/voc/dpp/signalWord"
+    },
+    "hazardPictograms": {
+      "type": "array",
+      "title": "Hazard Pictograms",
+      "description": "Array of GHS pictogram codes applicable to the product (GHS01 through GHS09).",
+      "items": {
+        "type": "string",
+        "enum": [
+          "GHS01",
+          "GHS02",
+          "GHS03",
+          "GHS04",
+          "GHS05",
+          "GHS06",
+          "GHS07",
+          "GHS08",
+          "GHS09"
+        ]
+      },
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 19 & Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/hazardPictograms"
+    },
+    "hazardStatements": {
+      "type": "array",
+      "title": "Hazard Statements",
+      "description": "Array of H-code hazard statements with full text.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 21 & Annex III",
+      "x-iri": "https://tracepass.eu/voc/dpp/hazardStatements"
+    },
+    "precautionaryStatements": {
+      "type": "array",
+      "title": "Precautionary Statements",
+      "description": "Array of P-code precautionary statements with full text.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 22 & Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/precautionaryStatements"
+    },
+    "supplementalHazardInfo": {
+      "type": "string",
+      "title": "Supplemental Hazard Information",
+      "description": "Additional supplemental hazard information (EUH statements).",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/supplementalHazardInfo"
+    },
+    "ufi": {
+      "type": "string",
+      "title": "Unique Formula Identifier (UFI)",
+      "description": "16-character alphanumeric code linking the product to its poison centre notification. Required for hazardous mixtures.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 45 & Annex VIII",
+      "x-iri": "https://tracepass.eu/voc/dpp/ufi"
+    },
+    "poisonCentreNotificationNumber": {
+      "type": "string",
+      "title": "Poison Centre Notification Number",
+      "description": "Notification number from ECHA poison centres notification portal.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Annex VIII",
+      "x-iri": "https://tracepass.eu/voc/dpp/poisonCentreNotificationNumber"
+    },
+    "emergencyPhoneNumber": {
+      "type": "string",
+      "title": "Emergency Phone Number",
+      "description": "24-hour emergency telephone number for chemical incidents.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 1.4",
+      "x-iri": "https://tracepass.eu/voc/dpp/emergencyPhoneNumber"
+    },
+    "productCategoryEuPCS": {
+      "type": "string",
+      "title": "EU Product Categorisation System (EuPCS)",
+      "description": "Product category code under the European Product Categorisation System for poison centre notifications.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Annex VIII (product categorisation, EuPCS)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productCategoryEuPCS"
+    },
+    "svhcSubstances": {
+      "type": "array",
+      "title": "SVHC / Substances of Concern",
+      "description": "Array of Substances of Very High Concern present in the product above 0.1% w/w.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcSubstances"
+    },
+    "svhcSubstanceName": {
+      "type": "string",
+      "title": "SVHC Substance Name",
+      "description": "Name of the substance of very high concern.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcSubstanceName"
+    },
+    "svhcCasNumber": {
+      "type": "string",
+      "title": "SVHC CAS Number",
+      "description": "CAS registry number for the SVHC substance.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Article 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcCasNumber"
+    },
+    "svhcEcNumber": {
+      "type": "string",
+      "title": "SVHC EC Number",
+      "description": "EC number for the SVHC substance.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcEcNumber"
+    },
+    "svhcConcentrationRange": {
+      "type": "string",
+      "title": "SVHC Concentration Range",
+      "description": "Concentration range of the SVHC in the product.",
+      "enum": [
+        "0.1-0.3%",
+        "0.3-1%",
+        "1-5%",
+        "5-10%",
+        ">10%"
+      ],
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 7(5), REACH Article 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcConcentrationRange"
+    },
+    "svhcLocationInProduct": {
+      "type": "string",
+      "title": "SVHC Location in Product",
+      "description": "Where in the product the SVHC substance is present.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 7(5)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcLocationInProduct"
+    },
+    "svhcSafeUseInstructions": {
+      "type": "string",
+      "title": "SVHC Safe Use Instructions",
+      "description": "Instructions for safe use regarding the SVHC substance.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcSafeUseInstructions"
+    },
+    "svhcCandidateListDate": {
+      "type": "string",
+      "title": "SVHC Candidate List Date",
+      "description": "Date when the substance was added to the ECHA SVHC candidate list.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Article 59",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListDate"
+    },
+    "svhcScipNotificationId": {
+      "type": "string",
+      "title": "SCIP Notification ID",
+      "description": "SCIP database notification identifier from ECHA for articles containing SVHCs.",
+      "x-regulation": "32008L0098",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
+      "x-provision": "Article 9(1)(i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcScipNotificationId"
+    },
+    "appearance": {
+      "type": "string",
+      "title": "Appearance",
+      "description": "Physical appearance of the product (colour, form).",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 9.1",
+      "x-iri": "https://tracepass.eu/voc/dpp/appearance"
+    },
+    "odour": {
+      "type": "string",
+      "title": "Odour",
+      "description": "Description of the product's odour.",
+      "x-iri": "https://tracepass.eu/voc/dpp/odour"
+    },
+    "ph": {
+      "type": "number",
+      "title": "pH",
+      "description": "pH value of the product (as supplied or at specified dilution).",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 9.1",
+      "x-iri": "https://tracepass.eu/voc/dpp/ph"
+    },
+    "flashPoint": {
+      "type": "number",
+      "title": "Flash Point",
+      "description": "Flash point temperature of the product.",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-iri": "https://tracepass.eu/voc/dpp/flashPoint"
+    },
+    "density": {
+      "type": "number",
+      "title": "Density",
+      "description": "Density or specific gravity of the product.",
+      "x-unit": "g/cm³",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-CentiM3",
+      "x-iri": "https://tracepass.eu/voc/dpp/density"
+    },
+    "viscosity": {
+      "type": "number",
+      "title": "Viscosity",
+      "description": "Dynamic or kinematic viscosity of the product.",
+      "x-unit": "mPa·s",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliPA-SEC",
+      "x-iri": "https://tracepass.eu/voc/dpp/viscosity"
+    },
+    "vocContent": {
+      "type": "number",
+      "title": "VOC Content",
+      "description": "Volatile Organic Compound content. Required for paints/coatings under Decopaint Directive.",
+      "x-unit": "g/L",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-L",
+      "x-regulation": "32004L0042",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-iri": "https://tracepass.eu/voc/dpp/vocContent"
+    },
+    "vocLimit": {
+      "type": "number",
+      "title": "VOC Limit",
+      "description": "Maximum VOC limit for this product subcategory under the Decopaint Directive.",
+      "x-unit": "g/L",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-L",
+      "x-regulation": "32004L0042",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/vocLimit"
+    },
+    "vocCategory": {
+      "type": "string",
+      "title": "VOC Category",
+      "description": "Decopaint Directive product subcategory for VOC limits.",
+      "x-regulation": "32004L0042",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-provision": "Annex I",
+      "x-iri": "https://tracepass.eu/voc/dpp/vocCategory"
+    },
+    "paintType": {
+      "type": "string",
+      "title": "Paint Type",
+      "description": "Classification of the paint/coating product type.",
+      "enum": [
+        "interior_matt",
+        "interior_gloss",
+        "exterior",
+        "trim_gloss",
+        "varnish",
+        "primer",
+        "wood_stain",
+        "floor_coating",
+        "multi_colour",
+        "decorative_effect",
+        "other"
+      ],
+      "x-regulation": "32004L0042",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-iri": "https://tracepass.eu/voc/dpp/paintType"
+    },
+    "vocContentReadyToUse": {
+      "type": "number",
+      "title": "VOC Content (Ready to Use)",
+      "description": "VOC content of the product when ready for use (after any prescribed dilution).",
+      "x-unit": "g/L",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-L",
+      "x-regulation": "32004L0042",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-provision": "Article 3",
+      "x-iri": "https://tracepass.eu/voc/dpp/vocContentReadyToUse"
+    },
+    "vocMaxLimit": {
+      "type": "number",
+      "title": "VOC Maximum Limit",
+      "description": "Maximum permissible VOC content for this paint subcategory.",
+      "x-unit": "g/L",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-L",
+      "x-regulation": "32004L0042",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/vocMaxLimit"
+    },
+    "solventType": {
+      "type": "string",
+      "title": "Solvent Type",
+      "description": "Whether the product is water-borne or solvent-borne.",
+      "enum": [
+        "water_borne",
+        "solvent_borne"
+      ],
+      "x-regulation": "32004L0042",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-iri": "https://tracepass.eu/voc/dpp/solventType"
+    },
+    "coverageSqmPerLitre": {
+      "type": "number",
+      "title": "Coverage (m²/L)",
+      "description": "Spreading rate / coverage area per litre of product.",
+      "x-unit": "m²/L",
+      "x-iri": "https://tracepass.eu/voc/dpp/coverageSqmPerLitre"
+    },
+    "wetScrubResistanceClass": {
+      "type": "string",
+      "title": "Wet Scrub Resistance Class",
+      "description": "Wet scrub resistance class per EN 13300 (Class 1-5).",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "x-standard": "EN 13300 (water-borne coating materials, wet-scrub classes)",
+      "x-iri": "https://tracepass.eu/voc/dpp/wetScrubResistanceClass"
+    },
+    "titaniumDioxideContent": {
+      "type": "number",
+      "title": "Titanium Dioxide Content (%)",
+      "description": "Weight percentage of titanium dioxide (TiO2) in the product. Subject to CLP classification.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/titaniumDioxideContent"
+    },
+    "isoClassification": {
+      "type": "string",
+      "title": "ISO Classification",
+      "description": "ISO classification for paints and coatings (e.g. ISO 12944 for corrosion protection).",
+      "x-standard": "ISO 12944 (corrosivity categories for protective paint systems)",
+      "x-iri": "https://tracepass.eu/voc/dpp/isoClassification"
+    },
+    "ultimateBiodegradation": {
+      "type": "boolean",
+      "title": "Ultimate Biodegradation",
+      "description": "Whether the surfactants in the product achieve ultimate aerobic biodegradation.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/ultimateBiodegradation"
+    },
+    "biodegradationTestMethod": {
+      "type": "string",
+      "title": "Biodegradation Test Method",
+      "description": "Standard test method used for biodegradation assessment (e.g. OECD 301B, OECD 310).",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/biodegradationTestMethod"
+    },
+    "degradationPercent": {
+      "type": "number",
+      "title": "Degradation Percentage",
+      "description": "Percentage of biodegradation achieved in the standard test.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/degradationPercent"
+    },
+    "passThreshold": {
+      "type": "boolean",
+      "title": "Pass Threshold Met",
+      "description": "Whether the product meets the minimum biodegradation pass threshold (typically >=60%).",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/passThreshold"
+    },
+    "recommendedDoseMl": {
+      "type": "number",
+      "title": "Recommended Dose (mL)",
+      "description": "Recommended dosage in millilitres for a standard use cycle.",
+      "x-unit": "mL",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliL",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/recommendedDoseMl"
+    },
+    "waterHardnessRange": {
+      "type": "string",
+      "title": "Water Hardness Range",
+      "description": "Water hardness range for which the recommended dose applies (soft/medium/hard).",
+      "enum": [
+        "soft",
+        "medium",
+        "hard",
+        "very_hard"
+      ],
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/waterHardnessRange"
+    },
+    "machineLoadsPerPackage": {
+      "type": "number",
+      "title": "Machine Loads per Package",
+      "description": "Number of standard machine loads achievable from one package.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-iri": "https://tracepass.eu/voc/dpp/machineLoadsPerPackage"
+    },
+    "usageInstructionsText": {
+      "type": "string",
+      "title": "Usage Instructions",
+      "description": "Detailed usage instructions for the product.",
+      "x-iri": "https://tracepass.eu/voc/dpp/usageInstructionsText"
+    },
+    "intendedUse": {
+      "type": "string",
+      "title": "Intended Use",
+      "description": "Description of the product's intended use and application scope.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 1.2",
+      "x-iri": "https://tracepass.eu/voc/dpp/intendedUse"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint",
+      "description": "Product carbon footprint value in kg CO2 equivalent.",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "carbonFootprintScope": {
+      "type": "string",
+      "title": "Carbon Footprint Scope",
+      "description": "Life-cycle scope of the carbon footprint calculation (cradle-to-gate, cradle-to-grave).",
+      "enum": [
+        "cradle_to_gate",
+        "cradle_to_grave"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintScope"
+    },
+    "carbonFootprintMethodology": {
+      "type": "string",
+      "title": "Carbon Footprint Methodology",
+      "description": "Methodology or standard used for carbon footprint calculation (e.g. PEF, ISO 14067).",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology"
+    },
+    "recyclability": {
+      "type": "number",
+      "title": "Packaging Recyclability (%)",
+      "description": "Percentage recyclability of the product packaging.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclability"
+    },
+    "recycledContentPercentage": {
+      "type": "number",
+      "title": "Recycled Content (%)",
+      "description": "Percentage of recycled material content in the product or packaging.",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
+    },
+    "endOfLifeInstructions": {
+      "type": "string",
+      "title": "End-of-Life Instructions",
+      "description": "Instructions for proper disposal of the product and its packaging.",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex II SDS section 13",
+      "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
+    },
+    "dataCarrierType": {
+      "type": "string",
+      "title": "Data Carrier Type",
+      "description": "Type of data carrier used for the DPP (QR code, NFC, RFID, etc.).",
+      "enum": [
+        "QR",
+        "NFC",
+        "RFID",
+        "DataMatrix"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
+    },
+    "dataCarrierUri": {
+      "type": "string",
+      "title": "Data Carrier URI",
+      "description": "GS1 Digital Link URI encoded in the data carrier.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9(3), GS1 Digital Link",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierUri"
+    },
+    "passportValidFrom": {
+      "type": "string",
+      "title": "Passport Valid From",
+      "description": "Date from which the digital product passport is valid.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/passportValidFrom"
+    },
+    "passportRetentionYears": {
+      "type": "number",
+      "title": "Passport Retention Period (Years)",
+      "description": "Number of years the DPP must be retained and accessible. Default is 10 years per ESPR.",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 10(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/passportRetentionYears"
+    },
+    "accessLevel": {
+      "type": "string",
+      "title": "Access Level",
+      "description": "Default access level controlling who can view the passport data.",
+      "enum": [
+        "public",
+        "restricted",
+        "authority"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 10(4)",
+      "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
+    }
+  }
+}

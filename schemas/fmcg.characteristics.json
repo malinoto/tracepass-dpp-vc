@@ -1,0 +1,459 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/fmcg/v1.json",
+  "title": "FMCG — DPP characteristics",
+  "description": "Field specifications for the FMCG Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "productName",
+    "brandName",
+    "productSubcategory",
+    "netContentValue",
+    "netContentUnit",
+    "ingredientsList",
+    "packagingMaterialType",
+    "batchLotNumber",
+    "disposalInstructions"
+  ],
+  "properties": {
+    "productName": {
+      "type": "string",
+      "title": "Product Name",
+      "description": "Commercial product name or trade designation",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Art. 19(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productName"
+    },
+    "brandName": {
+      "type": "string",
+      "title": "Brand Name",
+      "description": "Brand or trademark under which the product is marketed",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/brandName"
+    },
+    "gtin": {
+      "type": "string",
+      "title": "GTIN / Barcode",
+      "description": "Global Trade Item Number (EAN-13 or GTIN-14) barcode identifier",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://ref.gs1.org/voc/gtin"
+    },
+    "productSubcategory": {
+      "type": "string",
+      "title": "Product Subcategory",
+      "description": "FMCG subcategory classification",
+      "enum": [
+        "household_cleaning",
+        "personal_care",
+        "food_packaging",
+        "beverage",
+        "otc_health",
+        "laundry",
+        "air_care",
+        "insect_control"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productSubcategory"
+    },
+    "netContentValue": {
+      "type": "number",
+      "title": "Net Content",
+      "description": "Net weight (g) or volume (ml) of the product",
+      "x-regulation": "32011R1169",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1169",
+      "x-provision": "Art. 9(1)(e), Annex IX",
+      "x-iri": "https://tracepass.eu/voc/dpp/netContentValue"
+    },
+    "netContentUnit": {
+      "type": "string",
+      "title": "Net Content Unit",
+      "description": "Unit of measurement for net content",
+      "enum": [
+        "g",
+        "ml",
+        "l",
+        "kg",
+        "pieces"
+      ],
+      "x-regulation": "32011R1169",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1169",
+      "x-provision": "Art. 9(1)(e), Annex IX",
+      "x-iri": "https://tracepass.eu/voc/dpp/netContentUnit"
+    },
+    "ingredientsList": {
+      "type": "array",
+      "title": "Ingredients List",
+      "description": "Full INCI ingredient list (cosmetics) or composition disclosure (detergents) in descending order of concentration",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Art. 19(1)(g)",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredientsList"
+    },
+    "allergens": {
+      "type": "array",
+      "title": "Allergens",
+      "description": "Declared fragrance allergens present above 0.001% (leave-on) or 0.01% (rinse-off) per 2023 update covering 80+ allergens",
+      "items": {
+        "type": "string",
+        "enum": [
+          "limonene",
+          "linalool",
+          "citronellol",
+          "geraniol",
+          "coumarin",
+          "citral",
+          "eugenol",
+          "benzyl_alcohol",
+          "other"
+        ]
+      },
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Annex III",
+      "x-iri": "https://tracepass.eu/voc/dpp/allergens"
+    },
+    "fragrances": {
+      "type": "array",
+      "title": "Fragrances",
+      "description": "Named fragrances present in the product above disclosure threshold",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Art. 19(1)(g)",
+      "x-iri": "https://tracepass.eu/voc/dpp/fragrances"
+    },
+    "preservatives": {
+      "type": "array",
+      "title": "Preservatives",
+      "description": "Preservative substances with CAS numbers, mandatory disclosure for cosmetics and detergents",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/preservatives"
+    },
+    "svhcPresence": {
+      "type": "array",
+      "title": "Substances of Very High Concern",
+      "description": "SVHC substances present above 0.1% w/w with name, CAS number, concentration range, and safe use instructions",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcPresence"
+    },
+    "colorants": {
+      "type": "array",
+      "title": "Colorants",
+      "description": "Colorants used in the product, identified by CI (Colour Index) number",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Annex IV",
+      "x-iri": "https://tracepass.eu/voc/dpp/colorants"
+    },
+    "nanomaterials": {
+      "type": "array",
+      "title": "Nanomaterials",
+      "description": "Nanomaterials present in the product, labelled with [nano] per Cosmetics Regulation",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Art. 16",
+      "x-iri": "https://tracepass.eu/voc/dpp/nanomaterials"
+    },
+    "clpHazardClassification": {
+      "type": "object",
+      "title": "CLP Hazard Classification",
+      "description": "Full CLP classification including hazard class, category, and signal word",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/clpHazardClassification"
+    },
+    "ghsPictograms": {
+      "type": "array",
+      "title": "GHS Pictograms",
+      "description": "GHS hazard pictogram codes applicable to the product (GHS01 through GHS09)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "GHS01",
+          "GHS02",
+          "GHS03",
+          "GHS04",
+          "GHS05",
+          "GHS06",
+          "GHS07",
+          "GHS08",
+          "GHS09"
+        ]
+      },
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/ghsPictograms"
+    },
+    "hazardStatements": {
+      "type": "array",
+      "title": "Hazard Statements",
+      "description": "H-code hazard statements describing the nature of the hazard (e.g. H315 Causes skin irritation)",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/hazardStatements"
+    },
+    "precautionaryStatements": {
+      "type": "array",
+      "title": "Precautionary Statements",
+      "description": "P-code precautionary statements describing recommended safety measures",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/precautionaryStatements"
+    },
+    "firstAidInstructions": {
+      "type": "string",
+      "title": "First Aid Instructions",
+      "description": "First aid measures in case of exposure: skin contact, eye contact, ingestion, inhalation",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-iri": "https://tracepass.eu/voc/dpp/firstAidInstructions"
+    },
+    "ufi": {
+      "type": "string",
+      "title": "Unique Formula Identifier (UFI)",
+      "description": "16-character UFI code for poison centre notification, mandatory for hazardous mixtures",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 45",
+      "x-iri": "https://tracepass.eu/voc/dpp/ufi"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint",
+      "description": "Product carbon footprint in kg CO2-eq per functional unit, calculated per EU Product Environmental Footprint methodology",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "waterFootprint": {
+      "type": "number",
+      "title": "Water Footprint",
+      "description": "Water scarcity footprint in litres per functional unit, per ISO 14046",
+      "x-unit": "l eq",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/waterFootprint"
+    },
+    "biodegradability": {
+      "type": "object",
+      "title": "Biodegradability",
+      "description": "Ultimate aerobic biodegradability of surfactants and organic content, including test method and degradation percentage",
+      "x-regulation": "32004R0648",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004R0648",
+      "x-provision": "Art. 4",
+      "x-iri": "https://tracepass.eu/voc/dpp/biodegradability"
+    },
+    "aquaticToxicity": {
+      "type": "string",
+      "title": "Aquatic Toxicity",
+      "description": "Aquatic toxicity classification per CLP",
+      "enum": [
+        "none",
+        "acute_cat_1",
+        "chronic_cat_1",
+        "chronic_cat_2",
+        "chronic_cat_3",
+        "chronic_cat_4"
+      ],
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-iri": "https://tracepass.eu/voc/dpp/aquaticToxicity"
+    },
+    "ecolabelCriticalDilutionVolume": {
+      "type": "number",
+      "title": "Critical Dilution Volume (CDV)",
+      "description": "Critical dilution volume per wash load in litres -- key metric for EU Ecolabel detergent certification",
+      "x-unit": "l/wash",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-iri": "https://tracepass.eu/voc/dpp/ecolabelCriticalDilutionVolume"
+    },
+    "packagingMaterialType": {
+      "type": "string",
+      "title": "Packaging Material Type",
+      "description": "Primary packaging material type",
+      "enum": [
+        "HDPE",
+        "PET",
+        "PP",
+        "glass",
+        "aluminium",
+        "cardboard",
+        "mixed",
+        "compostable"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingMaterialType"
+    },
+    "packagingRecycledContent": {
+      "type": "number",
+      "title": "Packaging Recycled Content (%)",
+      "description": "Percentage of post-consumer recycled content in packaging. PPWR targets: 30% by 2030, 65% by 2040 for PET",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingRecycledContent"
+    },
+    "packagingRecyclabilityGrade": {
+      "type": "string",
+      "title": "Packaging Recyclability Grade",
+      "description": "Recyclability performance grade per PPWR: A (highest) to E (not recyclable)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 6",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingRecyclabilityGrade"
+    },
+    "packagingWeight": {
+      "type": "number",
+      "title": "Packaging Weight (g)",
+      "description": "Total packaging weight in grams (primary + secondary packaging)",
+      "x-unit": "g",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingWeight"
+    },
+    "packagingToProductRatio": {
+      "type": "number",
+      "title": "Packaging-to-Product Ratio",
+      "description": "Ratio of packaging weight to product weight, for empty space minimization assessment",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/packagingToProductRatio"
+    },
+    "recommendedDosage": {
+      "type": "string",
+      "title": "Recommended Dosage",
+      "description": "Recommended dosage or usage amount per application (e.g. 30ml per wash load, pea-sized amount)",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Art. 11(4)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recommendedDosage"
+    },
+    "shelfLifeMonths": {
+      "type": "number",
+      "title": "Shelf Life (Months)",
+      "description": "Product shelf life in months. For cosmetics with shelf life >30 months, Period After Opening (PAO) symbol is used instead",
+      "x-unit": "months",
+      "x-unitIri": "http://qudt.org/vocab/unit/MO",
+      "x-regulation": "32011R1169",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1169",
+      "x-provision": "Art. 19(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/shelfLifeMonths"
+    },
+    "storageConditions": {
+      "type": "string",
+      "title": "Storage Conditions",
+      "description": "Recommended storage conditions: temperature, humidity, light exposure",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-iri": "https://tracepass.eu/voc/dpp/storageConditions"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch / Lot Number",
+      "description": "Batch or lot identification number for traceability and recall purposes",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "certifications": {
+      "type": "array",
+      "title": "Certifications",
+      "description": "Applicable environmental, quality, and ethical certifications held by the product",
+      "items": {
+        "type": "string",
+        "enum": [
+          "eu_ecolabel",
+          "nordic_swan",
+          "blauer_engel",
+          "ecocert",
+          "cosmos_organic",
+          "cosmos_natural",
+          "natrue",
+          "vegan",
+          "cruelty_free_leaping_bunny",
+          "fsc",
+          "pefc",
+          "cradle_to_cradle",
+          "dermatest"
+        ]
+      },
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/certifications"
+    },
+    "euEcolabelLicenseNumber": {
+      "type": "string",
+      "title": "EU Ecolabel License Number",
+      "description": "EU Ecolabel license number if certified (format: XX/XXX/XXXX)",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-iri": "https://tracepass.eu/voc/dpp/euEcolabelLicenseNumber"
+    },
+    "organicCertificationBody": {
+      "type": "string",
+      "title": "Organic Certification Body",
+      "description": "Name and code of the organic certification body (e.g. Ecocert, ICEA)",
+      "x-regulation": "32018R0848",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32018R0848",
+      "x-iri": "https://tracepass.eu/voc/dpp/organicCertificationBody"
+    },
+    "disposalInstructions": {
+      "type": "string",
+      "title": "Disposal Instructions",
+      "description": "Consumer-facing disposal and recycling instructions for both product residue and packaging",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 12",
+      "x-iri": "https://tracepass.eu/voc/dpp/disposalInstructions"
+    },
+    "refillAvailability": {
+      "type": "boolean",
+      "title": "Refill Availability",
+      "description": "Whether the product is available in refill format (concentrate, refill pouch, refill station)",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 28",
+      "x-iri": "https://tracepass.eu/voc/dpp/refillAvailability"
+    },
+    "returnSchemeParticipation": {
+      "type": "boolean",
+      "title": "Return Scheme Participation",
+      "description": "Whether packaging participates in a deposit-return scheme (DRS) per PPWR",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 44-48",
+      "x-iri": "https://tracepass.eu/voc/dpp/returnSchemeParticipation"
+    }
+  }
+}

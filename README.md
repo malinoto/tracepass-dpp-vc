@@ -10,7 +10,8 @@
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Extends](https://img.shields.io/badge/extends-UNTP%20DPP%20v0.7.0-orange)](https://untp.unece.org/docs/specification/DigitalProductPassport)
-[![Reference](https://img.shields.io/badge/reference%20category-steel-informational)](./MAPPING-steel.md)
+[![Categories](https://img.shields.io/badge/categories-12-informational)](./MAPPING-steel.md)
+[![Fields](https://img.shields.io/badge/properties-868-informational)](#status)
 
 Maintained by **[TracePass](https://www.tracepass.eu)** · [Platform](https://app.tracepass.eu) · [Field specs](https://github.com/malinoto/tracepass-dpp-schemas)
 
@@ -46,12 +47,13 @@ Per category:
 | `MAPPING-<cat>.md` | Every field's vocabulary owner |
 
 Plus [`profile/untp-extension.md`](./profile/untp-extension.md) — the extension approach and
-the licence stance — and a verified field-to-vocabulary mapping for the other eleven categories (internal, pending per-category verification).
+the licence stance — and `scripts/`, which regenerates every artefact above from the field
+specifications and a recorded decision per term.
 
 ## Reuse before coining
 
 The governing rule: **coin a `tracepass:` term only for a concept no established vocabulary
-names.** The steel context reuses **UNTP** (product envelope, economic operators), **GS1**
+names.** The contexts reuse **UNTP** (product envelope, economic operators), **GS1**
 (GTIN, batch/lot), **schema.org** (generic attributes), **QUDT** (units — even on coined
 properties: a yield strength gets a `tracepass:` property but a `qudt:unit/MegaPA` unit),
 **CAS** (substances), **Eurostat CN** (customs codes), and **GS1 EPCIS 2.0** (events).
@@ -69,25 +71,34 @@ owner, which is the honest state of the art for machine-readable EU product-pass
 
 ## Status
 
-**Steel is the reference implementation** — 75 `characteristics` properties, 4 reused from
-existing vocabularies, 71 coined (each naming its EU instrument), 4 skipped as non-semantic
-specifications, and 5 economic-operator fields carried by the UNTP envelope as
-`relatedParty` entries rather than by `characteristics`. Its example validates against the
-schema.
+**All twelve categories ship a context, a schema, a worked example and a mapping
+document** — 868 `characteristics` properties in total. `node scripts/validate.mjs`
+checks every one: schema and context agree on the property set, each context term
+carries an `@id`, and each example satisfies its own schema.
+
+| | |
+|---|---|
+| Properties | 868 across 12 categories |
+| Citing an EU instrument or standard | 784 (90%) |
+| Carrying a verified QUDT unit IRI | 218 |
+| Carried by the UNTP envelope instead | 42 |
 
 Every coined term resolves. `https://tracepass.eu/voc/dpp/<term>` returns a SKOS concept
 with a definition and a named owner — the EU instrument that defines the concept, with a
 link to its EUR-Lex record, or the standard that does where no EU instrument applies
-(EN 15804+A2, EN 10025-2, EN 10204, ISO 148-1, ISO 14025, ResponsibleSteel, ASI). The
-five mechanical properties QUDT has no quantity kind for carry `skos:broader` to the
-nearest one it does define. Request any term with `Accept: text/html` for a readable
-page instead.
+(EN 15804+A2, EN 10025-2, EN 10204, ISO 148-1, ISO 14025, ResponsibleSteel, ASI).
+Physical quantities QUDT has no quantity kind for carry `skos:broader` to the nearest one
+it does define. Request any term with `Accept: text/html` for a readable page.
 
-**Steel is the only category here.** The other eleven have a draft field-to-vocabulary
-mapping that is deliberately unpublished: each context is a public claim about semantics,
-and the mapping is worth only what the per-field verification behind it is worth. Steel
-was decided field by field, by hand, and the remaining categories will be too — bulk
-generation would produce something that looks complete and asserts things nobody checked.
+**What "verified" means here, precisely.** Every decision that needed judgement was made
+by hand and recorded with its reasoning in `scripts/decisions.json` — which concepts an
+external vocabulary already owns, which belong to the UNTP envelope rather than to
+`characteristics`, and which are genuinely ours to coin. Each category's worked example
+was authored by hand against a real product, so the numbers are internally consistent
+rather than merely well-typed. What has **not** happened is a field-by-field human read of
+all 868 properties: the mechanical majority — coin the term, cite the instrument the
+template already records — was spot-checked, not exhaustively reviewed. That sampling
+found real defects, so treat the citations as good but not audited.
 
 ## Related
 

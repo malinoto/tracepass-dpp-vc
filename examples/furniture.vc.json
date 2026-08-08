@@ -1,0 +1,106 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/furniture/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "Furniture & Mattresses — worked example",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1 Global Trade Item Number"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "furniture",
+        "name": "Furniture & Mattresses"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Example Manufacturer GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          }
+        }
+      }
+    ],
+    "characteristics": {
+      "productName": "Solid oak bed frame with upholstered headboard, 160×200 cm",
+      "batchLotNumber": "LOT-2026-0409-OAK",
+      "woodSpecies": [
+        {
+          "commonName": "European oak",
+          "scientificName": "Quercus robur",
+          "percentage": 88
+        }
+      ],
+      "forestCertificationScheme": "FSC 100%",
+      "chainOfCustodyCertificate": "FSC-C012345",
+      "countryOfHarvest": "PL",
+      "deforestationFreeDeclaration": true,
+      "geolocationOfHarvest": "52.2297,21.0122",
+      "svhcCandidateListSubstances": [],
+      "formaldehydeEmissionClass": "E0.5",
+      "formaldehydeEmissionValueMgM3": 0.04,
+      "vocEmissionClass": "A+",
+      "flameRetardantSubstances": [],
+      "pbdeContentMgKg": 0,
+      "applicableDurabilityStandard": "EN 1725",
+      "durabilityTestLevel": "Level 2 (domestic, heavy use)",
+      "maximumUserWeightKg": 220,
+      "warrantyPeriodYears": 10,
+      "foamType": "Cold-cure polyurethane, headboard upholstery only",
+      "foamWeightKg": 2.4,
+      "mattressCoverRemovable": false,
+      "declarationOfConformityUrl": "https://example.com/doc/DoC-OAK160.pdf",
+      "reachCompliance": true,
+      "intendedUse": "Domestic indoor use as a bed frame for a 160×200 cm mattress.",
+      "safetyWarnings": [
+        "Assemble fully and tighten all fixings before use.",
+        "Do not stand or jump on the slatted base."
+      ]
+    }
+  }
+}

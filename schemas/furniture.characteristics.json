@@ -1,0 +1,693 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/furniture/v1.json",
+  "title": "Furniture & Mattresses — DPP characteristics",
+  "description": "Field specifications for the Furniture & Mattresses Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "productName",
+    "batchLotNumber",
+    "woodSpecies",
+    "forestCertificationScheme",
+    "chainOfCustodyCertificate",
+    "countryOfHarvest",
+    "deforestationFreeDeclaration",
+    "geolocationOfHarvest",
+    "svhcCandidateListSubstances",
+    "formaldehydeEmissionClass",
+    "formaldehydeEmissionValueMgM3",
+    "vocEmissionClass",
+    "flameRetardantSubstances",
+    "pbdeContentMgKg",
+    "applicableDurabilityStandard",
+    "durabilityTestLevel",
+    "maximumUserWeightKg",
+    "warrantyPeriodYears",
+    "foamType",
+    "foamWeightKg",
+    "mattressCoverRemovable",
+    "declarationOfConformityUrl",
+    "reachCompliance",
+    "intendedUse",
+    "safetyWarnings"
+  ],
+  "properties": {
+    "productName": {
+      "type": "string",
+      "title": "Product Name",
+      "description": "Commercial product name / trade designation",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productName"
+    },
+    "productModel": {
+      "type": "string",
+      "title": "Product Model",
+      "description": "Model number or variant identifier",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productModel"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch or Serial Number",
+      "description": "Batch ID or serial number for traceability and recalls",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "productCategory": {
+      "type": "string",
+      "title": "Product Category",
+      "description": "Product type within furniture scope (seating, table, bed, mattress, storage, etc.)",
+      "enum": [
+        "Domestic seating",
+        "Commercial seating",
+        "Domestic table",
+        "Commercial table",
+        "Bed frame",
+        "Mattress",
+        "Storage furniture",
+        "Shelving",
+        "Outdoor furniture",
+        "Other"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
+    },
+    "countryOfManufacture": {
+      "type": "string",
+      "title": "Country of Manufacture",
+      "description": "ISO 3166-1 alpha-2 country code of manufacturing",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
+    },
+    "dateOfManufacture": {
+      "type": "string",
+      "title": "Date of Manufacture",
+      "description": "Date of production (ISO 8601)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dateOfManufacture"
+    },
+    "passportIssuer": {
+      "type": "string",
+      "title": "Passport Issuer",
+      "description": "Entity legally responsible for creating and updating the DPP",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/passportIssuer"
+    },
+    "dataCarrierType": {
+      "type": "string",
+      "title": "Data Carrier Type",
+      "description": "Type of data carrier (QR code, RFID, NFC, Data Matrix, GS1 Digital Link)",
+      "enum": [
+        "QR code",
+        "QR code (GS1 Digital Link)",
+        "Data Matrix",
+        "RFID",
+        "NFC",
+        "Other"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
+    },
+    "billOfMaterials": {
+      "type": "array",
+      "title": "Bill of Materials",
+      "description": "Structured list of all materials by component with weight percentages",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/billOfMaterials"
+    },
+    "totalProductWeightKg": {
+      "type": "number",
+      "title": "Total Product Weight",
+      "description": "Total weight of the finished product in kilograms",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalProductWeightKg"
+    },
+    "recycledContentPercentage": {
+      "type": "number",
+      "title": "Recycled Content Percentage",
+      "description": "Total recycled content as percentage of product weight",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
+    },
+    "postConsumerRecycledContentPercentage": {
+      "type": "number",
+      "title": "Post-Consumer Recycled Content",
+      "description": "Post-consumer recycled material percentage",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledContentPercentage"
+    },
+    "preConsumerRecycledContentPercentage": {
+      "type": "number",
+      "title": "Pre-Consumer Recycled Content",
+      "description": "Pre-consumer (industrial) recycled material percentage",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledContentPercentage"
+    },
+    "renewableMaterialContentPercentage": {
+      "type": "number",
+      "title": "Renewable Material Content",
+      "description": "Percentage of materials from renewable biological sources",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/renewableMaterialContentPercentage"
+    },
+    "woodSpecies": {
+      "type": "array",
+      "title": "Wood Species",
+      "description": "Species of wood used (common and scientific name)",
+      "x-regulation": "32023R1115",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-provision": "Art. 9(1)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/woodSpecies"
+    },
+    "forestCertificationScheme": {
+      "type": "string",
+      "title": "Forest Certification Scheme",
+      "description": "Forest certification (FSC, PEFC, or equivalent). Required for virgin wood.",
+      "x-regulation": "32023R1115",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-iri": "https://tracepass.eu/voc/dpp/forestCertificationScheme"
+    },
+    "chainOfCustodyCertificate": {
+      "type": "string",
+      "title": "Chain of Custody Certificate",
+      "description": "Chain of Custody certificate number proving traceability from forest to product",
+      "x-iri": "https://tracepass.eu/voc/dpp/chainOfCustodyCertificate"
+    },
+    "countryOfHarvest": {
+      "type": "string",
+      "title": "Country of Harvest",
+      "description": "Country where the wood was harvested (ISO 3166-1 alpha-2)",
+      "x-regulation": "32023R1115",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-provision": "Art. 9(1)(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfHarvest"
+    },
+    "deforestationFreeDeclaration": {
+      "type": "boolean",
+      "title": "Deforestation-Free Declaration",
+      "description": "Declaration that wood is deforestation-free per EUDR cut-off date (31 Dec 2020)",
+      "x-regulation": "32023R1115",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-provision": "Art. 3",
+      "x-iri": "https://tracepass.eu/voc/dpp/deforestationFreeDeclaration"
+    },
+    "geolocationOfHarvest": {
+      "type": "string",
+      "title": "Geolocation of Harvest",
+      "description": "GPS coordinates or polygon of the plot of land where timber was harvested",
+      "x-regulation": "32023R1115",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-provision": "Art. 9(1)(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/geolocationOfHarvest"
+    },
+    "svhcCandidateListSubstances": {
+      "type": "array",
+      "title": "SVHC Candidate List Substances",
+      "description": "Substances of Very High Concern on REACH candidate list present above 0.1% w/w",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances"
+    },
+    "formaldehydeEmissionClass": {
+      "type": "string",
+      "title": "Formaldehyde Emission Class",
+      "description": "Formaldehyde emission class of wood-based panels (E0.5, E1, etc.)",
+      "enum": [
+        "E0.5",
+        "E1",
+        "E2",
+        "Super E0",
+        "CARB Phase 2",
+        "N/A"
+      ],
+      "x-regulation": "32023R1464",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1464",
+      "x-provision": "REACH Annex XVII entry 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/formaldehydeEmissionClass"
+    },
+    "formaldehydeEmissionValueMgM3": {
+      "type": "number",
+      "title": "Formaldehyde Emission Value (mg/m3)",
+      "description": "Formaldehyde emission measured per EN 717-1 chamber test (mg/m3). Must be <= 0.062 mg/m3 for furniture from Aug 2026.",
+      "x-unit": "mg/m3",
+      "x-regulation": "32023R1464",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1464",
+      "x-provision": "REACH Annex XVII entry 77",
+      "x-iri": "https://tracepass.eu/voc/dpp/formaldehydeEmissionValueMgM3"
+    },
+    "vocEmissionClass": {
+      "type": "string",
+      "title": "VOC Emission Class",
+      "description": "Total VOC emission class or value per EN 16516 or equivalent",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-iri": "https://tracepass.eu/voc/dpp/vocEmissionClass"
+    },
+    "totalVocEmissionUgM3": {
+      "type": "number",
+      "title": "Total VOC Emission (ug/m3)",
+      "description": "Total VOC emission after 28 days (ug/m3) per EN 16516",
+      "x-unit": "ug/m3",
+      "x-unitIri": "http://qudt.org/vocab/unit/MicroGM-PER-M3",
+      "x-standard": "EN 16516 (determination of emissions into indoor air)",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalVocEmissionUgM3"
+    },
+    "flameRetardantSubstances": {
+      "type": "array",
+      "title": "Flame Retardant Substances",
+      "description": "List of flame retardant chemicals used, if any. Halogenated flame retardants under ECHA scrutiny.",
+      "x-regulation": "32019R1021",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R1021",
+      "x-provision": "Annex I",
+      "x-iri": "https://tracepass.eu/voc/dpp/flameRetardantSubstances"
+    },
+    "pbdeContentMgKg": {
+      "type": "number",
+      "title": "PBDE Content (mg/kg)",
+      "description": "Total PBDE (polybrominated diphenyl ethers) content in mg/kg. Max 500 mg/kg unintentional limit.",
+      "x-unit": "mg/kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliGM-PER-KiloGM",
+      "x-regulation": "32019R1021",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R1021",
+      "x-provision": "Annex I (as amended by 32025R1482)",
+      "x-iri": "https://tracepass.eu/voc/dpp/pbdeContentMgKg"
+    },
+    "biocidesUsed": {
+      "type": "array",
+      "title": "Biocides Used",
+      "description": "List of biocidal products used in treatment (wood preservatives, etc.)",
+      "x-regulation": "32012R0528",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32012R0528",
+      "x-iri": "https://tracepass.eu/voc/dpp/biocidesUsed"
+    },
+    "applicableDurabilityStandard": {
+      "type": "string",
+      "title": "Applicable Durability Standard",
+      "description": "EN standard applied for durability/strength testing",
+      "x-standard": "EN durability/strength test standards (named per product family)",
+      "x-iri": "https://tracepass.eu/voc/dpp/applicableDurabilityStandard"
+    },
+    "durabilityTestLevel": {
+      "type": "string",
+      "title": "Durability Test Level",
+      "description": "Test severity level passed (e.g. Level 1 = domestic light, Level 2 = domestic general, Level 3 = domestic severe)",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityTestLevel"
+    },
+    "testCyclesCompleted": {
+      "type": "number",
+      "title": "Test Cycles Completed",
+      "description": "Number of load/use cycles completed during durability testing",
+      "x-iri": "https://tracepass.eu/voc/dpp/testCyclesCompleted"
+    },
+    "maximumUserWeightKg": {
+      "type": "number",
+      "title": "Maximum User Weight (kg)",
+      "description": "Maximum user weight the product is designed for (seating/beds)",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumUserWeightKg"
+    },
+    "expectedProductLifetimeYears": {
+      "type": "number",
+      "title": "Expected Product Lifetime (years)",
+      "description": "Estimated product lifetime under normal use conditions",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/expectedProductLifetimeYears"
+    },
+    "warrantyPeriodYears": {
+      "type": "number",
+      "title": "Warranty Period (years)",
+      "description": "Commercial warranty period offered",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/warrantyPeriodYears"
+    },
+    "repairabilityScore": {
+      "type": "number",
+      "title": "Repairability Score",
+      "description": "Repairability index or score (scale/methodology TBD in delegated act)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/repairabilityScore"
+    },
+    "foamType": {
+      "type": "string",
+      "title": "Foam Type",
+      "description": "Type of foam used (PU, HR, memory, latex, etc.)",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-iri": "https://tracepass.eu/voc/dpp/foamType"
+    },
+    "foamWeightKg": {
+      "type": "number",
+      "title": "Foam Weight (kg)",
+      "description": "Total weight of foam components in the mattress",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-iri": "https://tracepass.eu/voc/dpp/foamWeightKg"
+    },
+    "foamDensityKgM3": {
+      "type": "number",
+      "title": "Foam Density (kg/m3)",
+      "description": "Density of the primary foam layer (kg/m3)",
+      "x-unit": "kg/m3",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "x-iri": "https://tracepass.eu/voc/dpp/foamDensityKgM3"
+    },
+    "springCount": {
+      "type": "number",
+      "title": "Spring Count",
+      "description": "Number of springs (if spring mattress)",
+      "x-iri": "https://tracepass.eu/voc/dpp/springCount"
+    },
+    "springType": {
+      "type": "string",
+      "title": "Spring Type",
+      "description": "Type of spring system (pocket, Bonnell, continuous, etc.)",
+      "x-iri": "https://tracepass.eu/voc/dpp/springType"
+    },
+    "mattressCoverRemovable": {
+      "type": "boolean",
+      "title": "Mattress Cover Removable",
+      "description": "Whether mattress cover is removable and washable",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-iri": "https://tracepass.eu/voc/dpp/mattressCoverRemovable"
+    },
+    "firmnessRating": {
+      "type": "string",
+      "title": "Firmness Rating",
+      "description": "Mattress firmness classification",
+      "x-iri": "https://tracepass.eu/voc/dpp/firmnessRating"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint (kg CO2e)",
+      "description": "Total product carbon footprint in kg CO2-equivalent (cradle-to-gate or cradle-to-grave as specified)",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "carbonFootprintMethodology": {
+      "type": "string",
+      "title": "Carbon Footprint Methodology",
+      "description": "Methodology used for carbon footprint calculation",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology"
+    },
+    "environmentalProductDeclarationUrl": {
+      "type": "string",
+      "title": "Environmental Product Declaration URL",
+      "description": "URL to the Environmental Product Declaration (EPD) if available",
+      "x-iri": "https://tracepass.eu/voc/dpp/environmentalProductDeclarationUrl"
+    },
+    "energyUsedInManufacturingKwh": {
+      "type": "number",
+      "title": "Energy Used in Manufacturing (kWh)",
+      "description": "Total energy consumed during manufacturing per unit",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyUsedInManufacturingKwh"
+    },
+    "waterUsedInManufacturingLiters": {
+      "type": "number",
+      "title": "Water Used in Manufacturing (liters)",
+      "description": "Total water consumed during manufacturing per unit",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/waterUsedInManufacturingLiters"
+    },
+    "disassemblyInstructionsUrl": {
+      "type": "string",
+      "title": "Disassembly Instructions URL",
+      "description": "URL or URI to professional disassembly instructions for end-of-life treatment",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/disassemblyInstructionsUrl"
+    },
+    "consumerRepairInstructionsUrl": {
+      "type": "string",
+      "title": "Consumer Repair Instructions URL",
+      "description": "URL or URI to consumer-facing repair and maintenance instructions",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/consumerRepairInstructionsUrl"
+    },
+    "sparePartsAvailabilityYears": {
+      "type": "number",
+      "title": "Spare Parts Availability (years)",
+      "description": "Period (years) during which spare parts are available after last unit placed on market",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsAvailabilityYears"
+    },
+    "sparePartsList": {
+      "type": "array",
+      "title": "Spare Parts List",
+      "description": "List of available spare parts with ordering information",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsList"
+    },
+    "recyclabilityPercentage": {
+      "type": "number",
+      "title": "Recyclability Percentage",
+      "description": "Percentage of product weight that is recyclable at end of life",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage"
+    },
+    "materialsRecyclabilityBreakdown": {
+      "type": "array",
+      "title": "Materials Recyclability Breakdown",
+      "description": "Recyclability per material type",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/materialsRecyclabilityBreakdown"
+    },
+    "disassemblyTimeMinutes": {
+      "type": "number",
+      "title": "Disassembly Time (minutes)",
+      "description": "Estimated time to fully disassemble for recycling (minutes)",
+      "x-unit": "minutes",
+      "x-unitIri": "http://qudt.org/vocab/unit/MIN",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/disassemblyTimeMinutes"
+    },
+    "toolsRequiredForDisassembly": {
+      "type": "array",
+      "title": "Tools Required for Disassembly",
+      "description": "List of tools needed for product disassembly",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/toolsRequiredForDisassembly"
+    },
+    "collectionAndTakeBackInfoUrl": {
+      "type": "string",
+      "title": "Collection & Take-Back Info URL",
+      "description": "URL to collection/take-back scheme information",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/collectionAndTakeBackInfoUrl"
+    },
+    "declarationOfConformityUrl": {
+      "type": "string",
+      "title": "Declaration of Conformity URL",
+      "description": "URL to EU Declaration of Conformity document",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl"
+    },
+    "euEcolabelLicense": {
+      "type": "string",
+      "title": "EU Ecolabel License",
+      "description": "EU Ecolabel license number (if awarded)",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-iri": "https://tracepass.eu/voc/dpp/euEcolabelLicense"
+    },
+    "flammabilityTestStandard": {
+      "type": "string",
+      "title": "Flammability Test Standard",
+      "description": "Fire safety / flammability standard the product meets",
+      "x-iri": "https://tracepass.eu/voc/dpp/flammabilityTestStandard"
+    },
+    "reachCompliance": {
+      "type": "boolean",
+      "title": "REACH Compliance",
+      "description": "Confirmation of REACH regulation compliance",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/reachCompliance"
+    },
+    "scipNotificationNumber": {
+      "type": "string",
+      "title": "SCIP Notification Number",
+      "description": "ECHA SCIP database notification number (if product contains SVHC > 0.1% w/w)",
+      "x-regulation": "32008L0098",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
+      "x-provision": "Art. 9(1)(i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/scipNotificationNumber"
+    },
+    "intendedUse": {
+      "type": "string",
+      "title": "Intended Use",
+      "description": "Intended use environment (domestic, commercial, outdoor, etc.)",
+      "x-iri": "https://tracepass.eu/voc/dpp/intendedUse"
+    },
+    "careInstructions": {
+      "type": "string",
+      "title": "Care Instructions",
+      "description": "Care and maintenance instructions for the end user",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(a)",
+      "x-iri": "https://tracepass.eu/voc/dpp/careInstructions"
+    },
+    "installationInstructionsUrl": {
+      "type": "string",
+      "title": "Installation Instructions URL",
+      "description": "URL to assembly/installation instructions",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-iri": "https://tracepass.eu/voc/dpp/installationInstructionsUrl"
+    },
+    "safetyWarnings": {
+      "type": "array",
+      "title": "Safety Warnings",
+      "description": "Product-specific safety warnings",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(7)",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyWarnings"
+    },
+    "supplyChainActors": {
+      "type": "array",
+      "title": "Supply Chain Actors",
+      "description": "Key supply chain actors involved in production (tiered)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/supplyChainActors"
+    },
+    "dueDiligenceStatementUrl": {
+      "type": "string",
+      "title": "Due Diligence Statement URL",
+      "description": "URL to due diligence statement per EUDR or CSDDD",
+      "x-regulation": "32023R1115",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-iri": "https://tracepass.eu/voc/dpp/dueDiligenceStatementUrl"
+    },
+    "dppSchemaVersion": {
+      "type": "string",
+      "title": "DPP Schema Version",
+      "description": "Version of the DPP schema used",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/dppSchemaVersion"
+    },
+    "lastUpdatedAt": {
+      "type": "string",
+      "title": "Last Updated At",
+      "description": "Timestamp of last DPP update (ISO 8601)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/lastUpdatedAt"
+    },
+    "accessLevel": {
+      "type": "string",
+      "title": "Access Rights",
+      "description": "Access level definitions (public, authorized, restricted)",
+      "enum": [
+        "public",
+        "restricted",
+        "authority"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
+    },
+    "dataFormat": {
+      "type": "string",
+      "title": "Data Format",
+      "description": "Format specification for machine-readable data",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9-10",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataFormat"
+    }
+  }
+}

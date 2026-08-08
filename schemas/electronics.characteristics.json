@@ -1,0 +1,1723 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/electronics/v1.json",
+  "title": "Electronics — DPP characteristics",
+  "description": "Field specifications for the Electronics Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "taricCode",
+    "euDeclarationOfConformity",
+    "ceMarking",
+    "technicalDocumentationUrl",
+    "userManualUrl",
+    "durabilityClass",
+    "repairabilityClass",
+    "energyEfficiencyClass",
+    "annualEnergyConsumption",
+    "carbonFootprintClass",
+    "batteryUserReplaceable",
+    "rohsCompliant",
+    "substancesOfConcern",
+    "svhcPresent",
+    "containsPermanentMagnets",
+    "crossedOutWheelieBinMarking",
+    "ceMarkingStatus"
+  ],
+  "properties": {
+    "productModel": {
+      "type": "string",
+      "title": "Product Model",
+      "description": "Model number or designation of the product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productModel"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch ID",
+      "description": "Batch or lot identifier for traceability",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "serialNumber": {
+      "type": "string",
+      "title": "Serial Number",
+      "description": "Unique serial number of the individual product unit",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
+    },
+    "gtin": {
+      "type": "string",
+      "title": "GTIN",
+      "description": "Global Trade Item Number (GS1 barcode identifier)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://ref.gs1.org/voc/gtin"
+    },
+    "taricCode": {
+      "type": "string",
+      "title": "TARIC Code",
+      "description": "EU customs tariff code for the product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/taricCode"
+    },
+    "productCategory": {
+      "type": "string",
+      "title": "Product Category",
+      "description": "Sub-category classification of the electronic product",
+      "enum": [
+        "smartphone",
+        "tablet",
+        "server",
+        "dataStorage",
+        "washingMachine",
+        "refrigerator",
+        "other"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
+    },
+    "manufacturingDate": {
+      "type": "string",
+      "title": "Manufacturing Date",
+      "description": "Date when the product was manufactured (ISO 8601)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingDate"
+    },
+    "manufacturingCountry": {
+      "type": "string",
+      "title": "Manufacturing Country",
+      "description": "Country where the product was manufactured (ISO 3166-1 alpha-2)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingCountry"
+    },
+    "manufacturingPlant": {
+      "type": "string",
+      "title": "Manufacturing Plant",
+      "description": "Identifier or name of the manufacturing facility",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingPlant"
+    },
+    "euDeclarationOfConformity": {
+      "type": "object",
+      "title": "EU Declaration of Conformity",
+      "description": "URL to the EU Declaration of Conformity document",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
+    },
+    "ceMarking": {
+      "type": "boolean",
+      "title": "CE Marking",
+      "description": "Whether the product bears the CE marking",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 16-17",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
+    },
+    "notifiedBodyId": {
+      "type": "string",
+      "title": "Notified Body ID",
+      "description": "Identification number of the notified body involved in conformity assessment",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/notifiedBodyId"
+    },
+    "technicalDocumentationUrl": {
+      "type": "string",
+      "title": "Technical Documentation URL",
+      "description": "Link to the full technical documentation",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/technicalDocumentationUrl"
+    },
+    "userManualUrl": {
+      "type": "string",
+      "title": "User Manual URL",
+      "description": "Link to the product user manual",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/userManualUrl"
+    },
+    "safetyInstructionsUrl": {
+      "type": "string",
+      "title": "Safety Instructions URL",
+      "description": "Link to product safety instructions",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyInstructionsUrl"
+    },
+    "durabilityClass": {
+      "type": "string",
+      "title": "Durability Class",
+      "description": "Durability performance class from A (best) to G (worst)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/durabilityClass"
+    },
+    "repairabilityClass": {
+      "type": "string",
+      "title": "Repairability Class",
+      "description": "Repairability score class from A (best) to E (worst)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/repairabilityClass"
+    },
+    "repairabilityIndex": {
+      "type": "number",
+      "title": "Repairability Index",
+      "description": "Numeric repairability score from 0 (not repairable) to 100 (fully repairable)",
+      "x-unit": "points",
+      "x-regulation": "32023R1670",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/repairabilityIndex"
+    },
+    "energyEfficiencyClass": {
+      "type": "string",
+      "title": "Energy Efficiency Class",
+      "description": "EU energy efficiency label class from A (best) to G (worst)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyEfficiencyClass"
+    },
+    "annualEnergyConsumption": {
+      "type": "number",
+      "title": "Annual Energy Consumption",
+      "description": "Energy consumed per year under standard conditions",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/annualEnergyConsumption"
+    },
+    "waterConsumption": {
+      "type": "number",
+      "title": "Water Consumption",
+      "description": "Water consumed per cycle or per year (appliances only)",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/waterConsumption"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint",
+      "description": "Total lifecycle carbon footprint of the product",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "carbonFootprintClass": {
+      "type": "string",
+      "title": "Carbon Footprint Class",
+      "description": "Performance class for carbon footprint from A (best) to E (worst)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintClass"
+    },
+    "recycledContentPercentage": {
+      "type": "number",
+      "title": "Recycled Content Percentage",
+      "description": "Percentage of recycled materials in the product by weight",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
+    },
+    "recyclabilityRate": {
+      "type": "number",
+      "title": "Recyclability Rate",
+      "description": "Percentage of product that can be recycled at end of life",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityRate"
+    },
+    "upgradabilityInfo": {
+      "type": "string",
+      "title": "Upgradability Information",
+      "description": "Description of how the product can be upgraded (hardware/software)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/upgradabilityInfo"
+    },
+    "refurbishmentPossibility": {
+      "type": "string",
+      "title": "Refurbishment Possibility",
+      "description": "Whether and how the product can be refurbished for reuse",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/refurbishmentPossibility"
+    },
+    "batteryEndurancePerCycle": {
+      "type": "number",
+      "title": "Battery Endurance Per Cycle",
+      "description": "Battery runtime per charge cycle under standard test conditions",
+      "x-unit": "hours",
+      "x-unitIri": "http://qudt.org/vocab/unit/HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryEndurancePerCycle"
+    },
+    "batteryEnduranceCycles": {
+      "type": "number",
+      "title": "Battery Endurance Cycles",
+      "description": "Number of charge/discharge cycles the battery can endure",
+      "x-unit": "cycles",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryEnduranceCycles"
+    },
+    "ratedBatteryCapacity": {
+      "type": "number",
+      "title": "Rated Battery Capacity",
+      "description": "Manufacturer-rated battery capacity in milliampere-hours",
+      "x-unit": "mAh",
+      "x-unitIri": "http://qudt.org/vocab/unit/MilliA-HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/ratedBatteryCapacity"
+    },
+    "batteryUserReplaceable": {
+      "type": "boolean",
+      "title": "Battery User Replaceable",
+      "description": "Whether the battery can be replaced by the end user without professional tools",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Batteries Reg (EU) 2023/1542 Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryUserReplaceable"
+    },
+    "repeatedFreeFallReliabilityClass": {
+      "type": "string",
+      "title": "Repeated Free-Fall Reliability Class",
+      "description": "Drop test reliability class from A (best) to E (worst)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/repeatedFreeFallReliabilityClass"
+    },
+    "ipRating": {
+      "type": "string",
+      "title": "IP Rating",
+      "description": "Ingress Protection rating for dust and water resistance",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/ipRating"
+    },
+    "disassemblyDepthScore": {
+      "type": "number",
+      "title": "Disassembly Depth Score",
+      "description": "Repairability sub-score (25% weight): steps to remove priority parts",
+      "x-unit": "points",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/disassemblyDepthScore"
+    },
+    "fastenersScore": {
+      "type": "number",
+      "title": "Fasteners Score",
+      "description": "Repairability sub-score (15% weight): screws vs glue vs clips",
+      "x-unit": "points",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/fastenersScore"
+    },
+    "toolsScore": {
+      "type": "number",
+      "title": "Tools Score",
+      "description": "Repairability sub-score (15% weight): proprietary vs standard vs no tools needed",
+      "x-unit": "points",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/toolsScore"
+    },
+    "sparePartsScore": {
+      "type": "number",
+      "title": "Spare Parts Score",
+      "description": "Repairability sub-score (15% weight): availability, delivery time, price ratio",
+      "x-unit": "points",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsScore"
+    },
+    "softwareUpdateScore": {
+      "type": "number",
+      "title": "Software Update Score",
+      "description": "Repairability sub-score (15% weight): OS/security update duration",
+      "x-unit": "points",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/softwareUpdateScore"
+    },
+    "repairInformationScore": {
+      "type": "number",
+      "title": "Repair Information Score",
+      "description": "Repairability sub-score (15% weight): manuals, schematics, diagnostics availability",
+      "x-unit": "points",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/repairInformationScore"
+    },
+    "dropResistanceHeight": {
+      "type": "number",
+      "title": "Drop Resistance Height",
+      "description": "Maximum drop height the device can withstand without functional failure",
+      "x-unit": "m",
+      "x-unitIri": "http://qudt.org/vocab/unit/M",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/dropResistanceHeight"
+    },
+    "dropResistanceTestResult": {
+      "type": "boolean",
+      "title": "Drop Resistance Test Result",
+      "description": "Pass/fail result of the drop resistance test",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/dropResistanceTestResult"
+    },
+    "scratchResistanceClass": {
+      "type": "number",
+      "title": "Scratch Resistance Class",
+      "description": "Scratch resistance rating on the Mohs scale",
+      "x-unit": "Mohs",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/scratchResistanceClass"
+    },
+    "batteryMinCycles80Pct": {
+      "type": "number",
+      "title": "Battery Min Cycles at 80%",
+      "description": "Minimum charge cycles before battery drops below 80% capacity (min 800)",
+      "x-unit": "cycles",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryMinCycles80Pct"
+    },
+    "batteryCapacityRetention": {
+      "type": "number",
+      "title": "Battery Capacity Retention",
+      "description": "Battery capacity retention percentage after rated cycles (min 80%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/batteryCapacityRetention"
+    },
+    "sparePartsList": {
+      "type": "array",
+      "title": "Spare Parts List",
+      "description": "List of available spare parts (15 for professionals, 5 for end-users)",
+      "x-regulation": "32023R1670",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsList"
+    },
+    "sparePartsAvailabilityYears": {
+      "type": "number",
+      "title": "Spare Parts Availability (Years)",
+      "description": "Number of years spare parts remain available after end of production (min 7)",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32023R1670",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsAvailabilityYears"
+    },
+    "maxDeliveryDays": {
+      "type": "number",
+      "title": "Max Delivery Days",
+      "description": "Maximum working days for spare part delivery (5 for end-user parts, 10 for professional)",
+      "x-unit": "working days",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/maxDeliveryDays"
+    },
+    "sparePartsWebsiteUrl": {
+      "type": "string",
+      "title": "Spare Parts Website URL",
+      "description": "URL where spare parts can be ordered",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/sparePartsWebsiteUrl"
+    },
+    "priceList": {
+      "type": "string",
+      "title": "Spare Parts Price List",
+      "description": "URL or document reference for spare parts pricing",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 11",
+      "x-iri": "https://tracepass.eu/voc/dpp/priceList"
+    },
+    "osUpdateSupportYears": {
+      "type": "number",
+      "title": "OS Update Support (Years)",
+      "description": "Minimum years of OS update support from date of placing on market (min 5)",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/osUpdateSupportYears"
+    },
+    "securityUpdateSupportYears": {
+      "type": "number",
+      "title": "Security Update Support (Years)",
+      "description": "Minimum years of security patch support from date of placing on market (min 5)",
+      "x-unit": "years",
+      "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/securityUpdateSupportYears"
+    },
+    "osUpdateEndDate": {
+      "type": "string",
+      "title": "OS Update End Date",
+      "description": "Last date when OS updates will be provided",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/osUpdateEndDate"
+    },
+    "securityUpdateEndDate": {
+      "type": "string",
+      "title": "Security Update End Date",
+      "description": "Last date when security updates will be provided",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/securityUpdateEndDate"
+    },
+    "firmwareAccessForRepairers": {
+      "type": "boolean",
+      "title": "Firmware Access for Repairers",
+      "description": "Whether firmware/software tools are accessible to independent repair professionals",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/firmwareAccessForRepairers"
+    },
+    "dataWipeFunction": {
+      "type": "boolean",
+      "title": "Data Wipe Function",
+      "description": "Whether the device supports a complete factory data wipe function",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataWipeFunction"
+    },
+    "dataTransferSupport": {
+      "type": "boolean",
+      "title": "Data Transfer Support",
+      "description": "Whether the device supports data transfer/migration to a new device",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataTransferSupport"
+    },
+    "psuEfficiency10": {
+      "type": "number",
+      "title": "PSU Efficiency at 10% Load",
+      "description": "Power supply unit efficiency at 10% of rated output",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency10"
+    },
+    "psuEfficiency20": {
+      "type": "number",
+      "title": "PSU Efficiency at 20% Load",
+      "description": "Power supply unit efficiency at 20% of rated output",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency20"
+    },
+    "psuEfficiency50": {
+      "type": "number",
+      "title": "PSU Efficiency at 50% Load",
+      "description": "Power supply unit efficiency at 50% of rated output",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency50"
+    },
+    "psuEfficiency100": {
+      "type": "number",
+      "title": "PSU Efficiency at 100% Load",
+      "description": "Power supply unit efficiency at 100% of rated output",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency100"
+    },
+    "psuPowerFactor": {
+      "type": "number",
+      "title": "PSU Power Factor",
+      "description": "Power factor of the power supply unit",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/psuPowerFactor"
+    },
+    "psuRatedOutputPower": {
+      "type": "number",
+      "title": "PSU Rated Output Power",
+      "description": "Rated output power of the power supply unit",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/psuRatedOutputPower"
+    },
+    "idleStatePower": {
+      "type": "number",
+      "title": "Idle State Power",
+      "description": "Power consumed by the server in idle state",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/idleStatePower"
+    },
+    "activeStateEfficiency": {
+      "type": "number",
+      "title": "Active State Efficiency",
+      "description": "Server efficiency metric when under active workload",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/activeStateEfficiency"
+    },
+    "operatingConditionsClass": {
+      "type": "string",
+      "title": "Operating Conditions Class",
+      "description": "ASHRAE environmental class (A1-C) for server operating conditions",
+      "enum": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "B",
+        "C"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/operatingConditionsClass"
+    },
+    "operatingTemperatureRange": {
+      "type": "string",
+      "title": "Operating Temperature Range",
+      "description": "Acceptable operating temperature range for the server",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/operatingTemperatureRange"
+    },
+    "productType": {
+      "type": "string",
+      "title": "Server Product Type",
+      "description": "Physical form factor of the server",
+      "enum": [
+        "rack",
+        "tower",
+        "blade",
+        "multiNode"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/productType"
+    },
+    "processorSockets": {
+      "type": "number",
+      "title": "Processor Sockets",
+      "description": "Number of CPU sockets on the server",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/processorSockets"
+    },
+    "installedProcessors": {
+      "type": "number",
+      "title": "Installed Processors",
+      "description": "Number of CPUs currently installed",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/installedProcessors"
+    },
+    "memoryModules": {
+      "type": "number",
+      "title": "Memory Modules",
+      "description": "Number of memory (RAM) modules installed",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/memoryModules"
+    },
+    "totalMemory": {
+      "type": "number",
+      "title": "Total Memory",
+      "description": "Total installed RAM capacity",
+      "x-unit": "GB",
+      "x-unitIri": "http://qudt.org/vocab/unit/GigaBYTE",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalMemory"
+    },
+    "storageDevices": {
+      "type": "number",
+      "title": "Storage Devices",
+      "description": "Number of storage devices (HDD/SSD) installed",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/storageDevices"
+    },
+    "totalStorageCapacity": {
+      "type": "number",
+      "title": "Total Storage Capacity",
+      "description": "Total combined storage capacity",
+      "x-unit": "TB",
+      "x-unitIri": "http://qudt.org/vocab/unit/TeraBYTE",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalStorageCapacity"
+    },
+    "powerSupplyUnits": {
+      "type": "number",
+      "title": "Power Supply Units",
+      "description": "Number of power supply units installed",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/powerSupplyUnits"
+    },
+    "expansionSlots": {
+      "type": "number",
+      "title": "Expansion Slots",
+      "description": "Number of available expansion slots (PCIe etc.)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/expansionSlots"
+    },
+    "dataStorageRemovable": {
+      "type": "boolean",
+      "title": "Data Storage Removable",
+      "description": "Whether data storage devices can be removed without soldering",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataStorageRemovable"
+    },
+    "memoryRemovable": {
+      "type": "boolean",
+      "title": "Memory Removable",
+      "description": "Whether memory modules can be removed and replaced",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/memoryRemovable"
+    },
+    "processorRemovable": {
+      "type": "boolean",
+      "title": "Processor Removable",
+      "description": "Whether the CPU can be removed and replaced",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/processorRemovable"
+    },
+    "expansionCardsRemovable": {
+      "type": "boolean",
+      "title": "Expansion Cards Removable",
+      "description": "Whether expansion cards (GPU, NIC, etc.) can be removed",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/expansionCardsRemovable"
+    },
+    "psuRemovable": {
+      "type": "boolean",
+      "title": "PSU Removable",
+      "description": "Whether the power supply unit can be removed and replaced",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/psuRemovable"
+    },
+    "secureDataDeletion": {
+      "type": "boolean",
+      "title": "Secure Data Deletion",
+      "description": "Whether the server supports secure data deletion / sanitization",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/secureDataDeletion"
+    },
+    "firmwareUpdateSupport": {
+      "type": "boolean",
+      "title": "Firmware Update Support",
+      "description": "Whether the server supports firmware/BIOS updates",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/firmwareUpdateSupport"
+    },
+    "ratedCapacity": {
+      "type": "number",
+      "title": "Rated Capacity",
+      "description": "Rated load capacity of the washing machine",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/ratedCapacity"
+    },
+    "energyEfficiencyIndex": {
+      "type": "number",
+      "title": "Energy Efficiency Index",
+      "description": "Calculated energy efficiency index (EEI) for appliance energy labelling",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyEfficiencyIndex"
+    },
+    "energyConsumptionPer100Cycles": {
+      "type": "number",
+      "title": "Energy Consumption per 100 Cycles",
+      "description": "Weighted energy consumption for 100 washing cycles",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyConsumptionPer100Cycles"
+    },
+    "waterConsumptionPerCycle": {
+      "type": "number",
+      "title": "Water Consumption per Cycle",
+      "description": "Water consumed per washing cycle",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/waterConsumptionPerCycle"
+    },
+    "programmeDuration": {
+      "type": "number",
+      "title": "Programme Duration",
+      "description": "Duration of the rated wash programme",
+      "x-unit": "minutes",
+      "x-unitIri": "http://qudt.org/vocab/unit/MIN",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/programmeDuration"
+    },
+    "spinDryingEfficiencyClass": {
+      "type": "string",
+      "title": "Spin-Drying Efficiency Class",
+      "description": "Spin-drying efficiency rating from A to G",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/spinDryingEfficiencyClass"
+    },
+    "maximumSpinSpeed": {
+      "type": "number",
+      "title": "Maximum Spin Speed",
+      "description": "Maximum spin speed of the drum",
+      "x-unit": "rpm",
+      "x-unitIri": "http://qudt.org/vocab/unit/REV-PER-MIN",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumSpinSpeed"
+    },
+    "residualMoistureContent": {
+      "type": "number",
+      "title": "Residual Moisture Content",
+      "description": "Percentage of moisture remaining after spin cycle",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/residualMoistureContent"
+    },
+    "washingEfficiencyIndex": {
+      "type": "number",
+      "title": "Washing Efficiency Index",
+      "description": "Washing performance index measuring cleaning effectiveness",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/washingEfficiencyIndex"
+    },
+    "rinsingEffectiveness": {
+      "type": "number",
+      "title": "Rinsing Effectiveness",
+      "description": "Measure of how effectively detergent is rinsed out",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/rinsingEffectiveness"
+    },
+    "airborneNoiseEmission": {
+      "type": "number",
+      "title": "Airborne Noise Emission",
+      "description": "Noise level during the loudest phase of the programme",
+      "x-unit": "dB",
+      "x-unitIri": "http://qudt.org/vocab/unit/DeciB",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/airborneNoiseEmission"
+    },
+    "noiseClass": {
+      "type": "string",
+      "title": "Noise Class",
+      "description": "Noise emission class from A (quietest) to D (loudest)",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/noiseClass"
+    },
+    "offModePower": {
+      "type": "number",
+      "title": "Off-Mode Power",
+      "description": "Power consumption when the appliance is switched off",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/offModePower"
+    },
+    "standbyModePower": {
+      "type": "number",
+      "title": "Standby Mode Power",
+      "description": "Power consumption in standby/networked standby mode",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/standbyModePower"
+    },
+    "totalVolume": {
+      "type": "number",
+      "title": "Total Volume",
+      "description": "Total internal volume of the refrigerator",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/totalVolume"
+    },
+    "freshFoodVolume": {
+      "type": "number",
+      "title": "Fresh Food Volume",
+      "description": "Volume of the fresh food / refrigerator compartment",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/freshFoodVolume"
+    },
+    "frozenVolume": {
+      "type": "number",
+      "title": "Frozen Volume",
+      "description": "Volume of the freezer compartment",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/frozenVolume"
+    },
+    "starRating": {
+      "type": "string",
+      "title": "Star Rating",
+      "description": "Freezer star rating indicating minimum temperature capability",
+      "enum": [
+        "1star",
+        "2star",
+        "3star",
+        "4star"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/starRating"
+    },
+    "refrigeratorEnergyEfficiencyIndex": {
+      "type": "number",
+      "title": "Refrigerator Energy Efficiency Index",
+      "description": "Calculated EEI for the refrigerating appliance",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorEnergyEfficiencyIndex"
+    },
+    "refrigeratorAnnualEnergyConsumption": {
+      "type": "number",
+      "title": "Refrigerator Annual Energy Consumption",
+      "description": "Annual energy consumption of the refrigerating appliance",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorAnnualEnergyConsumption"
+    },
+    "climateClass": {
+      "type": "string",
+      "title": "Climate Class",
+      "description": "Climate class indicating operating ambient temperature range",
+      "enum": [
+        "SN",
+        "N",
+        "ST",
+        "T"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/climateClass"
+    },
+    "refrigeratorNoiseEmission": {
+      "type": "number",
+      "title": "Refrigerator Noise Emission",
+      "description": "Airborne acoustic noise emission of the refrigerating appliance",
+      "x-unit": "dB",
+      "x-unitIri": "http://qudt.org/vocab/unit/DeciB",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorNoiseEmission"
+    },
+    "refrigeratorNoiseClass": {
+      "type": "string",
+      "title": "Refrigerator Noise Class",
+      "description": "Noise emission class for the refrigerating appliance",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorNoiseClass"
+    },
+    "freezingCapacity": {
+      "type": "number",
+      "title": "Freezing Capacity",
+      "description": "Amount of fresh food that can be frozen in 24 hours",
+      "x-unit": "kg/24h",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM-PER-DAY",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/freezingCapacity"
+    },
+    "temperatureRiseTime": {
+      "type": "number",
+      "title": "Temperature Rise Time",
+      "description": "Time for temperature to rise from -18°C to -9°C during power failure",
+      "x-unit": "hours",
+      "x-unitIri": "http://qudt.org/vocab/unit/HR",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/temperatureRiseTime"
+    },
+    "refrigeratorOffModePower": {
+      "type": "number",
+      "title": "Refrigerator Off-Mode Power",
+      "description": "Power consumed by the refrigerator when switched off",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex V",
+      "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorOffModePower"
+    },
+    "rohsCompliant": {
+      "type": "boolean",
+      "title": "RoHS Compliant",
+      "description": "Whether the product complies with RoHS 2011/65/EU directive",
+      "x-regulation": "32011L0065",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
+      "x-provision": "RoHS Dir 2011/65/EU Art. 4(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/rohsCompliant"
+    },
+    "rohsDeclaration": {
+      "type": "string",
+      "title": "RoHS Declaration URL",
+      "description": "URL to the RoHS declaration of conformity document",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 4",
+      "x-iri": "https://tracepass.eu/voc/dpp/rohsDeclaration"
+    },
+    "leadContent": {
+      "type": "number",
+      "title": "Lead (Pb) Content",
+      "description": "Lead concentration per homogeneous material (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/leadContent"
+    },
+    "mercuryContent": {
+      "type": "number",
+      "title": "Mercury (Hg) Content",
+      "description": "Mercury concentration per homogeneous material (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/mercuryContent"
+    },
+    "cadmiumContent": {
+      "type": "number",
+      "title": "Cadmium (Cd) Content",
+      "description": "Cadmium concentration per homogeneous material (threshold 0.01%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/cadmiumContent"
+    },
+    "hexavalentChromiumContent": {
+      "type": "number",
+      "title": "Hexavalent Chromium (Cr VI) Content",
+      "description": "Hexavalent chromium concentration per homogeneous material (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/hexavalentChromiumContent"
+    },
+    "pbbContent": {
+      "type": "number",
+      "title": "PBB Content",
+      "description": "Polybrominated biphenyls concentration (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/pbbContent"
+    },
+    "pbdeContent": {
+      "type": "number",
+      "title": "PBDE Content",
+      "description": "Polybrominated diphenyl ethers concentration (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/pbdeContent"
+    },
+    "dehpContent": {
+      "type": "number",
+      "title": "DEHP Content",
+      "description": "Bis(2-ethylhexyl) phthalate concentration (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/dehpContent"
+    },
+    "bbpContent": {
+      "type": "number",
+      "title": "BBP Content",
+      "description": "Benzyl butyl phthalate concentration (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/bbpContent"
+    },
+    "dbpContent": {
+      "type": "number",
+      "title": "DBP Content",
+      "description": "Dibutyl phthalate concentration (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/dbpContent"
+    },
+    "dibpContent": {
+      "type": "number",
+      "title": "DIBP Content",
+      "description": "Diisobutyl phthalate concentration (threshold 0.1%)",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex II",
+      "x-iri": "https://tracepass.eu/voc/dpp/dibpContent"
+    },
+    "rohsExemptionsApplied": {
+      "type": "array",
+      "title": "RoHS Exemptions Applied",
+      "description": "List of RoHS exemptions (Annex III/IV) applied to this product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex III",
+      "x-iri": "https://tracepass.eu/voc/dpp/rohsExemptionsApplied"
+    },
+    "substancesOfConcern": {
+      "type": "array",
+      "title": "Substances of Concern",
+      "description": "REACH/SCIP substances of concern present above 0.1% w/w",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "REACH Reg 1907/2006 Art. 33(1); WFD Dir 2008/98 Art. 9(1)(i) (SCIP)",
+      "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
+    },
+    "scipNotificationId": {
+      "type": "string",
+      "title": "SCIP Notification ID",
+      "description": "ECHA SCIP database notification identifier",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(1)(i)",
+      "x-iri": "https://tracepass.eu/voc/dpp/scipNotificationId"
+    },
+    "svhcPresent": {
+      "type": "boolean",
+      "title": "SVHC Present",
+      "description": "Whether any Substance of Very High Concern is present above 0.1% w/w",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "REACH Reg 1907/2006 Art. 33(1)",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
+    },
+    "containsPermanentMagnets": {
+      "type": "boolean",
+      "title": "Contains Permanent Magnets",
+      "description": "Whether the product contains permanent magnets weighing > 0.2 kg",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/containsPermanentMagnets"
+    },
+    "magnetTotalWeight": {
+      "type": "number",
+      "title": "Magnet Total Weight",
+      "description": "Total weight of all permanent magnets in the product",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/magnetTotalWeight"
+    },
+    "magnetLocation": {
+      "type": "string",
+      "title": "Magnet Location",
+      "description": "Description of where permanent magnets are located within the product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/magnetLocation"
+    },
+    "magnetChemicalComposition": {
+      "type": "string",
+      "title": "Magnet Chemical Composition",
+      "description": "Chemical composition of the permanent magnets (e.g. NdFeB, SmCo)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/magnetChemicalComposition"
+    },
+    "magnetCoatings": {
+      "type": "string",
+      "title": "Magnet Coatings",
+      "description": "Surface coatings applied to the permanent magnets",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/magnetCoatings"
+    },
+    "recycledNeodymium": {
+      "type": "number",
+      "title": "Recycled Neodymium Content",
+      "description": "Percentage of recycled neodymium in permanent magnets",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledNeodymium"
+    },
+    "recycledDysprosium": {
+      "type": "number",
+      "title": "Recycled Dysprosium Content",
+      "description": "Percentage of recycled dysprosium in permanent magnets",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledDysprosium"
+    },
+    "recycledPraseodymium": {
+      "type": "number",
+      "title": "Recycled Praseodymium Content",
+      "description": "Percentage of recycled praseodymium in permanent magnets",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledPraseodymium"
+    },
+    "recycledTerbium": {
+      "type": "number",
+      "title": "Recycled Terbium Content",
+      "description": "Percentage of recycled terbium in permanent magnets",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledTerbium"
+    },
+    "recycledBoron": {
+      "type": "number",
+      "title": "Recycled Boron Content",
+      "description": "Percentage of recycled boron in permanent magnets",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledBoron"
+    },
+    "recycledSamarium": {
+      "type": "number",
+      "title": "Recycled Samarium Content",
+      "description": "Percentage of recycled samarium in permanent magnets",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledSamarium"
+    },
+    "recycledNickel": {
+      "type": "number",
+      "title": "Recycled Nickel Content",
+      "description": "Percentage of recycled nickel in permanent magnets",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledNickel"
+    },
+    "recycledCobalt": {
+      "type": "number",
+      "title": "Recycled Cobalt Content",
+      "description": "Percentage of recycled cobalt in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledCobalt"
+    },
+    "recycledContentTotal": {
+      "type": "number",
+      "title": "Total Recycled Content",
+      "description": "Total percentage of recycled materials in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledContentTotal"
+    },
+    "recycledPlasticContent": {
+      "type": "number",
+      "title": "Recycled Plastic Content",
+      "description": "Percentage of recycled plastic in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledPlasticContent"
+    },
+    "recycledMetalContent": {
+      "type": "number",
+      "title": "Recycled Metal Content",
+      "description": "Percentage of recycled metal in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledMetalContent"
+    },
+    "recycledLithium": {
+      "type": "number",
+      "title": "Recycled Lithium Content",
+      "description": "Percentage of recycled lithium in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledLithium"
+    },
+    "recycledRareEarth": {
+      "type": "number",
+      "title": "Recycled Rare Earth Content",
+      "description": "Total percentage of recycled rare earth elements in the product",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledRareEarth"
+    },
+    "postConsumerRecycledShare": {
+      "type": "number",
+      "title": "Post-Consumer Recycled Share",
+      "description": "Percentage of post-consumer recycled material",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledShare"
+    },
+    "preConsumerRecycledShare": {
+      "type": "number",
+      "title": "Pre-Consumer Recycled Share",
+      "description": "Percentage of pre-consumer (post-industrial) recycled material",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7",
+      "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledShare"
+    },
+    "weeeCategory": {
+      "type": "string",
+      "title": "WEEE Category",
+      "description": "WEEE directive product category (1-6)",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex III",
+      "x-iri": "https://tracepass.eu/voc/dpp/weeeCategory"
+    },
+    "productWeight": {
+      "type": "number",
+      "title": "Product Weight",
+      "description": "Total weight of the product",
+      "x-unit": "kg",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Annex X",
+      "x-iri": "https://tracepass.eu/voc/dpp/productWeight"
+    },
+    "dismantlingInstructions": {
+      "type": "string",
+      "title": "Dismantling Instructions",
+      "description": "URL to instructions for dismantling/recycling the product",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/dismantlingInstructions"
+    },
+    "recyclableComponentsList": {
+      "type": "array",
+      "title": "Recyclable Components List",
+      "description": "List of components that can be recycled",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclableComponentsList"
+    },
+    "hazardousComponentsList": {
+      "type": "array",
+      "title": "Hazardous Components List",
+      "description": "List of components containing hazardous substances requiring special treatment",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/hazardousComponentsList"
+    },
+    "materialComposition": {
+      "type": "array",
+      "title": "Material Composition",
+      "description": "Breakdown of materials in the product with percentages and recyclability",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 15",
+      "x-iri": "https://tracepass.eu/voc/dpp/materialComposition"
+    },
+    "crossedOutWheelieBinMarking": {
+      "type": "boolean",
+      "title": "Crossed-Out Wheelie Bin Marking",
+      "description": "Whether the product bears the WEEE crossed-out wheelie bin symbol",
+      "x-regulation": "32012L0019",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32012L0019",
+      "x-provision": "WEEE Dir 2012/19/EU Art. 14(4) + Annex IX",
+      "x-iri": "https://tracepass.eu/voc/dpp/crossedOutWheelieBinMarking"
+    },
+    "dppIssueDate": {
+      "type": "string",
+      "title": "DPP Issue Date",
+      "description": "Date when the Digital Product Passport was first issued",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/dppIssueDate"
+    },
+    "dppLastUpdated": {
+      "type": "string",
+      "title": "DPP Last Updated",
+      "description": "Date when the DPP was last modified",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/dppLastUpdated"
+    },
+    "dppExpirationDate": {
+      "type": "string",
+      "title": "DPP Expiration Date",
+      "description": "Date when the DPP expires and needs renewal",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9",
+      "x-iri": "https://tracepass.eu/voc/dpp/dppExpirationDate"
+    },
+    "dataCarrierType": {
+      "type": "string",
+      "title": "Data Carrier Type",
+      "description": "Type of physical data carrier used to link to the DPP",
+      "enum": [
+        "QR",
+        "DataMatrix",
+        "RFID",
+        "NFC"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
+    },
+    "dataCarrierReference": {
+      "type": "string",
+      "title": "Data Carrier Reference",
+      "description": "URL encoded in the data carrier (GS1 Digital Link)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierReference"
+    },
+    "identifierStandard": {
+      "type": "string",
+      "title": "Identifier Standard",
+      "description": "Standard used for product identification (GS1 or ISO 15459)",
+      "enum": [
+        "GS1",
+        "ISO15459"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/identifierStandard"
+    },
+    "accessLevel": {
+      "type": "string",
+      "title": "Access Rights",
+      "description": "Default access level for the DPP data",
+      "enum": [
+        "public",
+        "restricted",
+        "confidential"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
+      "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
+    },
+    "ceMarkingStatus": {
+      "type": "string",
+      "title": "CE Marking Status",
+      "description": "Whether the product bears CE marking and its validity",
+      "enum": [
+        "marked",
+        "pending",
+        "not_applicable"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 16-17",
+      "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
+    }
+  }
+}

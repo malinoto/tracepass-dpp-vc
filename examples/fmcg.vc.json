@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
+    "https://tracepass.eu/context/dpp-vc/fmcg/v1.jsonld"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "DigitalProductPassport"
+  ],
+  "credentialSubject": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09506000123456",
+    "name": "FMCG — worked example",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org",
+      "name": "GS1 Global Trade Item Number"
+    },
+    "idGranularity": "batch",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "code": "fmcg",
+        "name": "FMCG"
+      }
+    ],
+    "producedAtFacility": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://id.gs1.org/414/5012345678900"
+    },
+    "countryOfProduction": {
+      "type": [
+        "Country"
+      ],
+      "code": "DE"
+    },
+    "relatedParty": [
+      {
+        "type": [
+          "PartyRole"
+        ],
+        "role": "manufacturer",
+        "party": {
+          "type": [
+            "Party"
+          ],
+          "id": "https://id.gs1.org/417/4012345000009",
+          "name": "Example Manufacturer GmbH",
+          "registeredId": "DE812345678",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://ec.europa.eu/taxation_customs/vies",
+            "name": "EU VAT identification number"
+          }
+        }
+      }
+    ],
+    "characteristics": {
+      "productName": "Concentrated laundry liquid, colour care",
+      "brandName": "Silvana",
+      "productSubcategory": "laundry",
+      "netContentValue": 750,
+      "netContentUnit": "ml",
+      "ingredientsList": [
+        {
+          "name": "Aqua",
+          "casNumber": "7732-18-5",
+          "function": "solvent"
+        },
+        {
+          "name": "Sodium laureth sulfate",
+          "casNumber": "9004-82-4",
+          "function": "surfactant"
+        },
+        {
+          "name": "Glycerin",
+          "casNumber": "56-81-5",
+          "function": "humectant"
+        }
+      ],
+      "packagingMaterialType": "HDPE",
+      "batchLotNumber": "L26213-04",
+      "disposalInstructions": "Empty the bottle fully, replace the cap and place it in household plastics collection. Do not pour undiluted product into drains."
+    }
+  }
+}

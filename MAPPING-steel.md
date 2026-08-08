@@ -1,131 +1,104 @@
-# Steel DPP — field-to-vocabulary mapping
+# Iron, Steel & Aluminium DPP — field-to-vocabulary mapping
 
-Every field in the steel Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **4 reuse an existing IRI, 71 are coined, 4 are skipped** (they are product specifications, not semantic properties), and **5 economic-operator fields move to the UNTP envelope** rather than living in `characteristics` at all.
+Every field in the Iron, Steel & Aluminium Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **4 reuse an existing IRI, 70 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 4 are skipped as product specifications rather than semantic properties.
 
-The coined terms are not invention for its own sake: each names the EU instrument that defines the concept, and where the field carries a unit, that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term (steel mechanical properties do not).
+The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
 ## Reused from an existing vocabulary
 
-| Field | Vocabulary | IRI |
-|---|---|---|
-| `gtin` | gs1 | `https://ref.gs1.org/voc/gtin` |
-| `cnCode` | eurostat-cn | `http://data.europa.eu/xsp/cn2024/{code}0080` |
-| `heatNumber` | gs1 | `https://ref.gs1.org/voc/hasBatchLotNumber` |
-| `supplyChainEvents` | epcis | `https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld` |
+| Field | IRI |
+|---|---|
+| `gtin` | `https://ref.gs1.org/voc/gtin` |
+| `cnCode` | `http://data.europa.eu/xsp/cn2024/{code}0080` |
+| `heatNumber` | `https://ref.gs1.org/voc/hasBatchLotNumber` |
+| `supplyChainEvents` | `https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld` |
 
-## Economic operators — carried by the UNTP envelope, not `characteristics`
+## Carried by the UNTP envelope, not `characteristics`
 
-`untp:relatedParty` is an object property whose range is `untp:PartyRole`: a list of
-`{ party, role }` entries, where `role` comes from UNTP's 20-value `PartyRole` code list
-(`manufacturer`, `importer`, `distributor`, `recycler`, …). It is a property of the
-`Product`, so these fields belong on `credentialSubject`, one level above the
-`characteristics` object this profile defines.
-
-The template's flat fields therefore do not map to `characteristics` properties at all —
-they compose into envelope entries. Name and address are not separate properties: they are
-`party.name` and `party.address` of the same `Party`.
+`untp:relatedParty` is an object property over `untp:PartyRole` and a property of the `Product`, so economic operators, the production facility and the country of production sit one level above the `characteristics` object this profile defines.
 
 | Template field | Becomes |
 |---|---|
+| `globalUniqueId` | `id` |
 | `manufacturerName` | `relatedParty[role=manufacturer].party.name` |
-| `manufacturerAddress` | `relatedParty[role=manufacturer].party.address` |
+| `manufacturerAddress` | `relatedParty[role=manufacturer].party.partyAddress` |
 | `importerName` | `relatedParty[role=importer].party.name` |
-| `importerAddress` | `relatedParty[role=importer].party.address` |
-| `euAuthorisedRepresentative` | `relatedParty[role=serviceProvider].party` — UNTP has no dedicated authorised-representative role; state the ESPR/CPR capacity in `party.name` or a scoped identifier |
-
-Modelling these as five string properties in `characteristics` — each pointing at the bare
-`relatedParty` IRI — is wrong three times over: it collapses distinct parties onto one
-property, discards the role that distinguishes them, and supplies a string where an object
-is required. Every product category carries the same economic operators, so this composition
-is profile-wide, not steel-specific.
+| `importerAddress` | `relatedParty[role=importer].party.partyAddress` |
+| `euAuthorisedRepresentative` | `relatedParty[role=serviceProvider].party` |
 
 ## Coined — no existing vocabulary names the concept
 
-Each `tracepass:` term names the instrument that defines it. A unit column shows the reused QUDT unit, or notes where QUDT has none (EN 15804 / EF impact units, CBAM emission units).
+| Field | Defined by | Provision |
+|---|---|---|
+| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
+| `serialNumber` | CELEX `32024R1781` | — |
+| `productType` | CELEX `32023R0956` | Annex I |
+| `productName` | CELEX `32023R0988` | Art. 9(5) |
+| `steelGradeDesignation` | — | — |
+| `countryOfManufacture` | CELEX `32024R1781` | — |
+| `facilityId` | CELEX `32023R0956` | Annex IV |
+| `primaryMaterialType` | CELEX `32023R0956` | — |
+| `chemicalComposition` | — | — |
+| `recycledContentPercentage` | CELEX `32024R1781` | Article 5(5)(j) |
+| `preConsumerScrapPct` | CELEX `32024R1781` | — |
+| `postConsumerScrapPct` | CELEX `32024R1781` | — |
+| `recycledContentVerification` | CELEX `32024R1781` | — |
+| `coatings` | CELEX `32024R1781` | — |
+| `yieldStrengthMpa` | — | — |
+| `tensileStrengthMpa` | — | — |
+| `elongationPct` | — | — |
+| `impactEnergy` | — | — |
+| `hardness` | — | — |
+| `productionRoute` | CELEX `32023R0956` | Annex IV |
+| `productionDate` | CELEX `32024R1781` | — |
+| `heatTreatment` | — | — |
+| `electricityGridIntensity` | CELEX `32023R0956` | — |
+| `renewableSharePct` | CELEX `32024R1781` | — |
+| `electricityConsumedKwhPerT` | CELEX `32023R0956` | — |
+| `rawMaterialOrigin` | CELEX `32024R1781` | — |
+| `reductionAgent` | CELEX `32023R0956` | — |
+| `totalCarbonFootprint` | CELEX `32024R1781` | Article 5(5)(b) |
+| `scope1DirectEmissions` | CELEX `32023R0956` | Annex IV |
+| `scope2IndirectEmissions` | CELEX `32023R0956` | — |
+| `scope3UpstreamEmissions` | CELEX `32024R1781` | — |
+| `precursorEmissions` | CELEX `32023R0956` | Annex IV |
+| `calculationMethodology` | CELEX `32024R1781` | — |
+| `thirdPartyVerification` | CELEX `32023R0956` | Art. 8 |
+| `carbonIntensityClass` | CELEX `32024R1781` | Article 7 |
+| `euEtsBenchmarkProduct` | CELEX `32003L0087` | — |
+| `dataQuality` | CELEX `32023R0956` | Annex IV |
+| `cbamGoodsType` | CELEX `32023R0956` | Annex IV |
+| `totalSpecificEmbeddedEmissions` | CELEX `32023R0956` | Annex IV |
+| `carbonPricePaid` | CELEX `32023R0956` | Article 9 |
+| `cbamDeclarantEori` | CELEX `32023R0956` | — |
+| `cbamAccountNumber` | CELEX `32023R0956` | — |
+| `svhcPresent` | CELEX `32006R1907` | Art. 33 |
+| `svhcCandidateListSubstances` | CELEX `32006R1907` | Art. 33, SCIP |
+| `reachRegistrationNumbers` | CELEX `32006R1907` | — |
+| `restrictedSubstancesCompliance` | CELEX `32006R1907` | Annex XVII |
+| `gwpTotal` | EN 15804+A2 (global warming potential, total) | — |
+| `odp` | EN 15804+A2 (ozone depletion potential) | — |
+| `ap` | EN 15804+A2 (acidification potential) | — |
+| `waterUse` | EN 15804+A2 (water use) | — |
+| `epdReferenceUri` | ISO 14025 (Type III environmental declarations) | — |
+| `epdProgramOperator` | ISO 14025 (Type III environmental declarations) | — |
+| `lifecycleModules` | — | — |
+| `declaredUnit` | EN 15804+A2 (declared and functional unit) | — |
+| `expectedServiceLifeYears` | CELEX `32024R1781` | Article 5(5)(a) |
+| `recyclabilityPercentage` | CELEX `32024R1781` | Article 5(5)(i) |
+| `endOfLifeInstructions` | CELEX `32024R1781` | Article 5(5)(l) |
+| `ceMarking` | CELEX `32024R1781` | Art. 13-15 |
+| `declarationOfPerformanceUri` | CELEX `32024R3110` | — |
+| `inspectionCertificateType` | — | — |
+| `inspectionCertificateUri` | — | — |
+| `responsibleSteelCertification` | — | — |
+| `asiCertification` | — | — |
+| `euEtsInstallationId` | CELEX `32003L0087` | — |
+| `dataCarrier` | CELEX `32024R1781` | — |
+| `accessLevel` | CELEX `32024R1781` | — |
+| `registryEntryUri` | CELEX `32024R1781` | — |
+| `dataFormat` | CELEX `32024R1781` | — |
+| `languages` | CELEX `32024R1781` | Article 8 |
+| `ceMarkingStatus` | CELEX `32024R3110` | Arts. 8-9 |
 
-| Field | tracepass term | Defined by | Unit IRI |
-|---|---|---|---|
-| `globalUniqueId` | `tracepass:globalUniqueId` | ESPR | — |
-| `batchLotNumber` | `tracepass:batchLotNumber` | GPSR | — |
-| `serialNumber` | `tracepass:serialNumber` | ESPR | — |
-| `productType` | `tracepass:productType` | CBAM | — |
-| `productName` | `tracepass:productName` | GPSR | — |
-| `steelGradeDesignation` | `tracepass:steelGradeDesignation` | — | — |
-| `countryOfManufacture` | `tracepass:countryOfManufacture` | ESPR | — |
-| `facilityId` | `tracepass:facilityId` | CBAM | — |
-| `primaryMaterialType` | `tracepass:primaryMaterialType` | CBAM | — |
-| `chemicalComposition` | `tracepass:chemicalComposition` | — | `PERCENT` |
-| `recycledContentPercentage` | `tracepass:recycledContentPercentage` | ESPR | `PERCENT` |
-| `preConsumerScrapPct` | `tracepass:preConsumerScrapPct` | ESPR | `PERCENT` |
-| `postConsumerScrapPct` | `tracepass:postConsumerScrapPct` | ESPR | `PERCENT` |
-| `recycledContentVerification` | `tracepass:recycledContentVerification` | ESPR | — |
-| `coatings` | `tracepass:coatings` | ESPR | — |
-| `yieldStrengthMpa` | `tracepass:yieldStrengthMpa` | — | `MegaPA` |
-| `tensileStrengthMpa` | `tracepass:tensileStrengthMpa` | — | `MegaPA` |
-| `elongationPct` | `tracepass:elongationPct` | — | `PERCENT` |
-| `impactEnergy` | `tracepass:impactEnergy` | — | `J` |
-| `hardness` | `tracepass:hardness` | — | — |
-| `productionRoute` | `tracepass:productionRoute` | CBAM | — |
-| `productionDate` | `tracepass:productionDate` | ESPR | — |
-| `heatTreatment` | `tracepass:heatTreatment` | — | — |
-| `electricityGridIntensity` | `tracepass:electricityGridIntensity` | CBAM | 'gCO2/kWh' (no QUDT unit) |
-| `renewableSharePct` | `tracepass:renewableSharePct` | ESPR | `PERCENT` |
-| `electricityConsumedKwhPerT` | `tracepass:electricityConsumedKwhPerT` | CBAM | 'kWh/t' (no QUDT unit) |
-| `rawMaterialOrigin` | `tracepass:rawMaterialOrigin` | ESPR | — |
-| `reductionAgent` | `tracepass:reductionAgent` | CBAM | — |
-| `totalCarbonFootprint` | `tracepass:totalCarbonFootprint` | ESPR | 'kgCO2e/kg' (no QUDT unit) |
-| `scope1DirectEmissions` | `tracepass:scope1DirectEmissions` | CBAM | 'tCO2e/t' (no QUDT unit) |
-| `scope2IndirectEmissions` | `tracepass:scope2IndirectEmissions` | CBAM | 'tCO2e/t' (no QUDT unit) |
-| `scope3UpstreamEmissions` | `tracepass:scope3UpstreamEmissions` | ESPR | 'tCO2e/t' (no QUDT unit) |
-| `precursorEmissions` | `tracepass:precursorEmissions` | CBAM | 'tCO2/t' (no QUDT unit) |
-| `calculationMethodology` | `tracepass:calculationMethodology` | ESPR | — |
-| `thirdPartyVerification` | `tracepass:thirdPartyVerification` | CBAM | — |
-| `carbonIntensityClass` | `tracepass:carbonIntensityClass` | ESPR | — |
-| `euEtsBenchmarkProduct` | `tracepass:euEtsBenchmarkProduct` | EU ETS | — |
-| `dataQuality` | `tracepass:dataQuality` | CBAM | — |
-| `cbamGoodsType` | `tracepass:cbamGoodsType` | CBAM | — |
-| `totalSpecificEmbeddedEmissions` | `tracepass:totalSpecificEmbeddedEmissions` | CBAM | 'tCO2/t' (no QUDT unit) |
-| `carbonPricePaid` | `tracepass:carbonPricePaid` | CBAM | 'EUR/tCO2' (no QUDT unit) |
-| `cbamDeclarantEori` | `tracepass:cbamDeclarantEori` | CBAM | — |
-| `cbamAccountNumber` | `tracepass:cbamAccountNumber` | CBAM | — |
-| `svhcPresent` | `tracepass:svhcPresent` | REACH | — |
-| `svhcCandidateListSubstances` | `tracepass:svhcCandidateListSubstances` | REACH | — |
-| `reachRegistrationNumbers` | `tracepass:reachRegistrationNumbers` | REACH | — |
-| `restrictedSubstancesCompliance` | `tracepass:restrictedSubstancesCompliance` | REACH | — |
-| `gwpTotal` | `tracepass:gwpTotal` | — | 'kg CO2e' (no QUDT unit) |
-| `odp` | `tracepass:odp` | — | 'kg CFC-11 eq.' (no QUDT unit) |
-| `ap` | `tracepass:ap` | — | 'mol H+ eq.' (no QUDT unit) |
-| `waterUse` | `tracepass:waterUse` | — | 'm3 world eq.' (no QUDT unit) |
-| `epdReferenceUri` | `tracepass:epdReferenceUri` | — | — |
-| `epdProgramOperator` | `tracepass:epdProgramOperator` | — | — |
-| `lifecycleModules` | `tracepass:lifecycleModules` | — | — |
-| `declaredUnit` | `tracepass:declaredUnit` | — | — |
-| `expectedServiceLifeYears` | `tracepass:expectedServiceLifeYears` | ESPR | `YR` |
-| `recyclabilityPercentage` | `tracepass:recyclabilityPercentage` | ESPR | `PERCENT` |
-| `endOfLifeInstructions` | `tracepass:endOfLifeInstructions` | ESPR | — |
-| `ceMarking` | `tracepass:ceMarking` | ESPR | — |
-| `declarationOfPerformanceUri` | `tracepass:declarationOfPerformanceUri` | CPR | — |
-| `inspectionCertificateType` | `tracepass:inspectionCertificateType` | — | — |
-| `inspectionCertificateUri` | `tracepass:inspectionCertificateUri` | — | — |
-| `responsibleSteelCertification` | `tracepass:responsibleSteelCertification` | — | — |
-| `asiCertification` | `tracepass:asiCertification` | — | — |
-| `euEtsInstallationId` | `tracepass:euEtsInstallationId` | EU ETS | — |
-| `dataCarrier` | `tracepass:dataCarrier` | ESPR | — |
-| `accessLevel` | `tracepass:accessLevel` | ESPR | — |
-| `registryEntryUri` | `tracepass:registryEntryUri` | ESPR | — |
-| `dataFormat` | `tracepass:dataFormat` | ESPR | — |
-| `languages` | `tracepass:languages` | ESPR | — |
-| `ceMarkingStatus` | `tracepass:ceMarkingStatus` | CPR | — |
-
-## Skipped
-
-Not semantic properties — product specifications or free-text notes:
-
-- `magneticSeparability` — kind=specification, not a semantic term
-- `expectedScrapGrade` — kind=specification, not a semantic term
-- `isoCertifications` — kind=specification, not a semantic term
-- `otherCertifications` — kind=specification, not a semantic term
-
-## How this composes
-
-These fields fill `credentialSubject.characteristics` in a UNTP `DigitalProductPassport` credential — see `examples/steel.vc.json` for a complete, schema-valid instance, and `profile/untp-extension.md` for the extension approach. The context is `contexts/steel.jsonld`; the shape is `schemas/steel.characteristics.json`.
+A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

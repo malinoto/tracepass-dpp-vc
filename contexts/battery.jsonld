@@ -1,0 +1,455 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "batteryIdDmcCode": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryIdDmcCode",
+        "@type": "xsd:string"
+      },
+      "batteryPassportIdentifier": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryPassportIdentifier",
+        "@type": "xsd:string"
+      },
+      "manufacturerEmail": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturerEmail",
+        "@type": "xsd:string"
+      },
+      "manufacturingDate": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingDate",
+        "@type": "xsd:date"
+      },
+      "manufacturingPlace": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingPlace"
+      },
+      "batteryCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryCategory",
+        "@type": "xsd:string"
+      },
+      "batteryWeight": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryWeight",
+        "@type": "xsd:decimal"
+      },
+      "batteryStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryStatus",
+        "@type": "xsd:string"
+      },
+      "separateCollectionSymbol": {
+        "@id": "https://tracepass.eu/voc/dpp/separateCollectionSymbol",
+        "@type": "xsd:anyURI"
+      },
+      "cadmiumSymbol": {
+        "@id": "https://tracepass.eu/voc/dpp/cadmiumSymbol",
+        "@type": "xsd:boolean"
+      },
+      "leadSymbol": {
+        "@id": "https://tracepass.eu/voc/dpp/leadSymbol",
+        "@type": "xsd:boolean"
+      },
+      "carbonFootprintLabel": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintLabel",
+        "@type": "xsd:anyURI"
+      },
+      "meaningOfLabelsAndSymbols": {
+        "@id": "https://tracepass.eu/voc/dpp/meaningOfLabelsAndSymbols",
+        "@type": "xsd:anyURI"
+      },
+      "euDeclarationOfConformity": {
+        "@id": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
+      },
+      "testReportResults": {
+        "@id": "https://tracepass.eu/voc/dpp/testReportResults",
+        "@type": "xsd:anyURI"
+      },
+      "ceMarking": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarking",
+        "@type": "xsd:boolean"
+      },
+      "carbonFootprintTotal": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintTotal",
+        "@type": "xsd:decimal"
+      },
+      "cfRawMaterialAcquisition": {
+        "@id": "https://tracepass.eu/voc/dpp/cfRawMaterialAcquisition",
+        "@type": "xsd:decimal"
+      },
+      "cfMainProductProduction": {
+        "@id": "https://tracepass.eu/voc/dpp/cfMainProductProduction",
+        "@type": "xsd:decimal"
+      },
+      "cfDistribution": {
+        "@id": "https://tracepass.eu/voc/dpp/cfDistribution",
+        "@type": "xsd:decimal"
+      },
+      "cfEndOfLifeRecycling": {
+        "@id": "https://tracepass.eu/voc/dpp/cfEndOfLifeRecycling",
+        "@type": "xsd:decimal"
+      },
+      "carbonFootprintPerformanceClass": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintPerformanceClass",
+        "@type": "xsd:string"
+      },
+      "carbonFootprintStudyUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintStudyUrl",
+        "@type": "xsd:anyURI"
+      },
+      "supplyChainDueDiligenceReport": {
+        "@id": "https://tracepass.eu/voc/dpp/supplyChainDueDiligenceReport",
+        "@type": "xsd:anyURI"
+      },
+      "dueDiligencePolicy": {
+        "@id": "https://tracepass.eu/voc/dpp/dueDiligencePolicy",
+        "@type": "xsd:anyURI"
+      },
+      "thirdPartyAuditResults": {
+        "@id": "https://tracepass.eu/voc/dpp/thirdPartyAuditResults",
+        "@type": "xsd:anyURI"
+      },
+      "batteryChemistry": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryChemistry",
+        "@type": "xsd:string"
+      },
+      "cathodeActiveMaterials": {
+        "@id": "https://tracepass.eu/voc/dpp/cathodeActiveMaterials",
+        "@container": "@set"
+      },
+      "anodeActiveMaterials": {
+        "@id": "https://tracepass.eu/voc/dpp/anodeActiveMaterials",
+        "@container": "@set"
+      },
+      "electrolyteComposition": {
+        "@id": "https://tracepass.eu/voc/dpp/electrolyteComposition",
+        "@container": "@set"
+      },
+      "criticalRawMaterials": {
+        "@id": "https://tracepass.eu/voc/dpp/criticalRawMaterials",
+        "@container": "@set"
+      },
+      "hazardousSubstances": {
+        "@id": "https://tracepass.eu/voc/dpp/hazardousSubstances",
+        "@container": "@set"
+      },
+      "scipNotificationNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/scipNotificationNumber",
+        "@type": "xsd:string"
+      },
+      "recycledContentCobalt": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentCobalt",
+        "@type": "xsd:decimal"
+      },
+      "recycledContentLithium": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentLithium",
+        "@type": "xsd:decimal"
+      },
+      "recycledContentNickel": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentNickel",
+        "@type": "xsd:decimal"
+      },
+      "recycledContentLead": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentLead",
+        "@type": "xsd:decimal"
+      },
+      "roleOfEndUsersInWastePrevention": {
+        "@id": "https://tracepass.eu/voc/dpp/roleOfEndUsersInWastePrevention",
+        "@type": "xsd:anyURI"
+      },
+      "informationOnSeparateCollection": {
+        "@id": "https://tracepass.eu/voc/dpp/informationOnSeparateCollection",
+        "@type": "xsd:anyURI"
+      },
+      "dismantlingInformation": {
+        "@id": "https://tracepass.eu/voc/dpp/dismantlingInformation",
+        "@type": "xsd:anyURI"
+      },
+      "removalInformation": {
+        "@id": "https://tracepass.eu/voc/dpp/removalInformation",
+        "@type": "xsd:anyURI"
+      },
+      "sparePartsInformation": {
+        "@id": "https://tracepass.eu/voc/dpp/sparePartsInformation"
+      },
+      "safetyInformationEndOfLife": {
+        "@id": "https://tracepass.eu/voc/dpp/safetyInformationEndOfLife",
+        "@type": "xsd:anyURI"
+      },
+      "recycledContentDocumentation": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentDocumentation",
+        "@type": "xsd:anyURI"
+      },
+      "batteryRemovabilityReplaceability": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryRemovabilityReplaceability",
+        "@type": "xsd:string"
+      },
+      "ratedCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/ratedCapacity",
+        "@type": "xsd:decimal"
+      },
+      "nominalVoltage": {
+        "@id": "https://tracepass.eu/voc/dpp/nominalVoltage",
+        "@type": "xsd:decimal"
+      },
+      "minimumVoltage": {
+        "@id": "https://tracepass.eu/voc/dpp/minimumVoltage",
+        "@type": "xsd:decimal"
+      },
+      "maximumVoltage": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumVoltage",
+        "@type": "xsd:decimal"
+      },
+      "originalPowerCapability": {
+        "@id": "https://tracepass.eu/voc/dpp/originalPowerCapability",
+        "@type": "xsd:decimal"
+      },
+      "maximumAllowedBatteryPower": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPower",
+        "@type": "xsd:decimal"
+      },
+      "ratioMaxPowerMaxEnergy": {
+        "@id": "https://tracepass.eu/voc/dpp/ratioMaxPowerMaxEnergy",
+        "@type": "xsd:decimal"
+      },
+      "initialEnergyRoundTripEfficiency": {
+        "@id": "https://tracepass.eu/voc/dpp/initialEnergyRoundTripEfficiency",
+        "@type": "xsd:decimal"
+      },
+      "initialInternalResistancePack": {
+        "@id": "https://tracepass.eu/voc/dpp/initialInternalResistancePack",
+        "@type": "xsd:decimal"
+      },
+      "initialInternalResistanceCell": {
+        "@id": "https://tracepass.eu/voc/dpp/initialInternalResistanceCell",
+        "@type": "xsd:decimal"
+      },
+      "initialInternalResistanceModule": {
+        "@id": "https://tracepass.eu/voc/dpp/initialInternalResistanceModule",
+        "@type": "xsd:decimal"
+      },
+      "initialSelfDischargeRate": {
+        "@id": "https://tracepass.eu/voc/dpp/initialSelfDischargeRate",
+        "@type": "xsd:decimal"
+      },
+      "batteryEnergyTotal": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryEnergyTotal",
+        "@type": "xsd:decimal"
+      },
+      "energyDensity": {
+        "@id": "https://tracepass.eu/voc/dpp/energyDensity",
+        "@type": "xsd:decimal"
+      },
+      "expectedLifetimeCycles": {
+        "@id": "https://tracepass.eu/voc/dpp/expectedLifetimeCycles",
+        "@type": "xsd:decimal"
+      },
+      "expectedLifetimeYears": {
+        "@id": "https://tracepass.eu/voc/dpp/expectedLifetimeYears",
+        "@type": "xsd:decimal"
+      },
+      "expectedLifetimeReferenceConditions": {
+        "@id": "https://tracepass.eu/voc/dpp/expectedLifetimeReferenceConditions",
+        "@type": "xsd:string"
+      },
+      "capacityThresholdForExhaustion": {
+        "@id": "https://tracepass.eu/voc/dpp/capacityThresholdForExhaustion",
+        "@type": "xsd:decimal"
+      },
+      "temperatureRangeIdleMin": {
+        "@id": "https://tracepass.eu/voc/dpp/temperatureRangeIdleMin",
+        "@type": "xsd:decimal"
+      },
+      "temperatureRangeIdleMax": {
+        "@id": "https://tracepass.eu/voc/dpp/temperatureRangeIdleMax",
+        "@type": "xsd:decimal"
+      },
+      "cRateRelevantCycleLifeTest": {
+        "@id": "https://tracepass.eu/voc/dpp/cRateRelevantCycleLifeTest",
+        "@type": "xsd:decimal"
+      },
+      "commercialWarrantyPeriod": {
+        "@id": "https://tracepass.eu/voc/dpp/commercialWarrantyPeriod",
+        "@type": "xsd:decimal"
+      },
+      "numberOfCells": {
+        "@id": "https://tracepass.eu/voc/dpp/numberOfCells",
+        "@type": "xsd:decimal"
+      },
+      "cellType": {
+        "@id": "https://tracepass.eu/voc/dpp/cellType",
+        "@type": "xsd:string"
+      },
+      "stateOfHealth": {
+        "@id": "https://tracepass.eu/voc/dpp/stateOfHealth",
+        "@type": "xsd:decimal"
+      },
+      "stateOfCertifiedEnergy": {
+        "@id": "https://tracepass.eu/voc/dpp/stateOfCertifiedEnergy",
+        "@type": "xsd:decimal"
+      },
+      "remainingCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/remainingCapacity",
+        "@type": "xsd:decimal"
+      },
+      "remainingPowerCapability": {
+        "@id": "https://tracepass.eu/voc/dpp/remainingPowerCapability",
+        "@type": "xsd:decimal"
+      },
+      "remainingEnergy": {
+        "@id": "https://tracepass.eu/voc/dpp/remainingEnergy",
+        "@type": "xsd:decimal"
+      },
+      "currentInternalResistancePack": {
+        "@id": "https://tracepass.eu/voc/dpp/currentInternalResistancePack",
+        "@type": "xsd:decimal"
+      },
+      "internalResistanceIncrease": {
+        "@id": "https://tracepass.eu/voc/dpp/internalResistanceIncrease",
+        "@type": "xsd:decimal"
+      },
+      "capacityFade": {
+        "@id": "https://tracepass.eu/voc/dpp/capacityFade",
+        "@type": "xsd:decimal"
+      },
+      "powerFade": {
+        "@id": "https://tracepass.eu/voc/dpp/powerFade",
+        "@type": "xsd:decimal"
+      },
+      "roundTripEfficiencyFade": {
+        "@id": "https://tracepass.eu/voc/dpp/roundTripEfficiencyFade",
+        "@type": "xsd:decimal"
+      },
+      "evolutionOfSelfDischargeRate": {
+        "@id": "https://tracepass.eu/voc/dpp/evolutionOfSelfDischargeRate",
+        "@type": "xsd:decimal"
+      },
+      "numberOfFullEquivalentChargingCycles": {
+        "@id": "https://tracepass.eu/voc/dpp/numberOfFullEquivalentChargingCycles",
+        "@type": "xsd:decimal"
+      },
+      "numberOfChargingEvents": {
+        "@id": "https://tracepass.eu/voc/dpp/numberOfChargingEvents",
+        "@type": "xsd:decimal"
+      },
+      "dateOfServiceEntry": {
+        "@id": "https://tracepass.eu/voc/dpp/dateOfServiceEntry",
+        "@type": "xsd:date"
+      },
+      "negativeEvents": {
+        "@id": "https://tracepass.eu/voc/dpp/negativeEvents",
+        "@container": "@set"
+      },
+      "currentStateOfCharge": {
+        "@id": "https://tracepass.eu/voc/dpp/currentStateOfCharge",
+        "@type": "xsd:decimal"
+      },
+      "temperatureConditionsHistorical": {
+        "@id": "https://tracepass.eu/voc/dpp/temperatureConditionsHistorical"
+      },
+      "batteryModelIdentifier": {
+        "@id": "https://tracepass.eu/voc/dpp/batteryModelIdentifier",
+        "@type": "xsd:string"
+      },
+      "ceMarkingStatus": {
+        "@id": "https://tracepass.eu/voc/dpp/ceMarkingStatus",
+        "@type": "xsd:string"
+      },
+      "extinguishingAgent": {
+        "@id": "https://tracepass.eu/voc/dpp/extinguishingAgent",
+        "@type": "xsd:string"
+      },
+      "renewableContentShare": {
+        "@id": "https://tracepass.eu/voc/dpp/renewableContentShare",
+        "@type": "xsd:decimal"
+      },
+      "roundTripEfficiencyAtHalfCycleLife": {
+        "@id": "https://tracepass.eu/voc/dpp/roundTripEfficiencyAtHalfCycleLife",
+        "@type": "xsd:decimal"
+      },
+      "componentPartNumbers": {
+        "@id": "https://tracepass.eu/voc/dpp/componentPartNumbers",
+        "@container": "@set"
+      },
+      "dynamicPowerCapability": {
+        "@id": "https://tracepass.eu/voc/dpp/dynamicPowerCapability",
+        "@type": "xsd:decimal"
+      },
+      "dynamicEnergyRoundTripEfficiency": {
+        "@id": "https://tracepass.eu/voc/dpp/dynamicEnergyRoundTripEfficiency",
+        "@type": "xsd:decimal"
+      },
+      "dynamicRatedCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/dynamicRatedCapacity",
+        "@type": "xsd:decimal"
+      },
+      "dynamicInternalResistance": {
+        "@id": "https://tracepass.eu/voc/dpp/dynamicInternalResistance",
+        "@type": "xsd:decimal"
+      },
+      "dynamicExpectedLifetimeCycles": {
+        "@id": "https://tracepass.eu/voc/dpp/dynamicExpectedLifetimeCycles",
+        "@type": "xsd:decimal"
+      },
+      "remainingRoundTripEfficiency": {
+        "@id": "https://tracepass.eu/voc/dpp/remainingRoundTripEfficiency",
+        "@type": "xsd:decimal"
+      },
+      "preConsumerRecycledNickelShare": {
+        "@id": "https://tracepass.eu/voc/dpp/preConsumerRecycledNickelShare",
+        "@type": "xsd:decimal"
+      },
+      "preConsumerRecycledCobaltShare": {
+        "@id": "https://tracepass.eu/voc/dpp/preConsumerRecycledCobaltShare",
+        "@type": "xsd:decimal"
+      },
+      "preConsumerRecycledLithiumShare": {
+        "@id": "https://tracepass.eu/voc/dpp/preConsumerRecycledLithiumShare",
+        "@type": "xsd:decimal"
+      },
+      "postConsumerRecycledNickelShare": {
+        "@id": "https://tracepass.eu/voc/dpp/postConsumerRecycledNickelShare",
+        "@type": "xsd:decimal"
+      },
+      "postConsumerRecycledCobaltShare": {
+        "@id": "https://tracepass.eu/voc/dpp/postConsumerRecycledCobaltShare",
+        "@type": "xsd:decimal"
+      },
+      "postConsumerRecycledLithiumShare": {
+        "@id": "https://tracepass.eu/voc/dpp/postConsumerRecycledLithiumShare",
+        "@type": "xsd:decimal"
+      },
+      "originalPowerCapabilityAt80Soc": {
+        "@id": "https://tracepass.eu/voc/dpp/originalPowerCapabilityAt80Soc",
+        "@type": "xsd:decimal"
+      },
+      "originalPowerCapabilityAt20Soc": {
+        "@id": "https://tracepass.eu/voc/dpp/originalPowerCapabilityAt20Soc",
+        "@type": "xsd:decimal"
+      },
+      "temperatureInformation": {
+        "@id": "https://tracepass.eu/voc/dpp/temperatureInformation",
+        "@type": "xsd:decimal"
+      },
+      "cadmiumLeadSymbolsUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/cadmiumLeadSymbolsUrl",
+        "@type": "xsd:anyURI"
+      },
+      "componentPartNumbersUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/componentPartNumbersUrl",
+        "@type": "xsd:anyURI"
+      },
+      "sparePartsSourcesUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/sparePartsSourcesUrl",
+        "@type": "xsd:anyURI"
+      },
+      "accidentsInformationUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/accidentsInformationUrl",
+        "@type": "xsd:anyURI"
+      }
+    }
+  ]
+}

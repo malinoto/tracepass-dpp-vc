@@ -1,0 +1,435 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tracepass.eu/schema/dpp-vc/jewelry/v1.json",
+  "title": "Jewelry & Precious Metals — DPP characteristics",
+  "description": "Field specifications for the Jewelry & Precious Metals Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "productName",
+    "primaryMetal",
+    "metalFineness",
+    "metalWeight",
+    "hallmarkPresent",
+    "conflictFreeStatus",
+    "leadContent",
+    "cadmiumContent",
+    "nickelMigrationRate",
+    "svhcPresent"
+  ],
+  "properties": {
+    "productName": {
+      "type": "string",
+      "title": "Product Name",
+      "description": "Commercial name or trade designation of the jewelry item",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productName"
+    },
+    "productCategory": {
+      "type": "string",
+      "title": "Product Category",
+      "description": "Type of jewelry item",
+      "enum": [
+        "ring",
+        "necklace",
+        "bracelet",
+        "earrings",
+        "pendant",
+        "set"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
+    },
+    "serialNumber": {
+      "type": "string",
+      "title": "Serial Number",
+      "description": "Unique serial number assigned to the individual piece",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
+    },
+    "batchLotNumber": {
+      "type": "string",
+      "title": "Batch Number",
+      "description": "Batch or lot number for production traceability",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
+    },
+    "primaryMetal": {
+      "type": "string",
+      "title": "Primary Metal",
+      "description": "The primary precious metal used in the jewelry piece",
+      "enum": [
+        "gold",
+        "silver",
+        "platinum",
+        "palladium"
+      ],
+      "x-iri": "https://tracepass.eu/voc/dpp/primaryMetal"
+    },
+    "metalFineness": {
+      "type": "number",
+      "title": "Metal Fineness",
+      "description": "Purity of the metal in millesimal fineness (e.g. 750 for 18k gold, 925 for sterling silver)",
+      "x-unit": "millesimal",
+      "x-iri": "https://tracepass.eu/voc/dpp/metalFineness"
+    },
+    "metalWeight": {
+      "type": "number",
+      "title": "Metal Weight",
+      "description": "Weight of the precious metal component in grams",
+      "x-unit": "g",
+      "x-unitIri": "http://qudt.org/vocab/unit/GM",
+      "x-iri": "https://tracepass.eu/voc/dpp/metalWeight"
+    },
+    "hallmarkPresent": {
+      "type": "boolean",
+      "title": "Hallmark Present",
+      "description": "Whether the item bears an official hallmark stamp",
+      "x-iri": "https://tracepass.eu/voc/dpp/hallmarkPresent"
+    },
+    "hallmarkAuthority": {
+      "type": "string",
+      "title": "Hallmark Authority",
+      "description": "The assay office or authority that applied the hallmark",
+      "x-iri": "https://tracepass.eu/voc/dpp/hallmarkAuthority"
+    },
+    "hallmarkNumber": {
+      "type": "string",
+      "title": "Hallmark Number",
+      "description": "Official hallmark registration or certificate number",
+      "x-iri": "https://tracepass.eu/voc/dpp/hallmarkNumber"
+    },
+    "additionalMetals": {
+      "type": "array",
+      "title": "Additional Metals",
+      "description": "Other metals or plating used (e.g. rhodium plating, rose gold alloy components)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/additionalMetals"
+    },
+    "gemstoneType": {
+      "type": "string",
+      "title": "Gemstone Type",
+      "description": "Type of the primary gemstone set in the jewelry",
+      "enum": [
+        "diamond",
+        "ruby",
+        "sapphire",
+        "emerald",
+        "tanzanite",
+        "opal",
+        "amethyst",
+        "topaz",
+        "garnet",
+        "tourmaline",
+        "aquamarine",
+        "other"
+      ],
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneType"
+    },
+    "gemstoneWeight": {
+      "type": "number",
+      "title": "Gemstone Weight",
+      "description": "Weight of the gemstone in carats",
+      "x-unit": "ct",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneWeight"
+    },
+    "gemstoneColor": {
+      "type": "string",
+      "title": "Gemstone Color",
+      "description": "Color grade of the gemstone (e.g. D-Z for diamonds, or descriptive for colored stones)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneColor"
+    },
+    "gemstoneClarity": {
+      "type": "string",
+      "title": "Gemstone Clarity",
+      "description": "Clarity grade of the gemstone (e.g. FL, IF, VVS1, VVS2, VS1, VS2, SI1, SI2, I1, I2, I3 for diamonds)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneClarity"
+    },
+    "gemstoneCut": {
+      "type": "string",
+      "title": "Gemstone Cut",
+      "description": "Cut grade or shape of the gemstone (for diamonds: Excellent/Very Good/Good/Fair/Poor)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneCut"
+    },
+    "gemstoneOrigin": {
+      "type": "string",
+      "title": "Gemstone Origin",
+      "description": "Country where the gemstone was mined",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneOrigin"
+    },
+    "gemstoneTreatment": {
+      "type": "string",
+      "title": "Gemstone Treatment",
+      "description": "Any treatment applied to the gemstone to enhance appearance",
+      "enum": [
+        "untreated",
+        "heated",
+        "filled",
+        "irradiated",
+        "coated",
+        "diffused",
+        "oiled",
+        "dyed",
+        "other"
+      ],
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneTreatment"
+    },
+    "gemstoneLabCertificate": {
+      "type": "string",
+      "title": "Gemstone Lab Certificate",
+      "description": "Gemological laboratory certificate number and URL (GIA, IGI, AGS, etc.)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneLabCertificate"
+    },
+    "isNatural": {
+      "type": "boolean",
+      "title": "Is Natural",
+      "description": "Whether the gemstone is natural (mined) or synthetic (lab-grown)",
+      "x-iri": "https://tracepass.eu/voc/dpp/isNatural"
+    },
+    "metalOriginCountry": {
+      "type": "string",
+      "title": "Metal Origin Country",
+      "description": "Country where the precious metal was mined or refined",
+      "x-regulation": "32017R0821",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R0821",
+      "x-iri": "https://tracepass.eu/voc/dpp/metalOriginCountry"
+    },
+    "gemstoneOriginMine": {
+      "type": "string",
+      "title": "Gemstone Origin Mine",
+      "description": "Specific mine where the gemstone was extracted, if known",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemstoneOriginMine"
+    },
+    "conflictFreeStatus": {
+      "type": "boolean",
+      "title": "Conflict-Free Status",
+      "description": "Whether the materials comply with EU Conflict Minerals Regulation",
+      "x-regulation": "32017R0821",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R0821",
+      "x-iri": "https://tracepass.eu/voc/dpp/conflictFreeStatus"
+    },
+    "kimberleyProcessCompliant": {
+      "type": "boolean",
+      "title": "Kimberley Process Compliant",
+      "description": "Whether diamonds comply with the Kimberley Process Certification Scheme",
+      "x-standard": "Kimberley Process Certification Scheme",
+      "x-iri": "https://tracepass.eu/voc/dpp/kimberleyProcessCompliant"
+    },
+    "fairminedCertified": {
+      "type": "boolean",
+      "title": "Fairmined Certified",
+      "description": "Whether the gold is Fairmined certified (artisanal and small-scale mining standard)",
+      "x-standard": "Fairmined Standard (voluntary, artisanal and small-scale mining)",
+      "x-iri": "https://tracepass.eu/voc/dpp/fairminedCertified"
+    },
+    "rjcCertificationStatus": {
+      "type": "string",
+      "title": "RJC Certification Status",
+      "description": "Responsible Jewellery Council certification status (COP or COC)",
+      "x-iri": "https://tracepass.eu/voc/dpp/rjcCertificationStatus"
+    },
+    "chainOfCustodyDocUrl": {
+      "type": "string",
+      "title": "Chain of Custody Document URL",
+      "description": "URL to the chain of custody documentation proving traceability",
+      "x-iri": "https://tracepass.eu/voc/dpp/chainOfCustodyDocUrl"
+    },
+    "leadContent": {
+      "type": "number",
+      "title": "Lead Content",
+      "description": "Lead content in parts per million — must be below 500 ppm per REACH",
+      "x-unit": "ppm",
+      "x-unitIri": "http://qudt.org/vocab/unit/PPM",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex XVII",
+      "x-iri": "https://tracepass.eu/voc/dpp/leadContent"
+    },
+    "cadmiumContent": {
+      "type": "number",
+      "title": "Cadmium Content",
+      "description": "Cadmium content in parts per million — must be below 100 ppm per REACH",
+      "x-unit": "ppm",
+      "x-unitIri": "http://qudt.org/vocab/unit/PPM",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex XVII",
+      "x-iri": "https://tracepass.eu/voc/dpp/cadmiumContent"
+    },
+    "nickelMigrationRate": {
+      "type": "number",
+      "title": "Nickel Migration Rate",
+      "description": "Nickel migration rate — must be < 0.2 ug/cm2/week for piercing jewelry, < 0.5 for prolonged skin contact",
+      "x-unit": "ug/cm2/week",
+      "x-unitIri": "http://qudt.org/vocab/unit/MicroGM-PER-CentiM2",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Annex XVII",
+      "x-iri": "https://tracepass.eu/voc/dpp/nickelMigrationRate"
+    },
+    "svhcPresent": {
+      "type": "boolean",
+      "title": "SVHC Present",
+      "description": "Whether Substances of Very High Concern are present above 0.1% w/w",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "Art. 33",
+      "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
+    },
+    "reachTestReportUrl": {
+      "type": "string",
+      "title": "REACH Test Report URL",
+      "description": "URL to the REACH compliance test report",
+      "x-regulation": "32006R1907",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-iri": "https://tracepass.eu/voc/dpp/reachTestReportUrl"
+    },
+    "carbonFootprint": {
+      "type": "number",
+      "title": "Carbon Footprint",
+      "description": "Total carbon footprint of the product in kg CO2 equivalent (optional for jewelry)",
+      "x-unit": "kg CO2e",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
+    },
+    "recycledMetalContent": {
+      "type": "number",
+      "title": "Recycled Metal Content",
+      "description": "Percentage of recycled precious metal content",
+      "x-unit": "%",
+      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(c)",
+      "x-iri": "https://tracepass.eu/voc/dpp/recycledMetalContent"
+    },
+    "waterUsage": {
+      "type": "number",
+      "title": "Water Usage",
+      "description": "Water usage in production (optional)",
+      "x-unit": "L",
+      "x-unitIri": "http://qudt.org/vocab/unit/L",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 7(2)(b)",
+      "x-iri": "https://tracepass.eu/voc/dpp/waterUsage"
+    },
+    "careInstructions": {
+      "type": "string",
+      "title": "Care Instructions",
+      "description": "Cleaning, storage, and wearing guidance for the jewelry item",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/careInstructions"
+    },
+    "repairAvailable": {
+      "type": "boolean",
+      "title": "Repair Available",
+      "description": "Whether professional repair services are available for this item",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/repairAvailable"
+    },
+    "resizeAvailable": {
+      "type": "boolean",
+      "title": "Resize Available",
+      "description": "Whether the item can be resized (primarily applicable to rings)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/resizeAvailable"
+    },
+    "takeBackProgram": {
+      "type": "object",
+      "title": "Take-Back Program",
+      "description": "URL to the manufacturer's take-back or recycling program",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/takeBackProgram"
+    },
+    "recyclabilityInfo": {
+      "type": "string",
+      "title": "Recyclability Information",
+      "description": "Information about the recyclability of the product (precious metals are infinitely recyclable)",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityInfo"
+    },
+    "gemologicalLabCertificate": {
+      "type": "string",
+      "title": "Gemological Lab Certificate",
+      "description": "URL or reference to the gemological laboratory certificate (GIA, IGI, AGS)",
+      "x-iri": "https://tracepass.eu/voc/dpp/gemologicalLabCertificate"
+    },
+    "hallmarkCertificate": {
+      "type": "string",
+      "title": "Hallmark Certificate",
+      "description": "URL or reference to the hallmark/assay certificate",
+      "x-iri": "https://tracepass.eu/voc/dpp/hallmarkCertificate"
+    },
+    "conflictFreeCertificate": {
+      "type": "string",
+      "title": "Conflict-Free Certificate",
+      "description": "URL or reference to the conflict-free sourcing certificate",
+      "x-regulation": "32017R0821",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R0821",
+      "x-iri": "https://tracepass.eu/voc/dpp/conflictFreeCertificate"
+    },
+    "rjcCertificate": {
+      "type": "string",
+      "title": "RJC Certificate",
+      "description": "URL or reference to the Responsible Jewellery Council certificate",
+      "x-iri": "https://tracepass.eu/voc/dpp/rjcCertificate"
+    },
+    "customCertificates": {
+      "type": "array",
+      "title": "Custom Certificates",
+      "description": "Array of additional custom certificates not covered by standard fields",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)",
+      "x-iri": "https://tracepass.eu/voc/dpp/customCertificates"
+    },
+    "dataCarrierType": {
+      "type": "string",
+      "title": "Data Carrier Type",
+      "description": "Type of physical data carrier linking to this DPP (QR on tag/box, NFC in packaging)",
+      "enum": [
+        "qr_hangtag",
+        "qr_box",
+        "nfc_packaging",
+        "laser_engraved_qr",
+        "certificate_card_qr"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
+    },
+    "accessLevel": {
+      "type": "string",
+      "title": "Access Level",
+      "description": "Default access level for passport data visibility",
+      "enum": [
+        "public",
+        "restricted",
+        "authority"
+      ],
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(4)",
+      "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
+    }
+  }
+}
