@@ -4,9 +4,10 @@
     {
       "key": "globalUniqueId",
       "dataType": "string",
-      "decision": "coin",
-      "iri": "https://tracepass.eu/voc/dpp/globalUniqueId",
-      "owner": "32024R1781"
+      "decision": "envelope",
+      "owner": "32024R1781",
+      "envelopePath": "credentialSubject.id",
+      "note": "GS1 Digital Link URI serving as the primary product identifier — the same thing credentialSubject.id carries. The example already omitted it; the schema should not have declared it."
     },
     {
       "key": "gtin",

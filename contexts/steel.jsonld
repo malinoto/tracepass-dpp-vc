@@ -11,10 +11,6 @@
       "qudt": "http://qudt.org/vocab/unit/",
       "cas": "https://identifiers.org/cas:",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "globalUniqueId": {
-        "@id": "https://tracepass.eu/voc/dpp/globalUniqueId",
-        "@type": "xsd:string"
-      },
       "gtin": {
         "@id": "https://ref.gs1.org/voc/gtin"
       },

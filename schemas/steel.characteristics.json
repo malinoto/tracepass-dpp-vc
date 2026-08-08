@@ -35,13 +35,6 @@
     "ceMarkingStatus"
   ],
   "properties": {
-    "globalUniqueId": {
-      "type": "string",
-      "title": "Global Unique Identifier",
-      "description": "GS1 Digital Link URI (ISO 15459). Primary DPP identifier for the product.",
-      "x-iri": "https://tracepass.eu/voc/dpp/globalUniqueId",
-      "x-regulation": "32024R1781"
-    },
     "gtin": {
       "type": "string",
       "title": "GTIN",
