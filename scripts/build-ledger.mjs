@@ -95,6 +95,32 @@ function externalHints(key) {
   return EXTERNAL_HINTS.filter(([re]) => re.test(key)).map(([, note]) => note);
 }
 
+// Hand decisions for the keys whose hint needed a human. See decisions.json
+// for the reasoning behind each — including why several that LOOK like a reuse
+// are coined anyway.
+const decisions = read(join(root, "scripts", "decisions.json"));
+const ENVELOPE = decisions.envelope;
+const COINED_DESPITE_HINT = decisions.coinedDespiteHint;
+const FALSE_POSITIVE = decisions.falsePositives;
+
+function handDecision(key) {
+  if (key.startsWith("_")) return null;
+  if (ENVELOPE[key]) {
+    return {
+      decision: "envelope",
+      envelopePath: `credentialSubject.${ENVELOPE[key]}`,
+      rationale: decisions.envelopeNotes[key] ?? null,
+    };
+  }
+  if (COINED_DESPITE_HINT[key]) {
+    return { decision: "coin", rationale: COINED_DESPITE_HINT[key] };
+  }
+  if (FALSE_POSITIVE[key]) {
+    return { decision: "coin", rationale: FALSE_POSITIVE[key], hintWasFalsePositive: true };
+  }
+  return null;
+}
+
 // ---------------------------------------------------------------------------
 // Assemble
 // ---------------------------------------------------------------------------
@@ -119,7 +145,9 @@ for (const file of readdirSync(templatesDir).filter((f) => f.endsWith(".json")).
     }
 
     const ref = f.regulationRef ?? {};
-    const settled = steelDecisions.get(f.key);
+    // Steel's published decisions win — they ship in the live profile and are
+    // not reopened. Otherwise a hand decision, otherwise still open.
+    const settled = steelDecisions.get(f.key) ?? handDecision(f.key);
 
     byKey.set(f.key, {
       key: f.key,
@@ -135,7 +163,9 @@ for (const file of readdirSync(templatesDir).filter((f) => f.endsWith(".json")).
       decision: settled ? settled.decision : "undecided",
       iri: settled?.iri ?? null,
       envelopePath: settled?.envelopePath ?? null,
-      settledForSteel: Boolean(settled),
+      rationale: settled?.rationale ?? null,
+      hintWasFalsePositive: Boolean(settled?.hintWasFalsePositive),
+      settledForSteel: steelDecisions.has(f.key),
       // Signals, not answers.
       externalHints: externalHints(f.key),
       en15804: EN15804_HINTS.test(f.key),
@@ -170,7 +200,9 @@ const mechanical = open.filter(
 
 const summary = {
   distinctKeys: rows.length,
-  settledForSteel: rows.length - open.length,
+  decided: rows.length - open.length,
+  decidedForSteel: rows.filter((r) => r.settledForSteel).length,
+  decidedByHand: rows.length - open.length - rows.filter((r) => r.settledForSteel).length,
   open: open.length,
   buckets: {
     externalVocabularyCandidate: needsJudgement.length,
@@ -188,7 +220,7 @@ writeFileSync(outPath, JSON.stringify({ summary, fields: rows }, null, 2) + "\n"
 
 console.log(`ledger → ${outPath}`);
 console.log(`  distinct keys        ${summary.distinctKeys}`);
-console.log(`  settled (steel)      ${summary.settledForSteel}`);
+console.log(`  decided              ${summary.decided}  (steel ${summary.decidedForSteel} + hand ${summary.decidedByHand})`);
 console.log(`  open                 ${summary.open}`);
 console.log(`    external-vocab candidate   ${summary.buckets.externalVocabularyCandidate}  ← decide by hand`);
 console.log(`    unit resolved by QUDT      ${summary.buckets.unitResolvedByQudt}  ← mechanical, verified unit IRI`);

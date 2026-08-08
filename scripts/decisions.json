@@ -1,0 +1,57 @@
+{
+  "_note": "Hand decisions for the ledger keys that name-match an external vocabulary. Every reuse target here was confirmed to resolve against its owner before being recorded — an asserted IRI is the failure this profile exists to avoid. Keys not listed follow the mechanical path: coin under tracepass:/voc/dpp/, cite the instrument the template records, attach the verified QUDT unit where one exists.",
+
+  "envelope": {
+    "_note": "Not `characteristics` properties at all. These are attributes of the UNTP Product envelope — its parties and its facility — so they compose one level up. Every path below uses a UNTP property confirmed to resolve: name, registeredId, idScheme, registrationCountry, partyAddress, organisationWebsite, partyAlsoKnownAs on Party; id/registeredId/idScheme on Facility. `role` values come from UNTP's 20-value PartyRole code list.",
+
+    "manufacturerNameAddress":    "relatedParty[role=manufacturer].party",
+    "manufacturerPostalAddress":  "relatedParty[role=manufacturer].party.partyAddress",
+    "manufacturerCountry":        "relatedParty[role=manufacturer].party.registrationCountry",
+    "manufacturerTradeName":      "relatedParty[role=manufacturer].party.partyAlsoKnownAs",
+    "manufacturerWebAddress":     "relatedParty[role=manufacturer].party.organisationWebsite",
+    "manufacturerWebsite":        "relatedParty[role=manufacturer].party.organisationWebsite",
+    "producerRegistrationNumber": "relatedParty[role=producer].party.registeredId",
+    "importerInfo":               "relatedParty[role=importer].party",
+    "importerEoriNumber":         "relatedParty[role=importer].party.registeredId",
+    "authorisedRepresentative":   "relatedParty[role=serviceProvider].party",
+    "manufacturingFacilityId":    "producedAtFacility.registeredId",
+    "uniqueFacilityIdentifier":   "producedAtFacility.registeredId",
+    "countryOfOrigin":            "countryOfProduction"
+  },
+
+  "envelopeNotes": {
+    "authorisedRepresentative": "UNTP's PartyRole list has no authorised-representative role. `serviceProvider` is the nearest fit and the ESPR/CPR capacity is stated on the party — a deliberate approximation, not an exact mapping.",
+    "producerRegistrationNumber": "A national WEEE producer-register number. It is a registeredId whose idScheme names that register, not a coined property.",
+    "importerEoriNumber": "DG TAXUD publishes no EORI vocabulary (data.europa.eu/resource/authority/eori is 404), but EORI is still a party identifier, not a product property. It goes on the importer's party as registeredId with idScheme naming the EORI register — reusing UNTP's structure without inventing a vocabulary nobody publishes.",
+    "countryOfOrigin": "Duplicates what the envelope's countryOfProduction already carries. Coining a second country property would create two answers to one question."
+  },
+
+  "coinedDespiteHint": {
+    "_note": "Name-matched an external vocabulary but must still be coined, each for a stated reason. Recording WHY prevents a future pass from 'fixing' these into a reuse that does not hold.",
+
+    "manufacturerEmail": "UNTP's Party models no email property. Confirmed against the published Party definition — it carries name, registeredId, idScheme, registrationCountry, partyAddress, organisationWebsite, partyAlsoKnownAs, industryCategory, and nothing for contact channels.",
+    "manufacturerPhone": "Same as manufacturerEmail — UNTP Party has no phone property.",
+
+    "casNumber": "CAS is the VALUE space, not the predicate. identifiers.org/cas:<n> resolves a specific SUBSTANCE (verified: 7439-92-1, 7440-43-9, 1163-19-5 all 200) — there is no CAS property IRI meaning 'has CAS number'. Coin the property; declare the value as a cas: IRI so the substance stays dereferenceable.",
+    "ingredientCasNumber": "Same reasoning as casNumber.",
+    "svhcCasNumber": "Same reasoning as casNumber.",
+    "substanceName": "A substance NAME is not an identifier and CAS does not model names as properties.",
+    "ingredientSubstanceName": "Same reasoning as substanceName.",
+    "svhcSubstanceName": "Same reasoning as substanceName.",
+    "flameRetardantSubstances": "An array of substance objects, each of which may carry a cas: value. The array property itself is ours.",
+    "hazardousSubstances": "Same shape as flameRetardantSubstances.",
+    "substancesOfConcern": "Same shape; appears in 4 categories, so one decision covers all four.",
+    "svhcSubstances": "Same shape as flameRetardantSubstances."
+  },
+
+  "falsePositives": {
+    "_note": "The ledger's externalHints are prompts, never answers. These matched a pattern and have nothing to do with the vocabulary it suggested. They take the ordinary mechanical path.",
+
+    "expansionSlots": "Matched /lot/ inside 'slots'. It counts PCIe expansion slots — unrelated to GS1 batch/lot.",
+    "installationInstructions": "Matched /installation/, which the hint reads as a production facility. It is a document telling an installer how to fit a construction product.",
+    "installationInstructionsUrl": "Same as installationInstructions.",
+    "sparePartsWebsiteUrl": "Matched /site/ inside 'Website'. It is a spare-parts ordering URL, not a facility.",
+    "gemstoneOrigin": "Matched /origin/. It is the country a gemstone was mined in — geography, not a customs identifier.",
+    "gemstoneOriginMine": "Same as gemstoneOrigin."
+  }
+}
