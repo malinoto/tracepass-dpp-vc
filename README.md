@@ -75,13 +75,19 @@ specifications, and 5 economic-operator fields carried by the UNTP envelope as
 `relatedParty` entries rather than by `characteristics`. Its example validates against the
 schema.
 
-It is not finished. The coined terms resolve under `https://tracepass.eu/voc/dpp/`, which
-is not served yet, and coined terms do not yet carry the `skos:definition` /
-`rdfs:seeAlso` citations the profile requires of them.
+Every coined term resolves. `https://tracepass.eu/voc/dpp/<term>` returns a SKOS concept
+with a definition and a named owner — the EU instrument that defines the concept, with a
+link to its EUR-Lex record, or the standard that does where no EU instrument applies
+(EN 15804+A2, EN 10025-2, EN 10204, ISO 148-1, ISO 14025, ResponsibleSteel, ASI). The
+five mechanical properties QUDT has no quantity kind for carry `skos:broader` to the
+nearest one it does define. Request any term with `Accept: text/html` for a readable
+page instead.
 
-The other eleven categories have a field-to-vocabulary mapping, but it is not yet published:
-each context is a public claim about semantics that deserves per-category verification rather
-than bulk generation — the way steel was verified by hand before it shipped here.
+**Steel is the only category here.** The other eleven have a draft field-to-vocabulary
+mapping that is deliberately unpublished: each context is a public claim about semantics,
+and the mapping is worth only what the per-field verification behind it is worth. Steel
+was decided field by field, by hand, and the remaining categories will be too — bulk
+generation would produce something that looks complete and asserts things nobody checked.
 
 ## Related
 
