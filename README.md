@@ -50,6 +50,69 @@ Plus [`profile/untp-extension.md`](./profile/untp-extension.md) — the extensio
 the licence stance — and `scripts/`, which regenerates every artefact above from the field
 specifications and a recorded decision per term.
 
+## Try it
+
+Nothing to install. Take a schema and its worked example, and check one against the other
+with any JSON Schema (Draft 2020-12) validator:
+
+```bash
+curl -sLO https://raw.githubusercontent.com/malinoto/tracepass-dpp-vc/main/schemas/battery.characteristics.json
+curl -sLO https://raw.githubusercontent.com/malinoto/tracepass-dpp-vc/main/examples/battery.vc.json
+
+python3 -c '
+import json
+from jsonschema import Draft202012Validator as V
+schema = json.load(open("battery.characteristics.json"))
+passport = json.load(open("battery.vc.json"))
+errors = list(V(schema).iter_errors(passport["credentialSubject"]["characteristics"]))
+required = schema["required"]
+print(len(errors), "errors,", len(required), "required fields")
+'
+# 0 errors, 54 required fields
+```
+
+`node scripts/validate.mjs` runs the same check across all twelve categories and exits
+non-zero on failure.
+
+## What a property looks like
+
+```jsonc
+// schemas/steel.characteristics.json → properties
+"scope1DirectEmissions": {
+  "type": "number",
+  "title": "Scope 1 Direct Emissions",
+  "description": "Direct emissions from the production installation. THE primary CBAM field for iron/steel.",
+  "x-unit": "tCO2e/t",
+  "x-regulation": "32023R0956",
+  "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+  "x-provision": "Annex IV",
+  "x-iri": "https://tracepass.eu/voc/dpp/scope1DirectEmissions"
+}
+```
+
+**`x-regulationIri` and `x-provision` are the point.** The field does not merely assert that
+direct emissions matter — it says Regulation (EU) 2023/956 Annex IV requires them, and links
+the record. A consumer can cite its source rather than take the schema's word for it.
+
+**`x-iri` resolves.** Fetch `https://tracepass.eu/voc/dpp/scope1DirectEmissions` and you get
+a SKOS concept with the definition and the owning instrument; ask for it with
+`Accept: text/html` and you get a readable page instead. A coined term that dereferences to
+nothing is just a string.
+
+**`x-unit` carries `x-unitIri` where QUDT models the unit.** Here it does not — QUDT has no
+unit for tonnes of CO2 equivalent per tonne, so the unit stays a declared string rather than
+being mapped to something approximate. `qudt:CO2Equivalent` is a unit of a different
+quantity, and using it here is the kind of error an EPD reviewer catches.
+
+The matching context entry gives the term its JSON-LD binding:
+
+```json
+"scope1DirectEmissions": {
+  "@id": "https://tracepass.eu/voc/dpp/scope1DirectEmissions",
+  "@type": "xsd:decimal"
+}
+```
+
 ## Reuse before coining
 
 The governing rule: **coin a `tracepass:` term only for a concept no established vocabulary
