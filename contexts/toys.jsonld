@@ -76,7 +76,8 @@
         "@type": "xsd:decimal"
       },
       "recyclabilityAssessment": {
-        "@id": "https://tracepass.eu/voc/dpp/recyclabilityAssessment"
+        "@id": "https://tracepass.eu/voc/dpp/recyclabilityAssessment",
+        "@type": "xsd:string"
       },
       "packagingMaterial": {
         "@id": "https://tracepass.eu/voc/dpp/packagingMaterial",

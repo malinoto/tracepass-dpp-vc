@@ -331,6 +331,14 @@
         "@id": "https://tracepass.eu/voc/dpp/numberOfFullEquivalentChargingCycles",
         "@type": "xsd:decimal"
       },
+      "capacityThroughput": {
+        "@id": "https://tracepass.eu/voc/dpp/capacityThroughput",
+        "@type": "xsd:decimal"
+      },
+      "energyThroughput": {
+        "@id": "https://tracepass.eu/voc/dpp/energyThroughput",
+        "@type": "xsd:decimal"
+      },
       "numberOfChargingEvents": {
         "@id": "https://tracepass.eu/voc/dpp/numberOfChargingEvents",
         "@type": "xsd:decimal"

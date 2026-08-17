@@ -7,45 +7,6 @@
   "additionalProperties": false,
   "required": [
     "productTypeModelIdentifier",
-    "batchLotNumber",
-    "placeOfManufacture",
-    "productFamily",
-    "mechanicalResistanceStability",
-    "fireSafety",
-    "hygieneHealthEnvironment",
-    "safetyAccessibility",
-    "noiseProtection",
-    "energyHeat",
-    "sustainableUseNaturalResources",
-    "gwpTotal",
-    "gwpFossil",
-    "gwpBiogenic",
-    "gwpLuluc",
-    "odp",
-    "ap",
-    "epFreshwater",
-    "epMarine",
-    "epTerrestrial",
-    "pocp",
-    "adpeMinerals",
-    "adpfFossil",
-    "wdp",
-    "lifeCycleModules",
-    "recycledContent",
-    "substancesOfConcern",
-    "durabilityServiceLife",
-    "repairReuseInstructions",
-    "endOfLifeInstructions",
-    "recyclabilityAssessment",
-    "ceMarkingStatus",
-    "avcpSystemLevel",
-    "notifiedBodyNameNumber",
-    "testReportReferences",
-    "epdVerification",
-    "harmonizedStandardReference",
-    "installationInstructions",
-    "maintenanceGuidance",
-    "safetyDataLabelling",
     "intendedUseDescription"
   ],
   "properties": {
@@ -53,8 +14,9 @@
       "type": "string",
       "title": "Product Type / Model Identifier",
       "description": "GTIN identifying the product type or model",
-      "x-regulation": "32024R3110",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — product type identification",
       "x-iri": "https://tracepass.eu/voc/dpp/productTypeModelIdentifier"
     },
     "batchLotNumber": {
@@ -63,6 +25,7 @@
       "description": "Batch or lot number per GS1 AI 10",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -104,6 +67,7 @@
       ],
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Annex VII — product-family taxonomy for harmonised technical specifications",
       "x-iri": "https://tracepass.eu/voc/dpp/productFamily"
     },
     "mechanicalResistanceStability": {
@@ -112,6 +76,7 @@
       "description": "Compressive strength, tensile strength, and load-bearing capacity per Annex I basic requirement 1",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/mechanicalResistanceStability"
     },
     "fireSafety": {
@@ -120,6 +85,7 @@
       "description": "Euroclass reaction to fire (A1-F), fire resistance (REI), and external fire performance per Annex I basic requirement 2",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/fireSafety"
     },
     "hygieneHealthEnvironment": {
@@ -128,6 +94,7 @@
       "description": "Dangerous substance release, water permeability per Annex I basic requirement 3",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/hygieneHealthEnvironment"
     },
     "safetyAccessibility": {
@@ -136,6 +103,7 @@
       "description": "Slip resistance and impact resistance per Annex I basic requirement 4",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyAccessibility"
     },
     "noiseProtection": {
@@ -144,6 +112,7 @@
       "description": "Sound absorption and airborne sound insulation per Annex I basic requirement 5",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/noiseProtection"
     },
     "energyHeat": {
@@ -152,6 +121,7 @@
       "description": "Thermal conductivity (lambda) and thermal resistance (R-value) per Annex I basic requirement 6",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/energyHeat"
     },
     "sustainableUseNaturalResources": {
@@ -160,6 +130,7 @@
       "description": "Durability, recyclability, secondary materials content, and LCA data per Annex I basic requirement 7 (NEW in revised CPR)",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/sustainableUseNaturalResources"
     },
     "gwpTotal": {
@@ -304,6 +275,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContent"
     },
     "substancesOfConcern": {
@@ -312,6 +284,7 @@
       "description": "Substances of concern per REACH/SCIP with CAS numbers",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name",
       "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
     },
     "durabilityServiceLife": {
@@ -320,6 +293,7 @@
       "description": "Expected service life in years or durability class",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityServiceLife"
     },
     "repairReuseInstructions": {
@@ -355,7 +329,7 @@
     "ceMarkingStatus": {
       "type": "string",
       "title": "CE Marking Status",
-      "description": "Whether the product bears CE marking and its validity",
+      "description": "Whether the product bears CE marking and its validity CE marking is affixed to the product or its packaging and is obligatory only where a harmonised specification or ETA covers the product.",
       "enum": [
         "marked",
         "pending",
@@ -363,7 +337,7 @@
       ],
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
-      "x-provision": "Art. 13-15",
+      "x-provision": "CPR (EU) 2024/3110 Arts. 13-17 — CE marking, only where a harmonised technical specification or a European Technical Assessment covers the product",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
     },
     "avcpSystemLevel": {
@@ -380,6 +354,7 @@
       ],
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 + Annex IX — AVCP system stated in the Declaration of Performance",
       "x-iri": "https://tracepass.eu/voc/dpp/avcpSystemLevel"
     },
     "notifiedBodyNameNumber": {
@@ -388,6 +363,7 @@
       "description": "Name and identification number of the Notified Body involved in conformity assessment",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — notified body identified in the Declaration of Performance",
       "x-iri": "https://tracepass.eu/voc/dpp/notifiedBodyNameNumber"
     },
     "testReportReferences": {
@@ -396,6 +372,7 @@
       "description": "URIs or references to test and assessment reports",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 22 — technical documentation held and produced to authorities on request",
       "x-iri": "https://tracepass.eu/voc/dpp/testReportReferences"
     },
     "epdVerification": {
@@ -412,6 +389,7 @@
       "description": "Reference to the applicable harmonized European standard (hEN)",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CPR (EU) 2024/3110 Art. 13 — harmonised technical specification cited in the Declaration of Performance",
       "x-iri": "https://tracepass.eu/voc/dpp/harmonizedStandardReference"
     },
     "eadReference": {
@@ -428,6 +406,7 @@
       "description": "Instructions for proper installation of the construction product",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them",
       "x-iri": "https://tracepass.eu/voc/dpp/installationInstructions"
     },
     "maintenanceGuidance": {
@@ -444,6 +423,7 @@
       "description": "Safety data sheet references and hazardous substance labelling information",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyDataLabelling"
     },
     "warrantyInformation": {
@@ -458,8 +438,9 @@
       "type": "string",
       "title": "Intended Use Description",
       "description": "Description of the intended use(s) of the construction product",
-      "x-regulation": "32024R3110",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — information enabling assessment of the product's risks in its intended and reasonably foreseeable use",
       "x-iri": "https://tracepass.eu/voc/dpp/intendedUseDescription"
     },
     "ceMarking": {

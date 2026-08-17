@@ -8,12 +8,7 @@
   "required": [
     "modelNumber",
     "batchLotNumber",
-    "euResponsiblePerson",
-    "productName",
-    "fiberComposition",
-    "substancesOfConcern",
-    "certifications",
-    "countryOfManufacture"
+    "productName"
   ],
   "properties": {
     "modelNumber": {
@@ -22,7 +17,7 @@
       "description": "Manufacturer's model number or variant identifier",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
       "x-iri": "https://tracepass.eu/voc/dpp/modelNumber"
     },
     "batchLotNumber": {
@@ -31,7 +26,7 @@
       "description": "Production batch identifier for traceability and recalls",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -49,7 +44,7 @@
       "description": "Designated EU responsible person per EU product safety regulation",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 16",
+      "x-provision": "GPSR (EU) 2023/988 Art. 16 — an EU-established responsible economic operator must EXIST",
       "x-iri": "https://tracepass.eu/voc/dpp/euResponsiblePerson"
     },
     "productName": {
@@ -58,7 +53,7 @@
       "description": "Commercial product name or trade designation",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — product identification",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "productCategory": {
@@ -90,7 +85,7 @@
       "description": "Array of fibers with ISO 2076 codes and percentages, must sum to 100%",
       "x-regulation": "32011R1007",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1007",
-      "x-provision": "Arts. 9(1), 14(1), 16",
+      "x-provision": "Reg. (EU) 1007/2011 Arts. 9(1), 14(1), 16 — a durable, legible label physically attached to the product, in the language of the Member State",
       "x-iri": "https://tracepass.eu/voc/dpp/fiberComposition"
     },
     "recycledContentPercentage": {
@@ -119,7 +114,7 @@
       "description": "Array of hazardous substances with CAS number and concentration, threshold >0.1%",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33",
+      "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name",
       "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
     },
     "certifications": {

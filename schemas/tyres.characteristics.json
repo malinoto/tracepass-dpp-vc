@@ -6,48 +6,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "commercialName",
-    "tyreTypeIdentifier",
-    "tyreClass",
-    "batchLotNumber",
-    "dateOfManufactureWeekYear",
-    "dateStartOfProduction",
-    "eprelRegistrationNumber",
-    "eprelProductUrl",
-    "tyreSizeDesignation",
-    "loadCapacityIndex",
-    "loadVersion",
-    "speedCategorySymbol",
-    "tyreConstruction",
-    "tyreType",
-    "sectionWidthMm",
-    "aspectRatio",
-    "rimDiameterInches",
-    "treadDepthMm",
-    "fuelEfficiencyClass",
-    "rollingResistanceCoefficientNKn",
-    "wetGripClass",
-    "externalRollingNoiseClass",
-    "externalRollingNoiseDb",
-    "snowGrip",
-    "iceGrip",
-    "pahContentCompliant",
-    "svhcCandidateListSubstances",
-    "heavyMetalsCompliance",
-    "reachCompliance",
-    "naturalRubberDeforestationFree",
-    "minimumTreadDepthMm",
-    "warrantyPeriodYears",
-    "eltCollectionScheme",
-    "typeApprovalNumber",
-    "euro7Compliance",
-    "euTyreLabelImageUrl",
-    "declarationOfConformityUrl",
-    "reachComplianceTypeApproval",
-    "recommendedInflationPressureKpa",
-    "maximumInflationPressureKpa",
-    "maximumLoadKg",
-    "safetyWarnings"
+    "batchLotNumber"
   ],
   "properties": {
     "commercialName": {
@@ -56,7 +15,7 @@
       "description": "Commercial product name or trade designation",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex II (product information sheet — commercial name/trade designation)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/commercialName"
     },
     "tyreTypeIdentifier": {
@@ -65,7 +24,7 @@
       "description": "Tyre type identifier as registered in EPREL",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Art. 4 + Annex II (tyre type identifier registered in EPREL)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreTypeIdentifier"
     },
     "tyreClass": {
@@ -79,16 +38,16 @@
       ],
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Art. 2 (definitions of C1/C2/C3) + scope",
+      "x-provision": "Reg. (EU) 2020/740 Art. 2 — C1/C2/C3 definitions determining which label applies",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreClass"
     },
     "batchLotNumber": {
       "type": "string",
       "title": "Batch or Serial Number",
       "description": "Production batch code (DOT code includes week/year of manufacture)",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Art. 9(2)",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "dateOfManufactureWeekYear": {
@@ -97,7 +56,7 @@
       "description": "Week and year of manufacture (last 4 digits of DOT code: WWYY)",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex II (product information sheet) + UNECE R30/R54 date-of-manufacture marking",
+      "x-provision": "UNECE R30 / R54 — marking moulded on the tyre sidewall under type approval",
       "x-iri": "https://tracepass.eu/voc/dpp/dateOfManufactureWeekYear"
     },
     "dateStartOfProduction": {
@@ -106,7 +65,7 @@
       "description": "Date when production of this tyre type started (Week/Year)",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex II",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/dateStartOfProduction"
     },
     "dateEndOfProduction": {
@@ -133,7 +92,7 @@
       "description": "Registration number in the EU EPREL database",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Art. 4(2) + Art. 10 (registration in EPREL before placing on market)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/eprelRegistrationNumber"
     },
     "eprelProductUrl": {
@@ -142,19 +101,23 @@
       "description": "Direct URL to the product entry in EPREL",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/eprelProductUrl"
     },
     "dataCarrierType": {
-      "type": "string",
+      "type": "array",
       "title": "Data Carrier Type",
       "description": "Type of data carrier linking to the DPP (QR code, RFID, etc.)",
-      "enum": [
-        "QR code (GS1 Digital Link)",
-        "RFID",
-        "NFC",
-        "Data Matrix",
-        "Other"
-      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "qr_code",
+          "data_matrix",
+          "nfc_tag",
+          "rfid_tag",
+          "other"
+        ]
+      },
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
@@ -175,7 +138,7 @@
       "description": "Standard tyre size designation (width/aspect ratio + construction + rim diameter)",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex II (product information sheet — tyre size designation)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreSizeDesignation"
     },
     "loadCapacityIndex": {
@@ -184,7 +147,7 @@
       "description": "Load index number indicating maximum load-bearing capacity",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex II (product information sheet — load-capacity index)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/loadCapacityIndex"
     },
     "loadVersion": {
@@ -192,13 +155,13 @@
       "title": "Load Version",
       "description": "Load version designation (Standard Load / Extra Load / Reinforced)",
       "enum": [
-        "Standard Load (SL)",
-        "Extra Load (XL)",
-        "Reinforced (RF)"
+        "standard_load",
+        "extra_load",
+        "reinforced"
       ],
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex II",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/loadVersion"
     },
     "speedCategorySymbol": {
@@ -207,7 +170,7 @@
       "description": "Speed rating symbol indicating maximum speed capability",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex II (product information sheet — speed category symbol)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
       "x-iri": "https://tracepass.eu/voc/dpp/speedCategorySymbol"
     },
     "speedRatingKmh": {
@@ -219,14 +182,19 @@
       "x-iri": "https://tracepass.eu/voc/dpp/speedRatingKmh"
     },
     "tyreConstruction": {
-      "type": "string",
+      "type": "array",
       "title": "Tyre Construction",
       "description": "Tyre construction type (Radial / Diagonal / Bias-belted)",
-      "enum": [
-        "Radial (R)",
-        "Diagonal (D)",
-        "Bias-belted (B)"
-      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "radial",
+          "diagonal",
+          "bias_belted",
+          "tubeless",
+          "tube_type"
+        ]
+      },
       "x-iri": "https://tracepass.eu/voc/dpp/tyreConstruction"
     },
     "tyreType": {
@@ -234,10 +202,10 @@
       "title": "Tyre Type",
       "description": "Usage type (Summer / Winter / All-Season / All-Terrain)",
       "enum": [
-        "Summer",
-        "Winter",
-        "All-Season",
-        "All-Terrain"
+        "summer",
+        "winter",
+        "all_season",
+        "all_terrain"
       ],
       "x-iri": "https://tracepass.eu/voc/dpp/tyreType"
     },
@@ -296,7 +264,7 @@
       ],
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Art. 4 + Annex I Part A (fuel-efficiency/rolling-resistance class)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Annex I Part A — class shown on the tyre label and registered in EPREL",
       "x-iri": "https://tracepass.eu/voc/dpp/fuelEfficiencyClass"
     },
     "rollingResistanceCoefficientNKn": {
@@ -306,7 +274,7 @@
       "x-unit": "N/kN",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex I Part A + Annex II; measured per UNECE R117 Annex 6",
+      "x-provision": "Reg. (EU) 2020/740 Annex I Part A + Annex II — measured value in the EPREL product information sheet",
       "x-iri": "https://tracepass.eu/voc/dpp/rollingResistanceCoefficientNKn"
     },
     "wetGripClass": {
@@ -322,7 +290,7 @@
       ],
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Art. 4 + Annex I Part B (wet-grip class)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Annex I Part B — class shown on the tyre label and registered in EPREL",
       "x-iri": "https://tracepass.eu/voc/dpp/wetGripClass"
     },
     "wetGripIndex": {
@@ -345,7 +313,7 @@
       ],
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Art. 4 + Annex I Part C (external rolling-noise class)",
+      "x-provision": "Reg. (EU) 2020/740 Art. 4 + Annex I Part C — class shown on the tyre label and registered in EPREL",
       "x-iri": "https://tracepass.eu/voc/dpp/externalRollingNoiseClass"
     },
     "externalRollingNoiseDb": {
@@ -355,13 +323,13 @@
       "x-unit": "dB(A)",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Annex I Part C + Annex II (measured dB value); measured per UNECE R117 Annex 3",
+      "x-provision": "Reg. (EU) 2020/740 Annex I Part C — measured dB value on the label and in EPREL",
       "x-iri": "https://tracepass.eu/voc/dpp/externalRollingNoiseDb"
     },
     "snowGrip": {
       "type": "boolean",
       "title": "Snow Grip",
-      "description": "Whether tyre has 3PMSF (3 Peak Mountain Snow Flake) certification for severe snow conditions",
+      "description": "Whether tyre has 3PMSF (3 Peak Mountain Snow Flake) certification for severe snow conditions The 3PMSF pictogram is printed on the label and moulded on the sidewall, and only for tyres meeting the snow classification.",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Art. 4 + Annex I (3PMSF snow-grip pictogram where applicable)",
@@ -370,7 +338,7 @@
     "iceGrip": {
       "type": "boolean",
       "title": "Ice Grip",
-      "description": "Whether tyre is certified for ice grip performance (Nordic ice conditions)",
+      "description": "Whether tyre is certified for ice grip performance (Nordic ice conditions) The ice-grip marking appears on the label and sidewall for qualifying C1 tyres only.",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Art. 4 + Annex I (ice-grip marking, C1 tyres, per ISO 19447)",
@@ -527,7 +495,7 @@
       "description": "Confirmation that extender oils comply with PAH (polycyclic aromatic hydrocarbon) limits per REACH Annex XVII Entry 50",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Annex XVII Entry 50 (PAH limits in extender oils/tyres)",
+      "x-provision": "REACH Annex XVII entry 50 — restriction on PAH content in extender oils and tyres",
       "x-iri": "https://tracepass.eu/voc/dpp/pahContentCompliant"
     },
     "svhcCandidateListSubstances": {
@@ -536,7 +504,7 @@
       "description": "Substances of Very High Concern present above 0.1% w/w threshold",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33 (SVHC in articles >0.1% w/w communication) + SCIP database notification",
+      "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances"
     },
     "sixPpdContent": {
@@ -553,7 +521,7 @@
       "description": "Confirmation of compliance with heavy metal limits (lead, cadmium, mercury, chromium VI)",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Annex XVII",
+      "x-provision": "REACH Annex XVII — market-placement restriction; evidence retained by the manufacturer",
       "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalsCompliance"
     },
     "reachCompliance": {
@@ -562,6 +530,7 @@
       "description": "General REACH regulation compliance confirmation",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "REACH (EC) 1907/2006 — registration and restriction obligations evidenced in the manufacturer's records",
       "x-iri": "https://tracepass.eu/voc/dpp/reachCompliance"
     },
     "carbonFootprint": {
@@ -608,7 +577,7 @@
       "description": "Declaration that natural rubber sourcing is deforestation-free",
       "x-regulation": "32023R1115",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
-      "x-provision": "Art. 3 + Art. 4 (due-diligence statement) + Annex I (natural rubber covered)",
+      "x-provision": "EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator",
       "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberDeforestationFree"
     },
     "naturalRubberSustainabilityCertification": {
@@ -643,6 +612,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/MilliM",
       "x-regulation": "31989L0459",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/31989L0459",
+      "x-provision": "Dir. 2014/45/EU Annex I — roadworthiness test requirement on the vehicle in use",
       "x-iri": "https://tracepass.eu/voc/dpp/minimumTreadDepthMm"
     },
     "warrantyPeriodYears": {
@@ -713,6 +683,7 @@
       "description": "End-of-life tyre (ELT) collection/take-back scheme applicable",
       "x-regulation": "32008L0098",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
+      "x-provision": "WFD Dir. 2008/98/EC Art. 8a — extended producer responsibility discharged through national EPR scheme registration",
       "x-iri": "https://tracepass.eu/voc/dpp/eltCollectionScheme"
     },
     "disassemblyInstructionsUrl": {
@@ -748,6 +719,7 @@
       "description": "Compliance status with Euro 7 tyre abrasion limits",
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-provision": "Reg. (EU) 2024/1257 — tyre abrasion limits not yet in force",
       "x-iri": "https://tracepass.eu/voc/dpp/euro7Compliance"
     },
     "euTyreLabelImageUrl": {
@@ -756,7 +728,7 @@
       "description": "URL to the official EU tyre label image",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
-      "x-provision": "Art. 4",
+      "x-provision": "Reg. (EU) 2020/740 Arts. 4 and 6 — label displayed in visual form at the point of sale",
       "x-iri": "https://tracepass.eu/voc/dpp/euTyreLabelImageUrl"
     },
     "declarationOfConformityUrl": {
@@ -765,7 +737,7 @@
       "description": "URL to EU Declaration of Conformity",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9",
+      "x-provision": "UNECE R30 / R54 — type approval evidenced by the approval mark on the sidewall and the approval dossier",
       "x-iri": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl"
     },
     "reachComplianceTypeApproval": {
@@ -774,6 +746,7 @@
       "description": "General REACH regulation compliance confirmation",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records",
       "x-iri": "https://tracepass.eu/voc/dpp/reachComplianceTypeApproval"
     },
     "recommendedInflationPressureKpa": {
@@ -820,7 +793,7 @@
       "description": "Product-specific safety warnings",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "GPSR Art. 9 (safety information/warnings & instructions to accompany the product)",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — warnings and safety information, where the product's risks require them",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyWarnings"
     },
     "storageInstructions": {

@@ -190,7 +190,7 @@
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "recyclabilityAssessment": {
-      "type": "object",
+      "type": "string",
       "title": "Recyclability Assessment",
       "description": "Assessment of how easily the toy can be recycled at end of life",
       "enum": [

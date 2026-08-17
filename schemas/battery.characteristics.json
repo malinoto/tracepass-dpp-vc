@@ -43,17 +43,12 @@
     "maximumVoltage",
     "originalPowerCapability",
     "maximumAllowedBatteryPower",
-    "ratioMaxPowerMaxEnergy",
     "initialInternalResistancePack",
     "initialInternalResistanceCell",
     "initialInternalResistanceModule",
     "initialSelfDischargeRate",
-    "batteryEnergyTotal",
-    "energyDensity",
     "temperatureRangeIdleMin",
     "temperatureRangeIdleMax",
-    "numberOfCells",
-    "cellType",
     "dateOfServiceEntry",
     "batteryModelIdentifier",
     "ceMarkingStatus",
@@ -473,7 +468,7 @@
     "sparePartsInformation": {
       "type": "object",
       "title": "Spare Parts Information",
-      "description": "Spare parts catalog with supplier contact information",
+      "description": "Spare parts catalogue plus the contact details of sources for replacement spares — postal address and e-mail, not only a web link",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(b)",
@@ -646,9 +641,6 @@
       "description": "Total usable energy content of the battery in kWh",
       "x-unit": "kWh",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
-      "x-regulation": "32023R1542",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryEnergyTotal"
     },
     "energyDensity": {
@@ -657,9 +649,6 @@
       "description": "Gravimetric energy density in watt-hours per kilogram",
       "x-unit": "Wh/kg",
       "x-unitIri": "http://qudt.org/vocab/unit/W-HR-PER-KiloGM",
-      "x-regulation": "32023R1542",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
       "x-iri": "https://tracepass.eu/voc/dpp/energyDensity"
     },
     "expectedLifetimeCycles": {
@@ -749,9 +738,6 @@
       "type": "number",
       "title": "Number of Cells",
       "description": "Total number of cells in the battery pack",
-      "x-regulation": "32023R1542",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
       "x-iri": "https://tracepass.eu/voc/dpp/numberOfCells"
     },
     "cellType": {
@@ -764,9 +750,6 @@
         "pouch",
         "blade"
       ],
-      "x-regulation": "32023R1542",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
       "x-iri": "https://tracepass.eu/voc/dpp/cellType"
     },
     "stateOfHealth": {
@@ -898,6 +881,22 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(d)",
       "x-iri": "https://tracepass.eu/voc/dpp/numberOfFullEquivalentChargingCycles"
+    },
+    "capacityThroughput": {
+      "type": "number",
+      "title": "Capacity Throughput",
+      "description": "Cumulative charge passed through the battery over its life, in ampere-hours",
+      "x-unit": "Ah",
+      "x-unitIri": "http://qudt.org/vocab/unit/A-HR",
+      "x-iri": "https://tracepass.eu/voc/dpp/capacityThroughput"
+    },
+    "energyThroughput": {
+      "type": "number",
+      "title": "Energy Throughput",
+      "description": "Cumulative energy passed through the battery over its life, in kilowatt-hours",
+      "x-unit": "kWh",
+      "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-iri": "https://tracepass.eu/voc/dpp/energyThroughput"
     },
     "numberOfChargingEvents": {
       "type": "number",

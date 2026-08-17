@@ -82,7 +82,7 @@
       "deforestationFreeDeclaration": true,
       "geolocationOfHarvest": "52.2297,21.0122",
       "svhcCandidateListSubstances": [],
-      "formaldehydeEmissionClass": "E0.5",
+      "formaldehydeEmissionClass": "e0_5",
       "formaldehydeEmissionValueMgM3": 0.04,
       "vocEmissionClass": "A+",
       "flameRetardantSubstances": [],

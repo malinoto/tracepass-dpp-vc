@@ -71,7 +71,7 @@ print(len(errors), "errors,", len(required), "required fields")
 # 0 errors, 54 required fields
 ```
 
-`node scripts/validate.mjs` runs the same check across all twelve categories and exits
+`node scripts/validate.mjs` runs the same check across all thirteen categories and exits
 non-zero on failure.
 
 ## What a property looks like
@@ -127,24 +127,24 @@ standard, so it carries provenance rather than a pretence of invention.
 
 ## The finding worth stating
 
-Across all twelve categories, **roughly four-fifths of DPP fields have no existing
+Across all thirteen categories, **roughly four-fifths of DPP fields have no existing
 semantic-web term.** That is not vendor invention — it is that DPP regulation is newer than
 the vocabularies. This profile reuses everything that exists and coins the rest with a named
 owner, which is the honest state of the art for machine-readable EU product-passport data.
 
 ## Status
 
-**All twelve categories ship a context, a schema, a worked example and a mapping
+**All thirteen categories ship a context, a schema, a worked example and a mapping
 document** — 868 `characteristics` properties in total. `node scripts/validate.mjs`
 checks every one: schema and context agree on the property set, each context term
 carries an `@id`, and each example satisfies its own schema.
 
 | | |
 |---|---|
-| Properties | 868 across 12 categories |
-| Citing an EU instrument or standard | 784 (90%) |
-| Carrying a verified QUDT unit IRI | 218 |
-| Carried by the UNTP envelope instead | 42 |
+| Properties | 929 across 13 categories |
+| Citing an EU instrument or standard | 834 (90%) |
+| Carrying a verified QUDT unit IRI | 231 |
+| Carried by the UNTP envelope instead | 30 |
 
 Every coined term resolves. `https://tracepass.eu/voc/dpp/<term>` returns a SKOS concept
 with a definition and a named owner — the EU instrument that defines the concept, with a
@@ -166,7 +166,7 @@ found real defects, so treat the citations as good but not audited.
 ## Related
 
 - **[tracepass-dpp-schemas](https://github.com/malinoto/tracepass-dpp-schemas)** — the raw
-  field specifications, 12 categories, each field traced to the EU instrument that mandates
+  field specifications, 13 categories, each field traced to the EU instrument that mandates
   it. This profile is generated from them.
 - **[tracepass-open](https://github.com/malinoto/tracepass-open)** — the compliance validator
   and EPCIS 2.0 mapper.

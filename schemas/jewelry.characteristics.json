@@ -6,16 +6,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "productName",
-    "primaryMetal",
-    "metalFineness",
-    "metalWeight",
-    "hallmarkPresent",
-    "conflictFreeStatus",
-    "leadContent",
-    "cadmiumContent",
-    "nickelMigrationRate",
-    "svhcPresent"
+    "productName"
   ],
   "properties": {
     "productName": {
@@ -37,7 +28,12 @@
         "bracelet",
         "earrings",
         "pendant",
-        "set"
+        "set",
+        "cross",
+        "brooch",
+        "anklet",
+        "charm",
+        "other"
       ],
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
@@ -132,6 +128,27 @@
         "garnet",
         "tourmaline",
         "aquamarine",
+        "amber",
+        "quartz",
+        "agate",
+        "moonstone",
+        "citrine",
+        "labradorite",
+        "malachite",
+        "peridot",
+        "jasper",
+        "turquoise",
+        "chrysocolla",
+        "carnelian",
+        "pearl",
+        "lapis_lazuli",
+        "jade",
+        "tigers_eye",
+        "falcons_eye",
+        "obsidian",
+        "moldavite",
+        "rose_quartz",
+        "rock_crystal",
         "other"
       ],
       "x-iri": "https://tracepass.eu/voc/dpp/gemstoneType"
@@ -216,6 +233,7 @@
       "description": "Whether the materials comply with EU Conflict Minerals Regulation",
       "x-regulation": "32017R0821",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R0821",
+      "x-provision": "Art. 3 (binds Union importers of tin, tantalum, tungsten and gold above Annex I volume thresholds)",
       "x-iri": "https://tracepass.eu/voc/dpp/conflictFreeStatus"
     },
     "kimberleyProcessCompliant": {
@@ -252,7 +270,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PPM",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Annex XVII",
+      "x-provision": "Annex XVII Entry 63 (metal parts of jewellery: max 0.05% w/w)",
       "x-iri": "https://tracepass.eu/voc/dpp/leadContent"
     },
     "cadmiumContent": {
@@ -263,7 +281,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PPM",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Annex XVII",
+      "x-provision": "Annex XVII Entry 23 (max 0.01% w/w)",
       "x-iri": "https://tracepass.eu/voc/dpp/cadmiumContent"
     },
     "nickelMigrationRate": {
@@ -274,7 +292,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/MicroGM-PER-CentiM2",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Annex XVII",
+      "x-provision": "Annex XVII Entry 27 (skin contact: <0.5 µg/cm²/week; body piercing: <0.2 µg/cm²/week)",
       "x-iri": "https://tracepass.eu/voc/dpp/nickelMigrationRate"
     },
     "svhcPresent": {
@@ -283,7 +301,7 @@
       "description": "Whether Substances of Very High Concern are present above 0.1% w/w",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33",
+      "x-provision": "Art. 33(2) (on request, within 45 days, above 0.1% w/w; minimum content is the substance name)",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
     },
     "reachTestReportUrl": {
@@ -402,20 +420,41 @@
       "x-iri": "https://tracepass.eu/voc/dpp/customCertificates"
     },
     "dataCarrierType": {
-      "type": "string",
+      "type": "array",
       "title": "Data Carrier Type",
       "description": "Type of physical data carrier linking to this DPP (QR on tag/box, NFC in packaging)",
-      "enum": [
-        "qr_hangtag",
-        "qr_box",
-        "nfc_packaging",
-        "laser_engraved_qr",
-        "certificate_card_qr"
-      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "qr_code",
+          "data_matrix",
+          "nfc_tag",
+          "rfid_tag",
+          "other"
+        ]
+      },
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(3)",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
+    },
+    "dataCarrierPlacement": {
+      "type": "array",
+      "title": "Data Carrier Placement",
+      "description": "Where the data carrier is physically attached to the item or its packaging",
+      "items": {
+        "type": "string",
+        "enum": [
+          "hangtag",
+          "packaging",
+          "product_surface",
+          "certificate_card"
+        ]
+      },
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(3)",
+      "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierPlacement"
     },
     "accessLevel": {
       "type": "string",

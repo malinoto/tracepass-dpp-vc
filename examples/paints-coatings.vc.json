@@ -2,7 +2,7 @@
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
     "https://vocabulary.uncefact.org/untp/dpp/0.7.0/",
-    "https://tracepass.eu/context/dpp-vc/chemicals/v1.jsonld"
+    "https://tracepass.eu/context/dpp-vc/paints-coatings/v1.jsonld"
   ],
   "type": [
     "VerifiableCredential",
@@ -13,7 +13,7 @@
       "Product"
     ],
     "id": "https://id.gs1.org/01/09506000123456",
-    "name": "Chemicals & Paints — worked example",
+    "name": "Paints & Coatings — worked example",
     "idScheme": {
       "type": [
         "IdentifierScheme"
@@ -27,8 +27,8 @@
         "type": [
           "Classification"
         ],
-        "code": "chemicals",
-        "name": "Chemicals & Paints"
+        "code": "paints-coatings",
+        "name": "Paints & Coatings"
       }
     ],
     "producedAtFacility": {
@@ -67,14 +67,8 @@
       }
     ],
     "characteristics": {
-      "batchLotNumber": "CH-2026-0518-B",
-      "tradeName": "Ferrolux Alkaline Degreaser 20",
-      "commodityCode": "3402509000",
       "manufacturerEmail": "regulatory@example.com",
       "manufacturerPhone": "+49 341 5550170",
-      "ingredientSubstanceName": "Sodium hydroxide",
-      "ingredientCasNumber": "1310-73-2",
-      "ingredientConcentrationRangePercent": "5-15%",
       "hazardClass": [
         "Skin Corr. 1A",
         "Eye Dam. 1"
@@ -92,18 +86,23 @@
         "P310: Immediately call a POISON CENTER or doctor."
       ],
       "ufi": "U100-70XY-M00J-K3PT",
+      "svhcSubstances": [
+        "Lead"
+      ],
+      "svhcSubstanceName": "Lead",
+      "batchLotNumber": "PC-2026-0518-A",
+      "tradeName": "Ferrolux SolvaCoat Matt White",
+      "commodityCode": "3209100000",
+      "ingredientSubstanceName": "Titanium dioxide",
+      "ingredientCasNumber": "13463-67-7",
       "emergencyPhoneNumber": "+49 30 19240",
-      "productCategoryEuPCS": "PC-CLN-2 Surface cleaners, professional",
-      "svhcSubstances": [],
-      "svhcSubstanceName": "None present above 0.1 % w/w",
-      "svhcCasNumber": "n/a",
+      "productCategoryEuPCS": "PC-PNT-1 Decorative paints and varnishes, consumer",
+      "svhcCasNumber": "7439-92-1",
       "svhcConcentrationRange": "0.1-0.3%",
-      "svhcSafeUseInstructions": "No SVHC present above the 0.1 % w/w threshold; no substance-specific instructions apply.",
-      "appearance": "Clear, colourless to pale yellow liquid",
-      "ph": 13.4,
-      "usageInstructionsText": "Dilute 1:20 with cold water for routine cleaning. Do not mix with acidic products.",
-      "intendedUse": "Professional degreasing of metal surfaces and workshop floors.",
-      "endOfLifeInstructions": "https://example.com/docs/ferrolux-disposal.pdf"
+      "svhcSafeUseInstructions": "Contains lead above 0.1 % w/w. Do not sand or burn coated surfaces; use local exhaust ventilation and P2 respiratory protection when removing. Dispose of waste and residues as hazardous waste.",
+      "appearance": "Opaque matt white liquid dispersion",
+      "ph": 8.6,
+      "endOfLifeInstructions": "https://example.com/docs/solvacoat-disposal.pdf"
     }
   }
 }

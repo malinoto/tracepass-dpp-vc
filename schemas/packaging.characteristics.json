@@ -606,15 +606,19 @@
       "x-iri": "https://tracepass.eu/voc/dpp/documentUrl"
     },
     "dataCarrierType": {
-      "type": "string",
+      "type": "array",
       "title": "Data Carrier Type",
       "description": "Type of data carrier on the packaging (QR code per PPWR).",
-      "enum": [
-        "QR",
-        "dataMatrix",
-        "RFID",
-        "NFC"
-      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "qr_code",
+          "data_matrix",
+          "nfc_tag",
+          "rfid_tag",
+          "other"
+        ]
+      },
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 12, ESPR Art. 9",

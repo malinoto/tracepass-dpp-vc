@@ -191,7 +191,11 @@
       },
       "dataCarrierType": {
         "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
-        "@type": "xsd:string"
+        "@container": "@set"
+      },
+      "dataCarrierPlacement": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierPlacement",
+        "@container": "@set"
       },
       "accessLevel": {
         "@id": "https://tracepass.eu/voc/dpp/accessLevel",

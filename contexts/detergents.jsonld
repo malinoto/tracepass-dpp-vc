@@ -61,10 +61,6 @@
         "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
         "@type": "xsd:string"
       },
-      "ingredients": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredients",
-        "@container": "@set"
-      },
       "ingredientSubstanceName": {
         "@id": "https://tracepass.eu/voc/dpp/ingredientSubstanceName",
         "@type": "xsd:string"
@@ -85,56 +81,12 @@
         "@id": "https://tracepass.eu/voc/dpp/ingredientReachRegistrationNumber",
         "@type": "xsd:string"
       },
-      "ingredientInciName": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientInciName",
-        "@type": "xsd:string"
-      },
-      "ingredientConcentrationRangePercent": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientConcentrationRangePercent",
-        "@type": "xsd:string"
-      },
-      "ingredientFunctionCategory": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientFunctionCategory",
-        "@type": "xsd:string"
-      },
-      "surfactantsTotal": {
-        "@id": "https://tracepass.eu/voc/dpp/surfactantsTotal",
-        "@type": "xsd:decimal"
-      },
-      "phosphatesContent": {
-        "@id": "https://tracepass.eu/voc/dpp/phosphatesContent",
-        "@type": "xsd:decimal"
-      },
-      "phosphonatesContent": {
-        "@id": "https://tracepass.eu/voc/dpp/phosphonatesContent",
-        "@type": "xsd:decimal"
-      },
-      "edtaContent": {
-        "@id": "https://tracepass.eu/voc/dpp/edtaContent",
-        "@type": "xsd:decimal"
-      },
-      "soapContent": {
-        "@id": "https://tracepass.eu/voc/dpp/soapContent",
-        "@type": "xsd:decimal"
-      },
-      "opticalBrighteners": {
-        "@id": "https://tracepass.eu/voc/dpp/opticalBrighteners",
-        "@type": "xsd:boolean"
-      },
-      "enzymes": {
-        "@id": "https://tracepass.eu/voc/dpp/enzymes",
-        "@container": "@set"
-      },
       "preservatives": {
         "@id": "https://tracepass.eu/voc/dpp/preservatives",
         "@container": "@set"
       },
       "fragranceAllergens": {
         "@id": "https://tracepass.eu/voc/dpp/fragranceAllergens",
-        "@container": "@set"
-      },
-      "microorganisms": {
-        "@id": "https://tracepass.eu/voc/dpp/microorganisms",
         "@container": "@set"
       },
       "hazardClass": {
@@ -237,86 +189,6 @@
         "@id": "https://tracepass.eu/voc/dpp/viscosity",
         "@type": "xsd:decimal"
       },
-      "vocContent": {
-        "@id": "https://tracepass.eu/voc/dpp/vocContent",
-        "@type": "xsd:decimal"
-      },
-      "vocLimit": {
-        "@id": "https://tracepass.eu/voc/dpp/vocLimit",
-        "@type": "xsd:decimal"
-      },
-      "vocCategory": {
-        "@id": "https://tracepass.eu/voc/dpp/vocCategory",
-        "@type": "xsd:string"
-      },
-      "paintType": {
-        "@id": "https://tracepass.eu/voc/dpp/paintType",
-        "@type": "xsd:string"
-      },
-      "vocContentReadyToUse": {
-        "@id": "https://tracepass.eu/voc/dpp/vocContentReadyToUse",
-        "@type": "xsd:decimal"
-      },
-      "vocMaxLimit": {
-        "@id": "https://tracepass.eu/voc/dpp/vocMaxLimit",
-        "@type": "xsd:decimal"
-      },
-      "solventType": {
-        "@id": "https://tracepass.eu/voc/dpp/solventType",
-        "@type": "xsd:string"
-      },
-      "coverageSqmPerLitre": {
-        "@id": "https://tracepass.eu/voc/dpp/coverageSqmPerLitre",
-        "@type": "xsd:decimal"
-      },
-      "wetScrubResistanceClass": {
-        "@id": "https://tracepass.eu/voc/dpp/wetScrubResistanceClass",
-        "@type": "xsd:string"
-      },
-      "titaniumDioxideContent": {
-        "@id": "https://tracepass.eu/voc/dpp/titaniumDioxideContent",
-        "@type": "xsd:decimal"
-      },
-      "isoClassification": {
-        "@id": "https://tracepass.eu/voc/dpp/isoClassification",
-        "@type": "xsd:string"
-      },
-      "ultimateBiodegradation": {
-        "@id": "https://tracepass.eu/voc/dpp/ultimateBiodegradation",
-        "@type": "xsd:boolean"
-      },
-      "biodegradationTestMethod": {
-        "@id": "https://tracepass.eu/voc/dpp/biodegradationTestMethod",
-        "@type": "xsd:string"
-      },
-      "degradationPercent": {
-        "@id": "https://tracepass.eu/voc/dpp/degradationPercent",
-        "@type": "xsd:decimal"
-      },
-      "passThreshold": {
-        "@id": "https://tracepass.eu/voc/dpp/passThreshold",
-        "@type": "xsd:boolean"
-      },
-      "recommendedDoseMl": {
-        "@id": "https://tracepass.eu/voc/dpp/recommendedDoseMl",
-        "@type": "xsd:decimal"
-      },
-      "waterHardnessRange": {
-        "@id": "https://tracepass.eu/voc/dpp/waterHardnessRange",
-        "@type": "xsd:string"
-      },
-      "machineLoadsPerPackage": {
-        "@id": "https://tracepass.eu/voc/dpp/machineLoadsPerPackage",
-        "@type": "xsd:decimal"
-      },
-      "usageInstructionsText": {
-        "@id": "https://tracepass.eu/voc/dpp/usageInstructionsText",
-        "@type": "xsd:string"
-      },
-      "intendedUse": {
-        "@id": "https://tracepass.eu/voc/dpp/intendedUse",
-        "@type": "xsd:string"
-      },
       "carbonFootprint": {
         "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
         "@type": "xsd:decimal"
@@ -360,6 +232,98 @@
       "accessLevel": {
         "@id": "https://tracepass.eu/voc/dpp/accessLevel",
         "@type": "xsd:string"
+      },
+      "ingredients": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredients",
+        "@container": "@set"
+      },
+      "ingredientInciName": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientInciName",
+        "@type": "xsd:string"
+      },
+      "ingredientConcentrationRangePercent": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientConcentrationRangePercent",
+        "@type": "xsd:string"
+      },
+      "ingredientFunctionCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientFunctionCategory",
+        "@type": "xsd:string"
+      },
+      "surfactantsTotal": {
+        "@id": "https://tracepass.eu/voc/dpp/surfactantsTotal",
+        "@type": "xsd:decimal"
+      },
+      "phosphatesContent": {
+        "@id": "https://tracepass.eu/voc/dpp/phosphatesContent",
+        "@type": "xsd:decimal"
+      },
+      "phosphonatesContent": {
+        "@id": "https://tracepass.eu/voc/dpp/phosphonatesContent",
+        "@type": "xsd:decimal"
+      },
+      "edtaContent": {
+        "@id": "https://tracepass.eu/voc/dpp/edtaContent",
+        "@type": "xsd:decimal"
+      },
+      "soapContent": {
+        "@id": "https://tracepass.eu/voc/dpp/soapContent",
+        "@type": "xsd:decimal"
+      },
+      "opticalBrighteners": {
+        "@id": "https://tracepass.eu/voc/dpp/opticalBrighteners",
+        "@type": "xsd:boolean"
+      },
+      "enzymes": {
+        "@id": "https://tracepass.eu/voc/dpp/enzymes",
+        "@container": "@set"
+      },
+      "microorganisms": {
+        "@id": "https://tracepass.eu/voc/dpp/microorganisms",
+        "@container": "@set"
+      },
+      "ultimateBiodegradation": {
+        "@id": "https://tracepass.eu/voc/dpp/ultimateBiodegradation",
+        "@type": "xsd:boolean"
+      },
+      "biodegradationTestMethod": {
+        "@id": "https://tracepass.eu/voc/dpp/biodegradationTestMethod",
+        "@type": "xsd:string"
+      },
+      "degradationPercent": {
+        "@id": "https://tracepass.eu/voc/dpp/degradationPercent",
+        "@type": "xsd:decimal"
+      },
+      "passThreshold": {
+        "@id": "https://tracepass.eu/voc/dpp/passThreshold",
+        "@type": "xsd:boolean"
+      },
+      "recommendedDoseMl": {
+        "@id": "https://tracepass.eu/voc/dpp/recommendedDoseMl",
+        "@type": "xsd:decimal"
+      },
+      "waterHardnessRange": {
+        "@id": "https://tracepass.eu/voc/dpp/waterHardnessRange",
+        "@type": "xsd:string"
+      },
+      "machineLoadsPerPackage": {
+        "@id": "https://tracepass.eu/voc/dpp/machineLoadsPerPackage",
+        "@type": "xsd:decimal"
+      },
+      "usageInstructionsText": {
+        "@id": "https://tracepass.eu/voc/dpp/usageInstructionsText",
+        "@type": "xsd:string"
+      },
+      "intendedUse": {
+        "@id": "https://tracepass.eu/voc/dpp/intendedUse",
+        "@type": "xsd:string"
+      },
+      "issuedUnderSoleResponsibility": {
+        "@id": "https://tracepass.eu/voc/dpp/issuedUnderSoleResponsibility",
+        "@type": "xsd:boolean"
+      },
+      "complianceDemonstrated": {
+        "@id": "https://tracepass.eu/voc/dpp/complianceDemonstrated",
+        "@type": "xsd:boolean"
       }
     }
   ]

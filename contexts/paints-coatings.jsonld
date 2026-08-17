@@ -1,0 +1,282 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "tracepass": "https://tracepass.eu/voc/dpp/",
+      "untp": "https://vocabulary.uncefact.org/untp/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "qudt": "http://qudt.org/vocab/unit/",
+      "cas": "https://identifiers.org/cas:",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "gtin": {
+        "@id": "https://ref.gs1.org/voc/gtin"
+      },
+      "batchLotNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
+        "@type": "xsd:string"
+      },
+      "serialNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/serialNumber",
+        "@type": "xsd:string"
+      },
+      "tradeName": {
+        "@id": "https://tracepass.eu/voc/dpp/tradeName",
+        "@type": "xsd:string"
+      },
+      "productModel": {
+        "@id": "https://tracepass.eu/voc/dpp/productModel",
+        "@type": "xsd:string"
+      },
+      "packagingImageUrl": {
+        "@id": "https://tracepass.eu/voc/dpp/packagingImageUrl",
+        "@type": "xsd:anyURI"
+      },
+      "commodityCode": {
+        "@id": "https://tracepass.eu/voc/dpp/commodityCode",
+        "@type": "xsd:string"
+      },
+      "productCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/productCategory",
+        "@type": "xsd:string"
+      },
+      "productSubcategory": {
+        "@id": "https://tracepass.eu/voc/dpp/productSubcategory",
+        "@type": "xsd:string"
+      },
+      "manufacturerEmail": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturerEmail",
+        "@type": "xsd:string"
+      },
+      "manufacturerPhone": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturerPhone",
+        "@type": "xsd:string"
+      },
+      "passportServiceProvider": {
+        "@id": "https://tracepass.eu/voc/dpp/passportServiceProvider",
+        "@type": "xsd:string"
+      },
+      "countryOfManufacture": {
+        "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+        "@type": "xsd:string"
+      },
+      "ingredientSubstanceName": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientSubstanceName",
+        "@type": "xsd:string"
+      },
+      "ingredientIupacName": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientIupacName",
+        "@type": "xsd:string"
+      },
+      "ingredientCasNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientCasNumber",
+        "@type": "xsd:string"
+      },
+      "ingredientEcNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientEcNumber",
+        "@type": "xsd:string"
+      },
+      "ingredientReachRegistrationNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredientReachRegistrationNumber",
+        "@type": "xsd:string"
+      },
+      "preservatives": {
+        "@id": "https://tracepass.eu/voc/dpp/preservatives",
+        "@container": "@set"
+      },
+      "fragranceAllergens": {
+        "@id": "https://tracepass.eu/voc/dpp/fragranceAllergens",
+        "@container": "@set"
+      },
+      "hazardClass": {
+        "@id": "https://tracepass.eu/voc/dpp/hazardClass",
+        "@container": "@set"
+      },
+      "signalWord": {
+        "@id": "https://tracepass.eu/voc/dpp/signalWord",
+        "@type": "xsd:string"
+      },
+      "hazardPictograms": {
+        "@id": "https://tracepass.eu/voc/dpp/hazardPictograms",
+        "@container": "@set"
+      },
+      "hazardStatements": {
+        "@id": "https://tracepass.eu/voc/dpp/hazardStatements",
+        "@container": "@set"
+      },
+      "precautionaryStatements": {
+        "@id": "https://tracepass.eu/voc/dpp/precautionaryStatements",
+        "@container": "@set"
+      },
+      "supplementalHazardInfo": {
+        "@id": "https://tracepass.eu/voc/dpp/supplementalHazardInfo",
+        "@type": "xsd:string"
+      },
+      "ufi": {
+        "@id": "https://tracepass.eu/voc/dpp/ufi",
+        "@type": "xsd:string"
+      },
+      "poisonCentreNotificationNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/poisonCentreNotificationNumber",
+        "@type": "xsd:string"
+      },
+      "emergencyPhoneNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/emergencyPhoneNumber",
+        "@type": "xsd:string"
+      },
+      "productCategoryEuPCS": {
+        "@id": "https://tracepass.eu/voc/dpp/productCategoryEuPCS",
+        "@type": "xsd:string"
+      },
+      "svhcSubstances": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcSubstances",
+        "@container": "@set"
+      },
+      "svhcSubstanceName": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcSubstanceName",
+        "@type": "xsd:string"
+      },
+      "svhcCasNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcCasNumber",
+        "@type": "xsd:string"
+      },
+      "svhcEcNumber": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcEcNumber",
+        "@type": "xsd:string"
+      },
+      "svhcConcentrationRange": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcConcentrationRange",
+        "@type": "xsd:string"
+      },
+      "svhcLocationInProduct": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcLocationInProduct",
+        "@type": "xsd:string"
+      },
+      "svhcSafeUseInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcSafeUseInstructions",
+        "@type": "xsd:string"
+      },
+      "svhcCandidateListDate": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcCandidateListDate",
+        "@type": "xsd:date"
+      },
+      "svhcScipNotificationId": {
+        "@id": "https://tracepass.eu/voc/dpp/svhcScipNotificationId",
+        "@type": "xsd:string"
+      },
+      "appearance": {
+        "@id": "https://tracepass.eu/voc/dpp/appearance",
+        "@type": "xsd:string"
+      },
+      "odour": {
+        "@id": "https://tracepass.eu/voc/dpp/odour",
+        "@type": "xsd:string"
+      },
+      "ph": {
+        "@id": "https://tracepass.eu/voc/dpp/ph",
+        "@type": "xsd:decimal"
+      },
+      "flashPoint": {
+        "@id": "https://tracepass.eu/voc/dpp/flashPoint",
+        "@type": "xsd:decimal"
+      },
+      "density": {
+        "@id": "https://tracepass.eu/voc/dpp/density",
+        "@type": "xsd:decimal"
+      },
+      "viscosity": {
+        "@id": "https://tracepass.eu/voc/dpp/viscosity",
+        "@type": "xsd:decimal"
+      },
+      "carbonFootprint": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
+        "@type": "xsd:decimal"
+      },
+      "carbonFootprintScope": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintScope",
+        "@type": "xsd:string"
+      },
+      "carbonFootprintMethodology": {
+        "@id": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology",
+        "@type": "xsd:string"
+      },
+      "recyclability": {
+        "@id": "https://tracepass.eu/voc/dpp/recyclability",
+        "@type": "xsd:decimal"
+      },
+      "recycledContentPercentage": {
+        "@id": "https://tracepass.eu/voc/dpp/recycledContentPercentage",
+        "@type": "xsd:decimal"
+      },
+      "endOfLifeInstructions": {
+        "@id": "https://tracepass.eu/voc/dpp/endOfLifeInstructions",
+        "@type": "xsd:anyURI"
+      },
+      "dataCarrierType": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
+        "@type": "xsd:string"
+      },
+      "dataCarrierUri": {
+        "@id": "https://tracepass.eu/voc/dpp/dataCarrierUri",
+        "@type": "xsd:anyURI"
+      },
+      "passportValidFrom": {
+        "@id": "https://tracepass.eu/voc/dpp/passportValidFrom",
+        "@type": "xsd:date"
+      },
+      "passportRetentionYears": {
+        "@id": "https://tracepass.eu/voc/dpp/passportRetentionYears",
+        "@type": "xsd:decimal"
+      },
+      "accessLevel": {
+        "@id": "https://tracepass.eu/voc/dpp/accessLevel",
+        "@type": "xsd:string"
+      },
+      "vocContent": {
+        "@id": "https://tracepass.eu/voc/dpp/vocContent",
+        "@type": "xsd:decimal"
+      },
+      "vocLimit": {
+        "@id": "https://tracepass.eu/voc/dpp/vocLimit",
+        "@type": "xsd:decimal"
+      },
+      "vocCategory": {
+        "@id": "https://tracepass.eu/voc/dpp/vocCategory",
+        "@type": "xsd:string"
+      },
+      "paintType": {
+        "@id": "https://tracepass.eu/voc/dpp/paintType",
+        "@type": "xsd:string"
+      },
+      "vocContentReadyToUse": {
+        "@id": "https://tracepass.eu/voc/dpp/vocContentReadyToUse",
+        "@type": "xsd:decimal"
+      },
+      "vocMaxLimit": {
+        "@id": "https://tracepass.eu/voc/dpp/vocMaxLimit",
+        "@type": "xsd:decimal"
+      },
+      "solventType": {
+        "@id": "https://tracepass.eu/voc/dpp/solventType",
+        "@type": "xsd:string"
+      },
+      "coverageSqmPerLitre": {
+        "@id": "https://tracepass.eu/voc/dpp/coverageSqmPerLitre",
+        "@type": "xsd:decimal"
+      },
+      "wetScrubResistanceClass": {
+        "@id": "https://tracepass.eu/voc/dpp/wetScrubResistanceClass",
+        "@type": "xsd:string"
+      },
+      "titaniumDioxideContent": {
+        "@id": "https://tracepass.eu/voc/dpp/titaniumDioxideContent",
+        "@type": "xsd:decimal"
+      },
+      "isoClassification": {
+        "@id": "https://tracepass.eu/voc/dpp/isoClassification",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

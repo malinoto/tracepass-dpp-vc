@@ -415,8 +415,8 @@
         "CBAM_implementing_regulation",
         "other"
       ],
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32023R0956",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-iri": "https://tracepass.eu/voc/dpp/calculationMethodology"
     },
     "thirdPartyVerification": {

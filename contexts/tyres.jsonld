@@ -52,7 +52,7 @@
       },
       "dataCarrierType": {
         "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
-        "@type": "xsd:string"
+        "@container": "@set"
       },
       "passportIssuer": {
         "@id": "https://tracepass.eu/voc/dpp/passportIssuer",
@@ -80,7 +80,7 @@
       },
       "tyreConstruction": {
         "@id": "https://tracepass.eu/voc/dpp/tyreConstruction",
-        "@type": "xsd:string"
+        "@container": "@set"
       },
       "tyreType": {
         "@id": "https://tracepass.eu/voc/dpp/tyreType",

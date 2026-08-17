@@ -7,30 +7,7 @@
   "additionalProperties": false,
   "required": [
     "productName",
-    "batchLotNumber",
-    "woodSpecies",
-    "forestCertificationScheme",
-    "chainOfCustodyCertificate",
-    "countryOfHarvest",
-    "deforestationFreeDeclaration",
-    "geolocationOfHarvest",
-    "svhcCandidateListSubstances",
-    "formaldehydeEmissionClass",
-    "formaldehydeEmissionValueMgM3",
-    "vocEmissionClass",
-    "flameRetardantSubstances",
-    "pbdeContentMgKg",
-    "applicableDurabilityStandard",
-    "durabilityTestLevel",
-    "maximumUserWeightKg",
-    "warrantyPeriodYears",
-    "foamType",
-    "foamWeightKg",
-    "mattressCoverRemovable",
-    "declarationOfConformityUrl",
-    "reachCompliance",
-    "intendedUse",
-    "safetyWarnings"
+    "batchLotNumber"
   ],
   "properties": {
     "productName": {
@@ -39,7 +16,7 @@
       "description": "Commercial product name / trade designation",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — product identification",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "productModel": {
@@ -57,7 +34,7 @@
       "description": "Batch ID or serial number for traceability and recalls",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "productCategory": {
@@ -65,16 +42,16 @@
       "title": "Product Category",
       "description": "Product type within furniture scope (seating, table, bed, mattress, storage, etc.)",
       "enum": [
-        "Domestic seating",
-        "Commercial seating",
-        "Domestic table",
-        "Commercial table",
-        "Bed frame",
-        "Mattress",
-        "Storage furniture",
-        "Shelving",
-        "Outdoor furniture",
-        "Other"
+        "domestic_seating",
+        "commercial_seating",
+        "domestic_table",
+        "commercial_table",
+        "bed_frame",
+        "mattress",
+        "storage_furniture",
+        "shelving",
+        "outdoor_furniture",
+        "other"
       ],
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
@@ -108,17 +85,19 @@
       "x-iri": "https://tracepass.eu/voc/dpp/passportIssuer"
     },
     "dataCarrierType": {
-      "type": "string",
+      "type": "array",
       "title": "Data Carrier Type",
       "description": "Type of data carrier (QR code, RFID, NFC, Data Matrix, GS1 Digital Link)",
-      "enum": [
-        "QR code",
-        "QR code (GS1 Digital Link)",
-        "Data Matrix",
-        "RFID",
-        "NFC",
-        "Other"
-      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "qr_code",
+          "data_matrix",
+          "nfc_tag",
+          "rfid_tag",
+          "other"
+        ]
+      },
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
@@ -193,7 +172,7 @@
       "description": "Species of wood used (common and scientific name)",
       "x-regulation": "32023R1115",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
-      "x-provision": "Art. 9(1)(a)",
+      "x-provision": "EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator",
       "x-iri": "https://tracepass.eu/voc/dpp/woodSpecies"
     },
     "forestCertificationScheme": {
@@ -202,6 +181,7 @@
       "description": "Forest certification (FSC, PEFC, or equivalent). Required for virgin wood.",
       "x-regulation": "32023R1115",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
+      "x-provision": "FSC / PEFC are voluntary certification schemes; EUDR mandates due diligence, not certification",
       "x-iri": "https://tracepass.eu/voc/dpp/forestCertificationScheme"
     },
     "chainOfCustodyCertificate": {
@@ -216,7 +196,7 @@
       "description": "Country where the wood was harvested (ISO 3166-1 alpha-2)",
       "x-regulation": "32023R1115",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
-      "x-provision": "Art. 9(1)(d)",
+      "x-provision": "EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator",
       "x-iri": "https://tracepass.eu/voc/dpp/countryOfHarvest"
     },
     "deforestationFreeDeclaration": {
@@ -225,7 +205,7 @@
       "description": "Declaration that wood is deforestation-free per EUDR cut-off date (31 Dec 2020)",
       "x-regulation": "32023R1115",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
-      "x-provision": "Art. 3",
+      "x-provision": "EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator",
       "x-iri": "https://tracepass.eu/voc/dpp/deforestationFreeDeclaration"
     },
     "geolocationOfHarvest": {
@@ -234,7 +214,7 @@
       "description": "GPS coordinates or polygon of the plot of land where timber was harvested",
       "x-regulation": "32023R1115",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
-      "x-provision": "Art. 9(1)(d)",
+      "x-provision": "EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator",
       "x-iri": "https://tracepass.eu/voc/dpp/geolocationOfHarvest"
     },
     "svhcCandidateListSubstances": {
@@ -243,7 +223,7 @@
       "description": "Substances of Very High Concern on REACH candidate list present above 0.1% w/w",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33",
+      "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances"
     },
     "formaldehydeEmissionClass": {
@@ -251,16 +231,16 @@
       "title": "Formaldehyde Emission Class",
       "description": "Formaldehyde emission class of wood-based panels (E0.5, E1, etc.)",
       "enum": [
-        "E0.5",
-        "E1",
-        "E2",
-        "Super E0",
-        "CARB Phase 2",
-        "N/A"
+        "e0_5",
+        "e1",
+        "e2",
+        "super_e0",
+        "carb_phase_2",
+        "not_applicable"
       ],
       "x-regulation": "32023R1464",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1464",
-      "x-provision": "REACH Annex XVII entry 77",
+      "x-provision": "REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3)",
       "x-iri": "https://tracepass.eu/voc/dpp/formaldehydeEmissionClass"
     },
     "formaldehydeEmissionValueMgM3": {
@@ -270,7 +250,7 @@
       "x-unit": "mg/m3",
       "x-regulation": "32023R1464",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1464",
-      "x-provision": "REACH Annex XVII entry 77",
+      "x-provision": "REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3)",
       "x-iri": "https://tracepass.eu/voc/dpp/formaldehydeEmissionValueMgM3"
     },
     "vocEmissionClass": {
@@ -279,6 +259,7 @@
       "description": "Total VOC emission class or value per EN 16516 or equivalent",
       "x-regulation": "32010R0066",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-provision": "Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/vocEmissionClass"
     },
     "totalVocEmissionUgM3": {
@@ -296,18 +277,18 @@
       "description": "List of flame retardant chemicals used, if any. Halogenated flame retardants under ECHA scrutiny.",
       "x-regulation": "32019R1021",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R1021",
-      "x-provision": "Annex I",
+      "x-provision": "POPs Reg. (EU) 2019/1021 Annex I — market restriction",
       "x-iri": "https://tracepass.eu/voc/dpp/flameRetardantSubstances"
     },
     "pbdeContentMgKg": {
       "type": "number",
       "title": "PBDE Content (mg/kg)",
-      "description": "Total PBDE (polybrominated diphenyl ethers) content in mg/kg. Max 500 mg/kg unintentional limit.",
+      "description": "Total PBDE (polybrominated diphenyl ethers) content in mg/kg. Unintentional trace limit 10 mg/kg; higher phased limits apply to articles containing recycled material.",
       "x-unit": "mg/kg",
       "x-unitIri": "http://qudt.org/vocab/unit/MilliGM-PER-KiloGM",
       "x-regulation": "32019R1021",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R1021",
-      "x-provision": "Annex I (as amended by 32025R1482)",
+      "x-provision": "POPs Reg. (EU) 2019/1021 Annex I (as amended by Del. Reg. (EU) 2025/1482) — unintentional trace limit 10 mg/kg",
       "x-iri": "https://tracepass.eu/voc/dpp/pbdeContentMgKg"
     },
     "biocidesUsed": {
@@ -359,7 +340,7 @@
     "warrantyPeriodYears": {
       "type": "number",
       "title": "Warranty Period (years)",
-      "description": "Commercial warranty period offered",
+      "description": "Commercial warranty period offered ESPR Art. 7(2)(a) mandates no data on its own and no furniture delegated act exists; the statutory guarantee under Dir. (EU) 2019/771 binds the seller.",
       "x-unit": "years",
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
       "x-regulation": "32024R1781",
@@ -382,6 +363,7 @@
       "description": "Type of foam used (PU, HR, memory, latex, etc.)",
       "x-regulation": "32010R0066",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-provision": "Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/foamType"
     },
     "foamWeightKg": {
@@ -392,6 +374,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
       "x-regulation": "32010R0066",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-provision": "Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/foamWeightKg"
     },
     "foamDensityKgM3": {
@@ -420,6 +403,7 @@
       "description": "Whether mattress cover is removable and washable",
       "x-regulation": "32010R0066",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-provision": "Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/mattressCoverRemovable"
     },
     "firmnessRating": {
@@ -589,6 +573,7 @@
       "description": "Confirmation of REACH regulation compliance",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-provision": "REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records",
       "x-iri": "https://tracepass.eu/voc/dpp/reachCompliance"
     },
     "scipNotificationNumber": {
@@ -629,7 +614,7 @@
       "description": "Product-specific safety warnings",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(7)",
+      "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — warnings and safety information, where the product's risks require them",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyWarnings"
     },
     "supplyChainActors": {

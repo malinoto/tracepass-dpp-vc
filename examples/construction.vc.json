@@ -69,7 +69,7 @@
     "characteristics": {
       "productTypeModelIdentifier": "09506000123456",
       "batchLotNumber": "CEM-2026-0722-14",
-      "placeOfManufacture": "Beispielwerk Nord, Brandenburg, DE",
+      "placeOfManufacture": "Zementwerk Rüdersdorf, Brandenburg, DE",
       "productFamily": "cement",
       "mechanicalResistanceStability": {
         "compressiveStrength28dMpa": 48.6,
@@ -140,18 +140,18 @@
       "ceMarkingStatus": "marked",
       "avcpSystemLevel": "1+",
       "notifiedBodyNameNumber": {
-        "name": "Example Notified Body GmbH",
-        "number": "9999"
+        "name": "VDZ Technology gGmbH",
+        "number": "0754"
       },
       "testReportReferences": [
-        "ENB-2026-04417 (EN 196-1)",
-        "ENB-2026-04418 (EN 196-2)"
+        "VDZ-2026-04417 (EN 196-1)",
+        "VDZ-2026-04418 (EN 196-2)"
       ],
       "epdVerification": {
         "verified": true,
-        "verifier": "Example EPD Programme Operator e.V.",
-        "programme": "EXPO",
-        "epdNumber": "EPD-EXPO-2026-0417",
+        "verifier": "Institut Bauen und Umwelt e.V.",
+        "programme": "IBU",
+        "epdNumber": "EPD-IBU-2026-0417",
         "validUntil": "2031-07-21"
       },
       "harmonizedStandardReference": "EN 197-1:2011",

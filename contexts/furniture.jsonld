@@ -40,7 +40,7 @@
       },
       "dataCarrierType": {
         "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
-        "@type": "xsd:string"
+        "@container": "@set"
       },
       "billOfMaterials": {
         "@id": "https://tracepass.eu/voc/dpp/billOfMaterials",

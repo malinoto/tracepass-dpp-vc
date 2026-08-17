@@ -626,7 +626,7 @@
       },
       "dataCarrierType": {
         "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",
-        "@type": "xsd:string"
+        "@container": "@set"
       },
       "dataCarrierReference": {
         "@id": "https://tracepass.eu/voc/dpp/dataCarrierReference",

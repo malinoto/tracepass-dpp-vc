@@ -7,8 +7,6 @@
   "additionalProperties": false,
   "required": [
     "productName",
-    "brandName",
-    "productSubcategory",
     "netContentValue",
     "netContentUnit",
     "ingredientsList",
