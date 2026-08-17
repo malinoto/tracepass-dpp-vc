@@ -16,7 +16,7 @@
 //
 // Usage: node scripts/generate.mjs [--out <dir>] [--check-steel]
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -193,6 +193,33 @@ const outDir = (() => {
 const checkSteel = process.argv.includes("--check-steel");
 
 for (const d of ["contexts", "schemas"]) mkdirSync(join(outDir, d), { recursive: true });
+
+// Prune outputs for categories that no longer exist. The generator only ever
+// WROTE files, so a retired category left its artefacts behind in outDir — and a
+// later `cp _work/generated/schemas/*` copied a dead category straight back into
+// the published profile. That actually happened when `chemicals` was split into
+// `detergents` + `paints-coatings`: the retired schema reappeared in a public
+// artefact days after removal, and nothing failed, because every file present was
+// individually valid. Deleting what the current template set does not justify is
+// the only thing that makes a full regeneration safe to copy wholesale.
+const liveCategories = new Set(
+  readdirSync(templatesDir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => basename(f, ".json"))
+    .filter((c) => !NON_CATEGORY.has(c)),
+);
+for (const [dir, suffix] of [["contexts", ".jsonld"], ["schemas", ".characteristics.json"]]) {
+  const full = join(outDir, dir);
+  if (!existsSync(full)) continue;
+  for (const file of readdirSync(full)) {
+    if (!file.endsWith(suffix)) continue;
+    const cat = basename(file, suffix);
+    if (!liveCategories.has(cat)) {
+      rmSync(join(full, file));
+      console.log(`  pruned stale ${dir}/${file} (no template)`);
+    }
+  }
+}
 
 const summary = [];
 for (const file of readdirSync(templatesDir).filter((f) => f.endsWith(".json")).sort()) {

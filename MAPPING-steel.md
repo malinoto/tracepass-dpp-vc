@@ -62,7 +62,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `scope2IndirectEmissions` | CELEX `32023R0956` | — |
 | `scope3UpstreamEmissions` | CELEX `32024R1781` | — |
 | `precursorEmissions` | CELEX `32023R0956` | Annex IV |
-| `calculationMethodology` | CELEX `32024R1781` | — |
+| `calculationMethodology` | CELEX `32023R0956` | — |
 | `thirdPartyVerification` | CELEX `32023R0956` | Art. 8 |
 | `carbonIntensityClass` | CELEX `32024R1781` | Article 7 |
 | `euEtsBenchmarkProduct` | CELEX `32003L0087` | — |

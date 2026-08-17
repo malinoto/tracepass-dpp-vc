@@ -1,6 +1,6 @@
 # Jewelry & Precious Metals DPP — field-to-vocabulary mapping
 
-Every field in the Jewelry & Precious Metals Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 47 are coined**, 5 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Jewelry & Precious Metals Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 48 are coined**, 5 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -45,15 +45,15 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `isNatural` | — | — |
 | `metalOriginCountry` | CELEX `32017R0821` | — |
 | `gemstoneOriginMine` | — | — |
-| `conflictFreeStatus` | CELEX `32017R0821` | — |
+| `conflictFreeStatus` | CELEX `32017R0821` | Art. 3 (binds Union importers of tin, tantalum, tungsten and gold above Annex I volume thresholds) |
 | `kimberleyProcessCompliant` | Kimberley Process Certification Scheme | — |
 | `fairminedCertified` | Fairmined Standard (voluntary, artisanal and small-scale mining) | — |
 | `rjcCertificationStatus` | — | — |
 | `chainOfCustodyDocUrl` | — | — |
-| `leadContent` | CELEX `32006R1907` | Annex XVII |
-| `cadmiumContent` | CELEX `32006R1907` | Annex XVII |
-| `nickelMigrationRate` | CELEX `32006R1907` | Annex XVII |
-| `svhcPresent` | CELEX `32006R1907` | Art. 33 |
+| `leadContent` | CELEX `32006R1907` | Annex XVII Entry 63 (metal parts of jewellery: max 0.05% w/w) |
+| `cadmiumContent` | CELEX `32006R1907` | Annex XVII Entry 23 (max 0.01% w/w) |
+| `nickelMigrationRate` | CELEX `32006R1907` | Annex XVII Entry 27 (skin contact: <0.5 µg/cm²/week; body piercing: <0.2 µg/cm²/week) |
+| `svhcPresent` | CELEX `32006R1907` | Art. 33(2) (on request, within 45 days, above 0.1% w/w; minimum content is the substance name) |
 | `reachTestReportUrl` | CELEX `32006R1907` | — |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `recycledMetalContent` | CELEX `32024R1781` | Art. 7(2)(c) |
@@ -69,6 +69,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `rjcCertificate` | — | — |
 | `customCertificates` | CELEX `32024R1781` | Art. 9(2) |
 | `dataCarrierType` | CELEX `32024R1781` | Art. 9(3) |
+| `dataCarrierPlacement` | CELEX `32024R1781` | Art. 9(3) |
 | `accessLevel` | CELEX `32024R1781` | Art. 9(4) |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

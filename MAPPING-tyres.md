@@ -28,22 +28,22 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `commercialName` | CELEX `32020R0740` | Annex II (product information sheet — commercial name/trade designation) |
-| `tyreTypeIdentifier` | CELEX `32020R0740` | Art. 4 + Annex II (tyre type identifier registered in EPREL) |
-| `tyreClass` | CELEX `32020R0740` | Art. 2 (definitions of C1/C2/C3) + scope |
-| `batchLotNumber` | CELEX `32024R1781` | Art. 9(2) |
-| `dateOfManufactureWeekYear` | CELEX `32020R0740` | Annex II (product information sheet) + UNECE R30/R54 date-of-manufacture marking |
-| `dateStartOfProduction` | CELEX `32020R0740` | Annex II |
+| `commercialName` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
+| `tyreTypeIdentifier` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
+| `tyreClass` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 2 — C1/C2/C3 definitions determining which label applies |
+| `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
+| `dateOfManufactureWeekYear` | CELEX `32020R0740` | UNECE R30 / R54 — marking moulded on the tyre sidewall under type approval |
+| `dateStartOfProduction` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `dateEndOfProduction` | CELEX `32020R0740` | Annex II |
 | `countryOfManufacture` | CELEX `32024R1781` | Art. 9(2) |
-| `eprelRegistrationNumber` | CELEX `32020R0740` | Art. 4(2) + Art. 10 (registration in EPREL before placing on market) |
-| `eprelProductUrl` | CELEX `32020R0740` | — |
+| `eprelRegistrationNumber` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
+| `eprelProductUrl` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `dataCarrierType` | CELEX `32024R1781` | Art. 9(2) |
 | `passportIssuer` | CELEX `32024R1781` | Art. 9(2) |
-| `tyreSizeDesignation` | CELEX `32020R0740` | Annex II (product information sheet — tyre size designation) |
-| `loadCapacityIndex` | CELEX `32020R0740` | Annex II (product information sheet — load-capacity index) |
-| `loadVersion` | CELEX `32020R0740` | Annex II |
-| `speedCategorySymbol` | CELEX `32020R0740` | Annex II (product information sheet — speed category symbol) |
+| `tyreSizeDesignation` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
+| `loadCapacityIndex` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
+| `loadVersion` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
+| `speedCategorySymbol` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `speedRatingKmh` | — | — |
 | `tyreConstruction` | — | — |
 | `tyreType` | — | — |
@@ -52,12 +52,12 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `rimDiameterInches` | — | — |
 | `treadDepthMm` | — | — |
 | `tyreWeightKg` | CELEX `32024R1781` | — |
-| `fuelEfficiencyClass` | CELEX `32020R0740` | Art. 4 + Annex I Part A (fuel-efficiency/rolling-resistance class) |
-| `rollingResistanceCoefficientNKn` | CELEX `32020R0740` | Annex I Part A + Annex II; measured per UNECE R117 Annex 6 |
-| `wetGripClass` | CELEX `32020R0740` | Art. 4 + Annex I Part B (wet-grip class) |
+| `fuelEfficiencyClass` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Annex I Part A — class shown on the tyre label and registered in EPREL |
+| `rollingResistanceCoefficientNKn` | CELEX `32020R0740` | Reg. (EU) 2020/740 Annex I Part A + Annex II — measured value in the EPREL product information sheet |
+| `wetGripClass` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Annex I Part B — class shown on the tyre label and registered in EPREL |
 | `wetGripIndex` | CELEX `32020R0740` | Annex I |
-| `externalRollingNoiseClass` | CELEX `32020R0740` | Art. 4 + Annex I Part C (external rolling-noise class) |
-| `externalRollingNoiseDb` | CELEX `32020R0740` | Annex I Part C + Annex II (measured dB value); measured per UNECE R117 Annex 3 |
+| `externalRollingNoiseClass` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Annex I Part C — class shown on the tyre label and registered in EPREL |
+| `externalRollingNoiseDb` | CELEX `32020R0740` | Reg. (EU) 2020/740 Annex I Part C — measured dB value on the label and in EPREL |
 | `snowGrip` | CELEX `32020R0740` | Art. 4 + Annex I (3PMSF snow-grip pictogram where applicable) |
 | `iceGrip` | CELEX `32020R0740` | Art. 4 + Annex I (ice-grip marking, C1 tyres, per ISO 19447) |
 | `tyreAbrasionRateMgKm` | CELEX `32024R1257` | — |
@@ -74,20 +74,20 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `recycledRubberContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `recycledCarbonBlackPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `renewableMaterialContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
-| `pahContentCompliant` | CELEX `32006R1907` | Annex XVII Entry 50 (PAH limits in extender oils/tyres) |
-| `svhcCandidateListSubstances` | CELEX `32006R1907` | Art. 33 (SVHC in articles >0.1% w/w communication) + SCIP database notification |
+| `pahContentCompliant` | CELEX `32006R1907` | REACH Annex XVII entry 50 — restriction on PAH content in extender oils and tyres |
+| `svhcCandidateListSubstances` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
 | `sixPpdContent` | CELEX `32006R1907` | — |
-| `heavyMetalsCompliance` | CELEX `32006R1907` | Annex XVII |
-| `reachCompliance` | CELEX `32006R1907` | — |
+| `heavyMetalsCompliance` | CELEX `32006R1907` | REACH Annex XVII — market-placement restriction; evidence retained by the manufacturer |
+| `reachCompliance` | CELEX `32006R1907` | REACH (EC) 1907/2006 — registration and restriction obligations evidenced in the manufacturer's records |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `carbonFootprintMethodology` | CELEX `32024R1781` | — |
 | `fuelSavingsOverLifetimeLiters` | CELEX `32020R0740` | — |
 | `co2SavingsOverLifetimeKg` | CELEX `32020R0740` | — |
-| `naturalRubberDeforestationFree` | CELEX `32023R1115` | Art. 3 + Art. 4 (due-diligence statement) + Annex I (natural rubber covered) |
+| `naturalRubberDeforestationFree` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
 | `naturalRubberSustainabilityCertification` | FSC / PEFC forest-management certification (voluntary) | — |
 | `expectedMileageKm` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `treadwearRating` | — | — |
-| `minimumTreadDepthMm` | CELEX `31989L0459` | — |
+| `minimumTreadDepthMm` | CELEX `31989L0459` | Dir. 2014/45/EU Annex I — roadworthiness test requirement on the vehicle in use |
 | `warrantyPeriodYears` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `maxAgeRecommendationYears` | — | — |
 | `retreadable` | CELEX `32024R1781` | Art. 7(2)(c) |
@@ -95,21 +95,21 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `retreadServiceLifeExtensionKm` | — | — |
 | `recyclabilityPercentage` | CELEX `32024R1781` | Art. 7(2)(c) |
 | `recyclabilityBreakdown` | CELEX `32024R1781` | Art. 7(2)(c) |
-| `eltCollectionScheme` | CELEX `32008L0098` | — |
+| `eltCollectionScheme` | CELEX `32008L0098` | WFD Dir. 2008/98/EC Art. 8a — extended producer responsibility discharged through national EPR scheme registration |
 | `disassemblyInstructionsUrl` | CELEX `32024R1781` | Art. 7(2)(c) |
 | `pyrolysisSuitability` | — | — |
 | `devulcanizationSuitability` | — | — |
 | `typeApprovalNumber` | — | — |
-| `euro7Compliance` | CELEX `32024R1257` | — |
-| `euTyreLabelImageUrl` | CELEX `32020R0740` | Art. 4 |
-| `declarationOfConformityUrl` | CELEX `32023R0988` | Art. 9 |
-| `reachComplianceTypeApproval` | CELEX `32006R1907` | — |
+| `euro7Compliance` | CELEX `32024R1257` | Reg. (EU) 2024/1257 — tyre abrasion limits not yet in force |
+| `euTyreLabelImageUrl` | CELEX `32020R0740` | Reg. (EU) 2020/740 Arts. 4 and 6 — label displayed in visual form at the point of sale |
+| `declarationOfConformityUrl` | CELEX `32023R0988` | UNECE R30 / R54 — type approval evidenced by the approval mark on the sidewall and the approval dossier |
+| `reachComplianceTypeApproval` | CELEX `32006R1907` | REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records |
 | `recommendedInflationPressureKpa` | — | — |
 | `maximumInflationPressureKpa` | — | — |
 | `maximumLoadKg` | — | — |
 | `tyrePressureMonitoringCompatible` | CELEX `32009R0661` | — |
 | `runFlatCapability` | — | — |
-| `safetyWarnings` | CELEX `32023R0988` | GPSR Art. 9 (safety information/warnings & instructions to accompany the product) |
+| `safetyWarnings` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — warnings and safety information, where the product's risks require them |
 | `storageInstructions` | — | — |
 | `dppSchemaVersion` | CELEX `32024R1781` | — |
 | `lastUpdatedAt` | CELEX `32024R1781` | Art. 10 |

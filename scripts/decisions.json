@@ -12,6 +12,7 @@
     "importerInfo": "relatedParty[role=importer].party",
     "importerEoriNumber": "relatedParty[role=importer].party.registeredId",
     "authorisedRepresentative": "relatedParty[role=serviceProvider].party",
+    "authorizedRepresentative": "relatedParty[role=serviceProvider].party",
     "manufacturingFacilityId": "producedAtFacility.registeredId",
     "uniqueFacilityIdentifier": "producedAtFacility.registeredId",
     "countryOfOrigin": "countryOfProduction",
@@ -44,7 +45,8 @@
     "packagingUniqueId": "A GS1 Digital Link URI serving as the product's primary identifier — which is exactly what the UNTP envelope's `credentialSubject.id` carries. Declaring it again inside `characteristics` gives one product two identifiers and invites a producer to fill both. Steel's hand-authored example already omitted it while the schema still declared it; this makes that implicit judgement explicit.",
     "productIdentifier": "A GS1 Digital Link URI serving as the product's primary identifier — which is exactly what the UNTP envelope's `credentialSubject.id` carries. Declaring it again inside `characteristics` gives one product two identifiers and invites a producer to fill both. Steel's hand-authored example already omitted it while the schema still declared it; this makes that implicit judgement explicit.",
     "batteryUniqueIdentifier": "A GS1 Digital Link URI serving as the product's primary identifier — which is exactly what the UNTP envelope's `credentialSubject.id` carries. Declaring it again inside `characteristics` gives one product two identifiers and invites a producer to fill both. Steel's hand-authored example already omitted it while the schema still declared it; this makes that implicit judgement explicit.",
-    "globalUniqueId": "A GS1 Digital Link URI serving as the product's primary identifier — which is exactly what the UNTP envelope's `credentialSubject.id` carries. Declaring it again inside `characteristics` gives one product two identifiers and invites a producer to fill both. Steel's hand-authored example already omitted it while the schema still declared it; this makes that implicit judgement explicit."
+    "globalUniqueId": "A GS1 Digital Link URI serving as the product's primary identifier — which is exactly what the UNTP envelope's `credentialSubject.id` carries. Declaring it again inside `characteristics` gives one product two identifiers and invites a producer to fill both. Steel's hand-authored example already omitted it while the schema still declared it; this makes that implicit judgement explicit.",
+    "authorizedRepresentative": "American spelling of `authorisedRepresentative`, used only by the construction template. Same concept — the EU authorised representative — so it takes the same envelope path. Left undecided it stayed a `characteristics` property, which meant one category modelled an economic operator as product data while every other category put it on the envelope."
   },
   "coinedDespiteHint": {
     "_note": "Name-matched an external vocabulary but must still be coined, each for a stated reason. Recording WHY prevents a future pass from 'fixing' these into a reuse that does not hold.",

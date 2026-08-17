@@ -17,7 +17,7 @@
 //
 // Usage: node scripts/generate-examples.mjs [--out <dir>]
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -236,6 +236,28 @@ const outDir = (() => {
 })();
 
 for (const d of ["examples", "mapping"]) mkdirSync(join(outDir, d), { recursive: true });
+
+// Prune retired categories — same reasoning as generate.mjs: this script only
+// wrote files, so a split or removal left a dead category's example and mapping
+// in outDir to be copied back into the published profile by the next `cp`.
+const liveCategories = new Set(
+  readdirSync(templatesDir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => basename(f, ".json"))
+    .filter((c) => !NON_CATEGORY.has(c)),
+);
+for (const [dir, pre, suf] of [["examples", "", ".vc.json"], ["mapping", "MAPPING-", ".md"]]) {
+  const full = join(outDir, dir);
+  if (!existsSync(full)) continue;
+  for (const file of readdirSync(full)) {
+    if (!file.startsWith(pre) || !file.endsWith(suf)) continue;
+    const cat = file.slice(pre.length, file.length - suf.length);
+    if (!liveCategories.has(cat)) {
+      rmSync(join(full, file));
+      console.log(`  pruned stale ${dir}/${file} (no template)`);
+    }
+  }
+}
 
 const rows = [];
 for (const file of readdirSync(templatesDir).filter((f) => f.endsWith(".json")).sort()) {

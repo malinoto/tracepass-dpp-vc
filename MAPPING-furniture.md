@@ -26,9 +26,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `productName` | CELEX `32023R0988` | Art. 9(5) |
+| `productName` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — product identification |
 | `productModel` | CELEX `32024R1781` | Art. 9(2) |
-| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
+| `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
 | `productCategory` | CELEX `32024R1781` | — |
 | `countryOfManufacture` | CELEX `32024R1781` | Art. 9(2) |
 | `dateOfManufacture` | CELEX `32024R1781` | Art. 9(2) |
@@ -40,19 +40,19 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `postConsumerRecycledContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `preConsumerRecycledContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `renewableMaterialContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
-| `woodSpecies` | CELEX `32023R1115` | Art. 9(1)(a) |
-| `forestCertificationScheme` | CELEX `32023R1115` | — |
+| `woodSpecies` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
+| `forestCertificationScheme` | CELEX `32023R1115` | FSC / PEFC are voluntary certification schemes; EUDR mandates due diligence, not certification |
 | `chainOfCustodyCertificate` | — | — |
-| `countryOfHarvest` | CELEX `32023R1115` | Art. 9(1)(d) |
-| `deforestationFreeDeclaration` | CELEX `32023R1115` | Art. 3 |
-| `geolocationOfHarvest` | CELEX `32023R1115` | Art. 9(1)(d) |
-| `svhcCandidateListSubstances` | CELEX `32006R1907` | Art. 33 |
-| `formaldehydeEmissionClass` | CELEX `32023R1464` | REACH Annex XVII entry 77 |
-| `formaldehydeEmissionValueMgM3` | CELEX `32023R1464` | REACH Annex XVII entry 77 |
-| `vocEmissionClass` | CELEX `32010R0066` | — |
+| `countryOfHarvest` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
+| `deforestationFreeDeclaration` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
+| `geolocationOfHarvest` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
+| `svhcCandidateListSubstances` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name |
+| `formaldehydeEmissionClass` | CELEX `32023R1464` | REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3) |
+| `formaldehydeEmissionValueMgM3` | CELEX `32023R1464` | REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3) |
+| `vocEmissionClass` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
 | `totalVocEmissionUgM3` | EN 16516 (determination of emissions into indoor air) | — |
-| `flameRetardantSubstances` | CELEX `32019R1021` | Annex I |
-| `pbdeContentMgKg` | CELEX `32019R1021` | Annex I (as amended by 32025R1482) |
+| `flameRetardantSubstances` | CELEX `32019R1021` | POPs Reg. (EU) 2019/1021 Annex I — market restriction |
+| `pbdeContentMgKg` | CELEX `32019R1021` | POPs Reg. (EU) 2019/1021 Annex I (as amended by Del. Reg. (EU) 2025/1482) — unintentional trace limit 10 mg/kg |
 | `biocidesUsed` | CELEX `32012R0528` | — |
 | `applicableDurabilityStandard` | EN durability/strength test standards (named per product family) | — |
 | `durabilityTestLevel` | — | — |
@@ -61,12 +61,12 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `expectedProductLifetimeYears` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `warrantyPeriodYears` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `repairabilityScore` | CELEX `32024R1781` | Art. 7(2)(a) |
-| `foamType` | CELEX `32010R0066` | — |
-| `foamWeightKg` | CELEX `32010R0066` | — |
+| `foamType` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
+| `foamWeightKg` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
 | `foamDensityKgM3` | — | — |
 | `springCount` | — | — |
 | `springType` | — | — |
-| `mattressCoverRemovable` | CELEX `32010R0066` | — |
+| `mattressCoverRemovable` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
 | `firmnessRating` | — | — |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `carbonFootprintMethodology` | CELEX `32024R1781` | — |
@@ -85,12 +85,12 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `declarationOfConformityUrl` | CELEX `32023R0988` | Art. 9 |
 | `euEcolabelLicense` | CELEX `32010R0066` | — |
 | `flammabilityTestStandard` | — | — |
-| `reachCompliance` | CELEX `32006R1907` | — |
+| `reachCompliance` | CELEX `32006R1907` | REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records |
 | `scipNotificationNumber` | CELEX `32008L0098` | Art. 9(1)(i) |
 | `intendedUse` | — | — |
 | `careInstructions` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `installationInstructionsUrl` | CELEX `32023R0988` | — |
-| `safetyWarnings` | CELEX `32023R0988` | Art. 9(7) |
+| `safetyWarnings` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — warnings and safety information, where the product's risks require them |
 | `supplyChainActors` | CELEX `32024R1781` | Art. 9(2) |
 | `dueDiligenceStatementUrl` | CELEX `32023R1115` | — |
 | `dppSchemaVersion` | CELEX `32024R1781` | — |

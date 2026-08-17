@@ -1,6 +1,6 @@
 # Battery DPP — field-to-vocabulary mapping
 
-Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 111 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 113 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -81,8 +81,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `initialInternalResistanceCell` | CELEX `32023R1542` | Annex XIII 1(o) |
 | `initialInternalResistanceModule` | CELEX `32023R1542` | Annex XIII 1(o) |
 | `initialSelfDischargeRate` | CELEX `32023R1542` | Art. 77 |
-| `batteryEnergyTotal` | CELEX `32023R1542` | Art. 77 |
-| `energyDensity` | CELEX `32023R1542` | Art. 77 |
+| `batteryEnergyTotal` | — | — |
+| `energyDensity` | — | — |
 | `expectedLifetimeCycles` | CELEX `32023R1542` | Annex XIII 1(j) |
 | `expectedLifetimeYears` | CELEX `32023R1542` | Annex XIII 4(a) |
 | `expectedLifetimeReferenceConditions` | CELEX `32023R1542` | Annex XIII 1(j) |
@@ -91,8 +91,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `temperatureRangeIdleMax` | CELEX `32023R1542` | Annex XIII 1(l) |
 | `cRateRelevantCycleLifeTest` | CELEX `32023R1542` | Annex XIII 1(p) |
 | `commercialWarrantyPeriod` | CELEX `32023R1542` | Annex XIII 1(m) |
-| `numberOfCells` | CELEX `32023R1542` | Art. 77 |
-| `cellType` | CELEX `32023R1542` | Art. 77 |
+| `numberOfCells` | — | — |
+| `cellType` | — | — |
 | `stateOfHealth` | CELEX `32023R1542` | Annex XIII 4(b) |
 | `stateOfCertifiedEnergy` | CELEX `32023R1542` | Annex XIII 4(b) |
 | `remainingCapacity` | CELEX `32023R1542` | Annex XIII 4(b) |
@@ -105,6 +105,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `roundTripEfficiencyFade` | CELEX `32023R1542` | Annex XIII 4(a) |
 | `evolutionOfSelfDischargeRate` | CELEX `32023R1542` | Annex XIII 4(b) |
 | `numberOfFullEquivalentChargingCycles` | CELEX `32023R1542` | Annex XIII 4(d) |
+| `capacityThroughput` | — | — |
+| `energyThroughput` | — | — |
 | `numberOfChargingEvents` | CELEX `32023R1542` | Annex XIII 4(d) |
 | `dateOfServiceEntry` | CELEX `32023R1542` | Art. 77 |
 | `negativeEvents` | CELEX `32023R1542` | Annex XIII 4(d) |

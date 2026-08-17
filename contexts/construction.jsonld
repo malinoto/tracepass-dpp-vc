@@ -22,9 +22,6 @@
         "@id": "https://tracepass.eu/voc/dpp/serialNumber",
         "@type": "xsd:string"
       },
-      "authorizedRepresentative": {
-        "@id": "https://tracepass.eu/voc/dpp/authorizedRepresentative"
-      },
       "placeOfManufacture": {
         "@id": "https://tracepass.eu/voc/dpp/placeOfManufacture",
         "@type": "xsd:string"

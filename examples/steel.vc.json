@@ -130,7 +130,7 @@
       "calculationMethodology": "ISO_14067",
       "thirdPartyVerification": {
         "verified": true,
-        "verifierName": "TÜV Rheinland Cert GmbH",
+        "verifierName": "Example Certification GmbH",
         "accreditationId": "DE-V-0042",
         "standard": "ISO 14065"
       },

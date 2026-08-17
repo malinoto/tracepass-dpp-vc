@@ -37,22 +37,22 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `productModel` | CELEX `32024R1781` | Art. 9(2) |
 | `batchLotNumber` | CELEX `32024R1781` | Art. 9(2) |
 | `serialNumber` | CELEX `32024R1781` | Art. 9(2) |
-| `taricCode` | CELEX `32024R1781` | Art. 9(2) |
+| `taricCode` | CELEX `32024R1781` | Reg. (EU) 952/2013 (UCC) — customs classification declared by the declarant at import |
 | `productCategory` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingDate` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingCountry` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingPlant` | CELEX `32024R1781` | Art. 9(2) |
-| `euDeclarationOfConformity` | CELEX `32024R1781` | Art. 9(2) |
-| `ceMarking` | CELEX `32024R1781` | Art. 16-17 |
+| `euDeclarationOfConformity` | CELEX `32024R1781` | RoHS Dir. 2011/65/EU Art. 13 + EMC Dir. 2014/30/EU Art. 15 — DoC drawn up and kept, produced on request |
+| `ceMarking` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 15 + EMC Dir. 2014/30/EU Art. 16 — CE marking affixed to the product |
 | `notifiedBodyId` | CELEX `32024R1781` | Art. 9(2) |
-| `technicalDocumentationUrl` | CELEX `32024R1781` | Art. 9(2) |
-| `userManualUrl` | CELEX `32024R1781` | Art. 9(2) |
+| `technicalDocumentationUrl` | CELEX `32024R1781` | RoHS Dir. 2011/65/EU Art. 7(b) + Annex VI — technical documentation kept 10 years, produced on request |
+| `userManualUrl` | CELEX `32024R1781` | GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them |
 | `safetyInstructionsUrl` | CELEX `32024R1781` | Art. 9(2) |
 | `durabilityClass` | CELEX `32024R1781` | Art. 7 |
 | `repairabilityClass` | CELEX `32024R1781` | Art. 7 |
 | `repairabilityIndex` | CELEX `32023R1670` | Art. 7 |
-| `energyEfficiencyClass` | CELEX `32024R1781` | Art. 7 |
-| `annualEnergyConsumption` | CELEX `32024R1781` | Art. 7 |
+| `energyEfficiencyClass` | CELEX `32024R1781` | Reg. (EU) 2017/1369 Arts. 3(1) and 4 — physical energy label supplied with the product and EPREL registration |
+| `annualEnergyConsumption` | CELEX `32024R1781` | Reg. (EU) 2017/1369 Arts. 12 and 4 — product information sheet registered in EPREL |
 | `waterConsumption` | CELEX `32024R1781` | Art. 7 |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7 |
 | `carbonFootprintClass` | CELEX `32024R1781` | Art. 7 |
@@ -63,7 +63,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `batteryEndurancePerCycle` | CELEX `32024R1781` | Annex V |
 | `batteryEnduranceCycles` | CELEX `32024R1781` | Annex V |
 | `ratedBatteryCapacity` | CELEX `32024R1781` | Annex V |
-| `batteryUserReplaceable` | CELEX `32023R1542` | Batteries Reg (EU) 2023/1542 Art. 11 |
+| `batteryUserReplaceable` | CELEX `32023R1542` | Reg. (EU) 2023/1542 Art. 11 — removability and replaceability, for products incorporating a portable battery, from 18 February 2027 |
 | `repeatedFreeFallReliabilityClass` | CELEX `32024R1781` | Annex V |
 | `ipRating` | CELEX `32024R1781` | Annex V |
 | `disassemblyDepthScore` | CELEX `32024R1781` | Annex V |
@@ -89,32 +89,32 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `firmwareAccessForRepairers` | CELEX `32024R1781` | Art. 10 |
 | `dataWipeFunction` | CELEX `32024R1781` | Art. 10 |
 | `dataTransferSupport` | CELEX `32024R1781` | Art. 10 |
-| `psuEfficiency10` | CELEX `32024R1781` | Annex II |
-| `psuEfficiency20` | CELEX `32024R1781` | Annex II |
-| `psuEfficiency50` | CELEX `32024R1781` | Annex II |
-| `psuEfficiency100` | CELEX `32024R1781` | Annex II |
-| `psuPowerFactor` | CELEX `32024R1781` | Annex II |
-| `psuRatedOutputPower` | CELEX `32024R1781` | Annex II |
-| `idleStatePower` | CELEX `32024R1781` | Annex II |
-| `activeStateEfficiency` | CELEX `32024R1781` | Annex II |
-| `operatingConditionsClass` | CELEX `32024R1781` | Annex II |
-| `operatingTemperatureRange` | CELEX `32024R1781` | Annex II |
-| `productType` | CELEX `32024R1781` | Annex II |
-| `processorSockets` | CELEX `32024R1781` | Annex II |
-| `installedProcessors` | CELEX `32024R1781` | Annex II |
-| `memoryModules` | CELEX `32024R1781` | Annex II |
-| `totalMemory` | CELEX `32024R1781` | Annex II |
-| `storageDevices` | CELEX `32024R1781` | Annex II |
-| `totalStorageCapacity` | CELEX `32024R1781` | Annex II |
-| `powerSupplyUnits` | CELEX `32024R1781` | Annex II |
-| `expansionSlots` | CELEX `32024R1781` | Annex II |
-| `dataStorageRemovable` | CELEX `32024R1781` | Annex II |
-| `memoryRemovable` | CELEX `32024R1781` | Annex II |
-| `processorRemovable` | CELEX `32024R1781` | Annex II |
-| `expansionCardsRemovable` | CELEX `32024R1781` | Annex II |
-| `psuRemovable` | CELEX `32024R1781` | Annex II |
-| `secureDataDeletion` | CELEX `32024R1781` | Annex II |
-| `firmwareUpdateSupport` | CELEX `32024R1781` | Annex II |
+| `psuEfficiency10` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `psuEfficiency20` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `psuEfficiency50` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `psuEfficiency100` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `psuPowerFactor` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `psuRatedOutputPower` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `idleStatePower` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `activeStateEfficiency` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `operatingConditionsClass` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `operatingTemperatureRange` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `productType` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `processorSockets` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `installedProcessors` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `memoryModules` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `totalMemory` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `storageDevices` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `totalStorageCapacity` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `powerSupplyUnits` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `expansionSlots` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `dataStorageRemovable` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `memoryRemovable` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `processorRemovable` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `expansionCardsRemovable` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `psuRemovable` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `secureDataDeletion` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
+| `firmwareUpdateSupport` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
 | `ratedCapacity` | CELEX `32024R1781` | Annex V |
 | `energyEfficiencyIndex` | CELEX `32024R1781` | Annex V |
 | `energyConsumptionPer100Cycles` | CELEX `32024R1781` | Annex V |
@@ -141,23 +141,23 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `freezingCapacity` | CELEX `32024R1781` | Annex V |
 | `temperatureRiseTime` | CELEX `32024R1781` | Annex V |
 | `refrigeratorOffModePower` | CELEX `32024R1781` | Annex V |
-| `rohsCompliant` | CELEX `32011L0065` | RoHS Dir 2011/65/EU Art. 4(1) |
+| `rohsCompliant` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 4(1) — substance restriction evidenced through the DoC and CE marking |
 | `rohsDeclaration` | CELEX `32024R1781` | Art. 4 |
-| `leadContent` | CELEX `32024R1781` | Annex II |
-| `mercuryContent` | CELEX `32024R1781` | Annex II |
-| `cadmiumContent` | CELEX `32024R1781` | Annex II |
-| `hexavalentChromiumContent` | CELEX `32024R1781` | Annex II |
-| `pbbContent` | CELEX `32024R1781` | Annex II |
-| `pbdeContent` | CELEX `32024R1781` | Annex II |
-| `dehpContent` | CELEX `32024R1781` | Annex II |
-| `bbpContent` | CELEX `32024R1781` | Annex II |
-| `dbpContent` | CELEX `32024R1781` | Annex II |
-| `dibpContent` | CELEX `32024R1781` | Annex II |
-| `rohsExemptionsApplied` | CELEX `32024R1781` | Annex III |
-| `substancesOfConcern` | CELEX `32006R1907` | REACH Reg 1907/2006 Art. 33(1); WFD Dir 2008/98 Art. 9(1)(i) (SCIP) |
+| `leadContent` | CELEX `32011L0065` | Annex II |
+| `mercuryContent` | CELEX `32011L0065` | Annex II |
+| `cadmiumContent` | CELEX `32011L0065` | Annex II |
+| `hexavalentChromiumContent` | CELEX `32011L0065` | Annex II |
+| `pbbContent` | CELEX `32011L0065` | Annex II |
+| `pbdeContent` | CELEX `32011L0065` | Annex II |
+| `dehpContent` | CELEX `32011L0065` | Annex II |
+| `bbpContent` | CELEX `32011L0065` | Annex II |
+| `dbpContent` | CELEX `32011L0065` | Annex II |
+| `dibpContent` | CELEX `32011L0065` | Annex II |
+| `rohsExemptionsApplied` | CELEX `32011L0065` | Annex III |
+| `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
 | `scipNotificationId` | CELEX `32024R1781` | Art. 9(1)(i) |
-| `svhcPresent` | CELEX `32006R1907` | REACH Reg 1907/2006 Art. 33(1) |
-| `containsPermanentMagnets` | CELEX `32024R1781` | Art. 27 |
+| `svhcPresent` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
+| `containsPermanentMagnets` | CELEX `32024R1781` | Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet information, applicable from 24 May 2029 for covered categories |
 | `magnetTotalWeight` | CELEX `32024R1781` | Art. 27 |
 | `magnetLocation` | CELEX `32024R1781` | Art. 27 |
 | `magnetChemicalComposition` | CELEX `32024R1781` | Art. 27 |
@@ -177,13 +177,13 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `recycledRareEarth` | CELEX `32024R1781` | Art. 27 |
 | `postConsumerRecycledShare` | CELEX `32024R1781` | Art. 7 |
 | `preConsumerRecycledShare` | CELEX `32024R1781` | Art. 7 |
-| `weeeCategory` | CELEX `32024R1781` | Annex III |
+| `weeeCategory` | CELEX `32012L0019` | Annex III |
 | `productWeight` | CELEX `32024R1781` | Annex X |
 | `dismantlingInstructions` | CELEX `32024R1781` | Art. 15 |
 | `recyclableComponentsList` | CELEX `32024R1781` | Art. 15 |
 | `hazardousComponentsList` | CELEX `32024R1781` | Art. 15 |
 | `materialComposition` | CELEX `32024R1781` | Art. 15 |
-| `crossedOutWheelieBinMarking` | CELEX `32012L0019` | WEEE Dir 2012/19/EU Art. 14(4) + Annex IX |
+| `crossedOutWheelieBinMarking` | CELEX `32012L0019` | WEEE Dir. 2012/19/EU Art. 14(4) + Annex IX — crossed-out wheeled bin symbol marked on the product |
 | `dppIssueDate` | CELEX `32024R1781` | Art. 9 |
 | `dppLastUpdated` | CELEX `32024R1781` | Art. 9 |
 | `dppExpirationDate` | CELEX `32024R1781` | Art. 9 |
@@ -191,6 +191,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `dataCarrierReference` | CELEX `32024R1781` | Art. 9(3) |
 | `identifierStandard` | CELEX `32024R1781` | Art. 9(2) |
 | `accessLevel` | CELEX `32024R1781` | Art. 10 |
-| `ceMarkingStatus` | CELEX `32024R1781` | Art. 16-17 |
+| `ceMarkingStatus` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 15 + EMC Dir. 2014/30/EU Art. 16 — CE marking affixed to the product |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

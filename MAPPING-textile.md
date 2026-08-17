@@ -22,17 +22,17 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `modelNumber` | CELEX `32023R0988` | Art. 9(5) |
-| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
+| `modelNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
+| `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
 | `serialNumber` | CELEX `32024R1781` | Art. 9(2) |
-| `euResponsiblePerson` | CELEX `32023R0988` | Art. 16 |
-| `productName` | CELEX `32023R0988` | Art. 9(5) |
+| `euResponsiblePerson` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 16 — an EU-established responsible economic operator must EXIST |
+| `productName` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — product identification |
 | `productCategory` | CELEX `32024R1781` | Art. 9(2) |
 | `productDescription` | CELEX `32024R1781` | Art. 9(2) |
-| `fiberComposition` | CELEX `32011R1007` | Arts. 9(1), 14(1), 16 |
+| `fiberComposition` | CELEX `32011R1007` | Reg. (EU) 1007/2011 Arts. 9(1), 14(1), 16 — a durable, legible label physically attached to the product, in the language of the Member State |
 | `recycledContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `careInstructions` | CELEX `32024R1781` | Art. 7(2) |
-| `substancesOfConcern` | CELEX `32006R1907` | Art. 33 |
+| `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name |
 | `certifications` | CELEX `32024R1781` | Art. 9(2) |
 | `countryOfManufacture` | CELEX `32024R1781` | Art. 9(2) |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(a) |

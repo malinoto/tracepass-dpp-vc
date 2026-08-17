@@ -36,14 +36,6 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
     },
-    "authorizedRepresentative": {
-      "type": "object",
-      "title": "Authorized Representative",
-      "description": "Authorized representative within the EU, if applicable",
-      "x-regulation": "32024R3110",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
-      "x-iri": "https://tracepass.eu/voc/dpp/authorizedRepresentative"
-    },
     "placeOfManufacture": {
       "type": "string",
       "title": "Place of Manufacture",
