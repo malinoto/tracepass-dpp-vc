@@ -10,8 +10,8 @@
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Extends](https://img.shields.io/badge/extends-UNTP%20DPP%20v0.7.0-orange)](https://untp.unece.org/docs/specification/DigitalProductPassport)
-[![Categories](https://img.shields.io/badge/categories-12-informational)](./MAPPING-steel.md)
-[![Fields](https://img.shields.io/badge/properties-868-informational)](#status)
+[![Categories](https://img.shields.io/badge/categories-13-informational)](./MAPPING-steel.md)
+[![Fields](https://img.shields.io/badge/properties-928-informational)](#status)
 
 Maintained by **[TracePass](https://www.tracepass.eu)** · [Platform](https://app.tracepass.eu) · [Field specs](https://github.com/malinoto/tracepass-dpp-schemas)
 
@@ -135,16 +135,25 @@ owner, which is the honest state of the art for machine-readable EU product-pass
 ## Status
 
 **All thirteen categories ship a context, a schema, a worked example and a mapping
-document** — 868 `characteristics` properties in total. `node scripts/validate.mjs`
+document** — 928 `characteristics` properties in total. `node scripts/validate.mjs`
 checks every one: schema and context agree on the property set, each context term
-carries an `@id`, and each example satisfies its own schema.
+carries an `@id`, and each example satisfies its own schema. It also re-derives every
+count published below from the artefacts and fails if this page has drifted from them.
+
+Counted as **properties** (a key recurring in two categories counts twice):
 
 | | |
 |---|---|
-| Properties | 929 across 13 categories |
-| Citing an EU instrument or standard | 834 (90%) |
+| Properties | 928 across 13 categories |
+| Citing an EU instrument or standard | 833 (90%) |
 | Carrying a verified QUDT unit IRI | 231 |
-| Carried by the UNTP envelope instead | 30 |
+
+Counted as **distinct keys**, decided once and applied to every category:
+
+| | |
+|---|---|
+| Carried by the UNTP envelope, so absent from `characteristics` | 27 |
+| Owned by a named external standard rather than an EU instrument | 30 |
 
 Every coined term resolves. `https://tracepass.eu/voc/dpp/<term>` returns a SKOS concept
 with a definition and a named owner — the EU instrument that defines the concept, with a
@@ -158,10 +167,23 @@ by hand and recorded with its reasoning in `scripts/decisions.json` — which co
 external vocabulary already owns, which belong to the UNTP envelope rather than to
 `characteristics`, and which are genuinely ours to coin. Each category's worked example
 was authored by hand against a real product, so the numbers are internally consistent
-rather than merely well-typed. What has **not** happened is a field-by-field human read of
-all 868 properties: the mechanical majority — coin the term, cite the instrument the
-template already records — was spot-checked, not exhaustively reviewed. That sampling
-found real defects, so treat the citations as good but not audited.
+rather than merely well-typed.
+
+**This profile asserts no law of its own.** Every `x-regulation` is copied verbatim from
+the field specification in
+[tracepass-dpp-schemas](https://github.com/malinoto/tracepass-dpp-schemas); no citation is
+authored here. Those specifications carry their own citation audit, which checks that a
+field marked required is not required under an instrument that mandates nothing, that the
+prose article and the CELEX name the same instrument, and that no field cites a provision
+that does not exist. Its current state is clean on those checks.
+
+What that audit **cannot** check is whether a field cites a real, correctly-named,
+operative instrument that is nonetheless not the one obliging that particular datum. Only
+a field-by-field human read against primary text closes that, and it has not been done for
+all 928 properties: the mechanical majority — coin the term, cite the instrument the
+specification already records — was spot-checked, not exhaustively reviewed, and that
+sampling found real defects. So: **structurally validated and audited for the defects a
+machine can name, not exhaustively reviewed by a lawyer.** Cite it accordingly.
 
 ## Related
 
