@@ -105,7 +105,9 @@ const claims = [
   ["qudt row", `| Carrying a verified QUDT unit IRI | ${totals.qudt} |`],
   ["envelope row", `\`characteristics\` | ${Object.keys(decisions.envelope).length} |`],
   ["standards row", `instrument | ${Object.keys(decisions.standards).length} |`],
-  ["audit caveat", `all ${totals.properties} properties`],
+  // The caveat no longer quotes a property count — the adjudication is complete, so
+  // there is no "not done for all N" left to state. Pin the claim that replaced it.
+  ["audit caveat", "adjudicated field by field against primary text"],
 ];
 for (const [label, needle] of claims) {
   if (!readme.includes(needle)) fail(`README ${label} is stale — expected to find: ${needle}`);

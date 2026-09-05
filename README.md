@@ -177,13 +177,20 @@ field marked required is not required under an instrument that mandates nothing,
 prose article and the CELEX name the same instrument, and that no field cites a provision
 that does not exist. Its current state is clean on those checks.
 
-What that audit **cannot** check is whether a field cites a real, correctly-named,
-operative instrument that is nonetheless not the one obliging that particular datum. Only
-a field-by-field human read against primary text closes that, and it has not been done for
-all 928 properties: the mechanical majority — coin the term, cite the instrument the
-specification already records — was spot-checked, not exhaustively reviewed, and that
-sampling found real defects. So: **structurally validated and audited for the defects a
-machine can name, not exhaustively reviewed by a lawyer.** Cite it accordingly.
+Beyond those machine checks, every field in the specifications that asserts law without
+being marked required has now been adjudicated by hand against primary text, and carries a
+written note saying where the obligation actually lands — because for most of these fields
+it is **not** the passport. The recurring answer is a physical label, a held technical
+file, a database notification, an on-request disclosure, a design requirement, or a duty
+that binds an importer rather than the manufacturer. Reg (EU) 2023/1542 Annex XIII is the
+one place in the corpus where the law genuinely mandates the data *in the passport*.
+
+What no check can settle is whether a field cites a real, correctly-named, operative
+instrument that is nonetheless not the one obliging that particular datum — a question
+about the world rather than about the data. The reasoning behind each call is now written
+down and arguable rather than absent, which is the honest bar: **structurally validated,
+adjudicated field by field against primary text, and not a substitute for your own legal
+advice.** Cite it accordingly.
 
 ## Related
 
