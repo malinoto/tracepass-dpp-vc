@@ -50,8 +50,8 @@
       "type": "string",
       "title": "TARIC Code",
       "description": "EU customs tariff code for the product",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32013R0952",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32013R0952",
       "x-provision": "Reg. (EU) 952/2013 (UCC) — customs classification declared by the declarant at import",
       "x-iri": "https://tracepass.eu/voc/dpp/taricCode"
     },
@@ -106,8 +106,8 @@
       "type": "object",
       "title": "EU Declaration of Conformity",
       "description": "URL to the EU Declaration of Conformity document",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32011L0065",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "RoHS Dir. 2011/65/EU Art. 13 + EMC Dir. 2014/30/EU Art. 15 — DoC drawn up and kept, produced on request",
       "x-iri": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
     },
@@ -133,8 +133,8 @@
       "type": "string",
       "title": "Technical Documentation URL",
       "description": "Link to the full technical documentation",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32011L0065",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "RoHS Dir. 2011/65/EU Art. 7(b) + Annex VI — technical documentation kept 10 years, produced on request",
       "x-iri": "https://tracepass.eu/voc/dpp/technicalDocumentationUrl"
     },
@@ -142,8 +142,8 @@
       "type": "string",
       "title": "User Manual URL",
       "description": "Link to the product user manual",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them",
       "x-iri": "https://tracepass.eu/voc/dpp/userManualUrl"
     },
@@ -213,8 +213,8 @@
         "F",
         "G"
       ],
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32017R1369",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R1369",
       "x-provision": "Reg. (EU) 2017/1369 Arts. 3(1) and 4 — physical energy label supplied with the product and EPREL registration",
       "x-iri": "https://tracepass.eu/voc/dpp/energyEfficiencyClass"
     },
@@ -224,8 +224,8 @@
       "description": "Energy consumed per year under standard conditions",
       "x-unit": "kWh",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32017R1369",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R1369",
       "x-provision": "Reg. (EU) 2017/1369 Arts. 12 and 4 — product information sheet registered in EPREL",
       "x-iri": "https://tracepass.eu/voc/dpp/annualEnergyConsumption"
     },
@@ -1333,8 +1333,8 @@
       "type": "boolean",
       "title": "Contains Permanent Magnets",
       "description": "Whether the product contains permanent magnets weighing > 0.2 kg",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32024R1252",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1252",
       "x-provision": "Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet information, applicable from 24 May 2029 for covered categories",
       "x-iri": "https://tracepass.eu/voc/dpp/containsPermanentMagnets"
     },

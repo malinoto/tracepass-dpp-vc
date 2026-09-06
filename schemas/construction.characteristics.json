@@ -23,8 +23,8 @@
       "type": "string",
       "title": "Batch / Lot Number",
       "description": "Batch or lot number per GS1 AI 10",
-      "x-regulation": "32024R3110",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
@@ -396,8 +396,8 @@
       "type": "string",
       "title": "Installation Instructions",
       "description": "Instructions for proper installation of the construction product",
-      "x-regulation": "32024R3110",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them",
       "x-iri": "https://tracepass.eu/voc/dpp/installationInstructions"
     },
@@ -413,8 +413,8 @@
       "type": "object",
       "title": "Safety Data / Hazardous Substance Labelling",
       "description": "Safety data sheet references and hazardous substance labelling information",
-      "x-regulation": "32024R3110",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyDataLabelling"
     },

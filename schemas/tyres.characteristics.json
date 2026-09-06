@@ -610,8 +610,8 @@
       "description": "Legal minimum tread depth before replacement (EU standard: 1.6mm)",
       "x-unit": "mm",
       "x-unitIri": "http://qudt.org/vocab/unit/MilliM",
-      "x-regulation": "31989L0459",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/31989L0459",
+      "x-regulation": "32014L0045",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32014L0045",
       "x-provision": "Dir. 2014/45/EU Annex I — roadworthiness test requirement on the vehicle in use",
       "x-iri": "https://tracepass.eu/voc/dpp/minimumTreadDepthMm"
     },
@@ -777,8 +777,8 @@
       "type": "boolean",
       "title": "TPMS Compatible",
       "description": "Compatibility with TPMS (Tyre Pressure Monitoring Systems)",
-      "x-regulation": "32009R0661",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R0661",
+      "x-regulation": "32019R2144",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R2144",
       "x-iri": "https://tracepass.eu/voc/dpp/tyrePressureMonitoringCompatible"
     },
     "runFlatCapability": {
