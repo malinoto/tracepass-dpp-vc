@@ -1315,8 +1315,8 @@
       "type": "string",
       "title": "SCIP Notification ID",
       "description": "ECHA SCIP database notification identifier",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-regulation": "32008L0098",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
       "x-provision": "Art. 9(1)(i)",
       "x-iri": "https://tracepass.eu/voc/dpp/scipNotificationId"
     },
