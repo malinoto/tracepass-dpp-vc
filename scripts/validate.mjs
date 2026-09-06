@@ -28,6 +28,25 @@ const categories = readdirSync(join(root, "schemas"))
 
 const totals = { properties: 0, cited: 0, qudt: 0 };
 
+// A property can carry BOTH a machine identifier (`x-regulation`, a CELEX) and a
+// prose note (`x-provision`). When the note names a different instrument than the
+// CELEX, that disagreement is a finding rather than redundancy: it is usually a
+// field whose obligation was adjudicated in prose while the identifier was left
+// as the original, broader inheritance. Nothing else in the pipeline compares the
+// two, and a structural check never will — both halves are individually valid.
+//
+// Reported, never failed. These are inherited from the source templates, so this
+// repo cannot fix them; the list is a standing pointer at what to re-cite upstream.
+const celexForms = (celex) => {
+  const m = /^3(\d{4})[RLD](\d{4})$/.exec(celex ?? "");
+  if (!m) return new Set();
+  const [, year, num] = m;
+  const n = String(Number(num));
+  // Both orderings appear in prose: "(EU) 2024/1781" and "(EEC) 2658/87".
+  return new Set([`${year}/${n}`, `${n}/${year}`, `${n}/${year.slice(2)}`]);
+};
+const provisionMismatches = [];
+
 console.log(`Validating ${categories.length} categories\n`);
 
 for (const cat of categories) {
@@ -79,6 +98,23 @@ for (const cat of categories) {
     }
   }
 
+  for (const k of props) {
+    const p = schema.properties[k];
+    const celex = p["x-regulation"];
+    const prose = p["x-provision"];
+    if (!celex || !prose) continue;
+    const named = new Set(
+      [...prose.matchAll(/\((?:EU|EC|EEC)\)\s*(?:No\s*)?(\d+)\/(\d+)/g)].map(
+        (m) => `${Number(m[1])}/${Number(m[2])}`,
+      ),
+    );
+    if (named.size === 0) continue;
+    const own = celexForms(celex);
+    if (![...named].some((n) => own.has(n))) {
+      provisionMismatches.push({ cat, key: k, celex, named: [...named] });
+    }
+  }
+
   const coined = props.filter((k) => (schema.properties[k]["x-iri"] ?? "").startsWith("https://tracepass.eu/"));
   const cited = props.filter((k) => schema.properties[k]["x-regulation"] || schema.properties[k]["x-standard"]);
   totals.properties += props.length;
@@ -111,6 +147,17 @@ const claims = [
 ];
 for (const [label, needle] of claims) {
   if (!readme.includes(needle)) fail(`README ${label} is stale — expected to find: ${needle}`);
+}
+
+if (provisionMismatches.length) {
+  console.log(
+    `\n  note  ${provisionMismatches.length} propert${provisionMismatches.length === 1 ? "y" : "ies"} ` +
+      `cite an instrument whose prose names a different one.\n` +
+      `        Inherited from the source templates — re-cite there, not here.`,
+  );
+  for (const m of provisionMismatches) {
+    console.log(`          ${m.cat}.${m.key}: ${m.celex} vs ${m.named.join(", ")}`);
+  }
 }
 
 console.log("");

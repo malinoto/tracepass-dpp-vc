@@ -787,6 +787,9 @@
       "type": "string",
       "title": "Usage Instructions",
       "description": "Detailed usage instructions for the product.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex V Part A, point 1(e)",
       "x-iri": "https://tracepass.eu/voc/dpp/usageInstructionsText"
     },
     "intendedUse": {
