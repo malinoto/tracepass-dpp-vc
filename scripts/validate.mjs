@@ -103,11 +103,18 @@ for (const cat of categories) {
     const celex = p["x-regulation"];
     const prose = p["x-provision"];
     if (!celex || !prose) continue;
-    const named = new Set(
-      [...prose.matchAll(/\((?:EU|EC|EEC)\)\s*(?:No\s*)?(\d+)\/(\d+)/g)].map(
+    // Two spellings appear in the prose and both must be matched: the regulation
+    // form "(EU) 2017/1369" and the directive form "Dir. 2011/65/EU", where the
+    // instrument suffix trails instead of leading. Matching only the first misses
+    // every directive cross-reference — which is three of the eleven found.
+    const named = new Set([
+      ...[...prose.matchAll(/\((?:EU|EC|EEC)\)\s*(?:No\s*)?(\d+)\/(\d+)/g)].map(
         (m) => `${Number(m[1])}/${Number(m[2])}`,
       ),
-    );
+      ...[...prose.matchAll(/(\d{1,4})\/(\d{2,4})\/(?:EU|EC|EEC)\b/g)].map(
+        (m) => `${Number(m[1])}/${Number(m[2])}`,
+      ),
+    ]);
     if (named.size === 0) continue;
     const own = celexForms(celex);
     if (![...named].some((n) => own.has(n))) {
