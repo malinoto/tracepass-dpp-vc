@@ -47,6 +47,34 @@ const celexForms = (celex) => {
 };
 const provisionMismatches = [];
 
+// A property in a schema's `required` array tells a consumer the law demands it. Two
+// instruments in this corpus mandate no product data on their own: ESPR (EU) 2024/1781
+// and CPR (EU) 2024/3110 are frameworks that defer every data obligation to a delegated
+// act adopted under ESPR Art. 4 / CPR Art. 75(1) — neither of which is adopted. So a
+// property that is BOTH required AND cited to one of them asserts an obligation nobody
+// has.
+//
+// This is the one check `audit-template-citations` runs against the source templates
+// that this repo can also run: it keys on the CELEX alone, which the `x-regulation`
+// shape carries. Its siblings there cannot port — there is no `kind` discriminator to
+// separate legislation from standards, and no `description` to record whether a citation
+// was verified or merely copied. See the knowledgebase:
+// architecture/vc-profile-is-outside-the-citation-audit.md
+//
+// Note the distinction that matters: creating no passport is NOT the same as mandating
+// no field. REACH and CLP create no DPP yet impose real field-level duties, so a
+// required property citing them is correct. Only framework-deferral instruments belong
+// in this set.
+const FRAMEWORK_ONLY = new Map([
+  ["32024R1781", "ESPR — defers to an Art. 4 delegated act, none adopted"],
+  ["32024R3110", "CPR — defers to the Art. 75(1) delegated act, not adopted"],
+]);
+
+// ESPR Art. 7(2) has exactly three sub-points: (a), (b), (c). Art. 7(5) has its own
+// (a)-(e) list on substances of concern, which is where the confusion comes from.
+// A citation to 7(2)(d) or 7(2)(e) points at nothing.
+const PHANTOM_PROVISION = /7\s*\(\s*2\s*\)\s*\(\s*[de]\s*\)/;
+
 console.log(`Validating ${categories.length} categories\n`);
 
 for (const cat of categories) {
@@ -73,6 +101,24 @@ for (const cat of categories) {
   const props = Object.keys(schema.properties ?? {});
   for (const k of props) if (!termKeys.includes(k)) fail(`${cat}: ${k} in schema but not in context`);
   for (const k of termKeys) if (!props.includes(k)) fail(`${cat}: ${k} in context but not in schema`);
+
+  // No property may be required on the authority of a framework-only instrument, and
+  // none may cite a provision that does not exist.
+  const requiredKeys = new Set(schema.required ?? []);
+  for (const k of props) {
+    const p = schema.properties[k];
+    const why = FRAMEWORK_ONLY.get(p["x-regulation"]);
+    if (why && requiredKeys.has(k)) {
+      fail(
+        `${cat}.${k}: required, but cited to ${p["x-regulation"]} (${why}).\n` +
+          `        Either re-cite to the instrument that actually mandates it, or drop it\n` +
+          `        from "required" and leave the CELEX with no x-provision (anticipated).`,
+      );
+    }
+    if (PHANTOM_PROVISION.test(p["x-provision"] ?? "")) {
+      fail(`${cat}.${k}: cites ESPR ${p["x-provision"]}, which does not exist (Art. 7(2) is (a)-(c) only)`);
+    }
+  }
 
   // The example's characteristics satisfy the schema. Hand-rolled rather than
   // pulling in a validator: the schemas use only type/enum/required/items and

@@ -13,8 +13,7 @@
     "issuerName",
     "issueDate",
     "conformsToArticles",
-    "retentionPeriodYears",
-    "accessTier"
+    "retentionPeriodYears"
   ],
   "properties": {
     "gtin": {
@@ -654,18 +653,18 @@
     "retentionPeriodYears": {
       "type": "number",
       "title": "Data Retention Period (Years)",
-      "description": "Number of years the DPP data must be retained. 5 for single-use, 10 for reusable packaging.",
+      "description": "Number of years the technical documentation and EU declaration of conformity must be kept. 5 for single-use, 10 for reusable packaging.",
       "x-unit": "years",
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Art. 10",
+      "x-regulation": "32025R0040",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
+      "x-provision": "Art. 15(3)",
       "x-iri": "https://tracepass.eu/voc/dpp/retentionPeriodYears"
     },
     "accessTier": {
       "type": "string",
       "title": "Access Tier",
-      "description": "Default data access tier for the data carrier content.",
+      "description": "Default data access tier for the data carrier content. Anticipated: ESPR Art. 10(1)(g) defers access rights to the applicable delegated act adopted pursuant to Art. 4, which is not yet adopted.",
       "enum": [
         "public",
         "restricted",
@@ -673,7 +672,6 @@
       ],
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Art. 10",
       "x-iri": "https://tracepass.eu/voc/dpp/accessTier"
     },
     "emptySpacePercent": {

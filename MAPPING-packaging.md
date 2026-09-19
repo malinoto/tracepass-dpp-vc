@@ -83,8 +83,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `dataCarrierUri` | CELEX `32025R0040` | Art. 12, ESPR Art. 9 |
 | `dataCarrierFormat` | CELEX `32024R1781` | Art. 9 |
 | `dataCarrierEncoding` | CELEX `32024R1781` | Art. 9 |
-| `retentionPeriodYears` | CELEX `32024R1781` | Art. 10 |
-| `accessTier` | CELEX `32024R1781` | Art. 10 |
+| `retentionPeriodYears` | CELEX `32025R0040` | Art. 15(3) |
+| `accessTier` | CELEX `32024R1781` | anticipated — Art. 10(1)(g) defers to an Art. 4 delegated act |
 | `emptySpacePercent` | CELEX `32025R0040` | Art. 10 |
 | `maxAllowedEmptySpacePercent` | CELEX `32025R0040` | Art. 10 |
 | `weightOptimised` | CELEX `32025R0040` | Art. 10 |
