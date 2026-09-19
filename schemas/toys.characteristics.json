@@ -51,6 +51,8 @@
       "type": "string",
       "title": "GTIN / Barcode",
       "description": "Global Trade Item Number (EAN/UPC barcode) for the product",
+      "x-standard": "GS1 Digital Link",
+      "x-sourceKind": "scheme",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "productImageUrl": {

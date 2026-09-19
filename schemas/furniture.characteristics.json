@@ -188,6 +188,8 @@
       "type": "string",
       "title": "Chain of Custody Certificate",
       "description": "Chain of Custody certificate number proving traceability from forest to product",
+      "x-standard": "FSC-STD-40-004; PEFC ST 2002:2020",
+      "x-sourceKind": "scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/chainOfCustodyCertificate"
     },
     "countryOfHarvest": {
@@ -310,12 +312,16 @@
       "type": "string",
       "title": "Durability Test Level",
       "description": "Test severity level passed (e.g. Level 1 = domestic light, Level 2 = domestic general, Level 3 = domestic severe)",
+      "x-standard": "EN 12520:2024",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityTestLevel"
     },
     "testCyclesCompleted": {
       "type": "number",
       "title": "Test Cycles Completed",
       "description": "Number of load/use cycles completed during durability testing",
+      "x-standard": "EN 12520:2024; EN 12521:2023",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/testCyclesCompleted"
     },
     "maximumUserWeightKg": {
@@ -324,6 +330,8 @@
       "description": "Maximum user weight the product is designed for (seating/beds)",
       "x-unit": "kg",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-standard": "EN 12520:2024; EN 1725:2024",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/maximumUserWeightKg"
     },
     "expectedProductLifetimeYears": {
@@ -383,6 +391,8 @@
       "description": "Density of the primary foam layer (kg/m3)",
       "x-unit": "kg/m3",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "x-standard": "EN ISO 845",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/foamDensityKgM3"
     },
     "springCount": {
@@ -410,6 +420,8 @@
       "type": "string",
       "title": "Firmness Rating",
       "description": "Mattress firmness classification",
+      "x-standard": "EN 1957:2012 (mattress testing)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/firmnessRating"
     },
     "carbonFootprint": {
@@ -434,6 +446,8 @@
       "type": "string",
       "title": "Environmental Product Declaration URL",
       "description": "URL to the Environmental Product Declaration (EPD) if available",
+      "x-standard": "EN 15804; ISO 14025",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/environmentalProductDeclarationUrl"
     },
     "energyUsedInManufacturingKwh": {
@@ -565,6 +579,8 @@
       "type": "string",
       "title": "Flammability Test Standard",
       "description": "Fire safety / flammability standard the product meets",
+      "x-standard": "EN 1021-1:2014; EN 1021-2:2014; BS 5852 (UK market)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/flammabilityTestStandard"
     },
     "reachCompliance": {
@@ -589,6 +605,8 @@
       "type": "string",
       "title": "Intended Use",
       "description": "Intended use environment (domestic, commercial, outdoor, etc.)",
+      "x-standard": "EN 12520:2024; EN 16139:2013",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/intendedUse"
     },
     "careInstructions": {

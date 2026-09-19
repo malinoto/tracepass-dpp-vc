@@ -308,6 +308,8 @@
       "type": "object",
       "title": "Recyclability Assessment",
       "description": "Recyclability assessment per EN 15804 Module D",
+      "x-standard": "EN 15804+A2, Module D",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityAssessment"
     },
     "packagingEnvironmentalAnalysis": {

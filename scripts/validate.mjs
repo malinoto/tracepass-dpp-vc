@@ -75,6 +75,39 @@ const FRAMEWORK_ONLY = new Map([
 // A citation to 7(2)(d) or 7(2)(e) points at nothing.
 const PHANTOM_PROVISION = /7\s*\(\s*2\s*\)\s*\(\s*[de]\s*\)/;
 
+// A property citing NOTHING — no CELEX, no standard — is allowed, but only where the
+// source templates genuinely name no source either. The profile mirrors those
+// templates; it does not get to be vaguer than them.
+//
+// The failure this guards is silent information LOSS, not a wrong citation. The
+// templates classify a non-legislative source with `kind`
+// (standard / scheme / specification / international / national) and usually name it —
+// EN 10025, FSC-STD-40-004, UNECE Reg. 30/54, the Vienna Convention. Dropping that on
+// the way into this profile leaves a property looking unexamined when upstream knew
+// exactly what backed it, and it understates real citation coverage.
+//
+// `x-standard` carries the named source and `x-sourceKind` the upstream `kind`. The
+// allow-list below is every property whose lack of a source is a considered position:
+//   · the six battery fields are OUR OWN additions — Annex VI Part A has exactly 13
+//     data points and none of them is these, so no instrument or standard names them;
+//   · the five others have upstream sources reading only "Product specification",
+//     a placeholder rather than a source. Writing that into `x-standard` would inflate
+//     the cited count with no information, which is the over-claim this repo avoids.
+// Adding to this list is a claim that nothing names the property. Check upstream first.
+const UNSOURCED_BY_DESIGN = new Set([
+  "battery.batteryEnergyTotal",
+  "battery.energyDensity",
+  "battery.numberOfCells",
+  "battery.cellType",
+  "battery.capacityThroughput",
+  "battery.energyThroughput",
+  "furniture.springCount",
+  "furniture.springType",
+  "tyres.tyreType",
+  "tyres.treadDepthMm",
+  "tyres.runFlatCapability",
+]);
+
 console.log(`Validating ${categories.length} categories\n`);
 
 for (const cat of categories) {
@@ -113,6 +146,14 @@ for (const cat of categories) {
         `${cat}.${k}: required, but cited to ${p["x-regulation"]} (${why}).\n` +
           `        Either re-cite to the instrument that actually mandates it, or drop it\n` +
           `        from "required" and leave the CELEX with no x-provision (anticipated).`,
+      );
+    }
+    if (!p["x-regulation"] && !p["x-standard"] && !UNSOURCED_BY_DESIGN.has(`${cat}.${k}`)) {
+      fail(
+        `${cat}.${k}: cites neither an instrument nor a standard.\n` +
+          `        The source templates classify non-legislative sources with \`kind\` and usually\n` +
+          `        name them — carry that across as x-standard + x-sourceKind. If the template\n` +
+          `        genuinely names nothing, add it to UNSOURCED_BY_DESIGN with the reason.`,
       );
     }
     if (PHANTOM_PROVISION.test(p["x-provision"] ?? "")) {

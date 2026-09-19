@@ -111,6 +111,8 @@
       "type": "object",
       "title": "Steel Grade / Alloy Designation",
       "description": "Steel grade per EN 10027-1 (symbolic name) and EN 10027-2 (numeric), or aluminium alloy per EN 573/EN 1706.",
+      "x-standard": "EN 10027-1/2, EN 573-3, EN 1706",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/steelGradeDesignation"
     },
     "countryOfManufacture": {
@@ -154,6 +156,8 @@
       "description": "Elemental composition per EN 10204 mill certificate. Weight percentages for each alloying element.",
       "x-unit": "weight_%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-standard": "EN 10204, EN 10025, EN 10088 (stainless)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/chemicalComposition"
     },
     "recycledContentPercentage": {
@@ -215,6 +219,8 @@
       "description": "Minimum yield strength ReH in megapascals, from EN 10204 mill certificate.",
       "x-unit": "MPa",
       "x-unitIri": "http://qudt.org/vocab/unit/MegaPA",
+      "x-standard": "EN 10025, EN 10204",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/yieldStrengthMpa"
     },
     "tensileStrengthMpa": {
@@ -223,6 +229,8 @@
       "description": "Tensile strength Rm in megapascals.",
       "x-unit": "MPa",
       "x-unitIri": "http://qudt.org/vocab/unit/MegaPA",
+      "x-standard": "EN 10204",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/tensileStrengthMpa"
     },
     "elongationPct": {
@@ -231,6 +239,8 @@
       "description": "Elongation at break A5 (%) from tensile test.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-standard": "EN 10204",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/elongationPct"
     },
     "impactEnergy": {
@@ -239,12 +249,16 @@
       "description": "Charpy V-notch impact test results per ISO 148-1.",
       "x-unit": "J",
       "x-unitIri": "http://qudt.org/vocab/unit/J",
+      "x-standard": "EN 10204, ISO 148-1",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/impactEnergy"
     },
     "hardness": {
       "type": "object",
       "title": "Hardness",
       "description": "Hardness test result (Brinell, Rockwell, or Vickers).",
+      "x-standard": "EN 10204",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/hardness"
     },
     "productionRoute": {
@@ -279,6 +293,8 @@
       "type": "string",
       "title": "Heat Number",
       "description": "Steel heat/melt number for traceability to a specific melt.",
+      "x-standard": "EN 10204",
+      "x-sourceKind": "standard",
       "x-iri": "https://ref.gs1.org/voc/hasBatchLotNumber"
     },
     "heatTreatment": {
@@ -296,6 +312,8 @@
         "age_hardened",
         "none"
       ],
+      "x-standard": "EN 10025, EN 10204",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/heatTreatment"
     },
     "electricityGridIntensity": {
@@ -602,6 +620,8 @@
       "type": "string",
       "title": "Lifecycle Modules",
       "description": "Covered LCA modules per EN 15804+A2 (e.g. A1-A3, C1-C4, D).",
+      "x-standard": "EN 15804+A2",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/lifecycleModules"
     },
     "declaredUnit": {
@@ -669,24 +689,32 @@
         "3.1",
         "3.2"
       ],
+      "x-standard": "EN 10204:2004",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/inspectionCertificateType"
     },
     "inspectionCertificateUri": {
       "type": "string",
       "title": "Inspection Certificate URI",
       "description": "URI to the EN 10204 mill certificate PDF or structured data.",
+      "x-standard": "EN 10204, ESPR",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/inspectionCertificateUri"
     },
     "responsibleSteelCertification": {
       "type": "object",
       "title": "ResponsibleSteel Certification",
       "description": "ResponsibleSteel site and/or product certification (voluntary, 13 principles, 4 progress levels for decarbonisation).",
+      "x-standard": "Voluntary (ResponsibleSteel International Production Standard)",
+      "x-sourceKind": "scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/responsibleSteelCertification"
     },
     "asiCertification": {
       "type": "object",
       "title": "ASI Certification",
       "description": "Aluminium Stewardship Initiative certification (Performance Standard + Chain of Custody V2.1).",
+      "x-standard": "Voluntary (ASI Performance Standard V3, ASI CoC Standard V2.1)",
+      "x-sourceKind": "scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/asiCertification"
     },
     "euEtsInstallationId": {

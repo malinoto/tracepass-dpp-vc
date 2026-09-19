@@ -472,6 +472,8 @@
       "title": "Eco-Score Value",
       "description": "French eco-score value in milli-points (mPt). Required if selling in France since Oct 2025.",
       "x-unit": "mPt",
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/ecoScoreValue"
     },
     "ecoScoreGrade": {
@@ -485,6 +487,8 @@
         "D",
         "E"
       ],
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/ecoScoreGrade"
     },
     "pefClimateChange": {
@@ -492,6 +496,8 @@
       "title": "PEF Climate Change Impact",
       "description": "Product Environmental Footprint climate change impact in kg CO2 equivalent",
       "x-unit": "kg CO2e",
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/pefClimateChange"
     },
     "pefWaterUse": {
@@ -499,30 +505,40 @@
       "title": "PEF Water Use",
       "description": "Product Environmental Footprint water use impact in cubic meter equivalents",
       "x-unit": "m3 world eq.",
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/pefWaterUse"
     },
     "pefEutrophication": {
       "type": "number",
       "title": "PEF Eutrophication",
       "description": "Product Environmental Footprint eutrophication impact",
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/pefEutrophication"
     },
     "pefResourceDepletion": {
       "type": "number",
       "title": "PEF Resource Depletion",
       "description": "Product Environmental Footprint resource depletion (minerals and metals) impact",
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/pefResourceDepletion"
     },
     "durabilityBonusMalus": {
       "type": "number",
       "title": "Durability Bonus/Malus",
       "description": "Durability bonus or malus adjustment applied in eco-score calculation",
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityBonusMalus"
     },
     "microfiberReleaseCoefficient": {
       "type": "number",
       "title": "Microfiber Release Coefficient",
       "description": "Microfiber release coefficient used in French eco-score calculation",
+      "x-standard": "French AGEC",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/microfiberReleaseCoefficient"
     }
   }

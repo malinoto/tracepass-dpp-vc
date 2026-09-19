@@ -179,6 +179,8 @@
       "description": "Maximum speed in km/h corresponding to speed category symbol",
       "x-unit": "km/h",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloM-PER-HR",
+      "x-standard": "UNECE Reg. 30/54",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/speedRatingKmh"
     },
     "tyreConstruction": {
@@ -195,6 +197,8 @@
           "tube_type"
         ]
       },
+      "x-standard": "UNECE Reg. 30/54",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreConstruction"
     },
     "tyreType": {
@@ -215,6 +219,8 @@
       "description": "Nominal section width in millimetres",
       "x-unit": "mm",
       "x-unitIri": "http://qudt.org/vocab/unit/MilliM",
+      "x-standard": "UNECE Reg. 30/54",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/sectionWidthMm"
     },
     "aspectRatio": {
@@ -223,6 +229,8 @@
       "description": "Aspect ratio (sidewall height as percentage of section width)",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
+      "x-standard": "UNECE Reg. 30/54",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/aspectRatio"
     },
     "rimDiameterInches": {
@@ -231,6 +239,8 @@
       "description": "Nominal rim diameter in inches",
       "x-unit": "inches",
       "x-unitIri": "http://qudt.org/vocab/unit/IN",
+      "x-standard": "UNECE Reg. 30/54",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/rimDiameterInches"
     },
     "treadDepthMm": {
@@ -379,6 +389,8 @@
       "description": "Total distance driven during abrasion test (typically ~8000 km for convoy method)",
       "x-unit": "km",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-standard": "UNECE TFTA methodology",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/testDistanceKm"
     },
     "microplasticsEmissionClass": {
@@ -402,6 +414,8 @@
       "description": "Manufacturer mileage/tread wear warranty in kilometres (if offered)",
       "x-unit": "km",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-standard": "Product specification / commercial warranty",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/mileageWarrantyKm"
     },
     "billOfMaterials": {
@@ -602,6 +616,8 @@
       "type": "number",
       "title": "Treadwear Rating",
       "description": "UTQG Treadwear rating (if applicable, primarily US but widely published)",
+      "x-standard": "US FMVSS 575.104 / informational",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/treadwearRating"
     },
     "minimumTreadDepthMm": {
@@ -632,6 +648,8 @@
       "description": "Recommended maximum tyre age regardless of tread depth",
       "x-unit": "years",
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
+      "x-standard": "Industry recommendation (ETRMA)",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/maxAgeRecommendationYears"
     },
     "retreadable": {
@@ -647,6 +665,8 @@
       "type": "number",
       "title": "Maximum Retread Cycles",
       "description": "Maximum number of retread cycles the casing supports",
+      "x-standard": "UNECE Reg. 108 (C1) / Reg. 109 (C2/C3)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/maximumRetreadCycles"
     },
     "retreadServiceLifeExtensionKm": {
@@ -655,6 +675,8 @@
       "description": "Additional service life per retread cycle in km (for retreadable tyres: ~220,000 km per cycle for truck tyres)",
       "x-unit": "km",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloM",
+      "x-standard": "Industry data (ETRMA/BIPAVER)",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/retreadServiceLifeExtensionKm"
     },
     "recyclabilityPercentage": {
@@ -699,18 +721,24 @@
       "type": "boolean",
       "title": "Pyrolysis Suitability",
       "description": "Whether the tyre is suitable for pyrolysis recycling",
+      "x-standard": "Industry specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/pyrolysisSuitability"
     },
     "devulcanizationSuitability": {
       "type": "boolean",
       "title": "Devulcanization Suitability",
       "description": "Whether the rubber compound is suitable for devulcanization recycling",
+      "x-standard": "Industry specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/devulcanizationSuitability"
     },
     "typeApprovalNumber": {
       "type": "string",
       "title": "Type Approval Number",
       "description": "UNECE type approval number",
+      "x-standard": "UNECE Reg. 30 (C1) / Reg. 54 (C2/C3)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/typeApprovalNumber"
     },
     "euro7Compliance": {
@@ -755,6 +783,8 @@
       "description": "Recommended cold inflation pressure in kPa",
       "x-unit": "kPa",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloPA",
+      "x-standard": "UNECE Reg. 30/54; product specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/recommendedInflationPressureKpa"
     },
     "maximumInflationPressureKpa": {
@@ -763,6 +793,8 @@
       "description": "Maximum permissible inflation pressure in kPa",
       "x-unit": "kPa",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloPA",
+      "x-standard": "UNECE Reg. 30/54",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/maximumInflationPressureKpa"
     },
     "maximumLoadKg": {
@@ -771,6 +803,8 @@
       "description": "Maximum load per tyre in kg (corresponding to load index)",
       "x-unit": "kg",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
+      "x-standard": "UNECE Reg. 30/54",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/maximumLoadKg"
     },
     "tyrePressureMonitoringCompatible": {
@@ -800,6 +834,8 @@
       "type": "string",
       "title": "Storage Instructions",
       "description": "Recommended storage conditions for unused tyres",
+      "x-standard": "Industry recommendation (ETRMA)",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/storageInstructions"
     },
     "dppSchemaVersion": {

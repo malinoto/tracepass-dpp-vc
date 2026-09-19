@@ -189,6 +189,8 @@
       "type": "string",
       "title": "EC Number",
       "description": "European Community number (EINECS/ELINCS) for the substance.",
+      "x-standard": "REACH, SDS Section 3",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/ingredientEcNumber"
     },
     "ingredientReachRegistrationNumber": {
@@ -425,6 +427,8 @@
       "type": "string",
       "title": "Odour",
       "description": "Description of the product's odour.",
+      "x-standard": "SDS Section 9.1",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/odour"
     },
     "ph": {
@@ -442,6 +446,8 @@
       "description": "Flash point temperature of the product.",
       "x-unit": "°C",
       "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-standard": "SDS Section 9.1, CLP",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/flashPoint"
     },
     "density": {
@@ -450,6 +456,8 @@
       "description": "Density or specific gravity of the product.",
       "x-unit": "g/cm³",
       "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-CentiM3",
+      "x-standard": "SDS Section 9.1",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/density"
     },
     "viscosity": {
@@ -458,6 +466,8 @@
       "description": "Dynamic or kinematic viscosity of the product.",
       "x-unit": "mPa·s",
       "x-unitIri": "http://qudt.org/vocab/unit/MilliPA-SEC",
+      "x-standard": "SDS Section 9.1",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/viscosity"
     },
     "carbonFootprint": {
@@ -670,6 +680,8 @@
       "title": "Coverage (m²/L)",
       "description": "Spreading rate / coverage area per litre of product.",
       "x-unit": "m²/L",
+      "x-standard": "Product technical data",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/coverageSqmPerLitre"
     },
     "wetScrubResistanceClass": {
