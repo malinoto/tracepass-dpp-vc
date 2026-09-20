@@ -68,7 +68,7 @@ errors = list(V(schema).iter_errors(passport["credentialSubject"]["characteristi
 required = schema["required"]
 print(len(errors), "errors,", len(required), "required fields")
 '
-# 0 errors, 54 required fields
+# 0 errors, 49 required fields
 ```
 
 `node scripts/validate.mjs` runs the same check across all thirteen categories and exits
