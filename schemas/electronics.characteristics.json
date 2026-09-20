@@ -17,6 +17,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productModel"
     },
     "batchLotNumber": {
@@ -26,6 +27,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -35,6 +37,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
     },
     "gtin": {
@@ -44,6 +47,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "taricCode": {
@@ -53,6 +57,7 @@
       "x-regulation": "32013R0952",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32013R0952",
       "x-provision": "Reg. (EU) 952/2013 (UCC) — customs classification declared by the declarant at import",
+      "x-citationNote": "The TARIC code is declared to customs by the importer or declarant, not published by the manufacturer.",
       "x-iri": "https://tracepass.eu/voc/dpp/taricCode"
     },
     "productCategory": {
@@ -73,6 +78,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
     },
     "manufacturingDate": {
@@ -82,6 +88,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturingDate"
     },
     "manufacturingCountry": {
@@ -91,6 +98,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturingCountry"
     },
     "manufacturingPlant": {
@@ -100,6 +108,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturingPlant"
     },
     "euDeclarationOfConformity": {
@@ -109,6 +118,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "RoHS Dir. 2011/65/EU Art. 13 + EMC Dir. 2014/30/EU Art. 15 — DoC drawn up and kept, produced on request",
+      "x-citationNote": "The Declaration of Conformity is drawn up and held by the manufacturer and produced to authorities on request, not published.",
       "x-iri": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
     },
     "ceMarking": {
@@ -127,6 +137,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/notifiedBodyId"
     },
     "technicalDocumentationUrl": {
@@ -136,6 +147,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "RoHS Dir. 2011/65/EU Art. 7(b) + Annex VI — technical documentation kept 10 years, produced on request",
+      "x-citationNote": "The technical file is held by the manufacturer and produced to authorities on request; it is never published.",
       "x-iri": "https://tracepass.eu/voc/dpp/technicalDocumentationUrl"
     },
     "userManualUrl": {
@@ -145,6 +157,7 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them",
+      "x-citationNote": "Instructions must accompany the product where safety requires it, in a language the consumer understands; this is risk-conditional.",
       "x-iri": "https://tracepass.eu/voc/dpp/userManualUrl"
     },
     "safetyInstructionsUrl": {
@@ -154,6 +167,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyInstructionsUrl"
     },
     "durabilityClass": {
@@ -172,6 +186,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR Arts. 7 and 9 mandate no data on their own and no Art. 4 delegated act covers electronics, so no durability class is legally required.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityClass"
     },
     "repairabilityClass": {
@@ -188,6 +203,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "No EU instrument in force requires a repairability class for electronics; national schemes are not an EU duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/repairabilityClass"
     },
     "repairabilityIndex": {
@@ -198,6 +214,7 @@
       "x-regulation": "32023R1670",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
       "x-provision": "Art. 7",
+      "x-citationNote": "A 0-100 repairability index is real, but it belongs to Reg (EU) 2023/1670 for smartphones and slate tablets under the old Ecodesign Directive 2009/125/EC — not to ESPR, and not to servers. That regulation creates no digital product passport; the index is displayed through the energy label and the EPREL product database. Outside that narrow product group nothing mandates the index at all.",
       "x-iri": "https://tracepass.eu/voc/dpp/repairabilityIndex"
     },
     "energyEfficiencyClass": {
@@ -216,6 +233,7 @@
       "x-regulation": "32017R1369",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R1369",
       "x-provision": "Reg. (EU) 2017/1369 Arts. 3(1) and 4 — physical energy label supplied with the product and EPREL registration",
+      "x-citationNote": "The energy class is discharged by the printed label and the EPREL entry, and only for product groups with a delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/energyEfficiencyClass"
     },
     "annualEnergyConsumption": {
@@ -227,6 +245,7 @@
       "x-regulation": "32017R1369",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R1369",
       "x-provision": "Reg. (EU) 2017/1369 Arts. 12 and 4 — product information sheet registered in EPREL",
+      "x-citationNote": "Annual consumption goes on the label and in the EPREL product information sheet.",
       "x-iri": "https://tracepass.eu/voc/dpp/annualEnergyConsumption"
     },
     "waterConsumption": {
@@ -238,6 +257,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/waterConsumption"
     },
     "carbonFootprint": {
@@ -248,6 +268,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "carbonFootprintClass": {
@@ -264,6 +285,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "No EU instrument in force imposes a carbon-footprint class on electronics; only the Battery Regulation does so, for batteries.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintClass"
     },
     "recycledContentPercentage": {
@@ -275,6 +297,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "recyclabilityRate": {
@@ -286,6 +309,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityRate"
     },
     "upgradabilityInfo": {
@@ -295,6 +319,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/upgradabilityInfo"
     },
     "refurbishmentPossibility": {
@@ -304,6 +329,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/refurbishmentPossibility"
     },
     "batteryEndurancePerCycle": {
@@ -315,6 +341,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryEndurancePerCycle"
     },
     "batteryEnduranceCycles": {
@@ -325,6 +352,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryEnduranceCycles"
     },
     "ratedBatteryCapacity": {
@@ -336,6 +364,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/ratedBatteryCapacity"
     },
     "batteryUserReplaceable": {
@@ -345,6 +374,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Reg. (EU) 2023/1542 Art. 11 — removability and replaceability, for products incorporating a portable battery, from 18 February 2027",
+      "x-citationNote": "A design obligation on the appliance plus instructions supplied with it, binding only where a portable battery is incorporated.",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryUserReplaceable"
     },
     "repeatedFreeFallReliabilityClass": {
@@ -361,6 +391,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/repeatedFreeFallReliabilityClass"
     },
     "ipRating": {
@@ -370,6 +401,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/ipRating"
     },
     "disassemblyDepthScore": {
@@ -380,6 +412,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/disassemblyDepthScore"
     },
     "fastenersScore": {
@@ -390,6 +423,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/fastenersScore"
     },
     "toolsScore": {
@@ -400,6 +434,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/toolsScore"
     },
     "sparePartsScore": {
@@ -410,6 +445,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsScore"
     },
     "softwareUpdateScore": {
@@ -420,6 +456,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/softwareUpdateScore"
     },
     "repairInformationScore": {
@@ -430,6 +467,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/repairInformationScore"
     },
     "dropResistanceHeight": {
@@ -441,6 +479,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dropResistanceHeight"
     },
     "dropResistanceTestResult": {
@@ -450,6 +489,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dropResistanceTestResult"
     },
     "scratchResistanceClass": {
@@ -460,6 +500,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/scratchResistanceClass"
     },
     "batteryMinCycles80Pct": {
@@ -470,6 +511,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryMinCycles80Pct"
     },
     "batteryCapacityRetention": {
@@ -481,6 +523,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryCapacityRetention"
     },
     "sparePartsList": {
@@ -490,6 +533,7 @@
       "x-regulation": "32023R1670",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
       "x-provision": "Art. 11",
+      "x-citationNote": "Spare-parts availability lists are mandated for specific ecodesign product groups (smartphones and tablets under Reg (EU) 2023/1670; displays under 2019/2021) via Dir 2009/125/EC, and are made available to professional repairers rather than published as passport data. No such duty applies to electronics generally.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsList"
     },
     "sparePartsAvailabilityYears": {
@@ -501,6 +545,7 @@
       "x-regulation": "32023R1670",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
       "x-provision": "Art. 11",
+      "x-citationNote": "Minimum spare-parts availability periods are set per ecodesign product group — seven years after the last unit for smartphones and tablets under Reg (EU) 2023/1670. The duty is to keep the parts available, discharged toward professional repairers; the period is not a mandated passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsAvailabilityYears"
     },
     "maxDeliveryDays": {
@@ -511,6 +556,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 11",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/maxDeliveryDays"
     },
     "sparePartsWebsiteUrl": {
@@ -520,6 +566,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 11",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsWebsiteUrl"
     },
     "priceList": {
@@ -529,6 +576,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 11",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/priceList"
     },
     "osUpdateSupportYears": {
@@ -540,6 +588,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/osUpdateSupportYears"
     },
     "securityUpdateSupportYears": {
@@ -551,6 +600,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/securityUpdateSupportYears"
     },
     "osUpdateEndDate": {
@@ -560,6 +610,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/osUpdateEndDate"
     },
     "securityUpdateEndDate": {
@@ -569,6 +620,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/securityUpdateEndDate"
     },
     "firmwareAccessForRepairers": {
@@ -578,6 +630,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/firmwareAccessForRepairers"
     },
     "dataWipeFunction": {
@@ -587,6 +640,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataWipeFunction"
     },
     "dataTransferSupport": {
@@ -596,6 +650,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataTransferSupport"
     },
     "psuEfficiency10": {
@@ -607,6 +662,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(e) names PSU efficiency at 10%, 20%, 50% and 100% of rated output power, expressed in % to one decimal place, as information manufacturers must provide. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency10"
     },
     "psuEfficiency20": {
@@ -618,6 +674,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(e) names PSU efficiency at 10%, 20%, 50% and 100% of rated output power as information manufacturers must provide. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency20"
     },
     "psuEfficiency50": {
@@ -629,6 +686,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(e) names PSU efficiency at 10%, 20%, 50% and 100% of rated output power as information manufacturers must provide. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency50"
     },
     "psuEfficiency100": {
@@ -640,6 +698,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(e) names PSU efficiency at 10%, 20%, 50% and 100% of rated output power as information manufacturers must provide. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/psuEfficiency100"
     },
     "psuPowerFactor": {
@@ -649,6 +708,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(f) requires the power factor at 50% of the rated load level, rounded to three decimal places. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/psuPowerFactor"
     },
     "psuRatedOutputPower": {
@@ -660,6 +720,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(g) requires the PSU rated power output in Watts, rounded to the nearest integer. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/psuRatedOutputPower"
     },
     "idleStatePower": {
@@ -671,6 +732,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(h) requires idle state power in Watts to one decimal place, and 3.1(l) the same at the higher boundary temperature of the declared operating condition class. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/idleStatePower"
     },
     "activeStateEfficiency": {
@@ -680,6 +742,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(m) requires the active state efficiency and the performance in active state of the server. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/activeStateEfficiency"
     },
     "operatingConditionsClass": {
@@ -697,6 +760,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(k) requires the declared operating condition class as detailed in the Annex's Table 6. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/operatingConditionsClass"
     },
     "operatingTemperatureRange": {
@@ -708,6 +772,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "The temperature range follows from the Annex II point 3.1(k) declared operating condition class, and 3.1(l) requires idle state power at that class's higher boundary temperature. The class is the mandated datum; the range expresses it.",
       "x-iri": "https://tracepass.eu/voc/dpp/operatingTemperatureRange"
     },
     "productType": {
@@ -723,6 +788,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 3.1(a) requires the product type. It must be published in the instruction manuals and on the manufacturer's, authorised representative's and importer's FREE-ACCESS WEBSITES, from placing on the market until at least eight years after the last unit of the model. A passport is a legitimate way to discharge that publication duty, though the act does not name one. Applies from 1 March 2020 to servers and online data storage products, except custom-made one-off units.",
       "x-iri": "https://tracepass.eu/voc/dpp/productType"
     },
     "processorSockets": {
@@ -732,6 +798,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "The Annex II point 3.1 information list does not enumerate processor sockets. The closest mandated items are 3.1(i), the list of components attracting additional idle power allowances, and 3.1(p), the configurations represented by a product-family model. A socket count is useful configuration detail rather than a required datum.",
       "x-iri": "https://tracepass.eu/voc/dpp/processorSockets"
     },
     "installedProcessors": {
@@ -741,6 +808,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Not enumerated in the Annex II point 3.1 information list. It is relevant to 3.1(i) idle-power allowances and to the low-end/high-end product-family configurations that 3.1 requires be reported, but is not itself a mandated field.",
       "x-iri": "https://tracepass.eu/voc/dpp/installedProcessors"
     },
     "memoryModules": {
@@ -750,6 +818,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Additional memory is named in Annex II point 3.1(i) only as a component attracting an additional idle power allowance. The module inventory itself is not a mandated disclosure.",
       "x-iri": "https://tracepass.eu/voc/dpp/memoryModules"
     },
     "totalMemory": {
@@ -761,6 +830,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Not enumerated in the Annex II point 3.1 information list; memory appears there as a driver of idle power allowances under 3.1(i) rather than as a declared capacity.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalMemory"
     },
     "storageDevices": {
@@ -770,6 +840,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "HDDs and SSDs are named in Annex II point 3.1(i) as components attracting additional idle power allowances. The device inventory is not itself a mandated disclosure, though data storage devices are one of the components that must remain disassemblable under point 1.2.1.",
       "x-iri": "https://tracepass.eu/voc/dpp/storageDevices"
     },
     "totalStorageCapacity": {
@@ -781,6 +852,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Not enumerated in the Annex II point 3.1 information list. Storage appears there only through the idle-power allowances of 3.1(i).",
       "x-iri": "https://tracepass.eu/voc/dpp/totalStorageCapacity"
     },
     "powerSupplyUnits": {
@@ -790,6 +862,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "An additional PSU is named in Annex II point 3.1(i) as attracting an idle power allowance, and where a model belongs to a server product family 3.1(g) requires all PSUs offered in that family to be reported with their efficiency and power factor. A bare unit count is not itself mandated.",
       "x-iri": "https://tracepass.eu/voc/dpp/powerSupplyUnits"
     },
     "expansionSlots": {
@@ -799,6 +872,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Not enumerated in the Annex II point 3.1 information list. Expansion and graphics cards appear in point 1.2.1 as components that must remain disassemblable, and additional I/O devices in 3.1(i) as an idle-power allowance.",
       "x-iri": "https://tracepass.eu/voc/dpp/expansionSlots"
     },
     "dataStorageRemovable": {
@@ -808,6 +882,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Data storage devices are point 1.2.1(a). That point is a DESIGN requirement: from 1 March 2020 manufacturers must ensure joining, fastening or sealing techniques do not prevent its disassembly for repair or reuse. The duty is to build it that way, not to declare that you did. What must be published is the disassembly INSTRUCTIONS under Annex II point 3.3, and those go to registered repairers and recyclers rather than the public.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataStorageRemovable"
     },
     "memoryRemovable": {
@@ -817,6 +892,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Memory is point 1.2.1(b). That point is a DESIGN requirement: from 1 March 2020 manufacturers must ensure joining, fastening or sealing techniques do not prevent its disassembly for repair or reuse. The duty is to build it that way, not to declare that you did. What must be published is the disassembly INSTRUCTIONS under Annex II point 3.3, and those go to registered repairers and recyclers rather than the public.",
       "x-iri": "https://tracepass.eu/voc/dpp/memoryRemovable"
     },
     "processorRemovable": {
@@ -826,6 +902,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "The processor (CPU) is point 1.2.1(c). That point is a DESIGN requirement: from 1 March 2020 manufacturers must ensure joining, fastening or sealing techniques do not prevent its disassembly for repair or reuse. The duty is to build it that way, not to declare that you did. What must be published is the disassembly INSTRUCTIONS under Annex II point 3.3, and those go to registered repairers and recyclers rather than the public.",
       "x-iri": "https://tracepass.eu/voc/dpp/processorRemovable"
     },
     "expansionCardsRemovable": {
@@ -835,6 +912,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Expansion and graphics cards are point 1.2.1(e). That point is a DESIGN requirement: from 1 March 2020 manufacturers must ensure joining, fastening or sealing techniques do not prevent its disassembly for repair or reuse. The duty is to build it that way, not to declare that you did. What must be published is the disassembly INSTRUCTIONS under Annex II point 3.3, and those go to registered repairers and recyclers rather than the public.",
       "x-iri": "https://tracepass.eu/voc/dpp/expansionCardsRemovable"
     },
     "psuRemovable": {
@@ -844,6 +922,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "The PSU is point 1.2.1(f). That point is a DESIGN requirement: from 1 March 2020 manufacturers must ensure joining, fastening or sealing techniques do not prevent its disassembly for repair or reuse. The duty is to build it that way, not to declare that you did. What must be published is the disassembly INSTRUCTIONS under Annex II point 3.3, and those go to registered repairers and recyclers rather than the public.",
       "x-iri": "https://tracepass.eu/voc/dpp/psuRemovable"
     },
     "secureDataDeletion": {
@@ -853,6 +932,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Two distinct duties meet here. Annex II point 1.2.2 requires the secure data deletion FUNCTIONALITY to exist from 1 March 2020 — a design duty. Point 3.1(n) then requires information ABOUT it to be published, including how to use it, the techniques used and the supported standards, on the free-access website for at least eight years after the last unit. Only the second is a disclosure obligation.",
       "x-iri": "https://tracepass.eu/voc/dpp/secureDataDeletion"
     },
     "firmwareUpdateSupport": {
@@ -862,6 +942,7 @@
       "x-regulation": "32019R0424",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R0424",
       "x-provision": "Annex II (ecodesign requirements)",
+      "x-citationNote": "Annex II point 1.2.3 requires the latest available firmware to be made available from two years after first placing on the market until at least eight years after the last unit, free of charge or at fair and non-discriminatory cost, with security updates free throughout. The duty is to supply the firmware, not to declare that you support it.",
       "x-iri": "https://tracepass.eu/voc/dpp/firmwareUpdateSupport"
     },
     "ratedCapacity": {
@@ -873,6 +954,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/ratedCapacity"
     },
     "energyEfficiencyIndex": {
@@ -882,6 +964,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/energyEfficiencyIndex"
     },
     "energyConsumptionPer100Cycles": {
@@ -893,6 +976,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/energyConsumptionPer100Cycles"
     },
     "waterConsumptionPerCycle": {
@@ -904,6 +988,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/waterConsumptionPerCycle"
     },
     "programmeDuration": {
@@ -915,6 +1000,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/programmeDuration"
     },
     "spinDryingEfficiencyClass": {
@@ -933,6 +1019,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/spinDryingEfficiencyClass"
     },
     "maximumSpinSpeed": {
@@ -944,6 +1031,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/maximumSpinSpeed"
     },
     "residualMoistureContent": {
@@ -955,6 +1043,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/residualMoistureContent"
     },
     "washingEfficiencyIndex": {
@@ -964,6 +1053,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/washingEfficiencyIndex"
     },
     "rinsingEffectiveness": {
@@ -973,6 +1063,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/rinsingEffectiveness"
     },
     "airborneNoiseEmission": {
@@ -984,6 +1075,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/airborneNoiseEmission"
     },
     "noiseClass": {
@@ -999,6 +1091,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/noiseClass"
     },
     "offModePower": {
@@ -1010,6 +1103,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/offModePower"
     },
     "standbyModePower": {
@@ -1021,6 +1115,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/standbyModePower"
     },
     "totalVolume": {
@@ -1032,6 +1127,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalVolume"
     },
     "freshFoodVolume": {
@@ -1043,6 +1139,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/freshFoodVolume"
     },
     "frozenVolume": {
@@ -1054,6 +1151,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/frozenVolume"
     },
     "starRating": {
@@ -1069,6 +1167,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/starRating"
     },
     "refrigeratorEnergyEfficiencyIndex": {
@@ -1078,6 +1177,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorEnergyEfficiencyIndex"
     },
     "refrigeratorAnnualEnergyConsumption": {
@@ -1089,6 +1189,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorAnnualEnergyConsumption"
     },
     "climateClass": {
@@ -1104,6 +1205,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/climateClass"
     },
     "refrigeratorNoiseEmission": {
@@ -1115,6 +1217,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorNoiseEmission"
     },
     "refrigeratorNoiseClass": {
@@ -1130,6 +1233,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorNoiseClass"
     },
     "freezingCapacity": {
@@ -1141,6 +1245,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/freezingCapacity"
     },
     "temperatureRiseTime": {
@@ -1152,6 +1257,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/temperatureRiseTime"
     },
     "refrigeratorOffModePower": {
@@ -1163,6 +1269,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex V",
+      "x-citationNote": "ESPR Annex V is the EU DECLARATION OF CONFORMITY template (referred to in Art. 44) — a conformity form, not passport data. It prescribes what a DoC must contain for products already covered by an Art. 4 delegated act; it creates no obligation to publish this datum in a passport. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/refrigeratorOffModePower"
     },
     "rohsCompliant": {
@@ -1172,6 +1279,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "RoHS Dir. 2011/65/EU Art. 4(1) — substance restriction evidenced through the DoC and CE marking",
+      "x-citationNote": "RoHS Art. 4(1) is a restriction to stay under, evidenced by the Declaration of Conformity and the CE mark.",
       "x-iri": "https://tracepass.eu/voc/dpp/rohsCompliant"
     },
     "rohsDeclaration": {
@@ -1181,6 +1289,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 4",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/rohsDeclaration"
     },
     "leadContent": {
@@ -1192,6 +1301,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/leadContent"
     },
     "mercuryContent": {
@@ -1203,6 +1313,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/mercuryContent"
     },
     "cadmiumContent": {
@@ -1214,6 +1325,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/cadmiumContent"
     },
     "hexavalentChromiumContent": {
@@ -1225,6 +1337,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/hexavalentChromiumContent"
     },
     "pbbContent": {
@@ -1236,6 +1349,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/pbbContent"
     },
     "pbdeContent": {
@@ -1247,6 +1361,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/pbdeContent"
     },
     "dehpContent": {
@@ -1258,6 +1373,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/dehpContent"
     },
     "bbpContent": {
@@ -1269,6 +1385,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/bbpContent"
     },
     "dbpContent": {
@@ -1280,6 +1397,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/dbpContent"
     },
     "dibpContent": {
@@ -1291,6 +1409,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex II",
+      "x-citationNote": "RoHS Annex II is a restriction list — the maximum concentration tolerated by weight in homogeneous materials — not a disclosure list. Art. 7 discharges it through internal production control (module A), technical documentation, an EU declaration of conformity and the CE marking, kept for 10 years at the disposal of market surveillance authorities. Staying under the limit and holding the evidence is the obligation; publishing the measured value is not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/dibpContent"
     },
     "rohsExemptionsApplied": {
@@ -1300,6 +1419,7 @@
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
       "x-provision": "Annex III",
+      "x-citationNote": "RoHS Annex III lists the applications exempted from the Art. 4(1) restriction, each with its own scope and expiry. Relying on an exemption is recorded in the technical documentation supporting the EU declaration of conformity; the Directive requires no public declaration of which exemption a product uses.",
       "x-iri": "https://tracepass.eu/voc/dpp/rohsExemptionsApplied"
     },
     "substancesOfConcern": {
@@ -1309,6 +1429,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name",
+      "x-citationNote": "REACH Art. 33 is an on-request duty above 0.1% w/w, answered with at minimum the substance name; SCIP notification to ECHA is the database side. Neither is discharged by publishing here.",
       "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
     },
     "scipNotificationId": {
@@ -1318,6 +1439,7 @@
       "x-regulation": "32008L0098",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
       "x-provision": "Art. 9(1)(i)",
+      "x-citationNote": "The SCIP notification duty is created by WFD Art. 9(1)(i), inserted by Dir. (EU) 2018/851, which requires any supplier of an article within REACH Art. 33(1) to submit the information to ECHA; Art. 9(2) requires ECHA to establish and maintain that database. ESPR does not create this duty — it only contemplates the Commission LINKING the passport to existing systems. The duty is discharged by the ECHA notification, not by the passport. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/scipNotificationId"
     },
     "svhcPresent": {
@@ -1327,6 +1449,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name",
+      "x-citationNote": "REACH Art. 33 is an on-request duty above 0.1% w/w, answered with at minimum the substance name; SCIP notification to ECHA is the database side. Neither is discharged by publishing here.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
     },
     "containsPermanentMagnets": {
@@ -1336,6 +1459,7 @@
       "x-regulation": "32024R1252",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1252",
       "x-provision": "Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet information, applicable from 24 May 2029 for covered categories",
+      "x-citationNote": "CRMA Art. 28 ('Recyclability of permanent magnets') requires labelling (para 1) and a data carrier linked to a unique product identifier (paras 3-4) for listed product categories. Not yet applicable: it starts two years after the entry into force of the implementing act setting the label format, which Art. 28(2) requires the Commission to adopt by 24 November 2026. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/containsPermanentMagnets"
     },
     "magnetTotalWeight": {
@@ -1347,6 +1471,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/magnetTotalWeight"
     },
     "magnetLocation": {
@@ -1356,6 +1481,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/magnetLocation"
     },
     "magnetChemicalComposition": {
@@ -1365,6 +1491,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/magnetChemicalComposition"
     },
     "magnetCoatings": {
@@ -1374,6 +1501,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/magnetCoatings"
     },
     "recycledNeodymium": {
@@ -1385,6 +1513,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledNeodymium"
     },
     "recycledDysprosium": {
@@ -1396,6 +1525,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledDysprosium"
     },
     "recycledPraseodymium": {
@@ -1407,6 +1537,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledPraseodymium"
     },
     "recycledTerbium": {
@@ -1418,6 +1549,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledTerbium"
     },
     "recycledBoron": {
@@ -1429,6 +1561,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledBoron"
     },
     "recycledSamarium": {
@@ -1440,6 +1573,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledSamarium"
     },
     "recycledNickel": {
@@ -1451,6 +1585,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledNickel"
     },
     "recycledCobalt": {
@@ -1462,6 +1597,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledCobalt"
     },
     "recycledContentTotal": {
@@ -1473,6 +1609,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentTotal"
     },
     "recycledPlasticContent": {
@@ -1484,6 +1621,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledPlasticContent"
     },
     "recycledMetalContent": {
@@ -1495,6 +1633,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledMetalContent"
     },
     "recycledLithium": {
@@ -1506,6 +1645,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledLithium"
     },
     "recycledRareEarth": {
@@ -1517,6 +1657,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 27",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledRareEarth"
     },
     "postConsumerRecycledShare": {
@@ -1528,6 +1669,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledShare"
     },
     "preConsumerRecycledShare": {
@@ -1539,6 +1681,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledShare"
     },
     "weeeCategory": {
@@ -1556,6 +1699,7 @@
       "x-regulation": "32012L0019",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32012L0019",
       "x-provision": "Annex III",
+      "x-citationNote": "WEEE Annex III defines the six EEE categories used from 15 August 2018, and they matter for producer registration and reporting to the national WEEE register — 27 national registers, not a Union database. No provision requires publishing the category number as product data; the consumer-facing WEEE duty is the crossed-out wheeled bin mark.",
       "x-iri": "https://tracepass.eu/voc/dpp/weeeCategory"
     },
     "productWeight": {
@@ -1567,6 +1711,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Annex X",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productWeight"
     },
     "dismantlingInstructions": {
@@ -1576,6 +1721,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 15",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dismantlingInstructions"
     },
     "recyclableComponentsList": {
@@ -1585,6 +1731,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 15",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclableComponentsList"
     },
     "hazardousComponentsList": {
@@ -1594,6 +1741,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 15",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/hazardousComponentsList"
     },
     "materialComposition": {
@@ -1603,6 +1751,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 15",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/materialComposition"
     },
     "crossedOutWheelieBinMarking": {
@@ -1612,6 +1761,7 @@
       "x-regulation": "32012L0019",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32012L0019",
       "x-provision": "WEEE Dir. 2012/19/EU Art. 14(4) + Annex IX — crossed-out wheeled bin symbol marked on the product",
+      "x-citationNote": "A physical symbol printed on the equipment; a passport boolean does not affix it.",
       "x-iri": "https://tracepass.eu/voc/dpp/crossedOutWheelieBinMarking"
     },
     "dppIssueDate": {
@@ -1621,6 +1771,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dppIssueDate"
     },
     "dppLastUpdated": {
@@ -1630,6 +1781,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dppLastUpdated"
     },
     "dppExpirationDate": {
@@ -1639,6 +1791,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dppExpirationDate"
     },
     "dataCarrierType": {
@@ -1658,6 +1811,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(3)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
     },
     "dataCarrierReference": {
@@ -1667,6 +1821,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(3)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierReference"
     },
     "identifierStandard": {
@@ -1680,6 +1835,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/identifierStandard"
     },
     "accessLevel": {
@@ -1694,6 +1850,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "ceMarkingStatus": {

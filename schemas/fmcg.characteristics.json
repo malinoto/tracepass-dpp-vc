@@ -31,6 +31,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/brandName"
     },
     "gtin": {
@@ -40,6 +41,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "productSubcategory": {
@@ -59,6 +61,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productSubcategory"
     },
     "netContentValue": {
@@ -116,6 +119,7 @@
       "x-regulation": "32009R1223",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
       "x-provision": "Annex III",
+      "x-citationNote": "Lists substances restricted in cosmetics subject to conditions, and where a listed fragrance allergen is present above the annex threshold its name must appear in the Art. 19(1)(g) ingredient list ON THE PACKAGING. The duty is discharged by that pack labelling, not by publishing an allergen list here.",
       "x-iri": "https://tracepass.eu/voc/dpp/allergens"
     },
     "fragrances": {
@@ -125,6 +129,7 @@
       "x-regulation": "32009R1223",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
       "x-provision": "Art. 19(1)(g)",
+      "x-citationNote": "It requires the ingredient list on the container or packaging, and allows perfume and aromatic compositions to be given as 'parfum' or 'aroma' rather than itemised. So the Regulation deliberately does NOT require a full fragrance breakdown; publishing one exceeds the duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/fragrances"
     },
     "preservatives": {
@@ -134,6 +139,7 @@
       "x-regulation": "32009R1223",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
       "x-provision": "Annex V",
+      "x-citationNote": "It is the positive list of preservatives permitted in cosmetics, with their conditions and maximum concentrations. It is a composition restriction — use only what is listed, within its limits — and the disclosure that follows is the Art. 19(1)(g) ingredient list on the pack.",
       "x-iri": "https://tracepass.eu/voc/dpp/preservatives"
     },
     "svhcPresence": {
@@ -143,6 +149,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 33",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcPresence"
     },
     "colorants": {
@@ -152,6 +159,7 @@
       "x-regulation": "32009R1223",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
       "x-provision": "Annex IV",
+      "x-citationNote": "It is the positive list of permitted colorants. Like Annex V it restricts what may be used rather than requiring a separate declaration; the ingredient list on the packaging is where colorants are disclosed.",
       "x-iri": "https://tracepass.eu/voc/dpp/colorants"
     },
     "nanomaterials": {
@@ -161,6 +169,7 @@
       "x-regulation": "32009R1223",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
       "x-provision": "Art. 16",
+      "x-citationNote": "Two duties apply and neither is a passport. Nanomaterials must be notified electronically to the Commission before placing on the market, and in the Art. 19(1)(g) ingredient list a nanomaterial's name is followed by '(nano)' ON THE PACK.",
       "x-iri": "https://tracepass.eu/voc/dpp/nanomaterials"
     },
     "clpHazardClassification": {
@@ -169,6 +178,7 @@
       "description": "Full CLP classification including hazard class, category, and signal word",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "CLP's operative duty is to classify the substance or mixture and to communicate the resulting classification through the LABEL and the safety data sheet. Publishing the classification as product data neither creates nor discharges that obligation.",
       "x-iri": "https://tracepass.eu/voc/dpp/clpHazardClassification"
     },
     "ghsPictograms": {
@@ -191,6 +201,7 @@
       },
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "Hazard pictograms are label elements: CLP requires them to be affixed on the package. A passport copy repeats the information without discharging the labelling duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/ghsPictograms"
     },
     "hazardStatements": {
@@ -199,6 +210,7 @@
       "description": "H-code hazard statements describing the nature of the hazard (e.g. H315 Causes skin irritation)",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "Hazard statements (H-phrases) are CLP label elements, required on the package alongside the pictogram, signal word and precautionary statements. The label is the vehicle.",
       "x-iri": "https://tracepass.eu/voc/dpp/hazardStatements"
     },
     "precautionaryStatements": {
@@ -207,6 +219,7 @@
       "description": "P-code precautionary statements describing recommended safety measures",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "Precautionary statements (P-phrases) are CLP label elements required on the package. Reproducing them here is useful to a reader but is not how the duty is met.",
       "x-iri": "https://tracepass.eu/voc/dpp/precautionaryStatements"
     },
     "firstAidInstructions": {
@@ -215,6 +228,7 @@
       "description": "First aid measures in case of exposure: skin contact, eye contact, ingestion, inhalation",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-citationNote": "GPSR Art. 9 requires safety information and instructions to ACCOMPANY the product where needed for safe use. The duty is discharged by supplying them with the product; a passport copy is a convenience.",
       "x-iri": "https://tracepass.eu/voc/dpp/firstAidInstructions"
     },
     "ufi": {
@@ -224,6 +238,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Art. 45",
+      "x-citationNote": "The unique formula identifier exists to link a product to the mixture information notified to the bodies appointed under CLP Art. 45 for emergency health response. The duties are to NOTIFY those bodies and to place the UFI on the label; publishing it in a passport does neither.",
       "x-iri": "https://tracepass.eu/voc/dpp/ufi"
     },
     "carbonFootprint": {
@@ -234,6 +249,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "waterFootprint": {
@@ -244,6 +260,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/waterFootprint"
     },
     "biodegradability": {
@@ -253,6 +270,7 @@
       "x-regulation": "32004R0648",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004R0648",
       "x-provision": "Art. 4",
+      "x-citationNote": "Reg (EC) 648/2004 is the PREVIOUS Detergents Regulation, superseded by Reg (EU) 2026/405 which applies from 23 Sep 2029. Its surfactant biodegradability rule is a market-placement condition — the surfactant must pass, with the evidence held in the technical documentation — not a duty to publish the result.",
       "x-iri": "https://tracepass.eu/voc/dpp/biodegradability"
     },
     "aquaticToxicity": {
@@ -269,6 +287,7 @@
       ],
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "Aquatic hazard is a CLP classification, communicated through the hazard statement and pictogram on the LABEL and through the safety data sheet. CLP requires no separate publication of toxicity data as product information.",
       "x-iri": "https://tracepass.eu/voc/dpp/aquaticToxicity"
     },
     "ecolabelCriticalDilutionVolume": {
@@ -278,6 +297,7 @@
       "x-unit": "l/wash",
       "x-regulation": "32010R0066",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-citationNote": "The EU Ecolabel is a VOLUNTARY scheme. Reg (EC) 66/2010 has a real CELEX, so citing it looks legislative while imposing no obligation on a product that does not seek the label. Critical dilution volume is a criterion for award, not a legal requirement.",
       "x-iri": "https://tracepass.eu/voc/dpp/ecolabelCriticalDilutionVolume"
     },
     "packagingMaterialType": {
@@ -308,6 +328,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 7",
+      "x-citationNote": "It sets minimum recycled content for plastic packaging from 1 Jan 2030, with the calculation and verification methodology to be set by delegated act under Art. 7(8). The duty binds the packaging, not the packaged product, and is not in force.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingRecycledContent"
     },
     "packagingRecyclabilityGrade": {
@@ -324,6 +345,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 6",
+      "x-citationNote": "Recyclability grades A-E depend on design-for-recycling criteria set by delegated acts under Art. 6(4), not adopted, and apply from 2030. Nothing today lets the grade be computed or requires it.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingRecyclabilityGrade"
     },
     "packagingWeight": {
@@ -335,6 +357,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 10",
+      "x-citationNote": "Packaging weight is an input to the Art. 10 minimisation assessment, which applies from 2030 against the Annex IV criteria under a delegated methodology. No in-force provision requires declaring it, and the duty attaches to the packaging rather than to this product.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingWeight"
     },
     "packagingToProductRatio": {
@@ -344,6 +367,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 10",
+      "x-citationNote": "It requires packaging to be minimised to the weight and volume necessary for functionality, safety and hygiene, and caps empty space for grouped, transport and e-commerce packaging from 2030. The ratio expresses that future assessment; it is not a mandated declaration.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingToProductRatio"
     },
     "recommendedDosage": {
@@ -353,6 +377,7 @@
       "x-regulation": "32009R1223",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
       "x-provision": "Art. 11(4)",
+      "x-citationNote": "Art. 19 requires particulars concerning precautions for use to appear on the container and packaging. Usage or dosage guidance is delivered through that pack labelling rather than as published product data.",
       "x-iri": "https://tracepass.eu/voc/dpp/recommendedDosage"
     },
     "shelfLifeMonths": {
@@ -364,6 +389,7 @@
       "x-regulation": "32011R1169",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1169",
       "x-provision": "Art. 19(1)",
+      "x-citationNote": "Reg (EU) 1169/2011 Art. 19(1) concerns food information; where a date of minimum durability or use-by date is required it must appear ON THE FOOD LABEL. A shelf-life duration in months is a derived figure, and the labelling duty is discharged on pack.",
       "x-iri": "https://tracepass.eu/voc/dpp/shelfLifeMonths"
     },
     "storageConditions": {
@@ -372,6 +398,7 @@
       "description": "Recommended storage conditions: temperature, humidity, light exposure",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-citationNote": "GPSR requires the instructions and safety information needed for safe use to accompany the product. Storage guidance is part of that accompanying information rather than mandated passport data.",
       "x-iri": "https://tracepass.eu/voc/dpp/storageConditions"
     },
     "batchLotNumber": {
@@ -408,6 +435,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/certifications"
     },
     "euEcolabelLicenseNumber": {
@@ -416,6 +444,7 @@
       "description": "EU Ecolabel license number if certified (format: XX/XXX/XXXX)",
       "x-regulation": "32010R0066",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-citationNote": "A licence number exists only where the manufacturer has voluntarily applied for and been awarded the EU Ecolabel. Nothing requires seeking it, so nothing requires publishing it.",
       "x-iri": "https://tracepass.eu/voc/dpp/euEcolabelLicenseNumber"
     },
     "organicCertificationBody": {
@@ -424,6 +453,7 @@
       "description": "Name and code of the organic certification body (e.g. Ecocert, ICEA)",
       "x-regulation": "32018R0848",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32018R0848",
+      "x-citationNote": "Organic certification under Reg (EU) 2018/848 applies to operators who choose to place products on the market as organic; the control body's code then appears in the labelling that regime prescribes. It is conditional on a voluntary claim, not a general duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/organicCertificationBody"
     },
     "disposalInstructions": {
@@ -442,6 +472,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 28",
+      "x-citationNote": "It concerns refill systems and the requirements that apply where an operator offers one. Offering refill is a business choice, not an obligation, so declaring its availability is voluntary information rather than compliance data.",
       "x-iri": "https://tracepass.eu/voc/dpp/refillAvailability"
     },
     "returnSchemeParticipation": {
@@ -451,6 +482,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 44-48",
+      "x-citationNote": "PPWR Arts. 44-48 place extended-producer-responsibility and take-back duties on producers and Member States, and Art. 50 requires deposit-and-return systems by 1 Jan 2029. These bind the producer's registration and the national scheme; a participation flag on a product passport neither creates nor discharges them.",
       "x-iri": "https://tracepass.eu/voc/dpp/returnSchemeParticipation"
     }
   }

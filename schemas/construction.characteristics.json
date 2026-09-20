@@ -26,6 +26,7 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
+      "x-citationNote": "GPSR Art. 9(5) is satisfied by any one identifying element, so a batch number is not separately mandated where a unique product identifier is present.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -34,6 +35,7 @@
       "description": "Individual item serial number, optional per delegated act",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "GPSR Art. 9(5) is satisfied by ANY ONE identifying element — type, batch, serial number or other — marked on the product. Where a unique product identifier is already present, a serial number is not separately mandated.",
       "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
     },
     "placeOfManufacture": {
@@ -42,6 +44,7 @@
       "description": "Location (city/country) where the product was manufactured",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "No EU instrument in force requires publishing the place of manufacture; GPSR Art. 9(6) requires the manufacturer's address, not the factory location.",
       "x-iri": "https://tracepass.eu/voc/dpp/placeOfManufacture"
     },
     "productFamily": {
@@ -60,6 +63,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Annex VII — product-family taxonomy for harmonised technical specifications",
+      "x-citationNote": "The Annex VII family taxonomy scopes harmonised specifications; it is not a standalone disclosure duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/productFamily"
     },
     "mechanicalResistanceStability": {
@@ -69,6 +73,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/mechanicalResistanceStability"
     },
     "fireSafety": {
@@ -78,6 +83,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/fireSafety"
     },
     "hygieneHealthEnvironment": {
@@ -87,6 +93,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/hygieneHealthEnvironment"
     },
     "safetyAccessibility": {
@@ -96,6 +103,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyAccessibility"
     },
     "noiseProtection": {
@@ -105,6 +113,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/noiseProtection"
     },
     "energyHeat": {
@@ -114,6 +123,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/energyHeat"
     },
     "sustainableUseNaturalResources": {
@@ -123,6 +133,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/sustainableUseNaturalResources"
     },
     "gwpTotal": {
@@ -268,6 +279,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContent"
     },
     "substancesOfConcern": {
@@ -277,6 +289,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name",
+      "x-citationNote": "REACH Art. 33 is an on-request duty above 0.1% w/w, answered with at minimum the substance name; SCIP notification to ECHA is the database side. Neither is discharged by publishing here.",
       "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
     },
     "durabilityServiceLife": {
@@ -286,6 +299,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
+      "x-citationNote": "Declared in the Declaration of Performance for characteristics covered by a harmonised technical specification; the CPR passport duty is deferred pending the Art. 75(1) delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityServiceLife"
     },
     "repairReuseInstructions": {
@@ -294,6 +308,7 @@
       "description": "Instructions and guidance for repair and reuse of the product",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "No EU instrument in force requires repair or reuse instructions for construction products; the CPR provisions that would are deferred.",
       "x-iri": "https://tracepass.eu/voc/dpp/repairReuseInstructions"
     },
     "endOfLifeInstructions": {
@@ -302,6 +317,7 @@
       "description": "Instructions for end-of-life treatment and demolition/deconstruction",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "No EU instrument in force mandates demolition or end-of-life guidance for construction products.",
       "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
     },
     "recyclabilityAssessment": {
@@ -318,6 +334,7 @@
       "description": "Environmental analysis of product packaging materials and recyclability",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "The CPR's environmental duties run through the Declaration of Performance for characteristics covered by a harmonised technical specification, and the packaging of a construction product is governed by PPWR rather than the CPR. No in-force provision requires a packaging environmental analysis as passport data.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingEnvironmentalAnalysis"
     },
     "ceMarkingStatus": {
@@ -332,6 +349,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Arts. 13-17 — CE marking, only where a harmonised technical specification or a European Technical Assessment covers the product",
+      "x-citationNote": "CE marking under the CPR is CONDITIONAL: it applies only where a harmonised technical specification or a European Technical Assessment covers the product, and a product covered by neither cannot be CE-marked at all. The duty is to affix the mark and draw up the Declaration of Performance behind it, not to publish a status flag.",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
     },
     "avcpSystemLevel": {
@@ -349,6 +367,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 + Annex IX — AVCP system stated in the Declaration of Performance",
+      "x-citationNote": "The AVCP system is recorded in the Declaration of Performance, not published as a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/avcpSystemLevel"
     },
     "notifiedBodyNameNumber": {
@@ -358,6 +377,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — notified body identified in the Declaration of Performance",
+      "x-citationNote": "The notified body's name and number appear in the Declaration of Performance and alongside the CE marking.",
       "x-iri": "https://tracepass.eu/voc/dpp/notifiedBodyNameNumber"
     },
     "testReportReferences": {
@@ -367,6 +387,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 22 — technical documentation held and produced to authorities on request",
+      "x-citationNote": "Test and assessment reports are technical-file content produced on request, not published.",
       "x-iri": "https://tracepass.eu/voc/dpp/testReportReferences"
     },
     "epdVerification": {
@@ -375,6 +396,7 @@
       "description": "Third-party Environmental Product Declaration verification, required for AVCP 3+ (NEW in revised CPR)",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "Environmental product declarations under EN 15804+A2 are voluntary; no EU instrument in force mandates one.",
       "x-iri": "https://tracepass.eu/voc/dpp/epdVerification"
     },
     "harmonizedStandardReference": {
@@ -384,6 +406,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — harmonised technical specification cited in the Declaration of Performance",
+      "x-citationNote": "The applicable harmonised standard is cited in the Declaration of Performance, which is the instrument discharging the duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/harmonizedStandardReference"
     },
     "eadReference": {
@@ -392,6 +415,7 @@
       "description": "European Assessment Document reference, if no harmonized standard exists",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "A European Assessment Document underpins a European Technical Assessment, which a manufacturer requests voluntarily where no harmonised standard covers the product. Obtaining an ETA is a choice; referencing the EAD is not a mandated disclosure.",
       "x-iri": "https://tracepass.eu/voc/dpp/eadReference"
     },
     "installationInstructions": {
@@ -401,6 +425,7 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them",
+      "x-citationNote": "GPSR requires instructions accompany the product where safety requires it; it is not unconditional for every construction product.",
       "x-iri": "https://tracepass.eu/voc/dpp/installationInstructions"
     },
     "maintenanceGuidance": {
@@ -409,6 +434,7 @@
       "description": "Guidance on maintenance and care of the product during its service life",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "No EU instrument in force requires maintenance guidance for construction products.",
       "x-iri": "https://tracepass.eu/voc/dpp/maintenanceGuidance"
     },
     "safetyDataLabelling": {
@@ -418,6 +444,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients",
+      "x-citationNote": "Hazard communication is discharged by the physical CLP label and the safety data sheet supplied down the chain.",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyDataLabelling"
     },
     "warrantyInformation": {
@@ -426,6 +453,7 @@
       "description": "Product warranty details including duration and coverage",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "A commercial warranty is a contractual matter. The CPR requires the Declaration of Performance, not warranty terms, and no in-force construction provision makes warranty information passport data.",
       "x-iri": "https://tracepass.eu/voc/dpp/warrantyInformation"
     },
     "intendedUseDescription": {
@@ -444,6 +472,7 @@
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "Art. 13-15",
+      "x-citationNote": "The CE mark is affixed to the product; the obligation is discharged by that mark and by the Declaration of Performance supporting it, and only where a harmonised technical specification or an ETA covers the product.",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
     }
   }

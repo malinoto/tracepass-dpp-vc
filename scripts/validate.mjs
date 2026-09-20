@@ -94,6 +94,12 @@ const PHANTOM_PROVISION = /7\s*\(\s*2\s*\)\s*\(\s*[de]\s*\)/;
 //     a placeholder rather than a source. Writing that into `x-standard` would inflate
 //     the cited count with no information, which is the over-claim this repo avoids.
 // Adding to this list is a claim that nothing names the property. Check upstream first.
+// Optional CELEX-citing properties that legitimately carry no reasoning. Empty
+// today: every one of the 658 inherited a `regulationRef.description` from the
+// source templates. An entry here is a claim that the citation was examined and
+// needs no note — which is almost never true, so prefer writing the note.
+const UNREASONED_BY_DESIGN = new Set([]);
+
 const UNSOURCED_BY_DESIGN = new Set([
   "battery.batteryEnergyTotal",
   "battery.energyDensity",
@@ -154,6 +160,32 @@ for (const cat of categories) {
           `        The source templates classify non-legislative sources with \`kind\` and usually\n` +
           `        name them — carry that across as x-standard + x-sourceKind. If the template\n` +
           `        genuinely names nothing, add it to UNSOURCED_BY_DESIGN with the reason.`,
+      );
+    }
+    // Check [7], finally portable. An OPTIONAL property that names a CELEX is
+    // asserting that an instrument backs it, and nothing else interrogates that
+    // claim — checks [1] and the framework-only rule above only fire on REQUIRED
+    // properties. So a citation naming an instrument that mandates nothing can
+    // sit here unexamined and invisible. Upstream this gap hid 515 fields.
+    //
+    // The defect is the missing JUDGEMENT, not the citation: an optional property
+    // misleads nobody, and "anticipated under an act that is not adopted" is
+    // usually the honest answer. Without `x-citationNote` no reader can tell
+    // whether the citation was verified or merely copied by the generator.
+    //
+    // Required properties are exempt by design, which is why this mirrors
+    // upstream exactly: there the reasoning lives on optional fields, because a
+    // required field's citation is interrogated by the required-side checks.
+    if (
+      p["x-regulation"] &&
+      !requiredKeys.has(k) &&
+      !p["x-citationNote"] &&
+      !UNREASONED_BY_DESIGN.has(`${cat}.${k}`)
+    ) {
+      fail(
+        `${cat}.${k}: optional, cites ${p["x-regulation"]}, but records no reasoning.\n` +
+          `        Carry the source template's regulationRef.description across as\n` +
+          `        x-citationNote, or add it to UNREASONED_BY_DESIGN with the reason.`,
       );
     }
     if (PHANTOM_PROVISION.test(p["x-provision"] ?? "")) {

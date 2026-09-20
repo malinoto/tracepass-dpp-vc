@@ -16,6 +16,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/commercialName"
     },
     "tyreTypeIdentifier": {
@@ -25,6 +26,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreTypeIdentifier"
     },
     "tyreClass": {
@@ -39,6 +41,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 2 — C1/C2/C3 definitions determining which label applies",
+      "x-citationNote": "A scoping definition governing which label applies, not a disclosure duty of its own.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreClass"
     },
     "batchLotNumber": {
@@ -57,6 +60,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "UNECE R30 / R54 — marking moulded on the tyre sidewall under type approval",
+      "x-citationNote": "Discharged by the marking moulded into the sidewall under type approval, not by a passport entry.",
       "x-iri": "https://tracepass.eu/voc/dpp/dateOfManufactureWeekYear"
     },
     "dateStartOfProduction": {
@@ -66,6 +70,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/dateStartOfProduction"
     },
     "dateEndOfProduction": {
@@ -75,6 +80,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Annex II",
+      "x-citationNote": "It governs the tyre label's format and content. The production period is part of how a tyre type is identified for labelling and for the EPREL entry, not a datum the Regulation requires to be published as product data.",
       "x-iri": "https://tracepass.eu/voc/dpp/dateEndOfProduction"
     },
     "countryOfManufacture": {
@@ -84,6 +90,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
     },
     "eprelRegistrationNumber": {
@@ -93,6 +100,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "The duty IS the EPREL database entry; the number is its receipt. Publishing it here does not create or replace the registration.",
       "x-iri": "https://tracepass.eu/voc/dpp/eprelRegistrationNumber"
     },
     "eprelProductUrl": {
@@ -102,6 +110,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "The link points at EPREL, which is itself the vehicle discharging the duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/eprelProductUrl"
     },
     "dataCarrierType": {
@@ -121,6 +130,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
     },
     "passportIssuer": {
@@ -130,6 +140,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/passportIssuer"
     },
     "tyreSizeDesignation": {
@@ -139,6 +150,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreSizeDesignation"
     },
     "loadCapacityIndex": {
@@ -148,6 +160,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/loadCapacityIndex"
     },
     "loadVersion": {
@@ -162,6 +175,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/loadVersion"
     },
     "speedCategorySymbol": {
@@ -171,6 +185,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/speedCategorySymbol"
     },
     "speedRatingKmh": {
@@ -259,6 +274,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreWeightKg"
     },
     "fuelEfficiencyClass": {
@@ -275,6 +291,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Annex I Part A — class shown on the tyre label and registered in EPREL",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/fuelEfficiencyClass"
     },
     "rollingResistanceCoefficientNKn": {
@@ -285,6 +302,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Annex I Part A + Annex II — measured value in the EPREL product information sheet",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/rollingResistanceCoefficientNKn"
     },
     "wetGripClass": {
@@ -301,6 +319,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Annex I Part B — class shown on the tyre label and registered in EPREL",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/wetGripClass"
     },
     "wetGripIndex": {
@@ -310,6 +329,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Annex I",
+      "x-citationNote": "Part B defines the wet grip CLASSES, and what the Regulation requires is that the class appear on the tyre label and in the product information sheet, with the supporting data in the EPREL product database. The underlying index is the measured input to that class rather than the declared value.",
       "x-iri": "https://tracepass.eu/voc/dpp/wetGripIndex"
     },
     "externalRollingNoiseClass": {
@@ -324,6 +344,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Art. 4 + Annex I Part C — class shown on the tyre label and registered in EPREL",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/externalRollingNoiseClass"
     },
     "externalRollingNoiseDb": {
@@ -334,6 +355,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Annex I Part C — measured dB value on the label and in EPREL",
+      "x-citationNote": "Discharged by the physical/point-of-sale label and the EPREL database entry, not by a passport field.",
       "x-iri": "https://tracepass.eu/voc/dpp/externalRollingNoiseDb"
     },
     "snowGrip": {
@@ -343,6 +365,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Art. 4 + Annex I (3PMSF snow-grip pictogram where applicable)",
+      "x-citationNote": "Annex I Part D requires snow grip to be tested per Annex 7 to UNECE Regulation No 117, and a tyre meeting the minimum index is classified for severe snow use and carries the 3PMSF PICTOGRAM on the tyre label. The duty is discharged by that pictogram, not by publishing a value.",
       "x-iri": "https://tracepass.eu/voc/dpp/snowGrip"
     },
     "iceGrip": {
@@ -352,6 +375,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Art. 4 + Annex I (ice-grip marking, C1 tyres, per ISO 19447)",
+      "x-citationNote": "Annex I Part E requires ice grip to be tested by reliable, accurate and reproducible methods reflecting the state of the art, and a qualifying C1 tyre carries the ice-grip PICTOGRAM on the label. Like snow grip, the obligation is a mark rather than a published figure.",
       "x-iri": "https://tracepass.eu/voc/dpp/iceGrip"
     },
     "tyreAbrasionRateMgKm": {
@@ -361,6 +385,7 @@
       "x-unit": "mg/km",
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-citationNote": "Euro 7 (Reg (EU) 2024/1257) defines tyre abrasion as the mass of material lost and emitted into the environment, and provides for abrasion LIMITS per tyre class — but those limits and their measurement method come from UN WP.29, due 1 July 2026 for C1, 1 April 2028 for C2 and 1 April 2030 for C3, with a Commission delegated act only as a fallback. There is no limit to meet and no prescribed method to report against yet.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreAbrasionRateMgKm"
     },
     "abrasionIndex": {
@@ -369,6 +394,7 @@
       "description": "Abrasion index relative to reference tyre (ratio of candidate/reference abrasion)",
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-citationNote": "A relative abrasion index depends on the same pending UN WP.29 method as the absolute rate. Until that method exists an index has no defined basis, and Euro 7 is a type-approval regulation that would bind the vehicle or tyre approval rather than a product passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/abrasionIndex"
     },
     "abrasionTestMethod": {
@@ -381,6 +407,7 @@
       ],
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-citationNote": "The method — convoy-on-road versus laboratory drum — is exactly what the pending UN WP.29 work under Euro 7 must settle. Naming a method today records the basis of a voluntary measurement rather than compliance with a prescribed one.",
       "x-iri": "https://tracepass.eu/voc/dpp/abrasionTestMethod"
     },
     "testDistanceKm": {
@@ -406,6 +433,7 @@
       ],
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
+      "x-citationNote": "Euro 7's recital ties tyre abrasion to the Union objective of reducing microplastics released into the environment by 30% by 2030, but the Regulation creates no emission CLASS for tyres. Any grading would follow the pending WP.29 limits.",
       "x-iri": "https://tracepass.eu/voc/dpp/microplasticsEmissionClass"
     },
     "mileageWarrantyKm": {
@@ -425,6 +453,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/billOfMaterials"
     },
     "totalTyreWeightKg": {
@@ -435,6 +464,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalTyreWeightKg"
     },
     "naturalRubberContentPercentage": {
@@ -446,6 +476,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberContentPercentage"
     },
     "syntheticRubberContentPercentage": {
@@ -457,6 +488,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/syntheticRubberContentPercentage"
     },
     "recycledContentPercentage": {
@@ -468,6 +500,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "recycledRubberContentPercentage": {
@@ -479,6 +512,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledRubberContentPercentage"
     },
     "recycledCarbonBlackPercentage": {
@@ -490,6 +524,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledCarbonBlackPercentage"
     },
     "renewableMaterialContentPercentage": {
@@ -501,6 +536,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/renewableMaterialContentPercentage"
     },
     "pahContentCompliant": {
@@ -510,6 +546,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH Annex XVII entry 50 — restriction on PAH content in extender oils and tyres",
+      "x-citationNote": "Annex XVII sets a limit to stay under with test evidence retained, not a duty to publish the measured value.",
       "x-iri": "https://tracepass.eu/voc/dpp/pahContentCompliant"
     },
     "svhcCandidateListSubstances": {
@@ -519,6 +556,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name",
+      "x-citationNote": "REACH Art. 33 is an on-request duty above 0.1% w/w, answered with at minimum the substance name; SCIP notification to ECHA is the database side. Neither is discharged by publishing here.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances"
     },
     "sixPpdContent": {
@@ -527,6 +565,7 @@
       "description": "Presence and concentration of 6PPD antioxidant (under ECHA review for environmental toxicity of 6PPD-quinone)",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-citationNote": "REACH creates no general duty to publish a substance concentration as product data. Its disclosure duties are Art. 33 communication — to business recipients, and to consumers ON REQUEST within 45 days, for candidate-list substances above 0.1% w/w, with a minimum content of the substance NAME — plus SCIP notification to ECHA. Neither is discharged by publishing a concentration here. Check the current candidate list and Annex XVII entries before treating this field as compliance-bearing.",
       "x-iri": "https://tracepass.eu/voc/dpp/sixPpdContent"
     },
     "heavyMetalsCompliance": {
@@ -536,6 +575,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH Annex XVII — market-placement restriction; evidence retained by the manufacturer",
+      "x-citationNote": "Annex XVII is a restriction with records held, not a published compliance flag; RoHS does not apply to tyres.",
       "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalsCompliance"
     },
     "reachCompliance": {
@@ -545,6 +585,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH (EC) 1907/2006 — registration and restriction obligations evidenced in the manufacturer's records",
+      "x-citationNote": "A blanket REACH compliance boolean corresponds to no disclosure duty in the Regulation.",
       "x-iri": "https://tracepass.eu/voc/dpp/reachCompliance"
     },
     "carbonFootprint": {
@@ -555,6 +596,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "carbonFootprintMethodology": {
@@ -563,6 +605,7 @@
       "description": "Methodology used for carbon footprint calculation",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology"
     },
     "fuelSavingsOverLifetimeLiters": {
@@ -573,6 +616,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/L",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-citationNote": "Reg (EU) 2020/740 requires the fuel efficiency CLASS (Annex I Part A) on the label, in the product information sheet and in EPREL. A lifetime fuel-saving estimate is a derived marketing figure that the Regulation neither defines nor requires, and technical promotional material must show the label rather than substitute for it.",
       "x-iri": "https://tracepass.eu/voc/dpp/fuelSavingsOverLifetimeLiters"
     },
     "co2SavingsOverLifetimeKg": {
@@ -583,6 +627,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
+      "x-citationNote": "A derived estimate, not a regulated parameter. What Reg (EU) 2020/740 mandates is the fuel efficiency class on the label, the product information sheet and the EPREL entry.",
       "x-iri": "https://tracepass.eu/voc/dpp/co2SavingsOverLifetimeKg"
     },
     "naturalRubberDeforestationFree": {
@@ -592,6 +637,7 @@
       "x-regulation": "32023R1115",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
       "x-provision": "EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator",
+      "x-citationNote": "Discharged by the operator's due-diligence statement lodged in the EUDR Information System.",
       "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberDeforestationFree"
     },
     "naturalRubberSustainabilityCertification": {
@@ -610,6 +656,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/expectedMileageKm"
     },
     "treadwearRating": {
@@ -629,6 +676,7 @@
       "x-regulation": "32014L0045",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32014L0045",
       "x-provision": "Dir. 2014/45/EU Annex I — roadworthiness test requirement on the vehicle in use",
+      "x-citationNote": "Minimum tread depth is a roadworthiness INSPECTION item — Dir. 2014/45/EU Annex I lists 'tyre tread depth not in accordance with the requirements' as a test defect, checked on the vehicle in use. It is not a tyre-manufacturer disclosure. Verified against the EUR-Lex text. (The previous citation, Dir. 89/459/EEC, is the historic tread-depth instrument and is not the operative one for this duty.)",
       "x-iri": "https://tracepass.eu/voc/dpp/minimumTreadDepthMm"
     },
     "warrantyPeriodYears": {
@@ -640,6 +688,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
+      "x-citationNote": "ESPR Art. 7 mandates no data on its own and no tyre delegated act exists; the statutory guarantee under Dir. (EU) 2019/771 binds the seller.",
       "x-iri": "https://tracepass.eu/voc/dpp/warrantyPeriodYears"
     },
     "maxAgeRecommendationYears": {
@@ -659,6 +708,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/retreadable"
     },
     "maximumRetreadCycles": {
@@ -688,6 +738,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage"
     },
     "recyclabilityBreakdown": {
@@ -697,6 +748,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityBreakdown"
     },
     "eltCollectionScheme": {
@@ -706,6 +758,7 @@
       "x-regulation": "32008L0098",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
       "x-provision": "WFD Dir. 2008/98/EC Art. 8a — extended producer responsibility discharged through national EPR scheme registration",
+      "x-citationNote": "End-of-life tyre obligations are met by joining and reporting to the national producer-responsibility scheme.",
       "x-iri": "https://tracepass.eu/voc/dpp/eltCollectionScheme"
     },
     "disassemblyInstructionsUrl": {
@@ -715,6 +768,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/disassemblyInstructionsUrl"
     },
     "pyrolysisSuitability": {
@@ -748,6 +802,7 @@
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
       "x-provision": "Reg. (EU) 2024/1257 — tyre abrasion limits not yet in force",
+      "x-citationNote": "Euro 7 tyre abrasion requirements are not yet applicable, so no compliance statement is legally required today.",
       "x-iri": "https://tracepass.eu/voc/dpp/euro7Compliance"
     },
     "euTyreLabelImageUrl": {
@@ -757,6 +812,7 @@
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Reg. (EU) 2020/740 Arts. 4 and 6 — label displayed in visual form at the point of sale",
+      "x-citationNote": "The duty is discharged by displaying the label, not by hosting an image of it.",
       "x-iri": "https://tracepass.eu/voc/dpp/euTyreLabelImageUrl"
     },
     "declarationOfConformityUrl": {
@@ -766,6 +822,7 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "UNECE R30 / R54 — type approval evidenced by the approval mark on the sidewall and the approval dossier",
+      "x-citationNote": "Tyre conformity is evidenced by the E-mark and the type-approval dossier; there is no EU DoC publication duty for tyres.",
       "x-iri": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl"
     },
     "reachComplianceTypeApproval": {
@@ -775,6 +832,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records",
+      "x-citationNote": "No REACH provision requires publishing a compliance boolean.",
       "x-iri": "https://tracepass.eu/voc/dpp/reachComplianceTypeApproval"
     },
     "recommendedInflationPressureKpa": {
@@ -813,6 +871,7 @@
       "description": "Compatibility with TPMS (Tyre Pressure Monitoring Systems)",
       "x-regulation": "32019R2144",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32019R2144",
+      "x-citationNote": "TPMS is required by Reg (EU) 2019/2144 (General Safety Regulation), which repealed Reg (EC) 661/2009 with effect from 6 July 2022; references to the old regulation are construed as references to this one. The duty binds the VEHICLE's type-approval, not the tyre, and is discharged through that approval rather than through tyre product data.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyrePressureMonitoringCompatible"
     },
     "runFlatCapability": {
@@ -828,6 +887,7 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(7) — warnings and safety information, where the product's risks require them",
+      "x-citationNote": "GPSR requires warnings accompany the product where its risks require them; it is not an unconditional field.",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyWarnings"
     },
     "storageInstructions": {
@@ -844,6 +904,7 @@
       "description": "Version of the DPP schema used",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dppSchemaVersion"
     },
     "lastUpdatedAt": {
@@ -853,6 +914,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/lastUpdatedAt"
     },
     "accessLevel": {
@@ -867,6 +929,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10(3)",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "dataFormat": {
@@ -876,6 +939,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9-10",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataFormat"
     }
   }

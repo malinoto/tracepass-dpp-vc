@@ -38,6 +38,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
     },
     "serialNumber": {
@@ -47,6 +48,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
     },
     "batchLotNumber": {
@@ -56,6 +58,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "primaryMetal": {
@@ -122,6 +125,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/additionalMetals"
     },
     "gemstoneType": {
@@ -249,6 +253,7 @@
       "description": "Country where the precious metal was mined or refined",
       "x-regulation": "32017R0821",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R0821",
+      "x-citationNote": "Reg (EU) 2017/821 binds UNION IMPORTERS of tin, tantalum, tungsten and gold above the Annex I volume thresholds, requiring supply-chain due diligence. It is not a per-product origin attestation on finished jewellery, and the duty holder is the importer of the mineral rather than the jeweller.",
       "x-iri": "https://tracepass.eu/voc/dpp/metalOriginCountry"
     },
     "gemstoneOriginMine": {
@@ -266,6 +271,7 @@
       "x-regulation": "32017R0821",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R0821",
       "x-provision": "Art. 3 (binds Union importers of tin, tantalum, tungsten and gold above Annex I volume thresholds)",
+      "x-citationNote": "Reg (EU) 2017/821 imposes supply-chain due diligence on Union IMPORTERS of 3TG above Annex I volume thresholds — not a per-product attestation on finished jewellery. Collect where you have it; it does not discharge the importer's duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/conflictFreeStatus"
     },
     "kimberleyProcessCompliant": {
@@ -307,6 +313,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex XVII Entry 63 (metal parts of jewellery: max 0.05% w/w)",
+      "x-citationNote": "A market-placement restriction: jewellery metal parts must not exceed 0.05% w/w lead. The duty is to stay under the limit and hold the evidence, not to publish the measured value.",
       "x-iri": "https://tracepass.eu/voc/dpp/leadContent"
     },
     "cadmiumContent": {
@@ -318,6 +325,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex XVII Entry 23 (max 0.01% w/w)",
+      "x-citationNote": "A market-placement restriction: max 0.01% w/w cadmium. The duty is to stay under the limit and hold the evidence, not to publish the measured value.",
       "x-iri": "https://tracepass.eu/voc/dpp/cadmiumContent"
     },
     "nickelMigrationRate": {
@@ -329,6 +337,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex XVII Entry 27 (skin contact: <0.5 µg/cm²/week; body piercing: <0.2 µg/cm²/week)",
+      "x-citationNote": "A market-placement restriction, conditional on prolonged skin contact or body piercing. The duty is to stay under the migration limit and hold the evidence, not to publish the measured rate.",
       "x-iri": "https://tracepass.eu/voc/dpp/nickelMigrationRate"
     },
     "svhcPresent": {
@@ -338,6 +347,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Art. 33(2) (on request, within 45 days, above 0.1% w/w; minimum content is the substance name)",
+      "x-citationNote": "REACH Art. 33 is an ON-REQUEST duty above 0.1% w/w, answered within 45 days with at minimum the substance name — not proactive publication. Holding this makes answering a request fast; it is not itself the discharge.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
     },
     "reachTestReportUrl": {
@@ -346,6 +356,7 @@
       "description": "URL to the REACH compliance test report",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-citationNote": "REACH restrictions relevant to jewellery — lead, cadmium and nickel release under Annex XVII — are market-placement limits. Compliance is demonstrated by staying within them and holding the test evidence for authorities; REACH requires no publication of test reports.",
       "x-iri": "https://tracepass.eu/voc/dpp/reachTestReportUrl"
     },
     "carbonFootprint": {
@@ -356,6 +367,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "recycledMetalContent": {
@@ -367,6 +379,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledMetalContent"
     },
     "waterUsage": {
@@ -378,6 +391,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/waterUsage"
     },
     "careInstructions": {
@@ -386,6 +400,7 @@
       "description": "Cleaning, storage, and wearing guidance for the jewelry item",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/careInstructions"
     },
     "repairAvailable": {
@@ -394,6 +409,7 @@
       "description": "Whether professional repair services are available for this item",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/repairAvailable"
     },
     "resizeAvailable": {
@@ -402,6 +418,7 @@
       "description": "Whether the item can be resized (primarily applicable to rings)",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/resizeAvailable"
     },
     "takeBackProgram": {
@@ -410,6 +427,7 @@
       "description": "URL to the manufacturer's take-back or recycling program",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/takeBackProgram"
     },
     "recyclabilityInfo": {
@@ -418,6 +436,7 @@
       "description": "Information about the recyclability of the product (precious metals are infinitely recyclable)",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityInfo"
     },
     "gemologicalLabCertificate": {
@@ -442,6 +461,7 @@
       "description": "URL or reference to the conflict-free sourcing certificate",
       "x-regulation": "32017R0821",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32017R0821",
+      "x-citationNote": "Reg (EU) 2017/821 requires Union importers of 3TG minerals above the Annex I thresholds to operate and report on a due diligence system. It creates no 'conflict-free' certificate for a finished product, and no in-force provision requires publishing one — though buyers increasingly ask, which is a commercial reason to hold it rather than a legal one.",
       "x-iri": "https://tracepass.eu/voc/dpp/conflictFreeCertificate"
     },
     "rjcCertificate": {
@@ -459,6 +479,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/customCertificates"
     },
     "dataCarrierType": {
@@ -478,6 +499,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(3)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
     },
     "dataCarrierPlacement": {
@@ -496,6 +518,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(3)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierPlacement"
     },
     "accessLevel": {
@@ -510,6 +533,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(4)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     }
   }

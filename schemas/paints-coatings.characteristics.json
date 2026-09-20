@@ -38,6 +38,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9, GS1",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "batchLotNumber": {
@@ -56,6 +57,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/serialNumber"
     },
     "tradeName": {
@@ -74,6 +76,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productModel"
     },
     "packagingImageUrl": {
@@ -83,6 +86,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingImageUrl"
     },
     "commodityCode": {
@@ -112,6 +116,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
     },
     "productSubcategory": {
@@ -121,6 +126,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productSubcategory"
     },
     "manufacturerEmail": {
@@ -148,6 +154,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/passportServiceProvider"
     },
     "countryOfManufacture": {
@@ -157,6 +164,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
     },
     "ingredientSubstanceName": {
@@ -174,6 +182,7 @@
       "description": "IUPAC systematic chemical name of the substance.",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "CLP governs how a substance is IDENTIFIED on the label and in classification, through the Art. 18(3) product identifier rules — a name, not an amount. It creates no duty to publish an IUPAC name as product data; the label and the safety data sheet are the channels through which composition information reaches users.",
       "x-iri": "https://tracepass.eu/voc/dpp/ingredientIupacName"
     },
     "ingredientCasNumber": {
@@ -199,6 +208,7 @@
       "description": "REACH registration number assigned by ECHA.",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-citationNote": "A REACH registration number is assigned to the registrant and appears in section 1 of the safety data sheet supplied down the chain under Art. 31. REACH creates no duty to publish it as product data, and for a mixture it is the constituent substances that carry registrations, not the product.",
       "x-iri": "https://tracepass.eu/voc/dpp/ingredientReachRegistrationNumber"
     },
     "preservatives": {
@@ -207,6 +217,7 @@
       "description": "Array of preservatives with substance name and CAS number.",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "Preservatives reach consumers through the CLP label and, where applicable, sector labelling rules; CLP itself creates no separate duty to publish a preservative list as product data. Its labelling duty is discharged by what is affixed to the package.",
       "x-iri": "https://tracepass.eu/voc/dpp/preservatives"
     },
     "fragranceAllergens": {
@@ -215,6 +226,7 @@
       "description": "Array of fragrance allergens present above threshold, with CAS numbers.",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "Fragrance allergen disclosure is a LABELLING duty in the sector instruments that impose it, not a CLP one — CLP's own obligation is the hazard label. Publishing the list here is useful to allergic users but is not how the duty is discharged.",
       "x-iri": "https://tracepass.eu/voc/dpp/fragranceAllergens"
     },
     "hazardClass": {
@@ -287,6 +299,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Annex II",
+      "x-citationNote": "CLP Annex II covers supplemental label information — EUH statements and similar. The obligation is to place that text ON THE LABEL; a passport copy repeats it rather than discharging it.",
       "x-iri": "https://tracepass.eu/voc/dpp/supplementalHazardInfo"
     },
     "ufi": {
@@ -305,6 +318,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Annex VIII",
+      "x-citationNote": "CLP Annex VIII governs notification of hazardous mixtures to the bodies appointed under Art. 45 for emergency health response. The duty is discharged by NOTIFYING those bodies — a database entry — and the resulting UFI belongs on the label. Publishing the notification reference in a passport neither creates nor satisfies the obligation.",
       "x-iri": "https://tracepass.eu/voc/dpp/poisonCentreNotificationNumber"
     },
     "emergencyPhoneNumber": {
@@ -358,6 +372,7 @@
       "description": "EC number for the SVHC substance.",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
+      "x-citationNote": "REACH Art. 33 is the SVHC communication duty and it is narrower than it looks: to business recipients, and to consumers ON REQUEST within 45 days, for articles containing an SVHC above 0.1% w/w, with a minimum content of the substance NAME. Publishing an EC number proactively exceeds what any in-force provision requires.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcEcNumber"
     },
     "svhcConcentrationRange": {
@@ -385,6 +400,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 7(5)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcLocationInProduct"
     },
     "svhcSafeUseInstructions": {
@@ -403,6 +419,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Article 59",
+      "x-citationNote": "REACH Art. 59 governs how a substance is added to the candidate list. The date of inclusion determines when the Art. 33 communication and SCIP notification duties bite for that substance; it is a fact about the list rather than a datum the manufacturer is required to publish.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListDate"
     },
     "svhcScipNotificationId": {
@@ -412,6 +429,7 @@
       "x-regulation": "32008L0098",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008L0098",
       "x-provision": "Article 9(1)(i)",
+      "x-citationNote": "The SCIP database notification is required by Waste Framework Directive Art. 9(1)(i), in force since 5 January 2021, for articles containing candidate-list substances above 0.1% w/w. The duty is discharged by notifying ECHA — a database entry — not by publishing the resulting identifier.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcScipNotificationId"
     },
     "appearance": {
@@ -478,6 +496,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "carbonFootprintScope": {
@@ -491,6 +510,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintScope"
     },
     "carbonFootprintMethodology": {
@@ -500,6 +520,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 7(2)(b)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology"
     },
     "recyclability": {
@@ -510,6 +531,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclability"
     },
     "recycledContentPercentage": {
@@ -521,6 +543,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 7(2)(c)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "endOfLifeInstructions": {
@@ -545,6 +568,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9(3)",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
     },
     "dataCarrierUri": {
@@ -554,6 +578,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9(3), GS1 Digital Link",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierUri"
     },
     "passportValidFrom": {
@@ -563,6 +588,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 10",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/passportValidFrom"
     },
     "passportRetentionYears": {
@@ -574,6 +600,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 10(3)",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/passportRetentionYears"
     },
     "accessLevel": {
@@ -588,6 +615,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 10(4)",
+      "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "vocContent": {
@@ -598,6 +626,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-L",
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-citationNote": "Directive 2004/42/EC Art. 4 requires the LABEL to indicate the maximum VOC content in g/l in a ready-to-use condition. The duty is discharged by that label; the Directive creates no passport and no separate publication duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/vocContent"
     },
     "vocLimit": {
@@ -609,6 +638,7 @@
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
       "x-provision": "Annex II",
+      "x-citationNote": "Art. 4(a) requires the LABEL to indicate the relevant VOC limit values from Annex II alongside the subcategory. The limit itself is set by Annex II; Art. 3 makes staying under it a condition of placing the product on the market.",
       "x-iri": "https://tracepass.eu/voc/dpp/vocLimit"
     },
     "vocCategory": {
@@ -618,6 +648,7 @@
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
       "x-provision": "Annex I",
+      "x-citationNote": "It defines the product categories and subcategories in scope, and Art. 4(a) requires the subcategory to appear on the LABEL. It is a scoping and labelling construct rather than passport data.",
       "x-iri": "https://tracepass.eu/voc/dpp/vocCategory"
     },
     "paintType": {
@@ -639,6 +670,7 @@
       ],
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-citationNote": "The Directive's operative distinction is the Annex I subcategory, which Art. 4(a) puts on the label. A free product-type description is not a mandated datum.",
       "x-iri": "https://tracepass.eu/voc/dpp/paintType"
     },
     "vocContentReadyToUse": {
@@ -650,6 +682,7 @@
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
       "x-provision": "Article 3",
+      "x-citationNote": "This is the exact datum Art. 4(b) requires on the LABEL — the maximum VOC content in g/l of the product in a ready-to-use condition. Real mandated data, discharged by affixing the label rather than by publishing here.",
       "x-iri": "https://tracepass.eu/voc/dpp/vocContentReadyToUse"
     },
     "vocMaxLimit": {
@@ -661,6 +694,7 @@
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
       "x-provision": "Annex II",
+      "x-citationNote": "The Annex II limit value for the product's subcategory, which Art. 4(a) requires on the LABEL. Art. 3 permits placing on the market only where the VOC content does not exceed it — a market-placement condition backed by a labelling duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/vocMaxLimit"
     },
     "solventType": {
@@ -673,6 +707,7 @@
       ],
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
+      "x-citationNote": "Annex I distinguishes water-borne from solvent-borne products because they carry different Annex II limit values, so the distinction has legal effect — but what Art. 4 requires on the label is the subcategory and the VOC figures, not the solvent type itself.",
       "x-iri": "https://tracepass.eu/voc/dpp/solventType"
     },
     "coverageSqmPerLitre": {
@@ -706,6 +741,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-citationNote": "Titanium dioxide carries CLP classification and labelling consequences in certain forms, and any applicable hazard statement belongs on the LABEL. CLP creates no duty to publish a content figure as product data.",
       "x-iri": "https://tracepass.eu/voc/dpp/titaniumDioxideContent"
     },
     "isoClassification": {
