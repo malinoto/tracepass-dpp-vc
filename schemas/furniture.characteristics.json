@@ -17,7 +17,6 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — product identification",
-      "x-citationNote": "Art. 9(5) requires a type, batch or serial number (or other identifying element) that is easily visible and legible to consumers — on the product, or on its packaging or an accompanying document. The duty is to IDENTIFY the product, not specifically to publish in a passport; carrying it here satisfies the identification and is the natural home for it. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "productModel": {
@@ -37,7 +36,6 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
-      "x-citationNote": "Art. 9(5) requires a type, batch or serial number (or other identifying element) that is easily visible and legible to consumers — on the product, or on its packaging or an accompanying document. The duty is to IDENTIFY the product, not specifically to publish in a passport; carrying it here satisfies the identification and is the natural home for it. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "productCategory": {
@@ -294,6 +292,7 @@
       "x-unit": "ug/m3",
       "x-unitIri": "http://qudt.org/vocab/unit/MicroGM-PER-M3",
       "x-standard": "EN 16516 (determination of emissions into indoor air)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/totalVocEmissionUgM3"
     },
     "flameRetardantSubstances": {
@@ -332,6 +331,7 @@
       "title": "Applicable Durability Standard",
       "description": "EN standard applied for durability/strength testing",
       "x-standard": "EN durability/strength test standards (named per product family)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/applicableDurabilityStandard"
     },
     "durabilityTestLevel": {
@@ -430,12 +430,16 @@
       "type": "number",
       "title": "Spring Count",
       "description": "Number of springs (if spring mattress)",
+      "x-standard": "Product specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/springCount"
     },
     "springType": {
       "type": "string",
       "title": "Spring Type",
       "description": "Type of spring system (pocket, Bonnell, continuous, etc.)",
+      "x-standard": "Product specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/springType"
     },
     "mattressCoverRemovable": {

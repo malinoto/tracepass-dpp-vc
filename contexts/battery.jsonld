@@ -164,6 +164,10 @@
         "@id": "https://tracepass.eu/voc/dpp/informationOnSeparateCollection",
         "@type": "xsd:anyURI"
       },
+      "informationOnCollectionAndEndOfLifeTreatment": {
+        "@id": "https://tracepass.eu/voc/dpp/informationOnCollectionAndEndOfLifeTreatment",
+        "@type": "xsd:anyURI"
+      },
       "dismantlingInformation": {
         "@id": "https://tracepass.eu/voc/dpp/dismantlingInformation",
         "@type": "xsd:anyURI"

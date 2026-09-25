@@ -134,17 +134,37 @@ function generateCategory(category, template) {
     // Provenance: the instrument the template records, or the standard the
     // ledger's decisions file names. A property with neither is genuinely ours.
     const celex = f.regulationRef?.instrument ?? null;
+    const isRequired = f.validation?.required === true;
     if (celex) {
       prop["x-regulation"] = celex;
       prop["x-regulationIri"] = eurLex(celex);
       if (f.regulationRef?.provision) prop["x-provision"] = f.regulationRef.provision;
-    } else if (decisions.standards[f.key]) {
-      prop["x-standard"] = decisions.standards[f.key];
+      // Optional CELEX-citing properties carry citation reasoning so a reader can
+      // tell whether the citation was verified or merely copied. Required fields
+      // are exempt: their citation is interrogated by the required-side checks.
+      // The template's regulationRef.description is the primary source; when the
+      // template has no description, decisions.citationNotes provides a fallback
+      // written here after examining the field against the primary text.
+      if (!isRequired) {
+        const note = f.regulationRef?.description || decisions.citationNotes?.[f.key] || null;
+        if (note) prop["x-citationNote"] = note;
+      }
+    } else {
+      // Non-legislative source: decisions.standards overrides; template `article`
+      // is next; template `standards` array is the final fallback (used when a
+      // field's only owner is recorded in the array and article is absent).
+      const stdArr = Array.isArray(f.regulationRef?.standards) ? f.regulationRef.standards : [];
+      const std =
+        decisions.standards[f.key] ??
+        f.regulationRef?.article ??
+        (stdArr.length > 0 ? stdArr.join(", ") : null);
+      if (std) prop["x-standard"] = std;
+      if (f.regulationRef?.kind && !celex) prop["x-sourceKind"] = f.regulationRef.kind;
     }
     prop["x-iri"] = iri;
 
     properties[f.key] = prop;
-    if (f.validation?.required === true) required.push(f.key);
+    if (isRequired) required.push(f.key);
   }
 
   const ctx = {

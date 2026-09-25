@@ -166,10 +166,6 @@
         "@id": "https://tracepass.eu/voc/dpp/billOfMaterials",
         "@container": "@set"
       },
-      "totalTyreWeightKg": {
-        "@id": "https://tracepass.eu/voc/dpp/totalTyreWeightKg",
-        "@type": "xsd:decimal"
-      },
       "naturalRubberContentPercentage": {
         "@id": "https://tracepass.eu/voc/dpp/naturalRubberContentPercentage",
         "@type": "xsd:decimal"

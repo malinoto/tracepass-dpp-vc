@@ -279,6 +279,7 @@
       "title": "Kimberley Process Compliant",
       "description": "Whether diamonds comply with the Kimberley Process Certification Scheme",
       "x-standard": "Kimberley Process Certification Scheme",
+      "x-sourceKind": "scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/kimberleyProcessCompliant"
     },
     "fairminedCertified": {
@@ -286,6 +287,7 @@
       "title": "Fairmined Certified",
       "description": "Whether the gold is Fairmined certified (artisanal and small-scale mining standard)",
       "x-standard": "Fairmined Standard (voluntary, artisanal and small-scale mining)",
+      "x-sourceKind": "scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/fairminedCertified"
     },
     "rjcCertificationStatus": {

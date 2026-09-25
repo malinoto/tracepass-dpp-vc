@@ -26,7 +26,7 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
-      "x-citationNote": "GPSR Art. 9(5) is satisfied by any one identifying element, so a batch number is not separately mandated where a unique product identifier is present.",
+      "x-citationNote": "GPSR Art. 9(5) is satisfied by any one identifying element, so a batch number is not separately mandated where a unique product identifier is present. The batch number is typically carried as GS1 Application Identifier (10); that is the identifier scheme, not the source of the obligation.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -142,6 +142,7 @@
       "description": "Total global warming potential including fossil, biogenic, and land use components",
       "x-unit": "kg CO2e",
       "x-standard": "EN 15804+A2 (global warming potential, total)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/gwpTotal"
     },
     "gwpFossil": {
@@ -150,6 +151,7 @@
       "description": "Global warming potential from fossil fuel sources",
       "x-unit": "kg CO2e",
       "x-standard": "EN 15804+A2 (global warming potential, fossil)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/gwpFossil"
     },
     "gwpBiogenic": {
@@ -158,6 +160,7 @@
       "description": "Global warming potential from biogenic carbon sources",
       "x-unit": "kg CO2e",
       "x-standard": "EN 15804+A2 (global warming potential, biogenic)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/gwpBiogenic"
     },
     "gwpLuluc": {
@@ -166,6 +169,7 @@
       "description": "Global warming potential from land use and land use change",
       "x-unit": "kg CO2e",
       "x-standard": "EN 15804+A2 (global warming potential, land use and land-use change)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/gwpLuluc"
     },
     "odp": {
@@ -174,6 +178,7 @@
       "description": "Ozone depletion potential",
       "x-unit": "kg CFC-11 eq.",
       "x-standard": "EN 15804+A2 (ozone depletion potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/odp"
     },
     "ap": {
@@ -182,6 +187,7 @@
       "description": "Acidification potential of soil and water",
       "x-unit": "mol H+ eq.",
       "x-standard": "EN 15804+A2 (acidification potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/ap"
     },
     "epFreshwater": {
@@ -190,6 +196,7 @@
       "description": "Freshwater eutrophication potential",
       "x-unit": "kg P eq.",
       "x-standard": "EN 15804+A2 (freshwater eutrophication potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/epFreshwater"
     },
     "epMarine": {
@@ -198,6 +205,7 @@
       "description": "Marine eutrophication potential",
       "x-unit": "kg N eq.",
       "x-standard": "EN 15804+A2 (marine eutrophication potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/epMarine"
     },
     "epTerrestrial": {
@@ -206,6 +214,7 @@
       "description": "Terrestrial eutrophication potential",
       "x-unit": "mol N eq.",
       "x-standard": "EN 15804+A2 (terrestrial eutrophication potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/epTerrestrial"
     },
     "pocp": {
@@ -214,6 +223,7 @@
       "description": "Photochemical ozone creation potential (smog formation)",
       "x-unit": "kg NMVOC eq.",
       "x-standard": "EN 15804+A2 (photochemical ozone creation potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/pocp"
     },
     "adpeMinerals": {
@@ -222,6 +232,7 @@
       "description": "Abiotic depletion potential for minerals and metals",
       "x-unit": "kg Sb eq.",
       "x-standard": "EN 15804+A2 (abiotic depletion potential, minerals and metals)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/adpeMinerals"
     },
     "adpfFossil": {
@@ -231,6 +242,7 @@
       "x-unit": "MJ",
       "x-unitIri": "http://qudt.org/vocab/unit/MegaJ",
       "x-standard": "EN 15804+A2 (abiotic depletion potential, fossil resources)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/adpfFossil"
     },
     "wdp": {
@@ -239,6 +251,7 @@
       "description": "Water deprivation potential",
       "x-unit": "m3 world eq.",
       "x-standard": "EN 15804+A2 (water deprivation potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/wdp"
     },
     "lifeCycleModules": {
@@ -268,6 +281,7 @@
         ]
       },
       "x-standard": "EN 15804+A2 (life-cycle module definitions A1-A3, C1-C4, D)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/lifeCycleModules"
     },
     "recycledContent": {
@@ -289,7 +303,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name",
-      "x-citationNote": "REACH Art. 33 is an on-request duty above 0.1% w/w, answered with at minimum the substance name; SCIP notification to ECHA is the database side. Neither is discharged by publishing here.",
+      "x-citationNote": "REACH Art. 33 is an on-request duty above 0.1% w/w, answered with at minimum the substance name; SCIP notification to ECHA is the database side. Neither is discharged by publishing here. Operative instrument for this field: CPR 2024/3110.",
       "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
     },
     "durabilityServiceLife": {
@@ -468,7 +482,7 @@
     "ceMarking": {
       "type": "boolean",
       "title": "CE Marking",
-      "description": "Whether the battery bears the CE marking",
+      "description": "Whether the construction product bears the CE marking",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "Art. 13-15",

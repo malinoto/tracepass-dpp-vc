@@ -68,7 +68,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `maxAllowedPpm` | CELEX `32025R0040` | Art. 5(2) |
 | `pfasPresent` | CELEX `32025R0040` | Art. 5(5) |
 | `heavyMetalsSumPpm` | CELEX `32025R0040` | Art. 5(4) |
-| `heavyMetalsMaxPpm` | CELEX `32025R0040` | Art. 5(2) |
+| `heavyMetalsMaxPpm` | CELEX `32025R0040` | Art. 5(4) |
 | `labelHarmonized` | CELEX `32025R0040` | Art. 12 |
 | `materialCompositionPictogram` | CELEX `32025R0040` | Art. 12 |
 | `bioBasedContentPercent` | CELEX `32025R0040` | Art. 5 |
@@ -83,10 +83,10 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `dataCarrierUri` | CELEX `32025R0040` | Art. 12, ESPR Art. 9 |
 | `dataCarrierFormat` | CELEX `32024R1781` | Art. 9 |
 | `dataCarrierEncoding` | CELEX `32024R1781` | Art. 9 |
-| `retentionPeriodYears` | CELEX `32025R0040` | Art. 15(3) |
-| `accessTier` | CELEX `32024R1781` | anticipated — Art. 10(1)(g) defers to an Art. 4 delegated act |
+| `retentionPeriodYears` | CELEX `32025R0040` | PPWR (EU) 2025/40 Art. 15(3) — manufacturers shall keep the technical documentation and EU declaration of conformity for 5 years (single-use) or 10 years (reusable) from placing on the market |
+| `accessTier` | CELEX `32024R1781` | Art. 10 |
 | `emptySpacePercent` | CELEX `32025R0040` | Art. 10 |
-| `maxAllowedEmptySpacePercent` | CELEX `32025R0040` | Art. 10 |
+| `maxAllowedEmptySpacePercent` | CELEX `32025R0040` | Art. 24(1) |
 | `weightOptimised` | CELEX `32025R0040` | Art. 10 |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

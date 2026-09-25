@@ -127,6 +127,7 @@
       "title": "EN 71 Test Results",
       "description": "Results of EN 71 safety testing: EN 71-1 (mechanical/physical), EN 71-2 (flammability), EN 71-3 (migration of elements)",
       "x-standard": "EN 71 (safety of toys: -1 mechanical, -2 flammability, -3 migration of elements)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/en71TestResults"
     },
     "notifiedBody": {

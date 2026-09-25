@@ -1,6 +1,6 @@
 # Electronics DPP — field-to-vocabulary mapping
 
-Every field in the Electronics Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 158 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Electronics Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 153 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -37,55 +37,53 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `productModel` | CELEX `32024R1781` | Art. 9(2) |
 | `batchLotNumber` | CELEX `32024R1781` | Art. 9(2) |
 | `serialNumber` | CELEX `32024R1781` | Art. 9(2) |
-| `taricCode` | CELEX `32024R1781` | Reg. (EU) 952/2013 (UCC) — customs classification declared by the declarant at import |
+| `taricCode` | CELEX `32013R0952` | Reg. (EU) 952/2013 (UCC) — customs classification declared by the declarant at import |
 | `productCategory` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingDate` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingCountry` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingPlant` | CELEX `32024R1781` | Art. 9(2) |
-| `euDeclarationOfConformity` | CELEX `32024R1781` | RoHS Dir. 2011/65/EU Art. 13 + EMC Dir. 2014/30/EU Art. 15 — DoC drawn up and kept, produced on request |
+| `euDeclarationOfConformity` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 13 + EMC Dir. 2014/30/EU Art. 15 — DoC drawn up and kept, produced on request |
 | `ceMarking` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 15 + EMC Dir. 2014/30/EU Art. 16 — CE marking affixed to the product |
 | `notifiedBodyId` | CELEX `32024R1781` | Art. 9(2) |
-| `technicalDocumentationUrl` | CELEX `32024R1781` | RoHS Dir. 2011/65/EU Art. 7(b) + Annex VI — technical documentation kept 10 years, produced on request |
-| `userManualUrl` | CELEX `32024R1781` | GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them |
+| `technicalDocumentationUrl` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 7(b) + Annex VI — technical documentation kept 10 years, produced on request |
+| `userManualUrl` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them |
 | `safetyInstructionsUrl` | CELEX `32024R1781` | Art. 9(2) |
 | `durabilityClass` | CELEX `32024R1781` | Art. 7 |
-| `repairabilityClass` | CELEX `32024R1781` | Art. 7 |
-| `repairabilityIndex` | CELEX `32023R1670` | Art. 7 |
-| `energyEfficiencyClass` | CELEX `32024R1781` | Reg. (EU) 2017/1369 Arts. 3(1) and 4 — physical energy label supplied with the product and EPREL registration |
-| `annualEnergyConsumption` | CELEX `32024R1781` | Reg. (EU) 2017/1369 Arts. 12 and 4 — product information sheet registered in EPREL |
+| `repairabilityClass` | CELEX `32023R1669` | Annex II, point C, Table 4 |
+| `repairabilityIndex` | CELEX `32023R1669` | Annex V, Table 8, item 21 |
+| `energyEfficiencyClass` | CELEX `32017R1369` | Reg. (EU) 2017/1369 Arts. 3(1) and 4 — physical energy label supplied with the product and EPREL registration |
+| `annualEnergyConsumption` | CELEX `32019R2016` | Annex V, Table 6 |
 | `waterConsumption` | CELEX `32024R1781` | Art. 7 |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7 |
 | `carbonFootprintClass` | CELEX `32024R1781` | Art. 7 |
-| `recycledContentPercentage` | CELEX `32024R1781` | Art. 7 |
+| `recycledContentPercentage` | CELEX `32023R1670` | Annex II, point B.2(1)(d) |
 | `recyclabilityRate` | CELEX `32024R1781` | Art. 7 |
 | `upgradabilityInfo` | CELEX `32024R1781` | Art. 7 |
 | `refurbishmentPossibility` | CELEX `32024R1781` | Art. 7 |
-| `batteryEndurancePerCycle` | CELEX `32024R1781` | Annex V |
-| `batteryEnduranceCycles` | CELEX `32024R1781` | Annex V |
-| `ratedBatteryCapacity` | CELEX `32024R1781` | Annex V |
+| `batteryEndurancePerCycle` | CELEX `32023R1669` | Annex V, Table 8, item 8 |
+| `batteryEnduranceCycles` | CELEX `32023R1669` | Annex V, Table 8, item 9 |
+| `ratedBatteryCapacity` | CELEX `32023R1669` | Annex V, Table 8, item 10 |
 | `batteryUserReplaceable` | CELEX `32023R1542` | Reg. (EU) 2023/1542 Art. 11 — removability and replaceability, for products incorporating a portable battery, from 18 February 2027 |
-| `repeatedFreeFallReliabilityClass` | CELEX `32024R1781` | Annex V |
-| `ipRating` | CELEX `32024R1781` | Annex V |
-| `disassemblyDepthScore` | CELEX `32024R1781` | Annex V |
-| `fastenersScore` | CELEX `32024R1781` | Annex V |
-| `toolsScore` | CELEX `32024R1781` | Annex V |
-| `sparePartsScore` | CELEX `32024R1781` | Annex V |
-| `softwareUpdateScore` | CELEX `32024R1781` | Annex V |
-| `repairInformationScore` | CELEX `32024R1781` | Annex V |
-| `dropResistanceHeight` | CELEX `32024R1781` | Annex V |
-| `dropResistanceTestResult` | CELEX `32024R1781` | Annex V |
-| `scratchResistanceClass` | CELEX `32024R1781` | Annex V |
-| `batteryMinCycles80Pct` | CELEX `32024R1781` | Annex V |
-| `batteryCapacityRetention` | CELEX `32024R1781` | Annex V |
-| `sparePartsList` | CELEX `32023R1670` | Art. 11 |
-| `sparePartsAvailabilityYears` | CELEX `32023R1670` | Art. 11 |
+| `repeatedFreeFallReliabilityClass` | CELEX `32023R1669` | Annex V, Table 8, item 14 |
+| `ipRating` | CELEX `32023R1669` | Annex V, Table 8, item 15 |
+| `disassemblyDepthScore` | CELEX `32023R1669` | Annex V, Table 8, item 21a |
+| `fastenersScore` | CELEX `32023R1669` | Annex V, Table 8, item 21b |
+| `toolsScore` | CELEX `32023R1669` | Annex V, Table 8, item 21c |
+| `sparePartsScore` | CELEX `32023R1669` | Annex V, Table 8, item 21d |
+| `softwareUpdateScore` | CELEX `32023R1669` | Annex V, Table 8, item 21e |
+| `repairInformationScore` | CELEX `32023R1669` | Annex V, Table 8, item 21f |
+| `dropResistanceTestResult` | CELEX `32023R1670` | Annex II, point B.1.2(1) |
+| `scratchResistanceClass` | CELEX `32023R1669` | Annex V, Table 8, item 17 |
+| `batteryMinCycles80Pct` | CELEX `32023R1670` | Annex II, point B.1.2(4) |
+| `batteryCapacityRetention` | CELEX `32023R1670` | Annex II, point B.1.2(4) |
+| `sparePartsList` | CELEX `32023R1670` | Annex II, point B.1.1(1) |
+| `sparePartsAvailabilityYears` | CELEX `32023R1670` | Annex II, point B.1.1(1) |
 | `maxDeliveryDays` | CELEX `32024R1781` | Art. 11 |
-| `sparePartsWebsiteUrl` | CELEX `32024R1781` | Art. 11 |
+| `sparePartsWebsiteUrl` | CELEX `32023R1670` | Annex II, point B.1.1(1) |
 | `priceList` | CELEX `32024R1781` | Art. 11 |
-| `osUpdateSupportYears` | CELEX `32024R1781` | Art. 10 |
-| `securityUpdateSupportYears` | CELEX `32024R1781` | Art. 10 |
-| `osUpdateEndDate` | CELEX `32024R1781` | Art. 10 |
-| `securityUpdateEndDate` | CELEX `32024R1781` | Art. 10 |
+| `osUpdateSupportYears` | CELEX `32023R1670` | Annex II, point B.1.2(6)(a) |
+| `osUpdateEndDate` | CELEX `32023R1670` | Annex II, point B.1.2(6)(a) |
+| `securityUpdateEndDate` | CELEX `32023R1670` | Annex II, point B.1.2(6)(a) |
 | `firmwareAccessForRepairers` | CELEX `32024R1781` | Art. 10 |
 | `dataWipeFunction` | CELEX `32024R1781` | Art. 10 |
 | `dataTransferSupport` | CELEX `32024R1781` | Art. 10 |
@@ -115,37 +113,35 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `psuRemovable` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
 | `secureDataDeletion` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
 | `firmwareUpdateSupport` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
-| `ratedCapacity` | CELEX `32024R1781` | Annex V |
-| `energyEfficiencyIndex` | CELEX `32024R1781` | Annex V |
-| `energyConsumptionPer100Cycles` | CELEX `32024R1781` | Annex V |
-| `waterConsumptionPerCycle` | CELEX `32024R1781` | Annex V |
-| `programmeDuration` | CELEX `32024R1781` | Annex V |
-| `spinDryingEfficiencyClass` | CELEX `32024R1781` | Annex V |
-| `maximumSpinSpeed` | CELEX `32024R1781` | Annex V |
-| `residualMoistureContent` | CELEX `32024R1781` | Annex V |
-| `washingEfficiencyIndex` | CELEX `32024R1781` | Annex V |
-| `rinsingEffectiveness` | CELEX `32024R1781` | Annex V |
-| `airborneNoiseEmission` | CELEX `32024R1781` | Annex V |
-| `noiseClass` | CELEX `32024R1781` | Annex V |
-| `offModePower` | CELEX `32024R1781` | Annex V |
-| `standbyModePower` | CELEX `32024R1781` | Annex V |
-| `totalVolume` | CELEX `32024R1781` | Annex V |
-| `freshFoodVolume` | CELEX `32024R1781` | Annex V |
-| `frozenVolume` | CELEX `32024R1781` | Annex V |
-| `starRating` | CELEX `32024R1781` | Annex V |
-| `refrigeratorEnergyEfficiencyIndex` | CELEX `32024R1781` | Annex V |
-| `refrigeratorAnnualEnergyConsumption` | CELEX `32024R1781` | Annex V |
-| `climateClass` | CELEX `32024R1781` | Annex V |
-| `refrigeratorNoiseEmission` | CELEX `32024R1781` | Annex V |
-| `refrigeratorNoiseClass` | CELEX `32024R1781` | Annex V |
-| `freezingCapacity` | CELEX `32024R1781` | Annex V |
-| `temperatureRiseTime` | CELEX `32024R1781` | Annex V |
-| `refrigeratorOffModePower` | CELEX `32024R1781` | Annex V |
+| `ratedWashingCapacity` | CELEX `32019R2014` | Annex V, Table 3, item 3 |
+| `energyEfficiencyIndex` | CELEX `32019R2014` | Annex V, Table 3, item 1 |
+| `energyConsumptionPer100Cycles` | CELEX `32019R2014` | Annex V, Table 3, item 2 |
+| `waterConsumptionPerCycle` | CELEX `32019R2014` | Annex V, Table 3, item 7 |
+| `programmeDuration` | CELEX `32019R2014` | Annex V, Table 3, item 9 |
+| `spinDryingEfficiencyClass` | CELEX `32019R2014` | Annex V, Table 3, item 5 |
+| `maximumSpinSpeed` | CELEX `32019R2014` | Annex V, Table 3, item 6 |
+| `residualMoistureContent` | CELEX `32019R2014` | Annex V, Table 3, item 8 |
+| `washingEfficiencyIndex` | CELEX `32019R2014` | Annex V, Table 3, item 4 |
+| `rinsingEffectiveness` | CELEX `32019R2014` | Annex V, Table 3, item 10 |
+| `airborneNoiseEmission` | CELEX `32019R2014` | Annex V, Table 3, item 12 |
+| `noiseClass` | CELEX `32019R2014` | Annex V, Table 3, item 13 |
+| `offModePower` | CELEX `32019R2014` | Annex V, Table 3, item 14 |
+| `standbyModePower` | CELEX `32019R2014` | Annex V, Table 3, item 15 |
+| `totalVolume` | CELEX `32019R2016` | Annex V, Table 6, item 3 |
+| `freshFoodVolume` | CELEX `32019R2016` | Annex V, Table 6, item 4 |
+| `frozenVolume` | CELEX `32019R2016` | Annex V, Table 6, item 5 |
+| `starRating` | CELEX `32019R2016` | Annex V, Table 6, item 6 |
+| `refrigeratorEnergyEfficiencyIndex` | CELEX `32019R2016` | Annex V, Table 6, item 2 |
+| `climateClass` | CELEX `32019R2016` | Annex V, Table 6, item 7 |
+| `refrigeratorNoiseEmission` | CELEX `32019R2016` | Annex V, Table 6, item 9 |
+| `refrigeratorNoiseClass` | CELEX `32019R2016` | Annex V, Table 6, item 10 |
+| `freezingCapacity` | CELEX `32019R2016` | Annex V, Table 6, item 8 |
+| `temperatureRiseTime` | CELEX `32019R2016` | Annex VI, technical documentation |
 | `rohsCompliant` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 4(1) — substance restriction evidenced through the DoC and CE marking |
 | `rohsDeclaration` | CELEX `32024R1781` | Art. 4 |
-| `leadContent` | CELEX `32011L0065` | Annex II |
+| `leadConcentrationHomogeneousMaterial` | CELEX `32011L0065` | Annex II |
 | `mercuryContent` | CELEX `32011L0065` | Annex II |
-| `cadmiumContent` | CELEX `32011L0065` | Annex II |
+| `cadmiumConcentrationHomogeneousMaterial` | CELEX `32011L0065` | Annex II |
 | `hexavalentChromiumContent` | CELEX `32011L0065` | Annex II |
 | `pbbContent` | CELEX `32011L0065` | Annex II |
 | `pbdeContent` | CELEX `32011L0065` | Annex II |
@@ -155,9 +151,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `dibpContent` | CELEX `32011L0065` | Annex II |
 | `rohsExemptionsApplied` | CELEX `32011L0065` | Annex III |
 | `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
-| `scipNotificationId` | CELEX `32024R1781` | Art. 9(1)(i) |
+| `scipNotificationId` | CELEX `32008L0098` | Art. 9(1)(i) |
 | `svhcPresent` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
-| `containsPermanentMagnets` | CELEX `32024R1781` | Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet information, applicable from 24 May 2029 for covered categories |
+| `containsPermanentMagnets` | CELEX `32024R1252` | Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet information, applicable from 24 May 2029 for covered categories |
 | `magnetTotalWeight` | CELEX `32024R1781` | Art. 27 |
 | `magnetLocation` | CELEX `32024R1781` | Art. 27 |
 | `magnetChemicalComposition` | CELEX `32024R1781` | Art. 27 |
@@ -170,7 +166,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `recycledSamarium` | CELEX `32024R1781` | Art. 27 |
 | `recycledNickel` | CELEX `32024R1781` | Art. 27 |
 | `recycledCobalt` | CELEX `32024R1781` | Art. 27 |
-| `recycledContentTotal` | CELEX `32024R1781` | Art. 27 |
 | `recycledPlasticContent` | CELEX `32024R1781` | Art. 7 |
 | `recycledMetalContent` | CELEX `32024R1781` | Art. 7 |
 | `recycledLithium` | CELEX `32024R1781` | Art. 27 |

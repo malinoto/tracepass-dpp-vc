@@ -89,7 +89,6 @@
       "svhcSubstances": [
         "Lead"
       ],
-      "svhcSubstanceName": "Lead",
       "batchLotNumber": "PC-2026-0518-A",
       "tradeName": "Ferrolux SolvaCoat Matt White",
       "commodityCode": "3209100000",
@@ -97,9 +96,6 @@
       "ingredientCasNumber": "13463-67-7",
       "emergencyPhoneNumber": "+49 30 19240",
       "productCategoryEuPCS": "PC-PNT-1 Decorative paints and varnishes, consumer",
-      "svhcCasNumber": "7439-92-1",
-      "svhcConcentrationRange": "0.1-0.3%",
-      "svhcSafeUseInstructions": "Contains lead above 0.1 % w/w. Do not sand or burn coated surfaces; use local exhaust ventilation and P2 respiratory protection when removing. Dispose of waste and residues as hazardous waste.",
       "appearance": "Opaque matt white liquid dispersion",
       "ph": 8.6,
       "endOfLifeInstructions": "https://example.com/docs/solvacoat-disposal.pdf"

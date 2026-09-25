@@ -1,6 +1,6 @@
 # Battery DPP — field-to-vocabulary mapping
 
-Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 113 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 114 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -24,32 +24,32 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `batteryIdDmcCode` | CELEX `32023R1542` | Art. 77 |
-| `batteryPassportIdentifier` | CELEX `32023R1542` | Art. 77 |
+| `batteryIdDmcCode` | CELEX `32023R1542` | Art. 77(3) |
+| `batteryPassportIdentifier` | CELEX `32023R1542` | Art. 77(3) |
 | `manufacturerEmail` | CELEX `32023R1542` | Art. 38(7) |
-| `manufacturingDate` | CELEX `32023R1542` | Art. 38(6) |
-| `manufacturingPlace` | CELEX `32023R1542` | Art. 38(6) |
-| `batteryCategory` | CELEX `32023R1542` | Art. 1 |
+| `manufacturingDate` | CELEX `32023R1542` | Annex VI Part A (4) |
+| `manufacturingPlace` | CELEX `32023R1542` | Annex VI Part A (3) |
+| `batteryCategory` | CELEX `32023R1542` | Annex VI Part A (2) |
 | `batteryWeight` | CELEX `32023R1542` | Annex VI Part A |
 | `batteryStatus` | CELEX `32023R1542` | Annex XIII 4(c) |
-| `separateCollectionSymbol` | CELEX `32023R1542` | Art. 13(4) |
-| `cadmiumSymbol` | CELEX `32023R1542` | Art. 13(5) |
-| `leadSymbol` | CELEX `32023R1542` | Art. 13(5) |
+| `separateCollectionSymbol` | CELEX `32023R1542` | Annex XIII 1(q) |
+| `cadmiumSymbol` | CELEX `32023R1542` | Annex XIII 1(q) |
+| `leadSymbol` | CELEX `32023R1542` | Annex XIII 1(q) |
 | `carbonFootprintLabel` | CELEX `32023R1542` | Art. 7(3) |
-| `meaningOfLabelsAndSymbols` | CELEX `32023R1542` | Art. 13 |
-| `euDeclarationOfConformity` | CELEX `32023R1542` | Art. 18 |
-| `testReportResults` | CELEX `32023R1542` | Art. 18 |
+| `meaningOfLabelsAndSymbols` | CELEX `32023R1542` | Annex XIII 1(s) |
+| `euDeclarationOfConformity` | CELEX `32023R1542` | Annex XIII 1(r) |
+| `testReportResults` | CELEX `32023R1542` | Annex XIII 3 |
 | `ceMarking` | CELEX `32023R1542` | Art. 20 |
-| `carbonFootprintTotal` | CELEX `32023R1542` | Art. 7(1) |
-| `cfRawMaterialAcquisition` | CELEX `32023R1542` | Art. 7(1) |
-| `cfMainProductProduction` | CELEX `32023R1542` | Art. 7(1) |
-| `cfDistribution` | CELEX `32023R1542` | Art. 7(1) |
-| `cfEndOfLifeRecycling` | CELEX `32023R1542` | Art. 7(1) |
-| `carbonFootprintPerformanceClass` | CELEX `32023R1542` | Art. 7(2) |
+| `carbonFootprintTotal` | CELEX `32023R1542` | Annex XIII 1(c) |
+| `cfRawMaterialAcquisition` | CELEX `32023R1542` | Annex XIII 1(c) |
+| `cfMainProductProduction` | CELEX `32023R1542` | Annex XIII 1(c) |
+| `cfDistribution` | CELEX `32023R1542` | Annex XIII 1(c) |
+| `cfEndOfLifeRecycling` | CELEX `32023R1542` | Annex XIII 1(c) |
+| `carbonFootprintPerformanceClass` | CELEX `32023R1542` | Annex XIII 1(c) |
 | `carbonFootprintStudyUrl` | CELEX `32023R1542` | Art. 7(1) |
-| `supplyChainDueDiligenceReport` | CELEX `32023R1542` | Art. 52 |
-| `dueDiligencePolicy` | CELEX `32023R1542` | Art. 52 |
-| `thirdPartyAuditResults` | CELEX `32023R1542` | Art. 52 |
+| `supplyChainDueDiligenceReport` | CELEX `32023R1542` | Annex XIII 1(d) |
+| `dueDiligencePolicy` | CELEX `32023R1542` | Annex XIII 1(d) |
+| `thirdPartyAuditResults` | CELEX `32023R1542` | Annex XIII 1(d) |
 | `batteryChemistry` | CELEX `32023R1542` | Annex VI Part A |
 | `cathodeActiveMaterials` | CELEX `32023R1542` | Annex XIII 2(a) |
 | `anodeActiveMaterials` | CELEX `32023R1542` | Annex XIII 2(a) |
@@ -57,17 +57,18 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `criticalRawMaterials` | CELEX `32023R1542` | Annex VI Part A |
 | `hazardousSubstances` | CELEX `32023R1542` | Annex VI Part A |
 | `scipNotificationNumber` | CELEX `32023R1542` | Art. 77 |
-| `recycledContentCobalt` | CELEX `32023R1542` | Art. 8 |
-| `recycledContentLithium` | CELEX `32023R1542` | Art. 8 |
-| `recycledContentNickel` | CELEX `32023R1542` | Art. 8 |
-| `recycledContentLead` | CELEX `32023R1542` | Art. 8 |
-| `roleOfEndUsersInWastePrevention` | CELEX `32023R1542` | Art. 74 |
-| `informationOnSeparateCollection` | CELEX `32023R1542` | Art. 74 |
+| `recycledContentCobalt` | CELEX `32023R1542` | Annex XIII 1(e) |
+| `recycledContentLithium` | CELEX `32023R1542` | Annex XIII 1(e) |
+| `recycledContentNickel` | CELEX `32023R1542` | Annex XIII 1(e) |
+| `recycledContentLead` | CELEX `32023R1542` | Annex XIII 1(e) |
+| `roleOfEndUsersInWastePrevention` | CELEX `32023R1542` | Annex XIII (1s) |
+| `informationOnSeparateCollection` | CELEX `32023R1542` | Annex XIII (1s) |
+| `informationOnCollectionAndEndOfLifeTreatment` | CELEX `32023R1542` | Annex XIII (1s) |
 | `dismantlingInformation` | CELEX `32023R1542` | Annex XIII 2(c) |
 | `removalInformation` | CELEX `32023R1542` | Art. 11 |
 | `sparePartsInformation` | CELEX `32023R1542` | Annex XIII 2(b) |
 | `safetyInformationEndOfLife` | CELEX `32023R1542` | Annex XIII 2(d) |
-| `recycledContentDocumentation` | CELEX `32023R1542` | Art. 8 |
+| `recycledContentDocumentation` | CELEX `32023R1542` | Annex XIII 1(e) |
 | `batteryRemovabilityReplaceability` | CELEX `32023R1542` | Art. 11 |
 | `ratedCapacity` | CELEX `32023R1542` | Annex XIII 1(g) |
 | `nominalVoltage` | CELEX `32023R1542` | Annex XIII 1(h) |
@@ -75,12 +76,12 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `maximumVoltage` | CELEX `32023R1542` | Annex XIII 1(h) |
 | `originalPowerCapability` | CELEX `32023R1542` | Annex XIII 1(i) |
 | `maximumAllowedBatteryPower` | CELEX `32023R1542` | Annex XIII 1(i) |
-| `ratioMaxPowerMaxEnergy` | CELEX `32023R1542` | Art. 77 |
+| `ratioMaxPowerMaxEnergy` | CELEX `32023R1542` | Annex IV Part B(2) |
 | `initialEnergyRoundTripEfficiency` | CELEX `32023R1542` | Annex XIII 1(n) |
 | `initialInternalResistancePack` | CELEX `32023R1542` | Annex XIII 1(o) |
 | `initialInternalResistanceCell` | CELEX `32023R1542` | Annex XIII 1(o) |
 | `initialInternalResistanceModule` | CELEX `32023R1542` | Annex XIII 1(o) |
-| `initialSelfDischargeRate` | CELEX `32023R1542` | Art. 77 |
+| `initialSelfDischargeRate` | CELEX `32023R1542` | Annex XIII 1(o) |
 | `batteryEnergyTotal` | — | — |
 | `energyDensity` | — | — |
 | `expectedLifetimeCycles` | CELEX `32023R1542` | Annex XIII 1(j) |

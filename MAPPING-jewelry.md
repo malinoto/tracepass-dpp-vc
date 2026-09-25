@@ -27,29 +27,29 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `productCategory` | CELEX `32024R1781` | Art. 9(2) |
 | `serialNumber` | CELEX `32024R1781` | Art. 9(2) |
 | `batchLotNumber` | CELEX `32024R1781` | Art. 9(2) |
-| `primaryMetal` | — | — |
-| `metalFineness` | — | — |
-| `metalWeight` | — | — |
-| `hallmarkPresent` | — | — |
-| `hallmarkAuthority` | — | — |
-| `hallmarkNumber` | — | — |
+| `primaryMetal` | Vienna Convention 1972 - Hallmarking | — |
+| `metalFineness` | Vienna Convention 1972 - Hallmarking | — |
+| `metalWeight` | Vienna Convention 1972 - Hallmarking | — |
+| `hallmarkPresent` | Vienna Convention 1972 - Hallmarking | — |
+| `hallmarkAuthority` | Vienna Convention 1972 - Hallmarking | — |
+| `hallmarkNumber` | Vienna Convention 1972 - Hallmarking | — |
 | `additionalMetals` | CELEX `32024R1781` | Art. 9(2) |
-| `gemstoneType` | — | — |
-| `gemstoneWeight` | — | — |
-| `gemstoneColor` | — | — |
-| `gemstoneClarity` | — | — |
-| `gemstoneCut` | — | — |
-| `gemstoneOrigin` | — | — |
-| `gemstoneTreatment` | — | — |
-| `gemstoneLabCertificate` | — | — |
-| `isNatural` | — | — |
+| `gemstoneType` | Kimberley Process; CSDDD | — |
+| `gemstoneWeight` | GIA/IGI grading standards | — |
+| `gemstoneColor` | GIA/IGI grading standards | — |
+| `gemstoneClarity` | GIA/IGI grading standards | — |
+| `gemstoneCut` | GIA/IGI grading standards | — |
+| `gemstoneOrigin` | Kimberley Process; EU Conflict Minerals (EU) 2017/821 | — |
+| `gemstoneTreatment` | CIBJO Blue Books | — |
+| `gemstoneLabCertificate` | GIA/IGI/AGS certification | — |
+| `isNatural` | CIBJO Blue Books; FTC Jewelry Guides | — |
 | `metalOriginCountry` | CELEX `32017R0821` | — |
-| `gemstoneOriginMine` | — | — |
+| `gemstoneOriginMine` | Kimberley Process; CSDDD | — |
 | `conflictFreeStatus` | CELEX `32017R0821` | Art. 3 (binds Union importers of tin, tantalum, tungsten and gold above Annex I volume thresholds) |
 | `kimberleyProcessCompliant` | Kimberley Process Certification Scheme | — |
 | `fairminedCertified` | Fairmined Standard (voluntary, artisanal and small-scale mining) | — |
-| `rjcCertificationStatus` | — | — |
-| `chainOfCustodyDocUrl` | — | — |
+| `rjcCertificationStatus` | RJC Code of Practices; RJC Chain of Custody | — |
+| `chainOfCustodyDocUrl` | RJC COC; EU Conflict Minerals (EU) 2017/821 | — |
 | `leadContent` | CELEX `32006R1907` | Annex XVII Entry 63 (metal parts of jewellery: max 0.05% w/w) |
 | `cadmiumContent` | CELEX `32006R1907` | Annex XVII Entry 23 (max 0.01% w/w) |
 | `nickelMigrationRate` | CELEX `32006R1907` | Annex XVII Entry 27 (skin contact: <0.5 µg/cm²/week; body piercing: <0.2 µg/cm²/week) |
@@ -63,10 +63,10 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `resizeAvailable` | CELEX `32024R1781` | — |
 | `takeBackProgram` | CELEX `32024R1781` | — |
 | `recyclabilityInfo` | CELEX `32024R1781` | — |
-| `gemologicalLabCertificate` | — | — |
-| `hallmarkCertificate` | — | — |
+| `gemologicalLabCertificate` | GIA/IGI/AGS certification | — |
+| `hallmarkCertificate` | Vienna Convention 1972 - Hallmarking | — |
 | `conflictFreeCertificate` | CELEX `32017R0821` | — |
-| `rjcCertificate` | — | — |
+| `rjcCertificate` | RJC Code of Practices | — |
 | `customCertificates` | CELEX `32024R1781` | Art. 9(2) |
 | `dataCarrierType` | CELEX `32024R1781` | Art. 9(3) |
 | `dataCarrierPlacement` | CELEX `32024R1781` | Art. 9(3) |

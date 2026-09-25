@@ -1,6 +1,6 @@
 # Tyres DPP — field-to-vocabulary mapping
 
-Every field in the Tyres Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 87 are coined**, 7 are carried by the UNTP envelope rather than by `characteristics`, and 1 are skipped as product specifications rather than semantic properties.
+Every field in the Tyres Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 86 are coined**, 7 are carried by the UNTP envelope rather than by `characteristics`, and 1 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -44,13 +44,13 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `loadCapacityIndex` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `loadVersion` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `speedCategorySymbol` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
-| `speedRatingKmh` | — | — |
-| `tyreConstruction` | — | — |
-| `tyreType` | — | — |
-| `sectionWidthMm` | — | — |
-| `aspectRatio` | — | — |
-| `rimDiameterInches` | — | — |
-| `treadDepthMm` | — | — |
+| `speedRatingKmh` | UNECE Reg. 30/54 | — |
+| `tyreConstruction` | UNECE Reg. 30/54 | — |
+| `tyreType` | Product specification | — |
+| `sectionWidthMm` | UNECE Reg. 30/54 | — |
+| `aspectRatio` | UNECE Reg. 30/54 | — |
+| `rimDiameterInches` | UNECE Reg. 30/54 | — |
+| `treadDepthMm` | Product specification | — |
 | `tyreWeightKg` | CELEX `32024R1781` | — |
 | `fuelEfficiencyClass` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Annex I Part A — class shown on the tyre label and registered in EPREL |
 | `rollingResistanceCoefficientNKn` | CELEX `32020R0740` | Reg. (EU) 2020/740 Annex I Part A + Annex II — measured value in the EPREL product information sheet |
@@ -63,11 +63,10 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `tyreAbrasionRateMgKm` | CELEX `32024R1257` | — |
 | `abrasionIndex` | CELEX `32024R1257` | — |
 | `abrasionTestMethod` | CELEX `32024R1257` | — |
-| `testDistanceKm` | — | — |
+| `testDistanceKm` | UNECE TFTA methodology | — |
 | `microplasticsEmissionClass` | CELEX `32024R1257` | — |
-| `mileageWarrantyKm` | — | — |
+| `mileageWarrantyKm` | Product specification / commercial warranty | — |
 | `billOfMaterials` | CELEX `32024R1781` | Art. 7(2)(a) |
-| `totalTyreWeightKg` | CELEX `32024R1781` | — |
 | `naturalRubberContentPercentage` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `syntheticRubberContentPercentage` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `recycledContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
@@ -86,31 +85,31 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `naturalRubberDeforestationFree` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
 | `naturalRubberSustainabilityCertification` | FSC / PEFC forest-management certification (voluntary) | — |
 | `expectedMileageKm` | CELEX `32024R1781` | Art. 7(2)(a) |
-| `treadwearRating` | — | — |
-| `minimumTreadDepthMm` | CELEX `31989L0459` | Dir. 2014/45/EU Annex I — roadworthiness test requirement on the vehicle in use |
+| `treadwearRating` | US FMVSS 575.104 / informational | — |
+| `minimumTreadDepthMm` | CELEX `32014L0045` | Dir. 2014/45/EU Annex I — roadworthiness test requirement on the vehicle in use |
 | `warrantyPeriodYears` | CELEX `32024R1781` | Art. 7(2)(a) |
-| `maxAgeRecommendationYears` | — | — |
+| `maxAgeRecommendationYears` | Industry recommendation (ETRMA) | — |
 | `retreadable` | CELEX `32024R1781` | Art. 7(2)(c) |
-| `maximumRetreadCycles` | — | — |
-| `retreadServiceLifeExtensionKm` | — | — |
+| `maximumRetreadCycles` | UNECE Reg. 108 (C1) / Reg. 109 (C2/C3) | — |
+| `retreadServiceLifeExtensionKm` | Industry data (ETRMA/BIPAVER) | — |
 | `recyclabilityPercentage` | CELEX `32024R1781` | Art. 7(2)(c) |
 | `recyclabilityBreakdown` | CELEX `32024R1781` | Art. 7(2)(c) |
 | `eltCollectionScheme` | CELEX `32008L0098` | WFD Dir. 2008/98/EC Art. 8a — extended producer responsibility discharged through national EPR scheme registration |
 | `disassemblyInstructionsUrl` | CELEX `32024R1781` | Art. 7(2)(c) |
-| `pyrolysisSuitability` | — | — |
-| `devulcanizationSuitability` | — | — |
-| `typeApprovalNumber` | — | — |
+| `pyrolysisSuitability` | Industry specification | — |
+| `devulcanizationSuitability` | Industry specification | — |
+| `typeApprovalNumber` | UNECE Reg. 30 (C1) / Reg. 54 (C2/C3) | — |
 | `euro7Compliance` | CELEX `32024R1257` | Reg. (EU) 2024/1257 — tyre abrasion limits not yet in force |
 | `euTyreLabelImageUrl` | CELEX `32020R0740` | Reg. (EU) 2020/740 Arts. 4 and 6 — label displayed in visual form at the point of sale |
 | `declarationOfConformityUrl` | CELEX `32023R0988` | UNECE R30 / R54 — type approval evidenced by the approval mark on the sidewall and the approval dossier |
 | `reachComplianceTypeApproval` | CELEX `32006R1907` | REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records |
-| `recommendedInflationPressureKpa` | — | — |
-| `maximumInflationPressureKpa` | — | — |
-| `maximumLoadKg` | — | — |
-| `tyrePressureMonitoringCompatible` | CELEX `32009R0661` | — |
-| `runFlatCapability` | — | — |
+| `recommendedInflationPressureKpa` | UNECE Reg. 30/54; product specification | — |
+| `maximumInflationPressureKpa` | UNECE Reg. 30/54 | — |
+| `maximumLoadKg` | UNECE Reg. 30/54 | — |
+| `tyrePressureMonitoringCompatible` | CELEX `32019R2144` | — |
+| `runFlatCapability` | Product specification | — |
 | `safetyWarnings` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — warnings and safety information, where the product's risks require them |
-| `storageInstructions` | — | — |
+| `storageInstructions` | Industry recommendation (ETRMA) | — |
 | `dppSchemaVersion` | CELEX `32024R1781` | — |
 | `lastUpdatedAt` | CELEX `32024R1781` | Art. 10 |
 | `accessLevel` | CELEX `32024R1781` | Art. 10(3) |

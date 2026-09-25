@@ -18,7 +18,6 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
-      "x-citationNote": "Art. 9(5) requires a type, batch or serial number (or other identifying element) that is easily visible and legible to consumers — on the product, or on its packaging or an accompanying document. The duty is to IDENTIFY the product, not specifically to publish in a passport; carrying it here satisfies the identification and is the natural home for it. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/modelNumber"
     },
     "batchLotNumber": {
@@ -28,7 +27,6 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
-      "x-citationNote": "Art. 9(5) requires a type, batch or serial number (or other identifying element) that is easily visible and legible to consumers — on the product, or on its packaging or an accompanying document. The duty is to IDENTIFY the product, not specifically to publish in a passport; carrying it here satisfies the identification and is the natural home for it. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -58,7 +56,6 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — product identification",
-      "x-citationNote": "Art. 9(5) requires a type, batch or serial number (or other identifying element) that is easily visible and legible to consumers — on the product, or on its packaging or an accompanying document. The duty is to IDENTIFY the product, not specifically to publish in a passport; carrying it here satisfies the identification and is the natural home for it. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "productCategory": {
@@ -93,7 +90,7 @@
       "x-regulation": "32011R1007",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1007",
       "x-provision": "Reg. (EU) 1007/2011 Arts. 9(1), 14(1), 16 — a durable, legible label physically attached to the product, in the language of the Member State",
-      "x-citationNote": "Fibre composition is discharged by the durable physical label attached to the garment. Recording it here does not satisfy 1007/2011 — the label is still required.",
+      "x-citationNote": "Fibre composition is discharged by the durable physical label attached to the garment. Recording it here does not satisfy 1007/2011 — the label is still required. Reference: Regulation 1007/2011; ISO 2076.",
       "x-iri": "https://tracepass.eu/voc/dpp/fiberComposition"
     },
     "recycledContentPercentage": {
@@ -115,7 +112,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 3758.",
       "x-iri": "https://tracepass.eu/voc/dpp/careInstructions"
     },
     "substancesOfConcern": {
@@ -124,7 +121,7 @@
       "description": "Array of hazardous substances with CAS number and concentration, threshold >0.1%",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name",
+      "x-provision": "REACH Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name",
       "x-citationNote": "REACH Art. 33 is an on-request duty to recipients above 0.1% w/w, answered with at minimum the substance name; SCIP notification is the database side. Neither is discharged by publishing here. POPs Reg. (EU) 2019/1021 Annex I separately restricts PFOS with a limit written for this category — below 1 ug/m2 of coated material for textiles and other coated materials — but that is a market restriction, not a disclosure duty, so it does not make this field required.",
       "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
     },
@@ -170,7 +167,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 14067.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "environmentalFootprintScore": {
@@ -181,7 +178,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: EU PEF.",
       "x-iri": "https://tracepass.eu/voc/dpp/environmentalFootprintScore"
     },
     "recyclabilityScore": {
@@ -191,7 +188,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: JRC methodology.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityScore"
     },
     "recyclabilityLabel": {
@@ -238,7 +235,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 12945.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityPillingResistance"
     },
     "durabilityAbrasionResistance": {
@@ -249,7 +246,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 12947.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityAbrasionResistance"
     },
     "durabilityColorFastnessWashing": {
@@ -260,7 +257,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 105-C06.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityColorFastnessWashing"
     },
     "durabilityColorFastnessLight": {
@@ -271,7 +268,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 105-B02.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityColorFastnessLight"
     },
     "durabilityDimensionalStability": {
@@ -283,7 +280,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 5077.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityDimensionalStability"
     },
     "durabilityTearStrength": {
@@ -295,7 +292,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 13937.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityTearStrength"
     },
     "repairInstructions": {
@@ -387,6 +384,7 @@
       "title": "Weaving Country",
       "description": "Country where weaving/knitting took place, ISO 3166-1 alpha-2. Required by French AGEC.",
       "x-standard": "ISO 3166-1 (country codes)",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/weavingCountry"
     },
     "dyeingCountry": {
@@ -394,6 +392,7 @@
       "title": "Dyeing Country",
       "description": "Country where dyeing/printing took place, ISO 3166-1 alpha-2. Required by French AGEC.",
       "x-standard": "ISO 3166-1 (country codes)",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/dyeingCountry"
     },
     "assemblyCountry": {
@@ -401,6 +400,7 @@
       "title": "Assembly Country",
       "description": "Country where final assembly (sewing) took place, ISO 3166-1 alpha-2. Required by French AGEC.",
       "x-standard": "ISO 3166-1 (country codes)",
+      "x-sourceKind": "national",
       "x-iri": "https://tracepass.eu/voc/dpp/assemblyCountry"
     },
     "dyeingMethod": {
@@ -477,7 +477,7 @@
       "description": "Labor/social compliance certification such as SA8000",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text. Reference: SA8000.",
       "x-iri": "https://tracepass.eu/voc/dpp/laborConditionsCertification"
     },
     "animalWelfareStatus": {
@@ -498,7 +498,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: PPWR.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingRecycledContentPct"
     },
     "packagingRecyclability": {
@@ -508,7 +508,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
-      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: PPWR.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingRecyclability"
     },
     "ecoScoreValue": {

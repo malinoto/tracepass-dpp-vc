@@ -42,7 +42,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `renewableMaterialContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `woodSpecies` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
 | `forestCertificationScheme` | CELEX `32023R1115` | FSC / PEFC are voluntary certification schemes; EUDR mandates due diligence, not certification |
-| `chainOfCustodyCertificate` | — | — |
+| `chainOfCustodyCertificate` | FSC-STD-40-004; PEFC ST 2002:2020 | — |
 | `countryOfHarvest` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
 | `deforestationFreeDeclaration` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
 | `geolocationOfHarvest` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
@@ -55,22 +55,22 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `pbdeContentMgKg` | CELEX `32019R1021` | POPs Reg. (EU) 2019/1021 Annex I (as amended by Del. Reg. (EU) 2025/1482) — unintentional trace limit 10 mg/kg |
 | `biocidesUsed` | CELEX `32012R0528` | — |
 | `applicableDurabilityStandard` | EN durability/strength test standards (named per product family) | — |
-| `durabilityTestLevel` | — | — |
-| `testCyclesCompleted` | — | — |
-| `maximumUserWeightKg` | — | — |
+| `durabilityTestLevel` | EN 12520:2024 | — |
+| `testCyclesCompleted` | EN 12520:2024; EN 12521:2023 | — |
+| `maximumUserWeightKg` | EN 12520:2024; EN 1725:2024 | — |
 | `expectedProductLifetimeYears` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `warrantyPeriodYears` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `repairabilityScore` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `foamType` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
 | `foamWeightKg` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
-| `foamDensityKgM3` | — | — |
-| `springCount` | — | — |
-| `springType` | — | — |
+| `foamDensityKgM3` | EN ISO 845 | — |
+| `springCount` | Product specification | — |
+| `springType` | Product specification | — |
 | `mattressCoverRemovable` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
-| `firmnessRating` | — | — |
+| `firmnessRating` | EN 1957:2012 (mattress testing) | — |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `carbonFootprintMethodology` | CELEX `32024R1781` | — |
-| `environmentalProductDeclarationUrl` | — | — |
+| `environmentalProductDeclarationUrl` | EN 15804; ISO 14025 | — |
 | `energyUsedInManufacturingKwh` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `waterUsedInManufacturingLiters` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `disassemblyInstructionsUrl` | CELEX `32024R1781` | Art. 7(2)(c) |
@@ -84,10 +84,10 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `collectionAndTakeBackInfoUrl` | CELEX `32024R1781` | — |
 | `declarationOfConformityUrl` | CELEX `32023R0988` | Art. 9 |
 | `euEcolabelLicense` | CELEX `32010R0066` | — |
-| `flammabilityTestStandard` | — | — |
+| `flammabilityTestStandard` | EN 1021-1:2014; EN 1021-2:2014; BS 5852 (UK market) | — |
 | `reachCompliance` | CELEX `32006R1907` | REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records |
 | `scipNotificationNumber` | CELEX `32008L0098` | Art. 9(1)(i) |
-| `intendedUse` | — | — |
+| `intendedUse` | EN 12520:2024; EN 16139:2013 | — |
 | `careInstructions` | CELEX `32024R1781` | Art. 7(2)(a) |
 | `installationInstructionsUrl` | CELEX `32023R0988` | — |
 | `safetyWarnings` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — warnings and safety information, where the product's risks require them |

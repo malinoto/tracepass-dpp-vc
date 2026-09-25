@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Extends](https://img.shields.io/badge/extends-UNTP%20DPP%20v0.7.0-orange)](https://untp.unece.org/docs/specification/DigitalProductPassport)
 [![Categories](https://img.shields.io/badge/categories-13-informational)](./MAPPING-steel.md)
-[![Fields](https://img.shields.io/badge/properties-928-informational)](#status)
+[![Fields](https://img.shields.io/badge/properties-914-informational)](#status)
 
 Maintained by **[TracePass](https://www.tracepass.eu)** · [Platform](https://app.tracepass.eu) · [Field specs](https://github.com/malinoto/tracepass-dpp-schemas)
 
@@ -68,7 +68,7 @@ errors = list(V(schema).iter_errors(passport["credentialSubject"]["characteristi
 required = schema["required"]
 print(len(errors), "errors,", len(required), "required fields")
 '
-# 0 errors, 49 required fields
+# 0 errors, 45 required fields
 ```
 
 `node scripts/validate.mjs` runs the same check across all thirteen categories and exits
@@ -135,7 +135,7 @@ owner, which is the honest state of the art for machine-readable EU product-pass
 ## Status
 
 **All thirteen categories ship a context, a schema, a worked example and a mapping
-document** — 928 `characteristics` properties in total. `node scripts/validate.mjs`
+document** — 914 `characteristics` properties in total. `node scripts/validate.mjs`
 checks every one: schema and context agree on the property set, each context term
 carries an `@id`, and each example satisfies its own schema. It also re-derives every
 count published below from the artefacts and fails if this page has drifted from them.
@@ -144,9 +144,9 @@ Counted as **properties** (a key recurring in two categories counts twice):
 
 | | |
 |---|---|
-| Properties | 928 across 13 categories |
-| Citing an EU instrument or standard | 917 (99%) |
-| Carrying a verified QUDT unit IRI | 231 |
+| Properties | 914 across 13 categories |
+| Citing an EU instrument or standard | 908 (99%) |
+| Carrying a verified QUDT unit IRI | 221 |
 
 Counted as **distinct keys**, decided once and applied to every category:
 

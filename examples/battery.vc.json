@@ -153,6 +153,7 @@
       "recycledContentLead": 0,
       "roleOfEndUsersInWastePrevention": "End users must not dispose of the battery with household waste. Return it to the vehicle service network or an authorised collection point; reuse and repurposing are preferred to recycling.",
       "informationOnSeparateCollection": "Collected free of charge through the producer take-back scheme at authorised dealers and municipal collection points.",
+      "informationOnCollectionAndEndOfLifeTreatment": "https://example.com/docs/EVP-0417-collection-eol.pdf",
       "dismantlingInformation": "https://example.com/docs/EVP-0417-dismantling.pdf",
       "removalInformation": "Pack removal is a qualified-technician operation: isolate the HV system, wait 5 minutes for capacitor discharge, then release the 18 M10 underbody fixings.",
       "sparePartsInformation": {

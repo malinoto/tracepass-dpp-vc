@@ -214,18 +214,16 @@
     "performanceGrade": {
       "type": "string",
       "title": "Recyclability Performance Grade",
-      "description": "Recyclability grade from A (>=95%) to E. Grades D/E not marketable from 2030; C phased out by 2038.",
+      "description": "Recyclability performance grade under PPWR Art. 6(3) and Annex II Table 3: A (>=95%), B (>=80%), C (>=70%). Below 70% is technically non-recyclable and may not be placed on the market from 2030 (or 24 months after the Art. 6(4) delegated acts, if later). Grade C is barred from 1 Jan 2038.",
       "enum": [
         "A",
         "B",
-        "C",
-        "D",
-        "E"
+        "C"
       ],
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 6, Annex II",
-      "x-citationNote": "Art. 6 establishes recyclability performance grades A-E, with grades D and E unmarketable from 2030. The grading criteria come by delegated act under Art. 6(4), which is not adopted — so today the grade cannot be computed, let alone required.",
+      "x-citationNote": "A/B/C; below 70% (non-recyclable) is barred from 2030 and C from 2038",
       "x-iri": "https://tracepass.eu/voc/dpp/performanceGrade"
     },
     "recyclablePercent": {
@@ -550,7 +548,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PPM",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 5(2)",
+      "x-provision": "Art. 5(4)",
       "x-citationNote": "The Art. 5(4) restriction is a 100 mg/kg cap on the combined concentration of lead, cadmium, mercury and hexavalent chromium, not a per-metal disclosure. Compliance is demonstrated through the technical documentation behind the Art. 15 declaration of conformity.",
       "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalsMaxPpm"
     },
@@ -706,19 +704,18 @@
     "retentionPeriodYears": {
       "type": "number",
       "title": "Data Retention Period (Years)",
-      "description": "Number of years the technical documentation and EU declaration of conformity must be kept. 5 for single-use, 10 for reusable packaging.",
+      "description": "Number of years the DPP data must be retained. 5 for single-use, 10 for reusable packaging.",
       "x-unit": "years",
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 15(3)",
-      "x-citationNote": "In force and unconditional: Art. 15(3) binds every packaging manufacturer today, with no delegated act and no passport precondition, and fixes the 5/10-year split this field records. The duty is to RETAIN the technical documentation and DoC, not to publish a retention figure — but the period is determined by law rather than chosen, so the value is not voluntary. Previously cited to ESPR Art. 10, which cannot bind packaging: ESPR passport-retention attaches only where an Art. 4 delegated act mandates a passport, and none does for packaging.",
+      "x-provision": "PPWR (EU) 2025/40 Art. 15(3) — manufacturers shall keep the technical documentation and EU declaration of conformity for 5 years (single-use) or 10 years (reusable) from placing on the market",
       "x-iri": "https://tracepass.eu/voc/dpp/retentionPeriodYears"
     },
     "accessTier": {
       "type": "string",
       "title": "Access Tier",
-      "description": "Default data access tier for the data carrier content. Anticipated: ESPR Art. 10(1)(g) defers access rights to the applicable delegated act adopted pursuant to Art. 4, which is not yet adopted.",
+      "description": "Default data access tier for the data carrier content.",
       "enum": [
         "public",
         "restricted",
@@ -726,6 +723,7 @@
       ],
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 10",
       "x-citationNote": "Voluntary today. ESPR Art. 10(1)(g) governs access to passport data, but only for a passport mandated under Art. 9(1) via an Art. 4 delegated act — none is adopted for packaging, which PPWR governs without creating a passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessTier"
     },
@@ -744,13 +742,13 @@
     "maxAllowedEmptySpacePercent": {
       "type": "number",
       "title": "Maximum Allowed Empty Space Percent",
-      "description": "Maximum allowed empty space percentage. 40% for e-commerce packaging per PPWR Art. 10.",
+      "description": "Maximum empty space ratio for grouped, transport and e-commerce packaging: 50% under PPWR Art. 24(1), applying from 1 Jan 2030 or 3 years after the Art. 24(2) implementing act, whichever is later. The duty falls on the operator who fills the packaging.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 10",
-      "x-citationNote": "It caps the empty-space ratio at 50% for grouped, transport and e-commerce packaging from 2030, with the calculation methodology to come by delegated act. The cap is a design limit to meet, not a value to declare.",
+      "x-provision": "Art. 24(1)",
+      "x-citationNote": "Art. 24(1) caps the void space at 50% for grouped, transport and e-commerce packaging from 1 Jan 2030 (or 3 years after Art. 24(2) implementing act); the methodology comes by implementing act. The cap is a design limit, not a value to declare.",
       "x-iri": "https://tracepass.eu/voc/dpp/maxAllowedEmptySpacePercent"
     },
     "weightOptimised": {

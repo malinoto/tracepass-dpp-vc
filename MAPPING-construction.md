@@ -22,7 +22,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | Field | Defined by | Provision |
 |---|---|---|
 | `productTypeModelIdentifier` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — product type identification |
-| `batchLotNumber` | CELEX `32024R3110` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
+| `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
 | `serialNumber` | CELEX `32024R3110` | — |
 | `placeOfManufacture` | CELEX `32024R3110` | — |
 | `productFamily` | CELEX `32024R3110` | CPR (EU) 2024/3110 Annex VII — product-family taxonomy for harmonised technical specifications |
@@ -52,7 +52,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `durabilityServiceLife` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic |
 | `repairReuseInstructions` | CELEX `32024R3110` | — |
 | `endOfLifeInstructions` | CELEX `32024R3110` | — |
-| `recyclabilityAssessment` | — | — |
+| `recyclabilityAssessment` | EN 15804+A2, Module D | — |
 | `packagingEnvironmentalAnalysis` | CELEX `32024R3110` | — |
 | `ceMarkingStatus` | CELEX `32024R3110` | CPR (EU) 2024/3110 Arts. 13-17 — CE marking, only where a harmonised technical specification or a European Technical Assessment covers the product |
 | `avcpSystemLevel` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 + Annex IX — AVCP system stated in the Declaration of Performance |
@@ -61,9 +61,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `epdVerification` | CELEX `32024R3110` | — |
 | `harmonizedStandardReference` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — harmonised technical specification cited in the Declaration of Performance |
 | `eadReference` | CELEX `32024R3110` | — |
-| `installationInstructions` | CELEX `32024R3110` | GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them |
+| `installationInstructions` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them |
 | `maintenanceGuidance` | CELEX `32024R3110` | — |
-| `safetyDataLabelling` | CELEX `32024R3110` | CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients |
+| `safetyDataLabelling` | CELEX `32008R1272` | CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients |
 | `warrantyInformation` | CELEX `32024R3110` | — |
 | `intendedUseDescription` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — information enabling assessment of the product's risks in its intended and reasonably foreseeable use |
 | `ceMarking` | CELEX `32024R3110` | Art. 13-15 |

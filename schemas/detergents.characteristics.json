@@ -13,19 +13,9 @@
     "manufacturerPhone",
     "ingredientSubstanceName",
     "ingredientCasNumber",
-    "hazardClass",
-    "signalWord",
-    "hazardPictograms",
-    "hazardStatements",
     "precautionaryStatements",
-    "ufi",
     "emergencyPhoneNumber",
     "productCategoryEuPCS",
-    "svhcSubstances",
-    "svhcSubstanceName",
-    "svhcCasNumber",
-    "svhcConcentrationRange",
-    "svhcSafeUseInstructions",
     "appearance",
     "ph",
     "endOfLifeInstructions",
@@ -239,6 +229,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Title II, Arts. 9-13 (classification)",
+      "x-citationNote": "CLP Arts. 17-21 put the hazard information on the label of a mixture classified as hazardous. A labelling duty, not a passport one; empty for an unclassified mixture. Reg. (EU) 2026/405 Annex VI Part A carries no CLP item; Part B lets the passport include the Art. 17 label information.",
       "x-iri": "https://tracepass.eu/voc/dpp/hazardClass"
     },
     "signalWord": {
@@ -252,6 +243,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Art. 20",
+      "x-citationNote": "CLP Art. 20: the signal word ('Danger' or 'Warning') goes on the label of a mixture classified as hazardous; an unclassified mixture has none. A labelling duty, not a passport one. Reg. (EU) 2026/405 Annex VI Part A carries no CLP item; Part B lets the passport include the Art. 17 label information.",
       "x-iri": "https://tracepass.eu/voc/dpp/signalWord"
     },
     "hazardPictograms": {
@@ -275,6 +267,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Art. 19 & Annex V",
+      "x-citationNote": "CLP Art. 19: hazard pictograms go on the label of a mixture classified as hazardous; none for an unclassified mixture. A labelling duty, not a passport one. Reg. (EU) 2026/405 Annex VI Part A carries no CLP item; Part B lets the passport include the Art. 17 label information.",
       "x-iri": "https://tracepass.eu/voc/dpp/hazardPictograms"
     },
     "hazardStatements": {
@@ -284,6 +277,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Art. 21 & Annex III",
+      "x-citationNote": "CLP Art. 21: hazard statements (H-codes) go on the label of a mixture classified as hazardous; none for an unclassified mixture. A labelling duty, not a passport one. Reg. (EU) 2026/405 Annex VI Part A carries no CLP item; Part B lets the passport include the Art. 17 label information.",
       "x-iri": "https://tracepass.eu/voc/dpp/hazardStatements"
     },
     "precautionaryStatements": {
@@ -312,6 +306,7 @@
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
       "x-provision": "Art. 45 & Annex VIII",
+      "x-citationNote": "CLP Annex VIII Part A 3.1 and Art. 25(7): a UFI for mixtures classified for health or physical hazards and notified under Art. 45; not for mixtures classified only as gases under pressure or explosives (point 2.2). A labelling and notification duty, not a passport one. Reg. (EU) 2026/405 Annex VI Part A carries no CLP item; Part B lets the passport include the Art. 17 label information.",
       "x-iri": "https://tracepass.eu/voc/dpp/ufi"
     },
     "poisonCentreNotificationNumber": {
@@ -345,29 +340,12 @@
     "svhcSubstances": {
       "type": "array",
       "title": "SVHC / Substances of Concern",
-      "description": "Array of Substances of Very High Concern present in the product above 0.1% w/w.",
+      "description": "Array of Substances of Very High Concern present above 0.1% w/w. REACH Art. 33 applies to articles, not mixtures; for detergents and paints the relevant duty is the safety data sheet (Art. 31(1)(c), 31(3)(b)). For detergents, Annex VI Part A(h) of Reg (EU) 2026/405 covers SVHCs in the passport. The passport is not compelled to carry this by REACH Art. 33.",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33(1)",
+      "x-provision": "Art. 31(1)(c), 31(3)(b) (SDS)",
+      "x-citationNote": "REACH Art. 33 applies to articles, not mixtures. For a detergent the SVHC duty is the safety data sheet (REACH Art. 31(1)(c), 31(3)(b)); the passport is not compelled to carry this list, and the Reg. (EU) 2026/405 Annex VI Part A(h) ingredient list covers SVHCs present.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcSubstances"
-    },
-    "svhcSubstanceName": {
-      "type": "string",
-      "title": "SVHC Substance Name",
-      "description": "Name of the substance of very high concern.",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33(1)",
-      "x-iri": "https://tracepass.eu/voc/dpp/svhcSubstanceName"
-    },
-    "svhcCasNumber": {
-      "type": "string",
-      "title": "SVHC CAS Number",
-      "description": "CAS registry number for the SVHC substance.",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Article 33",
-      "x-iri": "https://tracepass.eu/voc/dpp/svhcCasNumber"
     },
     "svhcEcNumber": {
       "type": "string",
@@ -378,24 +356,6 @@
       "x-citationNote": "REACH Art. 33 is the SVHC communication duty and it is narrower than it looks: to business recipients, and to consumers ON REQUEST within 45 days, for articles containing an SVHC above 0.1% w/w, with a minimum content of the substance NAME. Publishing an EC number proactively exceeds what any in-force provision requires.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcEcNumber"
     },
-    "svhcConcentrationRange": {
-      "type": "string",
-      "title": "SVHC Concentration Range",
-      "description": "Concentration range of the SVHC in the product.",
-      "enum": [
-        "0.1-0.3%",
-        "0.3-1%",
-        "1-5%",
-        "5-10%",
-        ">10%"
-      ],
-      "x-unit": "%",
-      "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Article 7(5), REACH Article 33",
-      "x-iri": "https://tracepass.eu/voc/dpp/svhcConcentrationRange"
-    },
     "svhcLocationInProduct": {
       "type": "string",
       "title": "SVHC Location in Product",
@@ -405,15 +365,6 @@
       "x-provision": "Article 7(5)(b)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcLocationInProduct"
-    },
-    "svhcSafeUseInstructions": {
-      "type": "string",
-      "title": "SVHC Safe Use Instructions",
-      "description": "Instructions for safe use regarding the SVHC substance.",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33(1)",
-      "x-iri": "https://tracepass.eu/voc/dpp/svhcSafeUseInstructions"
     },
     "svhcCandidateListDate": {
       "type": "string",
@@ -778,9 +729,10 @@
     "biodegradationTestMethod": {
       "type": "string",
       "title": "Biodegradation Test Method",
-      "description": "Standard test method used for biodegradation assessment (e.g. OECD 301B, OECD 310).",
+      "description": "Test method used to show ultimate aerobic biodegradation under Reg. (EU) 2026/405 Annex I A.2: Reg. 440/2008 methods C.4-C/D/E/F (>=60% in 28 d) or C.4-A/B (>=70% in 28 d), i.e. the OECD 301 series. No pre-adaptation, no 10-day window.",
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex I, point A.2",
       "x-citationNote": "The test method underpins the biodegradability evidence held in the technical documentation. It is not an Annex VI Part A passport point and not label content.",
       "x-iri": "https://tracepass.eu/voc/dpp/biodegradationTestMethod"
     },
@@ -846,7 +798,6 @@
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Annex V Part A, point 1(e)",
-      "x-citationNote": "Annex V Part A point 1(e) requires 'instructions for use and special precautions, where necessary and relevant' in the label content. Verified against the EUR-Lex text; the previous 'ESPR, SDS Section 7' article cited a framework that mandates no fields.",
       "x-iri": "https://tracepass.eu/voc/dpp/usageInstructionsText"
     },
     "intendedUse": {
@@ -861,7 +812,7 @@
     "issuedUnderSoleResponsibility": {
       "type": "boolean",
       "title": "Issued Under Manufacturer's Sole Responsibility",
-      "description": "Confirms the digital product passport is issued under the sole responsibility of the manufacturer (Reg (EU) 2026/405 Annex VI Part A(e)). Set automatically on creation.",
+      "description": "The manufacturer's indication that this passport is issued under its sole responsibility (Reg (EU) 2026/405 Annex VI Part A(e); Art. 21(9)). A statement by the manufacturer: the platform pre-fills it when the manufacturer creates the passport, and creating the passport is the manufacturer's act, not the platform's.",
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Annex VI Part A, point (e)",
@@ -871,7 +822,7 @@
     "complianceDemonstrated": {
       "type": "boolean",
       "title": "Compliance Demonstrated",
-      "description": "Confirms compliance of the detergent or end-user surfactant with Reg (EU) 2026/405 has been demonstrated (Annex VI Part A(g)). Set automatically on creation; reference other Union law complied with in the declaration of conformity.",
+      "description": "The manufacturer's statement that compliance of the detergent or end-user surfactant with Reg (EU) 2026/405 has been demonstrated (Annex VI Part A(g); Art. 21(2)(b)). Made by the manufacturer; the platform only records it. References to other Union law complied with belong in the EU declaration of conformity.",
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Annex VI Part A, point (g)",

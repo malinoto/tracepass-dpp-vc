@@ -32,7 +32,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `fiberComposition` | CELEX `32011R1007` | Reg. (EU) 1007/2011 Arts. 9(1), 14(1), 16 — a durable, legible label physically attached to the product, in the language of the Member State |
 | `recycledContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `careInstructions` | CELEX `32024R1781` | Art. 7(2) |
-| `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name |
+| `substancesOfConcern` | CELEX `32006R1907` | REACH Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name |
 | `certifications` | CELEX `32024R1781` | Art. 9(2) |
 | `countryOfManufacture` | CELEX `32024R1781` | Art. 9(2) |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(a) |
@@ -69,13 +69,13 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `animalWelfareStatus` | CELEX `32024R1781` | — |
 | `packagingRecycledContentPct` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `packagingRecyclability` | CELEX `32024R1781` | Art. 7(2)(b) |
-| `ecoScoreValue` | — | — |
-| `ecoScoreGrade` | — | — |
-| `pefClimateChange` | — | — |
-| `pefWaterUse` | — | — |
-| `pefEutrophication` | — | — |
-| `pefResourceDepletion` | — | — |
-| `durabilityBonusMalus` | — | — |
-| `microfiberReleaseCoefficient` | — | — |
+| `ecoScoreValue` | French AGEC | — |
+| `ecoScoreGrade` | French AGEC | — |
+| `pefClimateChange` | French AGEC | — |
+| `pefWaterUse` | French AGEC | — |
+| `pefEutrophication` | French AGEC | — |
+| `pefResourceDepletion` | French AGEC | — |
+| `durabilityBonusMalus` | French AGEC | — |
+| `microfiberReleaseCoefficient` | French AGEC | — |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

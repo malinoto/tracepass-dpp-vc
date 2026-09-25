@@ -41,7 +41,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: GS1.",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "batchLotNumber": {
@@ -173,18 +173,17 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 5(5)(j)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: Delegated act TBD.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "preConsumerScrapPct": {
       "type": "number",
       "title": "Pre-Consumer Scrap (%)",
-      "description": "Pre-consumer (internal/process) scrap content by weight.",
+      "description": "Pre-consumer (post-industrial) scrap content by weight: material diverted from a manufacturing process before reaching a consumer. Excludes home/runaround scrap reused within the same process that generated it (ISO 14021 definition). No EU instrument in force defines or requires this for steel.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-standard": "ISO 14021",
+      "x-sourceKind": "legislation",
       "x-iri": "https://tracepass.eu/voc/dpp/preConsumerScrapPct"
     },
     "postConsumerScrapPct": {
@@ -394,13 +393,13 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 5(5)(b)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: ISO 14067.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalCarbonFootprint"
     },
     "scope1DirectEmissions": {
       "type": "number",
       "title": "Scope 1 Direct Emissions",
-      "description": "Direct emissions from the production installation. THE primary CBAM field for iron/steel.",
+      "description": "Direct emissions from the production installation. THE primary CBAM field for iron, steel and aluminium.",
       "x-unit": "tCO2e/t",
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
@@ -410,11 +409,12 @@
     "scope2IndirectEmissions": {
       "type": "number",
       "title": "Scope 2 Indirect Emissions",
-      "description": "Indirect emissions from purchased electricity/heat. Counted in CBAM for aluminium only; required in DPP for all.",
+      "description": "Indirect emissions from electricity consumed in production. Not part of CBAM embedded emissions for iron, steel or aluminium: CBAM Art. 7(1) and Annex II count direct emissions only for these goods. Voluntary footprint data.",
       "x-unit": "tCO2e/t",
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
-      "x-citationNote": "Indirect (Scope 2) emissions are NOT required for iron and steel under the definitive CBAM — only for aluminium and certain other goods. Where they are required, the duty is the importer's CBAM declaration, not a manufacturer's passport entry.",
+      "x-provision": "Art. 7(1), Annex II",
+      "x-citationNote": "Annex II lists iron and steel (CN 72) and aluminium (CN 7601-7616) as goods for which only direct emissions are taken into account (confirmed by Reg. (EU) 2025/2083). Indirect emissions are CBAM-relevant only for cement and fertilisers.",
       "x-iri": "https://tracepass.eu/voc/dpp/scope2IndirectEmissions"
     },
     "scope3UpstreamEmissions": {
@@ -430,7 +430,7 @@
     "precursorEmissions": {
       "type": "array",
       "title": "Precursor Emissions",
-      "description": "Emissions from CBAM precursor inputs (e.g., pig iron, DRI, sinter, pellets). Summed into total CBAM embedded emissions.",
+      "description": "Embedded emissions of relevant CBAM precursors (e.g. pig iron, DRI, sinter, unwrought aluminium), each weighted by its specific mass consumption (t precursor per t product) before being added to embedded emissions (CBAM Annex IV point 3).",
       "x-unit": "tCO2/t",
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
@@ -478,7 +478,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 7",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: Performance classes via delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonIntensityClass"
     },
     "euEtsBenchmarkProduct": {
@@ -521,7 +521,7 @@
     "totalSpecificEmbeddedEmissions": {
       "type": "number",
       "title": "Total Specific Embedded Emissions",
-      "description": "Total embedded emissions per tonne for CBAM declaration (direct + precursor for steel; direct + indirect + precursor for aluminium).",
+      "description": "Specific embedded emissions per tonne for CBAM (CBAM Annex IV point 3): attributed direct emissions per tonne plus Σ(mᵢ × SEEᵢ) over relevant precursors, where mᵢ is tonnes of precursor per tonne of product. Direct emissions only for iron, steel and aluminium (Annex II).",
       "x-unit": "tCO2/t",
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
@@ -600,6 +600,7 @@
       "description": "Global warming potential total per declared unit (kg CO2 eq.). EN 15804+A2 indicator.",
       "x-unit": "kg CO2e",
       "x-standard": "EN 15804+A2 (global warming potential, total)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/gwpTotal"
     },
     "odp": {
@@ -608,6 +609,7 @@
       "description": "Ozone depletion potential in kg CFC-11 eq. per declared unit.",
       "x-unit": "kg CFC-11 eq.",
       "x-standard": "EN 15804+A2 (ozone depletion potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/odp"
     },
     "ap": {
@@ -616,6 +618,7 @@
       "description": "Acidification potential in mol H+ eq. per declared unit.",
       "x-unit": "mol H+ eq.",
       "x-standard": "EN 15804+A2 (acidification potential)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/ap"
     },
     "waterUse": {
@@ -624,6 +627,7 @@
       "description": "Water use in m3 world eq. per declared unit.",
       "x-unit": "m3 world eq.",
       "x-standard": "EN 15804+A2 (water use)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/waterUse"
     },
     "epdReferenceUri": {
@@ -631,6 +635,7 @@
       "title": "EPD Reference URI",
       "description": "URI to the Environmental Product Declaration document.",
       "x-standard": "ISO 14025 (Type III environmental declarations)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/epdReferenceUri"
     },
     "epdProgramOperator": {
@@ -638,6 +643,7 @@
       "title": "EPD Program Operator",
       "description": "Name of the EPD program operator (e.g. IBU, EPD International, BRE).",
       "x-standard": "ISO 14025 (Type III environmental declarations)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/epdProgramOperator"
     },
     "lifecycleModules": {
@@ -653,6 +659,7 @@
       "title": "Declared Unit",
       "description": "Declared or functional unit for EPD environmental indicators.",
       "x-standard": "EN 15804+A2 (declared and functional unit)",
+      "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/declaredUnit"
     },
     "expectedServiceLifeYears": {
@@ -692,11 +699,11 @@
     "ceMarking": {
       "type": "boolean",
       "title": "CE Marking",
-      "description": "Whether CE marking is applied (required for construction products under CPR).",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Art. 13-15",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "description": "Whether the CE marking is affixed. Under the CPR it applies only where a harmonised technical specification or European Technical Assessment covers the product (e.g. structural steelwork under EN 1090-1); mill products not so covered cannot be CE-marked.",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Arts. 13(1), 17-18; Art. 94 (Reg. (EU) 305/2011 Arts. 4-9 continue to apply until 8 Jan 2040 for products under harmonised standards cited under it)",
+      "x-citationNote": "CE marking under the CPR is conditional: it applies only where a harmonised technical specification or European Technical Assessment covers the product, and a product covered by neither cannot be CE-marked at all. For steel this is the sub-case — structural steelwork under a harmonised standard (EN 1090-1) is covered; mill products and much rebar are not.",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
     },
     "declarationOfPerformanceUri": {
@@ -762,7 +769,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 5(5)(o)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: GS1 EPCIS 2.0.",
       "x-iri": "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld"
     },
     "dataCarrier": {
@@ -825,7 +832,7 @@
     "ceMarkingStatus": {
       "type": "string",
       "title": "CE Marking Status",
-      "description": "Whether the product bears CE marking and its validity. Conditional: CE applies to steel only as a construction product covered by a harmonised specification or ETA — hence the not_applicable enum member, and hence not required.",
+      "description": "Whether the product bears CE marking and its validity",
       "enum": [
         "marked",
         "pending",
@@ -833,8 +840,8 @@
       ],
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
-      "x-provision": "Arts. 8-9",
-      "x-citationNote": "CE marking under the CPR is CONDITIONAL: it applies only where a harmonised technical specification or a European Technical Assessment covers the product, and a product covered by neither cannot be CE-marked at all. For steel this is the sub-case — structural steelwork under a harmonised standard (paradigm EN 1090-1) is covered; mill products and much rebar are not. Never model steel as always-CE or never-CE, which is why not_applicable is an enum member and why the field cannot be required.",
+      "x-provision": "Arts. 13(1), 17-18; Art. 94 (Reg. (EU) 305/2011 Arts. 4-9 continue to apply until 8 Jan 2040 for products under harmonised standards cited under it)",
+      "x-citationNote": "CE marking under the CPR is CONDITIONAL: it applies only where a harmonised technical specification or European Technical Assessment covers the product, and a product covered by neither cannot be CE-marked at all. For steel this is the sub-case — structural steelwork under a harmonised standard (paradigm EN 1090-1) is covered; mill products and much rebar are not. Never model steel as always-CE or never-CE, which is why not_applicable is an enum member and why the field cannot be required.",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
     }
   }

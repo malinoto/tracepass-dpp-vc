@@ -164,10 +164,6 @@
         "@id": "https://tracepass.eu/voc/dpp/repairInformationScore",
         "@type": "xsd:decimal"
       },
-      "dropResistanceHeight": {
-        "@id": "https://tracepass.eu/voc/dpp/dropResistanceHeight",
-        "@type": "xsd:decimal"
-      },
       "dropResistanceTestResult": {
         "@id": "https://tracepass.eu/voc/dpp/dropResistanceTestResult",
         "@type": "xsd:boolean"
@@ -206,10 +202,6 @@
       },
       "osUpdateSupportYears": {
         "@id": "https://tracepass.eu/voc/dpp/osUpdateSupportYears",
-        "@type": "xsd:decimal"
-      },
-      "securityUpdateSupportYears": {
-        "@id": "https://tracepass.eu/voc/dpp/securityUpdateSupportYears",
         "@type": "xsd:decimal"
       },
       "osUpdateEndDate": {
@@ -336,8 +328,8 @@
         "@id": "https://tracepass.eu/voc/dpp/firmwareUpdateSupport",
         "@type": "xsd:boolean"
       },
-      "ratedCapacity": {
-        "@id": "https://tracepass.eu/voc/dpp/ratedCapacity",
+      "ratedWashingCapacity": {
+        "@id": "https://tracepass.eu/voc/dpp/ratedWashingCapacity",
         "@type": "xsd:decimal"
       },
       "energyEfficiencyIndex": {
@@ -412,10 +404,6 @@
         "@id": "https://tracepass.eu/voc/dpp/refrigeratorEnergyEfficiencyIndex",
         "@type": "xsd:decimal"
       },
-      "refrigeratorAnnualEnergyConsumption": {
-        "@id": "https://tracepass.eu/voc/dpp/refrigeratorAnnualEnergyConsumption",
-        "@type": "xsd:decimal"
-      },
       "climateClass": {
         "@id": "https://tracepass.eu/voc/dpp/climateClass",
         "@type": "xsd:string"
@@ -436,10 +424,6 @@
         "@id": "https://tracepass.eu/voc/dpp/temperatureRiseTime",
         "@type": "xsd:decimal"
       },
-      "refrigeratorOffModePower": {
-        "@id": "https://tracepass.eu/voc/dpp/refrigeratorOffModePower",
-        "@type": "xsd:decimal"
-      },
       "rohsCompliant": {
         "@id": "https://tracepass.eu/voc/dpp/rohsCompliant",
         "@type": "xsd:boolean"
@@ -448,16 +432,16 @@
         "@id": "https://tracepass.eu/voc/dpp/rohsDeclaration",
         "@type": "xsd:anyURI"
       },
-      "leadContent": {
-        "@id": "https://tracepass.eu/voc/dpp/leadContent",
+      "leadConcentrationHomogeneousMaterial": {
+        "@id": "https://tracepass.eu/voc/dpp/leadConcentrationHomogeneousMaterial",
         "@type": "xsd:decimal"
       },
       "mercuryContent": {
         "@id": "https://tracepass.eu/voc/dpp/mercuryContent",
         "@type": "xsd:decimal"
       },
-      "cadmiumContent": {
-        "@id": "https://tracepass.eu/voc/dpp/cadmiumContent",
+      "cadmiumConcentrationHomogeneousMaterial": {
+        "@id": "https://tracepass.eu/voc/dpp/cadmiumConcentrationHomogeneousMaterial",
         "@type": "xsd:decimal"
       },
       "hexavalentChromiumContent": {
@@ -554,10 +538,6 @@
       },
       "recycledCobalt": {
         "@id": "https://tracepass.eu/voc/dpp/recycledCobalt",
-        "@type": "xsd:decimal"
-      },
-      "recycledContentTotal": {
-        "@id": "https://tracepass.eu/voc/dpp/recycledContentTotal",
         "@type": "xsd:decimal"
       },
       "recycledPlasticContent": {

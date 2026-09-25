@@ -226,6 +226,8 @@
         "all_season",
         "all_terrain"
       ],
+      "x-standard": "Product specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreType"
     },
     "sectionWidthMm": {
@@ -264,6 +266,8 @@
       "description": "New tyre tread depth in millimetres",
       "x-unit": "mm",
       "x-unitIri": "http://qudt.org/vocab/unit/MilliM",
+      "x-standard": "Product specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/treadDepthMm"
     },
     "tyreWeightKg": {
@@ -456,17 +460,6 @@
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/billOfMaterials"
     },
-    "totalTyreWeightKg": {
-      "type": "number",
-      "title": "Total Tyre Weight (kg)",
-      "description": "Total weight of the finished tyre",
-      "x-unit": "kg",
-      "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
-      "x-iri": "https://tracepass.eu/voc/dpp/totalTyreWeightKg"
-    },
     "naturalRubberContentPercentage": {
       "type": "number",
       "title": "Natural Rubber Content (%)",
@@ -645,6 +638,7 @@
       "title": "Natural Rubber Sustainability Certification",
       "description": "Sustainability certification for natural rubber (GPSNR, FSC, PEFC, SNR-i, etc.)",
       "x-standard": "FSC / PEFC forest-management certification (voluntary)",
+      "x-sourceKind": "scheme",
       "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberSustainabilityCertification"
     },
     "expectedMileageKm": {
@@ -878,6 +872,8 @@
       "type": "boolean",
       "title": "Run-Flat Capability",
       "description": "Whether the tyre has run-flat technology",
+      "x-standard": "Product specification",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/runFlatCapability"
     },
     "safetyWarnings": {

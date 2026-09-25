@@ -25,17 +25,13 @@
     "criticalRawMaterials",
     "hazardousSubstances",
     "scipNotificationNumber",
-    "recycledContentCobalt",
-    "recycledContentLithium",
-    "recycledContentNickel",
-    "recycledContentLead",
     "roleOfEndUsersInWastePrevention",
     "informationOnSeparateCollection",
+    "informationOnCollectionAndEndOfLifeTreatment",
     "dismantlingInformation",
     "removalInformation",
     "sparePartsInformation",
     "safetyInformationEndOfLife",
-    "recycledContentDocumentation",
     "batteryRemovabilityReplaceability",
     "ratedCapacity",
     "nominalVoltage",
@@ -63,7 +59,7 @@
       "description": "Data Matrix Code printed on the physical battery for scanning",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
+      "x-provision": "Art. 77(3)",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryIdDmcCode"
     },
     "batteryPassportIdentifier": {
@@ -72,7 +68,7 @@
       "description": "UUID identifying the digital battery passport document",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
+      "x-provision": "Art. 77(3)",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryPassportIdentifier"
     },
     "manufacturerEmail": {
@@ -91,7 +87,7 @@
       "description": "Date of manufacture in YYYY-MM format",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 38(6)",
+      "x-provision": "Annex VI Part A (4)",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturingDate"
     },
     "manufacturingPlace": {
@@ -100,7 +96,7 @@
       "description": "Manufacturing facility details including name, address, country, and GPS coordinates",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 38(6)",
+      "x-provision": "Annex VI Part A (3)",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturingPlace"
     },
     "batteryCategory": {
@@ -117,7 +113,7 @@
       ],
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 1",
+      "x-provision": "Annex VI Part A (2)",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryCategory"
     },
     "batteryWeight": {
@@ -153,7 +149,7 @@
       "description": "Crossed-out wheeled bin symbol indicating separate collection requirement",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 13(4)",
+      "x-provision": "Annex XIII 1(q)",
       "x-iri": "https://tracepass.eu/voc/dpp/separateCollectionSymbol"
     },
     "cadmiumSymbol": {
@@ -162,7 +158,7 @@
       "description": "Indicates whether battery contains cadmium above 0.002% threshold, requiring Cd symbol",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 13(5)",
+      "x-provision": "Annex XIII 1(q)",
       "x-citationNote": "It is a duty to PRINT the chemical symbol on the battery — 'Cd' above 0.002% cadmium — beneath the separate-collection symbol and at least a quarter of its size. The obligation is discharged by the mark, not by a passport field; Annex XIII 1(q) cross-references these marking requirements, which the corrigendum of 10 April 2026 corrected to Art. 13(4) and (5).",
       "x-iri": "https://tracepass.eu/voc/dpp/cadmiumSymbol"
     },
@@ -172,8 +168,8 @@
       "description": "Indicates whether battery contains lead above 0.004% threshold, requiring Pb symbol",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 13(5)",
-      "x-citationNote": "It requires the 'Pb' symbol to be printed on batteries containing more than 0.004% lead, beneath the separate-collection symbol. A physical marking duty, not passport data; Annex XIII 1(q) merely cross-references it.",
+      "x-provision": "Annex XIII 1(q)",
+      "x-citationNote": "It requires the 'Pb' symbol to be printed on batteries containing more than 0.004% lead, beneath the separate-collection symbol. A physical marking duty, not passport data; Annex XIII 1(q) merely cross-references it. The corrigendum of 10 April 2026 (OJ L 2026/90285) corrected the cross-reference from 'Article 13(3) and (4)' to 'Article 13(4) and (5)'.",
       "x-iri": "https://tracepass.eu/voc/dpp/leadSymbol"
     },
     "carbonFootprintLabel": {
@@ -192,7 +188,7 @@
       "description": "Explanation of all labels and symbols on the battery or link to documentation",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 13",
+      "x-provision": "Annex XIII 1(s)",
       "x-iri": "https://tracepass.eu/voc/dpp/meaningOfLabelsAndSymbols"
     },
     "euDeclarationOfConformity": {
@@ -201,7 +197,7 @@
       "description": "EU Declaration of Conformity with identification number and URL to the document",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 18",
+      "x-provision": "Annex XIII 1(r)",
       "x-iri": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
     },
     "testReportResults": {
@@ -210,7 +206,7 @@
       "description": "Results of test reports performed on the battery, accessible to authorities",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 18",
+      "x-provision": "Annex XIII 3",
       "x-iri": "https://tracepass.eu/voc/dpp/testReportResults"
     },
     "ceMarking": {
@@ -229,7 +225,7 @@
       "x-unit": "kg CO2e/kWh",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(1)",
+      "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "Annex XIII 1(c) makes the Art. 7(1) and (2) carbon footprint information passport content, so this is a genuine future passport field — but the Art. 7(1) declaration depends on a calculation methodology delegated act that has not been adopted, so nothing today fixes how the figure is computed.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintTotal"
     },
@@ -240,7 +236,7 @@
       "x-unit": "kg CO2e/kWh",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(1)",
+      "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c). The per-stage breakdown follows the calculation methodology that the unadopted delegated act will set.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfRawMaterialAcquisition"
     },
@@ -251,7 +247,7 @@
       "x-unit": "kg CO2e/kWh",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(1)",
+      "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c), pending the calculation methodology delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfMainProductProduction"
     },
@@ -262,7 +258,7 @@
       "x-unit": "kg CO2e/kWh",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(1)",
+      "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c), pending the calculation methodology delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfDistribution"
     },
@@ -273,7 +269,7 @@
       "x-unit": "kg CO2e/kWh",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(1)",
+      "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c), pending the calculation methodology delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfEndOfLifeRecycling"
     },
@@ -292,7 +288,7 @@
       ],
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(2)",
+      "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "Performance classes are carried into the passport by Annex XIII 1(c), but the classes themselves are established by a delegated act that has not been adopted. There is no class to declare until it is.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintPerformanceClass"
     },
@@ -312,7 +308,7 @@
       "description": "URL to the supply chain due diligence report",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 52",
+      "x-provision": "Annex XIII 1(d)",
       "x-citationNote": "Annex XIII 1(d) makes the Art. 52(3) due diligence report passport content, so this is genuine passport data — but Art. 52 applies from 18 Aug 2027 and the report is due in the passport from Aug 2028, later than the passport itself.",
       "x-iri": "https://tracepass.eu/voc/dpp/supplyChainDueDiligenceReport"
     },
@@ -322,7 +318,7 @@
       "description": "URL to the company's due diligence policy document",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 52",
+      "x-provision": "Annex XIII 1(d)",
       "x-citationNote": "It requires the policy to exist and be verified; what Annex XIII 1(d) carries into the passport is the Art. 52(3) REPORT on that policy, not the policy document. Publishing the policy itself is voluntary.",
       "x-iri": "https://tracepass.eu/voc/dpp/dueDiligencePolicy"
     },
@@ -332,7 +328,7 @@
       "description": "URL to third-party audit results, accessible to authorities only",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 52",
+      "x-provision": "Annex XIII 1(d)",
       "x-citationNote": "Third-party verification is part of the Art. 52 due diligence regime, and its results support the Art. 52(3) report that Annex XIII 1(d) carries. The audit output itself is not separately enumerated as passport content.",
       "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyAuditResults"
     },
@@ -407,7 +403,8 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 8",
+      "x-provision": "Annex XIII 1(e)",
+      "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentCobalt"
     },
     "recycledContentLithium": {
@@ -418,7 +415,8 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 8",
+      "x-provision": "Annex XIII 1(e)",
+      "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentLithium"
     },
     "recycledContentNickel": {
@@ -429,7 +427,8 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 8",
+      "x-provision": "Annex XIII 1(e)",
+      "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentNickel"
     },
     "recycledContentLead": {
@@ -440,7 +439,8 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 8",
+      "x-provision": "Annex XIII 1(e)",
+      "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentLead"
     },
     "roleOfEndUsersInWastePrevention": {
@@ -449,7 +449,7 @@
       "description": "Information on the role of end-users in contributing to waste prevention, including by responsible use and proper disposal",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 74",
+      "x-provision": "Annex XIII (1s)",
       "x-iri": "https://tracepass.eu/voc/dpp/roleOfEndUsersInWastePrevention"
     },
     "informationOnSeparateCollection": {
@@ -458,8 +458,17 @@
       "description": "Information about separate collection requirements and available collection points",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 74",
+      "x-provision": "Annex XIII (1s)",
       "x-iri": "https://tracepass.eu/voc/dpp/informationOnSeparateCollection"
+    },
+    "informationOnCollectionAndEndOfLifeTreatment": {
+      "type": "string",
+      "title": "Collection and End-of-Life Treatment Information",
+      "description": "Link to information on separate collection, take-back and collection points, preparation for re-use, preparation for repurposing, and treatment available for waste batteries (Annex XIII 1(s) carrying Art. 74(1)(c)).",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII (1s)",
+      "x-iri": "https://tracepass.eu/voc/dpp/informationOnCollectionAndEndOfLifeTreatment"
     },
     "dismantlingInformation": {
       "type": "string",
@@ -503,7 +512,8 @@
       "description": "Supporting documentation for recycled content claims, accessible to authorities",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 8",
+      "x-provision": "Annex XIII 1(e)",
+      "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content figures into the passport by reference to the documentation that evidences them, which is what this link points at.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentDocumentation"
     },
     "batteryRemovabilityReplaceability": {
@@ -588,12 +598,12 @@
     },
     "ratioMaxPowerMaxEnergy": {
       "type": "number",
-      "title": "Ratio Max Power / Max Energy",
-      "description": "Ratio between maximum power capability and maximum energy content",
+      "title": "Ratio Nominal Power / Energy",
+      "description": "Ratio between nominal battery power (W) and battery energy (Wh), an element of the technical documentation (Annex IV Part B(2)). Voluntary; not an Annex XIII passport item.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
-      "x-citationNote": "Annex XIII point 1 is passport content that must be PUBLICLY accessible, and this is one of its items. It binds from 18 Feb 2027 for LMT, industrial >2 kWh and EV batteries (Art. 77); the field is not flagged required at template level only because the duty is not uniform across battery types — see validation.requiredBy.",
+      "x-provision": "Annex IV Part B(2)",
+      "x-citationNote": "Annex IV Part B(2) requires this ratio in the technical documentation that explains the Art. 10(1) measurements. It is not Annex XIII passport content and binds nothing in the passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/ratioMaxPowerMaxEnergy"
     },
     "initialEnergyRoundTripEfficiency": {
@@ -648,15 +658,16 @@
       "x-unit": "%/month",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 77",
+      "x-provision": "Annex XIII 1(o)",
       "x-iri": "https://tracepass.eu/voc/dpp/initialSelfDischargeRate"
     },
     "batteryEnergyTotal": {
       "type": "number",
       "title": "Battery Energy Total",
-      "description": "Total usable energy content of the battery in kWh",
+      "description": "Nominal (rated) energy of the battery in kWh: rated capacity (Ah) × nominal voltage (V) ÷ 1000. Not the usable energy, which is lower.",
       "x-unit": "kWh",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/batteryEnergyTotal"
     },
     "energyDensity": {
@@ -665,6 +676,7 @@
       "description": "Gravimetric energy density in watt-hours per kilogram",
       "x-unit": "Wh/kg",
       "x-unitIri": "http://qudt.org/vocab/unit/W-HR-PER-KiloGM",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/energyDensity"
     },
     "expectedLifetimeCycles": {
@@ -760,6 +772,7 @@
       "type": "number",
       "title": "Number of Cells",
       "description": "Total number of cells in the battery pack",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/numberOfCells"
     },
     "cellType": {
@@ -772,12 +785,13 @@
         "pouch",
         "blade"
       ],
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/cellType"
     },
     "stateOfHealth": {
       "type": "number",
       "title": "State of Health — SoH",
-      "description": "Current state of health of the battery as a percentage of original capacity",
+      "description": "Overall state of health (%) as reported by the battery management system: the battery's general condition compared with its initial condition (Art. 3(1)(28)). For EV batteries the legal state-of-health parameter is the state of certified energy (stateOfCertifiedEnergy); for LMT and stationary storage batteries it is the Annex VII Part A set.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
@@ -831,13 +845,13 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Art. 77",
-      "x-citationNote": "Remaining energy is part of the Art. 14 state-of-health parameter set that Annex XIII 4(b) makes available to persons with a legitimate interest only. It is per-battery data, never public passport content.",
+      "x-citationNote": "Remaining energy is part of the Art. 14 state-of-health parameter set that Annex XIII 4(b) makes available to persons with a legitimate interest only. It is per-battery data, never public passport content. Not an Annex VII Part A item.",
       "x-iri": "https://tracepass.eu/voc/dpp/remainingEnergy"
     },
     "currentInternalResistancePack": {
       "type": "number",
-      "title": "Current Internal Resistance — Pack",
-      "description": "Current internal resistance of the battery pack in ohms",
+      "title": "Ohmic Resistance — Pack (State of Health)",
+      "description": "Where possible, the current ohmic resistance of the battery pack in ohms: the Annex VII Part A(5) state-of-health parameter (Annex XIII 4(b), Art. 14) for LMT and stationary storage batteries. Not the Annex IV internal resistance (total effective resistance), which is dynamicInternalResistance.",
       "x-unit": "Ohm",
       "x-unitIri": "http://qudt.org/vocab/unit/OHM",
       "x-regulation": "32023R1542",
@@ -922,6 +936,7 @@
       "description": "Cumulative charge passed through the battery over its life, in ampere-hours",
       "x-unit": "Ah",
       "x-unitIri": "http://qudt.org/vocab/unit/A-HR",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/capacityThroughput"
     },
     "energyThroughput": {
@@ -930,6 +945,7 @@
       "description": "Cumulative energy passed through the battery over its life, in kilowatt-hours",
       "x-unit": "kWh",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/energyThroughput"
     },
     "numberOfChargingEvents": {

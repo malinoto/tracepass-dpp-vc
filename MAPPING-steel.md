@@ -34,24 +34,24 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `serialNumber` | CELEX `32024R1781` | — |
 | `productType` | CELEX `32023R0956` | Annex I |
 | `productName` | CELEX `32023R0988` | Art. 9(5) |
-| `steelGradeDesignation` | — | — |
+| `steelGradeDesignation` | EN 10027-1/2, EN 573-3, EN 1706 | — |
 | `countryOfManufacture` | CELEX `32024R1781` | — |
 | `facilityId` | CELEX `32023R0956` | Annex IV |
 | `primaryMaterialType` | CELEX `32023R0956` | — |
-| `chemicalComposition` | — | — |
+| `chemicalComposition` | EN 10204, EN 10025, EN 10088 (stainless) | — |
 | `recycledContentPercentage` | CELEX `32024R1781` | Article 5(5)(j) |
-| `preConsumerScrapPct` | CELEX `32024R1781` | — |
+| `preConsumerScrapPct` | ISO 14021 | — |
 | `postConsumerScrapPct` | CELEX `32024R1781` | — |
 | `recycledContentVerification` | CELEX `32024R1781` | — |
 | `coatings` | CELEX `32024R1781` | — |
-| `yieldStrengthMpa` | — | — |
-| `tensileStrengthMpa` | — | — |
-| `elongationPct` | — | — |
-| `impactEnergy` | — | — |
-| `hardness` | — | — |
+| `yieldStrengthMpa` | EN 10025, EN 10204 | — |
+| `tensileStrengthMpa` | EN 10204 | — |
+| `elongationPct` | EN 10204 | — |
+| `impactEnergy` | EN 10204, ISO 148-1 | — |
+| `hardness` | EN 10204 | — |
 | `productionRoute` | CELEX `32023R0956` | Annex IV |
 | `productionDate` | CELEX `32024R1781` | — |
-| `heatTreatment` | — | — |
+| `heatTreatment` | EN 10025, EN 10204 | — |
 | `electricityGridIntensity` | CELEX `32023R0956` | — |
 | `renewableSharePct` | CELEX `32024R1781` | — |
 | `electricityConsumedKwhPerT` | CELEX `32023R0956` | — |
@@ -59,7 +59,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `reductionAgent` | CELEX `32023R0956` | — |
 | `totalCarbonFootprint` | CELEX `32024R1781` | Article 5(5)(b) |
 | `scope1DirectEmissions` | CELEX `32023R0956` | Annex IV |
-| `scope2IndirectEmissions` | CELEX `32023R0956` | — |
+| `scope2IndirectEmissions` | CELEX `32023R0956` | Art. 7(1), Annex II |
 | `scope3UpstreamEmissions` | CELEX `32024R1781` | — |
 | `precursorEmissions` | CELEX `32023R0956` | Annex IV |
 | `calculationMethodology` | CELEX `32023R0956` | — |
@@ -82,23 +82,23 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `waterUse` | EN 15804+A2 (water use) | — |
 | `epdReferenceUri` | ISO 14025 (Type III environmental declarations) | — |
 | `epdProgramOperator` | ISO 14025 (Type III environmental declarations) | — |
-| `lifecycleModules` | — | — |
+| `lifecycleModules` | EN 15804+A2 | — |
 | `declaredUnit` | EN 15804+A2 (declared and functional unit) | — |
 | `expectedServiceLifeYears` | CELEX `32024R1781` | Article 5(5)(a) |
 | `recyclabilityPercentage` | CELEX `32024R1781` | Article 5(5)(i) |
 | `endOfLifeInstructions` | CELEX `32024R1781` | Article 5(5)(l) |
-| `ceMarking` | CELEX `32024R1781` | Art. 13-15 |
+| `ceMarking` | CELEX `32024R3110` | Arts. 13(1), 17-18; Art. 94 (Reg. (EU) 305/2011 Arts. 4-9 continue to apply until 8 Jan 2040 for products under harmonised standards cited under it) |
 | `declarationOfPerformanceUri` | CELEX `32024R3110` | — |
-| `inspectionCertificateType` | — | — |
-| `inspectionCertificateUri` | — | — |
-| `responsibleSteelCertification` | — | — |
-| `asiCertification` | — | — |
+| `inspectionCertificateType` | EN 10204:2004 | — |
+| `inspectionCertificateUri` | EN 10204, ESPR | — |
+| `responsibleSteelCertification` | Voluntary (ResponsibleSteel International Production Standard) | — |
+| `asiCertification` | Voluntary (ASI Performance Standard V3, ASI CoC Standard V2.1) | — |
 | `euEtsInstallationId` | CELEX `32003L0087` | — |
 | `dataCarrier` | CELEX `32024R1781` | — |
 | `accessLevel` | CELEX `32024R1781` | — |
 | `registryEntryUri` | CELEX `32024R1781` | — |
 | `dataFormat` | CELEX `32024R1781` | — |
 | `languages` | CELEX `32024R1781` | Article 8 |
-| `ceMarkingStatus` | CELEX `32024R3110` | Arts. 8-9 |
+| `ceMarkingStatus` | CELEX `32024R3110` | Arts. 13(1), 17-18; Art. 94 (Reg. (EU) 305/2011 Arts. 4-9 continue to apply until 8 Jan 2040 for products under harmonised standards cited under it) |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

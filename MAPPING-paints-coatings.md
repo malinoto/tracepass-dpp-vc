@@ -1,6 +1,6 @@
 # Paints & Coatings DPP — field-to-vocabulary mapping
 
-Every field in the Paints & Coatings Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 66 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Paints & Coatings Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 61 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -48,7 +48,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `ingredientSubstanceName` | CELEX `32006R1907` | Annex II SDS section 3.2 |
 | `ingredientIupacName` | CELEX `32008R1272` | — |
 | `ingredientCasNumber` | CELEX `32006R1907` | Annex II SDS section 3.2 |
-| `ingredientEcNumber` | — | — |
+| `ingredientEcNumber` | REACH, SDS Section 3 | — |
 | `ingredientReachRegistrationNumber` | CELEX `32006R1907` | — |
 | `preservatives` | CELEX `32008R1272` | — |
 | `fragranceAllergens` | CELEX `32008R1272` | — |
@@ -62,21 +62,17 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `poisonCentreNotificationNumber` | CELEX `32008R1272` | Annex VIII |
 | `emergencyPhoneNumber` | CELEX `32006R1907` | Annex II SDS section 1.4 |
 | `productCategoryEuPCS` | CELEX `32008R1272` | Annex VIII (product categorisation, EuPCS) |
-| `svhcSubstances` | CELEX `32006R1907` | Art. 33(1) |
-| `svhcSubstanceName` | CELEX `32006R1907` | Art. 33(1) |
-| `svhcCasNumber` | CELEX `32006R1907` | Article 33 |
+| `svhcSubstances` | CELEX `32006R1907` | Art. 31(1)(c), 31(3)(b) (SDS) |
 | `svhcEcNumber` | CELEX `32006R1907` | — |
-| `svhcConcentrationRange` | CELEX `32006R1907` | Article 7(5), REACH Article 33 |
 | `svhcLocationInProduct` | CELEX `32024R1781` | Article 7(5)(b) |
-| `svhcSafeUseInstructions` | CELEX `32006R1907` | Art. 33(1) |
 | `svhcCandidateListDate` | CELEX `32006R1907` | Article 59 |
 | `svhcScipNotificationId` | CELEX `32008L0098` | Article 9(1)(i) |
 | `appearance` | CELEX `32006R1907` | Annex II SDS section 9.1 |
-| `odour` | — | — |
+| `odour` | SDS Section 9.1 | — |
 | `ph` | CELEX `32006R1907` | Annex II SDS section 9.1 |
-| `flashPoint` | — | — |
-| `density` | — | — |
-| `viscosity` | — | — |
+| `flashPoint` | SDS Section 9.1, CLP | — |
+| `density` | SDS Section 9.1 | — |
+| `viscosity` | SDS Section 9.1 | — |
 | `carbonFootprint` | CELEX `32024R1781` | Article 7(2)(b) |
 | `carbonFootprintScope` | CELEX `32024R1781` | Article 7(2)(b) |
 | `carbonFootprintMethodology` | CELEX `32024R1781` | Article 7(2)(b) |
@@ -93,9 +89,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `vocCategory` | CELEX `32004L0042` | Annex I |
 | `paintType` | CELEX `32004L0042` | — |
 | `vocContentReadyToUse` | CELEX `32004L0042` | Article 3 |
-| `vocMaxLimit` | CELEX `32004L0042` | Annex II |
 | `solventType` | CELEX `32004L0042` | — |
-| `coverageSqmPerLitre` | — | — |
+| `coverageSqmPerLitre` | Product technical data | — |
 | `wetScrubResistanceClass` | EN 13300 (water-borne coating materials, wet-scrub classes) | — |
 | `titaniumDioxideContent` | CELEX `32008R1272` | — |
 | `isoClassification` | ISO 12944 (corrosivity categories for protective paint systems) | — |
