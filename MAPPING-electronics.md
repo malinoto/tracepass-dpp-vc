@@ -1,6 +1,6 @@
 # Electronics DPP — field-to-vocabulary mapping
 
-Every field in the Electronics Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 153 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Electronics Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 151 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -53,7 +53,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `repairabilityIndex` | CELEX `32023R1669` | Annex V, Table 8, item 21 |
 | `energyEfficiencyClass` | CELEX `32017R1369` | Reg. (EU) 2017/1369 Arts. 3(1) and 4 — physical energy label supplied with the product and EPREL registration |
 | `annualEnergyConsumption` | CELEX `32019R2016` | Annex V, Table 6 |
-| `waterConsumption` | CELEX `32024R1781` | Art. 7 |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7 |
 | `carbonFootprintClass` | CELEX `32024R1781` | Art. 7 |
 | `recycledContentPercentage` | CELEX `32023R1670` | Annex II, point B.2(1)(d) |
@@ -63,7 +62,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `batteryEndurancePerCycle` | CELEX `32023R1669` | Annex V, Table 8, item 8 |
 | `batteryEnduranceCycles` | CELEX `32023R1669` | Annex V, Table 8, item 9 |
 | `ratedBatteryCapacity` | CELEX `32023R1669` | Annex V, Table 8, item 10 |
-| `batteryUserReplaceable` | CELEX `32023R1542` | Reg. (EU) 2023/1542 Art. 11 — removability and replaceability, for products incorporating a portable battery, from 18 February 2027 |
+| `batteryUserReplaceable` | CELEX `32023R1542` | Art. 11(1) |
 | `repeatedFreeFallReliabilityClass` | CELEX `32023R1669` | Annex V, Table 8, item 14 |
 | `ipRating` | CELEX `32023R1669` | Annex V, Table 8, item 15 |
 | `disassemblyDepthScore` | CELEX `32023R1669` | Annex V, Table 8, item 21a |
@@ -78,15 +77,14 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `batteryCapacityRetention` | CELEX `32023R1670` | Annex II, point B.1.2(4) |
 | `sparePartsList` | CELEX `32023R1670` | Annex II, point B.1.1(1) |
 | `sparePartsAvailabilityYears` | CELEX `32023R1670` | Annex II, point B.1.1(1) |
-| `maxDeliveryDays` | CELEX `32024R1781` | Art. 11 |
+| `maxDeliveryDays` | CELEX `32023R1670` | Annex II, point B.1.1(3) |
 | `sparePartsWebsiteUrl` | CELEX `32023R1670` | Annex II, point B.1.1(1) |
-| `priceList` | CELEX `32024R1781` | Art. 11 |
+| `priceList` | CELEX `32023R1670` | Annex II, point B.1.1(4) |
 | `osUpdateSupportYears` | CELEX `32023R1670` | Annex II, point B.1.2(6)(a) |
 | `osUpdateEndDate` | CELEX `32023R1670` | Annex II, point B.1.2(6)(a) |
-| `securityUpdateEndDate` | CELEX `32023R1670` | Annex II, point B.1.2(6)(a) |
-| `firmwareAccessForRepairers` | CELEX `32024R1781` | Art. 10 |
-| `dataWipeFunction` | CELEX `32024R1781` | Art. 10 |
-| `dataTransferSupport` | CELEX `32024R1781` | Art. 10 |
+| `firmwareAccessForRepairers` | CELEX `32023R1670` | Annex II, point B.1.1(7) |
+| `dataWipeFunction` | CELEX `32023R1670` | Annex II, point B.1.1(6)(b) |
+| `dataTransferSupport` | CELEX `32024R1781` | Annex I, point (c) |
 | `psuEfficiency10` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
 | `psuEfficiency20` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
 | `psuEfficiency50` | CELEX `32019R0424` | Annex II (ecodesign requirements) |
@@ -138,7 +136,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `freezingCapacity` | CELEX `32019R2016` | Annex V, Table 6, item 8 |
 | `temperatureRiseTime` | CELEX `32019R2016` | Annex VI, technical documentation |
 | `rohsCompliant` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 4(1) — substance restriction evidenced through the DoC and CE marking |
-| `rohsDeclaration` | CELEX `32024R1781` | Art. 4 |
+| `rohsDeclaration` | CELEX `32011L0065` | Art. 13 |
 | `leadConcentrationHomogeneousMaterial` | CELEX `32011L0065` | Annex II |
 | `mercuryContent` | CELEX `32011L0065` | Annex II |
 | `cadmiumConcentrationHomogeneousMaterial` | CELEX `32011L0065` | Annex II |
@@ -154,30 +152,30 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `scipNotificationId` | CELEX `32008L0098` | Art. 9(1)(i) |
 | `svhcPresent` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
 | `containsPermanentMagnets` | CELEX `32024R1252` | Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet information, applicable from 24 May 2029 for covered categories |
-| `magnetTotalWeight` | CELEX `32024R1781` | Art. 27 |
-| `magnetLocation` | CELEX `32024R1781` | Art. 27 |
-| `magnetChemicalComposition` | CELEX `32024R1781` | Art. 27 |
-| `magnetCoatings` | CELEX `32024R1781` | Art. 27 |
-| `recycledNeodymium` | CELEX `32024R1781` | Art. 27 |
-| `recycledDysprosium` | CELEX `32024R1781` | Art. 27 |
-| `recycledPraseodymium` | CELEX `32024R1781` | Art. 27 |
-| `recycledTerbium` | CELEX `32024R1781` | Art. 27 |
-| `recycledBoron` | CELEX `32024R1781` | Art. 27 |
-| `recycledSamarium` | CELEX `32024R1781` | Art. 27 |
-| `recycledNickel` | CELEX `32024R1781` | Art. 27 |
-| `recycledCobalt` | CELEX `32024R1781` | Art. 27 |
+| `magnetTotalWeight` | CELEX `32024R1252` | Art. 28(4)(b) |
+| `magnetLocation` | CELEX `32024R1252` | Art. 28(4)(b) |
+| `magnetChemicalComposition` | CELEX `32024R1252` | Art. 28(4)(b) |
+| `magnetCoatings` | CELEX `32024R1252` | Art. 28(4)(b) |
+| `recycledNeodymium` | CELEX `32024R1252` | Art. 29(1) |
+| `recycledDysprosium` | CELEX `32024R1252` | Art. 29(1) |
+| `recycledPraseodymium` | CELEX `32024R1252` | Art. 29(1) |
+| `recycledTerbium` | CELEX `32024R1252` | Art. 29(1) |
+| `recycledBoron` | CELEX `32024R1252` | Art. 29(1) |
+| `recycledSamarium` | CELEX `32024R1252` | Art. 29(1) |
+| `recycledNickel` | CELEX `32024R1252` | Art. 29(1) |
+| `recycledCobalt` | CELEX `32024R1252` | Art. 29(1) |
 | `recycledPlasticContent` | CELEX `32024R1781` | Art. 7 |
 | `recycledMetalContent` | CELEX `32024R1781` | Art. 7 |
-| `recycledLithium` | CELEX `32024R1781` | Art. 27 |
-| `recycledRareEarth` | CELEX `32024R1781` | Art. 27 |
+| `recycledLithium` | CELEX `32024R1781` | Annex I, point (h) |
+| `recycledRareEarth` | CELEX `32024R1781` | Annex I, point (h) |
 | `postConsumerRecycledShare` | CELEX `32024R1781` | Art. 7 |
 | `preConsumerRecycledShare` | CELEX `32024R1781` | Art. 7 |
 | `weeeCategory` | CELEX `32012L0019` | Annex III |
-| `productWeight` | CELEX `32024R1781` | Annex X |
-| `dismantlingInstructions` | CELEX `32024R1781` | Art. 15 |
-| `recyclableComponentsList` | CELEX `32024R1781` | Art. 15 |
-| `hazardousComponentsList` | CELEX `32024R1781` | Art. 15 |
-| `materialComposition` | CELEX `32024R1781` | Art. 15 |
+| `productWeight` | CELEX `32012L0019` | Annex X, Part B(4) |
+| `dismantlingInstructions` | CELEX `32012L0019` | Art. 15(1) |
+| `recyclableComponentsList` | CELEX `32012L0019` | Art. 15(1) |
+| `hazardousComponentsList` | CELEX `32012L0019` | Art. 15(1) |
+| `materialComposition` | CELEX `32012L0019` | Art. 15(1) |
 | `crossedOutWheelieBinMarking` | CELEX `32012L0019` | WEEE Dir. 2012/19/EU Art. 14(4) + Annex IX — crossed-out wheeled bin symbol marked on the product |
 | `dppIssueDate` | CELEX `32024R1781` | Art. 9 |
 | `dppLastUpdated` | CELEX `32024R1781` | Art. 9 |

@@ -41,10 +41,6 @@
         "@id": "https://tracepass.eu/voc/dpp/materialType",
         "@type": "xsd:string"
       },
-      "materialCode": {
-        "@id": "https://tracepass.eu/voc/dpp/materialCode",
-        "@type": "xsd:string"
-      },
       "weightPercent": {
         "@id": "https://tracepass.eu/voc/dpp/weightPercent",
         "@type": "xsd:decimal"
@@ -120,10 +116,6 @@
       "massBalanceApplied": {
         "@id": "https://tracepass.eu/voc/dpp/massBalanceApplied",
         "@type": "xsd:boolean"
-      },
-      "sortingComponentName": {
-        "@id": "https://tracepass.eu/voc/dpp/sortingComponentName",
-        "@type": "xsd:string"
       },
       "binDestination": {
         "@id": "https://tracepass.eu/voc/dpp/binDestination",

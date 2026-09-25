@@ -1,6 +1,6 @@
 # Paints & Coatings DPP — field-to-vocabulary mapping
 
-Every field in the Paints & Coatings Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 61 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Paints & Coatings Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 60 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -84,11 +84,10 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `passportValidFrom` | CELEX `32024R1781` | Article 10 |
 | `passportRetentionYears` | CELEX `32024R1781` | Article 10(3) |
 | `accessLevel` | CELEX `32024R1781` | Article 10(4) |
-| `vocContent` | CELEX `32004L0042` | — |
 | `vocLimit` | CELEX `32004L0042` | Annex II |
 | `vocCategory` | CELEX `32004L0042` | Annex I |
 | `paintType` | CELEX `32004L0042` | — |
-| `vocContentReadyToUse` | CELEX `32004L0042` | Article 3 |
+| `vocContentReadyToUse` | CELEX `32004L0042` | Art. 3(1), Art. 4(b) |
 | `solventType` | CELEX `32004L0042` | — |
 | `coverageSqmPerLitre` | Product technical data | — |
 | `wetScrubResistanceClass` | EN 13300 (water-borne coating materials, wet-scrub classes) | — |

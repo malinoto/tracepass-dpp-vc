@@ -1,6 +1,6 @@
 # Tyres DPP — field-to-vocabulary mapping
 
-Every field in the Tyres Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 86 are coined**, 7 are carried by the UNTP envelope rather than by `characteristics`, and 1 are skipped as product specifications rather than semantic properties.
+Every field in the Tyres Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 85 are coined**, 7 are carried by the UNTP envelope rather than by `characteristics`, and 1 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -102,7 +102,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `euro7Compliance` | CELEX `32024R1257` | Reg. (EU) 2024/1257 — tyre abrasion limits not yet in force |
 | `euTyreLabelImageUrl` | CELEX `32020R0740` | Reg. (EU) 2020/740 Arts. 4 and 6 — label displayed in visual form at the point of sale |
 | `declarationOfConformityUrl` | CELEX `32023R0988` | UNECE R30 / R54 — type approval evidenced by the approval mark on the sidewall and the approval dossier |
-| `reachComplianceTypeApproval` | CELEX `32006R1907` | REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records |
 | `recommendedInflationPressureKpa` | UNECE Reg. 30/54; product specification | — |
 | `maximumInflationPressureKpa` | UNECE Reg. 30/54 | — |
 | `maximumLoadKg` | UNECE Reg. 30/54 | — |

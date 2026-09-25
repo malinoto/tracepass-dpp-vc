@@ -204,10 +204,6 @@
         "@id": "https://tracepass.eu/voc/dpp/osUpdateEndDate",
         "@type": "xsd:date"
       },
-      "securityUpdateEndDate": {
-        "@id": "https://tracepass.eu/voc/dpp/securityUpdateEndDate",
-        "@type": "xsd:date"
-      },
       "firmwareAccessForRepairers": {
         "@id": "https://tracepass.eu/voc/dpp/firmwareAccessForRepairers",
         "@type": "xsd:boolean"

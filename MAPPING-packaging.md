@@ -1,6 +1,6 @@
 # Packaging DPP — field-to-vocabulary mapping
 
-Every field in the Packaging Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 64 are coined**, 1 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Packaging Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 62 are coined**, 1 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -30,10 +30,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `packagingVolume` | CELEX `32025R0040` | Annex VII |
 | `isReusable` | CELEX `32025R0040` | Art. 11 |
 | `isSingleUse` | CELEX `32025R0040` | Art. 11 |
-| `materialType` | CELEX `32025R0040` | Art. 5, Annex VII |
-| `materialCode` | CELEX `32025R0040` | Art. 5 |
+| `materialType` | CELEX `32025R0040` | Art. 12(1) |
 | `weightPercent` | CELEX `32025R0040` | Annex VII |
-| `componentName` | CELEX `32025R0040` | Annex VII |
+| `componentName` | CELEX `32025R0040` | Art. 12(1) |
 | `isContactSensitive` | CELEX `32025R0040` | Art. 7 |
 | `totalMaterialCount` | CELEX `32025R0040` | Annex VII |
 | `isMultiMaterial` | CELEX `32025R0040` | Art. 6 |
@@ -51,7 +50,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `preConsumerPercent` | CELEX `32025R0040` | Art. 7 |
 | `certificationScheme` | CELEX `32025R0040` | Art. 7(8) |
 | `massBalanceApplied` | CELEX `32025R0040` | Art. 7 |
-| `sortingComponentName` | CELEX `32025R0040` | Art. 12 |
 | `binDestination` | CELEX `32025R0040` | Art. 12 |
 | `pictogramUrl` | CELEX `32025R0040` | Art. 12 |
 | `consumerInstruction` | CELEX `32025R0040` | Art. 12 |

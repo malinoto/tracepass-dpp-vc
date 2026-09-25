@@ -137,19 +137,9 @@
       ],
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 5, Annex VII",
+      "x-provision": "Art. 12(1)",
       "x-citationNote": "Material composition is the subject of the Art. 12(1) harmonised label, which is discharged by a PICTOGRAM on the packaging, not by publishing a data field. The identification methodology comes from the Art. 12(7) implementing act due 12 Aug 2026 and not yet adopted, and the label applies from 12 Aug 2028 or 24 months after that act, whichever is the latest.",
       "x-iri": "https://tracepass.eu/voc/dpp/materialType"
-    },
-    "materialCode": {
-      "type": "string",
-      "title": "Material Code",
-      "description": "Harmonized material identification code per Commission implementing act.",
-      "x-regulation": "32025R0040",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 5",
-      "x-citationNote": "Material identification serves the Art. 12(1) harmonised label, which is discharged by a PICTOGRAM whose format the Art. 12(6)/(7) implementing acts will set. A material code is a machine-readable convenience, not a mandated datum.",
-      "x-iri": "https://tracepass.eu/voc/dpp/materialCode"
     },
     "weightPercent": {
       "type": "number",
@@ -169,7 +159,7 @@
       "description": "Name of the packaging component (e.g. cap, body, label, sleeve).",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Annex VII",
+      "x-provision": "Art. 12(1)",
       "x-citationNote": "Component identification supports the separate-collection sorting information that Art. 12(1) allows on a voluntary QR code. Since that carrier is permissive and its dataset undefined, naming components is useful practice rather than a duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/componentName"
     },
@@ -365,16 +355,6 @@
       "x-provision": "Art. 7",
       "x-citationNote": "Whether mass balance may be used to attribute recycled content is exactly the question the Art. 7(8) methodology delegated act will settle. Until it does, the attribution rule does not exist to be declared against.",
       "x-iri": "https://tracepass.eu/voc/dpp/massBalanceApplied"
-    },
-    "sortingComponentName": {
-      "type": "string",
-      "title": "Sorting Component Name",
-      "description": "Name of the packaging component for sorting/disposal instructions.",
-      "x-regulation": "32025R0040",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 12",
-      "x-citationNote": "Per-component sorting destination is exactly what the Art. 12(1) voluntary QR code may carry ('information on the destination of each separate component'). The regulation permits this carrier rather than requiring it.",
-      "x-iri": "https://tracepass.eu/voc/dpp/sortingComponentName"
     },
     "binDestination": {
       "type": "string",
