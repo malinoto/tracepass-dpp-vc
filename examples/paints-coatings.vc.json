@@ -92,13 +92,17 @@
       "batchLotNumber": "PC-2026-0518-A",
       "tradeName": "Ferrolux SolvaCoat Matt White",
       "commodityCode": "3209100000",
-      "ingredientSubstanceName": "Titanium dioxide",
-      "ingredientCasNumber": "13463-67-7",
       "emergencyPhoneNumber": "+49 30 19240",
       "productCategoryEuPCS": "PC-PNT-1 Decorative paints and varnishes, consumer",
       "appearance": "Opaque matt white liquid dispersion",
       "ph": 8.6,
-      "endOfLifeInstructions": "https://example.com/docs/solvacoat-disposal.pdf"
+      "endOfLifeInstructions": "https://example.com/docs/solvacoat-disposal.pdf",
+      "ingredients": [
+        {
+          "name": "Titanium dioxide",
+          "casNumber": "13463-67-7"
+        }
+      ]
     }
   }
 }

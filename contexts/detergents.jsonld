@@ -61,26 +61,6 @@
         "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
         "@type": "xsd:string"
       },
-      "ingredientSubstanceName": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientSubstanceName",
-        "@type": "xsd:string"
-      },
-      "ingredientIupacName": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientIupacName",
-        "@type": "xsd:string"
-      },
-      "ingredientCasNumber": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientCasNumber",
-        "@type": "xsd:string"
-      },
-      "ingredientEcNumber": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientEcNumber",
-        "@type": "xsd:string"
-      },
-      "ingredientReachRegistrationNumber": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientReachRegistrationNumber",
-        "@type": "xsd:string"
-      },
       "preservatives": {
         "@id": "https://tracepass.eu/voc/dpp/preservatives",
         "@container": "@set"
@@ -220,18 +200,6 @@
       "ingredients": {
         "@id": "https://tracepass.eu/voc/dpp/ingredients",
         "@container": "@set"
-      },
-      "ingredientInciName": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientInciName",
-        "@type": "xsd:string"
-      },
-      "ingredientConcentrationRangePercent": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientConcentrationRangePercent",
-        "@type": "xsd:string"
-      },
-      "ingredientFunctionCategory": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientFunctionCategory",
-        "@type": "xsd:string"
       },
       "surfactantsTotal": {
         "@id": "https://tracepass.eu/voc/dpp/surfactantsTotal",

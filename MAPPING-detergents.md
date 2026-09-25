@@ -1,6 +1,6 @@
 # Detergents & Surfactants DPP — field-to-vocabulary mapping
 
-Every field in the Detergents & Surfactants Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 74 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Detergents & Surfactants Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 66 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -33,35 +33,30 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `batchLotNumber` | CELEX `32006R1907` | Art. 31 + Annex II SDS section 1.1 |
+| `batchLotNumber` | CELEX `32026R0405` | Annex VI Part A, point (d) |
 | `serialNumber` | CELEX `32024R1781` | Article 9 |
-| `tradeName` | CELEX `32008R1272` | Art. 18 (product identifiers) |
+| `tradeName` | CELEX `32026R0405` | Annex VI Part A, point (a) |
 | `productModel` | CELEX `32024R1781` | Article 9 |
-| `packagingImageUrl` | CELEX `32024R1781` | Article 9 |
-| `commodityCode` | CELEX `31987R2658` | — |
+| `packagingImageUrl` | CELEX `32026R0405` | Annex VI Part A, point (a) |
+| `commodityCode` | CELEX `32026R0405` | Annex VI Part A, point (f) |
 | `productCategory` | CELEX `32024R1781` | Article 9 |
 | `productSubcategory` | CELEX `32024R1781` | Article 9 |
-| `manufacturerEmail` | CELEX `32006R1907` | Annex II SDS section 1.3 |
-| `manufacturerPhone` | CELEX `32023R0988` | Article 9 |
-| `passportServiceProvider` | CELEX `32024R1781` | Article 10 |
+| `manufacturerEmail` | CELEX `32026R0405` | Annex VI Part A, point (b) |
+| `manufacturerPhone` | CELEX `32026R0405` | Annex VI Part A, point (b) |
+| `passportServiceProvider` | CELEX `32026R0405` | Annex VI Part A, point (c) |
 | `countryOfManufacture` | CELEX `32024R1781` | Article 9 |
-| `ingredientSubstanceName` | CELEX `32006R1907` | Annex II SDS section 3.2 |
-| `ingredientIupacName` | CELEX `32008R1272` | — |
-| `ingredientCasNumber` | CELEX `32006R1907` | Annex II SDS section 3.2 |
-| `ingredientEcNumber` | REACH, SDS Section 3 | — |
-| `ingredientReachRegistrationNumber` | CELEX `32006R1907` | — |
 | `preservatives` | CELEX `32008R1272` | — |
 | `fragranceAllergens` | CELEX `32008R1272` | — |
 | `hazardClass` | CELEX `32008R1272` | Title II, Arts. 9-13 (classification) |
 | `signalWord` | CELEX `32008R1272` | Art. 20 |
 | `hazardPictograms` | CELEX `32008R1272` | Art. 19 & Annex V |
 | `hazardStatements` | CELEX `32008R1272` | Art. 21 & Annex III |
-| `precautionaryStatements` | CELEX `32008R1272` | Art. 22 & Annex IV |
+| `precautionaryStatements` | CELEX `32008R1272` | Art. 22 |
 | `supplementalHazardInfo` | CELEX `32008R1272` | Annex II |
 | `ufi` | CELEX `32008R1272` | Art. 45 & Annex VIII |
 | `poisonCentreNotificationNumber` | CELEX `32008R1272` | Annex VIII |
 | `emergencyPhoneNumber` | CELEX `32006R1907` | Annex II SDS section 1.4 |
-| `productCategoryEuPCS` | CELEX `32008R1272` | Annex VIII (product categorisation, EuPCS) |
+| `productCategoryEuPCS` | CELEX `32008R1272` | Annex VIII |
 | `svhcSubstances` | CELEX `32006R1907` | Art. 31(1)(c), 31(3)(b) (SDS) |
 | `svhcEcNumber` | CELEX `32006R1907` | — |
 | `svhcLocationInProduct` | CELEX `32024R1781` | Article 7(5)(b) |
@@ -84,10 +79,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `passportValidFrom` | CELEX `32024R1781` | Article 10 |
 | `passportRetentionYears` | CELEX `32024R1781` | Article 10(3) |
 | `accessLevel` | CELEX `32024R1781` | Article 10(4) |
-| `ingredients` | CELEX `32026R0405` | Annex III |
-| `ingredientInciName` | CELEX `32026R0405` | — |
-| `ingredientConcentrationRangePercent` | CELEX `32026R0405` | Annex V Part A, point 1(h)(i) |
-| `ingredientFunctionCategory` | CELEX `32026R0405` | — |
+| `ingredients` | CELEX `32026R0405` | Annex VI Part A, point (h) |
 | `surfactantsTotal` | CELEX `32026R0405` | — |
 | `phosphatesContent` | CELEX `32026R0405` | — |
 | `phosphonatesContent` | CELEX `32026R0405` | — |
@@ -95,14 +87,14 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `soapContent` | CELEX `32026R0405` | — |
 | `opticalBrighteners` | CELEX `32026R0405` | — |
 | `enzymes` | CELEX `32026R0405` | — |
-| `microorganisms` | CELEX `32026R0405` | — |
+| `microorganisms` | CELEX `32026R0405` | Annex VI Part A, point (i) |
 | `ultimateBiodegradation` | CELEX `32026R0405` | — |
 | `biodegradationTestMethod` | CELEX `32026R0405` | Annex I, point A.2 |
 | `degradationPercent` | CELEX `32026R0405` | — |
 | `passThreshold` | CELEX `32026R0405` | — |
-| `recommendedDoseMl` | CELEX `32026R0405` | — |
+| `recommendedDoseMl` | CELEX `32026R0405` | Annex V Part B, point 1(a) |
 | `waterHardnessRange` | CELEX `32026R0405` | — |
-| `machineLoadsPerPackage` | CELEX `32026R0405` | — |
+| `machineLoadsPerPackage` | CELEX `32026R0405` | Annex V Part B, point 1(b) |
 | `usageInstructionsText` | CELEX `32026R0405` | Annex V Part A, point 1(e) |
 | `intendedUse` | CELEX `32006R1907` | Annex II SDS section 1.2 |
 | `issuedUnderSoleResponsibility` | CELEX `32026R0405` | Annex VI Part A, point (e) |

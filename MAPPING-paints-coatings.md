@@ -1,6 +1,6 @@
 # Paints & Coatings DPP — field-to-vocabulary mapping
 
-Every field in the Paints & Coatings Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 60 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Paints & Coatings Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 56 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -33,35 +33,31 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `batchLotNumber` | CELEX `32006R1907` | Art. 31 + Annex II SDS section 1.1 |
+| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
 | `serialNumber` | CELEX `32024R1781` | Article 9 |
-| `tradeName` | CELEX `32008R1272` | Art. 18 (product identifiers) |
+| `tradeName` | CELEX `32008R1272` | Art. 18(3)(a) |
 | `productModel` | CELEX `32024R1781` | Article 9 |
 | `packagingImageUrl` | CELEX `32024R1781` | Article 9 |
 | `commodityCode` | CELEX `31987R2658` | — |
 | `productCategory` | CELEX `32024R1781` | Article 9 |
 | `productSubcategory` | CELEX `32024R1781` | Article 9 |
 | `manufacturerEmail` | CELEX `32006R1907` | Annex II SDS section 1.3 |
-| `manufacturerPhone` | CELEX `32023R0988` | Article 9 |
+| `manufacturerPhone` | CELEX `32008R1272` | Art. 17(1)(a) |
 | `passportServiceProvider` | CELEX `32024R1781` | Article 10 |
 | `countryOfManufacture` | CELEX `32024R1781` | Article 9 |
-| `ingredientSubstanceName` | CELEX `32006R1907` | Annex II SDS section 3.2 |
-| `ingredientIupacName` | CELEX `32008R1272` | — |
-| `ingredientCasNumber` | CELEX `32006R1907` | Annex II SDS section 3.2 |
-| `ingredientEcNumber` | REACH, SDS Section 3 | — |
-| `ingredientReachRegistrationNumber` | CELEX `32006R1907` | — |
-| `preservatives` | CELEX `32008R1272` | — |
-| `fragranceAllergens` | CELEX `32008R1272` | — |
+| `ingredients` | CELEX `32006R1907` | Annex II SDS section 3.2 |
+| `preservatives` | CELEX `32012R0528` | Art. 58(3) |
+| `fragranceAllergens` | CELEX `32008R1272` | Annex II, point 2.8 |
 | `hazardClass` | CELEX `32008R1272` | Title II, Arts. 9-13 (classification) |
 | `signalWord` | CELEX `32008R1272` | Art. 20 |
 | `hazardPictograms` | CELEX `32008R1272` | Art. 19 & Annex V |
 | `hazardStatements` | CELEX `32008R1272` | Art. 21 & Annex III |
-| `precautionaryStatements` | CELEX `32008R1272` | Art. 22 & Annex IV |
+| `precautionaryStatements` | CELEX `32008R1272` | Art. 22 |
 | `supplementalHazardInfo` | CELEX `32008R1272` | Annex II |
 | `ufi` | CELEX `32008R1272` | Art. 45 & Annex VIII |
 | `poisonCentreNotificationNumber` | CELEX `32008R1272` | Annex VIII |
 | `emergencyPhoneNumber` | CELEX `32006R1907` | Annex II SDS section 1.4 |
-| `productCategoryEuPCS` | CELEX `32008R1272` | Annex VIII (product categorisation, EuPCS) |
+| `productCategoryEuPCS` | CELEX `32008R1272` | Annex VIII |
 | `svhcSubstances` | CELEX `32006R1907` | Art. 31(1)(c), 31(3)(b) (SDS) |
 | `svhcEcNumber` | CELEX `32006R1907` | — |
 | `svhcLocationInProduct` | CELEX `32024R1781` | Article 7(5)(b) |

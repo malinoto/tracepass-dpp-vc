@@ -5,21 +5,7 @@
   "description": "Field specifications for the Paints & Coatings Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "batchLotNumber",
-    "tradeName",
-    "commodityCode",
-    "manufacturerEmail",
-    "manufacturerPhone",
-    "ingredientSubstanceName",
-    "ingredientCasNumber",
-    "precautionaryStatements",
-    "emergencyPhoneNumber",
-    "productCategoryEuPCS",
-    "appearance",
-    "ph",
-    "endOfLifeInstructions"
-  ],
+  "required": [],
   "properties": {
     "gtin": {
       "type": "string",
@@ -35,9 +21,10 @@
       "type": "string",
       "title": "Batch / Lot ID",
       "description": "Production batch or lot identifier for traceability.",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 31 + Annex II SDS section 1.1",
+      "x-regulation": "32023R0988",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
+      "x-provision": "Art. 9(5)",
+      "x-citationNote": "GPSR Art. 9(5) requires a type, batch or serial number on the consumer product or its packaging. A marking duty for consumer products, not passport data; paints carry no passport duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -56,7 +43,8 @@
       "description": "Commercial trade name of the chemical product.",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-provision": "Art. 18 (product identifiers)",
+      "x-provision": "Art. 18(3)(a)",
+      "x-citationNote": "CLP Art. 18(3)(a) puts the trade name on the LABEL of classified mixtures (and SDS section 1.1 carries it). Paints and coatings carry no passport duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/tradeName"
     },
     "productModel": {
@@ -85,6 +73,7 @@
       "description": "TARIC combined nomenclature code for customs classification.",
       "x-regulation": "31987R2658",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/31987R2658",
+      "x-citationNote": "The Combined Nomenclature classifies goods for customs; it creates no duty to publish a code with the product. Paints carry no passport duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/commodityCode"
     },
     "productCategory": {
@@ -126,15 +115,17 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex II SDS section 1.3",
+      "x-citationNote": "SDS section 1.3 and GPSR Art. 9(6) (an electronic address on consumer products). REACH Art. 31(1) requires a safety data sheet only for mixtures classified as dangerous (and certain PBT/vPvB or Candidate-List cases), and Art. 31(4) lets a product sold to the general public with sufficient information go without one. Paints carry no passport duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturerEmail"
     },
     "manufacturerPhone": {
       "type": "string",
       "title": "Manufacturer Phone",
       "description": "Contact telephone number for the manufacturer.",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Article 9",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 17(1)(a)",
+      "x-citationNote": "CLP Art. 17(1)(a) puts the supplier's telephone number on the label of classified mixtures. GPSR Art. 9(6) does not require a telephone number. Paints carry no passport duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturerPhone"
     },
     "passportServiceProvider": {
@@ -157,57 +148,24 @@
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
     },
-    "ingredientSubstanceName": {
-      "type": "string",
-      "title": "Substance Name",
-      "description": "Chemical name of the ingredient substance.",
+    "ingredients": {
+      "type": "array",
+      "title": "Ingredients",
+      "description": "Array of ingredients/substances in the product, each with name, identifiers, concentration and function.",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex II SDS section 3.2",
-      "x-iri": "https://tracepass.eu/voc/dpp/ingredientSubstanceName"
-    },
-    "ingredientIupacName": {
-      "type": "string",
-      "title": "IUPAC Name",
-      "description": "IUPAC systematic chemical name of the substance.",
-      "x-regulation": "32008R1272",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-citationNote": "CLP governs how a substance is IDENTIFIED on the label and in classification, through the Art. 18(3) product identifier rules — a name, not an amount. It creates no duty to publish an IUPAC name as product data; the label and the safety data sheet are the channels through which composition information reaches users.",
-      "x-iri": "https://tracepass.eu/voc/dpp/ingredientIupacName"
-    },
-    "ingredientCasNumber": {
-      "type": "string",
-      "title": "CAS Number",
-      "description": "Chemical Abstracts Service registry number for the ingredient.",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Annex II SDS section 3.2",
-      "x-iri": "https://tracepass.eu/voc/dpp/ingredientCasNumber"
-    },
-    "ingredientEcNumber": {
-      "type": "string",
-      "title": "EC Number",
-      "description": "European Community number (EINECS/ELINCS) for the substance.",
-      "x-standard": "REACH, SDS Section 3",
-      "x-sourceKind": "specification",
-      "x-iri": "https://tracepass.eu/voc/dpp/ingredientEcNumber"
-    },
-    "ingredientReachRegistrationNumber": {
-      "type": "string",
-      "title": "REACH Registration Number",
-      "description": "REACH registration number assigned by ECHA.",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-citationNote": "A REACH registration number is assigned to the registrant and appears in section 1 of the safety data sheet supplied down the chain under Art. 31. REACH creates no duty to publish it as product data, and for a mixture it is the constituent substances that carry registrations, not the product.",
-      "x-iri": "https://tracepass.eu/voc/dpp/ingredientReachRegistrationNumber"
+      "x-citationNote": "SDS section 3.2 lists the hazardous components of a classified mixture, and CLP Art. 18(3)(b) names on the label the substances that contribute to its classification. Both are conditional on classification and neither is passport data; paints and coatings carry no passport duty. Entries follow the detergents shape: name plus identification number where one exists.",
+      "x-iri": "https://tracepass.eu/voc/dpp/ingredients"
     },
     "preservatives": {
       "type": "array",
       "title": "Preservatives",
       "description": "Array of preservatives with substance name and CAS number.",
-      "x-regulation": "32008R1272",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-citationNote": "Preservatives reach consumers through the CLP label and, where applicable, sector labelling rules; CLP itself creates no separate duty to publish a preservative list as product data. Its labelling duty is discharged by what is affixed to the package.",
+      "x-regulation": "32012R0528",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32012R0528",
+      "x-provision": "Art. 58(3)",
+      "x-citationNote": "A paint with in-can preservatives is a treated article. BPR Art. 58(3)(c) puts the names of the active substances on its LABEL, but only where a biocidal claim is made or the substance's approval conditions require it. Not passport data.",
       "x-iri": "https://tracepass.eu/voc/dpp/preservatives"
     },
     "fragranceAllergens": {
@@ -216,7 +174,8 @@
       "description": "Array of fragrance allergens present above threshold, with CAS numbers.",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-citationNote": "Fragrance allergen disclosure is a LABELLING duty in the sector instruments that impose it, not a CLP one — CLP's own obligation is the hazard label. Publishing the list here is useful to allergic users but is not how the duty is discharged.",
+      "x-provision": "Annex II, point 2.8",
+      "x-citationNote": "CLP Annex II 2.8 (EUH208) names sensitising substances present above the Annex I Table 3.4.6 threshold on the LABEL of a mixture not itself classified as sensitising. A label statement, not passport data; the Detergents Regulation's allergen rules do not apply to paints.",
       "x-iri": "https://tracepass.eu/voc/dpp/fragranceAllergens"
     },
     "hazardClass": {
@@ -283,7 +242,8 @@
       "description": "Array of P-code precautionary statements with full text.",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-provision": "Art. 22 & Annex IV",
+      "x-provision": "Art. 22",
+      "x-citationNote": "CLP Art. 22 puts precautionary statements on the LABEL of mixtures classified as hazardous. Not passport data under Annex VI Part A, and not owed for an unclassified product. Paints and coatings carry no passport duty under any instrument.",
       "x-iri": "https://tracepass.eu/voc/dpp/precautionaryStatements"
     },
     "supplementalHazardInfo": {
@@ -323,6 +283,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex II SDS section 1.4",
+      "x-citationNote": "Safety-data-sheet content (section 1.4). REACH Art. 31(1) requires a safety data sheet only for mixtures classified as dangerous (and certain PBT/vPvB or Candidate-List cases), and Art. 31(4) lets a product sold to the general public with sufficient information go without one. Not passport data under Annex VI Part A. Paints and coatings carry no passport duty under any instrument.",
       "x-iri": "https://tracepass.eu/voc/dpp/emergencyPhoneNumber"
     },
     "productCategoryEuPCS": {
@@ -331,7 +292,8 @@
       "description": "Product category code under the European Product Categorisation System for poison centre notifications.",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-provision": "Annex VIII (product categorisation, EuPCS)",
+      "x-provision": "Annex VIII",
+      "x-citationNote": "The EuPCS category is part of the poison-centre notification under CLP Annex VIII, owed only for mixtures classified for health or physical hazards. It is a notification to appointed bodies, not passport data. Paints and coatings carry no passport duty under any instrument.",
       "x-iri": "https://tracepass.eu/voc/dpp/productCategoryEuPCS"
     },
     "svhcSubstances": {
@@ -390,6 +352,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex II SDS section 9.1",
+      "x-citationNote": "Safety-data-sheet content (section 9.1). REACH Art. 31(1) requires a safety data sheet only for mixtures classified as dangerous (and certain PBT/vPvB or Candidate-List cases), and Art. 31(4) lets a product sold to the general public with sufficient information go without one. Paints and coatings carry no passport duty under any instrument.",
       "x-iri": "https://tracepass.eu/voc/dpp/appearance"
     },
     "odour": {
@@ -407,6 +370,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex II SDS section 9.1",
+      "x-citationNote": "Safety-data-sheet content (section 9.1 in the current Annex II). REACH Art. 31(1) requires a safety data sheet only for mixtures classified as dangerous (and certain PBT/vPvB or Candidate-List cases), and Art. 31(4) lets a product sold to the general public with sufficient information go without one. Paints and coatings carry no passport duty under any instrument.",
       "x-iri": "https://tracepass.eu/voc/dpp/ph"
     },
     "flashPoint": {
@@ -504,6 +468,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Annex II SDS section 13",
+      "x-citationNote": "Safety-data-sheet content (section 13, disposal considerations). REACH Art. 31(1) requires a safety data sheet only for mixtures classified as dangerous (and certain PBT/vPvB or Candidate-List cases), and Art. 31(4) lets a product sold to the general public with sufficient information go without one. Paints and coatings carry no passport duty under any instrument.",
       "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
     },
     "dataCarrierType": {

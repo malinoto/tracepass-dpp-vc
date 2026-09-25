@@ -61,25 +61,9 @@
         "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
         "@type": "xsd:string"
       },
-      "ingredientSubstanceName": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientSubstanceName",
-        "@type": "xsd:string"
-      },
-      "ingredientIupacName": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientIupacName",
-        "@type": "xsd:string"
-      },
-      "ingredientCasNumber": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientCasNumber",
-        "@type": "xsd:string"
-      },
-      "ingredientEcNumber": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientEcNumber",
-        "@type": "xsd:string"
-      },
-      "ingredientReachRegistrationNumber": {
-        "@id": "https://tracepass.eu/voc/dpp/ingredientReachRegistrationNumber",
-        "@type": "xsd:string"
+      "ingredients": {
+        "@id": "https://tracepass.eu/voc/dpp/ingredients",
+        "@container": "@set"
       },
       "preservatives": {
         "@id": "https://tracepass.eu/voc/dpp/preservatives",

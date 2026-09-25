@@ -72,9 +72,6 @@
       "commodityCode": "3402509000",
       "manufacturerEmail": "regulatory@example.com",
       "manufacturerPhone": "+49 341 5550170",
-      "ingredientSubstanceName": "Sodium hydroxide",
-      "ingredientCasNumber": "1310-73-2",
-      "ingredientConcentrationRangePercent": "5-15%",
       "hazardClass": [
         "Skin Corr. 1A",
         "Eye Dam. 1"
@@ -99,7 +96,18 @@
       "ph": 13.4,
       "usageInstructionsText": "Dilute 1:20 with cold water for routine cleaning. Do not mix with acidic products.",
       "intendedUse": "Professional degreasing of metal surfaces and workshop floors.",
-      "endOfLifeInstructions": "https://example.com/docs/ferrolux-disposal.pdf"
+      "endOfLifeInstructions": "https://example.com/docs/ferrolux-disposal.pdf",
+      "ingredients": [
+        {
+          "name": "Sodium hydroxide",
+          "casNumber": "1310-73-2",
+          "concentrationBand": "5-15%"
+        }
+      ],
+      "packagingImageUrl": "https://example.org/ferrolux/alkaline-degreaser-20/label.jpg",
+      "passportServiceProvider": "TracePass",
+      "issuedUnderSoleResponsibility": true,
+      "complianceDemonstrated": true
     }
   }
 }
