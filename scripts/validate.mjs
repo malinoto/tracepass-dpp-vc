@@ -90,10 +90,9 @@ const PHANTOM_PROVISION = /7\s*\(\s*2\s*\)\s*\(\s*[de]\s*\)/;
 // allow-list below is every property whose lack of a source is a considered position:
 //   · the six battery fields are OUR OWN additions — Annex VI Part A has exactly 13
 //     data points and none of them is these, so no instrument or standard names them;
-//   · the five others have upstream sources reading only "Product specification",
-//     a placeholder rather than a source. Writing that into `x-standard` would inflate
-//     the cited count with no information, which is the over-claim this repo avoids.
 // Adding to this list is a claim that nothing names the property. Check upstream first.
+// An entry whose property has since gained a source, or no longer exists, fails the run:
+// a list that cannot shrink stops recording a position and starts hiding one.
 // Optional CELEX-citing properties that legitimately carry no reasoning. Empty
 // today: every one of the 658 inherited a `regulationRef.description` from the
 // source templates. An entry here is a claim that the citation was examined and
@@ -107,12 +106,8 @@ const UNSOURCED_BY_DESIGN = new Set([
   "battery.cellType",
   "battery.capacityThroughput",
   "battery.energyThroughput",
-  "furniture.springCount",
-  "furniture.springType",
-  "tyres.tyreType",
-  "tyres.treadDepthMm",
-  "tyres.runFlatCapability",
 ]);
+const unsourcedSeen = new Set();
 
 console.log(`Validating ${categories.length} categories\n`);
 
@@ -154,6 +149,7 @@ for (const cat of categories) {
           `        from "required" and leave the CELEX with no x-provision (anticipated).`,
       );
     }
+    if (!p["x-regulation"] && !p["x-standard"]) unsourcedSeen.add(`${cat}.${k}`);
     if (!p["x-regulation"] && !p["x-standard"] && !UNSOURCED_BY_DESIGN.has(`${cat}.${k}`)) {
       fail(
         `${cat}.${k}: cites neither an instrument nor a standard.\n` +
@@ -287,6 +283,10 @@ if (provisionMismatches.length) {
 }
 
 console.log("");
+for (const key of UNSOURCED_BY_DESIGN)
+  if (!unsourcedSeen.has(key))
+    fail(`UNSOURCED_BY_DESIGN lists ${key}, which now cites a source or no longer exists; remove the entry.`);
+
 if (failures) {
   console.error(`${failures} failure(s)`);
   process.exit(1);
