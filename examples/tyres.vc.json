@@ -106,7 +106,6 @@
       "euro7Compliance": true,
       "euTyreLabelImageUrl": "https://example.com/labels/AC-S5-2055516-91V.svg",
       "declarationOfConformityUrl": "https://example.com/doc/DoC-AC-S5.pdf",
-      "reachComplianceTypeApproval": true,
       "recommendedInflationPressureKpa": 230,
       "maximumInflationPressureKpa": 350,
       "maximumLoadKg": 615,

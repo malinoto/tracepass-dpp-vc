@@ -375,7 +375,7 @@
     "warrantyPeriodYears": {
       "type": "number",
       "title": "Warranty Period (years)",
-      "description": "Commercial warranty period offered ESPR Art. 7(2)(a) mandates no data on its own and no furniture delegated act exists; the statutory guarantee under Dir. (EU) 2019/771 binds the seller.",
+      "description": "Commercial warranty period offered",
       "x-unit": "years",
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
       "x-regulation": "32024R1781",

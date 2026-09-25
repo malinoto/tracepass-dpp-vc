@@ -569,17 +569,6 @@
       "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
-    "vocContent": {
-      "type": "number",
-      "title": "VOC Content",
-      "description": "Volatile Organic Compound content of the paint or varnish as formulated. The ready-to-use limit is in vocContentReadyToUse (Decopaint Directive Art. 4(b)); this field records the measured value.",
-      "x-unit": "g/L",
-      "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-L",
-      "x-regulation": "32004L0042",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
-      "x-citationNote": "Directive 2004/42/EC Art. 4 requires the LABEL to indicate the maximum VOC content in g/l in a ready-to-use condition. The duty is discharged by that label; the Directive creates no passport and no separate publication duty.",
-      "x-iri": "https://tracepass.eu/voc/dpp/vocContent"
-    },
     "vocLimit": {
       "type": "number",
       "title": "VOC Limit",
@@ -632,8 +621,8 @@
       "x-unitIri": "http://qudt.org/vocab/unit/GM-PER-L",
       "x-regulation": "32004L0042",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32004L0042",
-      "x-provision": "Article 3",
-      "x-citationNote": "This is the exact datum Art. 4(b) requires on the LABEL — the maximum VOC content in g/l of the product in a ready-to-use condition. Real mandated data, discharged by affixing the label rather than by publishing here.",
+      "x-provision": "Art. 3(1), Art. 4(b)",
+      "x-citationNote": "Art. 3(1): the Annex II limit applies to the VOC content of the product in its ready-for-use condition. Art. 4(b): the label shows 'the maximum content of VOC in g/l of the product in a ready to use condition'.",
       "x-iri": "https://tracepass.eu/voc/dpp/vocContentReadyToUse"
     },
     "solventType": {

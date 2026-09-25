@@ -354,7 +354,7 @@
     "ceMarkingStatus": {
       "type": "string",
       "title": "CE Marking Status",
-      "description": "Whether the product bears CE marking and its validity CE marking is affixed to the product or its packaging and is obligatory only where a harmonised specification or ETA covers the product.",
+      "description": "Whether the product bears CE marking and its validity",
       "enum": [
         "marked",
         "pending",

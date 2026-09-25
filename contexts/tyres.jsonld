@@ -305,10 +305,6 @@
         "@id": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl",
         "@type": "xsd:anyURI"
       },
-      "reachComplianceTypeApproval": {
-        "@id": "https://tracepass.eu/voc/dpp/reachComplianceTypeApproval",
-        "@type": "xsd:boolean"
-      },
       "recommendedInflationPressureKpa": {
         "@id": "https://tracepass.eu/voc/dpp/recommendedInflationPressureKpa",
         "@type": "xsd:decimal"

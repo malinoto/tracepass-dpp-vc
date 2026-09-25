@@ -88,10 +88,6 @@
         "@id": "https://tracepass.eu/voc/dpp/annualEnergyConsumption",
         "@type": "xsd:decimal"
       },
-      "waterConsumption": {
-        "@id": "https://tracepass.eu/voc/dpp/waterConsumption",
-        "@type": "xsd:decimal"
-      },
       "carbonFootprint": {
         "@id": "https://tracepass.eu/voc/dpp/carbonFootprint",
         "@type": "xsd:decimal"

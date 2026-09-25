@@ -365,7 +365,7 @@
     "snowGrip": {
       "type": "boolean",
       "title": "Snow Grip",
-      "description": "Whether tyre has 3PMSF (3 Peak Mountain Snow Flake) certification for severe snow conditions The 3PMSF pictogram is printed on the label and moulded on the sidewall, and only for tyres meeting the snow classification.",
+      "description": "Whether the tyre has 3PMSF (3 Peak Mountain Snow Flake) certification for severe snow conditions",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Art. 4 + Annex I (3PMSF snow-grip pictogram where applicable)",
@@ -375,7 +375,7 @@
     "iceGrip": {
       "type": "boolean",
       "title": "Ice Grip",
-      "description": "Whether tyre is certified for ice grip performance (Nordic ice conditions) The ice-grip marking appears on the label and sidewall for qualifying C1 tyres only.",
+      "description": "Whether the tyre is certified for ice grip performance (Nordic ice conditions)",
       "x-regulation": "32020R0740",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32020R0740",
       "x-provision": "Art. 4 + Annex I (ice-grip marking, C1 tyres, per ISO 19447)",
@@ -818,16 +818,6 @@
       "x-provision": "UNECE R30 / R54 — type approval evidenced by the approval mark on the sidewall and the approval dossier",
       "x-citationNote": "Tyre conformity is evidenced by the E-mark and the type-approval dossier; there is no EU DoC publication duty for tyres.",
       "x-iri": "https://tracepass.eu/voc/dpp/declarationOfConformityUrl"
-    },
-    "reachComplianceTypeApproval": {
-      "type": "boolean",
-      "title": "REACH Compliance (Type Approval)",
-      "description": "General REACH regulation compliance confirmation",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "REACH (EC) 1907/2006 — obligations evidenced in the manufacturer's records",
-      "x-citationNote": "No REACH provision requires publishing a compliance boolean.",
-      "x-iri": "https://tracepass.eu/voc/dpp/reachComplianceTypeApproval"
     },
     "recommendedInflationPressureKpa": {
       "type": "number",

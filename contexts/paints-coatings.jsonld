@@ -217,10 +217,6 @@
         "@id": "https://tracepass.eu/voc/dpp/accessLevel",
         "@type": "xsd:string"
       },
-      "vocContent": {
-        "@id": "https://tracepass.eu/voc/dpp/vocContent",
-        "@type": "xsd:decimal"
-      },
       "vocLimit": {
         "@id": "https://tracepass.eu/voc/dpp/vocLimit",
         "@type": "xsd:decimal"

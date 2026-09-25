@@ -7,27 +7,15 @@
   "additionalProperties": false,
   "required": [
     "batchLotNumber",
-    "productType",
     "productName",
-    "cnCode",
     "steelGradeDesignation",
-    "facilityId",
     "chemicalComposition",
     "yieldStrengthMpa",
     "tensileStrengthMpa",
     "elongationPct",
     "impactEnergy",
-    "productionRoute",
     "heatNumber",
     "heatTreatment",
-    "reductionAgent",
-    "scope1DirectEmissions",
-    "precursorEmissions",
-    "calculationMethodology",
-    "thirdPartyVerification",
-    "dataQuality",
-    "cbamGoodsType",
-    "totalSpecificEmbeddedEmissions",
     "svhcPresent",
     "restrictedSubstancesCompliance",
     "inspectionCertificateType",
@@ -89,6 +77,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex I",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/productType"
     },
     "productName": {
@@ -107,6 +96,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex I",
+      "x-citationNote": "CBAM Annex I scopes iron and steel at CN 7206-7326 (Section 2) and aluminium at 7601-7616 (Section 3); the CN code itself is the customs classification.",
       "x-iri": "http://data.europa.eu/xsp/cn2024/{code}0080"
     },
     "steelGradeDesignation": {
@@ -133,6 +123,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/facilityId"
     },
     "primaryMaterialType": {
@@ -287,6 +278,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/productionRoute"
     },
     "productionDate": {
@@ -383,6 +375,7 @@
       ],
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/reductionAgent"
     },
     "totalCarbonFootprint": {
@@ -404,6 +397,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/scope1DirectEmissions"
     },
     "scope2IndirectEmissions": {
@@ -435,6 +429,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/precursorEmissions"
     },
     "calculationMethodology": {
@@ -451,6 +446,7 @@
       ],
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/calculationMethodology"
     },
     "thirdPartyVerification": {
@@ -460,6 +456,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Art. 8",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyVerification"
     },
     "carbonIntensityClass": {
@@ -503,6 +500,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataQuality"
     },
     "cbamGoodsType": {
@@ -516,6 +514,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/cbamGoodsType"
     },
     "totalSpecificEmbeddedEmissions": {
@@ -526,6 +525,7 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
+      "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalSpecificEmbeddedEmissions"
     },
     "carbonPricePaid": {

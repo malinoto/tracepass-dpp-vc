@@ -248,18 +248,6 @@
       "x-citationNote": "Annual energy consumption AE (kWh/a), refrigerating appliances; defined in Reg. 2019/2016 Annex I, calculated per Annex IV point 3",
       "x-iri": "https://tracepass.eu/voc/dpp/annualEnergyConsumption"
     },
-    "waterConsumption": {
-      "type": "number",
-      "title": "Water Consumption",
-      "description": "Water consumed per cycle or per year (appliances only)",
-      "x-unit": "L",
-      "x-unitIri": "http://qudt.org/vocab/unit/L",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Art. 7",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
-      "x-iri": "https://tracepass.eu/voc/dpp/waterConsumption"
-    },
     "carbonFootprint": {
       "type": "number",
       "title": "Carbon Footprint",
