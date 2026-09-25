@@ -1649,10 +1649,10 @@
       "description": "Net weight of the product as placed on the market, in kg: the product with every part supplied with it (a TV's stand, detachable feet, batteries or remote control shipped in the box), excluding packaging. This is the basis WEEE placed-on-market reporting uses. It is TracePass's field definition, not a legal one. When a spec sheet gives several weights (\"set weight with stand\" vs \"without stand\", or \"package weight\"), use the with-stand figure and never the package weight.",
       "x-unit": "kg",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM",
-      "x-regulation": "32024R1781",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Annex X",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Operative instrument for this field: Dir. 2012/19/EU.",
+      "x-regulation": "32012L0019",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32012L0019",
+      "x-provision": "Annex X, Part B(4)",
+      "x-citationNote": "WEEE Art. 16 and Annex X Part B(4) make producers report the 'quantity of EEE placed on the national market, by weight' to the national register, per EEE category. An aggregate reporting duty, not a per-product passport item; this field records the product's contribution to it.",
       "x-iri": "https://tracepass.eu/voc/dpp/productWeight"
     },
     "dismantlingInstructions": {
