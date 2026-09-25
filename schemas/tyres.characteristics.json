@@ -5,9 +5,7 @@
   "description": "Field specifications for the Tyres Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "batchLotNumber"
-  ],
+  "required": [],
   "properties": {
     "commercialName": {
       "type": "string",
@@ -48,9 +46,6 @@
       "type": "string",
       "title": "Batch or Serial Number",
       "description": "Production batch code (DOT code includes week/year of manufacture)",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "dateOfManufactureWeekYear": {

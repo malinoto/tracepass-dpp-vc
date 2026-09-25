@@ -93,7 +93,26 @@
         "unit": "mg/kg",
         "limitStandard": "EN 71-3 category III"
       },
-      "ceMarkingStatus": "marked"
+      "ceMarkingStatus": "marked",
+      "productImageUrl": "https://example.org/toys/wooden-stacking-rings/packaging.jpg",
+      "responsibleEconomicOperator": {
+        "name": "Example Toys GmbH",
+        "address": "Musterstraße 1, 10115 Berlin, DE",
+        "uniqueOperatorId": "4012345000009"
+      },
+      "issuedUnderSoleResponsibility": true,
+      "complianceDemonstrated": true,
+      "unionLawReferences": [
+        "Regulation (EU) 2025/2509",
+        "Regulation (EC) No 1907/2006"
+      ],
+      "harmonisedStandardsReferences": [
+        "EN 71-1",
+        "EN 71-2",
+        "EN 71-3"
+      ],
+      "communicationChannel": "https://example.org/toys/safety-contact",
+      "passportServiceProvider": "TracePass"
     }
   }
 }

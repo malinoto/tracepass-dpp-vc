@@ -31,7 +31,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `commercialName` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `tyreTypeIdentifier` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `tyreClass` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 2 — C1/C2/C3 definitions determining which label applies |
-| `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
+| `batchLotNumber` | — | — |
 | `dateOfManufactureWeekYear` | CELEX `32020R0740` | UNECE R30 / R54 — marking moulded on the tyre sidewall under type approval |
 | `dateStartOfProduction` | CELEX `32020R0740` | Reg. (EU) 2020/740 Art. 4 + Art. 10 — registered in the EPREL database and shown on the tyre label |
 | `dateEndOfProduction` | CELEX `32020R0740` | Annex II |

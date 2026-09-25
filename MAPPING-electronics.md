@@ -43,7 +43,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `manufacturingCountry` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingPlant` | CELEX `32024R1781` | Art. 9(2) |
 | `euDeclarationOfConformity` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 13 + EMC Dir. 2014/30/EU Art. 15 — DoC drawn up and kept, produced on request |
-| `ceMarking` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 15 + EMC Dir. 2014/30/EU Art. 16 — CE marking affixed to the product |
+| `ceMarking` | CELEX `32011L0065` | Art. 15(1) |
 | `notifiedBodyId` | CELEX `32024R1781` | Art. 9(2) |
 | `technicalDocumentationUrl` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 7(b) + Annex VI — technical documentation kept 10 years, produced on request |
 | `userManualUrl` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them |
@@ -184,6 +184,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `dataCarrierReference` | CELEX `32024R1781` | Art. 9(3) |
 | `identifierStandard` | CELEX `32024R1781` | Art. 9(2) |
 | `accessLevel` | CELEX `32024R1781` | Art. 10 |
-| `ceMarkingStatus` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 15 + EMC Dir. 2014/30/EU Art. 16 — CE marking affixed to the product |
+| `ceMarkingStatus` | CELEX `32011L0065` | Art. 15(1) |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

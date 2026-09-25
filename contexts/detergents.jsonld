@@ -41,6 +41,10 @@
         "@id": "https://tracepass.eu/voc/dpp/productCategory",
         "@type": "xsd:string"
       },
+      "detergentUserType": {
+        "@id": "https://tracepass.eu/voc/dpp/detergentUserType",
+        "@type": "xsd:string"
+      },
       "productSubcategory": {
         "@id": "https://tracepass.eu/voc/dpp/productSubcategory",
         "@type": "xsd:string"

@@ -34,8 +34,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `weightPercent` | CELEX `32025R0040` | Annex VII |
 | `componentName` | CELEX `32025R0040` | Art. 12(1) |
 | `isContactSensitive` | CELEX `32025R0040` | Art. 7 |
-| `totalMaterialCount` | CELEX `32025R0040` | Annex VII |
-| `isMultiMaterial` | CELEX `32025R0040` | Art. 6 |
+| `totalMaterialCount` | CELEX `32025R0040` | Annex VII, point 2(b) |
+| `isMultiMaterial` | CELEX `32025R0040` | Annex VII, point 2(b) |
 | `materialPictogramCode` | CELEX `32025R0040` | Art. 12 |
 | `performanceGrade` | CELEX `32025R0040` | Art. 6, Annex II |
 | `recyclablePercent` | CELEX `32025R0040` | Art. 6 |
@@ -73,15 +73,15 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `compostabilityCertified` | CELEX `32025R0040` | Art. 8 |
 | `compostabilityStandard` | CELEX `32025R0040` | Art. 8 |
 | `declarationId` | CELEX `32025R0040` | Art. 15 |
-| `issuerName` | CELEX `32025R0040` | Art. 15 |
-| `issueDate` | CELEX `32025R0040` | Art. 15 |
-| `conformsToArticles` | CELEX `32025R0040` | Art. 15 |
+| `issuerName` | CELEX `32025R0040` | Annex VIII, point 2 |
+| `issueDate` | CELEX `32025R0040` | Annex VIII |
+| `conformsToArticles` | CELEX `32025R0040` | Art. 39(1) |
 | `documentUrl` | CELEX `32025R0040` | Art. 15 |
 | `dataCarrierType` | CELEX `32025R0040` | Art. 12, ESPR Art. 9 |
 | `dataCarrierUri` | CELEX `32025R0040` | Art. 12, ESPR Art. 9 |
 | `dataCarrierFormat` | CELEX `32024R1781` | Art. 9 |
 | `dataCarrierEncoding` | CELEX `32024R1781` | Art. 9 |
-| `retentionPeriodYears` | CELEX `32025R0040` | PPWR (EU) 2025/40 Art. 15(3) — manufacturers shall keep the technical documentation and EU declaration of conformity for 5 years (single-use) or 10 years (reusable) from placing on the market |
+| `retentionPeriodYears` | CELEX `32025R0040` | Art. 15(3) |
 | `accessTier` | CELEX `32024R1781` | Art. 10 |
 | `emptySpacePercent` | CELEX `32025R0040` | Art. 10 |
 | `maxAllowedEmptySpacePercent` | CELEX `32025R0040` | Art. 24(1) |

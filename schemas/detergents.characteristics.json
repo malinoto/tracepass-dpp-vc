@@ -105,6 +105,20 @@
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
     },
+    "detergentUserType": {
+      "type": "string",
+      "title": "Consumer or Industrial Use",
+      "description": "Whether the detergent is for consumers or is an industrial and institutional detergent (placed on the market for use only outside the domestic sphere, by specialised personnel; Reg (EU) 2026/405 Art. 2). The passport's full substance list (Annex VI Part A(h)) binds consumer detergents; an industrial and institutional one may rely on its safety data sheet instead.",
+      "enum": [
+        "consumer",
+        "industrial_institutional"
+      ],
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex V Part A, point 1(f)",
+      "x-citationNote": "The classifier the passport's Part A(h) exemption turns on. The label must indicate an industrial and institutional detergent (Annex V Part A 1(f)); the definition is in Art. 2.",
+      "x-iri": "https://tracepass.eu/voc/dpp/detergentUserType"
+    },
     "productSubcategory": {
       "type": "string",
       "title": "Product Subcategory",

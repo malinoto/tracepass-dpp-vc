@@ -106,6 +106,16 @@ const UNSOURCED_BY_DESIGN = new Set([
   "battery.cellType",
   "battery.capacityThroughput",
   "battery.energyThroughput",
+  // Primary-text review (dpp-schemas 1.10.0) found no law that requires these:
+  // a product name as such (steel is rarely a consumer product, so GPSR does not
+  // reach it), a compliance statement for REACH restrictions (a ban, not a
+  // disclosure duty), a phthalate statement for toys (REACH Annex XVII
+  // restricts, it does not require a declaration), and a tyre batch number
+  // (GPSR Art. 9 is switched off for tyres, and Reg 2020/740 has none).
+  "steel.productName",
+  "steel.restrictedSubstancesCompliance",
+  "toys.phthalateCompliant",
+  "tyres.batchLotNumber",
 ]);
 const unsourcedSeen = new Set();
 

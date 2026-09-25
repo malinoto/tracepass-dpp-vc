@@ -5,23 +5,16 @@
   "description": "Field specifications for the FMCG Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "productName",
-    "netContentValue",
-    "netContentUnit",
-    "ingredientsList",
-    "packagingMaterialType",
-    "batchLotNumber",
-    "disposalInstructions"
-  ],
+  "required": [],
   "properties": {
     "productName": {
       "type": "string",
       "title": "Product Name",
       "description": "Commercial product name or trade designation",
-      "x-regulation": "32009R1223",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
-      "x-provision": "Art. 19(1)",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex VI Part A(a)",
+      "x-citationNote": "A passport datum for detergent-type products only (Reg (EU) 2026/405); for cosmetics the name goes in the notification, for food the legal name on the label.",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "brandName": {
@@ -69,7 +62,8 @@
       "description": "Net weight (g) or volume (ml) of the product",
       "x-regulation": "32011R1169",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1169",
-      "x-provision": "Art. 9(1)(e), Annex IX",
+      "x-provision": "Art. 9(1)(e)",
+      "x-citationNote": "A label duty for food and cosmetics, not passport data.",
       "x-iri": "https://tracepass.eu/voc/dpp/netContentValue"
     },
     "netContentUnit": {
@@ -85,16 +79,18 @@
       ],
       "x-regulation": "32011R1169",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1169",
-      "x-provision": "Art. 9(1)(e), Annex IX",
+      "x-provision": "Art. 23(1)",
+      "x-citationNote": "A label duty for food and cosmetics, not passport data.",
       "x-iri": "https://tracepass.eu/voc/dpp/netContentUnit"
     },
     "ingredientsList": {
       "type": "array",
       "title": "Ingredients List",
       "description": "Full INCI ingredient list (cosmetics) or composition disclosure (detergents) in descending order of concentration",
-      "x-regulation": "32009R1223",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
-      "x-provision": "Art. 19(1)(g)",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex VI Part A(h)",
+      "x-citationNote": "A passport list for detergent-type products; for cosmetics and food a label list.",
       "x-iri": "https://tracepass.eu/voc/dpp/ingredientsList"
     },
     "allergens": {
@@ -315,7 +311,8 @@
       ],
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 11",
+      "x-provision": "Art. 12(1)",
+      "x-citationNote": "The PPWR Art. 12(1) harmonised material-composition label (the Art. 11 it cited is reusable packaging). PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingMaterialType"
     },
     "packagingRecycledContent": {
@@ -404,9 +401,10 @@
       "type": "string",
       "title": "Batch / Lot Number",
       "description": "Batch or lot identification number for traceability and recall purposes",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex VI Part A(d)",
+      "x-citationNote": "A passport datum for detergent-type products (traceability identification, which a type number also meets); for cosmetics a label duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "certifications": {
@@ -461,7 +459,8 @@
       "description": "Consumer-facing disposal and recycling instructions for both product residue and packaging",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 12",
+      "x-provision": "Art. 12(1)",
+      "x-citationNote": "PPWR permits, but does not require, a QR code with each component's destination; no law requires free-text disposal instructions.",
       "x-iri": "https://tracepass.eu/voc/dpp/disposalInstructions"
     },
     "refillAvailability": {

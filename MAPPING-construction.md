@@ -21,7 +21,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `productTypeModelIdentifier` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — product type identification |
+| `productTypeModelIdentifier` | CELEX `32024R3110` | Annex IV, point 1.1 |
 | `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
 | `serialNumber` | CELEX `32024R3110` | — |
 | `placeOfManufacture` | CELEX `32024R3110` | — |
@@ -65,7 +65,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `maintenanceGuidance` | CELEX `32024R3110` | — |
 | `safetyDataLabelling` | CELEX `32008R1272` | CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients |
 | `warrantyInformation` | CELEX `32024R3110` | — |
-| `intendedUseDescription` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — information enabling assessment of the product's risks in its intended and reasonably foreseeable use |
+| `intendedUseDescription` | CELEX `32024R3110` | Annex IV, point 1.2(a) |
 | `ceMarking` | CELEX `32024R3110` | Art. 13-15 |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

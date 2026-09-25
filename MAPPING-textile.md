@@ -22,11 +22,11 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `modelNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
-| `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
+| `modelNumber` | CELEX `32023R0988` | Art. 9(5) |
+| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
 | `serialNumber` | CELEX `32024R1781` | Art. 9(2) |
 | `euResponsiblePerson` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 16 — an EU-established responsible economic operator must EXIST |
-| `productName` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — product identification |
+| `productName` | CELEX `32023R0988` | Art. 19(c) |
 | `productCategory` | CELEX `32024R1781` | Art. 9(2) |
 | `productDescription` | CELEX `32024R1781` | Art. 9(2) |
 | `fiberComposition` | CELEX `32011R1007` | Reg. (EU) 1007/2011 Arts. 9(1), 14(1), 16 — a durable, legible label physically attached to the product, in the language of the Member State |

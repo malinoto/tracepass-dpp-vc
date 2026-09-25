@@ -26,9 +26,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `productName` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — product identification |
+| `productName` | CELEX `32023R0988` | Art. 19(c) |
 | `productModel` | CELEX `32024R1781` | Art. 9(2) |
-| `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
+| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
 | `productCategory` | CELEX `32024R1781` | — |
 | `countryOfManufacture` | CELEX `32024R1781` | Art. 9(2) |
 | `dateOfManufacture` | CELEX `32024R1781` | Art. 9(2) |

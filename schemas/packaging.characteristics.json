@@ -5,16 +5,7 @@
   "description": "Field specifications for the Packaging Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "totalMaterialCount",
-    "isMultiMaterial",
-    "pfasPresent",
-    "heavyMetalsSumPpm",
-    "issuerName",
-    "issueDate",
-    "conformsToArticles",
-    "retentionPeriodYears"
-  ],
+  "required": [],
   "properties": {
     "gtin": {
       "type": "string",
@@ -179,7 +170,8 @@
       "description": "Total number of distinct material types used in the packaging.",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Annex VII",
+      "x-provision": "Annex VII, point 2(b)",
+      "x-citationNote": "PPWR's technical documentation (Annex VII) holds the materials of components; no law requires a count. PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalMaterialCount"
     },
     "isMultiMaterial": {
@@ -188,7 +180,8 @@
       "description": "Whether the packaging consists of more than one material type.",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 6",
+      "x-provision": "Annex VII, point 2(b)",
+      "x-citationNote": "Materials are recorded in the technical documentation (Annex VII); PPWR Art. 6 contains no multi-material datum. PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/isMultiMaterial"
     },
     "materialPictogramCode": {
@@ -507,6 +500,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 5(5)",
+      "x-citationNote": "PPWR Art. 5(5) sets PFAS limits for food-contact packaging, shown in the technical documentation; it is a limit, not a presence flag. PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/pfasPresent"
     },
     "heavyMetalsSumPpm": {
@@ -518,6 +512,7 @@
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 5(4)",
+      "x-citationNote": "PPWR Art. 5(4) caps the sum of lead, cadmium, mercury and hexavalent chromium at 100 mg/kg, shown in the technical documentation. PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/heavyMetalsSumPpm"
     },
     "heavyMetalsMaxPpm": {
@@ -600,7 +595,8 @@
       "description": "Name of the entity that issued the declaration of conformity.",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 15",
+      "x-provision": "Annex VIII, point 2",
+      "x-citationNote": "Content of the EU declaration of conformity (Art. 39, Annex VIII), not passport data; PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/issuerName"
     },
     "issueDate": {
@@ -609,7 +605,8 @@
       "description": "Date when the declaration of conformity was issued.",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 15",
+      "x-provision": "Annex VIII",
+      "x-citationNote": "The EU declaration of conformity carries its place and date of issue (Annex VIII). PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/issueDate"
     },
     "conformsToArticles": {
@@ -618,7 +615,8 @@
       "description": "List of PPWR articles/provisions the packaging conforms to.",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "Art. 15",
+      "x-provision": "Art. 39(1)",
+      "x-citationNote": "The declaration of conformity's statement is fixed at Arts. 5 to 12 (Art. 39(1)). PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/conformsToArticles"
     },
     "documentUrl": {
@@ -689,7 +687,8 @@
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
       "x-regulation": "32025R0040",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
-      "x-provision": "PPWR (EU) 2025/40 Art. 15(3) — manufacturers shall keep the technical documentation and EU declaration of conformity for 5 years (single-use) or 10 years (reusable) from placing on the market",
+      "x-provision": "Art. 15(3)",
+      "x-citationNote": "A record-keeping duty (5 years single-use, 10 years reusable), not disclosed data. PPWR creates no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/retentionPeriodYears"
     },
     "accessTier": {

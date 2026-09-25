@@ -5,11 +5,7 @@
   "description": "Field specifications for the Textile Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "modelNumber",
-    "batchLotNumber",
-    "productName"
-  ],
+  "required": [],
   "properties": {
     "modelNumber": {
       "type": "string",
@@ -17,7 +13,8 @@
       "description": "Manufacturer's model number or variant identifier",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
+      "x-provision": "Art. 9(5)",
+      "x-citationNote": "A type or model number is one of the identifying elements GPSR Art. 9(5) accepts on consumer products, not a mandated one. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/modelNumber"
     },
     "batchLotNumber": {
@@ -26,7 +23,8 @@
       "description": "Production batch identifier for traceability and recalls",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element",
+      "x-provision": "Art. 9(5)",
+      "x-citationNote": "GPSR Art. 9(5) asks for a type, batch or serial number OR another identifying element on consumer products; a batch number as such is never mandatory. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -55,7 +53,8 @@
       "description": "Commercial product name or trade designation",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "GPSR (EU) 2023/988 Art. 9(5) — product identification",
+      "x-provision": "Art. 19(c)",
+      "x-citationNote": "No law requires a product name as such: GPSR Art. 9(5) requires an identifying element on consumer products, and Art. 19(c) product identification in an online offer. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "productCategory": {

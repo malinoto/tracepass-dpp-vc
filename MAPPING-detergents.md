@@ -1,6 +1,6 @@
 # Detergents & Surfactants DPP — field-to-vocabulary mapping
 
-Every field in the Detergents & Surfactants Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 66 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Detergents & Surfactants Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 67 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -40,6 +40,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `packagingImageUrl` | CELEX `32026R0405` | Annex VI Part A, point (a) |
 | `commodityCode` | CELEX `32026R0405` | Annex VI Part A, point (f) |
 | `productCategory` | CELEX `32024R1781` | Article 9 |
+| `detergentUserType` | CELEX `32026R0405` | Annex V Part A, point 1(f) |
 | `productSubcategory` | CELEX `32024R1781` | Article 9 |
 | `manufacturerEmail` | CELEX `32026R0405` | Annex VI Part A, point (b) |
 | `manufacturerPhone` | CELEX `32026R0405` | Annex VI Part A, point (b) |

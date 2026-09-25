@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Extends](https://img.shields.io/badge/extends-UNTP%20DPP%20v0.7.0-orange)](https://untp.unece.org/docs/specification/DigitalProductPassport)
 [![Categories](https://img.shields.io/badge/categories-13-informational)](./MAPPING-steel.md)
-[![Fields](https://img.shields.io/badge/properties-896-informational)](#status)
+[![Fields](https://img.shields.io/badge/properties-908-informational)](#status)
 
 Maintained by **[TracePass](https://www.tracepass.eu)** · [Platform](https://app.tracepass.eu) · [Field specs](https://github.com/malinoto/tracepass-dpp-schemas)
 
@@ -135,7 +135,7 @@ owner, which is the honest state of the art for machine-readable EU product-pass
 ## Status
 
 **All thirteen categories ship a context, a schema, a worked example and a mapping
-document** — 896 `characteristics` properties in total. `node scripts/validate.mjs`
+document** — 908 `characteristics` properties in total. `node scripts/validate.mjs`
 checks every one: schema and context agree on the property set, each context term
 carries an `@id`, and each example satisfies its own schema. It also re-derives every
 count published below from the artefacts and fails if this page has drifted from them.
@@ -144,8 +144,8 @@ Counted as **properties** (a key recurring in two categories counts twice):
 
 | | |
 |---|---|
-| Properties | 896 across 13 categories |
-| Citing an EU instrument or standard | 890 (99%) |
+| Properties | 908 across 13 categories |
+| Citing an EU instrument or standard | 898 (99%) |
 | Carrying a verified QUDT unit IRI | 218 |
 
 Counted as **distinct keys**, decided once and applied to every category:

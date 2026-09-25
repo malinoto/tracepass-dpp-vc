@@ -5,22 +5,7 @@
   "description": "Field specifications for the Iron, Steel & Aluminium Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "batchLotNumber",
-    "productName",
-    "steelGradeDesignation",
-    "chemicalComposition",
-    "yieldStrengthMpa",
-    "tensileStrengthMpa",
-    "elongationPct",
-    "impactEnergy",
-    "heatNumber",
-    "heatTreatment",
-    "svhcPresent",
-    "restrictedSubstancesCompliance",
-    "inspectionCertificateType",
-    "inspectionCertificateUri"
-  ],
+  "required": [],
   "properties": {
     "gtin": {
       "type": "string",
@@ -36,9 +21,10 @@
       "type": "string",
       "title": "Batch / Lot Number",
       "description": "Production batch or lot number (GS1 AI 10). For steel products this is typically the heat number.",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-regulation": "32011R0305",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R0305",
+      "x-provision": "Art. 11(4)",
+      "x-citationNote": "For structural steel that is a construction product, the CPR requires a type, batch or serial number or other identifying element on the product. GPSR rarely applies (steel is seldom a consumer product). No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -84,9 +70,6 @@
       "type": "string",
       "title": "Product Name",
       "description": "Commercial product name including grade and delivery condition.",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "cnCode": {
@@ -103,8 +86,7 @@
       "type": "object",
       "title": "Steel Grade / Alloy Designation",
       "description": "Steel grade per EN 10027-1 (symbolic name) and EN 10027-2 (numeric), or aluminium alloy per EN 573/EN 1706.",
-      "x-standard": "EN 10027-1/2, EN 573-3, EN 1706",
-      "x-sourceKind": "standard",
+      "x-standard": "EN 10027-1, EN 10027-2, EN 573-3, EN 1706",
       "x-iri": "https://tracepass.eu/voc/dpp/steelGradeDesignation"
     },
     "countryOfManufacture": {
@@ -151,8 +133,10 @@
       "description": "Elemental composition per EN 10204 mill certificate. Weight percentages for each alloying element.",
       "x-unit": "weight_%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-standard": "EN 10204, EN 10025, EN 10088 (stainless)",
-      "x-sourceKind": "standard",
+      "x-regulation": "32011R0305",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R0305",
+      "x-provision": "Art. 6(1)",
+      "x-citationNote": "For steel under a harmonised standard, the declaration of performance states the characteristics the standard's Annex ZA lists; which ones is set by the standard, not the Regulation. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/chemicalComposition"
     },
     "recycledContentPercentage": {
@@ -218,8 +202,10 @@
       "description": "Minimum yield strength ReH in megapascals, from EN 10204 mill certificate.",
       "x-unit": "MPa",
       "x-unitIri": "http://qudt.org/vocab/unit/MegaPA",
-      "x-standard": "EN 10025, EN 10204",
-      "x-sourceKind": "standard",
+      "x-regulation": "32011R0305",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R0305",
+      "x-provision": "Art. 6(1)",
+      "x-citationNote": "Declared in the declaration of performance for steel under a harmonised standard, where that standard lists it. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/yieldStrengthMpa"
     },
     "tensileStrengthMpa": {
@@ -228,8 +214,10 @@
       "description": "Tensile strength Rm in megapascals.",
       "x-unit": "MPa",
       "x-unitIri": "http://qudt.org/vocab/unit/MegaPA",
-      "x-standard": "EN 10204",
-      "x-sourceKind": "standard",
+      "x-regulation": "32011R0305",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R0305",
+      "x-provision": "Art. 6(1)",
+      "x-citationNote": "Declared in the declaration of performance for steel under a harmonised standard, where that standard lists it. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/tensileStrengthMpa"
     },
     "elongationPct": {
@@ -238,8 +226,10 @@
       "description": "Elongation at break A5 (%) from tensile test.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
-      "x-standard": "EN 10204",
-      "x-sourceKind": "standard",
+      "x-regulation": "32011R0305",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R0305",
+      "x-provision": "Art. 6(1)",
+      "x-citationNote": "Declared in the declaration of performance for steel under a harmonised standard, where that standard lists it. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/elongationPct"
     },
     "impactEnergy": {
@@ -248,8 +238,10 @@
       "description": "Charpy V-notch impact test results per ISO 148-1.",
       "x-unit": "J",
       "x-unitIri": "http://qudt.org/vocab/unit/J",
-      "x-standard": "EN 10204, ISO 148-1",
-      "x-sourceKind": "standard",
+      "x-regulation": "32011R0305",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R0305",
+      "x-provision": "Art. 6(1)",
+      "x-citationNote": "Declared in the declaration of performance for steel under a harmonised standard, where that standard lists it. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/impactEnergy"
     },
     "hardness": {
@@ -295,7 +287,6 @@
       "title": "Heat Number",
       "description": "Steel heat/melt number for traceability to a specific melt.",
       "x-standard": "EN 10204",
-      "x-sourceKind": "standard",
       "x-iri": "https://ref.gs1.org/voc/hasBatchLotNumber"
     },
     "heatTreatment": {
@@ -313,8 +304,7 @@
         "age_hardened",
         "none"
       ],
-      "x-standard": "EN 10025, EN 10204",
-      "x-sourceKind": "standard",
+      "x-standard": "EN 10204, EN 10025",
       "x-iri": "https://tracepass.eu/voc/dpp/heatTreatment"
     },
     "electricityGridIntensity": {
@@ -563,7 +553,8 @@
       "description": "Whether the product contains Substances of Very High Concern above 0.1% w/w threshold per REACH Article 33.",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Art. 33",
+      "x-provision": "Art. 33(1)",
+      "x-citationNote": "REACH Art. 33(1) requires the substance name to be given to the recipient when a Candidate List substance is above 0,1 % w/w in an article; it never requires a 'no' to be declared. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcPresent"
     },
     "svhcCandidateListSubstances": {
@@ -589,9 +580,6 @@
       "type": "boolean",
       "title": "Restricted Substances Compliance",
       "description": "Compliance with REACH Annex XVII substance restrictions.",
-      "x-regulation": "32006R1907",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "Annex XVII",
       "x-iri": "https://tracepass.eu/voc/dpp/restrictedSubstancesCompliance"
     },
     "gwpTotal": {
@@ -725,16 +713,17 @@
         "3.1",
         "3.2"
       ],
-      "x-standard": "EN 10204:2004",
-      "x-sourceKind": "standard",
+      "x-regulation": "32014L0068",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32014L0068",
+      "x-provision": "Annex I, point 4.3",
+      "x-citationNote": "The Pressure Equipment Directive makes the equipment manufacturer obtain material documentation; EN 10204 defines its form. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/inspectionCertificateType"
     },
     "inspectionCertificateUri": {
       "type": "string",
       "title": "Inspection Certificate URI",
       "description": "URI to the EN 10204 mill certificate PDF or structured data.",
-      "x-standard": "EN 10204, ESPR",
-      "x-sourceKind": "standard",
+      "x-standard": "EN 10204",
       "x-iri": "https://tracepass.eu/voc/dpp/inspectionCertificateUri"
     },
     "responsibleSteelCertification": {

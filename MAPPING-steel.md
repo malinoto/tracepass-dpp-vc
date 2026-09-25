@@ -30,28 +30,28 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
+| `batchLotNumber` | CELEX `32011R0305` | Art. 11(4) |
 | `serialNumber` | CELEX `32024R1781` | — |
 | `productType` | CELEX `32023R0956` | Annex I |
-| `productName` | CELEX `32023R0988` | Art. 9(5) |
-| `steelGradeDesignation` | EN 10027-1/2, EN 573-3, EN 1706 | — |
+| `productName` | — | — |
+| `steelGradeDesignation` | EN 10027-1, EN 10027-2, EN 573-3, EN 1706 | — |
 | `countryOfManufacture` | CELEX `32024R1781` | — |
 | `facilityId` | CELEX `32023R0956` | Annex IV |
 | `primaryMaterialType` | CELEX `32023R0956` | — |
-| `chemicalComposition` | EN 10204, EN 10025, EN 10088 (stainless) | — |
+| `chemicalComposition` | CELEX `32011R0305` | Art. 6(1) |
 | `recycledContentPercentage` | CELEX `32024R1781` | Article 5(5)(j) |
 | `preConsumerScrapPct` | ISO 14021 | — |
 | `postConsumerScrapPct` | CELEX `32024R1781` | — |
 | `recycledContentVerification` | CELEX `32024R1781` | — |
 | `coatings` | CELEX `32024R1781` | — |
-| `yieldStrengthMpa` | EN 10025, EN 10204 | — |
-| `tensileStrengthMpa` | EN 10204 | — |
-| `elongationPct` | EN 10204 | — |
-| `impactEnergy` | EN 10204, ISO 148-1 | — |
+| `yieldStrengthMpa` | CELEX `32011R0305` | Art. 6(1) |
+| `tensileStrengthMpa` | CELEX `32011R0305` | Art. 6(1) |
+| `elongationPct` | CELEX `32011R0305` | Art. 6(1) |
+| `impactEnergy` | CELEX `32011R0305` | Art. 6(1) |
 | `hardness` | EN 10204 | — |
 | `productionRoute` | CELEX `32023R0956` | Annex IV |
 | `productionDate` | CELEX `32024R1781` | — |
-| `heatTreatment` | EN 10025, EN 10204 | — |
+| `heatTreatment` | EN 10204, EN 10025 | — |
 | `electricityGridIntensity` | CELEX `32023R0956` | — |
 | `renewableSharePct` | CELEX `32024R1781` | — |
 | `electricityConsumedKwhPerT` | CELEX `32023R0956` | — |
@@ -72,10 +72,10 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `carbonPricePaid` | CELEX `32023R0956` | Article 9 |
 | `cbamDeclarantEori` | CELEX `32023R0956` | — |
 | `cbamAccountNumber` | CELEX `32023R0956` | — |
-| `svhcPresent` | CELEX `32006R1907` | Art. 33 |
+| `svhcPresent` | CELEX `32006R1907` | Art. 33(1) |
 | `svhcCandidateListSubstances` | CELEX `32006R1907` | Art. 33, SCIP |
 | `reachRegistrationNumbers` | CELEX `32006R1907` | — |
-| `restrictedSubstancesCompliance` | CELEX `32006R1907` | Annex XVII |
+| `restrictedSubstancesCompliance` | — | — |
 | `gwpTotal` | EN 15804+A2 (global warming potential, total) | — |
 | `odp` | EN 15804+A2 (ozone depletion potential) | — |
 | `ap` | EN 15804+A2 (acidification potential) | — |
@@ -89,8 +89,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `endOfLifeInstructions` | CELEX `32024R1781` | Article 5(5)(l) |
 | `ceMarking` | CELEX `32024R3110` | Arts. 13(1), 17-18; Art. 94 (Reg. (EU) 305/2011 Arts. 4-9 continue to apply until 8 Jan 2040 for products under harmonised standards cited under it) |
 | `declarationOfPerformanceUri` | CELEX `32024R3110` | — |
-| `inspectionCertificateType` | EN 10204:2004 | — |
-| `inspectionCertificateUri` | EN 10204, ESPR | — |
+| `inspectionCertificateType` | CELEX `32014L0068` | Annex I, point 4.3 |
+| `inspectionCertificateUri` | EN 10204 | — |
 | `responsibleSteelCertification` | Voluntary (ResponsibleSteel International Production Standard) | — |
 | `asiCertification` | Voluntary (ASI Performance Standard V3, ASI CoC Standard V2.1) | — |
 | `euEtsInstallationId` | CELEX `32003L0087` | — |

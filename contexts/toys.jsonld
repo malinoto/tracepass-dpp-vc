@@ -14,9 +14,24 @@
         "@id": "https://tracepass.eu/voc/dpp/productName",
         "@type": "xsd:string"
       },
+      "commodityCode": {
+        "@id": "https://tracepass.eu/voc/dpp/commodityCode",
+        "@type": "xsd:string"
+      },
       "modelNumber": {
         "@id": "https://tracepass.eu/voc/dpp/modelNumber",
         "@type": "xsd:string"
+      },
+      "passportServiceProvider": {
+        "@id": "https://tracepass.eu/voc/dpp/passportServiceProvider",
+        "@type": "xsd:string"
+      },
+      "communicationChannel": {
+        "@id": "https://tracepass.eu/voc/dpp/communicationChannel",
+        "@type": "xsd:string"
+      },
+      "responsibleEconomicOperator": {
+        "@id": "https://tracepass.eu/voc/dpp/responsibleEconomicOperator"
       },
       "batchLotNumber": {
         "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
@@ -31,6 +46,34 @@
       },
       "ceMarking": {
         "@id": "https://tracepass.eu/voc/dpp/ceMarking",
+        "@type": "xsd:boolean"
+      },
+      "allergenicFragrances": {
+        "@id": "https://tracepass.eu/voc/dpp/allergenicFragrances",
+        "@container": "@set"
+      },
+      "notifiedBodyCertificateReference": {
+        "@id": "https://tracepass.eu/voc/dpp/notifiedBodyCertificateReference",
+        "@type": "xsd:string"
+      },
+      "harmonisedStandardsReferences": {
+        "@id": "https://tracepass.eu/voc/dpp/harmonisedStandardsReferences",
+        "@container": "@set"
+      },
+      "replacesDeclarationOfConformity": {
+        "@id": "https://tracepass.eu/voc/dpp/replacesDeclarationOfConformity",
+        "@container": "@set"
+      },
+      "unionLawReferences": {
+        "@id": "https://tracepass.eu/voc/dpp/unionLawReferences",
+        "@container": "@set"
+      },
+      "complianceDemonstrated": {
+        "@id": "https://tracepass.eu/voc/dpp/complianceDemonstrated",
+        "@type": "xsd:boolean"
+      },
+      "issuedUnderSoleResponsibility": {
+        "@id": "https://tracepass.eu/voc/dpp/issuedUnderSoleResponsibility",
         "@type": "xsd:boolean"
       },
       "declarationOfConformityUrl": {

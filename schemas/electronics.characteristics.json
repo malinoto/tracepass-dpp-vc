@@ -5,10 +5,7 @@
   "description": "Field specifications for the Electronics Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "ceMarking",
-    "ceMarkingStatus"
-  ],
+  "required": [],
   "properties": {
     "productModel": {
       "type": "string",
@@ -127,7 +124,8 @@
       "description": "Whether the product bears the CE marking",
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
-      "x-provision": "RoHS Dir. 2011/65/EU Art. 15 + EMC Dir. 2014/30/EU Art. 16 — CE marking affixed to the product",
+      "x-provision": "Art. 15(1)",
+      "x-citationNote": "The CE marking is affixed to the equipment (RoHS Art. 15(1), EMC Art. 17(1)); it is a marking, not passport data. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
     },
     "notifiedBodyId": {
@@ -1783,7 +1781,8 @@
       ],
       "x-regulation": "32011L0065",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32011L0065",
-      "x-provision": "RoHS Dir. 2011/65/EU Art. 15 + EMC Dir. 2014/30/EU Art. 16 — CE marking affixed to the product",
+      "x-provision": "Art. 15(1)",
+      "x-citationNote": "The CE marking is affixed to the equipment; the law knows only whether it is affixed, so this status duplicates ceMarking. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarkingStatus"
     }
   }

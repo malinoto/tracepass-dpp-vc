@@ -26,12 +26,12 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `productName` | CELEX `32009R1223` | Art. 19(1) |
+| `productName` | CELEX `32026R0405` | Annex VI Part A(a) |
 | `brandName` | CELEX `32024R1781` | Art. 9(2) |
 | `productSubcategory` | CELEX `32024R1781` | Art. 9(2) |
-| `netContentValue` | CELEX `32011R1169` | Art. 9(1)(e), Annex IX |
-| `netContentUnit` | CELEX `32011R1169` | Art. 9(1)(e), Annex IX |
-| `ingredientsList` | CELEX `32009R1223` | Art. 19(1)(g) |
+| `netContentValue` | CELEX `32011R1169` | Art. 9(1)(e) |
+| `netContentUnit` | CELEX `32011R1169` | Art. 23(1) |
+| `ingredientsList` | CELEX `32026R0405` | Annex VI Part A(h) |
 | `allergens` | CELEX `32009R1223` | Annex III |
 | `fragrances` | CELEX `32009R1223` | Art. 19(1)(g) |
 | `preservatives` | CELEX `32009R1223` | Annex V |
@@ -49,7 +49,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `biodegradability` | CELEX `32004R0648` | Art. 4 |
 | `aquaticToxicity` | CELEX `32008R1272` | — |
 | `ecolabelCriticalDilutionVolume` | CELEX `32010R0066` | — |
-| `packagingMaterialType` | CELEX `32025R0040` | Art. 11 |
+| `packagingMaterialType` | CELEX `32025R0040` | Art. 12(1) |
 | `packagingRecycledContent` | CELEX `32025R0040` | Art. 7 |
 | `packagingRecyclabilityGrade` | CELEX `32025R0040` | Art. 6 |
 | `packagingWeight` | CELEX `32025R0040` | Art. 10 |
@@ -57,11 +57,11 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `recommendedDosage` | CELEX `32009R1223` | Art. 11(4) |
 | `shelfLifeMonths` | CELEX `32011R1169` | Art. 19(1) |
 | `storageConditions` | CELEX `32023R0988` | — |
-| `batchLotNumber` | CELEX `32023R0988` | Art. 9(5) |
+| `batchLotNumber` | CELEX `32026R0405` | Annex VI Part A(d) |
 | `certifications` | CELEX `32024R1781` | Art. 7(2)(c) |
 | `euEcolabelLicenseNumber` | CELEX `32010R0066` | — |
 | `organicCertificationBody` | CELEX `32018R0848` | — |
-| `disposalInstructions` | CELEX `32025R0040` | Art. 12 |
+| `disposalInstructions` | CELEX `32025R0040` | Art. 12(1) |
 | `refillAvailability` | CELEX `32025R0040` | Art. 28 |
 | `returnSchemeParticipation` | CELEX `32025R0040` | Art. 44-48 |
 

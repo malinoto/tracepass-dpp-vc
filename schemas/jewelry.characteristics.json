@@ -5,9 +5,7 @@
   "description": "Field specifications for the Jewelry & Precious Metals Digital Product Passport, shaped for UNTP's credentialSubject.characteristics extension point. Economic operators and facility identifiers are carried by the UNTP envelope and are deliberately absent here.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "productName"
-  ],
+  "required": [],
   "properties": {
     "productName": {
       "type": "string",
@@ -15,7 +13,8 @@
       "description": "Commercial name or trade designation of the jewelry item",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
+      "x-provision": "Art. 19(c)",
+      "x-citationNote": "No law requires a product name as such: GPSR Art. 9(5) requires an identifying element on consumer products, and Art. 19(c) product identification in an online offer. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "productCategory": {

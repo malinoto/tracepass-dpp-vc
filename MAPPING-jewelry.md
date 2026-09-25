@@ -23,7 +23,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 
 | Field | Defined by | Provision |
 |---|---|---|
-| `productName` | CELEX `32023R0988` | Art. 9(5) |
+| `productName` | CELEX `32023R0988` | Art. 19(c) |
 | `productCategory` | CELEX `32024R1781` | Art. 9(2) |
 | `serialNumber` | CELEX `32024R1781` | Art. 9(2) |
 | `batchLotNumber` | CELEX `32024R1781` | Art. 9(2) |
