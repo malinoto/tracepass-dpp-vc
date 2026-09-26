@@ -200,6 +200,15 @@ advice.** Cite it accordingly.
 - **[tracepass-open](https://github.com/malinoto/tracepass-open)** — the compliance validator
   and EPCIS 2.0 mapper.
 
+Plain-language explainers of the law behind the profile:
+
+- [The EU DPP Registry](https://www.tracepass.eu/regulatory/registry) — who actually
+  submits a passport, under Implementing Regulation (EU) 2026/1778.
+- [Standards are not law](https://www.tracepass.eu/regulatory/standards-are-not-law)
+  — what makes a DPP field mandatory, and so what a cited property does and does not assert.
+- [Article 77 battery passport — Regulation (EU) 2023/1542](https://www.tracepass.eu/regulatory/battery-articles/article-77)
+  — the earliest statutory passport date of any category, 18 February 2027.
+
 ## License
 
 [Apache-2.0](./LICENSE). UNTP's spec repository is GPL-3.0; this profile references it by URI
