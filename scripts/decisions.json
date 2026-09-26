@@ -99,8 +99,8 @@
     "pocp": "EN 15804+A2 (photochemical ozone creation potential)",
     "wdp": "EN 15804+A2 (water deprivation potential)",
     "waterUse": "EN 15804+A2 (water use)",
-    "epdReferenceUri": "ISO 14025 (Type III environmental declarations)",
-    "epdProgramOperator": "ISO 14025 (Type III environmental declarations)",
+    "epdReferenceUri": "ISO 14025 (environmental product declarations)",
+    "epdProgramOperator": "ISO 14025 (environmental product declarations)",
     "declaredUnit": "EN 15804+A2 (declared and functional unit)",
     "applicableDurabilityStandard": "EN durability/strength test standards (named per product family)"
   }

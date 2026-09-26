@@ -80,8 +80,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `odp` | EN 15804+A2 (ozone depletion potential) | — |
 | `ap` | EN 15804+A2 (acidification potential) | — |
 | `waterUse` | EN 15804+A2 (water use) | — |
-| `epdReferenceUri` | ISO 14025 (Type III environmental declarations) | — |
-| `epdProgramOperator` | ISO 14025 (Type III environmental declarations) | — |
+| `epdReferenceUri` | ISO 14025 (environmental product declarations) | — |
+| `epdProgramOperator` | ISO 14025 (environmental product declarations) | — |
 | `lifecycleModules` | EN 15804+A2 | — |
 | `declaredUnit` | EN 15804+A2 (declared and functional unit) | — |
 | `expectedServiceLifeYears` | CELEX `32024R1781` | Article 5(5)(a) |

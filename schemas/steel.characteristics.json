@@ -622,7 +622,7 @@
       "type": "string",
       "title": "EPD Reference URI",
       "description": "URI to the Environmental Product Declaration document.",
-      "x-standard": "ISO 14025 (Type III environmental declarations)",
+      "x-standard": "ISO 14025 (environmental product declarations)",
       "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/epdReferenceUri"
     },
@@ -630,7 +630,7 @@
       "type": "string",
       "title": "EPD Program Operator",
       "description": "Name of the EPD program operator (e.g. IBU, EPD International, BRE).",
-      "x-standard": "ISO 14025 (Type III environmental declarations)",
+      "x-standard": "ISO 14025 (environmental product declarations)",
       "x-sourceKind": "standard",
       "x-iri": "https://tracepass.eu/voc/dpp/epdProgramOperator"
     },
