@@ -104,8 +104,6 @@ const UNSOURCED_BY_DESIGN = new Set([
   "battery.energyDensity",
   "battery.numberOfCells",
   "battery.cellType",
-  "battery.capacityThroughput",
-  "battery.energyThroughput",
   // Primary-text review (dpp-schemas 1.10.0) found no law that requires these:
   // a product name as such (steel is rarely a consumer product, so GPSR does not
   // reach it), a compliance statement for REACH restrictions (a ban, not a

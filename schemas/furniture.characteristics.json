@@ -190,11 +190,11 @@
     "forestCertificationScheme": {
       "type": "string",
       "title": "Forest Certification Scheme",
-      "description": "Forest certification (FSC, PEFC, or equivalent). Required for virgin wood.",
-      "x-regulation": "32023R1115",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1115",
-      "x-provision": "FSC / PEFC are voluntary certification schemes; EUDR mandates due diligence, not certification",
-      "x-citationNote": "EUDR requires due diligence and mandates no certification scheme; FSC and PEFC are voluntary.",
+      "description": "Forest certification (FSC, PEFC, or equivalent).",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-provision": "Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme",
+      "x-citationNote": "Under the voluntary EU Ecolabel criteria for furniture (Decision 2016/1332, Criterion 3.1), all virgin wood must be covered by valid sustainable forest management certificates from an independent third-party scheme such as FSC, PEFC or equivalent. EUDR (EU) 2023/1115 mandates due diligence, not certification; certification can feed its risk assessment as complementary information (Art. 10(2)(n)).",
       "x-iri": "https://tracepass.eu/voc/dpp/forestCertificationScheme"
     },
     "chainOfCustodyCertificate": {
@@ -241,8 +241,8 @@
       "description": "Substances of Very High Concern on REACH candidate list present above 0.1% w/w",
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
-      "x-provision": "REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name",
-      "x-citationNote": "REACH Art. 33 is an on-request duty to recipients above 0.1% w/w, answered with at minimum the substance name; SCIP notification is the database side. Neither is discharged by publishing here.",
+      "x-provision": "Art. 33(1)–(2)",
+      "x-citationNote": "REACH Art. 33(1) obliges the supplier of an article containing a candidate-list substance above 0.1% w/w to give recipients sufficient information for safe use, at minimum the substance name — unconditionally; Art. 33(2) gives consumers the same on request, within 45 days. SCIP notification to ECHA is the database side (Waste Framework Directive Art. 9(1)(i)). ESPR Art. 7(5) sets out the substances-of-concern information a future delegated act will require; none is adopted for this category. Neither duty is discharged by publishing here.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances"
     },
     "formaldehydeEmissionClass": {
@@ -259,18 +259,18 @@
       ],
       "x-regulation": "32023R1464",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1464",
-      "x-provision": "REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3)",
+      "x-provision": "REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m³)",
       "x-citationNote": "Annex XVII entry 77 is an emission limit to stay under with test evidence retained; the E0.5/E1 class scheme is EN 13986, a voluntary standard.",
       "x-iri": "https://tracepass.eu/voc/dpp/formaldehydeEmissionClass"
     },
     "formaldehydeEmissionValueMgM3": {
       "type": "number",
       "title": "Formaldehyde Emission Value (mg/m³)",
-      "description": "Formaldehyde emission measured per EN 717-1 chamber test (mg/m3). Must be <= 0.062 mg/m3 for furniture from Aug 2026.",
+      "description": "Formaldehyde emission measured per EN 717-1 chamber test (mg/m³). Must be <= 0.062 mg/m³ for furniture from Aug 2026.",
       "x-unit": "mg/m3",
       "x-regulation": "32023R1464",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1464",
-      "x-provision": "REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3)",
+      "x-provision": "REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m³)",
       "x-citationNote": "A limit to stay under with evidence retained, not a duty to publish the measured value.",
       "x-iri": "https://tracepass.eu/voc/dpp/formaldehydeEmissionValueMgM3"
     },
@@ -287,11 +287,13 @@
     "totalVocEmissionUgM3": {
       "type": "number",
       "title": "Total VOC Emission (µg/m³)",
-      "description": "Total VOC emission after 28 days (ug/m3) per EN 16516",
+      "description": "Total VOC emission after 28 days (µg/m³) per EN 16516",
       "x-unit": "ug/m3",
       "x-unitIri": "http://qudt.org/vocab/unit/MicroGM-PER-M3",
-      "x-standard": "EN 16516 (determination of emissions into indoor air)",
-      "x-sourceKind": "standard",
+      "x-regulation": "32010R0066",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32010R0066",
+      "x-provision": "Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme",
+      "x-citationNote": "The voluntary EU Ecolabel furniture criteria (Decision 2016/1332, Criterion 9.5) set 28-day TVOC limits of ≤ 400 µg/m³ for office chairs and ≤ 450 µg/m³ for other furniture, tested per ISO 16000 (CEN/TS 16516 accepted as equivalent). Testing applies only to leather or coated-fabric upholstery or heavily coated parts. No binding EU act sets a furniture TVOC figure.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalVocEmissionUgM3"
     },
     "flameRetardantSubstances": {
@@ -418,7 +420,7 @@
     "foamDensityKgM3": {
       "type": "number",
       "title": "Foam Density (kg/m³)",
-      "description": "Density of the primary foam layer (kg/m3)",
+      "description": "Density of the primary foam layer (kg/m³)",
       "x-unit": "kg/m3",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
       "x-standard": "EN ISO 845",
@@ -603,7 +605,7 @@
       "description": "URL to collection/take-back scheme information",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-citationNote": "Cites the future furniture delegated act, which is NOT adopted — so nothing here is legally required yet. ESPR itself mandates no product data (Art. 7(1) and Art. 9(2) both defer to the Art. 4 act). Anticipated; voluntary today. Verified against the EUR-Lex text.",
+      "x-citationNote": "Cites the future furniture delegated act, which is NOT adopted — so nothing here is legally required yet. ESPR itself mandates no product data (Art. 7(1) and Art. 9(2) both defer to the Art. 4 act). A furniture delegated act is scheduled (ESPR working plan COM(2025) 187: 2028), but whether it will require this datum is not known. Optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/collectionAndTakeBackInfoUrl"
     },
     "declarationOfConformityUrl": {

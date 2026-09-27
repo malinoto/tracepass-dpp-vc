@@ -13,18 +13,18 @@
       "description": "Manufacturer's model number or variant identifier",
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
-      "x-citationNote": "A type or model number is one of the identifying elements GPSR Art. 9(5) accepts on consumer products, not a mandated one. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
+      "x-provision": "Art. 19(c)",
+      "x-citationNote": "For distance sales only: the online offer must carry information identifying the product, including its type. GPSR Art. 9(5) does not apply to textiles, which Art. 2(1)(b) removes from Chapter III Section 1 as products under Reg. (EU) 1007/2011, and that Regulation requires no identifier. No adopted act creates a passport for this category.",
       "x-iri": "https://tracepass.eu/voc/dpp/modelNumber"
     },
     "batchLotNumber": {
       "type": "string",
       "title": "Batch Number",
       "description": "Production batch identifier for traceability and recalls",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "Art. 9(5)",
-      "x-citationNote": "GPSR Art. 9(5) asks for a type, batch or serial number OR another identifying element on consumer products; a batch number as such is never mandatory. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 27(5)",
+      "x-citationNote": "No law requires a batch number on a textile product: GPSR Art. 9(5) is disapplied by Art. 2(1)(b) because Reg. (EU) 1007/2011 is Union harmonisation legislation, and that Regulation requires no identifier. ESPR Art. 27(5) will require a type, batch or serial number or other identifying element once a textile delegated act applies — any one of them, so a batch number as such never becomes mandatory.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
     "serialNumber": {
@@ -41,10 +41,10 @@
       "type": "string",
       "title": "EU Responsible Person",
       "description": "Designated EU responsible person per EU product safety regulation",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-provision": "GPSR (EU) 2023/988 Art. 16 — an EU-established responsible economic operator must EXIST",
-      "x-citationNote": "An existence duty on the supply chain, not a label line or a passport field. Note it does NOT rest on Reg. (EU) 2019/1020 Art. 4 — textiles are not on the Art. 4(5) list.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Art. 9(2)(a)",
+      "x-citationNote": "Nothing requires an EU responsible person for a textile product today: GPSR Art. 16 sits in Chapter III Section 1, which Art. 2(1)(b) disapplies because Reg. (EU) 1007/2011 is Union harmonisation legislation, and Reg. (EU) 2019/1020 Art. 4 covers only the acts listed in its Art. 4(5), which do not include it. GPSR Art. 19(b) therefore has no responsible person to name in an online offer.",
       "x-iri": "https://tracepass.eu/voc/dpp/euResponsiblePerson"
     },
     "productName": {
@@ -54,7 +54,7 @@
       "x-regulation": "32023R0988",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
       "x-provision": "Art. 19(c)",
-      "x-citationNote": "No law requires a product name as such: GPSR Art. 9(5) requires an identifying element on consumer products, and Art. 19(c) product identification in an online offer. No adopted act creates a passport for this category, so nothing here is passport-mandatory.",
+      "x-citationNote": "No law requires a product name as such. For distance sales, an online offer must carry information identifying the product, including its type and any other identifier; GPSR Art. 9(5) does not apply to textiles, which Art. 2(1)(b) removes from Chapter III Section 1 as products under Reg. (EU) 1007/2011. No adopted act creates a passport for this category.",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "productCategory": {
@@ -121,7 +121,7 @@
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "REACH Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name",
-      "x-citationNote": "REACH Art. 33 is an on-request duty to recipients above 0.1% w/w, answered with at minimum the substance name; SCIP notification is the database side. Neither is discharged by publishing here. POPs Reg. (EU) 2019/1021 Annex I separately restricts PFOS, with a limit written for this category (below 1 ug/m2 of coated material for textiles and other coated materials), and, since Delegated Regulations (EU) 2020/784 and (EU) 2023/1608, PFOA and PFHxS: each tolerated only as an unintentional trace at or below 0.025 mg/kg for the acid and its salts and 1 mg/kg for related compounds. These are market restrictions, not disclosure duties, so they do not make this field required.",
+      "x-citationNote": "REACH Art. 33 is an on-request duty to recipients above 0.1% w/w, answered with at minimum the substance name; SCIP notification is the database side. Neither is discharged by publishing here. POPs Reg. (EU) 2019/1021 Annex I separately restricts PFOS, with a limit written for this category (below 1 µg/m² of coated material for textiles and other coated materials), and, since Delegated Regulations (EU) 2020/784 and (EU) 2023/1608, PFOA and PFHxS: each tolerated only as an unintentional trace at or below 0.025 mg/kg for the acid and its salts and 1 mg/kg for related compounds. These are market restrictions, not disclosure duties, so they do not make this field required.",
       "x-iri": "https://tracepass.eu/voc/dpp/substancesOfConcern"
     },
     "certifications": {

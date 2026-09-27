@@ -24,7 +24,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled in the ESPR working plan COM(2025) 187 — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/brandName"
     },
     "gtin": {
@@ -34,7 +34,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled in the ESPR working plan COM(2025) 187 — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "productSubcategory": {
@@ -53,7 +53,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled in the ESPR working plan COM(2025) 187 — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/productSubcategory"
     },
     "netContentValue": {
@@ -143,8 +143,8 @@
       "description": "SVHC substances present above 0.1% w/w with name, CAS number, concentration range, and safe use instructions",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Art. 33",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-provision": "Art. 7(5)(a)–(d)",
+      "x-citationNote": "No adopted act requires this in a passport, and none is planned: substance-of-concern tracking binds only through an ESPR Art. 4 delegated act, the 2025–2030 working plan (COM(2025) 187) schedules none for detergents, cosmetics or other FMCG, and food is outside ESPR altogether (Art. 1(2)(a)). Today candidate-list substances above 0.1% w/w are communicated under REACH — Art. 33 for articles, and a safety data sheet on request under Art. 31(3)(b) for unclassified mixtures other than finished cosmetics, which Art. 2(6)(b) exempts.",
       "x-iri": "https://tracepass.eu/voc/dpp/svhcPresence"
     },
     "colorants": {
@@ -221,9 +221,10 @@
       "type": "string",
       "title": "First Aid Instructions",
       "description": "First aid measures in case of exposure: skin contact, eye contact, ingestion, inhalation",
-      "x-regulation": "32023R0988",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0988",
-      "x-citationNote": "GPSR Art. 9 requires safety information and instructions to ACCOMPANY the product where needed for safe use. The duty is discharged by supplying them with the product; a passport copy is a convenience.",
+      "x-regulation": "32008R1272",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Art. 22(1)",
+      "x-citationNote": "GPSR's economic-operator duties (Chapter III Section 1, including Art. 9) do not apply to products covered by Union harmonisation legislation (GPSR Art. 2(1)(b)). For a hazardous mixture the label must include the relevant precautionary statements (CLP Art. 22(1)), and a safety data sheet gives first-aid instructions by route of exposure (REACH Annex II 4.1.1); the SDS title does not apply to cosmetic products (REACH Art. 2(6)(b)). Discharged on the label and the SDS, not by publishing here.",
       "x-iri": "https://tracepass.eu/voc/dpp/firstAidInstructions"
     },
     "ufi": {
@@ -244,7 +245,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled in the ESPR working plan COM(2025) 187 — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "waterFootprint": {
@@ -255,7 +256,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled in the ESPR working plan COM(2025) 187 — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/waterFootprint"
     },
     "biodegradability": {
@@ -370,10 +371,10 @@
       "type": "string",
       "title": "Recommended Dosage",
       "description": "Recommended dosage or usage amount per application (e.g. 30ml per wash load, pea-sized amount)",
-      "x-regulation": "32009R1223",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
-      "x-provision": "Art. 11(4)",
-      "x-citationNote": "Art. 19 requires particulars concerning precautions for use to appear on the container and packaging. Usage or dosage guidance is delivered through that pack labelling rather than as published product data.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Art. 17(4); Annex V Part B",
+      "x-citationNote": "For consumer laundry, automatic dishwasher and surface detergents, Reg. (EU) 2026/405 Art. 17(4) requires dosage information on the label per Annex V Part B, and Annex VI Part B lets the digital product passport include it; until 22 September 2029 Reg. (EC) 648/2004 Art. 11(4) and Annex VII B govern. The Cosmetics Regulation imposes no dosage duty.",
       "x-iri": "https://tracepass.eu/voc/dpp/recommendedDosage"
     },
     "shelfLifeMonths": {
@@ -382,10 +383,10 @@
       "description": "Product shelf life in months. For cosmetics with shelf life >30 months, Period After Opening (PAO) symbol is used instead",
       "x-unit": "months",
       "x-unitIri": "http://qudt.org/vocab/unit/MO",
-      "x-regulation": "32011R1169",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32011R1169",
-      "x-provision": "Art. 19(1)",
-      "x-citationNote": "Reg (EU) 1169/2011 Art. 19(1) concerns food information; where a date of minimum durability or use-by date is required it must appear ON THE FOOD LABEL. A shelf-life duration in months is a derived figure, and the labelling duty is discharged on pack.",
+      "x-regulation": "32009R1223",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009R1223",
+      "x-provision": "Art. 19(1)(c)",
+      "x-citationNote": "Cosmetics Regulation Art. 19(1)(c): a date of minimum durability on the pack, or the period-after-opening (PAO) symbol for products with a minimum durability above 30 months. For food, the best-before or use-by date (Reg. (EU) 1169/2011 Arts. 9(1)(f), 24). Both are label dates; a shelf life in months is a derived figure, and the labelling duty is discharged on pack.",
       "x-iri": "https://tracepass.eu/voc/dpp/shelfLifeMonths"
     },
     "storageConditions": {
@@ -432,7 +433,7 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
-      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled in the ESPR working plan COM(2025) 187 — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/certifications"
     },
     "euEcolabelLicenseNumber": {

@@ -170,7 +170,7 @@
       "description": "Image or URL of the carbon footprint label affixed to the battery",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(3)",
+      "x-provision": "Art. 7(2)",
       "x-citationNote": "Art. 7(1) requires a carbon footprint declaration and Annex XIII 1(c) carries that information into the passport, but the declaration's format and the calculation methodology come from a delegated act that is not adopted. The label form in particular does not yet exist to be produced.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintLabel"
     },
@@ -291,8 +291,8 @@
       "description": "Web link to the publicly accessible carbon footprint study",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 7(1)",
-      "x-citationNote": "The supporting study is the evidence behind the Art. 7(1) declaration rather than a declared Annex XIII item. Publishing a link is voluntary transparency.",
+      "x-provision": "Art. 7(1)(g)",
+      "x-citationNote": "Art. 7(1)(g) puts a web link to the public version of the study supporting the carbon footprint values into the carbon footprint declaration, which Annex XIII 1(c) carries into the passport; the declaration's methodology and format await acts that are not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintStudyUrl"
     },
     "supplyChainDueDiligenceReport": {
@@ -302,7 +302,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(d)",
-      "x-citationNote": "Annex XIII 1(d) makes the Art. 52(3) due diligence report passport content, so this is genuine passport data — but Art. 52 applies from 18 Aug 2027 and the report is due in the passport from Aug 2028, later than the passport itself.",
+      "x-citationNote": "Annex XIII 1(d) makes the Art. 52(3) due diligence report passport content, so this is genuine passport data — but the due diligence obligations apply from 18 Aug 2027 (Art. 48(1) as amended by Reg. (EU) 2025/1561), and the Commission's data-points guidance v2.0 (DP 19) puts the report in the passport from Aug 2028, later than the passport itself.",
       "x-iri": "https://tracepass.eu/voc/dpp/supplyChainDueDiligenceReport"
     },
     "dueDiligencePolicy": {
@@ -934,7 +934,10 @@
       "description": "Cumulative charge passed through the battery over its life, in ampere-hours",
       "x-unit": "Ah",
       "x-unitIri": "http://qudt.org/vocab/unit/A-HR",
-      "x-sourceKind": "specification",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b) with Annex VII Part B(3)",
+      "x-citationNote": "An Annex VII Part B expected-lifetime parameter, carried into the passport by Annex XIII point 4(b) and accessible only to persons with a legitimate interest. Art. 14(1) and Annex VII Part B limit it to stationary battery energy storage systems and LMT batteries, so it is conditional on the battery type, not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/capacityThroughput"
     },
     "energyThroughput": {
@@ -943,7 +946,10 @@
       "description": "Cumulative energy passed through the battery over its life, in kilowatt-hours",
       "x-unit": "kWh",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloW-HR",
-      "x-sourceKind": "specification",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b) with Annex VII Part B(2)",
+      "x-citationNote": "An Annex VII Part B expected-lifetime parameter, carried into the passport by Annex XIII point 4(b) and accessible only to persons with a legitimate interest. Art. 14(1) and Annex VII Part B limit it to stationary battery energy storage systems and LMT batteries, so it is conditional on the battery type, not required.",
       "x-iri": "https://tracepass.eu/voc/dpp/energyThroughput"
     },
     "numberOfChargingEvents": {
