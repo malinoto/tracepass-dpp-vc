@@ -265,7 +265,7 @@
     },
     "formaldehydeEmissionValueMgM3": {
       "type": "number",
-      "title": "Formaldehyde Emission Value (mg/m3)",
+      "title": "Formaldehyde Emission Value (mg/m³)",
       "description": "Formaldehyde emission measured per EN 717-1 chamber test (mg/m3). Must be <= 0.062 mg/m3 for furniture from Aug 2026.",
       "x-unit": "mg/m3",
       "x-regulation": "32023R1464",
@@ -286,7 +286,7 @@
     },
     "totalVocEmissionUgM3": {
       "type": "number",
-      "title": "Total VOC Emission (ug/m3)",
+      "title": "Total VOC Emission (µg/m³)",
       "description": "Total VOC emission after 28 days (ug/m3) per EN 16516",
       "x-unit": "ug/m3",
       "x-unitIri": "http://qudt.org/vocab/unit/MicroGM-PER-M3",
@@ -417,7 +417,7 @@
     },
     "foamDensityKgM3": {
       "type": "number",
-      "title": "Foam Density (kg/m3)",
+      "title": "Foam Density (kg/m³)",
       "description": "Density of the primary foam layer (kg/m3)",
       "x-unit": "kg/m3",
       "x-unitIri": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
