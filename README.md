@@ -145,7 +145,7 @@ Counted as **properties** (a key recurring in two categories counts twice):
 | | |
 |---|---|
 | Properties | 908 across 13 categories |
-| Citing an EU instrument or standard | 900 (99%) |
+| Citing an EU instrument or standard | 899 (99%) |
 | Carrying a verified QUDT unit IRI | 218 |
 
 Counted as **distinct keys**, decided once and applied to every category:

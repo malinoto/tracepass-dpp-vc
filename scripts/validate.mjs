@@ -111,6 +111,10 @@ const UNSOURCED_BY_DESIGN = new Set([
   // restricts, it does not require a declaration), and a tyre batch number
   // (GPSR Art. 9 is switched off for tyres, and Reg 2020/740 has none).
   "steel.productName",
+  // The Kimberley Process covers rough-diamond shipments only; a gemstone's
+  // mining country on a jewelry passport is the seller's own statement
+  // (dpp-schemas 1.11.5).
+  "jewelry.gemstoneOrigin",
   "steel.restrictedSubstancesCompliance",
   "toys.phthalateCompliant",
   "tyres.batchLotNumber",

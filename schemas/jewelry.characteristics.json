@@ -207,8 +207,7 @@
       "type": "string",
       "title": "Gemstone Origin",
       "description": "Country where the gemstone was mined",
-      "x-standard": "Kimberley Process",
-      "x-sourceKind": "scheme",
+      "x-sourceKind": "specification",
       "x-iri": "https://tracepass.eu/voc/dpp/gemstoneOrigin"
     },
     "gemstoneTreatment": {
