@@ -23,7 +23,13 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 
-const templatesDir = join(root, "..", "tracepass-platform", "templates");
+// TRACEPASS_PLATFORM_DIR points at a platform checkout other than the sibling
+// (e.g. a git worktree), the same override the marketing site's
+// build:field-counts takes.
+const templatesDir = join(
+  process.env.TRACEPASS_PLATFORM_DIR ?? join(root, "..", "tracepass-platform"),
+  "templates",
+);
 const ledger = read(join(root, "_work", "decision-ledger.json"));
 const decisions = read(join(root, "scripts", "decisions.json"));
 const qudt = read(join(root, "scripts", "qudt-units.json"));
