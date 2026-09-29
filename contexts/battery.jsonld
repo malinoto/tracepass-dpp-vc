@@ -168,6 +168,14 @@
         "@id": "https://tracepass.eu/voc/dpp/informationOnCollectionAndEndOfLifeTreatment",
         "@type": "xsd:anyURI"
       },
+      "safetyInstructionsWasteBatteries": {
+        "@id": "https://tracepass.eu/voc/dpp/safetyInstructionsWasteBatteries",
+        "@type": "xsd:anyURI"
+      },
+      "impactOfHazardousSubstances": {
+        "@id": "https://tracepass.eu/voc/dpp/impactOfHazardousSubstances",
+        "@type": "xsd:anyURI"
+      },
       "dismantlingInformation": {
         "@id": "https://tracepass.eu/voc/dpp/dismantlingInformation",
         "@type": "xsd:anyURI"

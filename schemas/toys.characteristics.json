@@ -6,7 +6,6 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "productName",
     "modelNumber",
     "passportServiceProvider",
     "communicationChannel",
@@ -22,10 +21,11 @@
     "productName": {
       "type": "string",
       "title": "Product Name",
-      "description": "Commercial product name or trade designation of the toy",
+      "description": "Commercial name or trade designation of the toy (our product convenience field — not directly mandated by Regulation (EU) 2025/2509; point (e) requires identification allowing traceability, not a commercial name).",
       "x-regulation": "32025R2509",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R2509",
       "x-provision": "Annex VI Part I(e)",
+      "x-citationNote": "Annex VI Part I(e): identification of the toy allowing traceability. Applies from 1 August 2030 (Art. 59); like the battery and detergent templates, the data of an adopted, dated passport act is required ahead of that date.",
       "x-iri": "https://tracepass.eu/voc/dpp/productName"
     },
     "commodityCode": {
@@ -40,11 +40,11 @@
     },
     "modelNumber": {
       "type": "string",
-      "title": "Model / SKU",
-      "description": "Model number, SKU, or product variant identifier",
+      "title": "Type / Batch / Serial / Model Number",
+      "description": "A type, batch, serial or model number or other element allowing the identification of the toy (Art. 7(5) of Regulation (EU) 2025/2509), contributing to the object of the passport per Annex VI Part I(e).",
       "x-regulation": "32025R2509",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R2509",
-      "x-provision": "Art. 19(2)(a)",
+      "x-provision": "Annex VI Part I(e); Art. 7(5)",
       "x-iri": "https://tracepass.eu/voc/dpp/modelNumber"
     },
     "passportServiceProvider": {
@@ -241,11 +241,11 @@
     "notifiedBody": {
       "type": "string",
       "title": "Notified Body",
-      "description": "Name and number of the notified body involved in conformity assessment, if applicable (EC type-examination)",
-      "x-regulation": "32009L0048",
-      "x-regulationIri": "http://publications.europa.eu/resource/celex/32009L0048",
-      "x-provision": "Art. 20",
-      "x-citationNote": "Toy Safety Directive 2009/48/EC Art. 20 concerns EC type-examination, which is required only where no harmonised standard covers the toy or the manufacturer has not applied it. Where a notified body IS involved, its number accompanies the CE marking; there is no general duty to publish its identity.",
+      "description": "Where applicable, name and number of the notified body that intervened in the conformity assessment procedure and issued a certificate, as well as the reference to the certificate (Annex VI Part I(j) of Regulation (EU) 2025/2509).",
+      "x-regulation": "32025R2509",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R2509",
+      "x-provision": "Annex VI Part I(j)",
+      "x-citationNote": "Annex VI Part I(j): where applicable, name and number of the notified body that has intervened in the conformity assessment procedure and issued a certificate, as well as the reference to the certificate. Conditional — only where a notified body is involved (EC type-examination or other third-party conformity assessment procedure). Applies from 1 August 2030 (Art. 59).",
       "x-iri": "https://tracepass.eu/voc/dpp/notifiedBody"
     },
     "primaryMaterials": {

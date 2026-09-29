@@ -28,8 +28,8 @@
     },
     "batchLotNumber": {
       "type": "string",
-      "title": "Batch / Lot ID",
-      "description": "Production batch or lot identifier for traceability.",
+      "title": "Traceability Identifier",
+      "description": "The element that allows the detergent or end-user surfactant to be traced (Annex VI Part A(d)): a type number, batch number or other element ensuring the product's traceability, as provided for in Annex V Part A 1(a) of Regulation (EU) 2026/405.",
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Annex VI Part A, point (d)",
@@ -547,11 +547,11 @@
     "ingredients": {
       "type": "array",
       "title": "Ingredients",
-      "description": "Array of ingredients/substances in the product, each with name, identifiers, concentration and function.",
+      "description": "Full list of substances intentionally added in the detergent or surfactant (Annex VI Part A(h)), each identified per CLP Art. 18(3) by name and, where applicable, its identification number. No amounts or concentrations are required. Not applicable to industrial and institutional detergents whose REACH SDS carries the equivalent.",
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Annex VI Part A, point (h)",
-      "x-citationNote": "Annex VI Part A(h) requires the full list of intentionally added substances, each identified per CLP Art. 18(3) (name plus identification number where one exists), with no amounts. It does not apply to industrial and institutional detergents whose SDS carries the equivalent, and the template cannot yet express that condition, so the field is optional. Label bands (Annex V Part A 1(h)(i)) and functions may be recorded per entry but are label content, not Part A(h).",
+      "x-citationNote": "Annex VI Part A(h) requires the full list of intentionally added substances, each identified per CLP Art. 18(3) (name plus identification number where one exists). No amounts or concentrations are required. Carry-over preservatives that must be labelled per Annex V Part A 1(h)(iii), Art. 58 of Reg. (EU) No 528/2012 or CLP Art. 18(3)(b) are also listed. The obligation does not apply to industrial and institutional detergents, or surfactants, for which an Art. 31 REACH SDS provides the equivalent; the template captures this via requiredBy (consumer: required; industrial_institutional: conditional).",
       "x-iri": "https://tracepass.eu/voc/dpp/ingredients"
     },
     "surfactantsTotal": {
@@ -744,11 +744,21 @@
     "complianceDemonstrated": {
       "type": "boolean",
       "title": "Compliance Demonstrated",
-      "description": "The manufacturer's statement that compliance of the detergent or end-user surfactant with Reg (EU) 2026/405 has been demonstrated (Annex VI Part A(g); Art. 21(2)(b)). Made by the manufacturer; the platform only records it. References to other Union law complied with belong in the EU declaration of conformity.",
+      "description": "The manufacturer's statement that compliance of the detergent or end-user surfactant with Reg (EU) 2026/405 has been demonstrated (Annex VI Part A(g) first limb). Made by the manufacturer; the platform only records it. The second limb of point (g) — references to other Union law — is captured in a separate field.",
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Annex VI Part A, point (g)",
       "x-iri": "https://tracepass.eu/voc/dpp/complianceDemonstrated"
+    },
+    "unionLawReferences": {
+      "type": "array",
+      "title": "Other Union Law Complied With",
+      "description": "Where relevant, references to other Union law with which the detergent or end-user surfactant complies (Annex VI Part A(g) second limb of Regulation (EU) 2026/405). Conditional: only required where applicable.",
+      "x-regulation": "32026R0405",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
+      "x-provision": "Annex VI Part A, point (g) second limb",
+      "x-citationNote": "Annex VI Part A(g) second limb: where relevant, references to other Union law with which the detergent or end-user surfactant complies. Conditional ('where relevant') for all subcategories. Distinct from the compliance-demonstrated field which captures the first limb (the statement itself). The passport duty applies from 23 September 2029 (Art. 21 with Annex VI Part A).",
+      "x-iri": "https://tracepass.eu/voc/dpp/unionLawReferences"
     }
   }
 }

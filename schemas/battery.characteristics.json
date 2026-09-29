@@ -24,6 +24,8 @@
     "roleOfEndUsersInWastePrevention",
     "informationOnSeparateCollection",
     "informationOnCollectionAndEndOfLifeTreatment",
+    "safetyInstructionsWasteBatteries",
+    "impactOfHazardousSubstances",
     "dismantlingInformation",
     "sparePartsInformation",
     "safetyInformationEndOfLife",
@@ -463,6 +465,24 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(s) with Art. 74(1)(c)",
       "x-iri": "https://tracepass.eu/voc/dpp/informationOnCollectionAndEndOfLifeTreatment"
+    },
+    "safetyInstructionsWasteBatteries": {
+      "type": "string",
+      "title": "Safety Instructions for Waste Batteries",
+      "description": "Safety instructions for handling waste batteries, including regarding risks associated with batteries containing lithium and their handling (Annex XIII 1(s) carrying Art. 74(1)(d)).",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(s) with Art. 74(1)(d)",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyInstructionsWasteBatteries"
+    },
+    "impactOfHazardousSubstances": {
+      "type": "string",
+      "title": "Impact of Hazardous Substances",
+      "description": "Information on the impact of substances, in particular hazardous substances, present in batteries on the environment and human health or safety of persons, including the impact due to inappropriate discarding of waste batteries (Annex XIII 1(s) carrying Art. 74(1)(f)).",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(s) with Art. 74(1)(f)",
+      "x-iri": "https://tracepass.eu/voc/dpp/impactOfHazardousSubstances"
     },
     "dismantlingInformation": {
       "type": "string",

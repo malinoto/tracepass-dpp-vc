@@ -280,6 +280,10 @@
       "complianceDemonstrated": {
         "@id": "https://tracepass.eu/voc/dpp/complianceDemonstrated",
         "@type": "xsd:boolean"
+      },
+      "unionLawReferences": {
+        "@id": "https://tracepass.eu/voc/dpp/unionLawReferences",
+        "@container": "@set"
       }
     }
   ]
