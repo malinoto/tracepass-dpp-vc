@@ -611,7 +611,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(n)",
-      "x-citationNote": "Initial round trip energy efficiency, and the same at 50% of cycle-life, is publicly accessible passport content from 18 Feb 2027. It binds for LMT, industrial >2 kWh and EV batteries; the field is not flagged required at template level only because the duty is not uniform across battery types — see validation.requiredBy.",
+      "x-citationNote": "Initial round-trip energy efficiency, and the same at 50 % of cycle-life, is publicly accessible passport content from 18 Feb 2027. It binds for LMT and EV batteries; for industrial >2 kWh it applies when the battery is rechargeable (conditional — see validation.requiredBy). Art. 77 carries the passport obligation; Annex XIII 1(n) is where the content item sits.",
       "x-iri": "https://tracepass.eu/voc/dpp/initialEnergyRoundTripEfficiency"
     },
     "initialInternalResistancePack": {
@@ -807,7 +807,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. It binds from 18 Feb 2027 for LMT, industrial >2 kWh and EV batteries; the template-level flag is false because the duty varies by battery type — see validation.requiredBy.",
+      "x-citationNote": "Annex XIII point 4 is per-battery in-service data accessible ONLY to persons with a legitimate interest, never to the public. State of Certified Energy (SOCE) is EV-specific per Art. 14 and Annex VII: it is the certified remaining energy for EV traction batteries, measured against the Art. 14 protocol. LMT and industrial >2 kWh batteries report the five granular Annex XIII 4(b) state-of-health metrics instead (remainingCapacity, remainingPowerCapability, remainingRoundTripEfficiency, evolutionOfSelfDischargeRate, currentInternalResistancePack). Binds from 18 Feb 2027.",
       "x-iri": "https://tracepass.eu/voc/dpp/stateOfCertifiedEnergy"
     },
     "remainingCapacity": {
@@ -819,7 +819,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. It binds from 18 Feb 2027 for LMT, industrial >2 kWh and EV batteries; the template-level flag is false because the duty varies by battery type — see validation.requiredBy.",
+      "x-citationNote": "Annex XIII point 4 is per-battery in-service data accessible ONLY to persons with a legitimate interest, never to the public. Remaining capacity is required for LMT batteries and stationary storage systems (industrial >2 kWh); it is NOT required for EV traction batteries (which report SOCE instead under Art. 14). Binds from 18 Feb 2027 — see validation.requiredBy for per-category applicability.",
       "x-iri": "https://tracepass.eu/voc/dpp/remainingCapacity"
     },
     "remainingPowerCapability": {
@@ -914,7 +914,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. It binds from 18 Feb 2027 for LMT, industrial >2 kWh and EV batteries; the template-level flag is false because the duty varies by battery type — see validation.requiredBy.",
+      "x-citationNote": "Annex XIII point 4 is per-battery in-service data accessible ONLY to persons with a legitimate interest, never to the public. Evolution of self-discharge rate is required for LMT batteries and stationary storage systems (industrial >2 kWh); it is NOT applicable to EV traction batteries. Binds from 18 Feb 2027 — see validation.requiredBy for per-category applicability.",
       "x-iri": "https://tracepass.eu/voc/dpp/evolutionOfSelfDischargeRate"
     },
     "numberOfFullEquivalentChargingCycles": {
@@ -1090,7 +1090,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(a)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. It binds from 18 Feb 2027 for LMT, industrial >2 kWh and EV batteries; the template-level flag is false because the duty varies by battery type — see validation.requiredBy.",
+      "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. Binds from 18 Feb 2027. Energy round-trip efficiency (Annex XIII 4(a)) is qualified ‘where applicable’ by the Regulation — all battery categories include it when the measurement is available; the obligation is conditional on applicability, not on battery category, so no per-category requiredBy flag is set.",
       "x-iri": "https://tracepass.eu/voc/dpp/dynamicEnergyRoundTripEfficiency"
     },
     "dynamicRatedCapacity": {
@@ -1142,74 +1142,74 @@
     },
     "preConsumerRecycledNickelShare": {
       "type": "number",
-      "title": "Pre-Consumer Recycled Nickel Share",
-      "description": "Percentage of Nickel from pre-consumer recycled waste in the battery's active materials. Complements the combined recycledContentNickel figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "title": "Recycled Content — Nickel (battery manufacturing waste)",
+      "description": "Voluntary breakdown of recycledContentNickel showing the share sourced from battery manufacturing waste (Art. 3(1)(51)). The combined recycledContentNickel figure is the Art. 8(1) passport obligation; this split does not become binding unless the Art. 8(1) delegated act (not yet adopted) explicitly requires it.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (1e)",
-      "x-citationNote": "Annex XIII 1(e) carries the recycled content information contained in the Art. 8(1) documentation into the passport. Art. 8 recognises PRE-consumer and post-consumer recyclate differently, and the share targets themselves phase in from 18 Aug 2031, so the passport item exists before the minima bite.",
+      "x-citationNote": "Annex XIII 1(e) passport content under Art. 8(1). The combined recycledContentNickel figure is the passport obligation; this field records only the battery manufacturing waste component (Art. 3(1)(51)), as a voluntary breakdown. Art. 8 minimum shares (from 18 Aug 2031 for EV, from 18 Aug 2036 for LMT) apply to the combined share; this split becomes binding only if the Art. 8(1) delegated act requires it (not yet adopted). Applies only to batteries that contain nickel in their active materials.",
       "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledNickelShare"
     },
     "preConsumerRecycledCobaltShare": {
       "type": "number",
-      "title": "Pre-Consumer Recycled Cobalt Share",
-      "description": "Percentage of Cobalt from pre-consumer recycled waste in the battery's active materials. Complements the combined recycledContentCobalt figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "title": "Recycled Content — Cobalt (battery manufacturing waste)",
+      "description": "Voluntary breakdown of recycledContentCobalt showing the share sourced from battery manufacturing waste (Art. 3(1)(51)). The combined recycledContentCobalt figure is the Art. 8(1) passport obligation; this split does not become binding unless the Art. 8(1) delegated act (not yet adopted) explicitly requires it.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (1e)",
-      "x-citationNote": "Annex XIII 1(e) passport content, sourced from the Art. 8(1) recycled-content documentation. The Art. 8 minimum shares apply from 18 Aug 2031.",
+      "x-citationNote": "Annex XIII 1(e) passport content under Art. 8(1). The combined recycledContentCobalt figure is the passport obligation; this field records only the battery manufacturing waste component (Art. 3(1)(51)), as a voluntary breakdown. Art. 8 minimum shares (from 18 Aug 2031 for EV, from 18 Aug 2036 for LMT) apply to the combined share; this split becomes binding only if the Art. 8(1) delegated act requires it (not yet adopted). Applies only to batteries that contain cobalt in their active materials.",
       "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledCobaltShare"
     },
     "preConsumerRecycledLithiumShare": {
       "type": "number",
-      "title": "Pre-Consumer Recycled Lithium Share",
-      "description": "Percentage of Lithium from pre-consumer recycled waste in the battery's active materials. Complements the combined recycledContentLithium figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "title": "Recycled Content — Lithium (battery manufacturing waste)",
+      "description": "Voluntary breakdown of recycledContentLithium showing the share sourced from battery manufacturing waste (Art. 3(1)(51)). The combined recycledContentLithium figure is the Art. 8(1) passport obligation; this split does not become binding unless the Art. 8(1) delegated act (not yet adopted) explicitly requires it.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (1e)",
-      "x-citationNote": "Annex XIII 1(e) passport content, sourced from the Art. 8(1) recycled-content documentation. The Art. 8 minimum shares apply from 18 Aug 2031.",
+      "x-citationNote": "Annex XIII 1(e) passport content under Art. 8(1). The combined recycledContentLithium figure is the passport obligation; this field records only the battery manufacturing waste component (Art. 3(1)(51)), as a voluntary breakdown. Art. 8 minimum shares (from 18 Aug 2031 for EV, from 18 Aug 2036 for LMT) apply to the combined share; this split becomes binding only if the Art. 8(1) delegated act requires it (not yet adopted). Applies only to batteries that contain lithium in their active materials.",
       "x-iri": "https://tracepass.eu/voc/dpp/preConsumerRecycledLithiumShare"
     },
     "postConsumerRecycledNickelShare": {
       "type": "number",
-      "title": "Post-Consumer Recycled Nickel Share",
-      "description": "Percentage of Nickel from post-consumer recycled waste in the battery's active materials. Complements the combined recycledContentNickel figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "title": "Recycled Content — Nickel (post-consumer waste)",
+      "description": "Voluntary breakdown of recycledContentNickel showing the share sourced from post-consumer recycled waste. The combined recycledContentNickel figure is the Art. 8(1) passport obligation; Art. 8(2) minimum shares are set against the combined share, not the post-consumer component alone. This split does not become binding unless the Art. 8(1) delegated act (not yet adopted) explicitly requires it.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (1e)",
-      "x-citationNote": "Annex XIII 1(e) passport content, sourced from the Art. 8(1) recycled-content documentation; post-consumer recyclate is the share the Art. 8 targets are written against, applying from 18 Aug 2031.",
+      "x-citationNote": "Annex XIII 1(e) passport content under Art. 8(1). The combined recycledContentNickel figure is the passport obligation; this field records only the post-consumer recycled component, as a voluntary breakdown. Art. 8(2) minimum shares (from 18 Aug 2031) are set against the COMBINED share, not the post-consumer component alone; the post-consumer/manufacturing-waste split becomes binding only if the Art. 8(1) delegated act requires it (not yet adopted). Applies only to batteries that contain nickel in their active materials.",
       "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledNickelShare"
     },
     "postConsumerRecycledCobaltShare": {
       "type": "number",
-      "title": "Post-Consumer Recycled Cobalt Share",
-      "description": "Percentage of Cobalt from post-consumer recycled waste in the battery's active materials. Complements the combined recycledContentCobalt figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "title": "Recycled Content — Cobalt (post-consumer waste)",
+      "description": "Voluntary breakdown of recycledContentCobalt showing the share sourced from post-consumer recycled waste. The combined recycledContentCobalt figure is the Art. 8(1) passport obligation; Art. 8(2) minimum shares are set against the combined share, not the post-consumer component alone. This split does not become binding unless the Art. 8(1) delegated act (not yet adopted) explicitly requires it.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (1e)",
-      "x-citationNote": "Annex XIII 1(e) passport content, sourced from the Art. 8(1) recycled-content documentation; the Art. 8 minimum shares apply from 18 Aug 2031.",
+      "x-citationNote": "Annex XIII 1(e) passport content under Art. 8(1). The combined recycledContentCobalt figure is the passport obligation; this field records only the post-consumer recycled component, as a voluntary breakdown. Art. 8(2) minimum shares (from 18 Aug 2031) are set against the COMBINED share, not the post-consumer component alone; the post-consumer/manufacturing-waste split becomes binding only if the Art. 8(1) delegated act requires it (not yet adopted). Applies only to batteries that contain cobalt in their active materials.",
       "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledCobaltShare"
     },
     "postConsumerRecycledLithiumShare": {
       "type": "number",
-      "title": "Post-Consumer Recycled Lithium Share",
-      "description": "Percentage of Lithium from post-consumer recycled waste in the battery's active materials. Complements the combined recycledContentLithium figure by splitting it into waste-origin streams per Annex XIII 1(e).",
+      "title": "Recycled Content — Lithium (post-consumer waste)",
+      "description": "Voluntary breakdown of recycledContentLithium showing the share sourced from post-consumer recycled waste. The combined recycledContentLithium figure is the Art. 8(1) passport obligation; Art. 8(2) minimum shares are set against the combined share, not the post-consumer component alone. This split does not become binding unless the Art. 8(1) delegated act (not yet adopted) explicitly requires it.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (1e)",
-      "x-citationNote": "Annex XIII 1(e) passport content, sourced from the Art. 8(1) recycled-content documentation; the Art. 8 minimum shares apply from 18 Aug 2031.",
+      "x-citationNote": "Annex XIII 1(e) passport content under Art. 8(1). The combined recycledContentLithium figure is the passport obligation; this field records only the post-consumer recycled component, as a voluntary breakdown. Art. 8(2) minimum shares (from 18 Aug 2031) are set against the COMBINED share, not the post-consumer component alone; the post-consumer/manufacturing-waste split becomes binding only if the Art. 8(1) delegated act requires it (not yet adopted). Applies only to batteries that contain lithium in their active materials.",
       "x-iri": "https://tracepass.eu/voc/dpp/postConsumerRecycledLithiumShare"
     },
     "originalPowerCapabilityAt80Soc": {
@@ -1251,31 +1251,31 @@
     "cadmiumLeadSymbolsUrl": {
       "type": "string",
       "title": "Cadmium and Lead Symbols URL",
-      "description": "URI linking to the artwork or documentation for the cadmium and lead chemical symbols required to be marked on the battery per Art. 13(5). Complements the cadmiumSymbol and leadSymbol boolean fields, which only indicate presence.",
+      "description": "URI linking to the artwork or documentation for the cadmium and/or lead chemical symbols required to be marked on qualifying batteries per Annex XIII 1(q) (as corrected by 32023R1542R(13)) with Art. 13(4) and (5). Applicable only to batteries containing more than 0.002 % cadmium or more than 0.004 % lead by weight. The symbol is printed on the battery; this URL is a GEFEG data-model format choice to link the artwork, not a substitute for the marking itself.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Annex XIII (1s)",
-      "x-citationNote": "Annex XIII 1(s) carries the Art. 74(1)(a)-(f) waste-management information into the publicly accessible passport, and 1(q) cross-references the Art. 13(4) and (5) marking requirements. The Cd/Pb symbols themselves are discharged by printing them on the battery; a link documents that marking rather than replacing it.",
+      "x-provision": "Annex XIII 1(q) as corrected by 32023R1542R(13) together with Art. 13(5)",
+      "x-citationNote": "Annex XIII 1(q), as corrected by 32023R1542R(13) (corrigendum C4, changing '1s' to '1q'), cross-references the Art. 13(4) and (5) marking requirements into the passport. The obligation is CONDITIONAL: Art. 13(5) applies only to batteries containing more than 0.002 % cadmium or more than 0.004 % lead by weight. The symbol itself is discharged by printing it physically on the battery; this URI field is a GEFEG data-model choice to link the artwork or documentation — it does not replace the marking obligation.",
       "x-iri": "https://tracepass.eu/voc/dpp/cadmiumLeadSymbolsUrl"
     },
     "componentPartNumbersUrl": {
       "type": "string",
       "title": "Component Part Numbers URL",
-      "description": "URI linking to a list of part numbers for components and spare parts of the battery per Annex XIII 2(b). Complements the componentPartNumbers array field, which holds the structured part-number list; this URI field satisfies the GEFEG format:uri requirement.",
+      "description": "URI linking to a list of part numbers for components and spare parts of the battery. Annex XIII 2(b) mandates the data (carried by the componentPartNumbers array); this URI field is a GEFEG format:uri choice, not an independent legal obligation. Accessible only to persons with a legitimate interest.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (2b)",
-      "x-citationNote": "Annex XIII 2(b) — part numbers for components and contact details of sources for replacement spares — is passport content accessible only to persons with a legitimate interest and the Commission, not to the public.",
+      "x-citationNote": "Annex XIII 2(b) requires the component part-number data (carried by the componentPartNumbers array field), not a URI per se. This URL field is a GEFEG data-model format choice (format:uri requirement) — it is not an independent legal duty. Omit if the componentPartNumbers array already carries the structured part-number list.",
       "x-iri": "https://tracepass.eu/voc/dpp/componentPartNumbersUrl"
     },
     "sparePartsSourcesUrl": {
       "type": "string",
       "title": "Spare Parts Sources URL",
-      "description": "URI linking to information on sources where spare parts can be obtained for the battery per Annex XIII 2(b). When present, takes precedence over the URL derived from the sparePartsInformation.catalogUrl field in the GEFEG export.",
+      "description": "URI linking to information on sources where spare parts can be obtained for the battery. Annex XIII 2(b) mandates the data (carried by the sparePartsInformation array); this URI field is a GEFEG format:uri choice, not an independent legal obligation. Accessible only to persons with a legitimate interest.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII (2b)",
-      "x-citationNote": "Annex XIII 2(b) covers contact details of sources for replacement spares, accessible only to persons with a legitimate interest and the Commission.",
+      "x-citationNote": "Annex XIII 2(b) requires the spare-parts source data (carried by the sparePartsInformation array field), not a URI per se. This URL field is a GEFEG data-model format choice (format:uri requirement) — it is not an independent legal duty. Omit if the sparePartsInformation array already carries the structured source details.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsSourcesUrl"
     },
     "accidentsInformationUrl": {
