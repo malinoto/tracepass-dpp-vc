@@ -326,6 +326,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 7",
       "x-citationNote": "It sets minimum recycled content for plastic packaging from 1 Jan 2030, with the calculation and verification methodology to be set by delegated act under Art. 7(8). The duty binds the packaging, not the packaged product, and is not in force.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "PPWR Art. 7 recycled-content minima, effective 2030, methodology pending an implementing act under Art. 7(8)",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingRecycledContent"
     },
     "packagingRecyclabilityGrade": {
@@ -343,6 +345,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 6",
       "x-citationNote": "Recyclability grades A-E depend on design-for-recycling criteria set by delegated acts under Art. 6(4), not adopted, and apply from 2030. Nothing today lets the grade be computed or requires it.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "PPWR Art. 6 recyclability performance grades A-E, pending a delegated act; applies from 2030",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingRecyclabilityGrade"
     },
     "packagingWeight": {
@@ -355,6 +359,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32025R0040",
       "x-provision": "Art. 10",
       "x-citationNote": "Packaging weight is an input to the Art. 10 minimisation assessment, which applies from 2030 against the Annex IV criteria under a delegated methodology. No in-force provision requires declaring it, and the duty attaches to the packaging rather than to this product.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "PPWR Art. 6/10 minimisation, pending the implementing acts",
       "x-iri": "https://tracepass.eu/voc/dpp/packagingWeight"
     },
     "packagingToProductRatio": {

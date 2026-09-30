@@ -495,6 +495,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Art. 21(2)(h), (4)",
       "x-citationNote": "Reg. (EU) 2026/405 Art. 21(2)(h) and 21(4) require the passport to be reached through a data carrier linked to a persistent unique product identifier; the carrier's technical requirements come from the Art. 21(10) implementing act, which is not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Reg. (EU) 2026/405 Art. 21(2)(h) and 21(4) require the passport to be reached through a data carrier linked to a persistent unique product identifier; the carrier's technical requirements come from the Art. 21(10) implementing act, which is not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
     },
     "dataCarrierUri": {
@@ -505,6 +507,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Art. 21(2)(h)",
       "x-citationNote": "Reg. (EU) 2026/405 Art. 21(2)(h) and 21(4) require the passport to be reached through a data carrier linked to a persistent unique product identifier; the carrier's technical requirements come from the Art. 21(10) implementing act, which is not adopted. GS1 Digital Link is one implementation, not a legal requirement.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Reg. (EU) 2026/405 Art. 21(2)(h) and 21(4) require the passport to be reached through a data carrier linked to a persistent unique product identifier; the carrier's technical requirements come from the Art. 21(10) implementing act, which is not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierUri"
     },
     "passportValidFrom": {
@@ -542,6 +546,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Art. 21(2)(f)",
       "x-citationNote": "Reg. (EU) 2026/405 Art. 21(2)(f) makes passport access follow the access rights the Art. 21(10)(d) implementing act will lay down; that act is not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Reg. (EU) 2026/405 Art. 21(2)(f) makes passport access follow the access rights the Art. 21(10)(d) implementing act will lay down; that act is not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "ingredients": {
@@ -615,6 +621,8 @@
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-citationNote": "Optical brightener disclosure is an Annex V Part A labelling item under Reg (EU) 2026/405, applying from 23 Sep 2029. It is not among the nine Annex VI Part A passport points.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Optical brightener / whitening agent disclosure is a detergents-labelling item under Reg (EU) 2026/405, applicable 23 Sep 2029; not in force.",
       "x-iri": "https://tracepass.eu/voc/dpp/opticalBrighteners"
     },
     "enzymes": {

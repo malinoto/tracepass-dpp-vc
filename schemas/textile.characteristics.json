@@ -45,6 +45,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)(a)",
       "x-citationNote": "Nothing requires an EU responsible person for a textile product today: GPSR Art. 16 sits in Chapter III Section 1, which Art. 2(1)(b) disapplies because Reg. (EU) 1007/2011 is Union harmonisation legislation, and Reg. (EU) 2019/1020 Art. 4 covers only the acts listed in its Art. 4(5), which do not include it. GPSR Art. 19(b) therefore has no responsible person to name in an online offer.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex III(k) lists the EU responsible operator's name, contact details and identifier among the data a textile delegated act under Art. 4 may put in the passport (working plan COM(2025) 187: 2027); none is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/euResponsiblePerson"
     },
     "productName": {
@@ -70,6 +72,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
       "x-citationNote": "ESPR Art. 9(2) does NOT mandate this datum. It tells the Commission what a DELEGATED ACT must specify — 'the requirements related to the digital product passport laid down in the delegated acts adopted pursuant to Article 4 shall … specify the following: (a) the data to be included …'. No furniture/textile delegated act is adopted, so nothing here is legally required yet. Anticipated under the coming act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Anticipated DPP content under ESPR Annex III.",
       "x-iri": "https://tracepass.eu/voc/dpp/productCategory"
     },
     "productDescription": {
@@ -80,6 +84,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
       "x-citationNote": "ESPR Art. 9(2) does NOT mandate this datum. It tells the Commission what a DELEGATED ACT must specify — 'the requirements related to the digital product passport laid down in the delegated acts adopted pursuant to Article 4 shall … specify the following: (a) the data to be included …'. No furniture/textile delegated act is adopted, so nothing here is legally required yet. Anticipated under the coming act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Anticipated DPP content under ESPR Annex III.",
       "x-iri": "https://tracepass.eu/voc/dpp/productDescription"
     },
     "fiberComposition": {
@@ -102,6 +108,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(h) via Art. 7(2)(b)(i), pending a textile delegated act under Art. 4.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "careInstructions": {
@@ -112,6 +120,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 3758.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Art. 7(2)(b)(ii) use and maintenance information, pending a delegated act. No EU instrument mandates care labelling: ISO 3758 is a standard, GINETEX symbols are industry IP, and Reg. (EU) 1007/2011 mentions care labels only in its Art. 24 review clause.",
       "x-iri": "https://tracepass.eu/voc/dpp/careInstructions"
     },
     "substancesOfConcern": {
@@ -167,6 +177,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 14067.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(n) via Art. 7(2)(b)(i), pending a textile delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "environmentalFootprintScore": {
@@ -178,6 +190,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: EU PEF.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(m) via Art. 7(2)(b)(i), pending a textile delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/environmentalFootprintScore"
     },
     "recyclabilityScore": {
@@ -188,6 +202,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: JRC methodology.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(d), pending a textile delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityScore"
     },
     "recyclabilityLabel": {
@@ -202,6 +218,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(d), pending a textile delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityLabel"
     },
     "monoMaterialPercentage": {
@@ -214,6 +232,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Loosely ESPR Annex I(d) design-for-recycling; not a named parameter.",
       "x-iri": "https://tracepass.eu/voc/dpp/monoMaterialPercentage"
     },
     "expectedLifespan": {
@@ -224,6 +244,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(a) durability, pending a textile delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/expectedLifespan"
     },
     "durabilityPillingResistance": {
@@ -235,6 +257,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 12945.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(a). Cites Art. 7(2)(c), which is the 'clear and understandable' drafting requirement — wrong provision.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityPillingResistance"
     },
     "durabilityAbrasionResistance": {
@@ -246,6 +270,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 12947.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(a). Same wrong provision.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityAbrasionResistance"
     },
     "durabilityColorFastnessWashing": {
@@ -257,6 +283,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 105-C06.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(a). Same wrong provision.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityColorFastnessWashing"
     },
     "durabilityColorFastnessLight": {
@@ -268,6 +296,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 105-B02.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(a). Same wrong provision.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityColorFastnessLight"
     },
     "durabilityDimensionalStability": {
@@ -280,6 +310,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 5077.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(a). Same wrong provision.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityDimensionalStability"
     },
     "durabilityTearStrength": {
@@ -292,6 +324,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text. Reference: ISO 13937.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(a). Same wrong provision.",
       "x-iri": "https://tracepass.eu/voc/dpp/durabilityTearStrength"
     },
     "repairInstructions": {
@@ -301,6 +335,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/repairInstructions"
     },
     "sparePartsAvailability": {
@@ -310,6 +346,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsAvailability"
     },
     "disassemblyInstructions": {
@@ -319,6 +357,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/disassemblyInstructions"
     },
     "recyclingInstructions": {
@@ -328,6 +368,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclingInstructions"
     },
     "collectionPointsUrl": {
@@ -337,6 +379,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/collectionPointsUrl"
     },
     "takeBackProgram": {
@@ -346,6 +390,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/takeBackProgram"
     },
     "microplasticsRelease": {
@@ -356,6 +402,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(p) microplastic and nanoplastic release. Reg (EU) 2023/2055 restricts INTENTIONALLY ADDED microplastics; wash-shedding is unintentional and out of scope.",
       "x-iri": "https://tracepass.eu/voc/dpp/microplasticsRelease"
     },
     "microplasticsSheddingRate": {
@@ -367,6 +415,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR Art. 7 does NOT mandate this datum. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4', and Art. 7(2) then constrains what such an act must contain. It binds the Commission, not the product. No furniture/textile delegated act is adopted, so this is anticipated under the coming act and voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Annex I(p). Nothing in force mandates disclosure.",
       "x-iri": "https://tracepass.eu/voc/dpp/microplasticsSheddingRate"
     },
     "supplyChainTraceability": {
@@ -376,6 +426,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/supplyChainTraceability"
     },
     "weavingCountry": {
@@ -409,6 +461,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/dyeingMethod"
     },
     "finishingProcesses": {
@@ -418,6 +472,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/finishingProcesses"
     },
     "waterConsumptionLiters": {
@@ -453,6 +509,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/transportDistanceKm"
     },
     "transportMode": {
@@ -468,6 +526,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/transportMode"
     },
     "laborConditionsCertification": {
@@ -477,6 +537,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text. Reference: SA8000.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/laborConditionsCertification"
     },
     "animalWelfareStatus": {
@@ -486,6 +548,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "Cites ESPR 32024R1781 with no provision, because none applies yet: ESPR mandates no product data of its own (Art. 7(1) and Art. 9(2) both defer to a delegated act under Art. 4, and no textile act is adopted). Anticipated under the coming textile delegated act; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Pending a product-group delegated act under ESPR Art. 4; no instrument in force compels this.",
       "x-iri": "https://tracepass.eu/voc/dpp/animalWelfareStatus"
     },
     "packagingRecycledContentPct": {

@@ -174,6 +174,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Art. 7(2)",
       "x-citationNote": "Art. 7(1) requires a carbon footprint declaration and Annex XIII 1(c) carries that information into the passport, but the declaration's format and the calculation methodology come from a delegated act that is not adopted. The label form in particular does not yet exist to be produced.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintLabel"
     },
     "meaningOfLabelsAndSymbols": {
@@ -222,6 +224,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "Annex XIII 1(c) makes the Art. 7(1) and (2) carbon footprint information passport content, so this is a genuine future passport field — but the Art. 7(1) declaration depends on a calculation methodology delegated act that has not been adopted, so nothing today fixes how the figure is computed.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintTotal"
     },
     "cfRawMaterialAcquisition": {
@@ -233,6 +237,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c). The per-stage breakdown follows the calculation methodology that the unadopted delegated act will set.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfRawMaterialAcquisition"
     },
     "cfMainProductProduction": {
@@ -244,6 +250,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c), pending the calculation methodology delegated act.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfMainProductProduction"
     },
     "cfDistribution": {
@@ -255,6 +263,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c), pending the calculation methodology delegated act.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfDistribution"
     },
     "cfEndOfLifeRecycling": {
@@ -266,6 +276,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "A lifecycle stage of the Art. 7(1) declaration, carried into the passport by Annex XIII 1(c), pending the calculation methodology delegated act.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/cfEndOfLifeRecycling"
     },
     "carbonFootprintPerformanceClass": {
@@ -285,6 +297,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(c)",
       "x-citationNote": "Performance classes are carried into the passport by Annex XIII 1(c), but the classes themselves are established by a delegated act that has not been adopted. There is no class to declare until it is.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintPerformanceClass"
     },
     "carbonFootprintStudyUrl": {
@@ -295,6 +309,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Art. 7(1)(g)",
       "x-citationNote": "Art. 7(1)(g) puts a web link to the public version of the study supporting the carbon footprint values into the carbon footprint declaration, which Annex XIII 1(c) carries into the passport; the declaration's methodology and format await acts that are not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint declaration format pending the implementing act (DP 17/18). Required when the implementing act is adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintStudyUrl"
     },
     "supplyChainDueDiligenceReport": {
@@ -305,6 +321,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(d)",
       "x-citationNote": "Annex XIII 1(d) makes the Art. 52(3) due diligence report passport content, so this is genuine passport data — but the due diligence obligations apply from 18 Aug 2027 (Art. 48(1) as amended by Reg. (EU) 2025/1561), and the Commission's data-points guidance v2.0 (DP 19) puts the report in the passport from Aug 2028, later than the passport itself.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DG GROW guidance v2.0 (15 Aug 2026), DP 19: not to be filled/displayed as of February 2027; required from August 2027 as provided in Art. 48(1) (due-diligence obligations postponed by Regulation (EU) 2025/1561).",
       "x-iri": "https://tracepass.eu/voc/dpp/supplyChainDueDiligenceReport"
     },
     "dueDiligencePolicy": {
@@ -325,6 +343,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(d)",
       "x-citationNote": "Third-party verification is part of the Art. 52 due diligence regime, and its results support the Art. 52(3) report that Annex XIII 1(d) carries. The audit output itself is not separately enumerated as passport content.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DG GROW guidance v2.0 (15 Aug 2026), DP 19: not to be filled/displayed as of February 2027; required from August 2027 as provided in Art. 48(1) (due-diligence obligations postponed by Regulation (EU) 2025/1561).",
       "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyAuditResults"
     },
     "batteryChemistry": {
@@ -401,6 +421,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(e)",
       "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DG GROW guidance 'Digital Batteries Passport - data points by category' v2.0 (15 Aug 2026), DP 20-23: not to be filled/displayed as of February 2027; to be applied in line with Art. 8 and the relevant delegated act (recycled-content calculation/verification methodology, not adopted). Required when that act applies.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentCobalt"
     },
     "recycledContentLithium": {
@@ -413,6 +435,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(e)",
       "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DG GROW guidance 'Digital Batteries Passport - data points by category' v2.0 (15 Aug 2026), DP 20-23: not to be filled/displayed as of February 2027; to be applied in line with Art. 8 and the relevant delegated act (recycled-content calculation/verification methodology, not adopted). Required when that act applies.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentLithium"
     },
     "recycledContentNickel": {
@@ -425,6 +449,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(e)",
       "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DG GROW guidance 'Digital Batteries Passport - data points by category' v2.0 (15 Aug 2026), DP 20-23: not to be filled/displayed as of February 2027; to be applied in line with Art. 8 and the relevant delegated act (recycled-content calculation/verification methodology, not adopted). Required when that act applies.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentNickel"
     },
     "recycledContentLead": {
@@ -437,6 +463,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(e)",
       "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content information into the passport. Art. 8(1) applies from 18 August 2028 or 24 months after the calculation-methodology delegated act enters into force, whichever is later (LMT batteries from 18 August 2033); minimum shares apply from 18 August 2031 (Art. 8(2)) and 18 August 2036 (Art. 8(3)). The methodology act is not yet adopted, so the field is anticipated.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DG GROW guidance 'Digital Batteries Passport - data points by category' v2.0 (15 Aug 2026), DP 20-23: not to be filled/displayed as of February 2027; to be applied in line with Art. 8 and the relevant delegated act (recycled-content calculation/verification methodology, not adopted). Required when that act applies.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentLead"
     },
     "roleOfEndUsersInWastePrevention": {
@@ -529,6 +557,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(e)",
       "x-citationNote": "Annex XIII 1(e) carries the Art. 8(1) recycled-content figures into the passport by reference to the documentation that evidences them, which is what this link points at.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Evidence for the Annex XIII 1(e) recycled-content shares, which guidance v2.0 (DP 20-23) says are not to be filled/displayed as of February 2027 pending the Art. 8 delegated act. Required when those shares become required.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentDocumentation"
     },
     "batteryRemovabilityReplaceability": {

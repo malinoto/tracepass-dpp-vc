@@ -86,6 +86,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Origin/place of manufacture may become Annex III DPP content under a future tyre delegated act; not mandated today (no general EU origin-marking duty for tyres).",
       "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
     },
     "eprelRegistrationNumber": {
@@ -126,6 +128,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Data carrier is ESPR Art. 9(2)/Art. 10 DPP infrastructure, activated only by a future delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
     },
     "passportIssuer": {
@@ -136,6 +140,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Responsible DPP economic operator is Art. 9/Annex III content, pending a delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/passportIssuer"
     },
     "tyreSizeDesignation": {
@@ -274,6 +280,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Weight/mass is an ESPR Annex I resource-use parameter a future tyre delegated act may require; 'ESPR delegated act (tyres)' is not yet adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreWeightKg"
     },
     "fuelEfficiencyClass": {
@@ -385,6 +393,8 @@
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
       "x-citationNote": "Euro 7 (Reg (EU) 2024/1257) defines tyre abrasion as the mass of material lost and emitted into the environment, and provides for abrasion LIMITS per tyre class — but the limits in its Annex I are empty. Under Art. 15(2)–(3) they are set by delegated act referring to UN WP.29; where WP.29 has not adopted uniform provisions by 1 July 2026 (C1), 1 April 2028 (C2) or 1 April 2030 (C3), the Commission defines them itself, by delegated act due by 1 July 2027 (C1), 1 April 2029 (C2) and 1 April 2031 (C3). No act setting abrasion limits has been adopted, so there is no limit to meet and no prescribed method to report against yet.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Euro 7 empowers tyre abrasion limits (Art. 5/Annex) but the mg/km limits + UNECE TFTA method are set by delegated/UN acts not yet finalized.",
       "x-iri": "https://tracepass.eu/voc/dpp/tyreAbrasionRateMgKm"
     },
     "abrasionIndex": {
@@ -394,6 +404,8 @@
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
       "x-citationNote": "A relative abrasion index depends on the same pending UN WP.29 method as the absolute rate. Until that method exists an index has no defined basis, and Euro 7 is a type-approval regulation that would bind the vehicle or tyre approval rather than a product passport.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Relative abrasion index tied to the same Euro 7 tyre-abrasion regime, pending the UNECE convoy/drum method finalization.",
       "x-iri": "https://tracepass.eu/voc/dpp/abrasionIndex"
     },
     "abrasionTestMethod": {
@@ -407,6 +419,8 @@
       "x-regulation": "32024R1257",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1257",
       "x-citationNote": "The method — convoy-on-road versus laboratory drum — is exactly what the pending UN WP.29 work under Euro 7 must settle. Naming a method today records the basis of a voluntary measurement rather than compliance with a prescribed one.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Method (convoy-on-road vs lab drum) is defined by the pending UNECE WP.29 tyre-abrasion UN Regulation referenced by Euro 7.",
       "x-iri": "https://tracepass.eu/voc/dpp/abrasionTestMethod"
     },
     "testDistanceKm": {
@@ -453,6 +467,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Material composition is an ESPR Annex I(f) substances/composition parameter a future tyre delegated act may require; Art. 7(2)(a) alone mandates nothing and the delegated act is not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/billOfMaterials"
     },
     "naturalRubberContentPercentage": {
@@ -465,6 +481,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Material-composition parameter (Annex I) for a future tyre delegated act; Art. 7(2)(a) mandates nothing today.",
       "x-iri": "https://tracepass.eu/voc/dpp/naturalRubberContentPercentage"
     },
     "syntheticRubberContentPercentage": {
@@ -477,6 +495,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Material-composition parameter (Annex I) for a future tyre delegated act; Art. 7(2)(a) mandates nothing today.",
       "x-iri": "https://tracepass.eu/voc/dpp/syntheticRubberContentPercentage"
     },
     "recycledContentPercentage": {
@@ -489,6 +509,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(b)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Recycled-content share is ESPR Annex I(e) parameter; the cite to Art. 7(2)(b) is the wrong sub-point (7(2)(b) is the performance/durability triad, recycled content is Annex I(e)).",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "recycledRubberContentPercentage": {
@@ -585,6 +607,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon/environmental footprint is ESPR Annex I(g) parameter a future tyre delegated act may require; PEF is the methodology not the mandate. Art. 7(2)(a) alone mandates nothing.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprint"
     },
     "carbonFootprintMethodology": {
@@ -594,6 +618,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Methodology disclosure accompanies a future Annex I(g) footprint requirement; not mandated today.",
       "x-iri": "https://tracepass.eu/voc/dpp/carbonFootprintMethodology"
     },
     "fuelSavingsOverLifetimeLiters": {
@@ -646,6 +672,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(a)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Durability/expected life is an ESPR Art. 7(2)(b)(i) performance/durability parameter a future tyre delegated act may require; Art. 7(2)(a) is the wrong sub-point and nothing is mandated today.",
       "x-iri": "https://tracepass.eu/voc/dpp/expectedMileageKm"
     },
     "treadwearRating": {
@@ -698,6 +726,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Reparability/reusability (retreadability) is ESPR Art. 7(2)(b)(iii)-(iv) triad content for a future tyre delegated act; UNECE R108/R109 govern retreaded-tyre approval, not a DPP field. Art. 7(2)(c) does not exist as cited (7(2) has (a)-(c); the triad is 7(2)(b) romans).",
       "x-iri": "https://tracepass.eu/voc/dpp/retreadable"
     },
     "maximumRetreadCycles": {
@@ -728,6 +758,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Recyclability is ESPR Annex I(a-c)/Art. 7(2)(b) end-of-life parameter for a future tyre delegated act; nothing mandated today. Cite '7(2)(c)' misuses the sub-point.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage"
     },
     "recyclabilityBreakdown": {
@@ -738,6 +770,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "End-of-life recovery-pathway breakdown is Annex I recyclability parameter content for a future tyre delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityBreakdown"
     },
     "eltCollectionScheme": {
@@ -758,6 +792,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7(2)(c)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "End-of-life/dismantling information is Art. 7(2)(b) + Annex II(a)/Art.9 DPP content for a future tyre delegated act; '7(2)(c)' misuses the sub-point.",
       "x-iri": "https://tracepass.eu/voc/dpp/disassemblyInstructionsUrl"
     },
     "pyrolysisSuitability": {
@@ -886,6 +922,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DPP technical/schema requirements come from ESPR Art. 10 + implementing acts on DPP technical design, not yet adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/dppSchemaVersion"
     },
     "lastUpdatedAt": {
@@ -896,6 +934,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
       "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DPP update/maintenance obligations are Art. 10, operative only once a tyre delegated act + DPP implementing acts apply.",
       "x-iri": "https://tracepass.eu/voc/dpp/lastUpdatedAt"
     },
     "accessLevel": {
@@ -911,6 +951,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10(3)",
       "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Differentiated access rights are ESPR Art. 10/Art. 11 DPP-infrastructure content, pending implementing/delegated acts.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "dataFormat": {
@@ -921,6 +963,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9-10",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Machine-readable/interoperability format is Art. 10 + DPP implementing-act content, not yet adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataFormat"
     }
   }

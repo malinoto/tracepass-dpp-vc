@@ -147,10 +147,6 @@
         }
       ],
       "scipNotificationNumber": "a1b2c3d4-5e6f-4071-8a9b-0c1d2e3f4a5b",
-      "recycledContentCobalt": 16,
-      "recycledContentLithium": 6,
-      "recycledContentNickel": 6,
-      "recycledContentLead": 0,
       "roleOfEndUsersInWastePrevention": "End users must not dispose of the battery with household waste. Return it to the vehicle service network or an authorised collection point; reuse and repurposing are preferred to recycling.",
       "informationOnSeparateCollection": "Collected free of charge through the producer take-back scheme at authorised dealers and municipal collection points.",
       "informationOnCollectionAndEndOfLifeTreatment": "https://example.com/docs/EVP-0417-collection-eol.pdf",
@@ -164,7 +160,6 @@
         "availabilityUntil": "2041-11-30"
       },
       "safetyInformationEndOfLife": "Do not puncture, crush or immerse. Store below 30 °C at 30–50 % state of charge. In case of thermal runaway use large volumes of water; do not use CO2.",
-      "recycledContentDocumentation": "https://example.com/docs/EVP-0417-recycled-content-verification.pdf",
       "batteryRemovabilityReplaceability": "professional_removable",
       "ratedCapacity": 196,
       "nominalVoltage": 384,

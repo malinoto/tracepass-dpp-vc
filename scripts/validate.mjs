@@ -148,6 +148,23 @@ for (const cat of categories) {
   for (const k of props) if (!termKeys.includes(k)) fail(`${cat}: ${k} in schema but not in context`);
   for (const k of termKeys) if (!props.includes(k)) fail(`${cat}: ${k} in context but not in schema`);
 
+  // The battery example must not carry a data point the Commission says is "not
+  // to be filled/displayed as of February 2027" (guidance v2.0 DP 17-23; FAQ
+  // §7.6). Those properties are marked x-anticipated by the generator.
+  if (cat === "battery") {
+    const exKeys = new Set();
+    const walk = (o) => {
+      if (Array.isArray(o)) o.forEach(walk);
+      else if (o && typeof o === "object") for (const [k, v] of Object.entries(o)) { exKeys.add(k); walk(v); }
+    };
+    walk(example);
+    for (const k of props) {
+      if (schema.properties[k]["x-anticipated"] === true && exKeys.has(k)) {
+        fail(`battery: the example fills ${k}, which is x-anticipated (not to be filled/displayed yet).`);
+      }
+    }
+  }
+
   // No property may be required on the authority of a framework-only instrument, and
   // none may cite a provision that does not exist.
   const requiredKeys = new Set(schema.required ?? []);

@@ -94,6 +94,13 @@ non-zero on failure.
 direct emissions matter — it says Regulation (EU) 2023/956 Annex IV requires them, and links
 the record. A consumer can cite its source rather than take the schema's word for it.
 
+**`x-anticipated` marks a property whose obligation does not apply yet.** The instrument
+expected to require it is not in force, or has not been adopted. `x-anticipatedNote` says
+which act, and why. Do not read such a property as current data. For batteries, the
+Commission's data-point guidance says these are "not to be filled/displayed as of February
+2027", so the battery example leaves them out, and `validate.mjs` fails if it ever fills
+one.
+
 **`x-iri` resolves.** Fetch `https://tracepass.eu/voc/dpp/scope1DirectEmissions` and you get
 a SKOS concept with the definition and the owning instrument; ask for it with
 `Accept: text/html` and you get a readable page instead. A coined term that dereferences to

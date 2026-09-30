@@ -167,6 +167,13 @@ function generateCategory(category, template) {
       if (std) prop["x-standard"] = std;
       if (f.regulationRef?.kind && !celex) prop["x-sourceKind"] = f.regulationRef.kind;
     }
+    // A field required under an act that does not apply yet. Consumers must
+    // not treat it as current data; for batteries the Commission's data-point
+    // guidance says these are "not to be filled/displayed as of February 2027".
+    if (f.validation?.anticipated === true) {
+      prop["x-anticipated"] = true;
+      if (f.validation.anticipatedNote) prop["x-anticipatedNote"] = f.validation.anticipatedNote;
+    }
     prop["x-iri"] = iri;
 
     properties[f.key] = prop;

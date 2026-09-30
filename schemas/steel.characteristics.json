@@ -15,6 +15,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 9",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: GS1.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "A GTIN-14 is one possible form of the ESPR Art. 9(1) unique identifier; the specific choice of GTIN is not mandated.",
       "x-iri": "https://ref.gs1.org/voc/gtin"
     },
     "batchLotNumber": {
@@ -64,6 +66,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex I",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/productType"
     },
     "productName": {
@@ -80,6 +84,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex I",
       "x-citationNote": "CBAM Annex I covers iron and steel as CN 2601 12 00, all of Chapter 72 except the ferro-alloys listed under 7202 and scrap 7204, and headings 7301–7311, 7318 and 7326; aluminium as 7601, 7603–7614 and 7616. The CN code itself is the customs classification.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "http://data.europa.eu/xsp/cn2024/{code}0080"
     },
     "steelGradeDesignation": {
@@ -96,6 +102,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Anticipated DPP content under ESPR Art. 9(2)/Annex III",
       "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
     },
     "facilityId": {
@@ -106,6 +114,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/facilityId"
     },
     "primaryMaterialType": {
@@ -125,6 +135,8 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-citationNote": "CBAM identifies goods by CN code, which already carries the steel-type distinction. A separate material-type field is not a CBAM data element, and CBAM in any case binds the importer's declaration rather than the producer's passport.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM benchmarking distinguishes steel types via CN code, but a separate 'material type' field is not a mandated CBAM data element; folded into CN code.",
       "x-iri": "https://tracepass.eu/voc/dpp/primaryMaterialType"
     },
     "chemicalComposition": {
@@ -149,6 +161,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 5(5)(j)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: Delegated act TBD.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Recycled content is ESPR Annex I product parameter (e); a delegated act may set a threshold + disclosure, but none exists for steel.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "preConsumerScrapPct": {
@@ -271,6 +285,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/productionRoute"
     },
     "productionDate": {
@@ -280,6 +296,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Manufacture date is generic DPP metadata a future ESPR act may specify; not mandated now.",
       "x-iri": "https://tracepass.eu/voc/dpp/productionDate"
     },
     "heatNumber": {
@@ -316,6 +334,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 4",
       "x-citationNote": "CBAM counts only direct emissions for both iron and steel and aluminium (Annex II), so electricity data is not a CBAM data element for these goods. It is recorded as an input to the carbon footprint that the scheduled ESPR iron and steel delegated act (COM(2025) 187: 2026) may require; that act is not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM counts only direct emissions for both iron and steel and aluminium (Annex II), so electricity data is not a CBAM data element for these goods. It is recorded as an input to the carbon footprint that the scheduled ESPR iron and steel delegated act (COM(2025) 187: 2026) may require; that act is not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/electricityGridIntensity"
     },
     "renewableSharePct": {
@@ -338,6 +358,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 4",
       "x-citationNote": "CBAM counts only direct emissions for both iron and steel and aluminium (Annex II), so electricity data is not a CBAM data element for these goods. It is recorded as an input to the carbon footprint that the scheduled ESPR iron and steel delegated act (COM(2025) 187: 2026) may require; that act is not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM counts only direct emissions for both iron and steel and aluminium (Annex II), so electricity data is not a CBAM data element for these goods. It is recorded as an input to the carbon footprint that the scheduled ESPR iron and steel delegated act (COM(2025) 187: 2026) may require; that act is not adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/electricityConsumedKwhPerT"
     },
     "rawMaterialOrigin": {
@@ -368,6 +390,8 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/reductionAgent"
     },
     "totalCarbonFootprint": {
@@ -379,6 +403,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 5(5)(b)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: ISO 14067.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Carbon footprint is ESPR Annex I parameter; a delegated act may require a PCF for steel, but none exists. Overlaps but is not identical to CBAM embedded emissions.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalCarbonFootprint"
     },
     "scope1DirectEmissions": {
@@ -390,6 +416,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/scope1DirectEmissions"
     },
     "scope2IndirectEmissions": {
@@ -422,6 +450,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/precursorEmissions"
     },
     "calculationMethodology": {
@@ -439,6 +469,8 @@
       "x-regulation": "32023R0956",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/calculationMethodology"
     },
     "thirdPartyVerification": {
@@ -449,6 +481,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Art. 8",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyVerification"
     },
     "carbonIntensityClass": {
@@ -493,6 +527,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataQuality"
     },
     "cbamGoodsType": {
@@ -507,6 +543,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/cbamGoodsType"
     },
     "totalSpecificEmbeddedEmissions": {
@@ -518,6 +556,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R0956",
       "x-provision": "Annex IV",
       "x-citationNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)). The authorised CBAM declarant reports this in its annual CBAM declaration (Art. 6), with data supplied by the producing installation. It is not a product passport requirement, and for goods made in the EU CBAM does not apply. Recorded here as voluntary data, anticipated under an ESPR iron and steel delegated act that is planned and not adopted.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "CBAM (EU) 2023/956 applies to goods originating in a third country imported into the EU (Art. 2(1)) and binds the authorised CBAM declarant's annual declaration (Art. 6), not a product passport; for a product made in the EU it does not apply. An ESPR iron and steel delegated act under Art. 4 is planned and not adopted, and which of these data it will require is not known.",
       "x-iri": "https://tracepass.eu/voc/dpp/totalSpecificEmbeddedEmissions"
     },
     "carbonPricePaid": {
@@ -776,6 +816,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Art. 9(1) requires the data carrier linking to the DPP, but only once a steel delegated act triggers a DPP; none exists.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrier"
     },
     "accessLevel": {
@@ -790,6 +832,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR foresees tiered access rights (authorities/consumers/recyclers) set per delegated act; not specified for steel yet.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "registryEntryUri": {
@@ -799,6 +843,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR establishes a DPP registry, but a steel product's registry entry is required only once a delegated act mandates the passport for steel.",
       "x-iri": "https://tracepass.eu/voc/dpp/registryEntryUri"
     },
     "dataFormat": {
@@ -808,6 +854,8 @@
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Art. 10 requires DPP data to follow open standards / be machine-readable, but the concrete format is set by delegated/implementing acts not yet adopted for steel.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataFormat"
     },
     "languages": {
@@ -818,6 +866,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Article 8",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Art. 8 concerns information/labelling requirements a future delegated act sets, including language; nothing binds for steel yet.",
       "x-iri": "https://tracepass.eu/voc/dpp/languages"
     },
     "ceMarkingStatus": {

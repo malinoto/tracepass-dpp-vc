@@ -15,6 +15,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Model designation is standard DPP identifying content under Annex III, pending a delegated act under Art. 4.",
       "x-iri": "https://tracepass.eu/voc/dpp/productModel"
     },
     "batchLotNumber": {
@@ -284,6 +286,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
       "x-provision": "Annex II, point B.2(1)(d)",
       "x-citationNote": "Smartphones and slate tablets: indicative % published on a free-access website from 20 June 2025. Other electronics: anticipated under ESPR Annex I, no delegated act.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Recycled-content share is ESPR Annex I(d) parameter a delegated act may require; none in force for electronics.",
       "x-iri": "https://tracepass.eu/voc/dpp/recycledContentPercentage"
     },
     "recyclabilityRate": {
@@ -296,6 +300,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 7",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Recyclability is ESPR Annex I(g) parameter a delegated act may require; none in force.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityRate"
     },
     "upgradabilityInfo": {
@@ -508,6 +514,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
       "x-provision": "Annex II, point B.1.1(1)",
       "x-citationNote": "Spare-parts availability lists are mandated for specific ecodesign product groups (smartphones and tablets under Reg (EU) 2023/1670; displays under 2019/2021) via Dir 2009/125/EC, and are made available to professional repairers rather than published as passport data. No such duty applies to electronics generally.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Anticipated under the scheduled ESPR horizontal repairability measure (COM(2025) 187: 2027; initiative 17873 scope: consumer electronics, small household appliances, light means of transport). Reg. (EU) 2023/1670 already applies but requires the list on a free-access website, not in a passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsList"
     },
     "sparePartsAvailabilityYears": {
@@ -520,6 +528,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1670",
       "x-provision": "Annex II, point B.1.1(1)",
       "x-citationNote": "Minimum spare-parts availability periods are set per ecodesign product group — seven years after the last unit for smartphones and tablets under Reg (EU) 2023/1670. The duty is to keep the parts available, discharged toward professional repairers; the period is not a mandated passport field.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Anticipated under the scheduled ESPR horizontal repairability measure (COM(2025) 187: 2027). Reg. (EU) 2023/1670 already imposes a 7-year spare-parts availability duty, discharged by supplying parts rather than by a passport datum.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsAvailabilityYears"
     },
     "maxDeliveryDays": {
@@ -1669,6 +1679,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32012L0019",
       "x-provision": "Art. 15(1)",
       "x-citationNote": "WEEE Art. 15(1): producers provide information free of charge on preparation for re-use and treatment of each new type of EEE, within one year of placing it on the market, to the re-use centres and treatment and recycling facilities that need it. A duty to inform those facilities, not public passport data, so optional.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "Material composition/breakdown is anticipatable under ESPR Annex I(c)/(d) and dismantling-information parameters, pending a delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/materialComposition"
     },
     "crossedOutWheelieBinMarking": {
@@ -1689,6 +1701,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Operative instrument for this field: ESPR 2024/1781.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DPP lifecycle metadata is inherent to the ESPR passport once a delegated act under Art. 4 establishes the DPP for electronics; none exists.",
       "x-iri": "https://tracepass.eu/voc/dpp/dppIssueDate"
     },
     "dppLastUpdated": {
@@ -1699,6 +1713,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Operative instrument for this field: ESPR 2024/1781.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "DPP update metadata is inherent passport content pending a delegated act under Art. 4.",
       "x-iri": "https://tracepass.eu/voc/dpp/dppLastUpdated"
     },
     "dppExpirationDate": {
@@ -1729,6 +1745,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(3)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Operative instrument for this field: ESPR 2024/1781.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Art. 9(3) requires a data carrier linking to the DPP, but the requirement applies only once a delegated act under Art. 4 establishes the DPP for the group.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierType"
     },
     "dataCarrierReference": {
@@ -1739,6 +1757,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(3)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Operative instrument for this field: ESPR 2024/1781.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "The carrier must encode a link to the passport (Art. 9(3)); GS1 Digital Link is a plausible standard but not itself law. Operative only under a delegated act.",
       "x-iri": "https://tracepass.eu/voc/dpp/dataCarrierReference"
     },
     "identifierStandard": {
@@ -1753,6 +1773,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Operative instrument for this field: ESPR 2024/1781.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR requires unique identifiers issued to a standard; the specific standard (GS1 / ISO 15459) will be fixed by the delegated act / implementing rules, not yet adopted.",
       "x-iri": "https://tracepass.eu/voc/dpp/identifierStandard"
     },
     "accessLevel": {
@@ -1768,6 +1790,8 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 10",
       "x-citationNote": "ESPR Art. 10 governs the passport's TECHNICAL design — data carrier, unique identifiers, access rights, availability — not which product data must be published. The substantive obligation still arrives via an Art. 4 delegated act, and none is adopted for this category. Anticipated; voluntary today. Verified against the EUR-Lex text. Operative instrument for this field: ESPR 2024/1781.",
+      "x-anticipated": true,
+      "x-anticipatedNote": "ESPR Art. 10 governs DPP access rights/tiering, but which data is public vs restricted is set by the product-specific delegated act; none exists for electronics.",
       "x-iri": "https://tracepass.eu/voc/dpp/accessLevel"
     },
     "ceMarkingStatus": {
