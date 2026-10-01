@@ -240,6 +240,24 @@ for (const cat of categories) {
     if (p.items?.enum && Array.isArray(v)) {
       for (const item of v) if (!p.items.enum.includes(item)) fail(`${cat}.${k}: "${item}" not allowed`);
     }
+    // Typed lists: every entry carries the required members, no undeclared one,
+    // and each member has its declared type and enum.
+    if (p.items?.type === "object" && Array.isArray(v)) {
+      v.forEach((entry, i) => {
+        if (!entry || typeof entry !== "object" || Array.isArray(entry)) {
+          fail(`${cat}.${k}[${i}]: expected an object entry`);
+          return;
+        }
+        for (const m of p.items.required ?? []) if (!(m in entry)) fail(`${cat}.${k}[${i}]: missing ${m}`);
+        for (const [m, mv] of Object.entries(entry)) {
+          const mp = p.items.properties?.[m];
+          if (!mp) { fail(`${cat}.${k}[${i}]: ${m} is not a declared member`); continue; }
+          if (typeof mv !== mp.type) fail(`${cat}.${k}[${i}].${m}: expected ${mp.type}, got ${typeof mv}`);
+          if (mp.enum && !mp.enum.includes(mv)) fail(`${cat}.${k}[${i}].${m}: "${mv}" not allowed`);
+          if (mp.pattern && typeof mv === "string" && !new RegExp(mp.pattern).test(mv)) fail(`${cat}.${k}[${i}].${m}: "${mv}" does not match ${mp.pattern}`);
+        }
+      });
+    }
   }
 
   for (const k of props) {

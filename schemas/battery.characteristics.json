@@ -360,6 +360,27 @@
       "type": "array",
       "title": "Cathode Active Materials",
       "description": "List of cathode active materials with name and weight percentage",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substanceName": {
+            "type": "string"
+          },
+          "casNumber": {
+            "type": "string",
+            "pattern": "^\\d{2,7}-\\d{2}-\\d$"
+          },
+          "massPercent": {
+            "type": "number",
+            "description": "% of the battery's total mass"
+          }
+        },
+        "required": [
+          "substanceName",
+          "massPercent"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(a)",
@@ -369,6 +390,27 @@
       "type": "array",
       "title": "Anode Active Materials",
       "description": "List of anode active materials with name and weight percentage",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substanceName": {
+            "type": "string"
+          },
+          "casNumber": {
+            "type": "string",
+            "pattern": "^\\d{2,7}-\\d{2}-\\d$"
+          },
+          "massPercent": {
+            "type": "number",
+            "description": "% of the battery's total mass"
+          }
+        },
+        "required": [
+          "substanceName",
+          "massPercent"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(a)",
@@ -378,6 +420,27 @@
       "type": "array",
       "title": "Electrolyte Composition",
       "description": "List of electrolyte components with name and weight percentage",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substanceName": {
+            "type": "string"
+          },
+          "casNumber": {
+            "type": "string",
+            "pattern": "^\\d{2,7}-\\d{2}-\\d$"
+          },
+          "massPercent": {
+            "type": "number",
+            "description": "% of the battery's total mass"
+          }
+        },
+        "required": [
+          "substanceName",
+          "massPercent"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(a)",
@@ -387,6 +450,27 @@
       "type": "array",
       "title": "Critical Raw Materials",
       "description": "Critical raw materials present in the battery in a concentration above 0.1 % weight by weight (Annex VI Part A(10), via Annex XIII 1(a)). List each with its name and share.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "material": {
+            "type": "string"
+          },
+          "massPercent": {
+            "type": "number",
+            "description": "% of the battery's total mass"
+          },
+          "countryOfOrigin": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        },
+        "required": [
+          "material",
+          "massPercent"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(a) with Annex VI Part A(10)",
@@ -396,6 +480,31 @@
       "type": "array",
       "title": "Hazardous Substances",
       "description": "Hazardous substances present in the battery other than mercury, cadmium or lead: substances classified as hazardous under Art. 3 of Regulation (EC) No 1272/2008 (Annex VI Part A(8), via Annex XIII 1(a)). List each with its name, its CAS number where it has one, and where it is in the battery.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substanceName": {
+            "type": "string"
+          },
+          "casNumber": {
+            "type": "string",
+            "pattern": "^\\d{2,7}-\\d{2}-\\d$"
+          },
+          "concentrationPercent": {
+            "type": "number"
+          },
+          "hazardClassification": {
+            "type": "string"
+          },
+          "locationInBattery": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "substanceName"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(a) with Annex VI Part A(8)",
@@ -1026,6 +1135,32 @@
       "type": "array",
       "title": "Negative Events",
       "description": "Record of negative events such as deep discharge, extreme temperatures, or accidents",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "deep_discharge",
+              "extreme_temp",
+              "accident",
+              "other"
+            ]
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "date",
+          "type"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(d)",
@@ -1114,6 +1249,22 @@
       "type": "array",
       "title": "Part Numbers for Components",
       "description": "Part numbers for components subject to replacement, per Annex XIII 2(b). Structured list with component name and part number.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "componentName": {
+            "type": "string"
+          },
+          "partNumber": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "componentName",
+          "partNumber"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(b)",

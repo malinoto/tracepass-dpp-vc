@@ -118,23 +118,101 @@
       },
       "cathodeActiveMaterials": {
         "@id": "https://tracepass.eu/voc/dpp/cathodeActiveMaterials",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          }
+        }
       },
       "anodeActiveMaterials": {
         "@id": "https://tracepass.eu/voc/dpp/anodeActiveMaterials",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          }
+        }
       },
       "electrolyteComposition": {
         "@id": "https://tracepass.eu/voc/dpp/electrolyteComposition",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          }
+        }
       },
       "criticalRawMaterials": {
         "@id": "https://tracepass.eu/voc/dpp/criticalRawMaterials",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "material": {
+            "@id": "https://tracepass.eu/voc/dpp/material",
+            "@type": "xsd:string"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          },
+          "countryOfOrigin": {
+            "@id": "https://tracepass.eu/voc/dpp/countryOfOrigin",
+            "@type": "xsd:string"
+          }
+        }
       },
       "hazardousSubstances": {
         "@id": "https://tracepass.eu/voc/dpp/hazardousSubstances",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          },
+          "hazardClassification": {
+            "@id": "https://tracepass.eu/voc/dpp/hazardClassification",
+            "@type": "xsd:string"
+          },
+          "locationInBattery": {
+            "@id": "https://tracepass.eu/voc/dpp/locationInBattery",
+            "@type": "xsd:string"
+          }
+        }
       },
       "scipNotificationNumber": {
         "@id": "https://tracepass.eu/voc/dpp/scipNotificationNumber",
@@ -361,7 +439,21 @@
       },
       "negativeEvents": {
         "@id": "https://tracepass.eu/voc/dpp/negativeEvents",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "date": {
+            "@id": "https://tracepass.eu/voc/dpp/date",
+            "@type": "xsd:date"
+          },
+          "type": {
+            "@id": "https://tracepass.eu/voc/dpp/type",
+            "@type": "xsd:string"
+          },
+          "description": {
+            "@id": "https://tracepass.eu/voc/dpp/description",
+            "@type": "xsd:string"
+          }
+        }
       },
       "currentStateOfCharge": {
         "@id": "https://tracepass.eu/voc/dpp/currentStateOfCharge",
@@ -392,7 +484,17 @@
       },
       "componentPartNumbers": {
         "@id": "https://tracepass.eu/voc/dpp/componentPartNumbers",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "componentName": {
+            "@id": "https://tracepass.eu/voc/dpp/componentName",
+            "@type": "xsd:string"
+          },
+          "partNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/partNumber",
+            "@type": "xsd:string"
+          }
+        }
       },
       "dynamicPowerCapability": {
         "@id": "https://tracepass.eu/voc/dpp/dynamicPowerCapability",

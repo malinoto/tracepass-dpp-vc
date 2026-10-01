@@ -91,31 +91,31 @@
       "batteryChemistry": "NMC811",
       "cathodeActiveMaterials": [
         {
-          "substance": "Lithium nickel manganese cobalt oxide",
+          "substanceName": "Lithium nickel manganese cobalt oxide",
           "casNumber": "182442-95-1",
           "massPercent": 31.4
         }
       ],
       "anodeActiveMaterials": [
         {
-          "substance": "Graphite",
+          "substanceName": "Graphite",
           "casNumber": "7782-42-5",
           "massPercent": 17.8
         },
         {
-          "substance": "Silicon oxide",
+          "substanceName": "Silicon oxide",
           "casNumber": "10097-28-6",
           "massPercent": 2.1
         }
       ],
       "electrolyteComposition": [
         {
-          "substance": "Lithium hexafluorophosphate",
+          "substanceName": "Lithium hexafluorophosphate",
           "casNumber": "21324-40-3",
           "massPercent": 1.9
         },
         {
-          "substance": "Ethylene carbonate",
+          "substanceName": "Ethylene carbonate",
           "casNumber": "96-49-1",
           "massPercent": 6.2
         }
@@ -140,10 +140,10 @@
       ],
       "hazardousSubstances": [
         {
-          "substance": "Lithium hexafluorophosphate",
+          "substanceName": "Lithium hexafluorophosphate",
+          "hazardClassification": "Acute Tox. 3",
           "casNumber": "21324-40-3",
-          "concentrationPercent": 1.9,
-          "hazardClass": "Acute Tox. 3"
+          "concentrationPercent": 1.9
         }
       ],
       "scipNotificationNumber": "a1b2c3d4-5e6f-4071-8a9b-0c1d2e3f4a5b",
@@ -185,11 +185,11 @@
       "renewableContentShare": 0,
       "componentPartNumbers": [
         {
-          "component": "Battery module",
+          "componentName": "Battery module",
           "partNumber": "VC-MOD-19-NMC811"
         },
         {
-          "component": "Battery management system",
+          "componentName": "Battery management system",
           "partNumber": "VC-BMS-4G-2026"
         }
       ]

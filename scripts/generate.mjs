@@ -61,6 +61,41 @@ function jsonLdType(dataType) {
   }
 }
 
+/** XSD type of one entry member (template `entryProperties`). */
+function memberXsd(m) {
+  if (m.type === "number") return "xsd:decimal";
+  if (m.type === "boolean") return "xsd:boolean";
+  return m.format === "date" ? "xsd:date" : "xsd:string";
+}
+
+/** Scoped JSON-LD context for the members of a typed list's entries. */
+function entryContext(members) {
+  return Object.fromEntries(
+    Object.entries(members).map(([k, m]) => [k, { "@id": `${VOC}${k}`, "@type": memberXsd(m) }]),
+  );
+}
+
+/** JSON Schema for one entry of a typed list. */
+function entrySchema(members) {
+  const properties = {};
+  for (const [k, m] of Object.entries(members)) {
+    const p = { type: m.type };
+    if (m.description) p.description = m.description;
+    if (m.enum) p.enum = m.enum;
+    if (m.format === "date") p.format = "date";
+    else if (m.format === "iso3166-alpha2") p.pattern = "^[A-Z]{2}$";
+    else if (m.format === "cas-number") p.pattern = "^\\d{2,7}-\\d{2}-\\d$";
+    properties[k] = p;
+  }
+  const required = Object.entries(members).filter(([, m]) => m.required).map(([k]) => k);
+  return {
+    type: "object",
+    properties,
+    ...(required.length ? { required } : {}),
+    additionalProperties: false,
+  };
+}
+
 /** Arrays are sets — a processor must not treat a single value as scalar. */
 function jsonLdContainer(dataType) {
   return dataType === "array" || dataType === "multi_enum" ? "@set" : null;
@@ -118,6 +153,9 @@ function generateCategory(category, template) {
       if (t) term["@type"] = t;
       const c = jsonLdContainer(f.dataType);
       if (c) term["@container"] = c;
+      // A typed list carries a scoped context for its entry members. Without
+      // it, no @vocab applies and a processor drops every member on expansion.
+      if (f.entryProperties) term["@context"] = entryContext(f.entryProperties);
       context[f.key] = term;
     }
 
@@ -132,6 +170,7 @@ function generateCategory(category, template) {
       if (f.dataType === "multi_enum") prop.items = { type: "string", enum: values };
       else prop.enum = values;
     }
+    if (f.dataType === "array" && f.entryProperties) prop.items = entrySchema(f.entryProperties);
     if (f.unit) {
       prop["x-unit"] = f.unit;
       const q = qudt.units[f.unit];
