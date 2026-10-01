@@ -73,7 +73,7 @@
         {
           "commonName": "European oak",
           "scientificName": "Quercus robur",
-          "percentage": 88
+          "sharePercent": 88
         }
       ],
       "forestCertificationScheme": "FSC 100%",

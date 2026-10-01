@@ -476,6 +476,21 @@
       "type": "array",
       "title": "Custom Certificates",
       "description": "Array of additional custom certificates not covered by standard fields",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-provision": "Art. 9(2)",

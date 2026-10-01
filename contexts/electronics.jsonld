@@ -470,7 +470,33 @@
       },
       "substancesOfConcern": {
         "@id": "https://tracepass.eu/voc/dpp/substancesOfConcern",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "ecNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/ecNumber",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          },
+          "locationInProduct": {
+            "@id": "https://tracepass.eu/voc/dpp/locationInProduct",
+            "@type": "xsd:string"
+          },
+          "safeUseInstructions": {
+            "@id": "https://tracepass.eu/voc/dpp/safeUseInstructions",
+            "@type": "xsd:string"
+          }
+        }
       },
       "scipNotificationId": {
         "@id": "https://tracepass.eu/voc/dpp/scipNotificationId",
@@ -578,7 +604,29 @@
       },
       "materialComposition": {
         "@id": "https://tracepass.eu/voc/dpp/materialComposition",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "material": {
+            "@id": "https://tracepass.eu/voc/dpp/material",
+            "@type": "xsd:string"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          },
+          "massKg": {
+            "@id": "https://tracepass.eu/voc/dpp/massKg",
+            "@type": "xsd:decimal"
+          },
+          "recyclable": {
+            "@id": "https://tracepass.eu/voc/dpp/recyclable",
+            "@type": "xsd:boolean"
+          },
+          "recyclingMethod": {
+            "@id": "https://tracepass.eu/voc/dpp/recyclingMethod",
+            "@type": "xsd:string"
+          }
+        }
       },
       "crossedOutWheelieBinMarking": {
         "@id": "https://tracepass.eu/voc/dpp/crossedOutWheelieBinMarking",

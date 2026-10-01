@@ -252,6 +252,22 @@
       "type": "array",
       "title": "Primary Materials",
       "description": "List of primary materials used in the toy (e.g. ABS plastic, wood, cotton fabric, metal)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "material": {
+            "type": "string"
+          },
+          "massPercent": {
+            "type": "number",
+            "description": "% of the toy's total mass"
+          }
+        },
+        "required": [
+          "material"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled (toys are not in the ESPR working plan COM(2025) 187); the toy passport under Reg. (EU) 2025/2509 Annex VI Part I does not list this datum — so this field is optional. Verified against the EUR-Lex text.",
@@ -271,6 +287,29 @@
       "type": "array",
       "title": "Substances of Concern",
       "description": "Detailed list of substances of concern present in the toy, including CAS numbers, concentrations, and locations (SCIP-level detail)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substanceName": {
+            "type": "string"
+          },
+          "casNumber": {
+            "type": "string",
+            "pattern": "^\\d{2,7}-\\d{2}-\\d$"
+          },
+          "concentrationPercent": {
+            "type": "number",
+            "description": "% by mass of the article or mixture"
+          },
+          "locationInProduct": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "substanceName"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Art. 33",

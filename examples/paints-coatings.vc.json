@@ -87,7 +87,13 @@
       ],
       "ufi": "U100-70XY-M00J-K3PT",
       "svhcSubstances": [
-        "Lead"
+        {
+          "substanceName": "Lead",
+          "casNumber": "7439-92-1",
+          "ecNumber": "231-100-4",
+          "concentrationPercent": 0.08,
+          "locationInProduct": "Pigment"
+        }
       ],
       "batchLotNumber": "PC-2026-0518-A",
       "tradeName": "Ferrolux SolvaCoat Matt White",

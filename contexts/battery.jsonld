@@ -208,6 +208,10 @@
             "@id": "https://tracepass.eu/voc/dpp/hazardClassification",
             "@type": "xsd:string"
           },
+          "precautionaryStatements": {
+            "@id": "https://tracepass.eu/voc/dpp/precautionaryStatements",
+            "@type": "xsd:string"
+          },
           "locationInBattery": {
             "@id": "https://tracepass.eu/voc/dpp/locationInBattery",
             "@type": "xsd:string"

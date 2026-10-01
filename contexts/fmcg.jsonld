@@ -47,11 +47,39 @@
       },
       "preservatives": {
         "@id": "https://tracepass.eu/voc/dpp/preservatives",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          }
+        }
       },
       "svhcPresence": {
         "@id": "https://tracepass.eu/voc/dpp/svhcPresence",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          },
+          "safeUseInstructions": {
+            "@id": "https://tracepass.eu/voc/dpp/safeUseInstructions",
+            "@type": "xsd:string"
+          }
+        }
       },
       "colorants": {
         "@id": "https://tracepass.eu/voc/dpp/colorants",
@@ -70,11 +98,31 @@
       },
       "hazardStatements": {
         "@id": "https://tracepass.eu/voc/dpp/hazardStatements",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "code": {
+            "@id": "https://tracepass.eu/voc/dpp/code",
+            "@type": "xsd:string"
+          },
+          "text": {
+            "@id": "https://tracepass.eu/voc/dpp/text",
+            "@type": "xsd:string"
+          }
+        }
       },
       "precautionaryStatements": {
         "@id": "https://tracepass.eu/voc/dpp/precautionaryStatements",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "code": {
+            "@id": "https://tracepass.eu/voc/dpp/code",
+            "@type": "xsd:string"
+          },
+          "text": {
+            "@id": "https://tracepass.eu/voc/dpp/text",
+            "@type": "xsd:string"
+          }
+        }
       },
       "firstAidInstructions": {
         "@id": "https://tracepass.eu/voc/dpp/firstAidInstructions",

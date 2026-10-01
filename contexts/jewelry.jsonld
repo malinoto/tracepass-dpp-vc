@@ -187,7 +187,17 @@
       },
       "customCertificates": {
         "@id": "https://tracepass.eu/voc/dpp/customCertificates",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "name": {
+            "@id": "https://tracepass.eu/voc/dpp/name",
+            "@type": "xsd:string"
+          },
+          "url": {
+            "@id": "https://tracepass.eu/voc/dpp/url",
+            "@type": "xsd:string"
+          }
+        }
       },
       "dataCarrierType": {
         "@id": "https://tracepass.eu/voc/dpp/dataCarrierType",

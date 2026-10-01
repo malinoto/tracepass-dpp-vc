@@ -44,7 +44,29 @@
       },
       "billOfMaterials": {
         "@id": "https://tracepass.eu/voc/dpp/billOfMaterials",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "component": {
+            "@id": "https://tracepass.eu/voc/dpp/component",
+            "@type": "xsd:string"
+          },
+          "material": {
+            "@id": "https://tracepass.eu/voc/dpp/material",
+            "@type": "xsd:string"
+          },
+          "massKg": {
+            "@id": "https://tracepass.eu/voc/dpp/massKg",
+            "@type": "xsd:decimal"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          },
+          "countryOfOrigin": {
+            "@id": "https://tracepass.eu/voc/dpp/countryOfOrigin",
+            "@type": "xsd:string"
+          }
+        }
       },
       "totalProductWeightKg": {
         "@id": "https://tracepass.eu/voc/dpp/totalProductWeightKg",
@@ -68,7 +90,21 @@
       },
       "woodSpecies": {
         "@id": "https://tracepass.eu/voc/dpp/woodSpecies",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "commonName": {
+            "@id": "https://tracepass.eu/voc/dpp/commonName",
+            "@type": "xsd:string"
+          },
+          "scientificName": {
+            "@id": "https://tracepass.eu/voc/dpp/scientificName",
+            "@type": "xsd:string"
+          },
+          "sharePercent": {
+            "@id": "https://tracepass.eu/voc/dpp/sharePercent",
+            "@type": "xsd:decimal"
+          }
+        }
       },
       "forestCertificationScheme": {
         "@id": "https://tracepass.eu/voc/dpp/forestCertificationScheme",
@@ -92,7 +128,29 @@
       },
       "svhcCandidateListSubstances": {
         "@id": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          },
+          "locationInProduct": {
+            "@id": "https://tracepass.eu/voc/dpp/locationInProduct",
+            "@type": "xsd:string"
+          },
+          "hazardClassification": {
+            "@id": "https://tracepass.eu/voc/dpp/hazardClassification",
+            "@type": "xsd:string"
+          }
+        }
       },
       "formaldehydeEmissionClass": {
         "@id": "https://tracepass.eu/voc/dpp/formaldehydeEmissionClass",
@@ -112,7 +170,25 @@
       },
       "flameRetardantSubstances": {
         "@id": "https://tracepass.eu/voc/dpp/flameRetardantSubstances",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "type": {
+            "@id": "https://tracepass.eu/voc/dpp/type",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          }
+        }
       },
       "pbdeContentMgKg": {
         "@id": "https://tracepass.eu/voc/dpp/pbdeContentMgKg",
@@ -212,7 +288,21 @@
       },
       "sparePartsList": {
         "@id": "https://tracepass.eu/voc/dpp/sparePartsList",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "partName": {
+            "@id": "https://tracepass.eu/voc/dpp/partName",
+            "@type": "xsd:string"
+          },
+          "partNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/partNumber",
+            "@type": "xsd:string"
+          },
+          "orderingUrl": {
+            "@id": "https://tracepass.eu/voc/dpp/orderingUrl",
+            "@type": "xsd:string"
+          }
+        }
       },
       "recyclabilityPercentage": {
         "@id": "https://tracepass.eu/voc/dpp/recyclabilityPercentage",
@@ -220,7 +310,21 @@
       },
       "materialsRecyclabilityBreakdown": {
         "@id": "https://tracepass.eu/voc/dpp/materialsRecyclabilityBreakdown",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "material": {
+            "@id": "https://tracepass.eu/voc/dpp/material",
+            "@type": "xsd:string"
+          },
+          "recyclable": {
+            "@id": "https://tracepass.eu/voc/dpp/recyclable",
+            "@type": "xsd:boolean"
+          },
+          "recyclingMethod": {
+            "@id": "https://tracepass.eu/voc/dpp/recyclingMethod",
+            "@type": "xsd:string"
+          }
+        }
       },
       "disassemblyTimeMinutes": {
         "@id": "https://tracepass.eu/voc/dpp/disassemblyTimeMinutes",
@@ -272,7 +376,25 @@
       },
       "supplyChainActors": {
         "@id": "https://tracepass.eu/voc/dpp/supplyChainActors",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "tier": {
+            "@id": "https://tracepass.eu/voc/dpp/tier",
+            "@type": "xsd:string"
+          },
+          "role": {
+            "@id": "https://tracepass.eu/voc/dpp/role",
+            "@type": "xsd:string"
+          },
+          "companyName": {
+            "@id": "https://tracepass.eu/voc/dpp/companyName",
+            "@type": "xsd:string"
+          },
+          "country": {
+            "@id": "https://tracepass.eu/voc/dpp/country",
+            "@type": "xsd:string"
+          }
+        }
       },
       "dueDiligenceStatementUrl": {
         "@id": "https://tracepass.eu/voc/dpp/dueDiligenceStatementUrl",

@@ -164,7 +164,21 @@
       },
       "billOfMaterials": {
         "@id": "https://tracepass.eu/voc/dpp/billOfMaterials",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "material": {
+            "@id": "https://tracepass.eu/voc/dpp/material",
+            "@type": "xsd:string"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          },
+          "countryOfOrigin": {
+            "@id": "https://tracepass.eu/voc/dpp/countryOfOrigin",
+            "@type": "xsd:string"
+          }
+        }
       },
       "naturalRubberContentPercentage": {
         "@id": "https://tracepass.eu/voc/dpp/naturalRubberContentPercentage",
@@ -196,7 +210,29 @@
       },
       "svhcCandidateListSubstances": {
         "@id": "https://tracepass.eu/voc/dpp/svhcCandidateListSubstances",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          },
+          "locationInProduct": {
+            "@id": "https://tracepass.eu/voc/dpp/locationInProduct",
+            "@type": "xsd:string"
+          },
+          "hazardClassification": {
+            "@id": "https://tracepass.eu/voc/dpp/hazardClassification",
+            "@type": "xsd:string"
+          }
+        }
       },
       "sixPpdContent": {
         "@id": "https://tracepass.eu/voc/dpp/sixPpdContent"
@@ -271,7 +307,21 @@
       },
       "recyclabilityBreakdown": {
         "@id": "https://tracepass.eu/voc/dpp/recyclabilityBreakdown",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "pathway": {
+            "@id": "https://tracepass.eu/voc/dpp/pathway",
+            "@type": "xsd:string"
+          },
+          "sharePercent": {
+            "@id": "https://tracepass.eu/voc/dpp/sharePercent",
+            "@type": "xsd:decimal"
+          },
+          "outputUses": {
+            "@id": "https://tracepass.eu/voc/dpp/outputUses",
+            "@type": "xsd:string"
+          }
+        }
       },
       "eltCollectionScheme": {
         "@id": "https://tracepass.eu/voc/dpp/eltCollectionScheme",

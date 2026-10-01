@@ -97,7 +97,17 @@
       },
       "primaryMaterials": {
         "@id": "https://tracepass.eu/voc/dpp/primaryMaterials",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "material": {
+            "@id": "https://tracepass.eu/voc/dpp/material",
+            "@type": "xsd:string"
+          },
+          "massPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/massPercent",
+            "@type": "xsd:decimal"
+          }
+        }
       },
       "svhcPresent": {
         "@id": "https://tracepass.eu/voc/dpp/svhcPresent",
@@ -105,7 +115,25 @@
       },
       "substancesOfConcern": {
         "@id": "https://tracepass.eu/voc/dpp/substancesOfConcern",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          },
+          "locationInProduct": {
+            "@id": "https://tracepass.eu/voc/dpp/locationInProduct",
+            "@type": "xsd:string"
+          }
+        }
       },
       "phthalateCompliant": {
         "@id": "https://tracepass.eu/voc/dpp/phthalateCompliant",

@@ -496,6 +496,10 @@
           "hazardClassification": {
             "type": "string"
           },
+          "precautionaryStatements": {
+            "type": "string",
+            "description": "CLP P-statements from the SDS, e.g. P201; P280"
+          },
           "locationInBattery": {
             "type": "string"
           }

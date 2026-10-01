@@ -298,6 +298,29 @@
       "type": "array",
       "title": "Substances of Concern",
       "description": "Substances of concern per REACH/SCIP with CAS numbers",
+      "items": {
+        "type": "object",
+        "properties": {
+          "substanceName": {
+            "type": "string"
+          },
+          "casNumber": {
+            "type": "string",
+            "pattern": "^\\d{2,7}-\\d{2}-\\d$"
+          },
+          "concentrationPercent": {
+            "type": "number",
+            "description": "% by mass of the article or mixture"
+          },
+          "locationInProduct": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "substanceName"
+        ],
+        "additionalProperties": false
+      },
       "x-regulation": "32006R1907",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32006R1907",
       "x-provision": "Art. 31; Art. 33(1)–(2)",

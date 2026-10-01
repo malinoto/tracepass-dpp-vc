@@ -113,7 +113,25 @@
       },
       "substancesOfConcern": {
         "@id": "https://tracepass.eu/voc/dpp/substancesOfConcern",
-        "@container": "@set"
+        "@container": "@set",
+        "@context": {
+          "substanceName": {
+            "@id": "https://tracepass.eu/voc/dpp/substanceName",
+            "@type": "xsd:string"
+          },
+          "casNumber": {
+            "@id": "https://tracepass.eu/voc/dpp/casNumber",
+            "@type": "xsd:string"
+          },
+          "concentrationPercent": {
+            "@id": "https://tracepass.eu/voc/dpp/concentrationPercent",
+            "@type": "xsd:decimal"
+          },
+          "locationInProduct": {
+            "@id": "https://tracepass.eu/voc/dpp/locationInProduct",
+            "@type": "xsd:string"
+          }
+        }
       },
       "durabilityServiceLife": {
         "@id": "https://tracepass.eu/voc/dpp/durabilityServiceLife",
