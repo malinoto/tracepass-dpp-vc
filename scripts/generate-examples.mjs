@@ -80,10 +80,17 @@ function sampleValue(f) {
 }
 
 function buildCredential(category, template, schema) {
-  // A hand-authored characteristics block always wins. Generated values are a
-  // starting point for a human; regenerating over finished work would silently
-  // replace a coherent worked product with placeholders — which is exactly what
-  // happened to steel's example once.
+  // The COMMITTED example's characteristics always win. They are the reviewed
+  // source of truth: fixes land there directly (list member names, the
+  // anticipated-field rule), so regenerating from anything else, including the
+  // gitignored _work/handwritten/ drafts this once read, would silently undo
+  // them. Generated values are only a starting point for a category that has no
+  // example yet. Regenerating over finished work is how steel's example was once
+  // replaced with placeholders.
+  const committed = join(root, "examples", `${category}.vc.json`);
+  if (existsSync(committed)) {
+    return envelopeFor(category, template, read(committed).credentialSubject.characteristics);
+  }
   const handPath = join(root, "_work", "handwritten", `${category}.json`);
   if (existsSync(handPath)) return envelopeFor(category, template, read(handPath));
 
