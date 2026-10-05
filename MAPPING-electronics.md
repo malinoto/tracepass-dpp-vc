@@ -151,7 +151,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
 | `scipNotificationId` | CELEX `32008L0098` | Art. 9(1)(i) |
 | `svhcPresent` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
-| `containsPermanentMagnets` | CELEX `32024R1252` | Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet information, applicable from 24 May 2029 for covered categories |
+| `containsPermanentMagnets` | CELEX `32024R1252` | Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet label and data carrier; applies two years after the Art. 28(2) implementing act (fixed date 24 May 2029 only for MRI devices, motor vehicles and type-approved L-category vehicles, Art. 28(10)) |
 | `magnetTotalWeight` | CELEX `32024R1252` | Art. 28(4)(b) |
 | `magnetLocation` | CELEX `32024R1252` | Art. 28(4)(b) |
 | `magnetChemicalComposition` | CELEX `32024R1252` | Art. 28(4)(b) |

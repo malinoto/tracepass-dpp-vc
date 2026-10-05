@@ -1,6 +1,6 @@
 # Detergents & Surfactants DPP — field-to-vocabulary mapping
 
-Every field in the Detergents & Surfactants Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 67 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Detergents & Surfactants Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **1 reuse an existing IRI, 68 are coined**, 8 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -46,8 +46,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `manufacturerPhone` | CELEX `32026R0405` | Annex VI Part A, point (b) |
 | `passportServiceProvider` | CELEX `32026R0405` | Annex VI Part A, point (c) |
 | `countryOfManufacture` | CELEX `32024R1781` | Article 9 |
-| `preservatives` | CELEX `32008R1272` | — |
-| `fragranceAllergens` | CELEX `32008R1272` | — |
+| `preservatives` | CELEX `32026R0405` | Annex V Part A 1(h)(iii); Annex VI Part A(h) |
+| `fragranceAllergens` | CELEX `32026R0405` | Annex V Part A 1(h)(iv); Annex VI Part A(h) |
 | `hazardClass` | CELEX `32008R1272` | Title II, Arts. 9-13 (classification) |
 | `signalWord` | CELEX `32008R1272` | Art. 20 |
 | `hazardPictograms` | CELEX `32008R1272` | Art. 19 & Annex V |
@@ -58,7 +58,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `poisonCentreNotificationNumber` | CELEX `32008R1272` | Annex VIII |
 | `emergencyPhoneNumber` | CELEX `32006R1907` | Annex II SDS section 1.4 |
 | `productCategoryEuPCS` | CELEX `32008R1272` | Annex VIII |
-| `svhcSubstances` | CELEX `32006R1907` | Art. 31(1)(c), 31(3)(b) (SDS) |
+| `svhcSubstances` | CELEX `32006R1907` | Art. 31(1)(a), 31(3)(b); Annex II 3.2.1(c), 3.2.2(b) |
 | `svhcEcNumber` | CELEX `32006R1907` | — |
 | `svhcLocationInProduct` | CELEX `32024R1781` | Article 7(5)(b) |
 | `svhcCandidateListDate` | CELEX `32006R1907` | Article 59 |
@@ -66,7 +66,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `appearance` | CELEX `32006R1907` | Annex II SDS section 9.1 |
 | `odour` | SDS Section 9.1 | — |
 | `ph` | CELEX `32006R1907` | Annex II SDS section 9.1 |
-| `flashPoint` | SDS Section 9.1, CLP | — |
+| `flashPoint` | CELEX `32006R1907` | Annex II 9.1(h) |
 | `density` | SDS Section 9.1 | — |
 | `viscosity` | SDS Section 9.1 | — |
 | `carbonFootprint` | CELEX `32024R1781` | Article 7(2)(b) |
@@ -75,11 +75,11 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `recyclability` | CELEX `32024R1781` | — |
 | `recycledContentPercentage` | CELEX `32024R1781` | Article 7(2)(c) |
 | `endOfLifeInstructions` | CELEX `32006R1907` | Annex II SDS section 13 |
-| `dataCarrierType` | CELEX `32024R1781` | Article 9(3) |
-| `dataCarrierUri` | CELEX `32024R1781` | Article 9(3), GS1 Digital Link |
+| `dataCarrierType` | CELEX `32026R0405` | Art. 21(2)(h), (4) |
+| `dataCarrierUri` | CELEX `32026R0405` | Art. 21(2)(h) |
 | `passportValidFrom` | CELEX `32024R1781` | Article 10 |
-| `passportRetentionYears` | CELEX `32024R1781` | Article 10(3) |
-| `accessLevel` | CELEX `32024R1781` | Article 10(4) |
+| `passportRetentionYears` | CELEX `32026R0405` | Art. 21(2)(g) |
+| `accessLevel` | CELEX `32026R0405` | Art. 21(2)(f) |
 | `ingredients` | CELEX `32026R0405` | Annex VI Part A, point (h) |
 | `surfactantsTotal` | CELEX `32026R0405` | — |
 | `phosphatesContent` | CELEX `32026R0405` | — |
@@ -100,5 +100,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `intendedUse` | CELEX `32006R1907` | Annex II SDS section 1.2 |
 | `issuedUnderSoleResponsibility` | CELEX `32026R0405` | Annex VI Part A, point (e) |
 | `complianceDemonstrated` | CELEX `32026R0405` | Annex VI Part A, point (g) |
+| `unionLawReferences` | CELEX `32026R0405` | Annex VI Part A, point (g) second limb |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

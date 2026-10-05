@@ -27,6 +27,7 @@ const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 const templatesDir = join(root, "..", "tracepass-platform", "templates");
 const ledger = read(join(root, "_work", "decision-ledger.json"));
 const decisions = read(join(root, "scripts", "decisions.json"));
+const contextVersions = read(join(root, "contexts", "versions.json"));
 
 const NON_CATEGORY = new Set(["units", "instruments"]);
 const byKey = new Map(ledger.fields.map((f) => [f.key, f]));
@@ -112,7 +113,7 @@ function envelopeFor(category, template, characteristics) {
     "@context": [
       "https://www.w3.org/ns/credentials/v2",
       "https://vocabulary.uncefact.org/untp/0.7.0/context/",
-      `https://tracepass.eu/context/dpp-vc/${category}/v1.jsonld`,
+      `https://tracepass.eu/context/dpp-vc/${category}/v${contextVersions[category]?.current ?? 1}.jsonld`,
     ],
     type: ["VerifiableCredential", "DigitalProductPassport"],
     id: "urn:uuid:00000000-0000-4000-8000-000000000000",

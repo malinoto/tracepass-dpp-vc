@@ -575,6 +575,14 @@
       "accidentsInformationUrl": {
         "@id": "https://tracepass.eu/voc/dpp/accidentsInformationUrl",
         "@type": "xsd:anyURI"
+      },
+      "remainingPowerCapabilityAt80Soc": {
+        "@id": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt80Soc",
+        "@type": "xsd:decimal"
+      },
+      "remainingPowerCapabilityAt20Soc": {
+        "@id": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt20Soc",
+        "@type": "xsd:decimal"
       }
     }
   ]

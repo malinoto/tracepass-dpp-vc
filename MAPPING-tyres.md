@@ -74,7 +74,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `recycledCarbonBlackPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `renewableMaterialContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `pahContentCompliant` | CELEX `32006R1907` | REACH Annex XVII entry 50 — restriction on PAH content in extender oils and tyres |
-| `svhcCandidateListSubstances` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
+| `svhcCandidateListSubstances` | CELEX `32006R1907` | Art. 33(1)–(2) |
 | `sixPpdContent` | CELEX `32006R1907` | — |
 | `heavyMetalsCompliance` | CELEX `32006R1907` | REACH Annex XVII — market-placement restriction; evidence retained by the manufacturer |
 | `reachCompliance` | CELEX `32006R1907` | REACH (EC) 1907/2006 — registration and restriction obligations evidenced in the manufacturer's records |

@@ -26,6 +26,10 @@
         "@id": "https://tracepass.eu/voc/dpp/placeOfManufacture",
         "@type": "xsd:string"
       },
+      "countryOfManufacture": {
+        "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+        "@type": "xsd:string"
+      },
       "productFamily": {
         "@id": "https://tracepass.eu/voc/dpp/productFamily",
         "@type": "xsd:string"

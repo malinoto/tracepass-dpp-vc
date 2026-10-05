@@ -41,16 +41,16 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `preConsumerRecycledContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `renewableMaterialContentPercentage` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `woodSpecies` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
-| `forestCertificationScheme` | CELEX `32023R1115` | FSC / PEFC are voluntary certification schemes; EUDR mandates due diligence, not certification |
+| `forestCertificationScheme` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
 | `chainOfCustodyCertificate` | FSC-STD-40-004; PEFC ST 2002:2020 | — |
 | `countryOfHarvest` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
 | `deforestationFreeDeclaration` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
 | `geolocationOfHarvest` | CELEX `32023R1115` | EUDR (EU) 2023/1115 Art. 4 — due diligence statement lodged in the EU Information System by the operator |
-| `svhcCandidateListSubstances` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — to B2B recipients on request, above 0.1% w/w, minimum content the substance name |
-| `formaldehydeEmissionClass` | CELEX `32023R1464` | REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3) |
-| `formaldehydeEmissionValueMgM3` | CELEX `32023R1464` | REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m3) |
+| `svhcCandidateListSubstances` | CELEX `32006R1907` | Art. 33(1)–(2) |
+| `formaldehydeEmissionClass` | CELEX `32023R1464` | REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m³) |
+| `formaldehydeEmissionValueMgM3` | CELEX `32023R1464` | REACH Annex XVII entry 77 — market-placement limit (0.062 mg/m³) |
 | `vocEmissionClass` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
-| `totalVocEmissionUgM3` | EN 16516 (determination of emissions into indoor air) | — |
+| `totalVocEmissionUgM3` | CELEX `32010R0066` | Reg. (EC) 66/2010 Art. 1 — the EU Ecolabel is a VOLUNTARY award scheme |
 | `flameRetardantSubstances` | CELEX `32019R1021` | POPs Reg. (EU) 2019/1021 Annex I — market restriction |
 | `pbdeContentMgKg` | CELEX `32019R1021` | POPs Reg. (EU) 2019/1021 Annex I (as amended by Del. Reg. (EU) 2025/1482) — unintentional trace limit 10 mg/kg |
 | `biocidesUsed` | CELEX `32012R0528` | — |

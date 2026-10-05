@@ -58,7 +58,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `poisonCentreNotificationNumber` | CELEX `32008R1272` | Annex VIII |
 | `emergencyPhoneNumber` | CELEX `32006R1907` | Annex II SDS section 1.4 |
 | `productCategoryEuPCS` | CELEX `32008R1272` | Annex VIII |
-| `svhcSubstances` | CELEX `32006R1907` | Art. 31(1)(c), 31(3)(b) (SDS) |
+| `svhcSubstances` | CELEX `32006R1907` | Art. 31(1)(a), 31(3)(b); Annex II 3.2.1(c), 3.2.2(b) |
 | `svhcEcNumber` | CELEX `32006R1907` | — |
 | `svhcLocationInProduct` | CELEX `32024R1781` | Article 7(5)(b) |
 | `svhcCandidateListDate` | CELEX `32006R1907` | Article 59 |
@@ -66,7 +66,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `appearance` | CELEX `32006R1907` | Annex II SDS section 9.1 |
 | `odour` | SDS Section 9.1 | — |
 | `ph` | CELEX `32006R1907` | Annex II SDS section 9.1 |
-| `flashPoint` | SDS Section 9.1, CLP | — |
+| `flashPoint` | CELEX `32006R1907` | Annex II 9.1(h) |
 | `density` | SDS Section 9.1 | — |
 | `viscosity` | SDS Section 9.1 | — |
 | `carbonFootprint` | CELEX `32024R1781` | Article 7(2)(b) |

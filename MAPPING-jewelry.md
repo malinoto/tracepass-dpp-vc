@@ -1,6 +1,6 @@
 # Jewelry & Precious Metals DPP — field-to-vocabulary mapping
 
-Every field in the Jewelry & Precious Metals Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 48 are coined**, 5 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Jewelry & Precious Metals Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 49 are coined**, 5 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -27,6 +27,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `productCategory` | CELEX `32024R1781` | Art. 9(2) |
 | `serialNumber` | CELEX `32024R1781` | Art. 9(2) |
 | `batchLotNumber` | CELEX `32024R1781` | Art. 9(2) |
+| `countryOfManufacture` | CELEX `32024R1781` | Article 9 |
 | `primaryMetal` | Vienna Convention 1972 - Hallmarking | — |
 | `metalFineness` | Vienna Convention 1972 - Hallmarking | — |
 | `metalWeight` | Vienna Convention 1972 - Hallmarking | — |
@@ -39,7 +40,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `gemstoneColor` | GIA/IGI grading standards | — |
 | `gemstoneClarity` | GIA/IGI grading standards | — |
 | `gemstoneCut` | GIA/IGI grading standards | — |
-| `gemstoneOrigin` | Kimberley Process; EU Conflict Minerals (EU) 2017/821 | — |
+| `gemstoneOrigin` | — | — |
 | `gemstoneTreatment` | CIBJO Blue Books | — |
 | `gemstoneLabCertificate` | GIA/IGI/AGS certification | — |
 | `isNatural` | CIBJO Blue Books; FTC Jewelry Guides | — |
@@ -49,7 +50,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `kimberleyProcessCompliant` | Kimberley Process Certification Scheme | — |
 | `fairminedCertified` | Fairmined Standard (voluntary, artisanal and small-scale mining) | — |
 | `rjcCertificationStatus` | RJC Code of Practices; RJC Chain of Custody | — |
-| `chainOfCustodyDocUrl` | RJC COC; EU Conflict Minerals (EU) 2017/821 | — |
+| `chainOfCustodyDocUrl` | RJC COC; Conflict Minerals Regulation Art. 4(f)–(g) | — |
 | `leadContent` | CELEX `32006R1907` | Annex XVII Entry 63 (metal parts of jewellery: max 0.05% w/w) |
 | `cadmiumContent` | CELEX `32006R1907` | Annex XVII Entry 23 (max 0.01% w/w) |
 | `nickelMigrationRate` | CELEX `32006R1907` | Annex XVII Entry 27 (skin contact: <0.5 µg/cm²/week; body piercing: <0.2 µg/cm²/week) |

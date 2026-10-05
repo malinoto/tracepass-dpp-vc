@@ -1492,6 +1492,30 @@
       "x-provision": "Annex XIII (4d)",
       "x-citationNote": "Annex XIII 4(d) names negative events such as accidents as per-battery data accessible only to persons with a legitimate interest. A link is a delivery convenience; the access restriction still governs what it resolves to.",
       "x-iri": "https://tracepass.eu/voc/dpp/accidentsInformationUrl"
+    },
+    "remainingPowerCapabilityAt80Soc": {
+      "type": "number",
+      "title": "Remaining Power Capability at 80% SoC",
+      "description": "Power capability of the battery at 80% state of charge in watts, as reported by the battery management system in service. Together with the 20% SoC figure forms the RemainingPowerCapability GEFEG composite (Annex XIII 4(b)).",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. Binds from 18 Feb 2027. RemainingPowerCapability (point 4(b)) requires the SoC-split pair (at 80% and at 20% state of charge); the GEFEG composite is emitted only when both fields are present.",
+      "x-iri": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt80Soc"
+    },
+    "remainingPowerCapabilityAt20Soc": {
+      "type": "number",
+      "title": "Remaining Power Capability at 20% SoC",
+      "description": "Power capability of the battery at 20% state of charge in watts, as reported by the battery management system in service. Together with the 80% SoC figure forms the RemainingPowerCapability GEFEG composite (Annex XIII 4(b)).",
+      "x-unit": "W",
+      "x-unitIri": "http://qudt.org/vocab/unit/W",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. Binds from 18 Feb 2027. RemainingPowerCapability (point 4(b)) requires the SoC-split pair (at 80% and at 20% state of charge); the GEFEG composite is emitted only when both fields are present.",
+      "x-iri": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt20Soc"
     }
   }
 }

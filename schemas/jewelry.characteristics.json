@@ -60,6 +60,16 @@
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and none is scheduled: jewellery is not in the ESPR working plan COM(2025) 187 — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/batchLotNumber"
     },
+    "countryOfManufacture": {
+      "type": "string",
+      "title": "Country of Manufacture",
+      "description": "ISO 3166-1 alpha-2 country code where the product was manufactured.",
+      "x-regulation": "32024R1781",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
+      "x-provision": "Article 9",
+      "x-citationNote": "No EU instrument requires the country of manufacture for jewellery, and no ESPR delegated act covers jewellery. Optional. It is where the piece was made, which is what UNTP's countryOfProduction carries, and it differs from manufacturerCountry (where the manufacturer is registered).",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
+    },
     "primaryMetal": {
       "type": "string",
       "title": "Primary Metal",

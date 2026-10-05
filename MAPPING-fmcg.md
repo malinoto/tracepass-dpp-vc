@@ -35,14 +35,14 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `allergens` | CELEX `32009R1223` | Annex III |
 | `fragrances` | CELEX `32009R1223` | Art. 19(1)(g) |
 | `preservatives` | CELEX `32009R1223` | Annex V |
-| `svhcPresence` | CELEX `32024R1781` | Art. 33 |
+| `svhcPresence` | CELEX `32024R1781` | Art. 7(5)(a)–(d) |
 | `colorants` | CELEX `32009R1223` | Annex IV |
 | `nanomaterials` | CELEX `32009R1223` | Art. 16 |
 | `clpHazardClassification` | CELEX `32008R1272` | — |
 | `ghsPictograms` | CELEX `32008R1272` | — |
 | `hazardStatements` | CELEX `32008R1272` | — |
 | `precautionaryStatements` | CELEX `32008R1272` | — |
-| `firstAidInstructions` | CELEX `32023R0988` | — |
+| `firstAidInstructions` | CELEX `32008R1272` | Art. 22(1) |
 | `ufi` | CELEX `32008R1272` | Art. 45 |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `waterFootprint` | CELEX `32024R1781` | Art. 7(2)(b) |
@@ -54,8 +54,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `packagingRecyclabilityGrade` | CELEX `32025R0040` | Art. 6 |
 | `packagingWeight` | CELEX `32025R0040` | Art. 10 |
 | `packagingToProductRatio` | CELEX `32025R0040` | Art. 10 |
-| `recommendedDosage` | CELEX `32009R1223` | Art. 11(4) |
-| `shelfLifeMonths` | CELEX `32011R1169` | Art. 19(1) |
+| `recommendedDosage` | CELEX `32026R0405` | Art. 17(4); Annex V Part B |
+| `shelfLifeMonths` | CELEX `32009R1223` | Art. 19(1)(c) |
 | `storageConditions` | CELEX `32023R0988` | — |
 | `batchLotNumber` | CELEX `32026R0405` | Annex VI Part A(d) |
 | `certifications` | CELEX `32024R1781` | Art. 7(2)(c) |

@@ -45,6 +45,15 @@
       "x-citationNote": "No EU instrument in force requires publishing the place of manufacture; GPSR Art. 9(6) requires the manufacturer's address, not the factory location.",
       "x-iri": "https://tracepass.eu/voc/dpp/placeOfManufacture"
     },
+    "countryOfManufacture": {
+      "type": "string",
+      "title": "Country of Manufacture",
+      "description": "ISO 3166-1 alpha-2 country code where the product was manufactured.",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-citationNote": "No EU instrument in force requires publishing the country of manufacture: CPR (EU) 2024/3110 refers to manufacturing plants only for testing, and GPSR Art. 9(6) requires the manufacturer's address, not the factory location. Optional. The ISO code of the country in placeOfManufacture, so UNTP's countryOfProduction can be filled.",
+      "x-iri": "https://tracepass.eu/voc/dpp/countryOfManufacture"
+    },
     "productFamily": {
       "type": "string",
       "title": "Product Family",

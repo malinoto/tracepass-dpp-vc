@@ -1,6 +1,6 @@
 # Construction Materials DPP — field-to-vocabulary mapping
 
-Every field in the Construction Materials Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 46 are coined**, 3 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Construction Materials Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 47 are coined**, 3 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -25,6 +25,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `batchLotNumber` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(5) — type, batch, serial number or other identifying element |
 | `serialNumber` | CELEX `32024R3110` | — |
 | `placeOfManufacture` | CELEX `32024R3110` | — |
+| `countryOfManufacture` | CELEX `32024R3110` | — |
 | `productFamily` | CELEX `32024R3110` | CPR (EU) 2024/3110 Annex VII — product-family taxonomy for harmonised technical specifications |
 | `mechanicalResistanceStability` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic |
 | `fireSafety` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic |
@@ -48,13 +49,13 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `wdp` | EN 15804+A2 (water deprivation potential) | — |
 | `lifeCycleModules` | EN 15804+A2 (life-cycle module definitions A1-A3, C1-C4, D) | — |
 | `recycledContent` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic |
-| `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
+| `substancesOfConcern` | CELEX `32006R1907` | Art. 31; Art. 33(1)–(2) |
 | `durabilityServiceLife` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic |
 | `repairReuseInstructions` | CELEX `32024R3110` | — |
 | `endOfLifeInstructions` | CELEX `32024R3110` | — |
 | `recyclabilityAssessment` | EN 15804+A2, Module D | — |
 | `packagingEnvironmentalAnalysis` | CELEX `32024R3110` | — |
-| `ceMarkingStatus` | CELEX `32024R3110` | CPR (EU) 2024/3110 Arts. 13-17 — CE marking, only where a harmonised technical specification or a European Technical Assessment covers the product |
+| `ceMarkingStatus` | CELEX `32024R3110` | Arts. 13, 17-18 — CE marking (Arts. 17-18), affixed only to products with a declaration of performance and conformity (Art. 13), and only where a harmonised technical specification or a European Technical Assessment covers the product |
 | `avcpSystemLevel` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 + Annex IX — AVCP system stated in the Declaration of Performance |
 | `notifiedBodyNameNumber` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — notified body identified in the Declaration of Performance |
 | `testReportReferences` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 22 — technical documentation held and produced to authorities on request |
@@ -66,6 +67,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `safetyDataLabelling` | CELEX `32008R1272` | CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients |
 | `warrantyInformation` | CELEX `32024R3110` | — |
 | `intendedUseDescription` | CELEX `32024R3110` | Annex IV, point 1.2(a) |
-| `ceMarking` | CELEX `32024R3110` | Art. 13-15 |
+| `ceMarking` | CELEX `32024R3110` | Arts. 13, 17-18 — CE marking (Arts. 17-18), affixed only to products with a declaration of performance and conformity (Art. 13), and only where a harmonised technical specification or a European Technical Assessment covers the product |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

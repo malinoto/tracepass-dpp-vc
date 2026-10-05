@@ -1,6 +1,6 @@
 # Battery DPP — field-to-vocabulary mapping
 
-Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 114 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 118 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -35,7 +35,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `separateCollectionSymbol` | CELEX `32023R1542` | Annex XIII 1(q), as corrected by 32023R1542R(13) |
 | `cadmiumSymbol` | CELEX `32023R1542` | Annex XIII 1(q) |
 | `leadSymbol` | CELEX `32023R1542` | Annex XIII 1(q) |
-| `carbonFootprintLabel` | CELEX `32023R1542` | Art. 7(3) |
+| `carbonFootprintLabel` | CELEX `32023R1542` | Art. 7(2) |
 | `meaningOfLabelsAndSymbols` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(e) |
 | `euDeclarationOfConformity` | CELEX `32023R1542` | Annex XIII 1(r) |
 | `testReportResults` | CELEX `32023R1542` | Annex XIII 3 |
@@ -46,7 +46,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `cfDistribution` | CELEX `32023R1542` | Annex XIII 1(c) |
 | `cfEndOfLifeRecycling` | CELEX `32023R1542` | Annex XIII 1(c) |
 | `carbonFootprintPerformanceClass` | CELEX `32023R1542` | Annex XIII 1(c) |
-| `carbonFootprintStudyUrl` | CELEX `32023R1542` | Art. 7(1) |
+| `carbonFootprintStudyUrl` | CELEX `32023R1542` | Art. 7(1)(g) |
 | `supplyChainDueDiligenceReport` | CELEX `32023R1542` | Annex XIII 1(d) |
 | `dueDiligencePolicy` | CELEX `32023R1542` | Annex XIII 1(d) |
 | `thirdPartyAuditResults` | CELEX `32023R1542` | Annex XIII 1(d) |
@@ -64,6 +64,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `roleOfEndUsersInWastePrevention` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(a) |
 | `informationOnSeparateCollection` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(b) |
 | `informationOnCollectionAndEndOfLifeTreatment` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(c) |
+| `safetyInstructionsWasteBatteries` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(d) |
+| `impactOfHazardousSubstances` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(f) |
 | `dismantlingInformation` | CELEX `32023R1542` | Annex XIII 2(c) |
 | `removalInformation` | CELEX `32023R1542` | Art. 11(1) |
 | `sparePartsInformation` | CELEX `32023R1542` | Annex XIII 2(b) |
@@ -106,8 +108,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `roundTripEfficiencyFade` | CELEX `32023R1542` | Annex XIII 4(a) |
 | `evolutionOfSelfDischargeRate` | CELEX `32023R1542` | Annex XIII 4(b) |
 | `numberOfFullEquivalentChargingCycles` | CELEX `32023R1542` | Annex XIII 4(d) |
-| `capacityThroughput` | — | — |
-| `energyThroughput` | — | — |
+| `capacityThroughput` | CELEX `32023R1542` | Annex XIII 4(b) with Annex VII Part B(3) |
+| `energyThroughput` | CELEX `32023R1542` | Annex XIII 4(b) with Annex VII Part B(2) |
 | `numberOfChargingEvents` | CELEX `32023R1542` | Annex XIII 4(d) |
 | `dateOfServiceEntry` | CELEX `32023R1542` | Annex XIII 4(b) with Annex VII Part B(1) |
 | `negativeEvents` | CELEX `32023R1542` | Annex XIII 4(d) |
@@ -134,9 +136,11 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `originalPowerCapabilityAt80Soc` | CELEX `32023R1542` | Annex IV Part B(4) |
 | `originalPowerCapabilityAt20Soc` | CELEX `32023R1542` | Annex IV Part B(4) |
 | `temperatureInformation` | CELEX `32023R1542` | Annex XIII (4d) |
-| `cadmiumLeadSymbolsUrl` | CELEX `32023R1542` | Annex XIII (1s) |
+| `cadmiumLeadSymbolsUrl` | CELEX `32023R1542` | Annex XIII 1(q) as corrected by 32023R1542R(13) together with Art. 13(5) |
 | `componentPartNumbersUrl` | CELEX `32023R1542` | Annex XIII (2b) |
 | `sparePartsSourcesUrl` | CELEX `32023R1542` | Annex XIII (2b) |
 | `accidentsInformationUrl` | CELEX `32023R1542` | Annex XIII (4d) |
+| `remainingPowerCapabilityAt80Soc` | CELEX `32023R1542` | Annex XIII 4(b) |
+| `remainingPowerCapabilityAt20Soc` | CELEX `32023R1542` | Annex XIII 4(b) |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

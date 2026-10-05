@@ -26,6 +26,10 @@
         "@id": "https://tracepass.eu/voc/dpp/batchLotNumber",
         "@type": "xsd:string"
       },
+      "countryOfManufacture": {
+        "@id": "https://tracepass.eu/voc/dpp/countryOfManufacture",
+        "@type": "xsd:string"
+      },
       "primaryMetal": {
         "@id": "https://tracepass.eu/voc/dpp/primaryMetal",
         "@type": "xsd:string"

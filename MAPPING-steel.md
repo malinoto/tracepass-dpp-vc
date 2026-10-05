@@ -52,9 +52,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `productionRoute` | CELEX `32023R0956` | Annex IV |
 | `productionDate` | CELEX `32024R1781` | — |
 | `heatTreatment` | EN 10204, EN 10025 | — |
-| `electricityGridIntensity` | CELEX `32023R0956` | — |
+| `electricityGridIntensity` | CELEX `32024R1781` | Art. 4 |
 | `renewableSharePct` | CELEX `32024R1781` | — |
-| `electricityConsumedKwhPerT` | CELEX `32023R0956` | — |
+| `electricityConsumedKwhPerT` | CELEX `32024R1781` | Art. 4 |
 | `rawMaterialOrigin` | CELEX `32024R1781` | — |
 | `reductionAgent` | CELEX `32023R0956` | — |
 | `totalCarbonFootprint` | CELEX `32024R1781` | Article 5(5)(b) |
@@ -87,7 +87,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `expectedServiceLifeYears` | CELEX `32024R1781` | Article 5(5)(a) |
 | `recyclabilityPercentage` | CELEX `32024R1781` | Article 5(5)(i) |
 | `endOfLifeInstructions` | CELEX `32024R1781` | Article 5(5)(l) |
-| `ceMarking` | CELEX `32024R3110` | Arts. 13(1), 17-18; Art. 94 (Reg. (EU) 305/2011 Arts. 4-9 continue to apply until 8 Jan 2040 for products under harmonised standards cited under it) |
+| `ceMarking` | CELEX `32011R0305` | Arts. 4, 8-9 (declaration of performance; CE marking) |
 | `declarationOfPerformanceUri` | CELEX `32024R3110` | — |
 | `inspectionCertificateType` | CELEX `32014L0068` | Annex I, point 4.3 |
 | `inspectionCertificateUri` | EN 10204 | — |
@@ -99,6 +99,6 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `registryEntryUri` | CELEX `32024R1781` | — |
 | `dataFormat` | CELEX `32024R1781` | — |
 | `languages` | CELEX `32024R1781` | Article 8 |
-| `ceMarkingStatus` | CELEX `32024R3110` | Arts. 13(1), 17-18; Art. 94 (Reg. (EU) 305/2011 Arts. 4-9 continue to apply until 8 Jan 2040 for products under harmonised standards cited under it) |
+| `ceMarkingStatus` | CELEX `32011R0305` | Arts. 4, 8-9 (declaration of performance; CE marking) |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

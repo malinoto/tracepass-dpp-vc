@@ -33,7 +33,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 |---|---|---|
 | `productName` | CELEX `32025R2509` | Annex VI Part I(e) |
 | `commodityCode` | CELEX `32025R2509` | Annex VI Part I(f) |
-| `modelNumber` | CELEX `32025R2509` | Art. 19(2)(a) |
+| `modelNumber` | CELEX `32025R2509` | Annex VI Part I(e); Art. 7(5) |
 | `passportServiceProvider` | CELEX `32025R2509` | Annex VI Part I(n) |
 | `communicationChannel` | CELEX `32025R2509` | Annex VI Part I(m) |
 | `responsibleEconomicOperator` | CELEX `32025R2509` | Annex VI Part I(c) |
@@ -51,7 +51,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `intendedAgeGroup` | CELEX `32025R2509` | Art. 6(3) |
 | `safetyWarnings` | CELEX `32025R2509` | Art. 6(1) |
 | `en71TestResults` | CELEX `32025R2509` | Annex V, point 6 |
-| `notifiedBody` | CELEX `32009L0048` | Art. 20 |
+| `notifiedBody` | CELEX `32025R2509` | Annex VI Part I(j) |
 | `primaryMaterials` | CELEX `32024R1781` | — |
 | `svhcPresent` | CELEX `32006R1907` | Art. 33(1) |
 | `substancesOfConcern` | CELEX `32006R1907` | Art. 33 |

@@ -11,6 +11,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
+import { unrecordedChanges, readVersions } from "./context-versions.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
@@ -333,6 +334,18 @@ console.log("");
 for (const key of UNSOURCED_BY_DESIGN)
   if (!unsourcedSeen.has(key))
     fail(`UNSOURCED_BY_DESIGN lists ${key}, which now cites a source or no longer exists; remove the entry.`);
+
+// A published context is frozen once a credential names it; a change must ship as
+// a new version (scripts/context-versions.mjs). Examples must name the current one.
+for (const c of unrecordedChanges())
+  fail(`${c}: context changed without a version bump — node scripts/context-versions.mjs --bump ${c}`);
+const contextVersions = readVersions();
+for (const f of readdirSync(join(root, "examples")).filter((n) => n.endsWith(".vc.json"))) {
+  const cat = f.replace(/\.vc\.json$/, "");
+  const want = `https://tracepass.eu/context/dpp-vc/${cat}/v${contextVersions[cat]?.current}.jsonld`;
+  const ctx = JSON.parse(readFileSync(join(root, "examples", f), "utf8"))["@context"];
+  if (!ctx.includes(want)) fail(`${cat}: example does not name its current context ${want}`);
+}
 
 if (failures) {
   console.error(`${failures} failure(s)`);

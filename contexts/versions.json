@@ -1,0 +1,83 @@
+{
+  "battery": {
+    "current": 2,
+    "versions": {
+      "1": "a3e517476b46a3fe11f2f18d10c31ef64f47dac60935ca14997d6137ee46059a",
+      "2": "1851879794f7373efba16e74f336d086eb00159ce1a3057976782b9a9686a400"
+    }
+  },
+  "construction": {
+    "current": 2,
+    "versions": {
+      "1": "0bd79387ea7bf8da2c5e99ac7555d90a6cc834939c0a3519c9f91716044831ca",
+      "2": "ec75c148c11f0f9c03a5e437e736e2498d5630d490274c819470e9305e4aeb38"
+    }
+  },
+  "detergents": {
+    "current": 1,
+    "versions": {
+      "1": "944c3770d1a9c9b0781e5188fcc3165e381a9a6f0972b18fb4cde5ff26ffa6c8"
+    }
+  },
+  "electronics": {
+    "current": 1,
+    "versions": {
+      "1": "b55c6c858b5e8cf5dcef1014083268946dfe89e1fb35c5c63a21bb8058b07638"
+    }
+  },
+  "fmcg": {
+    "current": 1,
+    "versions": {
+      "1": "b56eea757dbbce993cd7d3d21b0090a2dd7e758bf064419d5e1e967cef3884ff"
+    }
+  },
+  "furniture": {
+    "current": 1,
+    "versions": {
+      "1": "72de85bddc982cd58275657de330d00e5f7e8519291bb5b4682337c9c73c325c"
+    }
+  },
+  "jewelry": {
+    "current": 2,
+    "versions": {
+      "1": "b26c4e585bf38f9a21517679c7ab53e934f3aeeab58fc32dcec93d7c11133718",
+      "2": "a2aa8223d514a3daa2975401c31f1cd3ce02fce8fe3923347fe4cbb02d88c745"
+    }
+  },
+  "packaging": {
+    "current": 1,
+    "versions": {
+      "1": "c571fbb6239cb310c73fa027022b02e879e531aaba0fa8ff3aa650f90f57c1b1"
+    }
+  },
+  "paints-coatings": {
+    "current": 1,
+    "versions": {
+      "1": "636cf13eeb378b243ed97621d1b668f3f4cf25d9e2dffa526d4f482a398659c0"
+    }
+  },
+  "steel": {
+    "current": 1,
+    "versions": {
+      "1": "2e0065cc99a78136b787c7c933f45fd6a45ee7ff516adaa7da8a608879570bc0"
+    }
+  },
+  "textile": {
+    "current": 1,
+    "versions": {
+      "1": "e22c9a4bc8e62c0c187e76e550d74a2f05a30afd724c33aeb680eaa7482875af"
+    }
+  },
+  "toys": {
+    "current": 1,
+    "versions": {
+      "1": "a6f1d23cc765da375617e174fec6f6504612be164eb8464fb2a54e385008979b"
+    }
+  },
+  "tyres": {
+    "current": 1,
+    "versions": {
+      "1": "3c4abcebde481191a5e74171114c3986f3c9dc26ed9a435195ff55bf9a178452"
+    }
+  }
+}
