@@ -372,12 +372,11 @@
           },
           "massPercent": {
             "type": "number",
-            "description": "% of the battery's total mass"
+            "description": "Optional: % of the battery's total mass. Annex XIII asks for the materials, not their quantities."
           }
         },
         "required": [
-          "substanceName",
-          "massPercent"
+          "substanceName"
         ],
         "additionalProperties": false
       },
@@ -402,12 +401,11 @@
           },
           "massPercent": {
             "type": "number",
-            "description": "% of the battery's total mass"
+            "description": "Optional: % of the battery's total mass. Annex XIII asks for the materials, not their quantities."
           }
         },
         "required": [
-          "substanceName",
-          "massPercent"
+          "substanceName"
         ],
         "additionalProperties": false
       },
@@ -432,12 +430,11 @@
           },
           "massPercent": {
             "type": "number",
-            "description": "% of the battery's total mass"
+            "description": "Optional: % of the battery's total mass. Annex XIII asks for the materials, not their quantities."
           }
         },
         "required": [
-          "substanceName",
-          "massPercent"
+          "substanceName"
         ],
         "additionalProperties": false
       },
@@ -458,7 +455,7 @@
           },
           "massPercent": {
             "type": "number",
-            "description": "% of the battery's total mass"
+            "description": "Optional: % of the battery's total mass. Annex XIII asks for the materials, not their quantities."
           },
           "countryOfOrigin": {
             "type": "string",
@@ -466,8 +463,7 @@
           }
         },
         "required": [
-          "material",
-          "massPercent"
+          "material"
         ],
         "additionalProperties": false
       },
