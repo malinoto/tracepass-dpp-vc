@@ -136,7 +136,7 @@
     "sustainableUseNaturalResources": {
       "type": "object",
       "title": "Sustainable Use of Natural Resources",
-      "description": "Durability, recyclability, secondary materials content, and LCA data per Annex I basic requirement 7 (NEW in revised CPR)",
+      "description": "Durability, recyclability, secondary materials content, and LCA data per Annex I basic requirement 8",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
       "x-provision": "CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic",
