@@ -159,7 +159,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Article 5(5)(j)",
+      "x-provision": "Art. 4",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: Delegated act TBD.",
       "x-anticipated": true,
       "x-anticipatedNote": "Recycled content is ESPR Annex I product parameter (e); a delegated act may set a threshold + disclosure, but none exists for steel.",
@@ -401,7 +401,7 @@
       "x-unit": "kgCO2e/kg",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Article 5(5)(b)",
+      "x-provision": "Art. 4",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — so this field is anticipated, not required. Verified against the EUR-Lex text. Reference: ISO 14067.",
       "x-anticipated": true,
       "x-anticipatedNote": "Carbon footprint is ESPR Annex I parameter; a delegated act may require a PCF for steel, but none exists. Overlaps but is not identical to CBAM embedded emissions.",
@@ -729,7 +729,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Article 5(5)(a)",
+      "x-provision": "Art. 4",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and an iron and steel delegated act is scheduled (ESPR working plan COM(2025) 187: 2026; aluminium 2027), but whether it will require this datum is not known — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/expectedServiceLifeYears"
     },
@@ -741,7 +741,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Article 5(5)(i)",
+      "x-provision": "Art. 4",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and an iron and steel delegated act is scheduled (ESPR working plan COM(2025) 187: 2026; aluminium 2027), but whether it will require this datum is not known — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/recyclabilityPercentage"
     },
@@ -751,7 +751,7 @@
       "description": "URI to dismantling, recycling, or end-of-life guidance.",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Article 5(5)(l)",
+      "x-provision": "Art. 4",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and an iron and steel delegated act is scheduled (ESPR working plan COM(2025) 187: 2026; aluminium 2027), but whether it will require this datum is not known — so this field is optional. Verified against the EUR-Lex text.",
       "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
     },
@@ -828,7 +828,7 @@
       "description": "Supply chain traceability events (EPCIS 2.0 aligned): mining, smelting, rolling, finishing, shipping, etc.",
       "x-regulation": "32024R1781",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R1781",
-      "x-provision": "Article 5(5)(o)",
+      "x-provision": "Art. 4",
       "x-citationNote": "ESPR 32024R1781 mandates no product data of its own. Art. 7(1) makes information requirements those 'laid down in the delegated acts adopted pursuant to Article 4'; Art. 9(2) says those acts 'shall … specify' what a passport carries; and Art. 27 binds manufacturers only 'when placing products COVERED BY a delegated act adopted pursuant to Article 4' on the market. All three defer to an Art. 4 act, and none is adopted for this category — and an iron and steel delegated act is scheduled (ESPR working plan COM(2025) 187: 2026; aluminium 2027), but whether it will require this datum is not known — so this field is optional. Verified against the EUR-Lex text. Reference: GS1 EPCIS 2.0.",
       "x-iri": "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld"
     },
