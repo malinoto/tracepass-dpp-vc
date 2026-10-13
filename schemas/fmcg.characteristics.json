@@ -212,6 +212,7 @@
       "description": "Full CLP classification including hazard class, category, and signal word",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
+      "x-provision": "Title II, Arts. 9-13 (classification)",
       "x-citationNote": "CLP's operative duty is to classify the substance or mixture and to communicate the resulting classification through the LABEL and the safety data sheet. Publishing the classification as product data neither creates nor discharges that obligation.",
       "x-iri": "https://tracepass.eu/voc/dpp/clpHazardClassification"
     },
@@ -302,7 +303,7 @@
       "description": "16-character UFI code for poison centre notification, mandatory for hazardous mixtures",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-provision": "Art. 45",
+      "x-provision": "Art. 45 & Annex VIII",
       "x-citationNote": "The unique formula identifier exists to link a product to the mixture information notified to the bodies appointed under CLP Art. 45 for emergency health response. The duties are to NOTIFY those bodies and to place the UFI on the label; publishing it in a passport does neither.",
       "x-iri": "https://tracepass.eu/voc/dpp/ufi"
     },

@@ -663,7 +663,8 @@
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32008R1272",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32008R1272",
-      "x-citationNote": "Titanium dioxide carries CLP classification and labelling consequences in certain forms, and any applicable hazard statement belongs on the LABEL. CLP creates no duty to publish a content figure as product data.",
+      "x-provision": "Title II, Arts. 9-13 (classification)",
+      "x-citationNote": "Titanium dioxide has no harmonised CLP classification. The Carc. 2 (inhalation) entry, Notes W and 10 and the EUH211/EUH212 label statements added by Delegated Regulation (EU) 2020/217 were annulled (General Court T-279/20, 23 Nov 2022; upheld by the Court of Justice, C-71/23 P and C-82/23 P, 1 Aug 2025; Commission notice C/2025/6670). A supplier still self-classifies under CLP Title II, and any resulting hazard statement belongs on the LABEL. CLP creates no duty to publish a content figure as product data.",
       "x-iri": "https://tracepass.eu/voc/dpp/titaniumDioxideContent"
     },
     "isoClassification": {
