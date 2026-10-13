@@ -1,83 +1,96 @@
 {
   "battery": {
-    "current": 2,
+    "current": 3,
     "versions": {
       "1": "a3e517476b46a3fe11f2f18d10c31ef64f47dac60935ca14997d6137ee46059a",
-      "2": "1851879794f7373efba16e74f336d086eb00159ce1a3057976782b9a9686a400"
+      "2": "1851879794f7373efba16e74f336d086eb00159ce1a3057976782b9a9686a400",
+      "3": "6066b37b1f0fc349f6d79ef28e6a2deda0e1c319673532328db5317671aa86e0"
     }
   },
   "construction": {
-    "current": 2,
+    "current": 3,
     "versions": {
       "1": "0bd79387ea7bf8da2c5e99ac7555d90a6cc834939c0a3519c9f91716044831ca",
-      "2": "ec75c148c11f0f9c03a5e437e736e2498d5630d490274c819470e9305e4aeb38"
+      "2": "ec75c148c11f0f9c03a5e437e736e2498d5630d490274c819470e9305e4aeb38",
+      "3": "7e01969b00e8d8eaa74b3bf7ba5a0f3261cf0ca29213793b35a54ab2ed81a14e"
     }
   },
   "detergents": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "944c3770d1a9c9b0781e5188fcc3165e381a9a6f0972b18fb4cde5ff26ffa6c8"
+      "1": "944c3770d1a9c9b0781e5188fcc3165e381a9a6f0972b18fb4cde5ff26ffa6c8",
+      "2": "f03c1e506d04067f4a2780e2efb8ff89d5c6ff8ab6bbe55d245005a677882a14"
     }
   },
   "electronics": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "b55c6c858b5e8cf5dcef1014083268946dfe89e1fb35c5c63a21bb8058b07638"
+      "1": "b55c6c858b5e8cf5dcef1014083268946dfe89e1fb35c5c63a21bb8058b07638",
+      "2": "69196b4ff682331994a3de0470ab5296b9f72380d5c00f589c85afd957560743"
     }
   },
   "fmcg": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "b56eea757dbbce993cd7d3d21b0090a2dd7e758bf064419d5e1e967cef3884ff"
+      "1": "b56eea757dbbce993cd7d3d21b0090a2dd7e758bf064419d5e1e967cef3884ff",
+      "2": "09cc8b9af3e87790c691f8b4c7c1f22b92bd6bc684729de49a6ff0c4e2d8a29b"
     }
   },
   "furniture": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "72de85bddc982cd58275657de330d00e5f7e8519291bb5b4682337c9c73c325c"
+      "1": "72de85bddc982cd58275657de330d00e5f7e8519291bb5b4682337c9c73c325c",
+      "2": "7d73379306472c616e43d99bfe3be4a2ba4e2b89adfd656f3ea5b92e4229670f"
     }
   },
   "jewelry": {
-    "current": 2,
+    "current": 3,
     "versions": {
       "1": "b26c4e585bf38f9a21517679c7ab53e934f3aeeab58fc32dcec93d7c11133718",
-      "2": "a2aa8223d514a3daa2975401c31f1cd3ce02fce8fe3923347fe4cbb02d88c745"
+      "2": "a2aa8223d514a3daa2975401c31f1cd3ce02fce8fe3923347fe4cbb02d88c745",
+      "3": "4b50539febc591d827b16f6faf55719136b7a7a8ea4b80501ca053bc1d17e0b1"
     }
   },
   "packaging": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "c571fbb6239cb310c73fa027022b02e879e531aaba0fa8ff3aa650f90f57c1b1"
+      "1": "c571fbb6239cb310c73fa027022b02e879e531aaba0fa8ff3aa650f90f57c1b1",
+      "2": "56e2284649bdc2a3ac4afbcbf498929ce84b2490cde190a56225d97df668dcc3"
     }
   },
   "paints-coatings": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "636cf13eeb378b243ed97621d1b668f3f4cf25d9e2dffa526d4f482a398659c0"
+      "1": "636cf13eeb378b243ed97621d1b668f3f4cf25d9e2dffa526d4f482a398659c0",
+      "2": "85e06b3e79bfa5ed3a61394b0661d75e305f0dd98d2f7bec659fdf4bb334744d"
     }
   },
   "steel": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "2e0065cc99a78136b787c7c933f45fd6a45ee7ff516adaa7da8a608879570bc0"
+      "1": "2e0065cc99a78136b787c7c933f45fd6a45ee7ff516adaa7da8a608879570bc0",
+      "2": "457e372d473ba4d4e2cf8697cda49ba3c234684ee01a90fa5741b3dc91660e31"
     }
   },
   "textile": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "e22c9a4bc8e62c0c187e76e550d74a2f05a30afd724c33aeb680eaa7482875af"
+      "1": "e22c9a4bc8e62c0c187e76e550d74a2f05a30afd724c33aeb680eaa7482875af",
+      "2": "485241e9c4510732ec449985ad789bcef9656f8c499e000505dc1c83e6570099"
     }
   },
   "toys": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "a6f1d23cc765da375617e174fec6f6504612be164eb8464fb2a54e385008979b"
+      "1": "a6f1d23cc765da375617e174fec6f6504612be164eb8464fb2a54e385008979b",
+      "2": "1d483bbeda09e4ad2e5ed8bbadd82e9b2573cf5f9cea9598060e1aa714ade3b0"
     }
   },
   "tyres": {
-    "current": 1,
+    "current": 2,
     "versions": {
-      "1": "3c4abcebde481191a5e74171114c3986f3c9dc26ed9a435195ff55bf9a178452"
+      "1": "3c4abcebde481191a5e74171114c3986f3c9dc26ed9a435195ff55bf9a178452",
+      "2": "fd004eb14a407886efdfb80dc9a3334d34f2ec9adb17c4ab6d5d4da6aea60177"
     }
   }
 }

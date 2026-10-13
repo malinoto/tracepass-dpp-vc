@@ -233,6 +233,10 @@ function generateCategory(category, template) {
         qudt: "http://qudt.org/vocab/unit/",
         cas: "https://identifiers.org/cas:",
         xsd: "http://www.w3.org/2001/XMLSchema#",
+        // EU AI Act Art 50(2): the issuer's machine-readable marking of AI-generated
+        // values, a map keyed by characteristic name. A JSON literal, so the map
+        // survives expansion without defining a term per field.
+        aiGenerated: { "@id": "https://tracepass.eu/voc/aiGenerated", "@type": "@json" },
         ...context,
       },
     ],

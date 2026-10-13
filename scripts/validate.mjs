@@ -147,7 +147,11 @@ for (const cat of categories) {
 
   const props = Object.keys(schema.properties ?? {});
   for (const k of props) if (!termKeys.includes(k)) fail(`${cat}: ${k} in schema but not in context`);
-  for (const k of termKeys) if (!props.includes(k)) fail(`${cat}: ${k} in context but not in schema`);
+  // Envelope terms sit on credentialSubject, not in `characteristics`, so the
+  // characteristics schema does not list them. aiGenerated: the issuer's EU AI
+  // Act Art 50(2) marking, a JSON literal keyed by characteristic name.
+  const ENVELOPE_TERMS = ["aiGenerated"];
+  for (const k of termKeys) if (!props.includes(k) && !ENVELOPE_TERMS.includes(k)) fail(`${cat}: ${k} in context but not in schema`);
 
   // The battery example must not carry a data point the Commission says is "not
   // to be filled/displayed as of February 2027" (guidance v2.0 DP 17-23; FAQ

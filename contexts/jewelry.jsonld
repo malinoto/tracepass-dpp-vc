@@ -10,6 +10,10 @@
       "qudt": "http://qudt.org/vocab/unit/",
       "cas": "https://identifiers.org/cas:",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "aiGenerated": {
+        "@id": "https://tracepass.eu/voc/aiGenerated",
+        "@type": "@json"
+      },
       "productName": {
         "@id": "https://tracepass.eu/voc/dpp/productName",
         "@type": "xsd:string"

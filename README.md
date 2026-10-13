@@ -120,6 +120,28 @@ The matching context entry gives the term its JSON-LD binding:
 }
 ```
 
+### AI-generated values (EU AI Act Art 50(2))
+
+Every context also defines one envelope term, `aiGenerated`, on `credentialSubject`
+(not inside `characteristics`). It marks which characteristic values an AI system
+generated, in machine-readable form, as the AI Act asks of the provider of such a
+system. It is a JSON literal keyed by characteristic name:
+
+```json
+"aiGenerated": {
+  "manufacturerName": {
+    "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "kind": "research",
+    "humanReviewed": true
+  }
+}
+```
+
+`kind` is `research` (found and written by the model) or `translation` (machine
+translated). Values a person approved keep their mark, with `humanReviewed: true`. The
+term is absent when no value is marked. Because the credential is signed, the marking
+is tamper-evident.
+
 ## Reuse before coining
 
 The governing rule: **coin a `tracepass:` term only for a concept no established vocabulary
