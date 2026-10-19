@@ -27,6 +27,7 @@
     "safetyInstructionsWasteBatteries",
     "impactOfHazardousSubstances",
     "dismantlingInformation",
+    "removalInformation",
     "sparePartsInformation",
     "safetyInformationEndOfLife",
     "ratedCapacity",
@@ -579,7 +580,7 @@
     "roleOfEndUsersInWastePrevention": {
       "type": "string",
       "title": "Role of End-Users in Waste Prevention",
-      "description": "Information on the role of end-users in contributing to waste prevention, including by responsible use and proper disposal",
+      "description": "Information and guidance on end-users' role in contributing to waste prevention, including good practices and recommendations concerning the use of batteries aimed at extending their use phase, and the possibilities of re-use, preparation for re-use, preparation for repurposing, repurposing and remanufacturing.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(s) with Art. 74(1)(a)",
@@ -588,7 +589,7 @@
     "informationOnSeparateCollection": {
       "type": "string",
       "title": "Information on Separate Collection",
-      "description": "Information about separate collection requirements and available collection points",
+      "description": "Information on the role of end-users in contributing to the separate collection of waste batteries in accordance with their obligations under Art. 64, to allow their treatment and high-quality recycling.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(s) with Art. 74(1)(b)",
@@ -636,8 +637,7 @@
       "description": "URL to battery removal manual or instructions for safe battery removal from the product",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Art. 11(1)",
-      "x-citationNote": "Art. 11(1) removal and replacement instructions cover products incorporating PORTABLE batteries, which carry no passport; not an Annex XIII point.",
+      "x-provision": "Annex XIII 2(c)",
       "x-iri": "https://tracepass.eu/voc/dpp/removalInformation"
     },
     "sparePartsInformation": {
@@ -651,8 +651,8 @@
     },
     "safetyInformationEndOfLife": {
       "type": "string",
-      "title": "Safety Information for End-of-Life",
-      "description": "Safety measures and precautions for end-of-life handling of the battery",
+      "title": "Safety Measures for Dismantling",
+      "description": "Safety measures required for dismantling the battery, covering precautions and procedures for operators performing dismantling, repurposing or remanufacturing (Annex XIII 2(d), legitimate-interest tier). Distinct from safetyInstructionsWasteBatteries (Annex XIII 1(s) Art. 74(1)(d)), which covers safety instructions for end-users handling waste batteries and is publicly accessible.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(d)",

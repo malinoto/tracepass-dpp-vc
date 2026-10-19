@@ -38,12 +38,12 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `svhcPresence` | CELEX `32024R1781` | Art. 7(5)(a)–(d) |
 | `colorants` | CELEX `32009R1223` | Annex IV |
 | `nanomaterials` | CELEX `32009R1223` | Art. 16 |
-| `clpHazardClassification` | CELEX `32008R1272` | — |
+| `clpHazardClassification` | CELEX `32008R1272` | Title II, Arts. 9-13 (classification) |
 | `ghsPictograms` | CELEX `32008R1272` | — |
 | `hazardStatements` | CELEX `32008R1272` | — |
 | `precautionaryStatements` | CELEX `32008R1272` | — |
 | `firstAidInstructions` | CELEX `32008R1272` | Art. 22(1) |
-| `ufi` | CELEX `32008R1272` | Art. 45 |
+| `ufi` | CELEX `32008R1272` | Art. 45 & Annex VIII |
 | `carbonFootprint` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `waterFootprint` | CELEX `32024R1781` | Art. 7(2)(b) |
 | `biodegradability` | CELEX `32004R0648` | Art. 4 |

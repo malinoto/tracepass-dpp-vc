@@ -24,7 +24,12 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 
-const templatesDir = join(root, "..", "tracepass-platform", "templates");
+// TRACEPASS_PLATFORM_DIR points at a platform checkout other than the sibling
+// (e.g. a git worktree) — same override as generate.mjs.
+const templatesDir = join(
+  process.env.TRACEPASS_PLATFORM_DIR ?? join(root, "..", "tracepass-platform"),
+  "templates",
+);
 const ledger = read(join(root, "_work", "decision-ledger.json"));
 const decisions = read(join(root, "scripts", "decisions.json"));
 const contextVersions = read(join(root, "contexts", "versions.json"));
@@ -116,6 +121,13 @@ function buildCredential(category, template, schema) {
  */
 function envelopeFor(category, template, characteristics) {
   const label = localised(template.categoryLabel) || category;
+  // Battery uses item-level granularity (GTIN-14 + serial) because Art. 77(3)
+  // requires one passport per individual battery unit, not per batch/lot.
+  // All other categories default to batch level.
+  const isItem = category === "battery";
+  const subjectId = isItem
+    ? "https://id.gs1.org/01/09506000123455/21/BAT-2026-001"
+    : "https://id.gs1.org/01/09506000123455";
   return {
     "@context": [
       "https://www.w3.org/ns/credentials/v2",
@@ -129,14 +141,14 @@ function envelopeFor(category, template, characteristics) {
     validFrom: "2026-10-05T00:00:00Z",
     credentialSubject: {
       type: ["Product"],
-      id: "https://id.gs1.org/01/09506000123456",
+      id: subjectId,
       name: `${label} — worked example`,
       idScheme: {
         type: ["IdentifierScheme"],
         id: "https://id.gs1.org",
         name: "GS1 Global Trade Item Number",
       },
-      idGranularity: "batch",
+      idGranularity: isItem ? "item" : "batch",
       productCategory: [
         {
           code: category,

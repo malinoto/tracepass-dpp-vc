@@ -39,7 +39,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `facilityId` | CELEX `32023R0956` | Annex IV |
 | `primaryMaterialType` | CELEX `32023R0956` | — |
 | `chemicalComposition` | CELEX `32011R0305` | Art. 6(1) |
-| `recycledContentPercentage` | CELEX `32024R1781` | Article 5(5)(j) |
+| `recycledContentPercentage` | CELEX `32024R1781` | Art. 4 |
 | `preConsumerScrapPct` | ISO 14021 | — |
 | `postConsumerScrapPct` | CELEX `32024R1781` | — |
 | `recycledContentVerification` | CELEX `32024R1781` | — |
@@ -57,7 +57,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `electricityConsumedKwhPerT` | CELEX `32024R1781` | Art. 4 |
 | `rawMaterialOrigin` | CELEX `32024R1781` | — |
 | `reductionAgent` | CELEX `32023R0956` | — |
-| `totalCarbonFootprint` | CELEX `32024R1781` | Article 5(5)(b) |
+| `totalCarbonFootprint` | CELEX `32024R1781` | Art. 4 |
 | `scope1DirectEmissions` | CELEX `32023R0956` | Annex IV |
 | `scope2IndirectEmissions` | CELEX `32023R0956` | Art. 7(1), Annex II |
 | `scope3UpstreamEmissions` | CELEX `32024R1781` | — |
@@ -84,9 +84,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `epdProgramOperator` | ISO 14025 (environmental product declarations) | — |
 | `lifecycleModules` | EN 15804+A2 | — |
 | `declaredUnit` | EN 15804+A2 (declared and functional unit) | — |
-| `expectedServiceLifeYears` | CELEX `32024R1781` | Article 5(5)(a) |
-| `recyclabilityPercentage` | CELEX `32024R1781` | Article 5(5)(i) |
-| `endOfLifeInstructions` | CELEX `32024R1781` | Article 5(5)(l) |
+| `expectedServiceLifeYears` | CELEX `32024R1781` | Art. 4 |
+| `recyclabilityPercentage` | CELEX `32024R1781` | Art. 4 |
+| `endOfLifeInstructions` | CELEX `32024R1781` | Art. 4 |
 | `ceMarking` | CELEX `32011R0305` | Arts. 4, 8-9 (declaration of performance; CE marking) |
 | `declarationOfPerformanceUri` | CELEX `32024R3110` | — |
 | `inspectionCertificateType` | CELEX `32014L0068` | Annex I, point 4.3 |

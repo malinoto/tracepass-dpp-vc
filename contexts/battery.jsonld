@@ -244,11 +244,11 @@
       },
       "roleOfEndUsersInWastePrevention": {
         "@id": "https://tracepass.eu/voc/dpp/roleOfEndUsersInWastePrevention",
-        "@type": "xsd:anyURI"
+        "@type": "xsd:string"
       },
       "informationOnSeparateCollection": {
         "@id": "https://tracepass.eu/voc/dpp/informationOnSeparateCollection",
-        "@type": "xsd:anyURI"
+        "@type": "xsd:string"
       },
       "informationOnCollectionAndEndOfLifeTreatment": {
         "@id": "https://tracepass.eu/voc/dpp/informationOnCollectionAndEndOfLifeTreatment",
@@ -275,7 +275,7 @@
       },
       "safetyInformationEndOfLife": {
         "@id": "https://tracepass.eu/voc/dpp/safetyInformationEndOfLife",
-        "@type": "xsd:anyURI"
+        "@type": "xsd:string"
       },
       "recycledContentDocumentation": {
         "@id": "https://tracepass.eu/voc/dpp/recycledContentDocumentation",

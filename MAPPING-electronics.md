@@ -42,7 +42,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `manufacturingDate` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingCountry` | CELEX `32024R1781` | Art. 9(2) |
 | `manufacturingPlant` | CELEX `32024R1781` | Art. 9(2) |
-| `euDeclarationOfConformity` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 13 + EMC Dir. 2014/30/EU Art. 15 — DoC drawn up and kept, produced on request |
+| `euDeclarationOfConformity` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Arts. 7(c), 13 + EMC Dir. 2014/30/EU Arts. 7(2), 15 — DoC drawn up and kept, produced on request |
 | `ceMarking` | CELEX `32011L0065` | Art. 15(1) |
 | `notifiedBodyId` | CELEX `32024R1781` | Art. 9(2) |
 | `technicalDocumentationUrl` | CELEX `32011L0065` | RoHS Dir. 2011/65/EU Art. 7(b) + Annex VI — technical documentation kept 10 years, produced on request |
@@ -148,9 +148,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `dbpContent` | CELEX `32011L0065` | Annex II |
 | `dibpContent` | CELEX `32011L0065` | Annex II |
 | `rohsExemptionsApplied` | CELEX `32011L0065` | Annex III |
-| `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
+| `substancesOfConcern` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1)–(2) — to every recipient of the article, and to a consumer on request, above 0.1% w/w; minimum content the substance name |
 | `scipNotificationId` | CELEX `32008L0098` | Art. 9(1)(i) |
-| `svhcPresent` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1) — on request, above 0.1% w/w, minimum content the substance name |
+| `svhcPresent` | CELEX `32006R1907` | REACH (EC) 1907/2006 Art. 33(1)–(2) — to every recipient of the article, and to a consumer on request, above 0.1% w/w; minimum content the substance name |
 | `containsPermanentMagnets` | CELEX `32024R1252` | Reg. (EU) 2024/1252 (CRMA) Art. 28 — permanent-magnet label and data carrier; applies two years after the Art. 28(2) implementing act (fixed date 24 May 2029 only for MRI devices, motor vehicles and type-approved L-category vehicles, Art. 28(10)) |
 | `magnetTotalWeight` | CELEX `32024R1252` | Art. 28(4)(b) |
 | `magnetLocation` | CELEX `32024R1252` | Art. 28(4)(b) |

@@ -87,7 +87,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `solventType` | CELEX `32004L0042` | — |
 | `coverageSqmPerLitre` | Product technical data | — |
 | `wetScrubResistanceClass` | EN 13300 (water-borne coating materials, wet-scrub classes) | — |
-| `titaniumDioxideContent` | CELEX `32008R1272` | — |
+| `titaniumDioxideContent` | CELEX `32008R1272` | Title II, Arts. 9-13 (classification) |
 | `isoClassification` | ISO 12944 (corrosivity categories for protective paint systems) | — |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

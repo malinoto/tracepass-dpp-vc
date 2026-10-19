@@ -67,7 +67,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `safetyInstructionsWasteBatteries` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(d) |
 | `impactOfHazardousSubstances` | CELEX `32023R1542` | Annex XIII 1(s) with Art. 74(1)(f) |
 | `dismantlingInformation` | CELEX `32023R1542` | Annex XIII 2(c) |
-| `removalInformation` | CELEX `32023R1542` | Art. 11(1) |
+| `removalInformation` | CELEX `32023R1542` | Annex XIII 2(c) |
 | `sparePartsInformation` | CELEX `32023R1542` | Annex XIII 2(b) |
 | `safetyInformationEndOfLife` | CELEX `32023R1542` | Annex XIII 2(d) |
 | `recycledContentDocumentation` | CELEX `32023R1542` | Annex XIII 1(e) |

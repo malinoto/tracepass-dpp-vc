@@ -2,7 +2,7 @@
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
     "https://vocabulary.uncefact.org/untp/0.7.0/context/",
-    "https://tracepass.eu/context/dpp-vc/battery/v3.jsonld"
+    "https://tracepass.eu/context/dpp-vc/battery/v4.jsonld"
   ],
   "type": [
     "VerifiableCredential",
@@ -22,7 +22,7 @@
     "type": [
       "Product"
     ],
-    "id": "https://id.gs1.org/01/09506000123456",
+    "id": "https://id.gs1.org/01/09506000123455/21/BAT-2026-001",
     "name": "Battery — worked example",
     "idScheme": {
       "type": [
@@ -31,7 +31,7 @@
       "id": "https://id.gs1.org",
       "name": "GS1 Global Trade Item Number"
     },
-    "idGranularity": "batch",
+    "idGranularity": "item",
     "productCategory": [
       {
         "code": "battery",
