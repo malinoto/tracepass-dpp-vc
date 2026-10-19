@@ -27,7 +27,6 @@
     "safetyInstructionsWasteBatteries",
     "impactOfHazardousSubstances",
     "dismantlingInformation",
-    "removalInformation",
     "sparePartsInformation",
     "safetyInformationEndOfLife",
     "ratedCapacity",
@@ -634,10 +633,11 @@
     "removalInformation": {
       "type": "string",
       "title": "Removal Information / Manual",
-      "description": "URL to battery removal manual or instructions for safe battery removal from the product",
+      "description": "Optional URL to the battery removal and dismantling procedure document (the navigable/downloadable form of the Annex XIII 2(c) dismantling information). The dismantling information obligation is discharged by the required field dismantlingInformation; this URL is an optional supporting reference for operators who prefer a direct link to the removal procedure.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(c)",
+      "x-citationNote": "Annex XIII 2(c) requires dismantling information (accessible to persons with a legitimate interest) including exploded diagrams, disassembly sequences, fastening techniques, tools, warnings and cell layout. dismantlingInformation (required) discharges this obligation; removalInformation is an optional supporting URL to the same procedural document. The previous citation (Art. 11(1)) covered products with incorporated PORTABLE batteries, which carry no passport.",
       "x-iri": "https://tracepass.eu/voc/dpp/removalInformation"
     },
     "sparePartsInformation": {
