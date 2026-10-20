@@ -352,7 +352,8 @@
       "description": "Instructions and guidance for repair and reuse of the product",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
-      "x-citationNote": "No EU instrument in force requires repair or reuse instructions for construction products; the CPR provisions that would are deferred.",
+      "x-provision": "Art. 22(6) + Annex IV point 2.7(a), (c), (d) (recommendations for repair, reuse, remanufacturing)",
+      "x-citationNote": "Annex IV point 2.7 lists recommendations for repair, reuse and remanufacturing. CPR Art. 22(6) requires the manufacturer to accompany the product with the Annex IV information, and the passport carries it once Art. 22(7) applies (Art. 76(2)(a)(ii)). Art. 22 binds a product family only one year after an Art. 5(8) or 6(1) implementing act covers it (Art. 95(9)), and none is adopted; products under Regulation (EU) No 305/2011 standards stay under that Regulation. So the duty is deferred, not absent.",
       "x-iri": "https://tracepass.eu/voc/dpp/repairReuseInstructions"
     },
     "endOfLifeInstructions": {
@@ -361,7 +362,8 @@
       "description": "Instructions for end-of-life treatment and demolition/deconstruction",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
-      "x-citationNote": "No EU instrument in force mandates demolition or end-of-life guidance for construction products.",
+      "x-provision": "Art. 22(6) + Annex IV point 2.7(b), (e), (f) (deinstallation, recycling, safe deposit) and point 2.1 (safety during deconstruction and demolition)",
+      "x-citationNote": "Annex IV point 2.7 lists recommendations for deinstallation, recycling and safe deposit, and point 2.1 safety during deconstruction and demolition. CPR Art. 22(6) requires the manufacturer to accompany the product with the Annex IV information, and the passport carries it once Art. 22(7) applies (Art. 76(2)(a)(ii)). Art. 22 binds a product family only one year after an Art. 5(8) or 6(1) implementing act covers it (Art. 95(9)), and none is adopted; products under Regulation (EU) No 305/2011 standards stay under that Regulation. So the duty is deferred, not absent.",
       "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
     },
     "recyclabilityAssessment": {
@@ -478,7 +480,8 @@
       "description": "Guidance on maintenance and care of the product during its service life",
       "x-regulation": "32024R3110",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
-      "x-citationNote": "No EU instrument in force requires maintenance guidance for construction products.",
+      "x-provision": "Art. 22(6) + Annex IV point 2.3 (maintenance needs)",
+      "x-citationNote": "Annex IV point 2.3 lists maintenance needs: adjustment and maintenance operations, type and frequency of inspections, parts subject to wear. CPR Art. 22(6) requires the manufacturer to accompany the product with the Annex IV information, and the passport carries it once Art. 22(7) applies (Art. 76(2)(a)(ii)). Art. 22 binds a product family only one year after an Art. 5(8) or 6(1) implementing act covers it (Art. 95(9)), and none is adopted; products under Regulation (EU) No 305/2011 standards stay under that Regulation. So the duty is deferred, not absent.",
       "x-iri": "https://tracepass.eu/voc/dpp/maintenanceGuidance"
     },
     "safetyDataLabelling": {
