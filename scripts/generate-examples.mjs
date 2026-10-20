@@ -15,7 +15,7 @@
 // about what good data looks like, so a generated one is a starting point for
 // a human, not a finished artefact.
 //
-// Usage: node scripts/generate-examples.mjs [--out <dir>]
+// Usage: node scripts/generate-examples.mjs [--out <dir>] [--check-mapping]
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
@@ -269,6 +269,29 @@ function buildMapping(category, template, schema) {
 }
 
 // ---------------------------------------------------------------------------
+// --check-mapping compares each published MAPPING-<cat>.md with what this script
+// would write, and writes nothing. Nothing else gates the mappings: validate.mjs
+// stays green while one still prints the citations from before a template fix.
+if (process.argv.includes("--check-mapping")) {
+  const stale = [];
+  for (const file of readdirSync(templatesDir).filter((f) => f.endsWith(".json")).sort()) {
+    const category = basename(file, ".json");
+    if (NON_CATEGORY.has(category)) continue;
+    const template = read(join(templatesDir, file));
+    const schema = read(join(root, "schemas", `${category}.characteristics.json`));
+    const published = join(root, `MAPPING-${category}.md`);
+    const expected = buildMapping(category, template, schema);
+    if (!existsSync(published) || readFileSync(published, "utf8") !== expected) stale.push(category);
+  }
+  if (stale.length) {
+    console.error(`MAPPING stale for: ${stale.join(", ")}`);
+    console.error("Regenerate into a scratch --out (with schemas/ copied there) and copy back only MAPPING-*.md.");
+    process.exit(1);
+  }
+  console.log("mappings match the templates");
+  process.exit(0);
+}
+
 const outDir = (() => {
   const i = process.argv.indexOf("--out");
   return i !== -1 && process.argv[i + 1] ? process.argv[i + 1] : join(root, "_work", "generated");
