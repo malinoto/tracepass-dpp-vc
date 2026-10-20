@@ -522,6 +522,75 @@
       "x-provision": "Arts. 13, 17-18 — CE marking (Arts. 17-18), affixed only to products with a declaration of performance and conformity (Art. 13), and only where a harmonised technical specification or a European Technical Assessment covers the product",
       "x-citationNote": "The CE mark is affixed to the product; the obligation is discharged by that mark and by the Declaration of Performance supporting it, and only where a harmonised technical specification or an ETA covers the product. Where the product falls under a harmonised standard cited under Regulation (EU) No 305/2011 and still in force, its declaration of performance and CE marking stay governed by Arts. 4 and 8-9 of that Regulation during the transition (Reg. (EU) 2024/3110 Arts. 94 and 95(3), 95(8)).",
       "x-iri": "https://tracepass.eu/voc/dpp/ceMarking"
+    },
+    "productContactPointsForConstruction": {
+      "type": "array",
+      "title": "Product Contact Points for Construction",
+      "description": "Contact details of the product contact point for construction in each Member State where the product is made available.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "memberState": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "postalAddress": {
+            "type": "string"
+          },
+          "telephone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "memberState",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Art. 22(6) + Annex IV point 1.5",
+      "x-citationNote": "Annex IV point 1.5 asks for the contact details of the product contact point for construction in the Member State where the product is made available; each Member State designates at least one such point (Art. 72). Art. 22(6) makes the Annex IV information accompany the product, and the passport carries it once Art. 22(7) applies (Art. 76(2)(a)(ii)). Art. 22 binds a product family only one year after an Art. 5(8) or 6(1) implementing act covers it (Art. 95(9)), and none is adopted, so the duty is deferred, not absent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/productContactPointsForConstruction"
+    },
+    "declarationOfPerformanceConformity": {
+      "type": "string",
+      "title": "Declaration of Performance and Conformity",
+      "description": "Link to the declaration of performance and conformity drawn up under Article 15 and Annex V of Regulation (EU) 2024/3110.",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Art. 76(2)(a)(i) + Art. 15 + Annex V",
+      "x-citationNote": "Reg (EU) 2024/3110 puts the declaration of performance and conformity (DoPC, Art. 15 and the Annex V model) in the construction passport (Art. 76(2)(a)(i)), which is deferred to the delegated act under Art. 75(1). A DoPC in a passport that meets Art. 76 replaces the separately supplied electronic copy (Art. 16(1)). Products under Regulation (EU) No 305/2011 standards carry its declaration of performance instead, supplied on paper or electronically (Art. 7(1)).",
+      "x-iri": "https://tracepass.eu/voc/dpp/declarationOfPerformanceConformity"
+    },
+    "declarationCode": {
+      "type": "string",
+      "title": "Declaration Code",
+      "description": "The declaration code of the declaration of performance and conformity: one unique code per product type, shown after the CE marking.",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Art. 18(2)(e) + Annex V (declaration code)",
+      "x-citationNote": "The declaration code heads the DoPC, one unique, unequivocal code per product type even where there are variants (Annex V, note 2), and follows the CE marking (Art. 18(2)(e)). A data carrier linking to the DoPC may replace it, and a data carrier to the passport lets it be omitted (Art. 18(2), second subparagraph). Under Regulation (EU) No 305/2011 the CE marking carries the reference number of the declaration of performance instead (Art. 9(2)).",
+      "x-iri": "https://tracepass.eu/voc/dpp/declarationCode"
+    },
+    "technicalDocumentation": {
+      "type": "string",
+      "title": "Technical Documentation",
+      "description": "Reference to the technical documentation drawn up as the basis for the declaration of performance and conformity.",
+      "x-regulation": "32024R3110",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32024R3110",
+      "x-provision": "Art. 76(2)(a)(iii) + Art. 22(3)",
+      "x-citationNote": "The construction passport includes the technical documentation of Art. 22(3) with the sections Arts. 59 to 61 require (Art. 76(2)(a)(iii)), deferred like the rest of the passport. Art. 76(2)(f) leaves the access levels to the passport system, so the default here is authority-only. Today it is the document the manufacturer draws up as the basis for the DoPC (Art. 22(3)); under Regulation (EU) No 305/2011 it is kept for 10 years (Art. 11(2)).",
+      "x-iri": "https://tracepass.eu/voc/dpp/technicalDocumentation"
     }
   }
 }

@@ -1,6 +1,6 @@
 # Construction Materials DPP — field-to-vocabulary mapping
 
-Every field in the Construction Materials Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 47 are coined**, 3 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Construction Materials Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 51 are coined**, 3 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -51,8 +51,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `recycledContent` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic |
 | `substancesOfConcern` | CELEX `32006R1907` | Art. 31; Art. 33(1)–(2) |
 | `durabilityServiceLife` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — declared in the Declaration of Performance, where a harmonised technical specification covers the characteristic |
-| `repairReuseInstructions` | CELEX `32024R3110` | — |
-| `endOfLifeInstructions` | CELEX `32024R3110` | — |
+| `repairReuseInstructions` | CELEX `32024R3110` | Art. 22(6) + Annex IV point 2.7(a), (c), (d) (recommendations for repair, reuse, remanufacturing) |
+| `endOfLifeInstructions` | CELEX `32024R3110` | Art. 22(6) + Annex IV point 2.7(b), (e), (f) (deinstallation, recycling, safe deposit) and point 2.1 (safety during deconstruction and demolition) |
 | `recyclabilityAssessment` | EN 15804+A2, Module D | — |
 | `packagingEnvironmentalAnalysis` | CELEX `32024R3110` | — |
 | `ceMarkingStatus` | CELEX `32024R3110` | Arts. 13, 17-18 — CE marking (Arts. 17-18), affixed only to products with a declaration of performance and conformity (Art. 13), and only where a harmonised technical specification or a European Technical Assessment covers the product |
@@ -63,10 +63,14 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `harmonizedStandardReference` | CELEX `32024R3110` | CPR (EU) 2024/3110 Art. 13 — harmonised technical specification cited in the Declaration of Performance |
 | `eadReference` | CELEX `32024R3110` | — |
 | `installationInstructions` | CELEX `32023R0988` | GPSR (EU) 2023/988 Art. 9(7) — instructions and safety information, where the product's risks require them |
-| `maintenanceGuidance` | CELEX `32024R3110` | — |
+| `maintenanceGuidance` | CELEX `32024R3110` | Art. 22(6) + Annex IV point 2.3 (maintenance needs) |
 | `safetyDataLabelling` | CELEX `32008R1272` | CLP (EC) 1272/2008 Arts. 17-19 — hazard label on the product; REACH Art. 31 — safety data sheet supplied to recipients |
 | `warrantyInformation` | CELEX `32024R3110` | — |
 | `intendedUseDescription` | CELEX `32024R3110` | Annex IV, point 1.2(a) |
 | `ceMarking` | CELEX `32024R3110` | Arts. 13, 17-18 — CE marking (Arts. 17-18), affixed only to products with a declaration of performance and conformity (Art. 13), and only where a harmonised technical specification or a European Technical Assessment covers the product |
+| `productContactPointsForConstruction` | CELEX `32024R3110` | Art. 22(6) + Annex IV point 1.5 |
+| `declarationOfPerformanceConformity` | CELEX `32024R3110` | Art. 76(2)(a)(i) + Art. 15 + Annex V |
+| `declarationCode` | CELEX `32024R3110` | Art. 18(2)(e) + Annex V (declaration code) |
+| `technicalDocumentation` | CELEX `32024R3110` | Art. 76(2)(a)(iii) + Art. 22(3) |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.

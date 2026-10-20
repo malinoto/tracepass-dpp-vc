@@ -206,6 +206,48 @@
       "ceMarking": {
         "@id": "https://tracepass.eu/voc/dpp/ceMarking",
         "@type": "xsd:boolean"
+      },
+      "productContactPointsForConstruction": {
+        "@id": "https://tracepass.eu/voc/dpp/productContactPointsForConstruction",
+        "@container": "@set",
+        "@context": {
+          "memberState": {
+            "@id": "https://tracepass.eu/voc/dpp/memberState",
+            "@type": "xsd:string"
+          },
+          "name": {
+            "@id": "https://tracepass.eu/voc/dpp/name",
+            "@type": "xsd:string"
+          },
+          "postalAddress": {
+            "@id": "https://tracepass.eu/voc/dpp/postalAddress",
+            "@type": "xsd:string"
+          },
+          "telephone": {
+            "@id": "https://tracepass.eu/voc/dpp/telephone",
+            "@type": "xsd:string"
+          },
+          "email": {
+            "@id": "https://tracepass.eu/voc/dpp/email",
+            "@type": "xsd:string"
+          },
+          "website": {
+            "@id": "https://tracepass.eu/voc/dpp/website",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      "declarationOfPerformanceConformity": {
+        "@id": "https://tracepass.eu/voc/dpp/declarationOfPerformanceConformity",
+        "@type": "xsd:anyURI"
+      },
+      "declarationCode": {
+        "@id": "https://tracepass.eu/voc/dpp/declarationCode",
+        "@type": "xsd:string"
+      },
+      "technicalDocumentation": {
+        "@id": "https://tracepass.eu/voc/dpp/technicalDocumentation",
+        "@type": "xsd:anyURI"
       }
     }
   ]
