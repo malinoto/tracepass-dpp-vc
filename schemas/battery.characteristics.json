@@ -341,8 +341,8 @@
       "description": "URL to third-party audit results, accessible to authorities only",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Annex XIII 1(d)",
-      "x-citationNote": "Third-party verification is part of the Art. 52 due diligence regime, and its results support the Art. 52(3) report that Annex XIII 1(d) carries. The audit output itself is not separately enumerated as passport content.",
+      "x-provision": "Art. 52(1)",
+      "x-citationNote": "Art. 52(1) obliges the economic operator to make the Art. 51 verification report and approval decision, and the Art. 48(2) audit reports, available to market surveillance or national authorities on request. That duty runs outside the passport; this field links those reports for authority readers. Annex XIII 1(d) carries only the public Art. 52(3) report.",
       "x-anticipated": true,
       "x-anticipatedNote": "DG GROW guidance v2.0 (15 Aug 2026), DP 19: not to be filled/displayed as of February 2027; required from August 2027 as provided in Art. 48(1) (due-diligence obligations postponed by Regulation (EU) 2025/1561).",
       "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyAuditResults"
@@ -455,7 +455,7 @@
           },
           "massPercent": {
             "type": "number",
-            "description": "Optional: % of the battery's total mass. Annex XIII asks for the materials, not their quantities."
+            "description": "Optional: % of the battery's total mass, the basis of the Annex VI Part A(10) threshold (\"present in the battery in a concentration of more than 0,1 % weight by weight\")."
           },
           "countryOfOrigin": {
             "type": "string",
