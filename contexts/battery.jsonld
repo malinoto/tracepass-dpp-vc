@@ -63,7 +63,7 @@
       },
       "meaningOfLabelsAndSymbols": {
         "@id": "https://tracepass.eu/voc/dpp/meaningOfLabelsAndSymbols",
-        "@type": "xsd:anyURI"
+        "@type": "xsd:string"
       },
       "euDeclarationOfConformity": {
         "@id": "https://tracepass.eu/voc/dpp/euDeclarationOfConformity"
@@ -114,7 +114,7 @@
       },
       "thirdPartyAuditResults": {
         "@id": "https://tracepass.eu/voc/dpp/thirdPartyAuditResults",
-        "@type": "xsd:anyURI"
+        "@type": "xsd:string"
       },
       "batteryChemistry": {
         "@id": "https://tracepass.eu/voc/dpp/batteryChemistry",

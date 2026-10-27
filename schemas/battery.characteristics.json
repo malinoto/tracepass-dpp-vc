@@ -338,11 +338,11 @@
     "thirdPartyAuditResults": {
       "type": "string",
       "title": "Third-Party Audit Results",
-      "description": "URL to third-party audit results, accessible to authorities only",
+      "description": "Third-party audit results (text or URL), accessible to authorities only",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Art. 52(1)",
-      "x-citationNote": "Art. 52(1) obliges the economic operator to make the Art. 51 verification report and approval decision, and the Art. 48(2) audit reports, available to market surveillance or national authorities on request. That duty runs outside the passport; this field links those reports for authority readers. Annex XIII 1(d) carries only the public Art. 52(3) report.",
+      "x-citationNote": "Art. 52(1) obliges the economic operator to make the Art. 51 verification report and approval decision, and the Art. 48(2) audit reports, available to market surveillance or national authorities on request. That duty runs outside the passport; this field holds their results, as text or a link, for authority readers. Annex XIII 1(d) carries only the public Art. 52(3) report.",
       "x-anticipated": true,
       "x-anticipatedNote": "DG GROW guidance v2.0 (15 Aug 2026), DP 19: not to be filled/displayed as of February 2027; required from August 2027 as provided in Art. 48(1) (due-diligence obligations postponed by Regulation (EU) 2025/1561).",
       "x-iri": "https://tracepass.eu/voc/dpp/thirdPartyAuditResults"
