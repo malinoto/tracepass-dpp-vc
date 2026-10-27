@@ -1541,7 +1541,7 @@
       "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Annex XIII (4d)",
+      "x-provision": "Annex XIII 4(d)",
       "x-citationNote": "Annex XIII 4(d) covers periodically recorded operating environmental conditions including temperature. Per-battery data restricted to persons with a legitimate interest; distinct from the Annex XIII 1(l) non-use temperature range, which is public.",
       "x-iri": "https://tracepass.eu/voc/dpp/temperatureInformation"
     },
@@ -1561,7 +1561,7 @@
       "description": "URI linking to a list of part numbers for components and spare parts of the battery. Annex XIII 2(b) mandates the data (carried by the componentPartNumbers array); this URI field is a GEFEG format:uri choice, not an independent legal obligation. Accessible only to persons with a legitimate interest.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Annex XIII (2b)",
+      "x-provision": "Annex XIII 2(b)",
       "x-citationNote": "Annex XIII 2(b) requires the component part-number data (carried by the componentPartNumbers array field), not a URI per se. This URL field is a GEFEG data-model format choice (format:uri requirement) — it is not an independent legal duty. Omit if the componentPartNumbers array already carries the structured part-number list.",
       "x-iri": "https://tracepass.eu/voc/dpp/componentPartNumbersUrl"
     },
@@ -1571,7 +1571,7 @@
       "description": "URI linking to information on sources where spare parts can be obtained for the battery. Annex XIII 2(b) mandates the data (carried by the sparePartsInformation array); this URI field is a GEFEG format:uri choice, not an independent legal obligation. Accessible only to persons with a legitimate interest.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Annex XIII (2b)",
+      "x-provision": "Annex XIII 2(b)",
       "x-citationNote": "Annex XIII 2(b) requires the spare-parts source data (carried by the sparePartsInformation array field), not a URI per se. This URL field is a GEFEG data-model format choice (format:uri requirement) — it is not an independent legal duty. Omit if the sparePartsInformation array already carries the structured source details.",
       "x-iri": "https://tracepass.eu/voc/dpp/sparePartsSourcesUrl"
     },
@@ -1581,7 +1581,7 @@
       "description": "URI linking to information on accidents relating to the battery per Annex XIII 4(d). Complements the negativeEvents array field, which holds structured event records; this URI field satisfies the GEFEG format:uri requirement.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
-      "x-provision": "Annex XIII (4d)",
+      "x-provision": "Annex XIII 4(d)",
       "x-citationNote": "Annex XIII 4(d) names negative events such as accidents as per-battery data accessible only to persons with a legitimate interest. A link is a delivery convenience; the access restriction still governs what it resolves to.",
       "x-iri": "https://tracepass.eu/voc/dpp/accidentsInformationUrl"
     },
