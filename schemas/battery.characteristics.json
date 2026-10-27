@@ -707,6 +707,30 @@
       "x-provision": "Annex XIII 1(h)",
       "x-iri": "https://tracepass.eu/voc/dpp/nominalVoltage"
     },
+    "nominalVoltageTemperatureRangeMin": {
+      "type": "number",
+      "title": "Nominal Voltage — Temperature Range Min",
+      "description": "Minimum temperature for Nominal Voltage specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-citationNote": "Annex XIII 1(h) mandates nominal voltage 'with temperature ranges when relevant'. This field records the lower temperature bound at which the nominal voltage value applies. It is optional because the temperature dependency is product-specific; leave blank when the nominal voltage is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/nominalVoltageTemperatureRangeMin"
+    },
+    "nominalVoltageTemperatureRangeMax": {
+      "type": "number",
+      "title": "Nominal Voltage — Temperature Range Max",
+      "description": "Maximum temperature for Nominal Voltage specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-citationNote": "Annex XIII 1(h) mandates nominal voltage 'with temperature ranges when relevant'. This field records the upper temperature bound at which the nominal voltage value applies. It is optional because the temperature dependency is product-specific; leave blank when the nominal voltage is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/nominalVoltageTemperatureRangeMax"
+    },
     "minimumVoltage": {
       "type": "number",
       "title": "Minimum Voltage",
@@ -718,6 +742,30 @@
       "x-provision": "Annex XIII 1(h)",
       "x-iri": "https://tracepass.eu/voc/dpp/minimumVoltage"
     },
+    "minimumVoltageTemperatureRangeMin": {
+      "type": "number",
+      "title": "Minimum Voltage — Temperature Range Min",
+      "description": "Minimum temperature for Minimum Voltage specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-citationNote": "Annex XIII 1(h) mandates minimum voltage 'with temperature ranges when relevant'. This field records the lower temperature bound at which the minimum voltage value applies. It is optional because the temperature dependency is product-specific; leave blank when the minimum voltage is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/minimumVoltageTemperatureRangeMin"
+    },
+    "minimumVoltageTemperatureRangeMax": {
+      "type": "number",
+      "title": "Minimum Voltage — Temperature Range Max",
+      "description": "Maximum temperature for Minimum Voltage specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-citationNote": "Annex XIII 1(h) mandates minimum voltage 'with temperature ranges when relevant'. This field records the upper temperature bound at which the minimum voltage value applies. It is optional because the temperature dependency is product-specific; leave blank when the minimum voltage is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/minimumVoltageTemperatureRangeMax"
+    },
     "maximumVoltage": {
       "type": "number",
       "title": "Maximum Voltage",
@@ -728,6 +776,30 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(h)",
       "x-iri": "https://tracepass.eu/voc/dpp/maximumVoltage"
+    },
+    "maximumVoltageTemperatureRangeMin": {
+      "type": "number",
+      "title": "Maximum Voltage — Temperature Range Min",
+      "description": "Minimum temperature for Maximum Voltage specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-citationNote": "Annex XIII 1(h) mandates maximum voltage 'with temperature ranges when relevant'. This field records the lower temperature bound at which the maximum voltage value applies. It is optional because the temperature dependency is product-specific; leave blank when the maximum voltage is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumVoltageTemperatureRangeMin"
+    },
+    "maximumVoltageTemperatureRangeMax": {
+      "type": "number",
+      "title": "Maximum Voltage — Temperature Range Max",
+      "description": "Maximum temperature for Maximum Voltage specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(h)",
+      "x-citationNote": "Annex XIII 1(h) mandates maximum voltage 'with temperature ranges when relevant'. This field records the upper temperature bound at which the maximum voltage value applies. It is optional because the temperature dependency is product-specific; leave blank when the maximum voltage is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumVoltageTemperatureRangeMax"
     },
     "originalPowerCapability": {
       "type": "number",
@@ -750,6 +822,30 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(i)",
       "x-iri": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPower"
+    },
+    "maximumAllowedBatteryPowerTemperatureRangeMin": {
+      "type": "number",
+      "title": "Maximum Allowed Battery Power — Temperature Range Min",
+      "description": "Minimum temperature for Maximum Allowed Battery Power specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(i)",
+      "x-citationNote": "Annex XIII 1(i) mandates power limits 'with temperature range when relevant'. This field records the lower temperature bound at which the maximum allowed battery power value applies. It is optional because the temperature dependency is product-specific; leave blank when the power limit is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPowerTemperatureRangeMin"
+    },
+    "maximumAllowedBatteryPowerTemperatureRangeMax": {
+      "type": "number",
+      "title": "Maximum Allowed Battery Power — Temperature Range Max",
+      "description": "Maximum temperature for Maximum Allowed Battery Power specification, in degrees Celsius",
+      "x-unit": "°C",
+      "x-unitIri": "http://qudt.org/vocab/unit/DEG_C",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(i)",
+      "x-citationNote": "Annex XIII 1(i) mandates power limits 'with temperature range when relevant'. This field records the upper temperature bound at which the maximum allowed battery power value applies. It is optional because the temperature dependency is product-specific; leave blank when the power limit is temperature-independent.",
+      "x-iri": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPowerTemperatureRangeMax"
     },
     "ratioMaxPowerMaxEnergy": {
       "type": "number",

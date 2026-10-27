@@ -293,12 +293,36 @@
         "@id": "https://tracepass.eu/voc/dpp/nominalVoltage",
         "@type": "xsd:decimal"
       },
+      "nominalVoltageTemperatureRangeMin": {
+        "@id": "https://tracepass.eu/voc/dpp/nominalVoltageTemperatureRangeMin",
+        "@type": "xsd:decimal"
+      },
+      "nominalVoltageTemperatureRangeMax": {
+        "@id": "https://tracepass.eu/voc/dpp/nominalVoltageTemperatureRangeMax",
+        "@type": "xsd:decimal"
+      },
       "minimumVoltage": {
         "@id": "https://tracepass.eu/voc/dpp/minimumVoltage",
         "@type": "xsd:decimal"
       },
+      "minimumVoltageTemperatureRangeMin": {
+        "@id": "https://tracepass.eu/voc/dpp/minimumVoltageTemperatureRangeMin",
+        "@type": "xsd:decimal"
+      },
+      "minimumVoltageTemperatureRangeMax": {
+        "@id": "https://tracepass.eu/voc/dpp/minimumVoltageTemperatureRangeMax",
+        "@type": "xsd:decimal"
+      },
       "maximumVoltage": {
         "@id": "https://tracepass.eu/voc/dpp/maximumVoltage",
+        "@type": "xsd:decimal"
+      },
+      "maximumVoltageTemperatureRangeMin": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumVoltageTemperatureRangeMin",
+        "@type": "xsd:decimal"
+      },
+      "maximumVoltageTemperatureRangeMax": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumVoltageTemperatureRangeMax",
         "@type": "xsd:decimal"
       },
       "originalPowerCapability": {
@@ -307,6 +331,14 @@
       },
       "maximumAllowedBatteryPower": {
         "@id": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPower",
+        "@type": "xsd:decimal"
+      },
+      "maximumAllowedBatteryPowerTemperatureRangeMin": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPowerTemperatureRangeMin",
+        "@type": "xsd:decimal"
+      },
+      "maximumAllowedBatteryPowerTemperatureRangeMax": {
+        "@id": "https://tracepass.eu/voc/dpp/maximumAllowedBatteryPowerTemperatureRangeMax",
         "@type": "xsd:decimal"
       },
       "ratioMaxPowerMaxEnergy": {
