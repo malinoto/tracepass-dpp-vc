@@ -1428,7 +1428,7 @@
     "remainingRoundTripEfficiency": {
       "type": "number",
       "title": "Remaining Round-Trip Efficiency",
-      "description": "Where possible, the remaining energy round-trip efficiency as part of the state-of-health information per Annex XIII 4(b) DP 64. Applies to LMT batteries (mandatory); conditional for industrial; not applicable to EV.",
+      "description": "Where possible, the remaining energy round-trip efficiency as part of the state-of-health information per Annex XIII 4(b) DP 64. Conditional for LMT and industrial batteries (Annex VII Part A pt 3); not applicable to EV.",
       "x-unit": "%",
       "x-unitIri": "http://qudt.org/vocab/unit/PERCENT",
       "x-regulation": "32023R1542",
