@@ -11,7 +11,6 @@
     "batteryCategory",
     "batteryWeight",
     "batteryStatus",
-    "separateCollectionSymbol",
     "meaningOfLabelsAndSymbols",
     "euDeclarationOfConformity",
     "testReportResults",
@@ -144,6 +143,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(q), as corrected by 32023R1542R(13)",
+      "x-citationNote": "Annex XIII 1(q) carries the Art. 13 marking requirements into the passport; corrigendum 32023R1542R(13) corrected the cross-reference to Art. 13(4) and (5). The symbol itself is discharged by printing it on the battery, not by this field.",
       "x-iri": "https://tracepass.eu/voc/dpp/separateCollectionSymbol"
     },
     "cadmiumSymbol": {
@@ -906,7 +906,7 @@
     "initialSelfDischargeRate": {
       "type": "number",
       "title": "Initial Self-Discharge Rate",
-      "description": "Initial self-discharge rate expressed as percentage per month",
+      "description": "Initial self-discharge rate in percent per month (%/month). To convert from %/year, divide by 12. Required for LMT batteries; see validation.requiredBy.",
       "x-unit": "%/month",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
@@ -1001,8 +1001,8 @@
     },
     "cRateRelevantCycleLifeTest": {
       "type": "number",
-      "title": "C-Rate of Relevant Cycle-Life Test",
-      "description": "C-rate used in the cycle-life test that determined the expected lifetime",
+      "title": "Charge C-Rate of Relevant Cycle-Life Test",
+      "description": "Charge C-rate applied during the cycle-life test that determined the expected lifetime. This field records the charging rate only; see dischargeCRateRelevantCycleLifeTest for the corresponding discharge rate.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(p)",
@@ -1012,7 +1012,7 @@
     "commercialWarrantyPeriod": {
       "type": "number",
       "title": "Commercial Warranty Period",
-      "description": "Duration of the commercial warranty in years",
+      "description": "Duration of the commercial warranty in years (e.g. enter 2 for 2 years; if the source document gives months, divide by 12). Applies only if a commercial warranty for calendar life is offered; see validation.requiredBy.",
       "x-unit": "years",
       "x-unitIri": "http://qudt.org/vocab/unit/YR",
       "x-regulation": "32023R1542",
@@ -1568,7 +1568,7 @@
     "sparePartsSourcesUrl": {
       "type": "string",
       "title": "Spare Parts Sources URL",
-      "description": "URI linking to information on sources where spare parts can be obtained for the battery. Annex XIII 2(b) mandates the data (carried by the sparePartsInformation array); this URI field is a GEFEG format:uri choice, not an independent legal obligation. Accessible only to persons with a legitimate interest.",
+      "description": "Web link to sources for obtaining spare parts for the battery. This URL supplements the sparePartsInformation structured data and must not be used as a replacement for it — Annex XIII 2(b) mandates the structured data. Accessible only to persons with a legitimate interest.",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 2(b)",
