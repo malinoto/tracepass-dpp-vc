@@ -103,7 +103,6 @@ const UNREASONED_BY_DESIGN = new Set([]);
 const UNSOURCED_BY_DESIGN = new Set([
   "battery.batteryEnergyTotal",
   "battery.energyDensity",
-  "battery.numberOfCells",
   "battery.cellType",
   // Primary-text review (dpp-schemas 1.10.0) found no law that requires these:
   // a product name as such (steel is rarely a consumer product, so GPSR does not
