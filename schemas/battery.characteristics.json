@@ -911,7 +911,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b) with Annex VII Part A(4)",
-      "x-citationNote": "Self-discharge enters the Regulation only as the evolution of self-discharging rates, Annex VII state-of-health data (via Annex XIII 4(b)) for stationary storage and LMT batteries. The initial rate is that evolution's baseline, not a value the Regulation names; guidance v3.2 (DP 65) words it \"where possible\".",
+      "x-citationNote": "Self-discharge enters the Regulation only as the evolution of self-discharging rates, Annex VII state-of-health data (via Annex XIII 4(b)) for stationary storage and LMT batteries. The initial rate is that evolution's baseline, not a value the Regulation names; guidance v3.2 has no data point for it (its DP 65 is the evolution).",
       "x-iri": "https://tracepass.eu/voc/dpp/initialSelfDischargeRate"
     },
     "batteryEnergyTotal": {
