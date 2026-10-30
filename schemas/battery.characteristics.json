@@ -1089,7 +1089,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. It binds from 18 Feb 2027 for LMT, industrial >2 kWh and EV batteries; the template-level flag is false because the duty varies by battery type — see validation.requiredBy.",
+      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. From 18 Feb 2027 it is owed \"where possible\" for LMT batteries and stationary battery energy storage systems (Annex VII Part A point 2) and does not apply to EV batteries — see validation.requiredBy.",
       "x-iri": "https://tracepass.eu/voc/dpp/remainingPowerCapability"
     },
     "remainingEnergy": {
@@ -1113,7 +1113,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. It binds from 18 Feb 2027 for LMT, industrial >2 kWh and EV batteries; the template-level flag is false because the duty varies by battery type — see validation.requiredBy.",
+      "x-citationNote": "Annex XIII point 4 is per-battery data that the Regulation makes accessible ONLY to persons with a legitimate interest, never to the public. From 18 Feb 2027 the ohmic resistance is owed \"where possible\" for LMT batteries and stationary battery energy storage systems (Annex VII Part A point 5) and does not apply to EV batteries — see validation.requiredBy.",
       "x-iri": "https://tracepass.eu/voc/dpp/currentInternalResistancePack"
     },
     "internalResistanceIncrease": {
@@ -1597,7 +1597,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. Binds from 18 Feb 2027. RemainingPowerCapability (point 4(b)) requires the SoC-split pair (at 80% and at 20% state of charge); the GEFEG composite is emitted only when both fields are present.",
+      "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. From 18 Feb 2027 it is owed \"where possible\" for LMT batteries and stationary battery energy storage systems (Annex VII Part A point 2). RemainingPowerCapability (point 4(b)) requires the SoC-split pair (at 80% and at 20% state of charge); the GEFEG composite is emitted only when both fields are present.",
       "x-iri": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt80Soc"
     },
     "remainingPowerCapabilityAt20Soc": {
@@ -1609,7 +1609,7 @@
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b)",
-      "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. Binds from 18 Feb 2027. RemainingPowerCapability (point 4(b)) requires the SoC-split pair (at 80% and at 20% state of charge); the GEFEG composite is emitted only when both fields are present.",
+      "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. From 18 Feb 2027 it is owed \"where possible\" for LMT batteries and stationary battery energy storage systems (Annex VII Part A point 2). RemainingPowerCapability (point 4(b)) requires the SoC-split pair (at 80% and at 20% state of charge); the GEFEG composite is emitted only when both fields are present.",
       "x-iri": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt20Soc"
     }
   }
