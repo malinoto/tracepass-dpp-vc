@@ -906,12 +906,12 @@
     "initialSelfDischargeRate": {
       "type": "number",
       "title": "Initial Self-Discharge Rate",
-      "description": "Initial self-discharge rate in percent per month (%/month). To convert from %/year, divide by 12. Required for LMT batteries; see validation.requiredBy.",
+      "description": "Initial self-discharge rate in percent per month (%/month). To convert from %/year, divide by 12. The baseline for the evolution of self-discharging rates (Annex VII Part A(4)) of LMT batteries and stationary storage; the Regulation does not require it as a value of its own. See validation.requiredBy.",
       "x-unit": "%/month",
       "x-regulation": "32023R1542",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 4(b) with Annex VII Part A(4)",
-      "x-citationNote": "Self-discharge is Annex VII state-of-health data (via Annex XIII 4(b)) for stationary storage and LMT batteries, not an Annex XIII point-1 datum.",
+      "x-citationNote": "Self-discharge enters the Regulation only as the evolution of self-discharging rates, Annex VII state-of-health data (via Annex XIII 4(b)) for stationary storage and LMT batteries. The initial rate is that evolution's baseline, not a value the Regulation names; guidance v3.2 (DP 65) words it \"where possible\".",
       "x-iri": "https://tracepass.eu/voc/dpp/initialSelfDischargeRate"
     },
     "batteryEnergyTotal": {
