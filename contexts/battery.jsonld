@@ -33,6 +33,18 @@
       "manufacturingPlace": {
         "@id": "https://tracepass.eu/voc/dpp/manufacturingPlace"
       },
+      "manufacturingCity": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingCity",
+        "@type": "xsd:string"
+      },
+      "manufacturingRegion": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingRegion",
+        "@type": "xsd:string"
+      },
+      "manufacturingCountry": {
+        "@id": "https://tracepass.eu/voc/dpp/manufacturingCountry",
+        "@type": "xsd:string"
+      },
       "batteryCategory": {
         "@id": "https://tracepass.eu/voc/dpp/batteryCategory",
         "@type": "xsd:string"
@@ -277,6 +289,10 @@
         "@id": "https://tracepass.eu/voc/dpp/safetyInformationEndOfLife",
         "@type": "xsd:string"
       },
+      "safetyMeasures": {
+        "@id": "https://tracepass.eu/voc/dpp/safetyMeasures",
+        "@type": "xsd:anyURI"
+      },
       "recycledContentDocumentation": {
         "@id": "https://tracepass.eu/voc/dpp/recycledContentDocumentation",
         "@type": "xsd:anyURI"
@@ -397,6 +413,10 @@
         "@id": "https://tracepass.eu/voc/dpp/temperatureRangeIdleMax",
         "@type": "xsd:decimal"
       },
+      "notInUseTemperatureRangeTest": {
+        "@id": "https://tracepass.eu/voc/dpp/notInUseTemperatureRangeTest",
+        "@type": "xsd:string"
+      },
       "cRateRelevantCycleLifeTest": {
         "@id": "https://tracepass.eu/voc/dpp/cRateRelevantCycleLifeTest",
         "@type": "xsd:decimal"
@@ -456,6 +476,10 @@
       "evolutionOfSelfDischargeRate": {
         "@id": "https://tracepass.eu/voc/dpp/evolutionOfSelfDischargeRate",
         "@type": "xsd:decimal"
+      },
+      "selfDischargingRecordedTime": {
+        "@id": "https://tracepass.eu/voc/dpp/selfDischargingRecordedTime",
+        "@type": "xsd:date"
       },
       "numberOfFullEquivalentChargingCycles": {
         "@id": "https://tracepass.eu/voc/dpp/numberOfFullEquivalentChargingCycles",
@@ -619,6 +643,22 @@
       "remainingPowerCapabilityAt20Soc": {
         "@id": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt20Soc",
         "@type": "xsd:decimal"
+      },
+      "separateCollectionMarkingOnBattery": {
+        "@id": "https://tracepass.eu/voc/dpp/separateCollectionMarkingOnBattery",
+        "@type": "xsd:boolean"
+      },
+      "separateCollectionMarkingOnPackaging": {
+        "@id": "https://tracepass.eu/voc/dpp/separateCollectionMarkingOnPackaging",
+        "@type": "xsd:boolean"
+      },
+      "dischargeCRateRelevantCycleLifeTest": {
+        "@id": "https://tracepass.eu/voc/dpp/dischargeCRateRelevantCycleLifeTest",
+        "@type": "xsd:decimal"
+      },
+      "responsibleEconomicOperatorName": {
+        "@id": "https://tracepass.eu/voc/dpp/responsibleEconomicOperatorName",
+        "@type": "xsd:string"
       }
     }
   ]

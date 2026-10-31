@@ -38,10 +38,12 @@
     "initialInternalResistanceCell",
     "temperatureRangeIdleMin",
     "temperatureRangeIdleMax",
+    "notInUseTemperatureRangeTest",
     "batteryModelIdentifier",
     "extinguishingAgent",
     "renewableContentShare",
-    "componentPartNumbers"
+    "componentPartNumbers",
+    "separateCollectionMarkingOnBattery"
   ],
   "properties": {
     "batteryIdDmcCode": {
@@ -91,6 +93,36 @@
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
       "x-provision": "Annex XIII 1(a) with Annex VI Part A(3)",
       "x-iri": "https://tracepass.eu/voc/dpp/manufacturingPlace"
+    },
+    "manufacturingCity": {
+      "type": "string",
+      "title": "Manufacturing Place — City",
+      "description": "City where the battery manufacturing plant is located",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(a) with Annex VI Part A(3)",
+      "x-citationNote": "Annex VI Part A(3) (through Annex XIII 1(a)) requires the place of manufacture, 'geographical location of a battery manufacturing plant'. The required manufacturingPlace field carries that obligation. This optional field records one part of the place in the structure the EU DPP Registry's battery data model (semantic package 1.0.0) requires: a city or a region, plus the country as an ISO 3166-1 alpha-3 code. Where it is blank, the matching part of the manufacturingPlace object is used.",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingCity"
+    },
+    "manufacturingRegion": {
+      "type": "string",
+      "title": "Manufacturing Place — Region",
+      "description": "Region (state, province or county) where the battery manufacturing plant is located",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(a) with Annex VI Part A(3)",
+      "x-citationNote": "Annex VI Part A(3) (through Annex XIII 1(a)) requires the place of manufacture, 'geographical location of a battery manufacturing plant'. The required manufacturingPlace field carries that obligation. This optional field records one part of the place in the structure the EU DPP Registry's battery data model (semantic package 1.0.0) requires: a city or a region, plus the country as an ISO 3166-1 alpha-3 code. Where it is blank, the matching part of the manufacturingPlace object is used.",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingRegion"
+    },
+    "manufacturingCountry": {
+      "type": "string",
+      "title": "Manufacturing Place — Country",
+      "description": "Country where the battery manufacturing plant is located, as an ISO 3166-1 code (e.g. DE or DEU)",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(a) with Annex VI Part A(3)",
+      "x-citationNote": "Annex VI Part A(3) (through Annex XIII 1(a)) requires the place of manufacture, 'geographical location of a battery manufacturing plant'. The required manufacturingPlace field carries that obligation. This optional field records one part of the place in the structure the EU DPP Registry's battery data model (semantic package 1.0.0) requires: a city or a region, plus the country as an ISO 3166-1 alpha-3 code. Where it is blank, the matching part of the manufacturingPlace object is used.",
+      "x-iri": "https://tracepass.eu/voc/dpp/manufacturingCountry"
     },
     "batteryCategory": {
       "type": "string",
@@ -658,6 +690,16 @@
       "x-provision": "Annex XIII 2(d)",
       "x-iri": "https://tracepass.eu/voc/dpp/safetyInformationEndOfLife"
     },
+    "safetyMeasures": {
+      "type": "string",
+      "title": "Safety Measures Document",
+      "description": "Link to the document that sets out the battery's safety measures, the document form of Safety Measures for Dismantling",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 2(d)",
+      "x-citationNote": "Annex XIII 2(d) requires 'safety measures' in the legitimate-interest tier. The required safetyInformationEndOfLife text field carries that obligation. The EU DPP Registry's battery data model (semantic package 1.0.0) expects safety measures as a linked document with a file type (res1 safetyMeasures), so this optional field holds that document link. Where it is blank, a link in safetyInformationEndOfLife is used.",
+      "x-iri": "https://tracepass.eu/voc/dpp/safetyMeasures"
+    },
     "recycledContentDocumentation": {
       "type": "string",
       "title": "Recycled Content Documentation",
@@ -999,6 +1041,15 @@
       "x-provision": "Annex XIII 1(l)",
       "x-iri": "https://tracepass.eu/voc/dpp/temperatureRangeIdleMax"
     },
+    "notInUseTemperatureRangeTest": {
+      "type": "string",
+      "title": "Temperature Range Idle — Reference Test",
+      "description": "The reference test used to establish the temperature range the battery can withstand when not in use, e.g. the test standard or method and its conditions",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(l)",
+      "x-iri": "https://tracepass.eu/voc/dpp/notInUseTemperatureRangeTest"
+    },
     "cRateRelevantCycleLifeTest": {
       "type": "number",
       "title": "Charge C-Rate of Relevant Cycle-Life Test",
@@ -1174,6 +1225,16 @@
       "x-provision": "Annex XIII 4(b)",
       "x-citationNote": "Annex XIII point 4 is per-battery in-service data accessible ONLY to persons with a legitimate interest, never to the public. Evolution of self-discharge rate is required for LMT batteries and stationary storage systems (industrial >2 kWh); it is NOT applicable to EV traction batteries. Binds from 18 Feb 2027 — see validation.requiredBy for per-category applicability.",
       "x-iri": "https://tracepass.eu/voc/dpp/evolutionOfSelfDischargeRate"
+    },
+    "selfDischargingRecordedTime": {
+      "type": "string",
+      "title": "Self-Discharge Rate — Date Measured",
+      "description": "Date on which the current self-discharge rate (Evolution of Self-Discharge Rate) was measured",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 4(b)",
+      "x-citationNote": "Annex XIII 4(b) per-battery state-of-health data includes the evolution of the self-discharge rate (evolutionOfSelfDischargeRate). The EU DPP Registry's battery data model (semantic package 1.0.0) requires the time the rate was recorded whenever the rate is given (res3 selfDischargingRateSet.recordedTime); this optional field holds that date. Relevant to LMT batteries and stationary storage (industrial >2 kWh), not to EV batteries.",
+      "x-iri": "https://tracepass.eu/voc/dpp/selfDischargingRecordedTime"
     },
     "numberOfFullEquivalentChargingCycles": {
       "type": "number",
@@ -1611,6 +1672,45 @@
       "x-provision": "Annex XIII 4(b)",
       "x-citationNote": "Annex XIII point 4 is per-battery data accessible only to persons with a legitimate interest, never to the public. From 18 Feb 2027 it is owed \"where possible\" for LMT batteries and stationary battery energy storage systems (Annex VII Part A point 2). RemainingPowerCapability (point 4(b)) requires the SoC-split pair (at 80% and at 20% state of charge); the GEFEG composite is emitted only when both fields are present.",
       "x-iri": "https://tracepass.eu/voc/dpp/remainingPowerCapabilityAt20Soc"
+    },
+    "separateCollectionMarkingOnBattery": {
+      "type": "boolean",
+      "title": "Separate Collection Marking on Battery",
+      "description": "Indicates whether the battery physically bears the separate-collection marking (crossed-out wheeled bin) as required by Art. 13(4) of the Battery Regulation. True if the marking is present; false if absent.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(q), as corrected by 32023R1542R(13); Art. 13(4)",
+      "x-iri": "https://tracepass.eu/voc/dpp/separateCollectionMarkingOnBattery"
+    },
+    "separateCollectionMarkingOnPackaging": {
+      "type": "boolean",
+      "title": "Separate Collection Marking on Packaging",
+      "description": "Indicates whether the battery packaging bears the separate-collection marking (crossed-out wheeled bin) under Art. 13(4) of the Battery Regulation. Optional; applicable where Art. 13(4) requires the marking also on packaging.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(q), as corrected by 32023R1542R(13); Art. 13(4)",
+      "x-citationNote": "Art. 13(4) requires batteries to bear the crossed-out wheeled bin symbol. Where applicable, packaging must also carry the symbol. This boolean confirms whether the physical marking is present on the packaging.",
+      "x-iri": "https://tracepass.eu/voc/dpp/separateCollectionMarkingOnPackaging"
+    },
+    "dischargeCRateRelevantCycleLifeTest": {
+      "type": "number",
+      "title": "Discharge C-Rate of Relevant Cycle-Life Test",
+      "description": "Discharge C-rate applied during the cycle-life test that determined the expected lifetime. Optional for all battery types; see cRateRelevantCycleLifeTest for the corresponding charge rate.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Annex XIII 1(p)",
+      "x-citationNote": "The discharge C-rate of the relevant cycle-life test complements the charge C-rate (cRateRelevantCycleLifeTest) under Annex XIII 1(p). Optional for all battery types per DG GROW Guidance v3.2 DP 40.",
+      "x-iri": "https://tracepass.eu/voc/dpp/dischargeCRateRelevantCycleLifeTest"
+    },
+    "responsibleEconomicOperatorName": {
+      "type": "string",
+      "title": "Responsible Economic Operator Name",
+      "description": "Name of the economic operator responsible for the battery passport under Art. 77(4) of the Battery Regulation. Optional field; Art. 77(4) assigns the duty but the Battery Regulation does not list the name as a data point in Annex XIII — cited informatively only.",
+      "x-regulation": "32023R1542",
+      "x-regulationIri": "http://publications.europa.eu/resource/celex/32023R1542",
+      "x-provision": "Art. 77(4)",
+      "x-citationNote": "Art. 77(4) assigns the duty to keep the battery passport accurate, complete and up to date to the economic operator placing the battery on the market. The name of this operator is not listed as a passport data point in Annex XIII; cited informatively only.",
+      "x-iri": "https://tracepass.eu/voc/dpp/responsibleEconomicOperatorName"
     }
   }
 }

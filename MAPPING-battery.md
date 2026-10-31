@@ -1,6 +1,6 @@
 # Battery DPP — field-to-vocabulary mapping
 
-Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 118 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
+Every field in the Battery Digital Product Passport, mapped to an existing semantic-web term where one exists, or a `tracepass:` term where none does. **0 reuse an existing IRI, 136 are coined**, 6 are carried by the UNTP envelope rather than by `characteristics`, and 0 are skipped as product specifications rather than semantic properties.
 
 The coined terms are not invention for its own sake: each names the EU instrument or standard that defines the concept, and where the field carries a unit that unit reuses a QUDT IRI even when the *quantity kind* has no QUDT term.
 
@@ -29,6 +29,9 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `manufacturerEmail` | CELEX `32023R1542` | Art. 38(7) |
 | `manufacturingDate` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(4) |
 | `manufacturingPlace` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(3) |
+| `manufacturingCity` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(3) |
+| `manufacturingRegion` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(3) |
+| `manufacturingCountry` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(3) |
 | `batteryCategory` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(2) |
 | `batteryWeight` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(5) |
 | `batteryStatus` | CELEX `32023R1542` | Annex XIII 4(c) |
@@ -48,8 +51,8 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `carbonFootprintPerformanceClass` | CELEX `32023R1542` | Annex XIII 1(c) |
 | `carbonFootprintStudyUrl` | CELEX `32023R1542` | Art. 7(1)(g) |
 | `supplyChainDueDiligenceReport` | CELEX `32023R1542` | Annex XIII 1(d) |
-| `dueDiligencePolicy` | CELEX `32023R1542` | Annex XIII 1(d) |
-| `thirdPartyAuditResults` | CELEX `32023R1542` | Annex XIII 1(d) |
+| `dueDiligencePolicy` | CELEX `32023R1542` | Art. 48(1) |
+| `thirdPartyAuditResults` | CELEX `32023R1542` | Art. 52(1) |
 | `batteryChemistry` | CELEX `32023R1542` | Annex XIII 1(a) with Annex VI Part A(7) |
 | `cathodeActiveMaterials` | CELEX `32023R1542` | Annex XIII 2(a) |
 | `anodeActiveMaterials` | CELEX `32023R1542` | Annex XIII 2(a) |
@@ -70,14 +73,23 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `removalInformation` | CELEX `32023R1542` | Annex XIII 2(c) |
 | `sparePartsInformation` | CELEX `32023R1542` | Annex XIII 2(b) |
 | `safetyInformationEndOfLife` | CELEX `32023R1542` | Annex XIII 2(d) |
+| `safetyMeasures` | CELEX `32023R1542` | Annex XIII 2(d) |
 | `recycledContentDocumentation` | CELEX `32023R1542` | Annex XIII 1(e) |
 | `batteryRemovabilityReplaceability` | CELEX `32023R1542` | Art. 11(5) |
 | `ratedCapacity` | CELEX `32023R1542` | Annex XIII 1(g) |
 | `nominalVoltage` | CELEX `32023R1542` | Annex XIII 1(h) |
+| `nominalVoltageTemperatureRangeMin` | CELEX `32023R1542` | Annex XIII 1(h) |
+| `nominalVoltageTemperatureRangeMax` | CELEX `32023R1542` | Annex XIII 1(h) |
 | `minimumVoltage` | CELEX `32023R1542` | Annex XIII 1(h) |
+| `minimumVoltageTemperatureRangeMin` | CELEX `32023R1542` | Annex XIII 1(h) |
+| `minimumVoltageTemperatureRangeMax` | CELEX `32023R1542` | Annex XIII 1(h) |
 | `maximumVoltage` | CELEX `32023R1542` | Annex XIII 1(h) |
+| `maximumVoltageTemperatureRangeMin` | CELEX `32023R1542` | Annex XIII 1(h) |
+| `maximumVoltageTemperatureRangeMax` | CELEX `32023R1542` | Annex XIII 1(h) |
 | `originalPowerCapability` | CELEX `32023R1542` | Annex XIII 1(i) |
 | `maximumAllowedBatteryPower` | CELEX `32023R1542` | Annex XIII 1(i) |
+| `maximumAllowedBatteryPowerTemperatureRangeMin` | CELEX `32023R1542` | Annex XIII 1(i) |
+| `maximumAllowedBatteryPowerTemperatureRangeMax` | CELEX `32023R1542` | Annex XIII 1(i) |
 | `ratioMaxPowerMaxEnergy` | CELEX `32023R1542` | Annex IV Part B(2) |
 | `initialEnergyRoundTripEfficiency` | CELEX `32023R1542` | Annex XIII 1(n) |
 | `initialInternalResistancePack` | CELEX `32023R1542` | Annex XIII 1(o) |
@@ -92,9 +104,10 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `capacityThresholdForExhaustion` | CELEX `32023R1542` | Annex XIII 1(k) |
 | `temperatureRangeIdleMin` | CELEX `32023R1542` | Annex XIII 1(l) |
 | `temperatureRangeIdleMax` | CELEX `32023R1542` | Annex XIII 1(l) |
+| `notInUseTemperatureRangeTest` | CELEX `32023R1542` | Annex XIII 1(l) |
 | `cRateRelevantCycleLifeTest` | CELEX `32023R1542` | Annex XIII 1(p) |
 | `commercialWarrantyPeriod` | CELEX `32023R1542` | Annex XIII 1(m) |
-| `numberOfCells` | — | — |
+| `numberOfCells` | CELEX `32023R1542` | Annex XIII 2(c) |
 | `cellType` | — | — |
 | `stateOfHealth` | CELEX `32023R1542` | Annex XIII 4(b) |
 | `stateOfCertifiedEnergy` | CELEX `32023R1542` | Annex XIII 4(b) |
@@ -107,6 +120,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `powerFade` | CELEX `32023R1542` | Annex XIII 4(a) |
 | `roundTripEfficiencyFade` | CELEX `32023R1542` | Annex XIII 4(a) |
 | `evolutionOfSelfDischargeRate` | CELEX `32023R1542` | Annex XIII 4(b) |
+| `selfDischargingRecordedTime` | CELEX `32023R1542` | Annex XIII 4(b) |
 | `numberOfFullEquivalentChargingCycles` | CELEX `32023R1542` | Annex XIII 4(d) |
 | `capacityThroughput` | CELEX `32023R1542` | Annex XIII 4(b) with Annex VII Part B(3) |
 | `energyThroughput` | CELEX `32023R1542` | Annex XIII 4(b) with Annex VII Part B(2) |
@@ -127,20 +141,24 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `dynamicInternalResistance` | CELEX `32023R1542` | Annex XIII 4(a) |
 | `dynamicExpectedLifetimeCycles` | CELEX `32023R1542` | Annex XIII 4(a) |
 | `remainingRoundTripEfficiency` | CELEX `32023R1542` | Annex XIII 4(b) |
-| `preConsumerRecycledNickelShare` | CELEX `32023R1542` | Annex XIII (1e) |
-| `preConsumerRecycledCobaltShare` | CELEX `32023R1542` | Annex XIII (1e) |
-| `preConsumerRecycledLithiumShare` | CELEX `32023R1542` | Annex XIII (1e) |
-| `postConsumerRecycledNickelShare` | CELEX `32023R1542` | Annex XIII (1e) |
-| `postConsumerRecycledCobaltShare` | CELEX `32023R1542` | Annex XIII (1e) |
-| `postConsumerRecycledLithiumShare` | CELEX `32023R1542` | Annex XIII (1e) |
+| `preConsumerRecycledNickelShare` | CELEX `32023R1542` | Art. 8(1) |
+| `preConsumerRecycledCobaltShare` | CELEX `32023R1542` | Art. 8(1) |
+| `preConsumerRecycledLithiumShare` | CELEX `32023R1542` | Art. 8(1) |
+| `postConsumerRecycledNickelShare` | CELEX `32023R1542` | Art. 8(1) |
+| `postConsumerRecycledCobaltShare` | CELEX `32023R1542` | Art. 8(1) |
+| `postConsumerRecycledLithiumShare` | CELEX `32023R1542` | Art. 8(1) |
 | `originalPowerCapabilityAt80Soc` | CELEX `32023R1542` | Annex IV Part B(4) |
 | `originalPowerCapabilityAt20Soc` | CELEX `32023R1542` | Annex IV Part B(4) |
-| `temperatureInformation` | CELEX `32023R1542` | Annex XIII (4d) |
+| `temperatureInformation` | CELEX `32023R1542` | Annex XIII 4(d) |
 | `cadmiumLeadSymbolsUrl` | CELEX `32023R1542` | Annex XIII 1(q) as corrected by 32023R1542R(13) together with Art. 13(5) |
-| `componentPartNumbersUrl` | CELEX `32023R1542` | Annex XIII (2b) |
-| `sparePartsSourcesUrl` | CELEX `32023R1542` | Annex XIII (2b) |
-| `accidentsInformationUrl` | CELEX `32023R1542` | Annex XIII (4d) |
+| `componentPartNumbersUrl` | CELEX `32023R1542` | Annex XIII 2(b) |
+| `sparePartsSourcesUrl` | CELEX `32023R1542` | Annex XIII 2(b) |
+| `accidentsInformationUrl` | CELEX `32023R1542` | Annex XIII 4(d) |
 | `remainingPowerCapabilityAt80Soc` | CELEX `32023R1542` | Annex XIII 4(b) |
 | `remainingPowerCapabilityAt20Soc` | CELEX `32023R1542` | Annex XIII 4(b) |
+| `separateCollectionMarkingOnBattery` | CELEX `32023R1542` | Annex XIII 1(q), as corrected by 32023R1542R(13); Art. 13(4) |
+| `separateCollectionMarkingOnPackaging` | CELEX `32023R1542` | Annex XIII 1(q), as corrected by 32023R1542R(13); Art. 13(4) |
+| `dischargeCRateRelevantCycleLifeTest` | CELEX `32023R1542` | Annex XIII 1(p) |
+| `responsibleEconomicOperatorName` | CELEX `32023R1542` | Art. 77(4) |
 
 A field showing **—** in both columns has no external owner: nothing outside this profile names the concept, so the term originates here. That is a finding about the vocabulary landscape, not a missing citation.
