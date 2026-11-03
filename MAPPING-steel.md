@@ -94,7 +94,7 @@ The coined terms are not invention for its own sake: each names the EU instrumen
 | `responsibleSteelCertification` | Voluntary (ResponsibleSteel International Production Standard) | — |
 | `asiCertification` | Voluntary (ASI Performance Standard V3, ASI CoC Standard V2.1) | — |
 | `euEtsInstallationId` | CELEX `32003L0087` | — |
-| `dataCarrier` | CELEX `32024R1781` | — |
+| `dataCarrierType` | CELEX `32024R1781` | — |
 | `accessLevel` | CELEX `32024R1781` | — |
 | `registryEntryUri` | CELEX `32024R1781` | — |
 | `dataFormat` | CELEX `32024R1781` | — |

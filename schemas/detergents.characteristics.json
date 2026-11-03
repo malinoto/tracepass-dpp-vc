@@ -508,15 +508,19 @@
       "x-iri": "https://tracepass.eu/voc/dpp/endOfLifeInstructions"
     },
     "dataCarrierType": {
-      "type": "string",
+      "type": "array",
       "title": "Data Carrier Type",
       "description": "Type of data carrier used for the DPP (QR code, NFC, RFID, etc.).",
-      "enum": [
-        "QR",
-        "NFC",
-        "RFID",
-        "DataMatrix"
-      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "qr_code",
+          "data_matrix",
+          "nfc_tag",
+          "rfid_tag",
+          "other"
+        ]
+      },
       "x-regulation": "32026R0405",
       "x-regulationIri": "http://publications.europa.eu/resource/celex/32026R0405",
       "x-provision": "Art. 21(2)(h), (4)",

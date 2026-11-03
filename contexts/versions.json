@@ -21,10 +21,11 @@
     }
   },
   "detergents": {
-    "current": 2,
+    "current": 3,
     "versions": {
       "1": "944c3770d1a9c9b0781e5188fcc3165e381a9a6f0972b18fb4cde5ff26ffa6c8",
-      "2": "f03c1e506d04067f4a2780e2efb8ff89d5c6ff8ab6bbe55d245005a677882a14"
+      "2": "f03c1e506d04067f4a2780e2efb8ff89d5c6ff8ab6bbe55d245005a677882a14",
+      "3": "64d80238d2861ff63aed4d575080c525fb0ab0584474867acc27a43cd8819245"
     }
   },
   "electronics": {
@@ -64,17 +65,19 @@
     }
   },
   "paints-coatings": {
-    "current": 2,
+    "current": 3,
     "versions": {
       "1": "636cf13eeb378b243ed97621d1b668f3f4cf25d9e2dffa526d4f482a398659c0",
-      "2": "85e06b3e79bfa5ed3a61394b0661d75e305f0dd98d2f7bec659fdf4bb334744d"
+      "2": "85e06b3e79bfa5ed3a61394b0661d75e305f0dd98d2f7bec659fdf4bb334744d",
+      "3": "88be9595534bce2bf88db5b4f808c10329c7c4766c310561f20de27a26f29c50"
     }
   },
   "steel": {
-    "current": 2,
+    "current": 3,
     "versions": {
       "1": "2e0065cc99a78136b787c7c933f45fd6a45ee7ff516adaa7da8a608879570bc0",
-      "2": "457e372d473ba4d4e2cf8697cda49ba3c234684ee01a90fa5741b3dc91660e31"
+      "2": "457e372d473ba4d4e2cf8697cda49ba3c234684ee01a90fa5741b3dc91660e31",
+      "3": "a39490137e95da14cc116e014c2811af7f6769a744009e33f415d49bf84cf112"
     }
   },
   "textile": {
