@@ -10,7 +10,7 @@
 // cross-category conflicts in the earlier draft came from exactly that.
 // One row per key means one decision per concept, by construction.
 //
-// SOURCE OF TRUTH: `tracepass-platform/templates/*.json`. NOT the gitignored
+// SOURCE OF TRUTH: `tracepass-dpp-schemas/templates/*.json`. NOT the gitignored
 // `_work/vocab-mapping.json`, which predates the 0.2.0 schemas sync (it has
 // 93 battery fields against the template's 117) and self-flags as unreliable.
 //
@@ -31,12 +31,15 @@ function arg(flag, fallback) {
   return i !== -1 && process.argv[i + 1] ? process.argv[i + 1] : fallback;
 }
 
-const templatesDir = arg("--templates", join(root, "..", "tracepass-platform", "templates"));
+const templatesDir = arg(
+  "--templates",
+  join(process.env.TRACEPASS_SCHEMAS_DIR ?? join(root, "..", "tracepass-dpp-schemas"), "templates"),
+);
 const outPath = arg("--out", join(root, "_work", "decision-ledger.json"));
 
 if (!existsSync(templatesDir)) {
   console.error(`Templates not found: ${templatesDir}`);
-  console.error("Pass --templates <dir> pointing at tracepass-platform/templates.");
+  console.error("Pass --templates <dir> pointing at tracepass-dpp-schemas/templates (or set TRACEPASS_SCHEMAS_DIR).");
   process.exit(1);
 }
 

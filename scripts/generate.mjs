@@ -23,11 +23,10 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => JSON.parse(readFileSync(p, "utf8"));
 
-// TRACEPASS_PLATFORM_DIR points at a platform checkout other than the sibling
-// (e.g. a git worktree), the same override the marketing site's
-// build:field-counts takes.
+// The category templates come from the sibling tracepass-dpp-schemas checkout.
+// TRACEPASS_SCHEMAS_DIR points at a checkout elsewhere (e.g. a git worktree).
 const templatesDir = join(
-  process.env.TRACEPASS_PLATFORM_DIR ?? join(root, "..", "tracepass-platform"),
+  process.env.TRACEPASS_SCHEMAS_DIR ?? join(root, "..", "tracepass-dpp-schemas"),
   "templates",
 );
 const ledger = read(join(root, "_work", "decision-ledger.json"));
